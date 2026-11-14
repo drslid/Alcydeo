@@ -207,7 +207,7 @@ await mkdir('apps/website/public/images',{recursive:true});
 await copyFile('docs/brand/social-dark.png','apps/website/public/images/social.png');
 for (const [name, source] of [
  ['popup-light','popup-sources-fr'], ['popup-dark','popup-sources-fr-dark'],
- ['popup-progress','popup-preview-020-light'], ['library-dark','library-actions-fr-dark'],
+ ['popup-progress','popup-sources-fr'], ['library-dark','library-actions-fr-dark'],
  ['crop-dark','crop-editor-fr-dark'], ['manager-light','manager-fr'],
 ]) await copyFile(`docs/screenshots/${source}.png`,`apps/website/public/images/${name}.png`);
 

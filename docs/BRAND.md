@@ -18,6 +18,8 @@ The November 14, 2026 request permits a new drawing in place of the earlier cart
 
 The **same complete emblem** supplies every icon. Edit only `packages/design-tokens/brand/kingfisher.svg`; `scripts/brand.mjs` extracts its `canonical-mark` group and shared silhouette. There is no independently drawn face. Monochrome keeps that silhouette and uses the original eye and throat as negative space.
 
+November 15, 2026 correction: remove the rounded rear lobe and dark patch that made the back look deformed. A continuous contour now joins the raised wing to the tail. Keep this streamlined outline in every derived mark, including the selected proposal on the exploration board.
+
 Use SVG wherever possible. The artwork is transparent, without an external white outline. Toolbar PNGs and the favicon have a pale rounded tile for contrast in either Chrome theme; this tile is separate from the bird. Large signatures remain transparent. Keep the aspect ratio, clear space and orientation in RTL layouts. Do not add a crown, arrow, bevel or an extra face.
 
 Generate all exports with `node scripts/brand.mjs`, and the downloadable kit with `pnpm zip:brand`. The source emblem and proposals are original MIT artwork. Wordmark letters are outlined from Inter Bold under SIL OFL 1.1; their pinned source and hash remain in `packages/design-tokens/brand/PROVENANCE.json`. No external font or image service runs in the product. Material Symbols interface icons have their own Apache-2.0 license.

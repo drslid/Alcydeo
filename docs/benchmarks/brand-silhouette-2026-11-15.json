@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-15",
+  "timezone": "Europe/Paris",
+  "status": "Unreleased local artwork correction after 0.2.0",
+  "change": "Remove rear lobe and dark patch; preserve the wing, face, eye, beak and palette.",
+  "source": "packages/design-tokens/brand/kingfisher.svg",
+  "assetChecks": {
+    "passed": 53,
+    "failed": 0,
+    "sizes": [
+      16,
+      32,
+      48,
+      128
+    ],
+    "transparency": true,
+    "monochrome": true,
+    "sameGeometry": true,
+    "selectedProposalAndFiveBoardImagesSynchronized": true,
+    "otherProposalsUnchanged": true
+  },
+  "checks": {
+    "typecheck": true,
+    "eslint": true,
+    "extensionBuild": true,
+    "chromeZip": true,
+    "websiteBuild": true,
+    "websiteHtmlPages": 103,
+    "websiteLocalLinks": 3416,
+    "localeRoutes": 10
+  },
+  "ui": {
+    "browser": "156.0.8078.4",
+    "popupWidth": 525,
+    "popupThemes": [
+      "light",
+      "dark"
+    ],
+    "libraryThemes": [
+      "light",
+      "dark"
+    ],
+    "cropPreview": true,
+    "pageErrors": 0,
+    "originalSyntheticMedia": true,
+    "savedFileBytes": 1837555,
+    "savedFileSha256": "f76cd91d59b4a73dad0f37521aaa4d16623d7cfd87386d6aaf6683c979384c36",
+    "diskCopyMatchesOriginal": true,
+    "originalPreserved": true
+  },
+  "scope": "Artwork and publication captures only; media logic, permissions and localization are unchanged. No full unit or E2E regression run is claimed for this asset correction.",
+  "externalPublication": false
+}

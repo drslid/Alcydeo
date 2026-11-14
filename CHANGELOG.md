@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+- Remove the kingfisher's rear bulge and dark patch; share the streamlined contour across the emblem, icons, signatures and selected design proposal.
+
 ## 0.2.0 — First public preview · 2026-11-14
 
 ### Added

@@ -85,4 +85,10 @@ ${colors.map((color,i)=>`<rect x="${392+i*166}" y="1068" width="140" height="70"
 <path d="M64 1224H1376" stroke="#D8E5EF"/><text x="64" y="1266" fill="#52687C" font-size="16">Sources SVG éditables · exports transparents · favicon SVG/ICO · aucune ressource distante à l’exécution</text>
 </g></svg>`;
 await writeFile('docs/brand-board.svg',board);await sharp(Buffer.from(board)).png().toFile('docs/brand-board.png');
+// Keep the selected proposal in sync with the master, including its size samples.
+const proposal=master.replace(/<title>[^<]*<\/title>/,'<title>Alcydeo — Le Plongeon</title>');
+await writeFile('docs/brand/proposals/01-plongeon.svg',proposal);
+const exploration=await readFile('docs/brand/proposals/board.svg','utf8');
+const updatedExploration=exploration.replace(/data:image\/svg\+xml;base64,([A-Za-z0-9+/=]+)/g,(url,encoded)=>Buffer.from(encoded,'base64').toString('utf8').includes('<title>Alcydeo — Le Plongeon</title>')?image(proposal):url);
+await writeFile('docs/brand/proposals/board.svg',updatedExploration);await sharp(Buffer.from(updatedExploration)).png().toFile('docs/brand/proposals/board.png');
 console.log('One canonical emblem, transparent edges, derived compact/monochrome marks, manifest icons and publication exports prepared.');
