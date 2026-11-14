@@ -1,0 +1,34 @@
+{
+  "extension": "current build",
+  "measurements": [
+    {
+      "scenario": "DOM before document idle",
+      "badgeMs": 31,
+      "pageReadyState": "loading"
+    },
+    {
+      "scenario": "Network while iframe loads",
+      "badgeMs": 3,
+      "pageReadyState": "interactive"
+    },
+    {
+      "scenario": "Media inserted during DOM churn",
+      "badgeMs": 60,
+      "pageReadyState": "complete"
+    },
+    {
+      "scenario": "Worker wake with another loading tab",
+      "badgeMs": 5,
+      "pageReadyState": "loading"
+    },
+    {
+      "scenario": "Network while cross-site renderer is busy",
+      "badgeMs": 5,
+      "pageReadyState": "complete"
+    }
+  ],
+  "version": "0.1.7",
+  "browser": "Chrome for Testing 156.0.8078.80 Linux",
+  "measurement": "Chrome action badge state after a media DOM candidate or media response becomes available; native toolbar painting and real-site source provisioning time are not measured.",
+  "busyCase": "The busy-renderer case uses the fixture server response timestamp and verifies it lies within the actual frame JavaScript blocking interval."
+}

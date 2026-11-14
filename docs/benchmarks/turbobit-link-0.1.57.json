@@ -1,0 +1,57 @@
+{
+  "capturedAtUtc": "2026-11-08T14:28:18.490792+00:00",
+  "scope": "Read-only bounded GETs of two public landing pages and official static client assets as data. No provider JavaScript executed, no file/media fetched, no upload, cookies, authorization or redirect following.",
+  "redaction": "The supplied user file ID, filename and complete landing links are omitted. No response body or account/bootstrap session data retained.",
+  "landingPages": [
+    {
+      "kind": "supplied-bare-share-link",
+      "method": "GET",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bodyBytes": 2670,
+      "redirect": false,
+      "finding": "SPA HTML shell; no server-rendered file metadata or missing-file message. APP_NAME=turbobit."
+    },
+    {
+      "kind": "same-id-with-native-html-suffix",
+      "method": "GET",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bodyBytes": 2670,
+      "redirect": false,
+      "finding": "Same SPA shell; this GET alone does not establish file availability or validate an upload."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://torbobit.net/assets/UploadPage-DBdbWzZD.js",
+      "httpStatus": 200,
+      "contentType": "application/javascript",
+      "bodyBytes": 36276,
+      "executed": false,
+      "finding": "generateLink(file) starts suffix from appConfig.urls.extension and joins shortDomain + / + file.id + optional name + suffix. Standard variant has no filename; with-file-name variant forces .html. The copyLink method copies generateLink output.",
+      "recheckedAtUtc": "2026-11-08T14:31:01.452654+00:00",
+      "sha256": "2c1569222a227ce72405a291bcc1e65bcb4ec2863a0066f18c48491989077ac2",
+      "recheckedBodyBytes": 36276
+    },
+    {
+      "url": "https://torbobit.net/assets/index-CF8pqMCp.js",
+      "httpStatus": 200,
+      "contentType": "application/javascript",
+      "bodyBytes": 1597716,
+      "executed": false,
+      "finding": "Configuration maps turbobit to urls.extension=.html and hitfile to empty extension. App name is window.__APP_NAME__ with fallback turbobit. Native download.gate route is /:id(\\w+) + configured extension; named route is /:id(\\w+)/:name(.+).html; unmatched routes use catchAll.",
+      "recheckedAtUtc": "2026-11-08T14:31:01.626156+00:00",
+      "sha256": "edf3ae5fa1e4401aa8b54b46ae51cde5846cedde45ad084c552bcd14422bcd15",
+      "recheckedBodyBytes": 1597716
+    }
+  ],
+  "conclusion": {
+    "confirmedDefect": "The current Alcydeo turbobitResult builder omits the .html suffix required by the observed native Turbobit standard sharing link and native download.gate route.",
+    "minimalFix": "Keep validated ID and fixed HTTPS torbobit.net host; append .html. Do not accept arbitrary provider URLs or loosen response validation.",
+    "fileAvailabilityVerified": false,
+    "actualUploadObserved": false,
+    "remoteRenderedUIObserved": false,
+    "limitation": "The user reports upload success and lost-page UI. Source inspection confirms malformed link generation; SPA shells return HTTP 200 for both paths and do not independently confirm a remote upload or its contents."
+  }
+}

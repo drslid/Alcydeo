@@ -1,0 +1,87 @@
+{
+  "version": "0.1.17",
+  "siteHomeRoutes": [
+    {
+      "locale": "en",
+      "dir": "ltr",
+      "overflow": false,
+      "images": true,
+      "title": "Alcydeo | Alcydeo"
+    },
+    {
+      "locale": "es",
+      "dir": "ltr",
+      "overflow": false,
+      "images": true,
+      "title": "Alcydeo | Alcydeo"
+    },
+    {
+      "locale": "fr",
+      "dir": "ltr",
+      "overflow": false,
+      "images": true,
+      "title": "Alcydeo | Alcydeo"
+    },
+    {
+      "locale": "de",
+      "dir": "ltr",
+      "overflow": false,
+      "images": true,
+      "title": "Alcydeo | Alcydeo"
+    },
+    {
+      "locale": "zh-cn",
+      "dir": "ltr",
+      "overflow": false,
+      "images": true,
+      "title": "Alcydeo | Alcydeo"
+    },
+    {
+      "locale": "ar",
+      "dir": "rtl",
+      "overflow": false,
+      "images": true,
+      "title": "Alcydeo | Alcydeo"
+    },
+    {
+      "locale": "ru",
+      "dir": "ltr",
+      "overflow": false,
+      "images": true,
+      "title": "Alcydeo | Alcydeo"
+    },
+    {
+      "locale": "pt",
+      "dir": "ltr",
+      "overflow": false,
+      "images": true,
+      "title": "Alcydeo | Alcydeo"
+    },
+    {
+      "locale": "hi",
+      "dir": "ltr",
+      "overflow": false,
+      "images": true,
+      "title": "Alcydeo | Alcydeo"
+    },
+    {
+      "locale": "ur",
+      "dir": "rtl",
+      "overflow": false,
+      "images": true,
+      "title": "Alcydeo | Alcydeo"
+    }
+  ],
+  "mobileLocales": [
+    "fr",
+    "ar",
+    "ur"
+  ],
+  "nativeFrenchExtensionViews": [
+    "settings",
+    "ordered-merge-dialog",
+    "recording-idle",
+    "cloud-configuration"
+  ],
+  "remoteUpload": false
+}

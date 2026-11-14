@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-08",
+  "scope": "Metadata only; no real media upload",
+  "research": {
+    "schemaVersion": 1,
+    "date": "2026-11-08",
+    "scope": "Anonymous initialization and read-only official documentation; no file upload",
+    "environment": "Ordinary curl HTTPS requests from the isolated laboratory; no browser or user profile involved",
+    "initialization": {
+      "observedAt": "2026-11-08T13:53:40Z",
+      "endpoint": "https://api.1fichier.com/v1/upload/get_upload_server.cgi",
+      "method": "POST",
+      "requestContentType": "application/json",
+      "requestJson": {
+        "pretty": 1
+      },
+      "cookieHeaderSent": false,
+      "authorizationHeaderSent": false,
+      "status": 200,
+      "responseContentType": "application/json; charset=utf-8",
+      "responseKeys": [
+        "id",
+        "url"
+      ],
+      "node": "ru-3.1fichier.com",
+      "idShape": {
+        "type": "string",
+        "length": 10,
+        "alphanumeric": true
+      },
+      "baselineParser": "packages/cloud/onefichier.ts in 0.1.55, restricted to upN.1fichier.com",
+      "baselineNodeAccepted": false,
+      "conclusion": "The ordinary successful API response is rejected by the baseline upload-node allowlist before any file transfer. The token shape remains compatible."
+    },
+    "officialSourcesRead": [
+      {
+        "url": "https://1fichier.com/api.html#s-upload-get_upload_server",
+        "observedAt": "2026-11-08T13:53:41Z",
+        "method": "GET",
+        "status": 200,
+        "findings": [
+          "The upload server can vary for load balancing.",
+          "The url field is a server hostname; the documentation does not require the upN prefix or supply an exhaustive hostname list.",
+          "Examples include up2.1fichier.com and exemple.1fichier.com.",
+          "The emission identifier is documented as 10 random alphanumeric characters.",
+          "The example uses the same anonymous POST JSON request as Alcydeo.",
+          "Upload authentication is optional. The completion report belongs to the initially selected server."
+        ]
+      },
+      {
+        "url": "https://1fichier.com/",
+        "date": "2026-11-08",
+        "method": "GET",
+        "status": 200,
+        "findings": [
+          "The anonymous multipart form still selected up2.1fichier.com.",
+          "Only static HTML data was inspected; provider scripts were not executed. The form identifier is omitted from this report."
+        ]
+      }
+    ],
+    "limitations": [
+      "No actual file upload, completion report or independently verified remote file.",
+      "This successful laboratory initialization does not reproduce every condition of the user's browser session.",
+      "The web search/open service could not retrieve the documentation; ordinary HTTPS curl requests succeeded.",
+      "There was no provider or laboratory-network refusal in the successful requests recorded here."
+    ],
+    "uploadRequests": 0,
+    "completionReportRequests": 0,
+    "redirectsFollowed": 0,
+    "providerScriptsExecuted": false,
+    "cookiesOrCredentialsCopied": false,
+    "emissionIdentifiersPersisted": false,
+    "publication": false
+  },
+  "chrome": {
+    "date": "2026-11-08T13:59:47.011Z",
+    "version": "0.1.56",
+    "scope": "Chrome extension-origin anonymous initialization only",
+    "profile": "fresh temporary profile, removed on exit",
+    "headless": true,
+    "endpoint": "https://api.1fichier.com/v1/upload/get_upload_server.cgi",
+    "parserSource": "packages/cloud/onefichier.ts",
+    "parserSha256": "091a8fd0655113e6ced7659fa7010bff5e96f0fe7248a58995ccec9403634f32",
+    "requests": [
+      {
+        "method": "POST",
+        "cookieHeaderPresent": false,
+        "authorizationHeaderPresent": false
+      }
+    ],
+    "blockedExternalRequests": 0,
+    "uploadRequests": 0,
+    "completionReportRequests": 0,
+    "redirectsFollowed": 0,
+    "emissionIdentifiersPersisted": false,
+    "providerScriptsExecuted": false,
+    "publication": false,
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "response": {
+      "keys": [
+        "id",
+        "url"
+      ],
+      "node": "up3.1fichier.com",
+      "idShape": {
+        "type": "string",
+        "length": 10,
+        "alphanumeric": true
+      },
+      "parserAccepted": true
+    },
+    "browserVersion": "Google Chrome for Testing 156.0.8078.4",
+    "frozenCloudWorker": {
+      "file": "assets/cloud.worker-D17mSBtB.js",
+      "sha256": "571192c57bbd014c9a5dd7b6474bb7e0a5a9be0435de82215691ab5af8965859",
+      "allowedNodePatternPresent": true,
+      "sameBytesAsCurrentBuild": true
+    }
+  }
+}

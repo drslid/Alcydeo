@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-01",
+  "pageOrigin": "https://www.zalando-prive.fr",
+  "pagePath": "/campaigns/ZZO4S9T/categories/60457365/articles/NI112P0A4-Q11",
+  "httpClient": {
+    "status": 403,
+    "contentType": "text/html"
+  },
+  "chromeForTesting": {
+    "version": "156.0.8078.80",
+    "platform": "Linux / WSL2",
+    "navigation": "net::ERR_HTTP2_PROTOCOL_ERROR"
+  },
+  "signedMediaUrlsStored": false,
+  "siteDownloadVerified": false,
+  "localRegression": "The old build stays at the wrapper label 1100p; selected HLS plans throw chooseQuality as soon as a source still returns a master. Local fixtures reproduce the failure; no claim is made about the real site manifest."
+}

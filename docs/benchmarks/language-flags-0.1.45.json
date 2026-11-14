@@ -1,0 +1,159 @@
+{
+  "version": "0.1.45",
+  "browser": "156.0.8078.4",
+  "states": [
+    {
+      "view": "popup",
+      "locale": "en",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "popup",
+      "locale": "es",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "popup",
+      "locale": "fr",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "popup",
+      "locale": "de",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "popup",
+      "locale": "zh_CN",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "popup",
+      "locale": "ar",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "popup",
+      "locale": "ru",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "popup",
+      "locale": "pt",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "popup",
+      "locale": "hi",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "popup",
+      "locale": "ur",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "popup",
+      "locale": "auto",
+      "flagOnly": true,
+      "automaticChoicePreserved": true
+    },
+    {
+      "view": "manager",
+      "locale": "en",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "manager",
+      "locale": "es",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "manager",
+      "locale": "fr",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "manager",
+      "locale": "de",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "manager",
+      "locale": "zh_CN",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "manager",
+      "locale": "ar",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "manager",
+      "locale": "ru",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "manager",
+      "locale": "pt",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "manager",
+      "locale": "hi",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "manager",
+      "locale": "ur",
+      "flagOnly": true,
+      "nativeNamesAndAutomaticChoice": true,
+      "noReload": true
+    },
+    {
+      "view": "manager",
+      "locale": "auto",
+      "flagOnly": true,
+      "automaticChoicePreserved": true
+    }
+  ],
+  "publicNetwork": false
+}

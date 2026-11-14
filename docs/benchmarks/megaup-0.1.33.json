@@ -1,0 +1,99 @@
+{
+  "version": "0.1.33",
+  "date": "2026-11-03",
+  "node": "24.22.2",
+  "pnpm": "12.5.1",
+  "browser": "156.0.8078.80",
+  "platform": "Linux/WSL2",
+  "unitTests": 280,
+  "typecheck": "pass",
+  "lint": "pass",
+  "browserTests": {
+    "local": {
+      "startTime": "2026-11-03T17:06:08.249Z",
+      "duration": 96353.40000000001,
+      "expected": 49,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "storeMegaUp": {
+      "startTime": "2026-11-03T17:09:17.178Z",
+      "duration": 3376.877,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "logs": [
+      "megaup-0.1.33-local.log",
+      "megaup-0.1.33-store.log"
+    ],
+    "fullSuiteRun": false
+  },
+  "verified": {
+    "publicPageReadOnly": "megaup-read-only-0.1.33.json",
+    "pageParsedAsDataOnly": true,
+    "exactMultipartChunksAndFilenames": true,
+    "multipleFilesSequential": true,
+    "freshSessionOnExplicitRetry": true,
+    "localOriginalsPreserved": true,
+    "noUploadBeforeSend": true,
+    "cancelAndLateResponse": true,
+    "changedPageForeignServerAndLinkRejected": true,
+    "htmlWrongSizeAnd429Rejected": true,
+    "redirectRejectedWithoutForwardingFile": true,
+    "preExistingProviderCookiesOmittedMegaUpOnly": true,
+    "noProviderSessionFieldsInPersistedJobs": true,
+    "tenLocalesAndRtl": true,
+    "conversionCompressionAndOutputSavingRegression": true
+  },
+  "limits": {
+    "fileBytes": 5368709120,
+    "chunkBytes": 8388608,
+    "maxParts": 1024,
+    "chunkTimeoutMs": 120000,
+    "noIndependentRemoteChecksum": true,
+    "retryStartsAtZero": true,
+    "maximumSizeFileTested": false,
+    "realProviderUploadTested": false,
+    "nativeWindowsDialogTested": false,
+    "providerSpecificCookieGuarantee": "MegaUp fetch credentials:omit; legacy Gofile/pCloud XHR may receive browser-managed provider cookies"
+  },
+  "storeProof": "store-runtime-0.1.33.json",
+  "externalPublication": false,
+  "artifacts": {
+    "testedBuildByteIdentical": true,
+    "crxPayloadEqualsZipAndBuild": true,
+    "runtimeFiles": 90,
+    "pages": 103,
+    "pagesArchiveFiles": 277,
+    "packages": [
+      {
+        "name": "alcydeo-0.1.33-chrome.zip",
+        "bytes": 2315262,
+        "sha256": "2982cb04c4608e274a0a03aaad2557b6d020dffdcc1dea5a80662ae0674c4be2"
+      },
+      {
+        "name": "alcydeo-0.1.33-local-test.crx",
+        "bytes": 2329113,
+        "sha256": "38602fdf379a897bedc03817e23fa1f08acbb1a4f0fdfbcbfc65f39b8bcd8c88"
+      },
+      {
+        "name": "alcydeo-store-0.1.33-chrome.zip",
+        "bytes": 2264998,
+        "sha256": "f90ac0b44c942236ccc12ee9e1127769a15ae5176bcb8459b5c6b6e4a1700b4d"
+      },
+      {
+        "name": "alcydeo-pages-0.1.33.zip",
+        "bytes": 2549312,
+        "sha256": "a8775de2e9f0565342bae57cdbf75aaaa7cac57e390710af1f4c2c7277ee8f8c"
+      },
+      {
+        "name": "alcydeo-brand-0.1.33.zip",
+        "bytes": 1447690,
+        "sha256": "eaba7b22ea2b6c7635bbee9c58e741ba81ae2ad86d6f77d42c02280744ab6e46"
+      }
+    ]
+  }
+}

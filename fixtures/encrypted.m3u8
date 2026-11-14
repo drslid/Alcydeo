@@ -1,0 +1,5 @@
+#EXTM3U
+#EXT-X-KEY:METHOD=AES-128,URI="must-not-fetch.key"
+#EXTINF:6,
+hls-high/segment-0.ts
+#EXT-X-ENDLIST

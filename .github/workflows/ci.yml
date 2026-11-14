@@ -1,0 +1,67 @@
+name: Validate deliverables
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
+        with:
+          version: 12.5.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm test
+      - run: pnpm check:contrast
+      - run: pnpm audit --prod --audit-level=high
+      - run: pnpm docs:build
+      - run: node scripts/pages-archive.mjs
+      - name: Build local test extension (loopback Cast sender)
+        run: pnpm build:chrome
+        env:
+          ALCYDEO_CAST_SENDER_URL: http://localhost:4180/alcydeo/cast/
+      - run: pnpm exec playwright install --with-deps chromium
+      - name: Installed-extension browser smoke (explicit local suite)
+        run: pnpm test:ci
+      - name: Package local validation build (not a Release asset)
+        run: pnpm zip:chrome
+        env:
+          ALCYDEO_CAST_SENDER_URL: http://localhost:4180/alcydeo/cast/
+      - name: Check separate Store package (no submission)
+        run: pnpm zip:store
+        env:
+          ALCYDEO_CAST_SENDER_URL: ''
+      - name: Keep validation packages
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: validation-packages-${{ github.sha }}
+          path: |
+            artifacts/alcydeo-*-chrome.zip
+            artifacts/alcydeo-*-chrome.zip.sha256
+            artifacts/alcydeo-pages-*.zip
+            artifacts/alcydeo-pages-*.zip.sha256
+          if-no-files-found: error
+          retention-days: 7
+      - name: Keep local test reports, including failures
+        if: ${{ always() && !cancelled() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: browser-smoke-${{ github.sha }}
+          path: artifacts/evidence/
+          if-no-files-found: warn
+          retention-days: 7

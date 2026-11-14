@@ -1,0 +1,35 @@
+# YouTube playlists — local build 0.1.36
+
+On a YouTube `/playlist?list=…` page or a watch page containing `list=…`, the popup presents one playlist rather than an individual media proposal. Available videos are checked initially. Uncheck individual rows, choose a maximum quality or Best available, then start the selection. The list has 50 rows per page; selection applies to the whole loaded playlist. Private, deleted and explicitly live/upcoming entries cannot be selected as downloadable files.
+
+The download destination is the relative folder selected in Settings plus a sanitized playlist title. Files retain their video title and original playlist position: `Alcydeo/Playlist title/001 - Video title.mp4`. Repeated videos at different positions remain separate occurrences. Chrome distinguishes existing filenames without overwriting them. The Save As setting remains respected for every file; turn it off for automatic folder saving. Chrome does not allow an extension to silently write to any arbitrary absolute directory.
+
+## Processing and recovery
+
+Starting the batch opens or reuses the persistent Alcydeo manager without moving focus from the popup. It owns one muted YouTube helper tab and resolves each selected video using the normal player. The next file begins after Chrome confirms the previous checked output is saved. Closing the popup does not stop this work. Keep the manager open; closing it pauses the batch and closes only its own helper tab. Resume from the popup or the Library's playlist card. Completed saved files are skipped; an unfinished source can start again from the beginning. Cancellation preserves saved originals. A source refusal is recorded per item; remaining items continue and Retry retries failed items only.
+
+A user-navigated helper tab is never commandeered or closed. Changing site permissions or the YouTube blacklist prevents further source preparation. No player API, generated attestation, deciphered signature, remote executable, native companion or Alcydeo backend is added. The source can still refuse playback or download. Consent/login/availability and missing player context can require opening the normal YouTube player manually; there is no automatic access or consent bypass.
+
+## Catalog and resource bounds
+
+On a playlist page, the already loaded page provides the first catalog. On a watch page, Alcydeo reads the full native playlist browse catalog rather than mistaking the truncated player panel for the complete list. This first metadata read can occur during automatic detection; it does not delay ordinary media/badge publication. Opening the playlist popup follows the metadata continuation tokens provided by YouTube using its current native context and a same-origin browse request. These are metadata requests, not downloads of playlist media. The entire catalog must load successfully before a batch can start; a failed continuation never silently downloads only the first page.
+
+Bounds: 5,000 entries, 100 metadata pages, 2 MiB per metadata response, 15 seconds per continuation, 45 seconds to prepare each player's source, one active batch and one file transfer at a time. Up to four unfinished batches, eight cached tab catalogs and twenty recent terminal batch records are retained. Only one helper tab is used for the active batch. Catalog loading is incremental; list rendering and progress messages remain bounded. A complete 5,000-file Internet playlist and peak disk usage are not benchmarked. Existing OPFS quota and media-format limits apply.
+
+The Store build excludes both YouTube transport and playlist code at compilation. This local feature does not imply Store availability, universal YouTube compatibility or guaranteed download of every listed entry.
+
+## Local data and privacy
+
+The playlist catalog (title, video IDs, row availability, positions and opaque continuation tokens) stays in extension IndexedDB and is removed on source navigation/tab closure or stale-session cleanup; only eight tab catalogs are cached. Lightweight session summaries supply the badge. Consent to start creates a durable selected-item snapshot and batch state, with the playlist page URL and task associations. Source player contexts continue using the existing local task storage rules. Browse metadata includes the current native continuation view models; outer recommendation continuations are excluded. Progress messages contain compact counts/current-item data rather than resending the entire catalog on every poll. The native metadata request context stays inside the YouTube page and is not saved by Alcydeo. YouTube receives ordinary page/browse/playback requests through the browser's applicable session; Alcydeo does not read cookie values. Deleting the corresponding terminal task history removes the remaining batch record. No playlist is sent to Cloud or the documentation site automatically.
+
+## Validation scope
+
+The original laboratory fixtures exercise the actual installed extension, metadata continuation and checked MP4 outputs, including selection, repeated occurrences and interruption handling. They do not prove a complete real YouTube playlist transfer. Current measured results and any public metadata probes are recorded separately in [TEST-RESULTS.md](TEST-RESULTS.md).
+
+A public metadata probe reads all **1,593** entries of Blender’s uploads playlist through native continuations. A separate 18-item public playlist is also read from both playlist and watch URLs. From a two-item batch, one real file is saved and fully decoded (60.070 s, 854 × 480 AVC + AAC, 3,262,174 bytes); the second is explicitly refused by the source. This is partial real batch evidence, not a successful full Internet-playlist download. Third-party media and its screenshots remain in ignored local evidence and are excluded from publication assets.
+
+## Evolving YouTube mixes — 0.1.38
+
+A watch-page `RD…` mix is an evolving list. Alcydeo now reads only its currently loaded native playlist panel, marks it as a snapshot and displays that limitation in all ten languages. It makes no browse or future-suggestion continuation request for this mode. Available rows are checked initially; explicit selection, numbered names, the playlist-named folder and one-file-at-a-time execution use the same batch pipeline. Reload the source page to create a new snapshot. Ordinary finite playlists still load their complete native browse catalog before Start.
+
+The user's actual `The Hit List` mix exposes **25 titles**. Exactly **two** were selected for the requested trial, both refused as `sourceRestricted`; no other entry started and no partial file was exported. This is real metadata/selection/refusal evidence, **not a successful music download**. No attestation, signature, authentication or protection workaround was added. [Actual limited trial](benchmarks/youtube-mix-public-0.1.38.json). Original local fixtures separately save exactly two selected mix entries with both tracks and correct names, while leaving future suggestions untouched. This feature remains local-only and is excluded from the Store build.

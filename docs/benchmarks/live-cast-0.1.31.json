@@ -1,0 +1,59 @@
+{
+  "version": "0.1.31",
+  "date": "2026-11-03",
+  "node": "24.22.2",
+  "pnpm": "12.5.1",
+  "browser": "156.0.8078.80",
+  "platform": "Linux/WSL2",
+  "unitTests": 264,
+  "typecheck": "pass",
+  "lint": "pass",
+  "e2e": {
+    "startTime": "2026-11-03T16:15:46.998Z",
+    "duration": 121406.91,
+    "expected": 66,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "captureEvidence": "capture-popup-0.1.31.json",
+  "publicYouTubeProbe": "youtube-live-public-0.1.31.json",
+  "youtube": {
+    "activeLiveFixtureDetectedBeforePopup": true,
+    "combinedHlsRecordedAndChecked": true,
+    "opaqueLiveUsesExplicitTabCapture": true,
+    "watchPageDownloadRefused": true,
+    "tenLocalesAndRtl": true,
+    "protectedPlayerHidden": true,
+    "suppliedPublicPage": "ended live event detected as replay; complete transfer not attempted",
+    "realActiveYouTubeLiveCaptured": true,
+    "storeExclusionRetained": true,
+    "realActiveYouTubeLiveDetected": true,
+    "activePublicProbe": "youtube-active-public-0.1.31.json",
+    "realCaptureEvidence": "capture-youtube-real-0.1.31.json",
+    "realCaptureScope": "Short whole-tab recording with visible consent overlay; not raw stream extraction"
+  },
+  "cast": {
+    "continuousBufferingSimulation": true,
+    "deadlineMs": 20000,
+    "lateStatusCannotResurrectError": true,
+    "boundedStatusPolling": true,
+    "noAutomaticLoadRetries": true,
+    "explicitRetryRechecksObservedSource": true,
+    "nativeApiAndLocalFileRegression": true,
+    "physicalShieldTested": false
+  },
+  "nativeWindowsTested": false,
+  "publication": false,
+  "artifacts": {
+    "runtimeFiles": 90,
+    "zipBytes": 2309931,
+    "zipMatchesBuild": true,
+    "crxMatchesZip": true,
+    "storeYouTubeLiveMedia": 0,
+    "storeRuntimeProof": "store-runtime-0.1.31.json",
+    "pagesFiles": 277,
+    "brandFiles": 40
+  },
+  "siteEvidence": "site-0.1.31.json"
+}

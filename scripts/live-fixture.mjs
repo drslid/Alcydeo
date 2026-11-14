@@ -1,0 +1,16 @@
+import{readFile}from'node:fs/promises';
+const cases=new Map();
+export async function liveFixture(req,res,url){
+ if(!url.pathname.startsWith('/live-fixture/'))return false;const id=url.searchParams.get('case')??'default';if(!cases.has(id))cases.set(id,{step:0,ended:false,revision:1,mode:'normal',requests:[]});const state=cases.get(id);
+ const headers={'Cache-Control':'no-store','Access-Control-Allow-Origin':'*'};
+ if(url.pathname.endsWith('/control')){for(const key of ['step','revision'])if(url.searchParams.has(key))state[key]=Number(url.searchParams.get(key));if(url.searchParams.has('ended'))state.ended=url.searchParams.get('ended')==='1';if(url.searchParams.has('mode'))state.mode=url.searchParams.get('mode');res.writeHead(200,{'Content-Type':'application/json',...headers});res.end(JSON.stringify(state));return true;}
+ state.requests.push({path:url.pathname,range:req.headers.range??null,step:state.step});
+ const format=url.searchParams.get('format')==='fmp4'?'fmp4':'ts',query=`case=${encodeURIComponent(id)}&format=${format}`;
+ if(url.pathname.endsWith('/page.html')){res.writeHead(200,{'Content-Type':'text/html; charset=utf-8',...headers});res.end(`<!doctype html><meta charset="utf-8"><title>Local live broadcast</title><a href="/live-fixture/master.m3u8?${query}" title="Local live broadcast">Local live broadcast</a>`);return true;}
+ if(url.pathname.endsWith('/master.m3u8')){res.writeHead(200,{'Content-Type':'application/vnd.apple.mpegurl',...headers});res.end(`#EXTM3U\n${state.mode==='audio'?'#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="a",DEFAULT=YES,URI="audio.m3u8?'+query+'"\n':''}#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=720x404${state.mode==='audio'?',AUDIO="a"':''}\nstream.m3u8?${query}\n`);return true;}
+ if(url.pathname.endsWith('.m3u8')){let body='#EXTM3U\n#EXT-X-VERSION:7\n#EXT-X-TARGETDURATION:2\n';if(state.mode==='encrypted')body+='#EXT-X-KEY:METHOD=AES-128,URI="must-not-fetch.key"\n';const start=Math.max(0,state.step-2);body+=`#EXT-X-MEDIA-SEQUENCE:${start}\n`;if(format==='fmp4')body+=`#EXT-X-MAP:URI="init.mp4?${query}"\n`;for(let seq=start;seq<=Math.min(5,state.step);seq++){if(state.mode==='discontinuity'&&seq===1)body+='#EXT-X-DISCONTINUITY\n';body+=`#EXTINF:2,\nsegment-${seq}.${format==='ts'?'ts':'m4s'}?${query}&revision=${state.revision}\n`;}if(state.ended)body+='#EXT-X-ENDLIST\n';res.writeHead(200,{'Content-Type':'application/vnd.apple.mpegurl',...headers});res.end(body);return true;}
+ const filename=url.pathname.split('/').pop();if(!/^(?:segment-[0-5]\.(?:ts|m4s)|init\.mp4)$/.test(filename)){res.writeHead(404,headers);res.end('Missing');return true;}
+ if(state.mode==='html'&&state.step>0){res.writeHead(200,{'Content-Type':'video/mp4',...headers});res.end('<!doctype html><title>Expired source</title>');return true;}
+ const data=await readFile(`fixtures/live-${format}/${filename}`),range=/^bytes=(\d+)-(\d+)$/.exec(req.headers.range??'');const start=range?Number(range[1]):0,end=range?Math.min(Number(range[2]),data.length-1):data.length-1;
+ res.writeHead(range?206:200,{'Content-Type':filename.endsWith('.ts')?'video/mp2t':'video/mp4','Content-Length':String(end-start+1),...(range?{'Content-Range':`bytes ${start}-${end}/${data.length}`} :{}),...headers});res.end(data.subarray(start,end+1));return true;
+}

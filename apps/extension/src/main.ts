@@ -1,0 +1,10 @@
+import { createApp,watchEffect } from 'vue';
+import App from './App.vue';
+import { language, rtl,i18nReady } from './i18n';
+import './style.css';
+import './manager.css';
+import './popup.css';
+watchEffect(()=>{document.documentElement.lang=language.value;document.documentElement.dir=rtl.value?'rtl':'ltr';});
+document.body.className = location.pathname.includes('popup') ? 'popup' : 'manager';
+await i18nReady;createApp(App).mount('#app');
+performance.mark('alcydeo:mounted');

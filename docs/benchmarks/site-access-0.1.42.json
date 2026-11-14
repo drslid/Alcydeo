@@ -1,0 +1,72 @@
+{
+  "version": "0.1.42",
+  "date": "2026-11-05",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "browser": "156.0.8078.4",
+    "platform": "Chrome for Testing on Linux/WSL2",
+    "windowsProfileDriven": false
+  },
+  "unitTests": 399,
+  "unitFiles": 28,
+  "chromeCases": 38,
+  "localCases": 24,
+  "storeCases": 14,
+  "targetedRunNotFullSuite": true,
+  "suites": {
+    "local": {
+      "passed": 23,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "durationMs": 53220.87
+    },
+    "store": {
+      "passed": 14,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "durationMs": 30354.333
+    },
+    "legacy": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "durationMs": 1463.931
+    }
+  },
+  "behaviour": {
+    "obsoleteDomainApprovalControls": false,
+    "runtimeHttpPermissionRequests": false,
+    "internalPageScans": false,
+    "actualChromeRestrictionsEnforced": true,
+    "missingManagedSourcePauses": true,
+    "unrelatedOriginRevocationKeepsTransfer": true,
+    "requiredOriginRevocationPausesTransfer": true,
+    "explicitResumeAfterRestoringAccess": true,
+    "savedMultipartFileEqualsOriginal": true,
+    "localizedPermissionDiagnostics": 10,
+    "newPermissions": false,
+    "fileUrlAccessUnchanged": true
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "localZip": true,
+    "storeZip": true,
+    "crxPayload": true,
+    "site": {
+      "browser": "156.0.8078.4",
+      "locales": 10,
+      "mobileOverflow": false,
+      "pageErrors": [],
+      "base": "/alcydeo/"
+    },
+    "pages": 103,
+    "storeYoutubeExcluded": true
+  },
+  "publication": false,
+  "evidence": "Installed Chrome extension, native Chrome host-access controls in isolated profiles, original local MP4/HLS fixtures; no public upload or physical receiver claim."
+}

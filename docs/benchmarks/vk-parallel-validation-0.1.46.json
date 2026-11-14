@@ -1,0 +1,72 @@
+{
+  "version": "0.1.46",
+  "date": "2026-11-06",
+  "scope": "DASH single-resource track and conditional byte-range parallel downloading",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "platform": "isolated Linux/WSL2 Chrome profile; not the user's Windows profile"
+  },
+  "unit": {
+    "command": "pnpm exec vitest run tests/unit/fragment-parts.test.ts tests/unit/fragment.test.ts tests/unit/multipart.test.ts",
+    "files": 3,
+    "passed": 45,
+    "newHelperCases": 21,
+    "coverage": [
+      "Exact complete resource reconstruction and global 2/4/8 connection budgets",
+      "Original URL retained and exact strong ETag/If-Range validation",
+      "Missing or weak ETag, ignored Range, small resource, encoding and malformed probe fall back before writes",
+      "Version changes, wrong boundaries/total/length, truncated and excessive bodies stop without checkpoint",
+      "HTML MIME and HTML/JSON prefix under binary MIME rejected",
+      "Cancellation, 120-second inactivity, active transfer beyond two minutes, quota and handle cleanup"
+    ]
+  },
+  "browserFixtures": {
+    "command": "pnpm exec playwright test tests/e2e/dash-parallel.spec.ts",
+    "uniqueCasesPassed": 7,
+    "initialRun": {
+      "passed": 6,
+      "failed": 1,
+      "reason": "Pause fixture completed before the manager's one-second refresh exposed the Pause button. Product transfer had completed normally."
+    },
+    "testOnlyCorrection": "Increase that fixture response delay from 800 to 3000 milliseconds; no product change after the build.",
+    "focusedRerun": {
+      "command": "pnpm exec playwright test tests/e2e/dash-parallel.spec.ts --grep 'pause aborts'",
+      "passed": 1,
+      "failed": 0
+    },
+    "coverage": [
+      "Budgets 2/4/8 observed as maximum 2/4/8 active requests across two resource URLs; final AVC/AAC MP4 saved",
+      "Disabled preference keeps sequential whole-resource downloading",
+      "Absent ETag permits only two distinct complete resources concurrently",
+      "Changed ETag stops without a saved result",
+      "Pause aborts active requests and releases the owner; resume saves one result"
+    ],
+    "initialEvidence": "artifacts/evidence/dash-parallel46.json",
+    "focusedEvidence": "artifacts/evidence/dash-parallel46-pause.json"
+  },
+  "lint": {
+    "command": "pnpm exec eslint tests/e2e/dash-parallel.spec.ts packages/media-core/fragment-parts.ts apps/extension/src/media.worker.ts tests/unit/fragment-parts.test.ts",
+    "passed": true
+  },
+  "publicEvidence": {
+    "probe": "vk-range-probe-0.1.46.json",
+    "completeTransfers": "vk-parallel-public-0.1.46.json",
+    "independentDecode": "vk-parallel-decode-0.1.46.json",
+    "result": "One native public 144p source: sequential 27814 ms versus parallel 20782 ms, max one versus two complete resource requests, both results saved and fully decoded.",
+    "rangeLimitation": "The native CDN supplies no ETag. No acceleration by recombined byte ranges is claimed for real VK."
+  },
+  "review": {
+    "independentReadOnlyReview": true,
+    "blockingFindings": 0,
+    "optionalCoverageGap": "Two tracks sharing exactly the same resource URL are explicitly kept sequential in code; no dedicated browser fixture covers that guard."
+  },
+  "limitations": [
+    "One public 144p measurement, not a statistical speed benchmark",
+    "720p complete download after this change remains unverified",
+    "No new test of the user's Windows browser profile or a physical TV receiver",
+    "Global build, Store packaging and complete repository checks are reported by the coordinating task"
+  ],
+  "externalPublication": false
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "Controlled original 1.8 MB fixture, each HTTP response limited to 16 KiB every 40 ms; single fetch versus four ranges, not an Internet speed guarantee",
+  "bytes": 1837555,
+  "simultaneousRequests": 4,
+  "singleTransferMs": 4533,
+  "parallelTransferMs": 1166,
+  "transferRatio": 3.887650085763293,
+  "equalsOriginal": true
+}

@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-06T09:41:51.322Z",
+  "version": "0.1.46",
+  "browser": "156.0.8078.4",
+  "publicPage": "https://vkvideo.ru/video-26493942_456419693",
+  "nativeMediaHeaders": [
+    {
+      "status": 206,
+      "headers": {
+        "content-range": "bytes 0-103551/103552",
+        "content-length": "103552",
+        "content-type": "audio/mpeg",
+        "last-modified": "Tue, 03 Nov 2026 03:06:52 GMT"
+      }
+    },
+    {
+      "status": 206,
+      "headers": {
+        "content-range": "bytes 0-93102/93103",
+        "content-length": "93103",
+        "content-type": "audio/mpeg",
+        "last-modified": "Tue, 03 Nov 2026 03:06:52 GMT"
+      }
+    },
+    {
+      "status": 200,
+      "headers": {
+        "content-range": "bytes 0-2070/32322986",
+        "accept-ranges": "bytes",
+        "content-length": "2071",
+        "last-modified": "Wed, 1 Jan 2014 00:00:00 GMT",
+        "content-type": "video/webm"
+      }
+    },
+    {
+      "status": 200,
+      "headers": {
+        "content-range": "bytes 0-5166/10569427",
+        "accept-ranges": "bytes",
+        "content-length": "5167",
+        "last-modified": "Wed, 1 Jan 2014 00:00:00 GMT",
+        "content-type": "audio/webm"
+      }
+    }
+  ],
+  "status": 200,
+  "title": "ЕС в ужасе: отношения Зеленского и Трампа перешли в стадию открытого конфликта / Итоги недели с Петром Марченко",
+  "redirectedToChallenge": false,
+  "height": "144",
+  "probe": {
+    "status": 206,
+    "elapsedMs": 15,
+    "bytesObserved": 1,
+    "headers": {
+      "accept-ranges": "bytes",
+      "content-length": "1",
+      "content-range": "bytes 0-0/6388036",
+      "content-type": "video/webm",
+      "last-modified": "Wed, 1 Jan 2014 00:00:00 GMT"
+    }
+  },
+  "probeExtensionVersion": "0.1.45",
+  "scope": "Server capability probe only; native page and standard extension-origin Range request, not a final parallel-download measurement."
+}

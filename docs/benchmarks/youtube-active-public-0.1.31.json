@@ -1,0 +1,34 @@
+{
+  "version": "0.1.31",
+  "page": "https://www.youtube.com/watch?v=a47ckXKZjxI",
+  "checkedAt": "2026-11-03T16:24:40.180Z",
+  "rawPlayer": {
+    "live": true,
+    "isLiveContent": true,
+    "isLiveNow": true,
+    "status": "OK"
+  },
+  "extensionProbe": {
+    "browser": "156.0.8078.80",
+    "media": [
+      {
+        "title": "FRANCE 24 – EN DIRECT – Info et actualités internationales en continu 24h/24",
+        "providerId": "youtube:a47ckXKZjxI",
+        "kind": "direct",
+        "live": true,
+        "captureOnly": true,
+        "pending": false,
+        "qualities": [
+          ""
+        ]
+      }
+    ],
+    "player": {
+      "time": 46796.593748,
+      "ready": 4,
+      "paused": true
+    },
+    "downloadAttempted": false,
+    "nativeCaptureAttempted": false
+  }
+}

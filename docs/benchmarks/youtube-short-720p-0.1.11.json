@@ -1,0 +1,60 @@
+{
+  "page": "https://www.youtube.com/shorts/9mkgxFL_C0s",
+  "date": "2026-11-01T18:06:16.711Z",
+  "version": "0.1.11",
+  "consent": "rejected optional cookies",
+  "nativePlayer": {
+    "readyState": 4,
+    "currentTime": 7.697606,
+    "paused": false
+  },
+  "badge": "1",
+  "detected": [
+    {
+      "title": "Getting hunted is bad, but getting absorbed is worse. 👾🔥 #LilyCAT",
+      "kind": "sabr",
+      "pending": false,
+      "qualities": [
+        "1080p",
+        "720p",
+        "480p",
+        "360p",
+        "240p",
+        "144p"
+      ],
+      "hasContext": true
+    }
+  ],
+  "detectMs": 9613,
+  "task": {
+    "state": "completed",
+    "bytes": 6624539,
+    "saved": true,
+    "validation": {
+      "duration": 48.6225850340136,
+      "tracks": [
+        {
+          "type": "video",
+          "codec": "avc"
+        },
+        {
+          "type": "audio",
+          "codec": "aac"
+        }
+      ],
+      "bytes": 6624539,
+      "method": "local-structure",
+      "checkedAt": 1793556387855
+    },
+    "quality": "720p",
+    "elapsedMs": 11238
+  },
+  "independentFullDecode": {
+    "tool": "development-only FFmpeg",
+    "allAudioAndVideoFrames": true,
+    "exitCode": 0,
+    "width": 720,
+    "height": 1280,
+    "sha256": "a069fb2d543b3a5719523a0b30f166760e51e477998a8cd36b2b1693f8b5cac2"
+  }
+}

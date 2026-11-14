@@ -1,0 +1,38 @@
+{
+  "page": "https://www.youtube.com/watch?v=GVgLsjEJGU0",
+  "date": "2026-11-01T18:05:32.357Z",
+  "version": "0.1.11",
+  "consent": "rejected optional cookies",
+  "nativePlayer": {
+    "readyState": 4,
+    "currentTime": 8.401144,
+    "paused": false
+  },
+  "badge": "1",
+  "detected": [
+    {
+      "title": "Eclectic Soul, Deep House & Afro Swing | Groove Therapy Session 008 | 30 Min Mix",
+      "kind": "sabr",
+      "pending": false,
+      "qualities": [
+        "2160p",
+        "1440p",
+        "1080p",
+        "720p",
+        "480p",
+        "360p",
+        "240p",
+        "144p"
+      ],
+      "hasContext": true
+    }
+  ],
+  "detectMs": 11658,
+  "task": {
+    "state": "failed",
+    "error": "sourceRestricted",
+    "bytes": 1768893,
+    "quality": "240p",
+    "elapsedMs": 12774
+  }
+}

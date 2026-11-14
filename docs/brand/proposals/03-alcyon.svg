@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+<title>Alcydeo — Alcyon</title><desc>Monogramme original : aile en arche et tête de martin-pêcheur, silhouette ouverte évoquant un A.</desc>
+<defs><path id="silhouette" d="M64 409L198 129C216 91 243 72 278 72C319 72 350 99 356 137L470 192L357 186L389 409H306L286 298H200L151 409ZM229 231H275L265 161Z"/></defs>
+<g id="canonical-mark"><use href="#silhouette" fill="#0B70B5" fill-rule="evenodd"/>
+<path d="M303 202C318 198 334 190 348 179L360 243L327 276L303 202Z" fill="#F28C28"/>
+<path d="M350 144L470 192L354 176Z" fill="#071B2D"/>
+<path d="M224 126C248 95 293 95 318 121C281 111 252 119 229 144Z" fill="#2DD4BF"/>
+<circle id="eye" cx="320" cy="145" r="8" fill="#071B2D"/>
+</g></svg>

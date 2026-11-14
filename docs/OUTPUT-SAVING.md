@@ -1,0 +1,11 @@
+# Enregistrement automatique — 0.1.47
+
+Après l’assemblage, les contrôles du moteur portent sur la structure, les pistes, la durée et la présence des premiers/derniers paquets. Alcydeo exige ensuite un fichier OPFS non vide dont la taille correspond exactement à la validation, puis lance automatiquement le téléchargement Chrome vers la destination choisie. La progression reste inférieure à 100 % tant que Chrome n’a pas confirmé la copie complète existante sur disque.
+
+L’ancien contrôle supplémentaire créait une vidéo HTML et attendait son premier rendu pendant dix secondes. Son erreur ou son expiration devenait `codec`, affiché comme « Cette variante de flux n’est pas encore prise en charge », même lorsque le fichier était déjà assemblé et validé. Cela empêchait toute sauvegarde automatique. Ce contrôle est retiré de l’export : un lecteur local incapable de décoder ne justifie pas d’empêcher l’enregistrement du fichier. Les contrôles du moteur, le refus HTML des sources et les aperçus explicites restent présents. L’enregistrement ne promet pas la compatibilité de lecture de tous les codecs sur tous les appareils.
+
+Les anciennes tâches en attente avec la seule erreur `codec`, sans identifiant de téléchargement ni intention native déjà engagée, reprennent automatiquement depuis leur fichier OPFS intact. L’erreur est effacée uniquement après contrôle du fichier, dans la même transaction que la nouvelle intention. Aucun segment n’est retéléchargé. Une copie absente, vide ou de taille incorrecte n’est pas envoyée à Chrome.
+
+Le verrou par tâche et l’intention Blob persistée avant l’appel Chrome sont conservés. Un appel dont la réponse a été perdue est rapproché par son URL locale exacte avant reprise ; une incertitude ne crée pas une nouvelle copie automatiquement. Le mode Enregistrer sous reste un choix de l’utilisateur ; annuler sa fenêtre exige une reprise explicite. Les erreurs de source, d’accès et d’enregistrement ne sont pas effacées en bloc.
+
+Les tests navigateur utilisent des médias originaux locaux et une vraie sortie HLS/OPFS, en simulant seulement le refus du lecteur HTML. Les versions et résultats exacts sont documentés dans [TEST-RESULTS.md](TEST-RESULTS.md). Le profil Chrome Windows de l’utilisateur n’est pas piloté ; aucune publication externe n’est déclenchée.

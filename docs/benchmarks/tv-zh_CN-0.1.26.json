@@ -1,0 +1,14 @@
+{
+  "version": "0.1.26",
+  "browser": "156.0.8078.80",
+  "locale": "zh_CN",
+  "duration": 6,
+  "remote": "function",
+  "airplay": "undefined",
+  "paused": true,
+  "nativePromptInvokedByUI": true,
+  "shortClipReturnedWithoutConnection": true,
+  "feedbackVisible": true,
+  "originalTabInstructionsVisible": true,
+  "realReceiverTested": false
+}

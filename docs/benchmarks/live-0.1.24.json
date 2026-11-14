@@ -1,0 +1,345 @@
+{
+  "version": "0.1.24",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "browser": "156.0.8078.80",
+    "platform": "Linux/WSL2",
+    "nativeWindowsTested": false
+  },
+  "unitTests": 195,
+  "e2e": {
+    "startTime": "2026-11-01T22:28:46.608Z",
+    "duration": 84648.74399999999,
+    "expected": 51,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "sources": [
+    "Original synthetic rolling TS HLS",
+    "Original synthetic rolling muxed fMP4 HLS"
+  ],
+  "output": {
+    "ts": {
+      "browser": "156.0.8078.80",
+      "live": {
+        "blocked": [],
+        "active": false,
+        "startedAt": 1793572137313,
+        "url": "http://127.0.0.1:4179/live-fixture/stream.m3u8?case=bf7bfbd8-191e-4482-bcc4-1ef9430c1a30&format=ts",
+        "bytes": 1895980,
+        "segments": 3,
+        "duration": 6,
+        "initialized": true,
+        "initIdentity": "",
+        "lastSequence": 2,
+        "lastIdentity": "{\"url\":\"http://127.0.0.1:4179/live-fixture/segment-2.ts?case=bf7bfbd8-191e-4482-bcc4-1ef9430c1a30&format=ts&revision=1\"}",
+        "discontinuity": 0
+      },
+      "validation": {
+        "duration": 6.058666666666666,
+        "tracks": [
+          {
+            "type": "video",
+            "codec": "avc"
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ],
+        "bytes": 1838336,
+        "method": "local-structure",
+        "checkedAt": 1793572140447
+      },
+      "requests": [
+        {
+          "path": "/live-fixture/stream.m3u8",
+          "range": null,
+          "step": 0
+        },
+        {
+          "path": "/live-fixture/stream.m3u8",
+          "range": null,
+          "step": 0
+        },
+        {
+          "path": "/live-fixture/stream.m3u8",
+          "range": null,
+          "step": 0
+        },
+        {
+          "path": "/live-fixture/segment-0.ts",
+          "range": null,
+          "step": 0
+        },
+        {
+          "path": "/live-fixture/stream.m3u8",
+          "range": null,
+          "step": 2
+        },
+        {
+          "path": "/live-fixture/segment-1.ts",
+          "range": null,
+          "step": 2
+        },
+        {
+          "path": "/live-fixture/segment-2.ts",
+          "range": null,
+          "step": 2
+        }
+      ],
+      "screenRequests": 0
+    },
+    "fmp4": {
+      "browser": "156.0.8078.80",
+      "live": {
+        "blocked": [],
+        "active": false,
+        "startedAt": 1793572140996,
+        "url": "http://127.0.0.1:4179/live-fixture/stream.m3u8?case=6a256752-019d-444b-99a7-1fff4f524e26&format=fmp4",
+        "bytes": 1837695,
+        "segments": 3,
+        "duration": 6,
+        "initialized": true,
+        "initIdentity": "{\"url\":\"http://127.0.0.1:4179/live-fixture/init.mp4?case=6a256752-019d-444b-99a7-1fff4f524e26&format=fmp4\"}",
+        "lastSequence": 2,
+        "lastIdentity": "{\"url\":\"http://127.0.0.1:4179/live-fixture/segment-2.m4s?case=6a256752-019d-444b-99a7-1fff4f524e26&format=fmp4&revision=1\"}",
+        "discontinuity": 0
+      },
+      "validation": {
+        "duration": 6.0586875,
+        "tracks": [
+          {
+            "type": "video",
+            "codec": "avc"
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ],
+        "bytes": 1837372,
+        "method": "local-structure",
+        "checkedAt": 1793572144111
+      },
+      "requests": [
+        {
+          "path": "/live-fixture/stream.m3u8",
+          "range": null,
+          "step": 0
+        },
+        {
+          "path": "/live-fixture/stream.m3u8",
+          "range": null,
+          "step": 0
+        },
+        {
+          "path": "/live-fixture/stream.m3u8",
+          "range": null,
+          "step": 0
+        },
+        {
+          "path": "/live-fixture/init.mp4",
+          "range": null,
+          "step": 0
+        },
+        {
+          "path": "/live-fixture/segment-0.m4s",
+          "range": null,
+          "step": 0
+        },
+        {
+          "path": "/live-fixture/stream.m3u8",
+          "range": null,
+          "step": 2
+        },
+        {
+          "path": "/live-fixture/segment-1.m4s",
+          "range": null,
+          "step": 2
+        },
+        {
+          "path": "/live-fixture/segment-2.m4s",
+          "range": null,
+          "step": 2
+        }
+      ],
+      "screenRequests": 0
+    }
+  },
+  "packetComparison": [
+    {
+      "format": "ts",
+      "inputBytes": 1895980,
+      "outputBytes": 1838336,
+      "packetIdentical": false,
+      "before": [
+        {
+          "type": "video",
+          "codec": "avc",
+          "packets": 144,
+          "sha256": "81318a5a7487ed80d312f7c87d93a225d3725520b07ac18c4ca397053931ffd1"
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "packets": 284,
+          "sha256": "74e3cea5816d8f3848016cc0f95720a87f90099f5734307e094f47a01caf4bb5"
+        }
+      ],
+      "after": [
+        {
+          "type": "video",
+          "codec": "avc",
+          "packets": 144,
+          "sha256": "aa499bb3393ac5e990a82731f0aea6e85fdcbfb6313d8bcaaab7b08888563d11"
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "packets": 284,
+          "sha256": "b49cdadd9c4e6928f342d3ad71009fd8cfe3f892f34818cfdf59cc57ee5c12f7"
+        }
+      ]
+    },
+    {
+      "format": "fmp4",
+      "inputBytes": 1837695,
+      "outputBytes": 1837372,
+      "packetIdentical": true,
+      "before": [
+        {
+          "type": "video",
+          "codec": "avc",
+          "packets": 144,
+          "sha256": "53e5a59a67d9582ef205b11b7fc2cf40265b90bc1f7789ea72ee463ce83e6f38"
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "packets": 284,
+          "sha256": "b49cdadd9c4e6928f342d3ad71009fd8cfe3f892f34818cfdf59cc57ee5c12f7"
+        }
+      ],
+      "after": [
+        {
+          "type": "video",
+          "codec": "avc",
+          "packets": 144,
+          "sha256": "53e5a59a67d9582ef205b11b7fc2cf40265b90bc1f7789ea72ee463ce83e6f38"
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "packets": 284,
+          "sha256": "b49cdadd9c4e6928f342d3ad71009fd8cfe3f892f34818cfdf59cc57ee5c12f7"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "explicit start/stop",
+    "no getDisplayMedia for stream path",
+    "new segments only, no repeated media fetch",
+    "near-live-edge start, not old DVR",
+    "ENDLIST finish",
+    "missing segments, discontinuity, changed source and HTML: partial marked file",
+    "real manager closure and committed-byte recovery with no source requests",
+    "cancel with no exported file",
+    "encrypted and separated-audio refusal, no key fetch",
+    "persisted stop without runtime message",
+    "blacklist before network",
+    "actual existing tab capture and interrupted WebM recovery",
+    "ten native locales, Arabic/Urdu RTL, 1440/390 px"
+  ],
+  "scope": "Targeted local Chrome scenarios; not the whole suite or all Internet sites",
+  "limitations": [
+    "Unencrypted combined HLS TS/fMP4 only; separate audio and DASH live refused",
+    "No DRM decryption or delta/part-only playlists",
+    "No missing broadcast time recovered",
+    "Short six-second recorded windows measured; no universal size or speed claim",
+    "Windows chooser/CRX installation and real public live websites not tested"
+  ],
+  "finalSmoke": {
+    "passed": 5,
+    "exitCode": 0,
+    "includes": "live TS/fMP4, detected popup source, interrupted recovery and persisted stop"
+  },
+  "store": {
+    "version": "0.1.24",
+    "storeBuild": true,
+    "browser": "156.0.8078.80",
+    "size": [
+      1280,
+      800
+    ],
+    "live": {
+      "blocked": [],
+      "active": false,
+      "startedAt": 1793572361688,
+      "url": "http://127.0.0.1:4179/live-fixture/stream.m3u8?case=a7c2a49d-7afd-4c42-9497-538d51c4c342&format=fmp4",
+      "bytes": 1837695,
+      "segments": 3,
+      "duration": 6,
+      "initialized": true,
+      "initIdentity": "{\"url\":\"http://127.0.0.1:4179/live-fixture/init.mp4?case=a7c2a49d-7afd-4c42-9497-538d51c4c342&format=fmp4\"}",
+      "lastSequence": 2,
+      "lastIdentity": "{\"url\":\"http://127.0.0.1:4179/live-fixture/segment-2.m4s?case=a7c2a49d-7afd-4c42-9497-538d51c4c342&format=fmp4&revision=1\"}",
+      "discontinuity": 0
+    },
+    "validation": {
+      "duration": 6.0586875,
+      "tracks": [
+        {
+          "type": "video",
+          "codec": "avc"
+        },
+        {
+          "type": "audio",
+          "codec": "aac"
+        }
+      ],
+      "bytes": 1837372,
+      "method": "local-structure",
+      "checkedAt": 1793572364868
+    },
+    "saved": true,
+    "captureModeRetained": true,
+    "publication": false
+  },
+  "site": {
+    "pages": 102,
+    "locales": 10,
+    "guidesVisited": 20,
+    "base": "/alcydeo/",
+    "publication": false
+  },
+  "packaging": {
+    "testedRuntimeAndLocalesMatch": true,
+    "filesChecked": 23,
+    "artifacts": [
+      {
+        "name": "alcydeo-0.1.24-chrome.zip",
+        "bytes": 2121014,
+        "sha256": "3d9fae83215eb93b7939a875ae9109896f31394e5371319ecf3d0c8c1fb9a6ce"
+      },
+      {
+        "name": "alcydeo-store-0.1.24-chrome.zip",
+        "bytes": 2071009,
+        "sha256": "63cddd3629abf222bc359261451d7d1558dc2c4b64ea0f80d8bdccbaef887291"
+      },
+      {
+        "name": "alcydeo-0.1.24-local-test.crx",
+        "bytes": 2134203,
+        "sha256": "24cda9f017c023cc4d9443e09a1ba478e76045f50e2138aea38c0259510ea47d"
+      },
+      {
+        "name": "alcydeo-pages-0.1.24.zip",
+        "bytes": 2269156,
+        "sha256": "56a8d75fae2033764359c904ec2228da4214a7d263ce9ad2ec4d951f4d225863"
+      }
+    ]
+  }
+}

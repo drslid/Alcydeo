@@ -1,0 +1,52 @@
+{
+  "browser": "156.0.8078.80",
+  "os": "linux",
+  "bytes": 2203363043,
+  "elapsedMs": 18450,
+  "connections": 4,
+  "parts": [
+    {
+      "start": 0,
+      "end": 550840760,
+      "received": 550840761
+    },
+    {
+      "start": 550840761,
+      "end": 1101681521,
+      "received": 550840761
+    },
+    {
+      "start": 1101681522,
+      "end": 1652522282,
+      "received": 550840761
+    },
+    {
+      "start": 1652522283,
+      "end": 2203363042,
+      "received": 550840760
+    }
+  ],
+  "validation": {
+    "duration": 7226.799,
+    "tracks": [
+      {
+        "type": "video",
+        "codec": "avc"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "bytes": 2203363043,
+    "method": "local-structure",
+    "checkedAt": 1793558253460
+  },
+  "sha256": "0a8792d01b95550ffa523ef26af288252f05ef3bfe96e9301eeeba34b65c7610",
+  "equalsOriginal": true,
+  "limitations": [
+    "Chrome Linux, Windows untested",
+    "Original repeated synthetic course",
+    "No reencoding or segmented remux tested"
+  ]
+}

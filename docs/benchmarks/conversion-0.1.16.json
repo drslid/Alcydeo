@@ -1,0 +1,27 @@
+{
+  "version": "0.1.16",
+  "browser": "156.0.8078.80",
+  "platform": "linux",
+  "source": "Original synthetic VP8/Opus WebM",
+  "elapsedMs": 865,
+  "validation": {
+    "duration": 6.037333333333334,
+    "tracks": [
+      {
+        "type": "video",
+        "codec": "avc"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "bytes": 715411,
+    "method": "local-structure",
+    "checkedAt": 1793734407614
+  },
+  "videoEncoded": true,
+  "audioEncoded": true,
+  "httpRequests": 0,
+  "limitation": "One short local fixture; not a universal codec, size or speed claim"
+}

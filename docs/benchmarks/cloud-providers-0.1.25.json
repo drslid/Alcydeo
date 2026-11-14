@@ -1,0 +1,39 @@
+{
+  "version": "0.1.25",
+  "browser": "156.0.8078.80",
+  "store": true,
+  "providers": [
+    "gofile",
+    "pcloud",
+    "drive",
+    "onedrive"
+  ],
+  "protocolSimulation": true,
+  "realProviderUpload": false,
+  "uploads": 1,
+  "state": "completed",
+  "bytes": 525622,
+  "jobDestinationCleared": true,
+  "noFabricatedReadLink": true,
+  "identityGranted": false,
+  "publication": false,
+  "unitTests": 207,
+  "e2eCases": 28,
+  "e2eUnexpected": 0,
+  "e2eSkipped": 0,
+  "nativeLocales": 10,
+  "rtl": [
+    "ar",
+    "ur"
+  ],
+  "layouts": [
+    1440,
+    900,
+    390
+  ],
+  "visualInspection": [
+    "fr desktop light/dark",
+    "ar narrow"
+  ],
+  "nativeWindowsTested": false
+}

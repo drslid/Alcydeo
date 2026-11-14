@@ -1,0 +1,12 @@
+{
+  "version": "0.1.36",
+  "networkYouTube": true,
+  "metadataOnly": true,
+  "browser": "156.0.8078.80",
+  "browseRequests": 1,
+  "catalog": {
+    "title": "Blender Open Movies",
+    "count": 18,
+    "complete": true
+  }
+}

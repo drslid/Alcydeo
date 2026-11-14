@@ -1,0 +1,56 @@
+{
+  "ordinaryRequestObserved": true,
+  "hasPoToken": true,
+  "clientInfoKeys": [
+    "hl",
+    "deviceMake",
+    "deviceModel",
+    "clientName",
+    "clientVersion",
+    "osName",
+    "osVersion"
+  ],
+  "result": {
+    "counts": {
+      "video": 442775,
+      "audio": 163495
+    },
+    "heads": {
+      "audio": [
+        0,
+        0,
+        0,
+        24,
+        102,
+        116,
+        121,
+        112,
+        100,
+        97,
+        115,
+        104
+      ],
+      "video": [
+        0,
+        0,
+        0,
+        28,
+        102,
+        116,
+        121,
+        112,
+        100,
+        97,
+        115,
+        104
+      ]
+    },
+    "responses": [
+      {
+        "status": 200,
+        "mime": "application/vnd.yt-ump"
+      }
+    ],
+    "failures": []
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "version": "0.1.64",
+  "date": "2026-11-08",
+  "scope": "Cast error/recovery corrections and bounded TikTok access diagnosis; not a fix for direct TikTok/private-PC playback on Shield.",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "browser": "Isolated Linux CFT156.0.8078.4",
+    "userBrowser": "Windows Chrome156.0.8078.76",
+    "physicalReceiverInLaboratory": false
+  },
+  "staticChecks": {
+    "unitTests": 998,
+    "unitFiles": 56,
+    "typecheck": true,
+    "lint": true
+  },
+  "installedExtension": {
+    "local": {
+      "filesAndActivation": {
+        "report": ".local/cast64/local-files-final.json",
+        "passed": 8,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "seconds": 61.239
+      },
+      "focusAndLanguages": {
+        "report": ".local/cast64/local-focus-final.json",
+        "passed": 2,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "seconds": 3.852
+      },
+      "webHandoff": {
+        "report": ".local/cast64/handoff-final.json",
+        "passed": 2,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "seconds": 1.989
+      },
+      "nativeSources": {
+        "report": ".local/cast64/native-source-final.json",
+        "suite": "tv.spec.ts",
+        "passed": 18,
+        "failed": 0,
+        "note": "The separate old handoff assertion in this mixed run expected a cancelled picker error; corrected handoff passes separately. Original failure retained."
+      }
+    },
+    "localCases": 30,
+    "store": {
+      "report": ".local/cast64/store-files-final.json",
+      "passed": 10,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "seconds": 63.038
+    },
+    "storeCases": 10
+  },
+  "webPlayer": {
+    "controlledCafContracts": {
+      "report": ".local/cast64/web-two-guard-final.json",
+      "passed": 26,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "seconds": 18.163
+    },
+    "sdkMediaContractSimulated": true,
+    "note": "Real browser page/original media and local packaged fonts; SDK session/media contract is simulated, no laboratory receiver."
+  },
+  "userDiagnostic": {
+    "context": "alcydeo-web-cast",
+    "error": "tvNoConnection",
+    "sdkCode": "cancel",
+    "mediaType": "video/mp4",
+    "sourceLength": 481,
+    "sourceHasQuery": true,
+    "routeConnected": true,
+    "loadCount": 2,
+    "loadAcknowledged": true,
+    "playerState": "IDLE",
+    "mediaLoaded": false,
+    "inference": "An SDK session is present and commands were acknowledged; neither playback nor an exact HTTP/CORS/codec cause follows from this report."
+  },
+  "reproducedDefects": [
+    "Picker cancellation overwrote an existing media failure, playback or loading state; first cancellation falsely reported connection failure.",
+    "Known final Media idle error could disappear with getMediaSession; observers must be tied to session/attempt.",
+    "Old getter/observed Media and cloned session IDs could contaminate a retry; two bounded retired identities guard the new attempt.",
+    "Native-file failure left the complete Chrome tab guide hidden; recovery now focuses it and makes it primary without another copy."
+  ],
+  "privacy": [
+    "Original-page link is optional clean HTTP(S), at most2048 chars, no credentials/query/fragment; excluded from MediaInfo and report.",
+    "Diagnostic build is bounded semver; URLs, source titles, signed tokens and cookie values excluded.",
+    "TikTok probes use normal include/omit and Range0-4095, no invented Origin/Referer/Cookie/signature, no full media transfer."
+  ],
+  "limits": [
+    "Three native TikTok addresses returned206 in source-page include context and403 anonymously/from web, including video-tag load; no autonomous candidate found in this measured session.",
+    "Physical receiver cause for the user exact signed URL is not observed.",
+    "Direct TikTok Cast and private PC file transport to Shield remain unresolved in extension-only scope.",
+    "Chrome tab casting remains the explicit local recovery route.",
+    "Production Pages remains unpublished; local build uses static localhost4180 and Store sender URL remains empty."
+  ],
+  "publication": false
+}

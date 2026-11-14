@@ -1,0 +1,270 @@
+{
+  "version": "0.1.64",
+  "case": "Public TikTok post supplied by user; see TV.md. Native URLs remain only in ignored local evidence.",
+  "observation": {
+    "completed": true,
+    "scope": "Read-only bounded HTTP/media previews of the exact supplied TikTok post; no source title, account, post ID or signed CDN URL in this report.",
+    "startedAt": "2026-11-08T20:02:42.219Z",
+    "finishedAt": "2026-11-08T20:10:30.203Z",
+    "environment": {
+      "browser": "156.0.8078.4",
+      "browserMode": "GUI; fresh isolated profile; no UA override",
+      "extensionVersion": "0.1.63",
+      "blocker": {
+        "version": "2026.1103.1743",
+        "officialArchiveDigestMatches": true,
+        "mode": "Complete",
+        "completeSelected": true,
+        "rulesets": [
+          "ublock-filters",
+          "easylist",
+          "easyprivacy",
+          "pgl",
+          "ublock-badware",
+          "urlhaus-full"
+        ]
+      }
+    },
+    "selectedPlaybackFormat": {
+      "codec": "H.264",
+      "height": 1024,
+      "width": 576,
+      "quality": "1024p · H.264",
+      "checkedState": "ready",
+      "knownBytes": 2683229,
+      "urlCount": 2
+    },
+    "requestPolicy": {
+      "prefixRange": "bytes=0-4095",
+      "sampleLimitBytes": 4096,
+      "timeoutPerRequestMs": 8000,
+      "manualCredentialsModes": [
+        "include",
+        "omit"
+      ],
+      "originRefererCookieHeadersInvented": false,
+      "cookieValuesReadOrCopied": false,
+      "redirects": "error",
+      "automaticMediaPlaybackBlocked": true
+    },
+    "playbackControls": {
+      "report": "control/report-sanitized.json",
+      "results": [
+        {
+          "index": 0,
+          "kind": "native-playback",
+          "urlLength": 477,
+          "pairedDurationMs": 156,
+          "nativeInclude": {
+            "status": 206,
+            "contentType": "video/mp4",
+            "contentRange": "bytes 0-4095/2683229",
+            "sampleBytes": 4096,
+            "ftyp": true,
+            "urlUnchanged": true
+          },
+          "nativeOmit": {
+            "status": 403,
+            "contentType": "text/html",
+            "sampleBytes": 515,
+            "html": true,
+            "urlUnchanged": true
+          },
+          "webOmit": {
+            "fetchError": "TypeError",
+            "httpStatus": 403,
+            "readableBytes": 0
+          }
+        },
+        {
+          "index": 1,
+          "kind": "native-playback",
+          "urlLength": 477,
+          "pairedDurationMs": 210,
+          "nativeInclude": {
+            "status": 206,
+            "contentType": "video/mp4",
+            "contentRange": "bytes 0-4095/2683229",
+            "sampleBytes": 4096,
+            "ftyp": true,
+            "urlUnchanged": true
+          },
+          "nativeOmit": {
+            "status": 403,
+            "contentType": "text/html; charset=utf-8",
+            "sampleBytes": 425,
+            "html": false,
+            "urlUnchanged": true
+          },
+          "webOmit": {
+            "fetchError": "TypeError",
+            "httpStatus": 403,
+            "readableBytes": 0
+          }
+        }
+      ]
+    },
+    "downloadAddrControls": {
+      "report": "download/report-sanitized.json",
+      "foundInExactNativeJson": true,
+      "nativeDistinctUrlCount": 1,
+      "potentialWatermark": true,
+      "codecAndWatermarkNotVerified": true,
+      "silentlySubstitutedForPlaybackQuality": false,
+      "results": [
+        {
+          "index": 0,
+          "kind": "native-downloadAddr",
+          "urlLength": 480,
+          "pairedDurationMs": 499,
+          "nativeInclude": {
+            "status": 206,
+            "contentType": "video/mp4",
+            "contentRange": "bytes 0-4095/2781228",
+            "sampleBytes": 4096,
+            "ftyp": true,
+            "urlUnchanged": true
+          },
+          "nativeOmit": {
+            "status": 403,
+            "contentType": "text/html",
+            "sampleBytes": 515,
+            "html": true,
+            "urlUnchanged": true
+          },
+          "webOmit": {
+            "fetchError": "TypeError",
+            "httpStatus": 403,
+            "readableBytes": 0
+          }
+        }
+      ]
+    },
+    "htmlMediaWithoutCrossorigin": {
+      "preload": "metadata",
+      "playCalled": false,
+      "crossoriginAttributeAdded": false,
+      "requestHeadersAdded": false,
+      "aggregateBodyBudgetPerOriginBytes": 131072,
+      "stopThresholdBytes": 65536,
+      "throttleBytesPerSecond": 2048,
+      "playback": [
+        {
+          "index": 0,
+          "kind": "native-playback",
+          "reason": "media-error",
+          "metadata": false,
+          "width": 0,
+          "height": 0,
+          "duration": null,
+          "mediaError": 4,
+          "crossOrigin": null,
+          "network": {
+            "status": 403,
+            "contentType": "text/html",
+            "accessControlAllowOrigin": "https://www.tiktok.com",
+            "accessControlAllowCredentials": "true",
+            "crossOriginResourcePolicy": null
+          },
+          "corsErrorCode": null,
+          "blockedReason": null,
+          "observedBodyBytes": 0
+        },
+        {
+          "index": 1,
+          "kind": "native-playback",
+          "reason": "media-error",
+          "metadata": false,
+          "width": 0,
+          "height": 0,
+          "duration": null,
+          "mediaError": 4,
+          "crossOrigin": null,
+          "network": {
+            "status": 403,
+            "contentType": "text/html; charset=utf-8",
+            "accessControlAllowOrigin": "https://www.tiktok.com",
+            "accessControlAllowCredentials": "true",
+            "crossOriginResourcePolicy": null
+          },
+          "corsErrorCode": null,
+          "blockedReason": null,
+          "observedBodyBytes": 0
+        }
+      ],
+      "downloadAddr": [
+        {
+          "index": 0,
+          "kind": "native-downloadAddr",
+          "reason": "media-error",
+          "metadata": false,
+          "width": 0,
+          "height": 0,
+          "duration": null,
+          "mediaError": 4,
+          "crossOrigin": null,
+          "network": {
+            "status": 403,
+            "contentType": "text/html",
+            "accessControlAllowOrigin": "https://www.tiktok.com",
+            "accessControlAllowCredentials": "true",
+            "crossOriginResourcePolicy": null
+          },
+          "corsErrorCode": null,
+          "blockedReason": null,
+          "observedBodyBytes": 0
+        }
+      ],
+      "observedBodyBytes": 0,
+      "withinBudget": true
+    },
+    "observations": [
+      "Two native H.264 playback alternatives returned HTTP 206 video/mp4 and exactly 4096 bytes with ftyp from the real TikTok frame using the browser credential mode include. The same URL returned HTTP 403 HTML using omit within 156 ms and 210 ms paired series.",
+      "The native downloadAddr was distinct and advertised a different total byte size; its own include/omit pair repeated 206 MP4 versus 403 HTML within 499 ms.",
+      "Anonymous CORS fetch from localhost failed; CDP observed HTTP 403 responses, not only a JavaScript TypeError.",
+      "Plain HTML video tags without a crossorigin attribute also received HTTP 403 and media error 4 for all three addresses; no metadata became available.",
+      "The observed access depends on normal browser context/credential mode. The experiment does not identify the particular cookie or server-side rule, and none was inspected or forged."
+    ],
+    "anonymousStandaloneCandidateFound": false,
+    "chosenCandidateIndex": null,
+    "localAliasCreated": false,
+    "limitations": [
+      "Only the two native alternatives of one H.264 playback quality and the single native downloadAddr exposed in the observed exact-post JSON were tested; no universal TikTok claim.",
+      "Signed native URLs are time-sensitive. These observations do not replay or identify the exact URL used in the user session.",
+      "Only bounded prefixes were read; no complete source was downloaded, decoded, converted or uploaded.",
+      "The downloadAddr may represent a different or watermarked rendition; its codec and watermark were not established from a prefix.",
+      "No Cast SDK LOAD, receiver selection, physical Shield or local-file casting was tested. The HTTP evidence does not diagnose the user local-file failure or prove a TV codec/hardware fault.",
+      "The successful Google demo is user-reported and was not repeated by this probe."
+    ],
+    "safety": {
+      "downloadCount": 0,
+      "sourceTaskCount": 0,
+      "fullMediaDownloaded": false,
+      "providerUpload": false,
+      "receiverSelection": false,
+      "productChanges": false,
+      "allIsolatedProfilesClosed": true,
+      "rootPreviewServerLeftRunning": true
+    },
+    "rawLocalOnly": {
+      "playback": "control/raw/native-candidates.json",
+      "downloadAddr": "download/raw/native-candidates.json"
+    },
+    "reports": [
+      "report-sanitized.json",
+      "control/report-sanitized.json",
+      "download/report-sanitized.json"
+    ],
+    "errors": [],
+    "readyForDocumentation": true,
+    "conclusion": "For these two native playback URLs and one distinct native downloadAddr, the same bytes=0-4095 Range request from the real TikTok frame returned HTTP 206 MP4 with credentials include and HTTP 403 HTML with credentials omit. Anonymous localhost fetch and ordinary video metadata preload without crossorigin also received HTTP 403. No anonymous standalone URL was found in this bounded sample. Direct Cast remains unresolved; no receiver, complete decode, codec compatibility or watermark conclusion follows from these observations.",
+    "documentationStatus": {
+      "directCast": "unresolved",
+      "tabCastingFallback": "existing fallback; not exercised by this probe"
+    }
+  },
+  "physicalShieldPlaybackVerified": false,
+  "directCastResolved": false,
+  "privatePcTransportAdded": false,
+  "publication": false
+}

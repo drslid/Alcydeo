@@ -1,0 +1,9 @@
+{
+  "version": "0.1.27",
+  "browser": "156.0.8078.80",
+  "nativePresentationApi": true,
+  "mode": "headless, default automation feature switches",
+  "receiverAvailable": false,
+  "realReceiverTested": false,
+  "error": "No compatible receiver found. Check that both devices use the same network."
+}

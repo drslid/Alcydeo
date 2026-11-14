@@ -1,0 +1,32 @@
+{
+  "platform": "Linux Chrome for Testing",
+  "automaticDirectoryVerifiedWithoutCDPOverride": true,
+  "headlessSaveAsWithCDPOverride": true,
+  "nativeWindowsDialogTested": false,
+  "calls": [
+    {
+      "conflictAction": "uniquify",
+      "filename": "Courses/2026/Save direct video.mp4",
+      "saveAs": false,
+      "url": "http://127.0.0.1:4179/media/low.mp4"
+    },
+    {
+      "conflictAction": "uniquify",
+      "filename": "Courses/2026/Save segmented video.mp4",
+      "saveAs": false,
+      "url": "blob:output"
+    },
+    {
+      "conflictAction": "uniquify",
+      "filename": "Courses/2026/Save direct video.mp4",
+      "saveAs": true,
+      "url": "http://127.0.0.1:4179/media/low.mp4"
+    },
+    {
+      "conflictAction": "uniquify",
+      "filename": "Courses/2026/Save segmented video.mp4",
+      "saveAs": true,
+      "url": "blob:output"
+    }
+  ]
+}

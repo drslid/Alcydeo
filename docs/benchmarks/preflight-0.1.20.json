@@ -1,0 +1,17 @@
+{
+  "version": "0.1.20",
+  "browser": "156.0.8078.4",
+  "fixture": true,
+  "rejected": [
+    "HTML body under video/mp4",
+    "404",
+    "tiny complete file",
+    "HTML child HLS manifest"
+  ],
+  "boundedRange": "bytes=0-4095",
+  "maximumParallelChecks": 2,
+  "unknownRedirectRetained": true,
+  "noDownloadDuringChecks": true,
+  "actualFileEqualsOriginal": true,
+  "workerRestart": true
+}

@@ -1,0 +1,249 @@
+{
+  "version": "0.1.50",
+  "date": "2026-11-06",
+  "scope": "Public platform checks, one intermediate Instagram export, a later metadata-only public probe and subsequent packaged-candidate fixture verification",
+  "environment": {
+    "browser": "156.0.8078.4",
+    "mode": "Native graphical Chrome on Linux, new isolated test profiles",
+    "personalProfileUsed": false,
+    "accountOrCookiesCopied": false,
+    "userAgentOverride": false,
+    "accessBypass": false
+  },
+  "blocker": {
+    "repository": "https://github.com/uBlockOrigin/uBOL-home",
+    "release": "https://github.com/uBlockOrigin/uBOL-home/releases/tag/2026.1103.1743",
+    "asset": "https://github.com/uBlockOrigin/uBOL-home/releases/download/2026.1103.1743/uBOLite_2026.1103.1743.chromium.zip",
+    "version": "2026.1103.1743",
+    "sha256": "79236476535b63706749e088e0ce99bb31d3d2ff15fabb4d7e990be23d6e4613",
+    "matchesOfficialGithubAssetDigest": true,
+    "mode": "Complete",
+    "modeSelectedThroughDashboardUi": true,
+    "enabledRulesets": [
+      "ublock-filters",
+      "easylist",
+      "easyprivacy",
+      "pgl",
+      "ublock-badware",
+      "urlhaus-full"
+    ],
+    "testToolOnly": true,
+    "includedInAlcydeo": false
+  },
+  "instagram": {
+    "page": "https://www.instagram.com/reels/DfStKkeyi9N/",
+    "baseline": {
+      "version": "0.1.49",
+      "httpStatus": 200,
+      "cards": 34,
+      "genericTitle": "Instagram",
+      "issue": "Preloaded recommendations and playback fragments offered as separate full MP4 files"
+    },
+    "singleExport": {
+      "version": "0.1.50",
+      "buildStage": "Intermediate exact-post build before final bounded metadata enrichment",
+      "httpStatus": 200,
+      "anonymousPublicPage": true,
+      "optionalCookies": "declined",
+      "nativeCatalog": "Exact shortcode and native media ID in already-loaded application/json xig_logged_out_reels_feed data",
+      "nativeVideoVersionEntries": 3,
+      "distinctCompleteMp4Urls": 1,
+      "badgeBeforePopup": "1",
+      "cards": 1,
+      "title": "This might be my best work of art yet",
+      "qualityLabelAtExport": "Original source",
+      "selectedUrlExactlyNative": true,
+      "nativeUploadDimensionsNotAssignedToVariant": {
+        "width": 1080,
+        "height": 1920
+      },
+      "explicitDownloadClicks": 1,
+      "downloadCount": 1,
+      "chromeState": "complete",
+      "taskState": "completed",
+      "saved": true,
+      "exists": true,
+      "bytes": 21929838,
+      "sha256": "7f490fb33b84cb018e662ebca50d7cfdee2a8f81c01c595431df8724d8bfd450",
+      "independentCompleteDecode": {
+        "duration": 120.48689342403628,
+        "width": 720,
+        "height": 1280,
+        "videoCodec": "avc",
+        "audioCodec": "aac",
+        "videoSamples": 3614,
+        "audioSamples": 2597,
+        "firstVideo": 0,
+        "firstAudio": -0.11469387755102041,
+        "lastVideo": 120.46666666666667,
+        "lastAudio": 120.48975056689342,
+        "method": "Local Mediabunny 1.65.0 / WebCodecs decode of every audio/video sample",
+        "decodeElapsedMs": 4012
+      },
+      "independentDeclaredSampleCounts": {
+        "method": "Independent original Python ISO BMFF box walker; stsz sample_count per track",
+        "tracks": [
+          {
+            "handler": "vide",
+            "declaredSamples": 3614
+          },
+          {
+            "handler": "soun",
+            "declaredSamples": 2597
+          }
+        ],
+        "matchesDecodedAllSamples": true
+      }
+    },
+    "parserBounds": {
+      "scriptNodes": 128,
+      "perScriptChars": 2097152,
+      "totalParsedChars": 8388608,
+      "visitedObjects": 20000,
+      "maximumDepth": 28,
+      "formats": 24
+    },
+    "tests": {
+      "parserAndMappingUnitPassed": 26,
+      "installedChromePassed": 8,
+      "installedChromeBuildStage": "Intermediate 0.1.50 build",
+      "fixtureMedia": "Original local MP4s; actual selected disk bytes verified",
+      "red49": "Expected one badge, received two preloaded-fragment/recommendation cards",
+      "sameUrlMetadataRegression": "Focused unit test failed before preserving checked dimensions, size and codec label",
+      "installedChromeFinalPassed": 8,
+      "installedChromeFinalBuildStage": "Public metadata-probe snapshot 0.1.50",
+      "subsequentPackagedCandidate": {
+        "runtime": {
+          "version": "0.1.50",
+          "manifestSha256": "4159ce0d4aa144388a7361522d490b4c3c900c2cb965e045109ea6299527d0a5",
+          "runtimeTreeSha256": "7618c838b1ac17eb657cd853f739bfa133ba7b0ef4fe49a91e44fd064fa72f63",
+          "method": "SHA256 of ordered UTF-8 relative-path NUL per-file-sha256 NUL byte-size newline transcript",
+          "fileCount": 99,
+          "bytes": 5718942
+        },
+        "passed": 8,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0,
+        "durationMs": 8447.976,
+        "publicNavigationOrExportRepeated": false,
+        "browsersClosed": true
+      }
+    },
+    "finalMetadataRecheck": {
+      "status": "passed",
+      "version": "0.1.50",
+      "buildStage": "Public metadata-probe runtime 0.1.50 after bounded direct-file metadata changes and before later unrelated DASH/YouTube cache fixes",
+      "httpStatus": 200,
+      "nativeGui": true,
+      "freshIsolatedCompleteProfile": true,
+      "badgeBeforePopup": "1",
+      "cards": 1,
+      "variantCount": 1,
+      "selectedUrlExactlyNative": true,
+      "sourceCheck": {
+        "state": "ready",
+        "width": 720,
+        "height": 1280,
+        "size": 21929838,
+        "contentType": "video/mp4"
+      },
+      "popupLabel": "1280p",
+      "popupDimensions": "720 × 1280",
+      "popupSize": "21.9 MB",
+      "nativeFileSampleResponses": [
+        {
+          "status": 206,
+          "contentType": "video/mp4",
+          "range": "bytes 0-4095/21929838",
+          "size": "4096"
+        },
+        {
+          "status": 206,
+          "contentType": "video/mp4",
+          "range": "bytes 78852-95235/21929838",
+          "size": "16384"
+        }
+      ],
+      "additionalMetadataRequests": 1,
+      "additionalMetadataBytes": 16384,
+      "metadataPreservedAfterPopupReload": true,
+      "checkTimestampPreservedAfterPopupReload": true,
+      "createdTasks": 0,
+      "newDownloads": 0,
+      "profileClosed": true
+    },
+    "limitations": [
+      "One specific public Reel/session verified, not all feeds/private/login-restricted posts",
+      "The native separate VP9/HE-AAC playback MPD is not used while a complete MP4 exists",
+      "One MP4 was exported on the intermediate build; the final runtime was checked through prefixes and metadata only, without another public-file export."
+    ]
+  },
+  "odysee": {
+    "page": "https://odysee.com/@gohantips:1/This-New-Germany-Inspired-Pok%C3%A9mon-Game-Has-Choices,-Regional-Forms---More!:5",
+    "testedVersion": "0.1.49",
+    "httpStatus": 200,
+    "firstCapture": "No source exposed before the initial capture",
+    "secondNavigation": "Native HLS playback exposed and detected without a product change",
+    "cards": 1,
+    "badge": "1",
+    "readyQualities": [
+      "1080p",
+      "720p",
+      "360p",
+      "144p"
+    ],
+    "nativePlayback": {
+      "width": 1280,
+      "height": 720,
+      "durationAboutSeconds": 631
+    },
+    "evidence": "Native manifests and two existing 4096-byte prefix samples per quality",
+    "downloadedCompleteFile": false,
+    "createdDownloadTask": false,
+    "limitations": [
+      "No complete-file/remux verification",
+      "Some native playback segment requests later returned429; playback was stopped and profile closed",
+      "The first navigation did not expose a player before its initial capture"
+    ]
+  },
+  "tiktok": {
+    "page": "https://www.tiktok.com/@ler0i_off/video/7700630488859315489",
+    "singleExportVersion": "0.1.49",
+    "metadataOnlyIntermediateRecheckVersion": "0.1.50",
+    "report": "tiktok-public-0.1.50.json",
+    "additionalExportOnRecheck": false,
+    "finalMetadataRecheckVersion": "0.1.50",
+    "finalMetadataRecheckStatus": "passed",
+    "finalNewTasksOrExports": 0
+  },
+  "metadataFallbackBounds": {
+    "existingPrefixBytes": 4096,
+    "maximumAdditionalGetRequests": 4,
+    "maximumAdditionalBytes": 65536,
+    "sharedDeadlineMs": 8000,
+    "fullSampleTablesRead": false,
+    "absentStrongEtag": "Advisory dimensions only; no whole-file version verification claim",
+    "availableStrongEtagValidated": true
+  },
+  "allTestProfilesClosed": true,
+  "publicMediaAndCapturesDistributed": false,
+  "rawJsonSignedUrlsAndLocalPathsIncluded": false,
+  "externalUpload": false,
+  "externalPublication": false,
+  "finalRuntime": {
+    "version": "0.1.50",
+    "manifestSha256": "4159ce0d4aa144388a7361522d490b4c3c900c2cb965e045109ea6299527d0a5",
+    "runtimeTreeSha256": "73aa20a4ec7af4c0ac8173d561abcf4e9f468071fd32635d447573751583b330",
+    "method": "SHA256 of ordered UTF-8 relative-path NUL per-file-sha256 NUL byte-size newline transcript",
+    "fileCount": 99,
+    "bytes": 5718625,
+    "stage": "Snapshot used for the public metadata probes; before later unrelated DASH/YouTube cache fixes, not the packaged-candidate fingerprint"
+  },
+  "subsequentChanges": {
+    "description": "Later source-refresh handling for explicit DASH rechecks, local YouTube adaptive-cache handling and a TypeScript variantId shadow fix changed the packaged candidate. Instagram parsing and the public metadata-probe code did not change.",
+    "publicProbeRepeated": false,
+    "publicEvidenceRuntimeTreeSha256": "73aa20a4ec7af4c0ac8173d561abcf4e9f468071fd32635d447573751583b330",
+    "packagedCandidateRuntimeTreeSha256": "7618c838b1ac17eb657cd853f739bfa133ba7b0ef4fe49a91e44fd064fa72f63"
+  }
+}

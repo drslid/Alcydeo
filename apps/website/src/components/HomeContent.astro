@@ -1,0 +1,93 @@
+---
+import catalogs from '../../../../packages/i18n/catalogs.json';
+import { homeCopy } from '../data/home.mjs';
+interface Props { locale: keyof typeof catalogs; version: string; privacyTitle: string }
+const { locale, version, privacyTitle } = Astro.props;
+const c = catalogs[locale];
+const text = homeCopy[locale];
+const route = locale === 'zh_CN' ? 'zh-cn' : locale;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const guide = (page: string) => `${base}/${route}/guides/${page}/`;
+const releaseUrl = `https://github.com/drslid/Alcydeo/releases/tag/v${version}`;
+---
+<div class="home-content not-content">
+  <div class="preview-strip">
+    <p><span class="preview-dot" aria-hidden="true"></span>{text.preview} <bdi>v{version}</bdi></p>
+    <span>Chrome desktop · MIT</span>
+  </div>
+
+  <section class="home-overview" aria-labelledby="overview-title">
+    <div class="overview-copy">
+      <p class="section-label"><span aria-hidden="true">01 /</span> {c.detected}</p>
+      <h2 id="overview-title">{text.introTitle}</h2>
+      <p class="section-lead">{text.intro}</p>
+      <p class="format-line"><bdi>MP4</bdi><span aria-hidden="true">/</span><bdi>HLS</bdi><span aria-hidden="true">/</span><bdi>DASH</bdi></p>
+      <a class="text-link" href={guide('use')}>{text.docs}<span aria-hidden="true">↗</span></a>
+      <p class="quiet-note">{c.sourceCheckHint}</p>
+    </div>
+    <figure class="popup-figure">
+      <img class="shot-light" src={`${base}/images/popup-light.png`} alt={c.detected} width="525" height="600" loading="lazy" />
+      <img class="shot-dark" src={`${base}/images/popup-dark.png`} alt={c.detected} width="525" height="600" loading="lazy" />
+      <figcaption>{text.caption}</figcaption>
+    </figure>
+  </section>
+
+  <div class="privacy-band">
+    <div><strong>{c.local}</strong><p>{c.privacy}</p></div>
+    <div class="language-fact"><strong>10</strong><span>{c.language}</span></div>
+  </div>
+
+  <section class="home-workspace" aria-labelledby="workspace-title">
+    <div class="workspace-heading">
+      <p class="section-label"><span aria-hidden="true">02 /</span> {c.library}</p>
+      <h2 id="workspace-title">{text.workspaceTitle}</h2>
+      <p class="section-lead">{text.workspace}</p>
+    </div>
+    <figure class="wide-figure">
+      <img src={`${base}/images/library-dark.png`} alt={c.library} width="1440" height="1000" loading="lazy" />
+      <figcaption>{text.caption}</figcaption>
+    </figure>
+    <div class="tools-showcase">
+      <div>
+        <h3>{c.mediaTools}</h3>
+        <ul class="tool-list">
+          <li>{c.trimTool}</li><li>{c.cropTool}</li><li>{c.mergeTool}</li><li>{c.convertTool}</li><li>{c.compressTool}</li>
+        </ul>
+        <p>{c.conversionRestartHint}</p>
+        <a class="text-link" href={guide('settings')}>{c.settings}<span aria-hidden="true">↗</span></a>
+      </div>
+      <figure>
+        <img src={`${base}/images/crop-dark.png`} alt={c.cropTool} width="1440" height="1378" loading="lazy" />
+        <figcaption>{text.caption}</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="home-install" id="install" aria-labelledby="install-title">
+    <div>
+      <p class="section-label"><span aria-hidden="true">03 /</span> Chrome desktop</p>
+      <h2 id="install-title">{text.installTitle}</h2>
+      <p class="section-lead">{text.installIntro}</p>
+      <a class="download-link" href={releaseUrl}>{text.download}<span aria-hidden="true">↓</span></a>
+      <a class="text-link" href={guide('install')}>{text.docs}<span aria-hidden="true">↗</span></a>
+    </div>
+    <ol class="install-steps">
+      {text.installSteps.map((step: string, index: number) => <li><span aria-hidden="true">0{index + 1}</span><p>{step}</p></li>)}
+    </ol>
+  </section>
+
+  <section class="home-scope" aria-labelledby="scope-title">
+    <header><p class="section-label">{text.preview}</p><h2 id="scope-title">{text.scopeTitle}</h2></header>
+    <div class="scope-row"><h3><bdi>MP4 / HLS / DASH</bdi></h3><p>{text.scope}</p></div>
+    <div class="scope-row"><h3>{c.cloud}</h3><p>{text.cloud}</p></div>
+    <div class="scope-row"><h3>Google Cast / AirPlay</h3><p>{text.tv}</p></div>
+    <a class="text-link" href={guide('limits')}>{text.docs}<span aria-hidden="true">↗</span></a>
+  </section>
+
+  <footer class="home-footer">
+    <a href="https://github.com/drslid/Alcydeo">GitHub <span aria-hidden="true">↗</span></a>
+    <a href={guide('privacy')}>{privacyTitle}</a>
+    <a href={guide('changelog')}>v{version}</a>
+    <span>MIT · Alcydeo</span>
+  </footer>
+</div>

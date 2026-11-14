@@ -1,0 +1,293 @@
+{
+  "version": "0.1.38",
+  "date": "2026-11-03",
+  "node": "24.22.2",
+  "pnpm": "12.5.1",
+  "browser": "156.0.8078.80",
+  "platform": "Linux/WSL2",
+  "unitTests": 399,
+  "newUnitTests": 22,
+  "typecheck": "pass",
+  "lint": "pass",
+  "browserTests": {
+    "targetedLocal": {
+      "startTime": "2026-11-03T19:33:08.252Z",
+      "duration": 302776.006,
+      "expected": 128,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "commandExitCode": 0,
+    "fullSuiteRun": false,
+    "storeX": {
+      "startTime": "2026-11-03T19:33:09.407Z",
+      "duration": 3109.6020000000003,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "storeCommandExitCode": 0,
+    "storeRuntime": {
+      "version": "0.1.38",
+      "browser": "156.0.8078.80",
+      "synthetic": true,
+      "youtubeMedia": 0,
+      "youtubeBadge": "",
+      "youtubeLiveMedia": 0,
+      "youtubePlaylistUi": 0,
+      "playlistBrowseRequests": 0,
+      "playlistApiRejected": true,
+      "ordinaryMedia": 1,
+      "ordinaryKind": "direct"
+    }
+  },
+  "publicX": {
+    "version": "0.1.38",
+    "networkX": true,
+    "page": "https://x.com/MoviesCIips/status/2117600764822466899",
+    "browser": "156.0.8078.80",
+    "date": "2026-11-03T19:33:49.917Z",
+    "accessBypass": false,
+    "status": 200,
+    "beforePopup": {
+      "badge": "1",
+      "media": [
+        {
+          "title": "People getting kill*d daily🔞 on X / X",
+          "providerId": "x:2117600764822466899:2117600683423879169",
+          "kind": "direct",
+          "variants": [
+            {
+              "label": "320p",
+              "height": 320,
+              "host": "video.twimg.com"
+            }
+          ]
+        }
+      ]
+    },
+    "checked": [
+      {
+        "title": "People getting kill*d daily🔞 on X / X",
+        "providerId": "x:2117600764822466899:2117600683423879169",
+        "variants": [
+          {
+            "label": "320p",
+            "check": {
+              "checkedAt": 1793734432985,
+              "contentType": "video/mp4",
+              "size": 1545730,
+              "state": "ready"
+            }
+          }
+        ]
+      }
+    ],
+    "catalogItems": [
+      {
+        "mediaId": "2117600683423879169",
+        "formatCount": 2
+      }
+    ],
+    "download": {
+      "filename": "People getting kill_d daily🔞 on X _ X (2).mp4",
+      "state": "complete",
+      "exists": true,
+      "bytes": 1545730
+    },
+    "explicitLocalFileVerification": true,
+    "task": {
+      "title": "People getting kill_d daily🔞 on X _ X",
+      "state": "completed",
+      "saved": true,
+      "validation": {
+        "duration": 57.55733333333333,
+        "tracks": [
+          {
+            "type": "video",
+            "codec": "avc"
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ],
+        "bytes": 1545730,
+        "method": "local-structure",
+        "checkedAt": 1793734435513
+      }
+    }
+  },
+  "xFullDecode": {
+    "version": "0.1.38",
+    "method": "independent full WebCodecs decode of every audio/video sample",
+    "browser": "156.0.8078.80",
+    "files": [
+      {
+        "source": "actual.mp4",
+        "bytes": 1545730,
+        "duration": 57.55733333333333,
+        "width": 320,
+        "height": 320,
+        "videoSamples": 1150,
+        "audioSamples": 2698,
+        "lastVideo": 57.500088444444444,
+        "lastAudio": 57.55733333333333
+      }
+    ]
+  },
+  "publicYouTubeMix": {
+    "version": "0.1.38",
+    "networkYouTube": true,
+    "source": "https://www.youtube.com/watch?v=ckPbVDXw9Gc&list=RDCLAK5uy_ly6s4irLuZAcjEDwJmqcA_UtSipMyGgbQ&index=2",
+    "browser": "156.0.8078.80",
+    "date": "2026-11-03T19:25:35.854Z",
+    "maximumSelected": 2,
+    "accessBypass": false,
+    "httpStatus": 200,
+    "catalog": {
+      "id": "RDCLAK5uy_ly6s4irLuZAcjEDwJmqcA_UtSipMyGgbQ",
+      "title": "The Hit List",
+      "count": 25,
+      "complete": true,
+      "snapshot": true
+    },
+    "selected": [
+      {
+        "index": 0,
+        "videoId": "ckPbVDXw9Gc",
+        "title": "KAROL G, Judeline, rusowsky - BbY WOW (Live From New York)"
+      },
+      {
+        "index": 1,
+        "videoId": "6Db-cEgbmC4",
+        "title": "Dj Goja x Jason Derulo x Melody - Mi Chico (Official Music Video)"
+      }
+    ],
+    "batch": {
+      "state": "completed",
+      "items": [
+        {
+          "videoId": "ckPbVDXw9Gc",
+          "index": 0,
+          "title": "KAROL G, Judeline, rusowsky - BbY WOW (Live From New York)",
+          "state": "failed",
+          "error": "sourceRestricted"
+        },
+        {
+          "videoId": "6Db-cEgbmC4",
+          "index": 1,
+          "title": "Dj Goja x Jason Derulo x Melody - Mi Chico (Official Music Video)",
+          "state": "failed",
+          "error": "sourceRestricted"
+        }
+      ]
+    },
+    "tasks": [
+      {
+        "title": "002 - Dj Goja x Jason Derulo x Melody - Mi Chico (Official Music Video)",
+        "state": "failed",
+        "error": "sourceRestricted",
+        "destination": {
+          "folder": "Alcydeo",
+          "subfolder": "The Hit List",
+          "saveAs": false
+        }
+      },
+      {
+        "title": "001 - KAROL G, Judeline, rusowsky - BbY WOW (Live From New York)",
+        "state": "failed",
+        "error": "sourceRestricted",
+        "destination": {
+          "folder": "Alcydeo",
+          "subfolder": "The Hit List",
+          "saveAs": false
+        }
+      }
+    ],
+    "downloads": [],
+    "otherEntriesStarted": false
+  },
+  "limits": {
+    "nativeScriptCharacters": 2097152,
+    "captureScripts": 32,
+    "captureCharacters": 8388608,
+    "readerCandidateTexts": 160,
+    "parseCharacters": 8388608,
+    "walkObjects": 20000,
+    "walkDepth": 32,
+    "postMedia": 4,
+    "formatsPerMedia": 24,
+    "nativeCdns": [
+      "video.twimg.com",
+      "pbs.twimg.com"
+    ],
+    "mixScope": "currently loaded native panel snapshot only",
+    "musicTestMaximumSelected": 2
+  },
+  "notValidated": [
+    "native Windows dialogs and CRX installation",
+    "very large direct-file and real quota-override browser cases",
+    "every X feed, live/private post or regional layout",
+    "X SPA routes without new bootstrap require a page reload",
+    "successful actual YouTube music transfer: both requested test tracks refused",
+    "physical receiver access"
+  ],
+  "publication": false,
+  "artifacts": {
+    "version": "0.1.38",
+    "publication": false,
+    "files": [
+      {
+        "name": "alcydeo-0.1.38-chrome.zip",
+        "bytes": 2353314,
+        "sha256": "1d8aeb684d903eb0c70f6e493ef686723a293666aa14b3b000eea4ddf280dcb5"
+      },
+      {
+        "name": "alcydeo-0.1.38-local-test.crx",
+        "bytes": 2367446,
+        "sha256": "aded355dbbc7d7db3e15d7c5661a7ac56a84dd135c4f32281c24eedeab9e68a4"
+      },
+      {
+        "name": "alcydeo-store-0.1.38-chrome.zip",
+        "bytes": 2296994,
+        "sha256": "95d3ed0a29eb268f559bc683b4776e79accafeff0b004259729a99d73def4590"
+      },
+      {
+        "name": "alcydeo-pages-0.1.38.zip",
+        "bytes": 2657199,
+        "sha256": "85d4a554fed8b7015c15cbaf1e326e828f718d8c471a6980c599f8801a288828"
+      },
+      {
+        "name": "alcydeo-brand-0.1.38.zip",
+        "bytes": 1447690,
+        "sha256": "eebbb09d7b227488547aa786c085dd037083e3dd4732669ea6079dcd3078548a"
+      }
+    ],
+    "local": {
+      "files": 99,
+      "archiveEqualsBuild": true,
+      "executableAndUiMatchTestedBuild": true,
+      "regeneratedLicenseArchives": [],
+      "correspondingPinnedSourcesUnchanged": true
+    },
+    "store": {
+      "files": 99,
+      "archiveEqualsBuild": true,
+      "executableAndUiMatchTestedBuild": true,
+      "regeneratedLicenseArchives": [],
+      "correspondingPinnedSourcesUnchanged": true
+    },
+    "crx3PayloadMatchesLocalZip": true,
+    "pages": {
+      "files": 277,
+      "htmlPages": 103,
+      "localeRoutes": 10,
+      "base": "/alcydeo/",
+      "archiveEqualsBuild": true
+    },
+    "brandKitFiles": 40
+  }
+}

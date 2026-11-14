@@ -1,0 +1,18 @@
+{
+  "version": "0.1.36",
+  "method": "independent full WebCodecs decode of every audio/video sample",
+  "browser": "156.0.8078.80",
+  "files": [
+    {
+      "source": "public-1.mp4",
+      "bytes": 3262174,
+      "duration": 60.070022675736965,
+      "width": 854,
+      "height": 480,
+      "videoSamples": 1440,
+      "audioSamples": 2587,
+      "lastVideo": 60,
+      "lastAudio": 60.07002267573696
+    }
+  ]
+}

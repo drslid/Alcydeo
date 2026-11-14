@@ -1,0 +1,38 @@
+{
+  "version": "0.1.31",
+  "browser": "156.0.8078.80",
+  "genuineToolbarInvocation": true,
+  "popupCapture": true,
+  "youtubeLivePlayerFixture": false,
+  "realYouTubeLiveCapture": true,
+  "publicPage": "https://www.youtube.com/watch?v=a47ckXKZjxI",
+  "publicationMedia": false,
+  "annotationDrawn": true,
+  "annotationRemovedAfterStop": true,
+  "actualCapture": "1080p",
+  "validation": {
+    "duration": 3.746,
+    "tracks": [
+      {
+        "type": "video",
+        "codec": "vp9"
+      },
+      {
+        "type": "audio",
+        "codec": "opus"
+      }
+    ],
+    "bytes": 1330618,
+    "method": "local-structure",
+    "checkedAt": 1793723353671
+  },
+  "bytes": 1330618,
+  "randomThumbnail": true,
+  "visualRecordingTrim": true,
+  "windowsTested": false,
+  "videoPlayingBeforeCapture": true,
+  "pageConsentOverlayVisible": true,
+  "cleanVideoOnlyCapture": false,
+  "captureScope": "entire visible tab including its consent overlay; not extracted media",
+  "mediaPublished": false
+}

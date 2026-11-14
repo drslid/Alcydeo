@@ -1,0 +1,19 @@
+{
+  "tool": "Development-only FFmpeg; never bundled or required by Alcydeo",
+  "outputs": [
+    {
+      "file": "artifacts/evidence/binary-media/proxy.mp4",
+      "bytes": 1837555,
+      "sha256": "f76cd91d59b4a73dad0f37521aaa4d16623d7cfd87386d6aaf6683c979384c36",
+      "allAudioVideoFramesDecoded": true,
+      "exitCode": 0
+    },
+    {
+      "file": "artifacts/evidence/binary-media/video.mp4",
+      "bytes": 1837555,
+      "sha256": "f76cd91d59b4a73dad0f37521aaa4d16623d7cfd87386d6aaf6683c979384c36",
+      "allAudioVideoFramesDecoded": true,
+      "exitCode": 0
+    }
+  ]
+}

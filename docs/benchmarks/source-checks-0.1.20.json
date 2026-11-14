@@ -1,0 +1,379 @@
+{
+  "version": "0.1.20",
+  "browser": "156.0.8078.80",
+  "environment": "Linux/WSL2; native Windows not driven",
+  "scope": "Latest result per case across selected runs; not a complete full-suite run",
+  "counts": {
+    "passed": 61
+  },
+  "cases": [
+    {
+      "file": "binary-media.spec.ts",
+      "title": "generic binary proxy response keeps the final signed source and rejects HTML",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "binary-media.spec.ts",
+      "title": "generic binary video response keeps the final signed source and rejects HTML",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "detect, choose quality, download, verify and find the file",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "HLS TS, HLS fMP4 separate audio, and DASH create playable MP4 files",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "popup closes and service worker restarts without losing the library",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "empty and dark popup states at actual dimensions",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "protected and missing sources are rejected by preflight without creating downloads or requesting keys",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "pause checkpoints, concurrent managers, resume and cancellation",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "closing the manager recovers a persisted checkpoint after lease expiry",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "dynamic DOM observation rescans an authorized page",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "revoked host permissions stop manifest access",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "grouping.spec.ts",
+      "title": "direct quality links share a card, retain the selection and save the chosen file",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "grouping.spec.ts",
+      "title": "master and observed HLS qualities become one card without a manual lookup",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale en and layout",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale es and layout",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale fr and layout",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale de and layout",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale zh_CN and layout",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale ar and layout",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale ru and layout",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale pt and layout",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale hi and layout",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale ur and layout",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in en",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in es",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in fr",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in de",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in zh_CN",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in ar",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in ru",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in pt",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in hi",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in ur",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "preflight.spec.ts",
+      "title": "probes alternatives, rejects disguised HTML/tiny/404 and downloads only the working source",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "preflight.spec.ts",
+      "title": "uses the top-level page title for unnamed iframe media and the real saved filename",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "compact proposals truncate long titles, remove filename fields and show only actual thumbnails",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "save mode, Chrome folder shortcut and subfolder persist without a page filename editor",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "direct and assembled downloads pass both native save modes and use the chosen relative folder",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "a dismissed save request can retry a direct file and reuse an assembled output",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "sources.spec.ts",
+      "title": "redirected player and final file share one real quality; HTML sources stay excluded",
+      "status": "passed",
+      "evidence": "regressions.json"
+    },
+    {
+      "file": "tv.spec.ts",
+      "title": "native TV prototype and unavailable AirPlay in en",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "tv.spec.ts",
+      "title": "native TV prototype and unavailable AirPlay in fr",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "tv.spec.ts",
+      "title": "native TV prototype and unavailable AirPlay in ar",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "tv.spec.ts",
+      "title": "native TV prototype and unavailable AirPlay in ur",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "preflight.spec.ts",
+      "title": "lowering the minimum size restores a previously rejected source without reloading its page",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "preflight.spec.ts",
+      "title": "the native guard still rejects a source that becomes HTML after its successful sample",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "regressions.spec.ts",
+      "title": "empty src attributes never become the HTML page URL",
+      "status": "passed",
+      "evidence": "final-media.json"
+    },
+    {
+      "file": "regressions.spec.ts",
+      "title": "authorized pages populate their badge with the popup closed",
+      "status": "passed",
+      "evidence": "final-media.json"
+    },
+    {
+      "file": "regressions.spec.ts",
+      "title": "HLS in an authorized cross-origin iframe is detected and downloadable",
+      "status": "passed",
+      "evidence": "final-media.json"
+    },
+    {
+      "file": "regressions.spec.ts",
+      "title": "cross-origin MIME-only sources include Range totals and download as media",
+      "status": "passed",
+      "evidence": "final-media.json"
+    },
+    {
+      "file": "regressions.spec.ts",
+      "title": "automatic detection is enabled by default and stops when disabled",
+      "status": "passed",
+      "evidence": "final-media.json"
+    },
+    {
+      "file": "regressions.spec.ts",
+      "title": "an HTML session is rejected by preflight without creating a native download",
+      "status": "passed",
+      "evidence": "final-media.json"
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "TS with timed ID3 keeps audio/video, reports metadata omission and has no native warning",
+      "status": "passed",
+      "evidence": "final-media.json"
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "initialization and media byte ranges from one MP4 produce a complete file",
+      "status": "passed",
+      "evidence": "final-media.json"
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "observed playlists identify opaque MP4 fragments before opening the popup",
+      "status": "passed",
+      "evidence": "final-media.json"
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "an unsupported video track is refused instead of silently saving only audio",
+      "status": "passed",
+      "evidence": "final-media.json"
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "rejecting an HTML native transfer does not suggest a filename after cancellation",
+      "status": "passed",
+      "evidence": "final-media.json"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "settings persist, reject invalid counts and produce a bit-identical file over four concurrent ranges",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "invalid wrong response saves no partial file",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "invalid html response saves no partial file",
+      "status": "passed",
+      "evidence": "final-package.json"
+    },
+    {
+      "file": "preflight.spec.ts",
+      "title": "a MIME discovered during the sample makes a dynamic endpoint downloadable",
+      "status": "passed",
+      "evidence": "final-package.json"
+    }
+  ],
+  "realReceiverTested": false,
+  "externalPublication": false
+}

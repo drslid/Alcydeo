@@ -1,0 +1,43 @@
+{
+  "version": "0.1.46",
+  "date": "2026-11-06T09:59:43.545Z",
+  "browser": "156.0.8078.4",
+  "sourcePage": "https://coflix.esq/episode/how-to-ruin-diwali-meet-the-parents-1x3/",
+  "publication": false,
+  "headersOrSignaturesModified": false,
+  "actualManifestVersion": "0.1.46",
+  "status": 200,
+  "cards": 1,
+  "badge": "1",
+  "qualities": [
+    "488p"
+  ],
+  "nativePlayerGateRetained": true,
+  "elapsedMs": 27168,
+  "task": {
+    "state": "completed",
+    "saved": true,
+    "validation": {
+      "duration": 2651.56,
+      "tracks": [
+        {
+          "type": "video",
+          "codec": "avc"
+        },
+        {
+          "type": "audio",
+          "codec": "aac"
+        }
+      ],
+      "bytes": 409639001,
+      "method": "local-structure",
+      "checkedAt": 1793959218683
+    },
+    "completedFragments": 266
+  },
+  "download": {
+    "state": "complete",
+    "exists": true,
+    "bytes": 409639001
+  }
+}

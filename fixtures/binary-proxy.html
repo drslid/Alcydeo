@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Signed proxy lesson</title>
+<video title="Signed proxy lesson" controls preload="metadata"></video>
+<script>
+(async()=>{await fetch('/binary/false.mp4');const r=await fetch('/api/video_proxy.php?file=%2Foriginal%2Flesson.mp4&cdn=localhost');const video=document.querySelector('video');video.src=URL.createObjectURL(new Blob([await r.arrayBuffer()],{type:'video/mp4'}));})();
+</script><iframe src="/binary/iframe.mp4" width="1" height="1" title="HTML reader"></iframe><a href="/binary/iframe.mp4">HTML reader wrapper</a><a href="/binary/denied.mp4">Expired media</a><script>fetch("/binary/denied.mp4");fetch("/binary/hidden-html.mp4");</script></html>

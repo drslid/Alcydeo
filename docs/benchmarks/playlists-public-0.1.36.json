@@ -1,0 +1,176 @@
+{
+  "version": "0.1.36",
+  "networkYouTube": true,
+  "source": "https://www.youtube.com/playlist?list=PLav47HAVZMjnTFVZL-aImCQIC0uLZtNCz",
+  "observedAt": "2026-11-03T18:15:43.776Z",
+  "browser": "156.0.8078.80",
+  "accessBypass": false,
+  "httpStatus": 200,
+  "consent": "rejected optional cookies through ordinary UI",
+  "catalog": {
+    "id": "PLav47HAVZMjnTFVZL-aImCQIC0uLZtNCz",
+    "title": "Blender Open Movies",
+    "count": 18,
+    "complete": true,
+    "available": 18,
+    "titles": [
+      {
+        "index": 0,
+        "title": "OVERGROWN - Blender Feature Film (Teaser)",
+        "available": true
+      },
+      {
+        "index": 1,
+        "title": "SINGULARITY - Painterly Space Adventure",
+        "available": true
+      },
+      {
+        "index": 2,
+        "title": "Project Gold - Blender Stylized Rendering Showcase",
+        "available": true
+      },
+      {
+        "index": 3,
+        "title": "WING IT! - Blender Open Movie",
+        "available": true
+      },
+      {
+        "index": 4,
+        "title": "CHARGE - Blender Open Movie",
+        "available": true
+      },
+      {
+        "index": 5,
+        "title": "Sprite Fright - Blender Open Movie",
+        "available": true
+      },
+      {
+        "index": 6,
+        "title": "Coffee Run - Blender Open Movie",
+        "available": true
+      },
+      {
+        "index": 7,
+        "title": "Spring - Blender Open Movie",
+        "available": true
+      },
+      {
+        "index": 8,
+        "title": "The Daily Dweebs - 8K UHD Stereoscopic 3D",
+        "available": true
+      },
+      {
+        "index": 9,
+        "title": "Agent 327: Operation Barbershop",
+        "available": true
+      },
+      {
+        "index": 10,
+        "title": "Caminandes 3: Llamigos",
+        "available": true
+      },
+      {
+        "index": 11,
+        "title": "Glass Half - Blender animated cartoon",
+        "available": true
+      },
+      {
+        "index": 12,
+        "title": "Cosmos Laundromat - First Cycle. Official Blender Foundation release.",
+        "available": true
+      },
+      {
+        "index": 13,
+        "title": "\"Caminandes 2: Gran Dillama\" - Blender Animated Short",
+        "available": true
+      },
+      {
+        "index": 14,
+        "title": "Tears of Steel - Blender VFX Open Movie",
+        "available": true
+      },
+      {
+        "index": 15,
+        "title": "Sintel - Open Movie by Blender Foundation",
+        "available": true
+      },
+      {
+        "index": 16,
+        "title": "Big Buck Bunny",
+        "available": true
+      },
+      {
+        "index": 17,
+        "title": "Elephants Dream",
+        "available": true
+      }
+    ]
+  },
+  "batch": {
+    "state": "completed",
+    "selected": [
+      {
+        "index": 8,
+        "title": "The Daily Dweebs - 8K UHD Stereoscopic 3D"
+      },
+      {
+        "index": 13,
+        "title": "\"Caminandes 2: Gran Dillama\" - Blender Animated Short"
+      }
+    ],
+    "items": [
+      {
+        "index": 8,
+        "title": "The Daily Dweebs - 8K UHD Stereoscopic 3D",
+        "state": "completed"
+      },
+      {
+        "index": 13,
+        "title": "\"Caminandes 2: Gran Dillama\" - Blender Animated Short",
+        "state": "failed",
+        "error": "sourceRestricted"
+      }
+    ],
+    "tasks": [
+      {
+        "title": "014 - _Caminandes 2_ Gran Dillama_ - Blender Animated Short",
+        "state": "failed",
+        "error": "sourceRestricted"
+      },
+      {
+        "title": "009 - The Daily Dweebs - 8K UHD Stereoscopic 3D",
+        "state": "completed",
+        "saved": true,
+        "validation": {
+          "duration": 60.070022675736965,
+          "tracks": [
+            {
+              "type": "video",
+              "codec": "avc"
+            },
+            {
+              "type": "audio",
+              "codec": "aac"
+            }
+          ],
+          "bytes": 3262174,
+          "method": "local-structure",
+          "checkedAt": 1793729754281
+        }
+      }
+    ]
+  },
+  "diskExports": [
+    {
+      "file": "public-1.mp4",
+      "bytes": 3262174,
+      "failure": null
+    }
+  ],
+  "publicPagination": {
+    "source": "https://www.youtube.com/playlist?list=UUSMOQeBJ2RAnuFungnQOxLg",
+    "title": "Uploads from Blender",
+    "count": 1593,
+    "complete": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": "0.1.63",
+  "reportedBy": "user",
+  "date": "2026-11-08",
+  "platform": "Windows Chrome156.0.8078.76",
+  "receiver": "Nvidia Shield",
+  "sender": "Alcydeo original web player with official Google Cast SDK, local preview",
+  "tests": [
+    {
+      "scope": "device selection",
+      "outcome": "Shield appears",
+      "evidence": "La Shield apparaît"
+    },
+    {
+      "scope": "W3C MP4 trailer",
+      "outcome": "receiver selected but playback failed",
+      "causeEstablished": false
+    },
+    {
+      "scope": "official Google Chromecast Ultra Ad sample",
+      "catalogDurationSeconds": 37,
+      "httpSizeBytes": 3358787,
+      "outcome": "playback works",
+      "evidence": "La ca fonctionne"
+    }
+  ],
+  "laboratoryPhysicalReceiver": false,
+  "privatePcFileTransportValidated": false,
+  "universalSourcesClaimed": false,
+  "publication": false
+}

@@ -1,0 +1,115 @@
+{
+  "version": "0.2.0",
+  "date": "2026-11-14",
+  "channel": "First public preview; no Store submission",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "browser": "Isolated Chromium 156 laboratory profiles; original local fixtures only"
+  },
+  "staticChecks": {
+    "typecheck": true,
+    "lint": true,
+    "unitTests": 1032,
+    "unitFiles": 60,
+    "knownDependencyAdvisories": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0
+    }
+  },
+  "browser": {
+    "explicitCiSmoke": {
+      "passed": 62,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "seconds": 148.33
+    },
+    "files": [
+      "extension.spec.ts",
+      "segmented.spec.ts",
+      "site-access.spec.ts",
+      "popup-locales.spec.ts",
+      "cast-web.spec.ts",
+      "cast-handoff.spec.ts"
+    ],
+    "additionalInterface": {
+      "passed": 27,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "seconds": 39.75
+    },
+    "publicSite": {
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "seconds": 12.28
+    },
+    "nativeMobileLanguageAndTheme": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "seconds": 0.72
+    },
+    "totalSelected": 101,
+    "completeRepositoryE2eSuite": false
+  },
+  "website": {
+    "pages": 103,
+    "checkedHtmlCssLinks": 3416,
+    "localeRoutes": 10,
+    "base": "/Alcydeo/",
+    "desktopNarrowThemeLocaleViews": 40,
+    "mobileHeaderExtraViews": 12,
+    "mobileControlsPixels": 44,
+    "realArabicUrduHindiFontsVerified": true,
+    "strictLinksAndAssets": true,
+    "warnings": 0,
+    "syntheticFixtureScreenshots": true
+  },
+  "actualFileEvidence": {
+    "chromeSaved": true,
+    "bytes": 1837555,
+    "sha256": "f76cd91d59b4a73dad0f37521aaa4d16623d7cfd87386d6aaf6683c979384c36",
+    "exactOriginalBytes": true,
+    "realThumbnail": true,
+    "visualCropExportWithAudioChecked": true,
+    "originalRetained": true
+  },
+  "correctionsBeforePublication": [
+    "Known optional MPEG-TS ID3 warning was emitted by the bounded prefix parser in the background worker. It now shares the exact metadata filter with concurrency-safe restoration; unknown warnings and codec rejection stay tested.",
+    "The byte-range test expected four media transfers but omitted two newer prefix probes. Its assertion now separates the exact two probes and four transfers; no arbitrary ranges accepted.",
+    "Landing-page language/theme controls were hidden at mobile width without a sidebar. Native 44px selectors now remain visible and navigate EN to FR to UR.",
+    "A real standalone404 replaces virtual Starlight locale404 links without relaxing the link checker."
+  ],
+  "sourceHygiene": {
+    "unfilteredLogsAndFourRawBrowserReportsExcluded": true,
+    "localPreparationNotesExcluded": true,
+    "individualReferenceSessionsRemoved": true,
+    "noSecretPatternDetected": true,
+    "proprietaryReferenceInstalledOrRedistributed": false,
+    "mplAndLgplNoticesAndSourcesRetained": true
+  },
+  "publicationTargets": {
+    "repository": "https://github.com/drslid/Alcydeo",
+    "pages": "https://drslid.github.io/Alcydeo/",
+    "release": "https://github.com/drslid/Alcydeo/releases/tag/v0.2.0",
+    "githubPublicationAuthorized": true,
+    "chromeStoreSubmitted": false,
+    "firefoxBuildValidated": false
+  },
+  "limits": [
+    "No physical TV receiver in the laboratory; the earlier Google sample is user-reported playback, not proof of this TikTok or private-file Cast.",
+    "Direct private PC file transport to Shield is not implemented; AirPlay is unavailable in Windows Chrome.",
+    "Cloud tests are controlled protocols; no real provider upload is performed for this publication.",
+    "Large-file/performance and full E2E corpus are not rerun; prior versioned measurements retain their scope.",
+    "YouTube remains experimental in the development preview and excluded from the separate Store build."
+  ],
+  "intermediateFailures": "The two CI RED reports and the initial mobile-site RED are preserved in ignored local evidence. Final selected runs pass without retries or skips."
+}

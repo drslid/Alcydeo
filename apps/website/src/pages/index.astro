@@ -1,0 +1,80 @@
+---
+import { version } from '../../../../package.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const languages = [['en','English'],['es','Español'],['fr','Français'],['de','Deutsch'],['zh-cn','简体中文'],['ar','العربية'],['ru','Русский'],['pt','Português'],['hi','हिन्दी'],['ur','اردو']];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="A free Chrome desktop extension to find videos, save them locally and keep your library private. Ten languages, local video tools and no account." />
+    <meta name="theme-color" content="#071B2D" />
+    <meta property="og:image" content={`https://drslid.github.io${base}/images/social.png`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href={`https://drslid.github.io${base}/`} />
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    <title>Alcydeo — Your videos. Your device.</title>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href={`${base}/en/`} aria-label="Alcydeo"><img src={`${base}/brand/wordmark-dark.svg`} width="180" height="56" alt="Alcydeo" /></a>
+      <a class="github" href="https://github.com/drslid/Alcydeo">GitHub <span aria-hidden="true">↗</span></a>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="title">
+        <div>
+          <p class="eyebrow"><span aria-hidden="true"></span> First public preview · v{version}</p>
+          <h1 id="title">Your videos.<br />Your device.</h1>
+          <p class="summary">Find a video. Choose its quality. Keep it close.<br />A free Chrome extension, with a private local library and video tools that run on your device.</p>
+          <div class="actions"><a class="primary" href={`${base}/en/`}>Explore Alcydeo <span aria-hidden="true">→</span></a><a class="secondary" href={`https://github.com/drslid/Alcydeo/releases/tag/v${version}`}>Get the preview <span aria-hidden="true">↓</span></a></div>
+          <p class="note">Chrome desktop · Free and open source · No Alcydeo account</p>
+        </div>
+        <img class="emblem" src={`${base}/brand/kingfisher.svg`} width="320" height="320" alt="" />
+      </section>
+      <section class="languages" aria-labelledby="languages-title">
+        <div><h2 id="languages-title">Make yourself at home.</h2><p>Read the guides in your language.</p></div>
+        <nav aria-label="Languages">{languages.map(([lang,label]) => <a href={`${base}/${lang}/`} lang={lang} dir={lang==='ar'||lang==='ur'?'rtl':'ltr'}>{label}<span aria-hidden="true">↗</span></a>)}</nav>
+      </section>
+    </main>
+    <footer><span>MIT · Alcydeo</span><a href={`${base}/en/guides/privacy/`}>Privacy</a><a href={`${base}/en/guides/limits/`}>Compatibility and limits</a></footer>
+  </body>
+</html>
+<style>
+  :global(*){box-sizing:border-box}
+  :global(html){color-scheme:dark;background:#071b2d;color:#eef5fc;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+  :global(body){max-width:74rem;margin:auto;padding-inline:clamp(1.25rem,4vw,3rem);line-height:1.75}
+  :global(a){color:inherit;text-decoration:none}
+  :global(a:focus-visible){outline:3px solid #2dd4bf;outline-offset:6px}
+  header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1.5rem;border-bottom:1px solid #294458}
+  .brand img{display:block;width:11rem;height:auto}
+  .github{color:#a9bdcf;font-size:.9rem}
+  .github span{margin-inline-start:.5rem}
+  .intro{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,.8fr);gap:4rem;align-items:center;padding-block:6rem}
+  .eyebrow{display:flex;gap:.75rem;align-items:center;margin:0 0 2rem;color:#a9bdcf;font-size:.8rem}
+  .eyebrow span{width:.4rem;height:.4rem;border-radius:50%;background:#f28c28}
+  h1{margin:0;font-size:clamp(3rem,6.5vw,5.6rem);font-weight:750;line-height:1.05;letter-spacing:-.045em}
+  .summary{max-width:45ch;margin:2rem 0;color:#a9bdcf;font-size:1.1rem;line-height:1.9;text-wrap:pretty}
+  .emblem{width:100%;max-width:20rem;height:auto;justify-self:center}
+  .actions{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center}
+  .primary{display:inline-flex;align-items:center;gap:2rem;padding:.7rem 1.25rem;border-radius:.4rem;background:#0b70b5;color:white;font-weight:650}
+  .primary:hover{background:#095e98}
+  .secondary{color:#69b5ef;font-weight:650}
+  .secondary span{margin-inline-start:.75rem}
+  .note{margin:1.5rem 0 0;color:#91a9bd;font-size:.75rem}
+  .languages{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:4rem;padding-block:3rem;border-top:1px solid #294458}
+  h2{margin:0;font-size:1.7rem;font-weight:650;letter-spacing:-.025em;line-height:1.3}
+  .languages p{margin:.75rem 0 0;color:#91a9bd;font-size:.9rem}
+  nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 2rem}
+  nav a{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-block:.7rem;border-bottom:1px solid #294458;font-size:.9rem}
+  nav a:hover{color:#69b5ef;border-color:#69b5ef}
+  nav span{color:#91a9bd;font-size:.8rem}
+  footer{display:flex;flex-wrap:wrap;gap:1rem 2rem;padding-block:1.5rem;border-top:1px solid #294458;color:#91a9bd;font-size:.75rem}
+  footer span{margin-inline-end:auto}
+  @font-face{font-family:AlcydeoArabic;src:url('../../public/fonts/NotoNaskhArabic-arabic.woff2') format('woff2');font-weight:400 700;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+FB50-FDFF,U+FE70-FEFF}
+  @font-face{font-family:AlcydeoDevanagari;src:url('../../public/fonts/NotoSansDevanagari-devanagari.woff2') format('woff2');font-weight:400 700;font-display:swap;unicode-range:U+0900-097F,U+A8E0-A8FF}
+  :lang(ar),:lang(ur){font-family:AlcydeoArabic,sans-serif;font-size:1.05rem}
+  :lang(hi){font-family:AlcydeoDevanagari,sans-serif}
+  @media(max-width:48rem){.intro{grid-template-columns:minmax(0,1fr);gap:2rem;padding-block:3rem}.emblem{order:-1;width:7rem;justify-self:start}.languages{grid-template-columns:minmax(0,1fr);gap:2rem}}
+  @media(max-width:25rem){nav{gap:0 1rem}.brand img{width:9rem}.actions{gap:1.5rem}.primary{width:100%;justify-content:space-between}}
+</style>

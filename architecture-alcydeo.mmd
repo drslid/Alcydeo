@@ -1,0 +1,37 @@
+flowchart TB
+    SITE["Page vidéo et CDN autorisés"]
+
+    subgraph EXT["Alcydeo — Extension gratuite"]
+        DOM["Détection DOM<br/>Vidéos, audio, liens, iframes"]
+        NET["Observation réseau<br/>Selon permissions accordées"]
+        MEDIA["Analyse des médias<br/>Fichiers directs · HLS · DASH"]
+        BG["Coordinateur Chrome<br/>Service worker Manifest V3"]
+        UI["Popup et bibliothèque locale<br/>Qualités, aperçu, réglages"]
+        DB[("IndexedDB<br/>Bibliothèque, tâches, checkpoints")]
+        DIRECT["Téléchargement direct<br/>API du navigateur"]
+        MANAGER["Gestionnaire de téléchargements<br/>Page d’extension maintenue ouverte"]
+        WORKER["Dedicated Workers<br/>Segments, assemblage, remux"]
+        TEMP[("Stockage temporaire local<br/>OPFS si disponible ou solution adaptée")]
+    end
+
+
+    DISK[("Fichiers sur le disque")]
+    CLOUD["Export facultatif<br/>Stockage personnel de l’utilisateur"]
+    CAST["TV facultative<br/>Cast / AirPlay selon compatibilité"]
+
+    SITE --> DOM
+    SITE --> NET
+    DOM --> MEDIA
+    NET --> MEDIA
+    MEDIA --> BG
+    UI <--> BG
+    BG <--> DB
+    BG --> DIRECT
+    DIRECT --> DISK
+    BG --> MANAGER
+    MANAGER <--> DB
+    MANAGER --> WORKER
+    WORKER <--> TEMP
+    WORKER --> DISK
+    MANAGER -. "Activation volontaire" .-> CLOUD
+    UI -. "Activation volontaire" .-> CAST

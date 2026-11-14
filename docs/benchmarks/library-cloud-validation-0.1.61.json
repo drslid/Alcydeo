@@ -1,0 +1,241 @@
+{
+  "version": "0.1.61",
+  "date": "2026-11-08",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chromeForTesting": "156.0.8078.4",
+    "platform": "Linux/WSL2 isolated extension profiles",
+    "personalProfileUsed": false
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "unitPassed": 976,
+    "unitFiles": 54,
+    "installedChromeUniqueCases": 16,
+    "localCases": 10,
+    "storeCases": 6,
+    "fullRepositoryE2ESuite": false,
+    "runs": {
+      "library-cloud-local": {
+        "startTime": "2026-11-08T15:44:47.845Z",
+        "duration": 59225.183999999994,
+        "expected": 10,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "library-cloud-store": {
+        "startTime": "2026-11-08T15:45:06.692Z",
+        "duration": 33916.251,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "behavior": {
+    "visibleCardAction": {
+      "icon": "cloud",
+      "position": "after Compress, before Show in folder",
+      "checkboxRequired": false,
+      "opens": "manager.html#cloud",
+      "onlyClickedFile": true,
+      "otherCheckedCardsPreserved": true,
+      "existingGroupActionPreserved": true,
+      "missingCopy": "existing inline explicit file chooser"
+    },
+    "beforeSend": {
+      "newJobs": 0,
+      "newCloudTemporaryDirectories": 0,
+      "providerRequests": 0,
+      "newSourceOwners": 0
+    },
+    "availability": {
+      "videoToolsDisabledForAudio": true,
+      "cloudAvailableForAudio": true,
+      "sourceOwnerDisablesCloud": true,
+      "folderRequiresSavedChromeDownload": true,
+      "pausedTaskKeepsResumeAndCancel": true
+    },
+    "existingRegressions": [
+      "correct editor/file binding",
+      "merge retains first clip",
+      "conversion/compression dialog naming",
+      "progressive retained-file staging and actual filename",
+      "source lease released",
+      "late OPFS result does not reinsert stale selection",
+      "new selection survives earlier Send",
+      "intercepted original pCloud transfer bytes match"
+    ]
+  },
+  "interface": {
+    "locales": 10,
+    "widths": [
+      1280,
+      390
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "rtl": [
+      "ar",
+      "ur"
+    ],
+    "keyboardFocusOrder": true,
+    "tooltipsAndAccessibleNames": true,
+    "sevenIconsInOneRow": true,
+    "overflow": false,
+    "captures": 6,
+    "visuallyInspected": [
+      "fr-dark-desktop",
+      "ur-light-narrow"
+    ]
+  },
+  "website": {
+    "passed": true,
+    "kind": "static generated HTML assertions",
+    "cases": [
+      {
+        "locale": "en",
+        "guide": "use",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "en",
+        "guide": "changelog",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "es",
+        "guide": "use",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "es",
+        "guide": "changelog",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "fr",
+        "guide": "use",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "fr",
+        "guide": "changelog",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "de",
+        "guide": "use",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "de",
+        "guide": "changelog",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "zh_CN",
+        "guide": "use",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "zh_CN",
+        "guide": "changelog",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "ar",
+        "guide": "use",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "ar",
+        "guide": "changelog",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "ru",
+        "guide": "use",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "ru",
+        "guide": "changelog",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "pt",
+        "guide": "use",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "pt",
+        "guide": "changelog",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "hi",
+        "guide": "use",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "hi",
+        "guide": "changelog",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "ur",
+        "guide": "use",
+        "sevenActionsInOrder": true
+      },
+      {
+        "locale": "ur",
+        "guide": "changelog",
+        "sevenActionsInOrder": true
+      }
+    ]
+  },
+  "storeRuntime": {
+    "version": "0.1.61",
+    "browser": "156.0.8078.4",
+    "synthetic": true,
+    "youtubeMedia": 0,
+    "youtubeBadge": "",
+    "youtubeLiveMedia": 0,
+    "youtubePlaylistUi": 0,
+    "playlistBrowseRequests": 0,
+    "playlistApiRejected": true,
+    "ordinaryMedia": 1,
+    "ordinaryKind": "direct"
+  },
+  "runtimeFingerprints": {
+    "local": {
+      "files": 97,
+      "sha256MapDigest": "ae5fbc4dbd5a0c54efc9f18d70b54bf9e224582c5e17ef7e7eeeb2d2bdc270f5"
+    },
+    "store": {
+      "files": 97,
+      "sha256MapDigest": "487284bbd231019168e4840fecaee1816e8e39b18d124507239b8aa4b1b13616"
+    }
+  },
+  "resolvedIntermediateChecks": [
+    {
+      "case": "first CRX preparation",
+      "cause": "The shell lacked the isolated Chromium shared-library path. Rerun with the existing LD_LIBRARY_PATH succeeds; CRX3 payload is checked against the final local ZIP."
+    }
+  ],
+  "limitations": [
+    "New card-entry tests stop before Send; existing pCloud regression tests exercise intercepted original-fixture uploads.",
+    "No actual external provider transfer, personal browser profile, Windows CRX installation or physical Cast receiver is claimed.",
+    "Media engines, provider protocols, permissions and queue limits retain their existing scope."
+  ],
+  "actualExternalFileUploads": 0,
+  "externalPublication": false,
+  "artifactsReport": "library-cloud-artifacts-0.1.61.json"
+}

@@ -1,0 +1,4 @@
+<!doctype html><html><title>One segmented lesson</title><video controls></video><script>
+document.querySelector('video').src=URL.createObjectURL(new MediaSource());
+for(const path of ['/rotating-master.m3u8','/hls-high/index.m3u8?signature=g1','/hls-low/index.m3u8?signature=g1'])fetch(path).then(r=>r.text());
+</script></html>

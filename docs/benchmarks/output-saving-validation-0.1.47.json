@@ -1,0 +1,194 @@
+{
+  "version": "0.1.47",
+  "date": "2026-11-06",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "platform": "isolated Linux/WSL2 Chrome profiles",
+    "userWindowsProfileDriven": false
+  },
+  "diagnosis": {
+    "oldBuild": "0.1.46",
+    "browserReproduced": true,
+    "realHlsRemuxAndValidation": true,
+    "error": "codec",
+    "displayedError": "err_unsupported",
+    "cause": "The detached HTML video probe was required before exporting a validated OPFS file. Decoder error or ten-second timeout blocked the automatic disk save.",
+    "baselineEvidence": {
+      "browser": "156.0.8078.4",
+      "build": "0.1.46",
+      "state": "validating",
+      "error": "codec",
+      "saved": false,
+      "validation": {
+        "duration": 6.037333333333334,
+        "tracks": [
+          {
+            "type": "video",
+            "codec": "avc"
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ],
+        "bytes": 1838138,
+        "method": "local-structure",
+        "checkedAt": 1793960110681
+      },
+      "expected": {
+        "bytes": 1838138,
+        "sha256": "712ec3555a8a8b5c2e399975eed64cc05bf0ea1470b01b03b6bbf4a58b8669e0"
+      },
+      "probeErrors": 2,
+      "exports": 0
+    },
+    "unitRed": {
+      "failed": 1,
+      "passed": 6
+    },
+    "browserRed": {
+      "failed": 1
+    }
+  },
+  "change": {
+    "playerVetoRemoved": true,
+    "nonemptyExactValidatedSizeRequired": true,
+    "legacyCodecOnlyRecovery": true,
+    "legacyNativeIntentRemainsExplicit": true,
+    "clearLegacyErrorAtomicallyWithNewIntent": true,
+    "sourceRedownloadForRecovery": false,
+    "permissionsChanged": false
+  },
+  "checks": {
+    "unitPassed": 449,
+    "unitFiles": 32,
+    "typecheck": true,
+    "lint": true,
+    "localAndStoreBuild": true,
+    "chromeTargetedCases": 77,
+    "chromeRuns": {
+      "newLocal": {
+        "startTime": "2026-11-06T10:17:07.033Z",
+        "duration": 6698.394,
+        "expected": 5,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "regressionLocal": {
+        "startTime": "2026-11-06T10:16:33.676Z",
+        "duration": 93422.468,
+        "expected": 39,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "store": {
+        "startTime": "2026-11-06T10:17:42.335Z",
+        "duration": 68975.64,
+        "expected": 33,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "wholeBrowserSuiteRerun": false,
+    "storeYoutubeExclusion": true,
+    "site": {
+      "browser": "156.0.8078.4",
+      "locales": 10,
+      "mobileOverflow": false,
+      "pageErrors": [],
+      "base": "/alcydeo/"
+    }
+  },
+  "actualFixtureOutputs": {
+    "new-hls": {
+      "browser": "156.0.8078.4",
+      "build": "0.1.47",
+      "state": "completed",
+      "saved": true,
+      "validation": {
+        "duration": 6.037333333333334,
+        "tracks": [
+          {
+            "type": "video",
+            "codec": "avc"
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ],
+        "bytes": 1838138,
+        "method": "local-structure",
+        "checkedAt": 1793960228160
+      },
+      "expected": {
+        "bytes": 1838138,
+        "sha256": "92acf39532b4e711cd37b4354661f8cc404f750737b3b1ddce4be04c55fb7dfc"
+      },
+      "probeErrors": 1,
+      "exports": 1
+    },
+    "legacy-codec": {
+      "browser": "156.0.8078.4",
+      "build": "0.1.47",
+      "state": "completed",
+      "bytes": 1838138,
+      "sha256": "28fc47614a5b3d7d5683cbfb20872f6c2a3dc4358a17cb28009ffd4b3aa3196d",
+      "exports": 1,
+      "validationUnchanged": true,
+      "newMediaRequests": 0
+    },
+    "legacy-missing": {
+      "browser": "156.0.8078.4",
+      "build": "0.1.47",
+      "state": "validating",
+      "error": "missing",
+      "exports": 0,
+      "validationUnchanged": true,
+      "newMediaRequests": 0
+    },
+    "legacy-empty": {
+      "browser": "156.0.8078.4",
+      "build": "0.1.47",
+      "state": "validating",
+      "error": "invalid",
+      "exports": 0,
+      "validationUnchanged": true,
+      "newMediaRequests": 0
+    },
+    "legacy-truncated": {
+      "browser": "156.0.8078.4",
+      "build": "0.1.47",
+      "state": "validating",
+      "error": "invalid",
+      "exports": 0,
+      "validationUnchanged": true,
+      "newMediaRequests": 0
+    }
+  },
+  "existingRegressionCoverage": [
+    "Lost final Worker notification and manager reload",
+    "Lost Chrome reply, exact native reconciliation and one disk copy",
+    "Saving below100percent, dismissed Save As and explicit retry without media refetch",
+    "All ten languages, light/dark/RTL and toolbar popup layout",
+    "Direct/native and multipart toolbar progress; HLS/Coflix native-source grouping; DASH2/4/8 budgets, noETag path, version failure and pause/resume",
+    "Store conversion names and preserved originals"
+  ],
+  "independentReview": {
+    "performed": true,
+    "legacyIntentTransitionIssueFoundAndCorrectedBeforeBuild": true,
+    "remainingBlockingFindings": 0
+  },
+  "artifacts": "output-saving-artifacts-0.1.47.json",
+  "limitations": [
+    "Browser decoder failure injected in an isolated real Chrome profile; no control of the user Windows profile or native Windows Save As dialog",
+    "Real public Coflix media is not downloaded again in this lot; previous complete0.1.46 trial and full decode remain historical evidence",
+    "No physical receiver or real provider upload test; no universal playback promise"
+  ],
+  "externalPublication": false
+}

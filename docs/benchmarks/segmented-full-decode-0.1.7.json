@@ -1,0 +1,23 @@
+{
+  "tool": "Development-only FFmpeg; not part of the extension",
+  "results": [
+    {
+      "file": "hls-id3.mp4",
+      "bytes": 1838138,
+      "completeAudioVideoDecode": true,
+      "errors": ""
+    },
+    {
+      "file": "hls-byte-ranges.mp4",
+      "bytes": 1837166,
+      "completeAudioVideoDecode": true,
+      "errors": ""
+    },
+    {
+      "file": "hls-opaque.mp4",
+      "bytes": 1837166,
+      "completeAudioVideoDecode": true,
+      "errors": ""
+    }
+  ]
+}

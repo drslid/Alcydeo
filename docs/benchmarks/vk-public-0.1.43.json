@@ -1,0 +1,83 @@
+{
+  "version": "0.1.43",
+  "date": "2026-11-05",
+  "sourcePage": "https://vkvideo.ru/video-26493942_456419693",
+  "browser": "156.0.8078.4",
+  "environment": "Linux/WSL2 isolated Chrome profiles; no user Windows profile",
+  "before": {
+    "badge": "10",
+    "sourceCards": 10,
+    "download": {
+      "state": "failed",
+      "error": "network",
+      "bytes": 0,
+      "progress": 0
+    }
+  },
+  "afterXmlAndGroupingFix": {
+    "stage": "Before fragment-writer improvement and final version bump; development manifest still 0.1.42",
+    "sourceCards": 1,
+    "badge": "1",
+    "sampledQualities": [
+      720,
+      480,
+      360,
+      240,
+      144
+    ],
+    "allSamplesReady": true,
+    "download144p": {
+      "state": "complete",
+      "exists": true,
+      "bytes": 8404291
+    },
+    "validation": {
+      "duration": 472.82899305555554,
+      "tracks": [
+        {
+          "type": "video",
+          "codec": "av1"
+        },
+        {
+          "type": "audio",
+          "codec": "opus"
+        }
+      ],
+      "bytes": 8404291,
+      "method": "local-structure",
+      "checkedAt": 1793912637668
+    },
+    "elapsedMs": 27826,
+    "independentFullDecode": {
+      "source": "actual.mp4",
+      "bytes": 8404291,
+      "duration": 472.82899305555554,
+      "width": 256,
+      "height": 144,
+      "videoSamples": 11821,
+      "audioSamples": 23641,
+      "lastVideo": 472.8289930555556,
+      "lastAudio": 472.82
+    }
+  },
+  "largeResourceProbe": {
+    "height": 720,
+    "beforeIdleFix": {
+      "state": "failed",
+      "error": "invalid",
+      "bytes": 0,
+      "progress": 0
+    },
+    "elapsedMs": 120258,
+    "cause": "120-second absolute fragment deadline, replaced by an inactivity timer in the final build",
+    "completePublic720FileVerified": false,
+    "finalPublicRetry": "Native VK page redirected to its antirobot challenge; no source exposed and no attempt to solve/bypass it",
+    "finalTransportEvidence": "Original local fixtures in installed Chrome; unit test streams active data for 150 seconds of virtual time and completes, with no absolute deadline"
+  },
+  "publication": false,
+  "newPermissions": false,
+  "newDependencies": false,
+  "thirdPartyScriptsExecutedByExtension": false,
+  "signaturesOrRequestHeadersModified": false,
+  "scope": "Native static SegmentBase resources declared by this manifest, complete-file remux. Other profiles/live/private/DRM/720p complete transfer remain unvalidated."
+}

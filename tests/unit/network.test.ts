@@ -1,0 +1,11 @@
+import { afterEach,describe,it,expect,vi } from 'vitest';
+import { allowWorkerOrigins,mediaFetch,manifestText } from '../../packages/media-core/network';
+afterEach(()=>{vi.unstubAllGlobals();});
+describe('bounded network behavior',()=>{
+  it('refuses an ungranted origin before issuing a request',async()=>{allowWorkerOrigins([]);const fetch=vi.fn();vi.stubGlobal('fetch',fetch);await expect(mediaFetch('https://media.example.test/a')).rejects.toThrow('permission');expect(fetch).not.toHaveBeenCalled();});
+  it.each([[401,'expired'],[403,'expired'],[404,'missing'],[410,'missing']])('classifies HTTP %i',async(status,code)=>{allowWorkerOrigins(['https://media.example.test/*']);vi.stubGlobal('fetch',vi.fn(()=>Promise.resolve(new Response(null,{status:status as number}))));await expect(mediaFetch('https://media.example.test/a')).rejects.toThrow(String(code));});
+  it('honors a long Retry-After by failing with a retry-later diagnostic',async()=>{allowWorkerOrigins(['https://media.example.test/*']);const fetch=vi.fn(()=>Promise.resolve(new Response(null,{status:429,headers:{'Retry-After':'120'}})));vi.stubGlobal('fetch',fetch);await expect(mediaFetch('https://media.example.test/a')).rejects.toThrow('retryLater');expect(fetch).toHaveBeenCalledTimes(1);});
+  it('limits retries on repeated server errors',async()=>{allowWorkerOrigins(['https://media.example.test/*']);const fetch=vi.fn(()=>Promise.resolve(new Response(null,{status:503,headers:{'Retry-After':'0'}})));vi.stubGlobal('fetch',fetch);await expect(mediaFetch('https://media.example.test/a')).rejects.toThrow('network');expect(fetch).toHaveBeenCalledTimes(4);});
+  it('keeps exhausted429 recoverable as retry-later after four bounded attempts',async()=>{allowWorkerOrigins(['https://media.example.test/*']);const fetch=vi.fn(()=>Promise.resolve(new Response(null,{status:429,headers:{'Retry-After':'0'}})));vi.stubGlobal('fetch',fetch);await expect(mediaFetch('https://media.example.test/a')).rejects.toThrow('retryLater');expect(fetch).toHaveBeenCalledTimes(4);});
+  it('bounds manifest bytes even without a Content-Length header',async()=>{allowWorkerOrigins(['https://media.example.test/*']);vi.stubGlobal('fetch',vi.fn(()=>Promise.resolve(new Response('x'.repeat(2_000_001)))));await expect(manifestText('https://media.example.test/a')).rejects.toThrow('manifestLimit');});
+});

@@ -1,0 +1,130 @@
+{
+  "version": "0.1.35",
+  "date": "2026-11-03",
+  "node": "24.22.2",
+  "pnpm": "12.5.1",
+  "browser": "156.0.8078.80",
+  "platform": "Linux/WSL2",
+  "unitTests": 329,
+  "typecheck": "pass",
+  "lint": "pass",
+  "browserTests": {
+    "local": {
+      "startTime": "2026-11-03T17:35:56.157Z",
+      "duration": 172890.397,
+      "expected": 102,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "localCommandExitCode": 0,
+    "storeGuestAndRealWire": {
+      "startTime": "2026-11-03T17:36:51.451Z",
+      "duration": 5628.201,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "storeCommandExitCode": 0,
+    "fullSuiteRun": false,
+    "initialCombinedRun": {
+      "stats": {
+        "startTime": "2026-11-03T17:31:45.448Z",
+        "duration": 173383.94100000002,
+        "expected": 102,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "wrapperExitCodeAfterReport": 143,
+      "resolution": "Final identical 102-case run uses the direct installed Playwright CLI and an independently maintained fixture server; exit code 0."
+    }
+  },
+  "verified": {
+    "realAnonymousInitialization": "turbobit-read-only-0.1.35.json",
+    "providerScriptExecuted": false,
+    "providerCodeRedistributed": false,
+    "freshGuestDestinationPerFile": true,
+    "exactMultipartFileBytesAndUnicodeNames": true,
+    "knownContentLengthAtActualChromeHttpsReceiver": true,
+    "noCookieOrAuthorizationAtActualReceiver": true,
+    "seededProviderCookiesOmittedUsingAllHeaders": true,
+    "guestFieldsWithoutAccountId": true,
+    "minimalIdAcknowledgementSupported": true,
+    "optionalNameAndSizeChecked": true,
+    "foreignNodesExtraNodesHtmlRedirectsAndErrorsRejected": true,
+    "noSendingOnSelection": true,
+    "oneActiveUpload": true,
+    "indeterminateProgressUntilAcknowledgement": true,
+    "cancelLateReplyCleanupAndReload": true,
+    "explicitFullRetryFreshDestination": true,
+    "noDeletionDataOrUploadDestinationInPersistedJobs": true,
+    "tenLocalesAndRtl": true,
+    "widths": [
+      1440,
+      900,
+      390
+    ],
+    "otherFourDestinationsAndBatchToolsAndSavingRegression": true
+  },
+  "limits": {
+    "conservativeGuestFileBytes": 200000000,
+    "sourceForCapAndRetention": "Historical official FAQ at cdn.turbobit.net/faq",
+    "publishedGuestRetentionDays": 7,
+    "newFrontendLimitMeasured": false,
+    "maximumSizeUploadTested": false,
+    "realProviderFileUploadTested": false,
+    "independentRemoteFileVerified": false,
+    "acknowledgementDoesNotAlwaysContainNameAndSize": true,
+    "uploadTimeoutMs": 3600000,
+    "metadataTimeoutMs": 20000,
+    "maximumJsonBytes": 65536,
+    "retryStartsAtZero": true,
+    "lostResponseCanLeaveDuplicates": true,
+    "nativeWindowsDialogsTested": false
+  },
+  "artifacts": {
+    "runtimeFiles": 90,
+    "testedBuildByteIdentical": false,
+    "executableAndUiMatchTestedBuild": true,
+    "regeneratedSourceZipMetadataOnly": true,
+    "sourceZipExtractedContentsUnchanged": true,
+    "changedAfterPackaging": [
+      "licenses/mediabunny-aac-encoder-1.65.0-source.zip",
+      "licenses/mediabunny-1.65.0-source.zip"
+    ],
+    "crxPayloadEqualsZipAndBuild": true,
+    "pages": 103,
+    "pagesArchiveFiles": 277,
+    "packages": [
+      {
+        "name": "alcydeo-0.1.35-chrome.zip",
+        "bytes": 2319907,
+        "sha256": "2b0668412b255f59119023982e58d0bf087770fe2e148adf57e079bf9af11ecb"
+      },
+      {
+        "name": "alcydeo-0.1.35-local-test.crx",
+        "bytes": 2333789,
+        "sha256": "860ae184ff665b2d5256750cb1957a26bf9f3864ce8a849706f86812c43aa001"
+      },
+      {
+        "name": "alcydeo-store-0.1.35-chrome.zip",
+        "bytes": 2269654,
+        "sha256": "94ecdad86fdf39bb8c3924668f78ce44ef95be7ddfa7c3981a58cfc9a09f1582"
+      },
+      {
+        "name": "alcydeo-pages-0.1.35.zip",
+        "bytes": 2563159,
+        "sha256": "75e5c485e570dba23d2b625ec663d0e5cadae3abfc3e8853c2222956e70cb4ca"
+      },
+      {
+        "name": "alcydeo-brand-0.1.35.zip",
+        "bytes": 1447690,
+        "sha256": "2b5b4370e9da6f5ca82303d33ad80217b5481490fcb5fce21d1a8068cc6bcdfa"
+      }
+    ]
+  },
+  "storeProof": "store-runtime-0.1.35.json",
+  "externalPublication": false
+}

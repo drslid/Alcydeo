@@ -1,0 +1,254 @@
+{
+  "version": "0.1.53",
+  "date": "2026-11-08",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "platform": "Linux/WSL2 isolated test profiles",
+    "personalChromeProfileUsed": false,
+    "publicNetworkRecheckThisRevision": false
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "unitPassed": 832,
+    "unitFiles": 48,
+    "uniqueInstalledChromeCasesValidated": 152,
+    "localCases": 76,
+    "storeCases": 76,
+    "fullRepositoryE2ESuite": false,
+    "unresolvedFailures": 0,
+    "runs": {
+      "e2e-regression-stable-local": {
+        "startTime": "2026-11-08T12:58:43.660Z",
+        "duration": 109889.626,
+        "expected": 59,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "e2e-regression-stable-store": {
+        "startTime": "2026-11-08T12:58:59.871Z",
+        "duration": 105939.33300000001,
+        "expected": 59,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "e2e-compat-stable-local": {
+        "startTime": "2026-11-08T12:58:41.566Z",
+        "duration": 8755.227,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "e2e-compat-stable-store": {
+        "startTime": "2026-11-08T12:59:11.580Z",
+        "duration": 8839.305,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "e2e-diagnostics-stable-local": {
+        "startTime": "2026-11-08T12:59:12.519Z",
+        "duration": 3656.678,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "e2e-diagnostics-stable-store": {
+        "startTime": "2026-11-08T12:59:20.219Z",
+        "duration": 2758.6499999999996,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "e2e-ui-final-local": {
+        "startTime": "2026-11-08T12:52:58.676Z",
+        "duration": 12362.478000000001,
+        "expected": 13,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "e2e-ui-final-store": {
+        "startTime": "2026-11-08T12:54:09.729Z",
+        "duration": 12091.902999999998,
+        "expected": 13,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "runtimeLocal": {
+    "version": "0.1.53",
+    "runtimeTreeSha256": "9e7cd62acb7defb2e8bf79280100e33d07548e71b74fdb90e3bc78d0a4f05ed5",
+    "fileCount": 99,
+    "bytes": 5777243,
+    "method": "SHA256 of ordered UTF-8 relative-path NUL per-file-sha256 NUL byte-size newline transcript"
+  },
+  "runtimeStore": {
+    "version": "0.1.53",
+    "runtimeTreeSha256": "160ef9b5db591e647629053bd33901e61046d68e9b3eec1ce4d123d540b44973",
+    "fileCount": 99,
+    "bytes": 5527041,
+    "method": "SHA256 of ordered UTF-8 relative-path NUL per-file-sha256 NUL byte-size newline transcript"
+  },
+  "features": {
+    "threePreflightGapsReproducedOn52": true,
+    "ordinaryCorsOnly": true,
+    "sameNativeUrlUnchanged": true,
+    "sampleFetchLimit": 3,
+    "sampleDeadlineMs": 8000,
+    "confirmedCredentialsReusedForOpen": true,
+    "hiddenContentRangeLeavesCheckedSizeUnknown": true,
+    "readableHttpRefusalsNotRetriedWithDifferentCredentials": true,
+    "automaticSingleSaveExactOriginalFixtureBytes": 525622,
+    "diagnosticsOnlyOnExplicitAction": true,
+    "diagnosticHttpRequests": 0,
+    "diagnosticSharedProbeDeadlineMs": 5000,
+    "diagnosticContainsUrlsOrIdsOrTitlesOrCookiesOrSignaturesOrRawPageData": false,
+    "diagnosticAutomaticTransmission": false,
+    "sourceGuardErrorsPreserved": true,
+    "newerReadyProofPreserved": true,
+    "newManifestPermissions": false,
+    "storeExcludesYouTube": true
+  },
+  "userSession": {
+    "reportedNoCardOn52": true,
+    "reportedOtherProductDetects": true,
+    "userConfirmsChromeAllSitesAccess": true,
+    "exactPersonalSessionCauseIdentified": false,
+    "fixedInPersonalSessionConfirmed": false,
+    "nextEvidence": "Explicit local diagnostic report if no card remains.",
+    "previousPublicWindows52Evidence": "tiktok-public-0.1.52.json",
+    "previousPublicEvidenceRelabelled53": false
+  },
+  "intermediateFailures": {
+    "candidateLocalRegression": {
+      "startTime": "2026-11-08T12:50:07.427Z",
+      "duration": 103871.948,
+      "expected": 58,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "nativeBackupRepeatCause": "A refusal promotes A to B while sampling; error without its actual URL cannot be attached to B and permits another B check. Preserve the retained error URL, including an earlier uncertain result.",
+    "strictRefusalStableRepeated": {
+      "startTime": "2026-11-08T12:58:54.894Z",
+      "duration": 12459.92,
+      "expected": 10,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "visual": {
+    "sourceAndSavedPopupInspected": true,
+    "reportPanelActualRpc": {
+      "extensionVersion": "0.1.53",
+      "source": "Original local empty.html fixture; no public site or media",
+      "rpcStubbed": false,
+      "captures": [
+        {
+          "locale": "fr",
+          "theme": "light",
+          "path": "docs/screenshots/detection-diagnostics-fr.png",
+          "report": {
+            "version": "0.1.53",
+            "distribution": "local",
+            "pageType": "web",
+            "autoEnabled": true,
+            "minSize": 10000,
+            "pageGranted": true,
+            "allSitesGranted": true,
+            "pageBlocked": false,
+            "rawMediaCount": 0,
+            "eligibleCount": 0,
+            "visibleCount": 0,
+            "pending": false,
+            "budget": {
+              "attempted": 0,
+              "limit": 32,
+              "expanded": 0,
+              "expandLimit": 24,
+              "activeChecks": 0,
+              "waitingChecks": 0
+            },
+            "sources": []
+          },
+          "actualTheme": "light",
+          "rtl": "ltr"
+        },
+        {
+          "locale": "ur",
+          "theme": "dark",
+          "path": "docs/screenshots/detection-diagnostics-ur-dark.png",
+          "report": {
+            "version": "0.1.53",
+            "distribution": "local",
+            "pageType": "web",
+            "autoEnabled": true,
+            "minSize": 10000,
+            "pageGranted": true,
+            "allSitesGranted": true,
+            "pageBlocked": false,
+            "rawMediaCount": 0,
+            "eligibleCount": 0,
+            "visibleCount": 0,
+            "pending": false,
+            "budget": {
+              "attempted": 0,
+              "limit": 32,
+              "expanded": 0,
+              "expandLimit": 24,
+              "activeChecks": 0,
+              "waitingChecks": 0
+            },
+            "sources": []
+          },
+          "actualTheme": "dark",
+          "rtl": "rtl"
+        }
+      ],
+      "tasks": 0,
+      "downloads": 0,
+      "profileClosed": true
+    },
+    "tenLanguagesAndRtl": true,
+    "localUiBytesUnchangedAfterBackgroundRaceFix": {
+      "uiBytesUnchanged": true,
+      "changedFiles": [
+        "background.js",
+        "licenses/mediabunny-1.65.0-source.zip",
+        "licenses/mediabunny-aac-encoder-1.65.0-source.zip"
+      ],
+      "allOtherFilesUnchanged": true
+    },
+    "storeUiBytesUnchangedAfterBackgroundRaceFix": {
+      "uiBytesUnchanged": true,
+      "changedFiles": [
+        "background.js",
+        "licenses/mediabunny-1.65.0-source.zip",
+        "licenses/mediabunny-aac-encoder-1.65.0-source.zip"
+      ],
+      "allOtherFilesUnchanged": true
+    },
+    "originalFixtureImagesOnly": true
+  },
+  "staticSite": {
+    "browser": "156.0.8078.4",
+    "locales": 10,
+    "mobileOverflow": false,
+    "pageErrors": [],
+    "base": "/alcydeo/"
+  },
+  "artifactsReport": "tiktok-artifacts-0.1.53.json",
+  "externalPublication": false
+}

@@ -1,0 +1,273 @@
+{
+  "version": "0.1.18",
+  "browser": "Chrome for Testing 156.0.8078.80 Linux/WSL2",
+  "unitTests": 167,
+  "reports": [
+    "regressions.json",
+    "core-and-layout-initial.json",
+    "design-and-cloud.json",
+    "final-navigation.json",
+    "final-media-slice.json"
+  ],
+  "counts": {
+    "expected": 51
+  },
+  "cases": [
+    {
+      "file": "features.spec.ts",
+      "title": "nineteen actual video/audio containers are detected and saved byte for byte",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "default 10 KB, larger threshold, known versus unknown sizes, and pasted blacklist URLs",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "local compress produces a real validated H.264/AAC MP4",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "local trim produces a real validated H.264/AAC MP4",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "local merge produces a real validated H.264/AAC MP4",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "Gofile uploads only after the explicit click and confirms a real server response, locally simulated",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "local help remains available before the Pages site is published",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "a trim outside the source duration saves no partial or audio-only output",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "a locally simulated cloud failure stays paused until explicit retry",
+      "status": "expected"
+    },
+    {
+      "file": "history.spec.ts",
+      "title": "pagination reaches records beyond 100, filters first and clamps after deleting the last page",
+      "status": "expected"
+    },
+    {
+      "file": "history.spec.ts",
+      "title": "confirmed bulk clear removes all captured history, retains saved files, live leases and resumed/new tasks",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale en and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale es and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale fr and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale de and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale zh_CN and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale ar and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale ru and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale pt and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale hi and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale ur and layout",
+      "status": "expected"
+    },
+    {
+      "file": "recording.spec.ts",
+      "title": "real Chrome tab capture is flushed progressively and saved as playable VP8/Opus",
+      "status": "expected"
+    },
+    {
+      "file": "recording.spec.ts",
+      "title": "closing the manager retains flushed recording bytes and recovers a partial file",
+      "status": "expected"
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "compact proposals truncate long titles, remove filename fields and show only actual thumbnails",
+      "status": "expected"
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "save mode, Chrome folder shortcut and subfolder persist without a page filename editor",
+      "status": "expected"
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "direct and assembled downloads pass both native save modes and use the chosen relative folder",
+      "status": "expected"
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "a dismissed save request can retry a direct file and reuse an assembled output",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale en",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale es",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale fr",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale de",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale zh_CN",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale ar",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale ru",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale pt",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale hi",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale ur",
+      "status": "expected"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "detect, choose quality, download, verify and find the file",
+      "status": "expected"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "empty and dark popup states at actual dimensions",
+      "status": "expected"
+    },
+    {
+      "file": "grouping.spec.ts",
+      "title": "direct quality links share a card, retain the selection and save the chosen file",
+      "status": "expected"
+    },
+    {
+      "file": "grouping.spec.ts",
+      "title": "master and observed HLS qualities become one card without a manual lookup",
+      "status": "expected"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in en",
+      "status": "expected"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in es",
+      "status": "expected"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in fr",
+      "status": "expected"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in de",
+      "status": "expected"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in zh_CN",
+      "status": "expected"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in ar",
+      "status": "expected"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in ru",
+      "status": "expected"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in pt",
+      "status": "expected"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in hi",
+      "status": "expected"
+    },
+    {
+      "file": "manager-design.spec.ts",
+      "title": "workspace navigation, theme, filtering and responsive layout in ur",
+      "status": "expected"
+    }
+  ],
+  "visualFixtureNotice": "Dedicated layout captures seed synthetic IndexedDB records. Actual-media download/verification flows are separate integration cases."
+}

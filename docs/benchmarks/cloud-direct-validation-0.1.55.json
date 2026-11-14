@@ -1,0 +1,122 @@
+{
+  "version": "0.1.55",
+  "date": "2026-11-08",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "platform": "Linux/WSL2 isolated extension profiles",
+    "personalProfileUsed": false
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "unitPassed": 832,
+    "unitFiles": 48,
+    "distinctInstalledChromeCases": 35,
+    "localCases": 30,
+    "storeCases": 5,
+    "additionalRefinementRepeats": 4,
+    "fullRepositoryE2ESuite": false,
+    "runs": {
+      "direct-local-final": {
+        "startTime": "2026-11-08T13:44:27.408Z",
+        "duration": 34273.238,
+        "expected": 5,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "direct-store": {
+        "startTime": "2026-11-08T13:45:07.333Z",
+        "duration": 34294.247,
+        "expected": 5,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "legacy-local": {
+        "startTime": "2026-11-08T13:43:24.979Z",
+        "duration": 29564.686,
+        "expected": 8,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "providers-local": {
+        "startTime": "2026-11-08T13:42:05.644Z",
+        "duration": 16318.640000000001,
+        "expected": 8,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "experimental-local": {
+        "startTime": "2026-11-08T13:42:06.780Z",
+        "duration": 20386.521,
+        "expected": 9,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "direct-refined-local": {
+        "startTime": "2026-11-08T13:47:30.830Z",
+        "duration": 8051.953,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "direct-refined-store": {
+        "startTime": "2026-11-08T13:47:46.383Z",
+        "duration": 8185.103000000001,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "behavior": {
+    "libraryCloudOpensDestinationsWithoutModal": true,
+    "accessibleFilesResolveAutomatically": true,
+    "missingFilesChosenInline": true,
+    "newUploadJobsOrProviderCallsBeforeSend": false,
+    "sourceLeaseMatchesActualRowAfterEarlierRemoval": true,
+    "fileNamesAndExactOriginalUploadBytesVerified": true,
+    "staleOpfsReadIgnoredAfterNewSelection": true,
+    "earlierSendCannotConsumeLaterSelection": true,
+    "preparationHeldAcrossWholeBatch": true,
+    "convertCompressMergeModalUnchanged": true,
+    "newPermissions": false,
+    "providerProtocolsChanged": false
+  },
+  "visual": {
+    "languages": 10,
+    "rtl": true,
+    "widths": [
+      1280,
+      390
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "screenshotsOriginalFixturesOnly": true,
+    "paths": [
+      "docs/screenshots/cloud-direct-fr-dark.png",
+      "docs/screenshots/cloud-direct-fr-narrow.png",
+      "docs/screenshots/cloud-direct-ur-narrow.png"
+    ]
+  },
+  "providerTests": {
+    "pcloud": "intercepted multipart uploads and exact bytes, missing/HTML reply, retry/cancel",
+    "gofile": "intercepted explicit upload and failure/retry",
+    "megaup": "intercepted multiple files, retry and cancellation",
+    "onefichier": "intercepted multiple files, retry and cancellation",
+    "turbobit": "intercepted multiple files, retry and cancellation",
+    "actualExternalUploads": 0
+  },
+  "artifactsReport": "cloud-direct-artifacts-0.1.55.json",
+  "externalPublication": false
+}

@@ -1,0 +1,39 @@
+{
+  "version": "0.1.35",
+  "capturedAt": "2026-11-03T17:33:13.153188+00:00",
+  "sources": [
+    "https://torbobit.net/",
+    "https://cdn.turbobit.net/faq",
+    "https://api.costaction.com/en/v1/docs"
+  ],
+  "samePublicShellOnTorbobitAndTurbobit": true,
+  "staticPublicAppSha256": "edf3ae5fa1e4401aa8b54b46ae51cde5846cedde45ad084c552bcd14422bcd15",
+  "providerScriptExecuted": false,
+  "providerCodeRedistributed": false,
+  "guestInitializations": [
+    {
+      "origin": "https://app.torbobit.net",
+      "method": "POST",
+      "status": 200,
+      "credentialsSent": false,
+      "returnedStorageOrigin": "https://s328.fdfiles.net",
+      "uploadPath": "/uploadfile",
+      "fileUploaded": false
+    },
+    {
+      "origin": "https://app.turbobit.net",
+      "method": "POST",
+      "status": 200,
+      "credentialsSent": false,
+      "returnedStorageOrigin": "https://s365.fdfiles.net",
+      "uploadPath": "/uploadfile",
+      "fileUploaded": false
+    }
+  ],
+  "authenticatedApiRequiresKey": true,
+  "authenticatedApiUsed": false,
+  "historicalFaqGuestLimitMB": 200,
+  "historicalFaqGuestRetentionDays": 7,
+  "realFileUploadValidated": false,
+  "newFrontendSizeLimitMeasured": false
+}

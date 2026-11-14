@@ -1,0 +1,2006 @@
+{
+  "detectionDiagnostics": {
+    "message": "شناخت کی تشخیص",
+    "description": "Alcydeo interface: detectionDiagnostics"
+  },
+  "detectionDiagnosticsReport": {
+    "message": "شناخت کی مقامی رپورٹ",
+    "description": "Alcydeo interface: detectionDiagnosticsReport"
+  },
+  "detectionDiagnosticsLoading": {
+    "message": "مقامی رپورٹ تیار ہو رہی ہے…",
+    "description": "Alcydeo interface: detectionDiagnosticsLoading"
+  },
+  "detectionDiagnosticsRefresh": {
+    "message": "تازہ کریں",
+    "description": "Alcydeo interface: detectionDiagnosticsRefresh"
+  },
+  "detectionDiagnosticsCopy": {
+    "message": "رپورٹ کاپی کریں",
+    "description": "Alcydeo interface: detectionDiagnosticsCopy"
+  },
+  "detectionDiagnosticsCopied": {
+    "message": "رپورٹ کاپی ہو گئی۔",
+    "description": "Alcydeo interface: detectionDiagnosticsCopied"
+  },
+  "detectionDiagnosticsCopyHint": {
+    "message": "کلپ بورڈ دستیاب نہیں۔ دستی طور پر کاپی کرنے کے لیے رپورٹ منتخب ہے۔",
+    "description": "Alcydeo interface: detectionDiagnosticsCopyHint"
+  },
+  "detectionDiagnosticsError": {
+    "message": "رپورٹ تیار نہیں ہو سکی۔ تازہ کریں دوبارہ دبائیں۔",
+    "description": "Alcydeo interface: detectionDiagnosticsError"
+  },
+  "detectionDiagnosticsPrivacy": {
+    "message": "مقامی رپورٹ میں ویڈیو لنکس، کوکیز یا دستخط شامل نہیں۔ کچھ بھی نہیں بھیجا جاتا۔",
+    "description": "Alcydeo interface: detectionDiagnosticsPrivacy"
+  },
+  "detectionDiagnosticsAccessError": {
+    "message": "سائٹ تک رسائی جانچنے کے لیے chrome://extensions میں Alcydeo کی تفصیلات کھولیں۔",
+    "description": "Alcydeo interface: detectionDiagnosticsAccessError"
+  },
+  "cropTool": {
+    "message": "فریم تراشیں",
+    "description": "Alcydeo interface: cropTool"
+  },
+  "cropHint": {
+    "message": "نئی MP4 فائل میں برآمد کرنے کے لیے ویڈیو کا ایک حصہ منتخب کریں۔ اصل فائل برقرار رہتی ہے۔",
+    "description": "Alcydeo interface: cropHint"
+  },
+  "cropDrawHint": {
+    "message": "نیا حصہ بنانے کے لیے کھینچیں۔ اسے ہلانے کے لیے اندر کھینچیں یا سائز بدلنے کے لیے ہینڈل استعمال کریں۔ تیر والی کلیدیں 1 پکسل ہلاتی ہیں؛ 10 پکسل کے لیے Shift دبائیں۔",
+    "description": "Alcydeo interface: cropDrawHint"
+  },
+  "cropArea": {
+    "message": "منتخب حصہ",
+    "description": "Alcydeo interface: cropArea"
+  },
+  "cropReset": {
+    "message": "پورا فریم",
+    "description": "Alcydeo interface: cropReset"
+  },
+  "cropLeft": {
+    "message": "X (پکسل)",
+    "description": "Alcydeo interface: cropLeft"
+  },
+  "cropTop": {
+    "message": "Y (پکسل)",
+    "description": "Alcydeo interface: cropTop"
+  },
+  "cropWidth": {
+    "message": "چوڑائی (پکسل)",
+    "description": "Alcydeo interface: cropWidth"
+  },
+  "cropHeight": {
+    "message": "اونچائی (پکسل)",
+    "description": "Alcydeo interface: cropHeight"
+  },
+  "cropPreview": {
+    "message": "تراشے ہوئے فریم کا پیش منظر",
+    "description": "Alcydeo interface: cropPreview"
+  },
+  "cropExport": {
+    "message": "تراشی ہوئی ویڈیو برآمد کریں",
+    "description": "Alcydeo interface: cropExport"
+  },
+  "cropResize": {
+    "message": "منتخب حصے کا سائز بدلیں",
+    "description": "Alcydeo interface: cropResize"
+  },
+  "cropRange": {
+    "message": "ویڈیو کے مکمل اندر کم از کم 2 × 2 پکسل کا حصہ منتخب کریں۔",
+    "description": "Alcydeo interface: cropRange"
+  },
+  "chromeSiteAccess": {
+    "message": "Chrome میں سائٹ تک رسائی",
+    "description": "Alcydeo interface: chromeSiteAccess"
+  },
+  "chromeAccessRestricted": {
+    "message": "Chrome کی ترتیبات اس سائٹ تک رسائی محدود کرتی ہیں۔",
+    "description": "Alcydeo interface: chromeAccessRestricted"
+  },
+  "openWebPage": {
+    "message": "کوئی ویب صفحہ کھولیں",
+    "description": "Alcydeo interface: openWebPage"
+  },
+  "openWebPageHint": {
+    "message": "ماخذ دریافت کرنے کے لیے ویڈیو والی سائٹ کھولیں۔",
+    "description": "Alcydeo interface: openWebPageHint"
+  },
+  "popupActivity": {
+    "message": "سرگرمی",
+    "description": "Alcydeo interface: popupActivity"
+  },
+  "moreActions": {
+    "message": "مزید اقدامات",
+    "description": "Alcydeo interface: moreActions"
+  },
+  "tiktokHint": {
+    "message": "TikTok ٹیب اور مینیجر کھلے رکھیں۔ رکاوٹ کے بعد جاری کرنے پر یہ فائل شروع سے ڈاؤن لوڈ ہوگی۔",
+    "description": "Alcydeo interface: tiktokHint"
+  },
+  "tools": {
+    "message": "ویڈیو ٹولز",
+    "description": "Alcydeo interface: tools"
+  },
+  "manager_tools_description": {
+    "message": "ویڈیو تراشیں یا کلپس اپنی پسند کی ترتیب میں جوڑیں۔ پروسیسنگ آپ کے آلے پر ہوتی ہے۔",
+    "description": "Alcydeo interface: manager_tools_description"
+  },
+  "popupSources": {
+    "message": "ذرائع",
+    "description": "Alcydeo interface: popupSources"
+  },
+  "popupSaved": {
+    "message": "محفوظ ہو گیا",
+    "description": "Alcydeo interface: popupSaved"
+  },
+  "popupContinue": {
+    "message": "یہ ونڈو بند کرنے پر ڈاؤن لوڈ جاری رہتے ہیں۔ حصوں والی اسٹریم کے لیے مینیجر ٹیب کھلا رکھیں۔",
+    "description": "Alcydeo interface: popupContinue"
+  },
+  "conversionQuality": {
+    "message": "ویڈیو کا معیار",
+    "description": "Alcydeo interface: conversionQuality"
+  },
+  "conversionQuality_auto": {
+    "message": "خودکار · موافق ویڈیو نقل کریں",
+    "description": "Alcydeo interface: conversionQuality_auto"
+  },
+  "conversionQuality_high": {
+    "message": "اعلیٰ معیار",
+    "description": "Alcydeo interface: conversionQuality_high"
+  },
+  "conversionQuality_balanced": {
+    "message": "متوازن",
+    "description": "Alcydeo interface: conversionQuality_balanced"
+  },
+  "conversionQuality_small": {
+    "message": "چھوٹی فائل",
+    "description": "Alcydeo interface: conversionQuality_small"
+  },
+  "conversionResolution": {
+    "message": "زیادہ سے زیادہ ریزولوشن",
+    "description": "Alcydeo interface: conversionResolution"
+  },
+  "conversionOriginal": {
+    "message": "اصل · سائز نہ بڑھائیں",
+    "description": "Alcydeo interface: conversionOriginal"
+  },
+  "conversionAudio": {
+    "message": "آڈیو بٹ ریٹ",
+    "description": "Alcydeo interface: conversionAudio"
+  },
+  "conversionAudioAuto": {
+    "message": "خودکار · موافق AAC نقل کریں",
+    "description": "Alcydeo interface: conversionAudioAuto"
+  },
+  "conversionOptionsHint": {
+    "message": "MP4 کی طے شدہ ترتیبات۔ معیار، ریزولیوشن یا آڈیو بدلنے سے دوبارہ انکوڈنگ درکار ہو سکتی ہے۔ حجم اور رفتار ماخذ اور کمپیوٹر پر منحصر ہیں۔",
+    "description": "Alcydeo interface: conversionOptionsHint"
+  },
+  "liveRefresh": {
+    "message": "ذرائع تازہ کریں",
+    "description": "Alcydeo interface: liveRefresh"
+  },
+  "liveStopping": {
+    "message": "موجودہ حصہ مکمل ہو رہا ہے",
+    "description": "Alcydeo interface: liveStopping"
+  },
+  "liveMode": {
+    "message": "پلیئر اسٹریم",
+    "description": "Alcydeo interface: liveMode"
+  },
+  "captureMode": {
+    "message": "ٹیب کیپچر",
+    "description": "Alcydeo interface: captureMode"
+  },
+  "liveTitle": {
+    "message": "لائیو اسٹریم محفوظ کریں",
+    "description": "Alcydeo interface: liveTitle"
+  },
+  "liveSources": {
+    "message": "شناخت شدہ HLS ذرائع",
+    "description": "Alcydeo interface: liveSources"
+  },
+  "liveNoSource": {
+    "message": "ماخذ چنیں یا اس کا URL چسپاں کریں",
+    "description": "Alcydeo interface: liveNoSource"
+  },
+  "liveUrl": {
+    "message": "یا HLS اسٹریم URL (.m3u8)",
+    "description": "Alcydeo interface: liveUrl"
+  },
+  "liveStart": {
+    "message": "اسٹریم ریکارڈ کریں",
+    "description": "Alcydeo interface: liveStart"
+  },
+  "liveHint": {
+    "message": "موصولہ HLS حصے براہ راست اصل معیار میں محفوظ کریں۔ یہ موڈ ایک ہی اسٹریم میں آڈیو اور ویڈیو والے غیر مرموز TS/fMP4 کو سنبھالتا ہے۔ مینیجر کھلا رکھیں۔ دیگر ذرائع کے لیے ٹیب کیپچر استعمال کریں۔",
+    "description": "Alcydeo interface: liveHint"
+  },
+  "liveBoundary": {
+    "message": "حالیہ مکمل حصے سے شروع ہوتا ہے جس میں کلک سے چند سیکنڈ پہلے کا مواد ہو سکتا ہے۔ روک کر محفوظ کرنا موجودہ حصہ مکمل کر کے جانچا ہوا MP4 بناتا ہے۔ نشریات کا پچھلا حصہ بازیاب نہیں ہوتا۔",
+    "description": "Alcydeo interface: liveBoundary"
+  },
+  "liveAudio": {
+    "message": "اس لائیو اسٹریم میں آڈیو الگ ہے۔ مشترک HLS ماخذ یا ٹیب کیپچر چنیں؛ آڈیو کے بغیر ویڈیو محفوظ نہیں ہوتی۔",
+    "description": "Alcydeo interface: liveAudio"
+  },
+  "notLive": {
+    "message": "یہ جاری HLS لائیو اسٹریم نہیں ہے۔ مکمل ویڈیو کے لیے ڈاؤن لوڈ یا دوسرا ماخذ چنیں۔",
+    "description": "Alcydeo interface: notLive"
+  },
+  "liveGap": {
+    "message": "لائیو حصے دستیاب نہیں رہے۔ ریکارڈنگ رک گئی؛ صرف مسلسل موصولہ حصہ رکھا جاتا ہے۔",
+    "description": "Alcydeo interface: liveGap"
+  },
+  "liveVariant": {
+    "message": "یہ HLS لائیو قسم معاون نہیں ہے۔ مکمل حصوں والا ماخذ یا ٹیب کیپچر چنیں۔",
+    "description": "Alcydeo interface: liveVariant"
+  },
+  "liveEmpty": {
+    "message": "کوئی مکمل لائیو حصہ موصول نہیں ہوا۔ خالی ویڈیو محفوظ نہیں ہوئی۔",
+    "description": "Alcydeo interface: liveEmpty"
+  },
+  "liveInterrupted": {
+    "message": "لائیو ریکارڈنگ رک گئی۔ موصولہ حصہ محفوظ کریں؛ چھوٹی ہوئی نشریات واپس نہیں ملتیں۔",
+    "description": "Alcydeo interface: liveInterrupted"
+  },
+  "notice_liveIncomplete": {
+    "message": "جزوی لائیو ریکارڈنگ: فائل میں صرف مسلسل موصولہ حصہ ہے۔",
+    "description": "Alcydeo interface: notice_liveIncomplete"
+  },
+  "cloudOptional": {
+    "message": "اختیاری بھیجنا",
+    "description": "Alcydeo interface: cloudOptional"
+  },
+  "help": {
+    "message": "مدد",
+    "description": "Alcydeo interface: help"
+  },
+  "helpLocal": {
+    "message": "مدد کی سائٹ مقامی طور پر تیار ہے، ابھی شائع نہیں ہوئی۔",
+    "description": "Alcydeo interface: helpLocal"
+  },
+  "helpOpen": {
+    "message": "مدد کی ویب سائٹ کھولیں",
+    "description": "Alcydeo interface: helpOpen"
+  },
+  "minimumSize": {
+    "message": "اس سے چھوٹی فائلیں چھوڑیں",
+    "description": "Alcydeo interface: minimumSize"
+  },
+  "sizeFilterHint": {
+    "message": "نامعلوم سائز دکھائی دیتے رہیں گے۔ پلے لسٹ کا سائز ویڈیو کا سائز نہیں۔",
+    "description": "Alcydeo interface: sizeFilterHint"
+  },
+  "blockedHint": {
+    "message": "ہر سطر میں ایک ڈومین یا URL، ذیلی ڈومین سمیت۔ خودکار شناخت فعال ہو تو باقی سائٹس اسکین ہوتی ہیں۔",
+    "description": "Alcydeo interface: blockedHint"
+  },
+  "mediaTools": {
+    "message": "ویڈیو ٹولز",
+    "description": "Alcydeo interface: mediaTools"
+  },
+  "operation": {
+    "message": "عمل",
+    "description": "Alcydeo interface: operation"
+  },
+  "convertTool": {
+    "message": "MP4 میں تبدیل کریں",
+    "description": "Alcydeo interface: convertTool"
+  },
+  "compressTool": {
+    "message": "کمپریس کریں",
+    "description": "Alcydeo interface: compressTool"
+  },
+  "mergeTool": {
+    "message": "کلپس جوڑیں",
+    "description": "Alcydeo interface: mergeTool"
+  },
+  "trimTool": {
+    "message": "تراشیں",
+    "description": "Alcydeo interface: trimTool"
+  },
+  "convertHint": {
+    "message": "مقامی MP4 H.264/AAC تبدیلی۔ غیر معاون کوڈیک کی اطلاع ملے گی۔",
+    "description": "Alcydeo interface: convertHint"
+  },
+  "compressHint": {
+    "message": "ترتیبات کے کمپریشن اختیارات سے مقامی H.264/AAC MP4 بنائیں۔ فائل کا چھوٹا ہونا یقینی نہیں۔",
+    "description": "Alcydeo interface: compressHint"
+  },
+  "mergeHint": {
+    "message": "2–20 کلپس چن کر ترتیب دیں۔ 720p/30 fps تک MP4۔ ہر کلپ میں ایک ویڈیو ٹریک اور یکساں آڈیو ساخت ہو۔",
+    "description": "Alcydeo interface: mergeHint"
+  },
+  "trimHint": {
+    "message": "ہینڈل کھینچ کر آغاز اور اختتام چنیں، انتخاب کا پیش منظر دیکھیں، پھر MP4 میں محفوظ کریں۔",
+    "description": "Alcydeo interface: trimHint"
+  },
+  "chooseVideos": {
+    "message": "ویڈیوز چنیں",
+    "description": "Alcydeo interface: chooseVideos"
+  },
+  "trimStart": {
+    "message": "آغاز (سیکنڈ)",
+    "description": "Alcydeo interface: trimStart"
+  },
+  "trimEnd": {
+    "message": "اختتام (سیکنڈ)",
+    "description": "Alcydeo interface: trimEnd"
+  },
+  "moveUp": {
+    "message": "اوپر کریں",
+    "description": "Alcydeo interface: moveUp"
+  },
+  "moveDown": {
+    "message": "نیچے کریں",
+    "description": "Alcydeo interface: moveDown"
+  },
+  "startTool": {
+    "message": "پروسیسنگ قطار میں شامل کریں",
+    "description": "Alcydeo interface: startTool"
+  },
+  "trimRange": {
+    "message": "ویڈیو دورانیے میں درست حصہ چنیں۔",
+    "description": "Alcydeo interface: trimRange"
+  },
+  "mergeTracks": {
+    "message": "ان کلپس کے ٹریک یا کوڈیک کی ساخت کو جوڑنا معاون نہیں۔",
+    "description": "Alcydeo interface: mergeTracks"
+  },
+  "record": {
+    "message": "ریکارڈ کریں",
+    "description": "Alcydeo interface: record"
+  },
+  "recordStream": {
+    "message": "اسٹریم ریکارڈ کریں",
+    "description": "Alcydeo interface: recordStream"
+  },
+  "recording": {
+    "message": "ریکارڈنگ جاری",
+    "description": "Alcydeo interface: recording"
+  },
+  "startRecording": {
+    "message": "ریکارڈ کرنے کا ٹیب چنیں",
+    "description": "Alcydeo interface: startRecording"
+  },
+  "stopRecording": {
+    "message": "روکیں اور محفوظ کریں",
+    "description": "Alcydeo interface: stopRecording"
+  },
+  "recordHint": {
+    "message": "پاپ اپ سے ٹیب کیپچر کریں یا یہاں اسکرین چنیں۔ زیادہ بٹ ریٹ اور ماخذ کے ریزولوشن تک۔ مینیجر کھلا رکھیں۔",
+    "description": "Alcydeo interface: recordHint"
+  },
+  "recordNoAudio": {
+    "message": "آڈیو شیئر نہیں ہوا۔ ضرورت ہو تو روک کر ٹیب آڈیو کے ساتھ دوبارہ چنیں۔",
+    "description": "Alcydeo interface: recordNoAudio"
+  },
+  "recoverRecording": {
+    "message": "ریکارڈ شدہ حصہ محفوظ کریں",
+    "description": "Alcydeo interface: recoverRecording"
+  },
+  "recordingInterrupted": {
+    "message": "ریکارڈنگ رک گئی۔ لکھا گیا حصہ جانچ کر محفوظ ہو سکتا ہے۔ نئی ریکارڈنگ کے لیے دوبارہ انتخاب کریں۔",
+    "description": "Alcydeo interface: recordingInterrupted"
+  },
+  "recordingDenied": {
+    "message": "ریکارڈنگ کی اجازت نہیں ملی یا انتخاب بند ہوا۔",
+    "description": "Alcydeo interface: recordingDenied"
+  },
+  "recordingUnavailable": {
+    "message": "Chrome منتخب حصہ کیپچر نہیں کر سکا۔",
+    "description": "Alcydeo interface: recordingUnavailable"
+  },
+  "recordingSlow": {
+    "message": "ذخیرہ سست ہونے سے ریکارڈنگ رکی۔ دستیاب حصہ محفوظ ہے۔",
+    "description": "Alcydeo interface: recordingSlow"
+  },
+  "notice_recordingIncomplete": {
+    "message": "بحال ریکارڈنگ: اس میں صرف ریکارڈ شدہ حصہ ہے۔",
+    "description": "Alcydeo interface: notice_recordingIncomplete"
+  },
+  "cloud": {
+    "message": "کلاؤڈ",
+    "description": "Alcydeo interface: cloud"
+  },
+  "cloudHint": {
+    "message": "کلک کرنے پر صرف منتخب فائل بھیجی جاتی ہے۔ خودکار ہم آہنگی نہیں۔",
+    "description": "Alcydeo interface: cloudHint"
+  },
+  "cloudProvider": {
+    "message": "منزل",
+    "description": "Alcydeo interface: cloudProvider"
+  },
+  "cloudChooseFile": {
+    "message": "بھیجنے کی فائل چنیں",
+    "description": "Alcydeo interface: cloudChooseFile"
+  },
+  "cloudShare": {
+    "message": "Gofile سے شیئر کریں",
+    "description": "Alcydeo interface: cloudShare"
+  },
+  "cloudSave": {
+    "message": "اپنے کلاؤڈ میں محفوظ کریں",
+    "description": "Alcydeo interface: cloudSave"
+  },
+  "gofilePublic": {
+    "message": "Gofile میں لاگ ان نہیں چاہیے اور عوامی لنک بنتا ہے۔ لنک رکھنے والا کوئی بھی فائل دیکھ سکتا ہے۔ رکھنے کی مدت Gofile طے کرتا ہے۔",
+    "description": "Alcydeo interface: gofilePublic"
+  },
+  "cloudConnected": {
+    "message": "اس براؤزر سیشن کے لیے منسلک",
+    "description": "Alcydeo interface: cloudConnected"
+  },
+  "cloudDisconnected": {
+    "message": "منسلک نہیں",
+    "description": "Alcydeo interface: cloudDisconnected"
+  },
+  "cloudConnect": {
+    "message": "اکاؤنٹ جوڑیں",
+    "description": "Alcydeo interface: cloudConnect"
+  },
+  "cloudDisconnect": {
+    "message": "منقطع کریں",
+    "description": "Alcydeo interface: cloudDisconnect"
+  },
+  "cloudConfiguration": {
+    "message": "کنکشن کی ترتیب",
+    "description": "Alcydeo interface: cloudConfiguration"
+  },
+  "cloudConfigurationHint": {
+    "message": "اس ایکسٹینشن ID کے لیے OAuth ایپ رجسٹر کریں۔ Drive بلڈ میں Chrome Extension کلائنٹ اور OneDrive اس واپسی URI والا عوامی SPA کلائنٹ استعمال کرتا ہے۔ ایکسٹینشن میں کلائنٹ سیکرٹ نہ رکھیں۔",
+    "description": "Alcydeo interface: cloudConfigurationHint"
+  },
+  "cloudClientId": {
+    "message": "عوامی کلائنٹ ID",
+    "description": "Alcydeo interface: cloudClientId"
+  },
+  "cloudKeepOpen": {
+    "message": "مینیجر کھلا رکھیں۔ منتخب فائل کی عارضی مقامی نقل محفوظ رہتی ہے۔ کلاؤڈ اندراج ہٹانے سے یہ نقل مٹتی ہے، دور کی فائل برقرار رہتی ہے۔",
+    "description": "Alcydeo interface: cloudKeepOpen"
+  },
+  "gofileRestart": {
+    "message": "یہاں Gofile حصوں سے دوبارہ شروع نہیں کرتا۔ دوبارہ بھیجنا ابتدا سے ہوگا۔",
+    "description": "Alcydeo interface: gofileRestart"
+  },
+  "cloudOpen": {
+    "message": "دور کی فائل کھولیں",
+    "description": "Alcydeo interface: cloudOpen"
+  },
+  "cloudSetup": {
+    "message": "اس مقامی بلڈ میں OAuth ترتیب نہیں دیا گیا۔ کنکشن کی ترتیب دیکھیں۔",
+    "description": "Alcydeo interface: cloudSetup"
+  },
+  "cloudAuth": {
+    "message": "منتخب کلاؤڈ اکاؤنٹ جوڑیں یا دوبارہ جوڑیں۔",
+    "description": "Alcydeo interface: cloudAuth"
+  },
+  "cloudNetwork": {
+    "message": "اپ لوڈ مکمل نہیں ہوا۔ کنکشن جانچ کر دوبارہ کوشش کریں۔",
+    "description": "Alcydeo interface: cloudNetwork"
+  },
+  "cloudResponse": {
+    "message": "سروس نے درست اپ لوڈ کی تصدیق نہیں کی۔",
+    "description": "Alcydeo interface: cloudResponse"
+  },
+  "cloudRate": {
+    "message": "سروس اپ لوڈ محدود کر رہی ہے۔ دوبارہ کوشش سے پہلے رکیں۔",
+    "description": "Alcydeo interface: cloudRate"
+  },
+  "cloudExpired": {
+    "message": "اپ لوڈ سیشن ختم ہوا۔ دوبارہ شروع کرنے سے نیا اپ لوڈ ہوگا۔ کلاؤڈ میں مکمل فائل پہلے دیکھیں۔",
+    "description": "Alcydeo interface: cloudExpired"
+  },
+  "cloudInput": {
+    "message": "مقامی فائل دوبارہ چنیں؛ عارضی نقل غائب یا نامکمل ہے۔",
+    "description": "Alcydeo interface: cloudInput"
+  },
+  "cloudInterrupted": {
+    "message": "مینیجر بند ہوا یا اپ لوڈ رکا۔ تیار ہوں تو پھر چلائیں۔",
+    "description": "Alcydeo interface: cloudInterrupted"
+  },
+  "cloud_preparing": {
+    "message": "فائل تیار ہو رہی",
+    "description": "Alcydeo interface: cloud_preparing"
+  },
+  "cloud_queued": {
+    "message": "قطار میں",
+    "description": "Alcydeo interface: cloud_queued"
+  },
+  "cloud_uploading": {
+    "message": "اپ لوڈ جاری",
+    "description": "Alcydeo interface: cloud_uploading"
+  },
+  "cloud_paused": {
+    "message": "رکا ہوا",
+    "description": "Alcydeo interface: cloud_paused"
+  },
+  "cloud_completed": {
+    "message": "بھیجا گیا",
+    "description": "Alcydeo interface: cloud_completed"
+  },
+  "cloud_cancelled": {
+    "message": "منسوخ",
+    "description": "Alcydeo interface: cloud_cancelled"
+  },
+  "cloud_failed": {
+    "message": "ناکام",
+    "description": "Alcydeo interface: cloud_failed"
+  },
+  "formatsScope": {
+    "message": "اصل فائل ڈاؤن لوڈ؛ ایکسٹینشن Chrome میں ہر کوڈیک چلانے یا بدلنے کی ضمانت نہیں۔ M3U8 اور MPD حصوں والی اسٹریم بیان کرتے ہیں۔",
+    "description": "Alcydeo interface: formatsScope"
+  },
+  "featureLimits": {
+    "message": "ڈیسک ٹاپ Chrome۔ اصل فائلوں، غیر خفیہ HLS VOD اور ایک دورانیے والے DASH کی مقامی جانچ ہوئی ہے۔ DRM اور تمام کوڈیکس معاون نہیں۔ Cast تجرباتی ہے؛ ریسیور کی جانچ باقی ہے۔ کیپچر ماخذ اور کمپیوٹر پر منحصر ہے۔",
+    "description": "Alcydeo interface: featureLimits"
+  },
+  "cloudSharing": {
+    "message": "لنک شیئر کریں",
+    "description": "Alcydeo interface: cloudSharing"
+  },
+  "cloudStorage": {
+    "message": "کلاؤڈ میں محفوظ کریں",
+    "description": "Alcydeo interface: cloudStorage"
+  },
+  "cloudNoAccount": {
+    "message": "بغیر اکاؤنٹ",
+    "description": "Alcydeo interface: cloudNoAccount"
+  },
+  "cloudWithAccount": {
+    "message": "اکاؤنٹ ضروری",
+    "description": "Alcydeo interface: cloudWithAccount"
+  },
+  "cloudUploadLink": {
+    "message": "اپ لوڈ لنک",
+    "description": "Alcydeo interface: cloudUploadLink"
+  },
+  "cloudPcloudDestination": {
+    "message": "اپ لوڈ لنک یا کوڈ",
+    "description": "Alcydeo interface: cloudPcloudDestination"
+  },
+  "cloudPcloudRegion": {
+    "message": "فولڈر کے ڈیٹا کا علاقہ",
+    "description": "Alcydeo interface: cloudPcloudRegion"
+  },
+  "cloudRegionEu": {
+    "message": "یورپ",
+    "description": "Alcydeo interface: cloudRegionEu"
+  },
+  "cloudRegionUs": {
+    "message": "امریکہ",
+    "description": "Alcydeo interface: cloudRegionUs"
+  },
+  "cloudPcloudSend": {
+    "message": "pCloud پر بھیجیں",
+    "description": "Alcydeo interface: cloudPcloudSend"
+  },
+  "cloudPcloudHint": {
+    "message": "یہاں لاگ ان ضروری نہیں: موجودہ pCloud اپ لوڈ لنک درج کریں اور فولڈر کا ڈیٹا علاقہ چنیں۔ فولڈر کے مالک کو pCloud اکاؤنٹ چاہیے۔ فائل اسی فولڈر میں جائے گی؛ عوامی ڈاؤن لوڈ لنک نہیں بنے گا۔",
+    "description": "Alcydeo interface: cloudPcloudHint"
+  },
+  "cloudPcloudLink": {
+    "message": "درست pCloud اپ لوڈ لنک یا کوڈ درج کریں اور فولڈر کا علاقہ جانچیں۔ ڈاؤن لوڈ لنک سے اپ لوڈ نہیں ہوتا۔",
+    "description": "Alcydeo interface: cloudPcloudLink"
+  },
+  "cloudPcloudQuota": {
+    "message": "منزل فولڈر کی جگہ یا فائلوں کی حد پوری ہے۔",
+    "description": "Alcydeo interface: cloudPcloudQuota"
+  },
+  "cloudPcloudSent": {
+    "message": "pCloud نے جمع ہونے کی تصدیق کی۔ فولڈر کا مالک فائل لے سکتا ہے؛ عوامی ڈاؤن لوڈ لنک نہیں بنا۔",
+    "description": "Alcydeo interface: cloudPcloudSent"
+  },
+  "cloudRestart": {
+    "message": "دوبارہ کوشش پوری فائل پھر بھیجے گی۔ پچھلا جواب کھو گیا ہو تو نقل سے بچنے کے لیے پہلے منزل دیکھیں۔",
+    "description": "Alcydeo interface: cloudRestart"
+  },
+  "cloudValidation": {
+    "message": "کلاؤڈ پروٹوکول مقامی طور پر جانچے گئے ہیں۔ حقیقی خدمات پر منتقلی کی جانچ باقی ہے؛ MegaUp تجرباتی ہے۔ pCloud کو موجودہ اپ لوڈ لنک چاہیے۔",
+    "description": "Alcydeo interface: cloudValidation"
+  },
+  "cloudOnefichierSend": {
+    "message": "1fichier سے شیئر کریں",
+    "description": "Alcydeo interface: cloudOnefichierSend"
+  },
+  "cloudOnefichierOpen": {
+    "message": "1fichier کھولیں",
+    "description": "Alcydeo interface: cloudOnefichierOpen"
+  },
+  "cloudOnefichierHint": {
+    "message": "بغیر اکاؤنٹ تجرباتی اشتراک۔ لنک رکھنے والا کوئی بھی شخص فائل کھول سکتا ہے۔ 15 دن کے بعد محفوظ رہنے کی ضمانت نہیں؛ اصل فائل رکھیں۔ بھیجنے کے بعد دستیاب ہونے میں وقت لگ سکتا ہے۔",
+    "description": "Alcydeo interface: cloudOnefichierHint"
+  },
+  "cloudOnefichierPending": {
+    "message": "فائل بھیجی جا رہی ہے۔ اس منزل کے لیے درست فیصد دستیاب نہیں؛ تصدیق کا انتظار ہے۔",
+    "description": "Alcydeo interface: cloudOnefichierPending"
+  },
+  "err_cloudOnefichierUnavailable": {
+    "message": "1fichier نے درست اپ لوڈ منزل فراہم نہیں کی۔ اس کوشش میں کوئی فائل نہیں بھیجی گئی۔ بعد میں کوشش کریں یا دوسری منزل چنیں۔",
+    "description": "Alcydeo interface: err_cloudOnefichierUnavailable"
+  },
+  "cloudSendAll": {
+    "message": "بغیر سیٹ اپ تمام کلاؤڈز پر بھیجیں",
+    "description": "Alcydeo interface: cloudSendAll"
+  },
+  "cloudSendAllHint": {
+    "message": "Gofile · MegaUp · 1fichier · Turbobit. ہر سروس کی اپنی حدود ہیں۔",
+    "description": "Alcydeo interface: cloudSendAllHint"
+  },
+  "cloudPreparedDestinations": {
+    "message": "پہلے سے تیار: $1",
+    "description": "Alcydeo interface: cloudPreparedDestinations"
+  },
+  "cloudTargetTooLarge": {
+    "message": "$1 · $2: فائل $3 سے بڑی ہے؛ چھوڑ دی گئی۔",
+    "description": "Alcydeo interface: cloudTargetTooLarge"
+  },
+  "cloudTargetPreparationFailed": {
+    "message": "$1 · $2: $3",
+    "description": "Alcydeo interface: cloudTargetPreparationFailed"
+  },
+  "cloudSendActions": {
+    "message": "بھیجنے کے اختیارات",
+    "description": "Alcydeo interface: cloudSendActions"
+  },
+  "cloudClearTemporary": {
+    "message": "عارضی فائلیں حذف کریں",
+    "description": "Alcydeo interface: cloudClearTemporary"
+  },
+  "cloudClearTemporaryHint": {
+    "message": "کلاؤڈ کی مقامی نقول حذف کرتا ہے اور قطار میں موجود اپ لوڈ منسوخ کرتا ہے۔ اصل فائلیں اور شیئر کرنے کے لنک برقرار رہتے ہیں۔",
+    "description": "Alcydeo interface: cloudClearTemporaryHint"
+  },
+  "cloudTemporaryCleared": {
+    "message": "عارضی فائلیں حذف کر دی گئیں۔ منتقلی کی تاریخ اور شیئر کرنے کے لنک برقرار رہتے ہیں۔",
+    "description": "Alcydeo interface: cloudTemporaryCleared"
+  },
+  "cloudTemporaryBusy": {
+    "message": "منتقلی یا تیاری جاری ہے۔ صفائی سے پہلے اس کے مکمل ہونے کا انتظار کریں یا اسے منسوخ کریں۔",
+    "description": "Alcydeo interface: cloudTemporaryBusy"
+  },
+  "cloudTemporaryFailed": {
+    "message": "کچھ عارضی نقول حذف نہیں ہو سکیں۔ دوبارہ کوشش کریں۔",
+    "description": "Alcydeo interface: cloudTemporaryFailed"
+  },
+  "cloudSendAllCompact": {
+    "message": "بغیر سیٹ اپ سب",
+    "description": "Alcydeo interface: cloudSendAllCompact"
+  },
+  "cloudClearTemporaryCompact": {
+    "message": "مقامی نقول صاف کریں",
+    "description": "Alcydeo interface: cloudClearTemporaryCompact"
+  },
+  "cloudProviderDetails": {
+    "message": "سروس کی تفصیل",
+    "description": "Alcydeo interface: cloudProviderDetails"
+  },
+  "cloudHistory": {
+    "message": "منتقلیاں",
+    "description": "Alcydeo interface: cloudHistory"
+  },
+  "cloudKeepOpenShort": {
+    "message": "بھیجتے وقت یہ صفحہ کھلا رکھیں۔",
+    "description": "Alcydeo interface: cloudKeepOpenShort"
+  },
+  "cloudCopyUnavailable": {
+    "message": "دوبارہ کوشش کے لیے مقامی نقل دستیاب نہیں",
+    "description": "Alcydeo interface: cloudCopyUnavailable"
+  },
+  "concurrentDownloads": {
+    "message": "بیک وقت ڈاؤن لوڈ",
+    "description": "Alcydeo interface: concurrentDownloads"
+  },
+  "concurrentFiles": {
+    "message": "بیک وقت فائلوں کی تعداد",
+    "description": "Alcydeo interface: concurrentFiles"
+  },
+  "concurrentFilesHint": {
+    "message": "ایک وقت میں 1 سے 8 فائلیں، فی فائل کنکشن کی تعداد سے الگ۔ جگہ خالی ہوتے ہی قطار میں موجود فائلیں ڈاؤن لوڈ ہونا شروع ہو جاتی ہیں۔",
+    "description": "Alcydeo interface: concurrentFilesHint"
+  },
+  "concurrentFilesChangeHint": {
+    "message": "حد کم کرنے پر جاری ڈاؤن لوڈ مکمل ہونے دیے جاتے ہیں۔ تبدیلیاں اب بھی ایک ایک کر کے ہوتی ہیں۔",
+    "description": "Alcydeo interface: concurrentFilesChangeHint"
+  },
+  "cloudTurbobitSend": {
+    "message": "Turbobit سے شیئر کریں",
+    "description": "Alcydeo interface: cloudTurbobitSend"
+  },
+  "cloudTurbobitOpen": {
+    "message": "Turbobit کھولیں",
+    "description": "Alcydeo interface: cloudTurbobitOpen"
+  },
+  "cloudTurbobitHint": {
+    "message": "بغیر اکاؤنٹ تجرباتی اشتراک، فی فائل زیادہ سے زیادہ 200 MB۔ لنک رکھنے والا کوئی بھی کھول سکتا ہے؛ زیادہ سے زیادہ 7 دن محفوظ رہتی ہے۔ اصل فائل رکھیں اور Turbobit پر فائل چیک کریں۔",
+    "description": "Alcydeo interface: cloudTurbobitHint"
+  },
+  "err_cloudTurbobitUnavailable": {
+    "message": "Turbobit نے درست مہمان اپ لوڈ منزل فراہم نہیں کی۔ کوئی فائل نہیں بھیجی گئی۔ بعد میں کوشش کریں یا دوسری منزل چنیں۔",
+    "description": "Alcydeo interface: err_cloudTurbobitUnavailable"
+  },
+  "playlistSnapshot": {
+    "message": "یہ مکس بدلتا رہتا ہے: صرف YouTube کے ابھی لوڈ کردہ عنوانات دکھائے جاتے ہیں۔ محفوظ کرنے کے لیے منتخب کریں؛ آئندہ تجاویز شامل نہیں۔",
+    "description": "Alcydeo interface: playlistSnapshot"
+  },
+  "playlistTitle": {
+    "message": "YouTube پلے لسٹ",
+    "description": "Alcydeo interface: playlistTitle"
+  },
+  "playlistLoading": {
+    "message": "پلے لسٹ پڑھی جا رہی ہے…",
+    "description": "Alcydeo interface: playlistLoading"
+  },
+  "playlistSelection": {
+    "message": "$total$ ویڈیوز میں سے $selected$ منتخب",
+    "description": "Alcydeo interface: playlistSelection",
+    "placeholders": {
+      "selected": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "playlistSelectAll": {
+    "message": "تمام ویڈیوز منتخب کریں",
+    "description": "Alcydeo interface: playlistSelectAll"
+  },
+  "playlistDownload": {
+    "message": "منتخب ویڈیوز ڈاؤن لوڈ کریں ($count$)",
+    "description": "Alcydeo interface: playlistDownload",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "playlistFolder": {
+    "message": "پلے لسٹ فولڈر:",
+    "description": "Alcydeo interface: playlistFolder"
+  },
+  "playlistBest": {
+    "message": "بہترین دستیاب",
+    "description": "Alcydeo interface: playlistBest"
+  },
+  "playlistUnavailable": {
+    "message": "غیر دستیاب ویڈیو",
+    "description": "Alcydeo interface: playlistUnavailable"
+  },
+  "playlistEmpty": {
+    "message": "اس پلے لسٹ میں کوئی قابل رسائی ویڈیو نہیں۔",
+    "description": "Alcydeo interface: playlistEmpty"
+  },
+  "playlistPreparing": {
+    "message": "اگلی ویڈیو تیار ہو رہی ہے…",
+    "description": "Alcydeo interface: playlistPreparing"
+  },
+  "playlistProgress": {
+    "message": "$total$ میں سے $done$ محفوظ · $failed$ ناکام",
+    "description": "Alcydeo interface: playlistProgress",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "playlistPartial": {
+    "message": "خرابیوں کے ساتھ مکمل",
+    "description": "Alcydeo interface: playlistPartial"
+  },
+  "playlistRetry": {
+    "message": "ناکام ویڈیوز دوبارہ آزمائیں",
+    "description": "Alcydeo interface: playlistRetry"
+  },
+  "playlistHint": {
+    "message": "خاموش ورک ٹیب ہر ویڈیو تیار کرتا ہے۔ مینیجر کھلا رکھیں۔ صرف قابل رسائی ویڈیوز محفوظ ہوتی ہیں؛ نجی، حذف شدہ یا مسترد ویڈیوز الگ دکھائی جاتی ہیں۔",
+    "description": "Alcydeo interface: playlistHint"
+  },
+  "playlistRead": {
+    "message": "مکمل پلے لسٹ نہیں پڑھی جا سکی۔ YouTube صفحہ تازہ کرکے دوبارہ تلاش کریں۔",
+    "description": "Alcydeo interface: playlistRead"
+  },
+  "playlistLimit": {
+    "message": "یہ پلے لسٹ مقامی پڑھنے کی حد (5000 ویڈیوز یا 100 صفحات) سے بڑی ہے۔ نامکمل فہرست مکمل ڈاؤن لوڈ شروع نہیں کرے گی۔",
+    "description": "Alcydeo interface: playlistLimit"
+  },
+  "playlistPlayer": {
+    "message": "پلیئر نے قابل استعمال ماخذ فراہم نہیں کیا۔ YouTube پر ویڈیو معمول کے مطابق چلا کر پھر کوشش کریں۔",
+    "description": "Alcydeo interface: playlistPlayer"
+  },
+  "playlistInterrupted": {
+    "message": "رکاوٹ کے بعد پلے لسٹ موقوف ہے۔ محفوظ ویڈیوز دہرائے بغیر جاری رکھنے کے لیے دوبارہ شروع کریں۔",
+    "description": "Alcydeo interface: playlistInterrupted"
+  },
+  "playlistTabClosed": {
+    "message": "ورک ٹیب بند یا تبدیل ہو گیا۔ جاری رکھنے کے لیے پلے لسٹ دوبارہ شروع کریں۔",
+    "description": "Alcydeo interface: playlistTabClosed"
+  },
+  "playlistStopped": {
+    "message": "رکاوٹ کے بعد پلے لسٹ موقوف ہے۔ محفوظ ویڈیوز دہرائے بغیر جاری رکھنے کے لیے دوبارہ شروع کریں۔",
+    "description": "Alcydeo interface: playlistStopped"
+  },
+  "playlistNotSaved": {
+    "message": "رکاوٹ کے بعد پلے لسٹ موقوف ہے۔ محفوظ ویڈیوز دہرائے بغیر جاری رکھنے کے لیے دوبارہ شروع کریں۔",
+    "description": "Alcydeo interface: playlistNotSaved"
+  },
+  "playlistQuality": {
+    "message": "منتخب یا کم معیار کا ماخذ دستیاب نہیں۔",
+    "description": "Alcydeo interface: playlistQuality"
+  },
+  "cloudSendTitle": {
+    "message": "فائل بھیجیں",
+    "description": "Alcydeo interface: cloudSendTitle"
+  },
+  "workspaceNavigation": {
+    "message": "مرکزی نیویگیشن",
+    "description": "Alcydeo interface: workspaceNavigation"
+  },
+  "skipContent": {
+    "message": "مواد پر جائیں",
+    "description": "Alcydeo interface: skipContent"
+  },
+  "addVideo": {
+    "message": "ویڈیو شامل کریں",
+    "description": "Alcydeo interface: addVideo"
+  },
+  "clearSearch": {
+    "message": "تلاش صاف کریں",
+    "description": "Alcydeo interface: clearSearch"
+  },
+  "manager_queue_description": {
+    "message": "آپ کے ڈاؤن لوڈ، ایک جگہ۔",
+    "description": "Alcydeo interface: manager_queue_description"
+  },
+  "manager_library_description": {
+    "message": "ویڈیو، ڈاؤن لوڈ اور پراسیسنگ ایک جگہ۔",
+    "description": "Alcydeo interface: manager_library_description"
+  },
+  "manager_record_description": {
+    "message": "ایک لمحہ ریکارڈ کریں، اپنے آلے پر رکھیں۔",
+    "description": "Alcydeo interface: manager_record_description"
+  },
+  "manager_cloud_description": {
+    "message": "منتخب فائل اپنی پسند کی جگہ بھیجیں۔",
+    "description": "Alcydeo interface: manager_cloud_description"
+  },
+  "manager_settings_description": {
+    "message": "Alcydeo، آپ کے انداز میں۔",
+    "description": "Alcydeo interface: manager_settings_description"
+  },
+  "manager_help_description": {
+    "message": "جب ضرورت ہو، تھوڑی مدد۔",
+    "description": "Alcydeo interface: manager_help_description"
+  },
+  "managerResults": {
+    "message": "اشیاء: $count$",
+    "description": "Alcydeo interface: managerResults",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "managerNoResults": {
+    "message": "ابھی کوئی نتیجہ نہیں",
+    "description": "Alcydeo interface: managerNoResults"
+  },
+  "managerNoResultsHint": {
+    "message": "دوسرا عنوان آزمائیں یا فلٹر ہٹائیں۔",
+    "description": "Alcydeo interface: managerNoResultsHint"
+  },
+  "managerEmptyHint": {
+    "message": "Alcydeo آئیکن سے کسی صفحے کی ویڈیو ڈاؤن لوڈ کریں۔ وہ یہاں ملے گی۔",
+    "description": "Alcydeo interface: managerEmptyHint"
+  },
+  "resetFilters": {
+    "message": "فلٹر صاف کریں",
+    "description": "Alcydeo interface: resetFilters"
+  },
+  "detectionSettings": {
+    "message": "شناخت",
+    "description": "Alcydeo interface: detectionSettings"
+  },
+  "detectionSettingsHint": {
+    "message": "چنیں کہ ڈاؤن لوڈ فہرست میں کیا دکھے۔",
+    "description": "Alcydeo interface: detectionSettingsHint"
+  },
+  "appearanceSettings": {
+    "message": "ظاہری صورت",
+    "description": "Alcydeo interface: appearanceSettings"
+  },
+  "appearanceSettingsHint": {
+    "message": "دن یا رات، آرام دہ منظر۔",
+    "description": "Alcydeo interface: appearanceSettingsHint"
+  },
+  "destinationSettingsHint": {
+    "message": "طے کریں فائلیں کیسے اور کہاں محفوظ ہوں۔",
+    "description": "Alcydeo interface: destinationSettingsHint"
+  },
+  "blockedExample": {
+    "message": "example.com",
+    "description": "Alcydeo interface: blockedExample"
+  },
+  "tvKeepOpen": {
+    "message": "چلاتے وقت اس پلیئر کو کھلا رکھیں۔",
+    "description": "Alcydeo interface: tvKeepOpen"
+  },
+  "sourceNone": {
+    "message": "ملنے والے ذرائع خارج کر دیے گئے",
+    "description": "Alcydeo interface: sourceNone"
+  },
+  "sourceRetryHint": {
+    "message": "جانچ میں غلط، غیر دستیاب یا بہت چھوٹے ذرائع ملے۔ اصل پلیئر دوبارہ لوڈ کریں اور پھر تلاش کریں۔",
+    "description": "Alcydeo interface: sourceRetryHint"
+  },
+  "tv": {
+    "message": "ٹی وی پر چلائیں",
+    "description": "Alcydeo interface: tv"
+  },
+  "manager_tv_description": {
+    "message": "شناخت شدہ ویڈیو کاسٹ کریں یا مقامی فائل کھول کر اس کا ٹیب کاسٹ کریں۔",
+    "description": "Alcydeo interface: manager_tv_description"
+  },
+  "tvOpen": {
+    "message": "ٹی وی پلیئر کھولیں",
+    "description": "Alcydeo interface: tvOpen"
+  },
+  "tvExperimental": {
+    "message": "تجرباتی · حقیقی ریسیور پر چلنا ابھی تصدیق شدہ نہیں ہے۔",
+    "description": "Alcydeo interface: tvExperimental"
+  },
+  "tvNoAirplay": {
+    "message": "اس آلے پر Chrome میں AirPlay دستیاب نہیں ہے۔",
+    "description": "Alcydeo interface: tvNoAirplay"
+  },
+  "tvNoDevice": {
+    "message": "کوئی مطابقت رکھنے والا ریسیور نہیں ملا۔ دونوں آلات کا ایک ہی نیٹ ورک پر ہونا چیک کریں۔",
+    "description": "Alcydeo interface: tvNoDevice"
+  },
+  "tvNotSupported": {
+    "message": "یہ ماخذ یا براؤزر ریموٹ پلے بیک شروع نہیں کر سکتا۔ Chrome مینو سے اصل ٹیب کاسٹ کرنے کی کوشش کریں۔",
+    "description": "Alcydeo interface: tvNotSupported"
+  },
+  "tvConnected": {
+    "message": "ریسیور سے منسلک",
+    "description": "Alcydeo interface: tvConnected"
+  },
+  "tvConnecting": {
+    "message": "منسلک ہو رہا ہے…",
+    "description": "Alcydeo interface: tvConnecting"
+  },
+  "tvDisconnected": {
+    "message": "شروع کرنے کے لیے ریسیور چنیں۔",
+    "description": "Alcydeo interface: tvDisconnected"
+  },
+  "tvHint": {
+    "message": "اصل Cast، Chrome، ریسیور اور ویڈیو فارمیٹ پر منحصر ہے۔ Alcydeo ریلے سرور نہیں جوڑتا۔ براہ راست پلے بیک مناسب نہ ہو تو ٹیب کاسٹ اصل سائٹ کا پلیئر استعمال کرتا ہے۔",
+    "description": "Alcydeo interface: tvHint"
+  },
+  "sourceChecking": {
+    "message": "ماخذ جانچا جا رہا ہے…",
+    "description": "Alcydeo interface: sourceChecking"
+  },
+  "sourceReady": {
+    "message": "دستیاب",
+    "description": "Alcydeo interface: sourceReady"
+  },
+  "sourceUnknown": {
+    "message": "غیر مصدقہ",
+    "description": "Alcydeo interface: sourceUnknown"
+  },
+  "sourceCheckHint": {
+    "message": "ڈاؤن لوڈ سے پہلے ایک چھوٹا نمونہ جانچا جاتا ہے، پوری فائل نہیں۔ ذرائع دوبارہ جانچنے کے لیے تازہ کریں۔",
+    "description": "Alcydeo interface: sourceCheckHint"
+  },
+  "err_tooSmall": {
+    "message": "یہ ماخذ ترتیبات میں منتخب کردہ کم از کم سائز سے چھوٹا ہے۔",
+    "description": "Alcydeo interface: err_tooSmall"
+  },
+  "tvUnavailable": {
+    "message": "دستیاب نہیں",
+    "description": "Alcydeo interface: tvUnavailable"
+  },
+  "tvPreparing": {
+    "message": "پلیئر تیار ہو رہا ہے…",
+    "description": "Alcydeo interface: tvPreparing"
+  },
+  "tvAirplayWindows": {
+    "message": "Windows کے Chrome میں AirPlay بھیجنے کی سہولت نہیں۔ صرف AirPlay والا Apple TV، Google Cast ریسیور نہیں ہے۔",
+    "description": "Alcydeo interface: tvAirplayWindows"
+  },
+  "tvStreamTab": {
+    "message": "یہ اسٹریم اصل سائٹ کا پلیئر استعمال کرتی ہے۔ ٹی وی پر دیکھنے کے لیے اس ٹیب پر لوٹیں اور Chrome کا کاسٹ مینو کھولیں۔",
+    "description": "Alcydeo interface: tvStreamTab"
+  },
+  "tvDeviceAvailable": {
+    "message": "Chrome نے موافق ریسیور بتایا ہے۔",
+    "description": "Alcydeo interface: tvDeviceAvailable"
+  },
+  "tvDeviceUnconfirmed": {
+    "message": "Chrome نے اس ویڈیو کے لیے موافق ریسیور نہیں بتایا۔ پھر کوشش کریں یا اصل ٹیب کاسٹ کریں۔",
+    "description": "Alcydeo interface: tvDeviceUnconfirmed"
+  },
+  "tvDeviceChecking": {
+    "message": "Chrome نے ریسیور کی دستیابی کی تصدیق نہیں کی۔",
+    "description": "Alcydeo interface: tvDeviceChecking"
+  },
+  "tvShortClip": {
+    "message": "Chrome 156، 15 سیکنڈ یا کم کے کلپ کا براہ راست ریموٹ پلے بیک رد کر سکتا ہے۔ ان کے لیے ٹیب کاسٹ کریں۔",
+    "description": "Alcydeo interface: tvShortClip"
+  },
+  "tvNoConnection": {
+    "message": "Chrome ریسیور سے رابطہ نہیں کر سکا۔ مطابقت دیکھیں یا Chrome مینو سے ٹیب کاسٹ کریں۔",
+    "description": "Alcydeo interface: tvNoConnection"
+  },
+  "tvPermission": {
+    "message": "Chrome نے ریسیور کا انتخاب روکا۔ براؤزر کی کاسٹ پالیسی دیکھیں یا اس کا کاسٹ مینو استعمال کریں۔",
+    "description": "Alcydeo interface: tvPermission"
+  },
+  "tvActivation": {
+    "message": "ریسیور چننے کے لیے Cast پھر کلک کریں۔",
+    "description": "Alcydeo interface: tvActivation"
+  },
+  "tvBusy": {
+    "message": "ریسیور کا انتخاب پہلے سے کھلا ہے۔ پہلے اسے مکمل کریں۔",
+    "description": "Alcydeo interface: tvBusy"
+  },
+  "tvMediaCodec": {
+    "message": "Chrome اس پلیئر میں سورس نہیں کھول سکتا۔ اصل ٹیب یا دوسری کوالٹی آزمائیں۔",
+    "description": "Alcydeo interface: tvMediaCodec"
+  },
+  "tvMediaNetwork": {
+    "message": "ویڈیو یہاں لوڈ نہیں ہوئی۔ لنک ختم ہو سکتا ہے یا اصل صفحے کا سیشن چاہیے۔ اس ٹیب پر لوٹیں۔",
+    "description": "Alcydeo interface: tvMediaNetwork"
+  },
+  "tvOriginalMissing": {
+    "message": "اصل ٹیب بند یا بدل گیا ہے۔ ویڈیو صفحہ پھر کھولیں اور سورس تلاش کریں۔",
+    "description": "Alcydeo interface: tvOriginalMissing"
+  },
+  "tvCastTab": {
+    "message": "اصل ٹیب کاسٹ کریں",
+    "description": "Alcydeo interface: tvCastTab"
+  },
+  "tvOriginal": {
+    "message": "اصل پلیئر پر لوٹیں",
+    "description": "Alcydeo interface: tvOriginal"
+  },
+  "tvChromeSteps": {
+    "message": "اصل ٹیب پر لوٹ کر ویڈیو چلائیں، پھر Chrome ⋮ ← کاسٹ، محفوظ اور شیئر کریں ← کاسٹ کریں… ← ذرائع ← ٹیب کاسٹ کریں کھولیں۔ ٹی وی چنیں۔ یہ انتخاب Chrome مینو سے کھلتا ہے۔",
+    "description": "Alcydeo interface: tvChromeSteps"
+  },
+  "tvNetworkHint": {
+    "message": "اسی مقامی نیٹ ورک پر Google Cast ریسیور رکھیں۔ Chrome بھی نہ ڈھونڈے تو نیٹ ورک، VPN اور فائر وال دیکھیں۔",
+    "description": "Alcydeo interface: tvNetworkHint"
+  },
+  "tvWebTitle": {
+    "message": "Google Cast پلیئر",
+    "description": "Alcydeo interface: tvWebTitle"
+  },
+  "tvWebOpen": {
+    "message": "ٹی وی چنیں",
+    "description": "Alcydeo interface: tvWebOpen"
+  },
+  "tvWebPreparing": {
+    "message": "Google Cast کنٹرول لوڈ ہو رہے ہیں…",
+    "description": "Alcydeo interface: tvWebPreparing"
+  },
+  "tvWebLoad": {
+    "message": "ٹی وی پر چلائیں",
+    "description": "Alcydeo interface: tvWebLoad"
+  },
+  "tvWebStop": {
+    "message": "منقطع کریں",
+    "description": "Alcydeo interface: tvWebStop"
+  },
+  "tvWebNoMedia": {
+    "message": "براہ راست ویڈیو لنک ڈالیں، ٹی وی چنیں اور ٹی وی پر چلائیں کلک کریں۔",
+    "description": "Alcydeo interface: tvWebNoMedia"
+  },
+  "tvWebHint": {
+    "message": "الگ ویب صفحہ Google Cast SDK لوڈ کرتا ہے۔ ریسیور چننے پر اس کے پلیئر کو ویڈیو لنک اور عنوان ملتے ہیں۔ کوکی یا پاس ورڈ نہیں بھیجے جاتے۔",
+    "description": "Alcydeo interface: tvWebHint"
+  },
+  "tvWebUnavailable": {
+    "message": "اس تنصیب میں Google Cast ویب پلیئر دستیاب نہیں۔ مقامی جانچ میں Chrome کا کاسٹ مینو استعمال کریں۔",
+    "description": "Alcydeo interface: tvWebUnavailable"
+  },
+  "tvWebLoadError": {
+    "message": "ریسیور ویڈیو لوڈ نہیں کر سکا۔ لنک کو کوکی چاہیے، ختم ہو گیا ہے یا فارمیٹ موافق نہیں۔ اصل ٹیب کاسٹ کریں۔",
+    "description": "Alcydeo interface: tvWebLoadError"
+  },
+  "tvWebSdkError": {
+    "message": "Google Cast کنٹرول لوڈ نہیں ہوئے۔ Chrome، کنکشن اور Google SDK تک رسائی دیکھیں۔",
+    "description": "Alcydeo interface: tvWebSdkError"
+  },
+  "tvNative": {
+    "message": "اصل پروٹوٹائپ",
+    "description": "Alcydeo interface: tvNative"
+  },
+  "tvWebPlay": {
+    "message": "چلائیں",
+    "description": "Alcydeo interface: tvWebPlay"
+  },
+  "castVideo": {
+    "message": "کاسٹ کریں",
+    "description": "Alcydeo interface: castVideo"
+  },
+  "tvCastBuiltIn": {
+    "message": "Chrome کے ریسیور انتخاب میں ٹی وی چنیں۔ کنٹرول کے لیے یہ ٹیب کھلا رکھیں۔",
+    "description": "Alcydeo interface: tvCastBuiltIn"
+  },
+  "tvCastAutoQuality": {
+    "message": "ٹی وی کو مکمل اسٹریم ملتی ہے اور وہ موافق معیار اور آڈیو چنتا ہے۔",
+    "description": "Alcydeo interface: tvCastAutoQuality"
+  },
+  "tvCastTimeout": {
+    "message": "ریسیور نے وقت پر پلے بیک کی تصدیق نہیں کی۔ پھر کوشش کریں یا اصل ٹیب کاسٹ کریں۔",
+    "description": "Alcydeo interface: tvCastTimeout"
+  },
+  "tvCastLocalFile": {
+    "message": "صرف PC پر رکھی فائل کا لنک ٹی وی نہیں کھول سکتا۔ اسے Chrome میں چلا کر ٹیب کاسٹ کریں۔",
+    "description": "Alcydeo interface: tvCastLocalFile"
+  },
+  "tvCast_idle": {
+    "message": "اس ویڈیو کے لیے ریسیور چنیں۔",
+    "description": "Alcydeo interface: tvCast_idle"
+  },
+  "tvCast_choosing": {
+    "message": "Chrome میں ٹی وی چنیں…",
+    "description": "Alcydeo interface: tvCast_choosing"
+  },
+  "tvCast_connecting": {
+    "message": "ریسیور سے منسلک ہو رہا ہے…",
+    "description": "Alcydeo interface: tvCast_connecting"
+  },
+  "tvCast_loading": {
+    "message": "ریسیور ویڈیو لوڈ کر رہا ہے…",
+    "description": "Alcydeo interface: tvCast_loading"
+  },
+  "tvCast_playing": {
+    "message": "ٹی وی پر چل رہا ہے",
+    "description": "Alcydeo interface: tvCast_playing"
+  },
+  "tvCast_paused": {
+    "message": "ٹی وی پر رکا ہے",
+    "description": "Alcydeo interface: tvCast_paused"
+  },
+  "tvCast_finished": {
+    "message": "پلے بیک مکمل ہوا",
+    "description": "Alcydeo interface: tvCast_finished"
+  },
+  "tvCast_error": {
+    "message": "پلے بیک کی تصدیق نہیں ہوئی۔",
+    "description": "Alcydeo interface: tvCast_error"
+  },
+  "tvFileClose": {
+    "message": "فائل بند کریں",
+    "description": "Alcydeo interface: tvFileClose"
+  },
+  "tvDetectedVideo": {
+    "message": "شناخت شدہ ویڈیو",
+    "description": "Alcydeo interface: tvDetectedVideo"
+  },
+  "tvLocalFile": {
+    "message": "اس PC کی فائل",
+    "description": "Alcydeo interface: tvLocalFile"
+  },
+  "tvFileIntro": {
+    "message": "فائل یہاں چلائیں، پھر اپنے ریسیور کے مطابق کاسٹ کا طریقہ چنیں۔",
+    "description": "Alcydeo interface: tvFileIntro"
+  },
+  "tvFileChoose": {
+    "message": "ویڈیو فائل چنیں",
+    "description": "Alcydeo interface: tvFileChoose"
+  },
+  "tvFileChooseSaved": {
+    "message": "PC پر محفوظ فائل چنیں:",
+    "description": "Alcydeo interface: tvFileChooseSaved"
+  },
+  "tvFileCastGuide": {
+    "message": "یہ پلیئر کیسے کاسٹ کریں",
+    "description": "Alcydeo interface: tvFileCastGuide"
+  },
+  "tvFileStepPlay": {
+    "message": "Alcydeo میں ویڈیو فائل کھولیں اور چلانا شروع کریں۔",
+    "description": "Alcydeo interface: tvFileStepPlay"
+  },
+  "tvFileStepMenu": {
+    "message": "Chrome ⋮ ← کاسٹ، محفوظ اور شیئر کریں ← کاسٹ کریں… کھولیں۔ یہ بٹن ہدایات دکھاتا ہے؛ ٹی وی کا انتخاب Chrome مینو سے کھلتا ہے۔",
+    "description": "Alcydeo interface: tvFileStepMenu"
+  },
+  "tvFileStepTab": {
+    "message": "ذرائع میں ٹیب کاسٹ کریں چنیں، پھر اپنا ٹی وی، مثلاً NVIDIA SHIELD۔",
+    "description": "Alcydeo interface: tvFileStepTab"
+  },
+  "tvFileKeepOpen": {
+    "message": "یہ ٹیب کھلا رکھیں۔ پلیئر سے ویڈیو کنٹرول کریں اور Chrome سے کاسٹ روکیں۔ ٹیب کاسٹ کرنا ویڈیو لنک بھیجنے سے زیادہ CPU لے سکتا ہے۔",
+    "description": "Alcydeo interface: tvFileKeepOpen"
+  },
+  "tvFilePrivacy": {
+    "message": "فائلیں اسی PC پر رہتی ہیں؛ Chrome کا مقامی Cast چنے گئے ریسیور کو میڈیا بھیجتا ہے۔ Alcydeo ہوسٹنگ سروس پر اپ لوڈ نہیں کرتا۔",
+    "description": "Alcydeo interface: tvFilePrivacy"
+  },
+  "tvFileInvalid": {
+    "message": "غیر خالی ویڈیو فائل چنیں۔",
+    "description": "Alcydeo interface: tvFileInvalid"
+  },
+  "tvFileCodec": {
+    "message": "Chrome یہ فائل نہیں چلا سکتا۔ ویڈیو ٹولز میں اسے MP4 میں تبدیل کر کے دیکھیں۔",
+    "description": "Alcydeo interface: tvFileCodec"
+  },
+  "tvFileChooseAgain": {
+    "message": "رکھی گئی فائل دستیاب نہیں۔ اس PC پر محفوظ کاپی چنیں۔",
+    "description": "Alcydeo interface: tvFileChooseAgain"
+  },
+  "tvFilePlayFirst": {
+    "message": "اس پلیئر میں ویڈیو چلائیں، پھر کاسٹ دبائیں۔",
+    "description": "Alcydeo interface: tvFilePlayFirst"
+  },
+  "tvFilePrepare": {
+    "message": "فائل کاسٹ کے لیے تیار کریں",
+    "description": "Alcydeo interface: tvFilePrepare"
+  },
+  "tvFileCopying": {
+    "message": "مقامی فائل تیار ہو رہی ہے…",
+    "description": "Alcydeo interface: tvFileCopying"
+  },
+  "tvFileAccess": {
+    "message": "Chrome میں Alcydeo ایکسٹینشن کی تفصیل میں فائل URL تک رسائی فعال کریں، پھر پلیئر دوبارہ کھولیں۔",
+    "description": "Alcydeo interface: tvFileAccess"
+  },
+  "tvFileAccessHint": {
+    "message": "کاسٹ کے لیے محفوظ فائل کی اختیاری اجازت چاہیے۔ فائل اپ لوڈ نہیں ہوتی۔ تیار ہونے پر اسی پلیئر میں کاسٹ دبائیں۔",
+    "description": "Alcydeo interface: tvFileAccessHint"
+  },
+  "tvFileCopyHint": {
+    "message": "مقامی Cast کے لیے Chrome کو محفوظ فائل چاہیے۔ تیاری میں مقامی کاپی بنانے کے لیے محفوظ کرنے کا انتخاب کھلے گا؛ اصل فائل برقرار رہے گی۔",
+    "description": "Alcydeo interface: tvFileCopyHint"
+  },
+  "tvFileCopyFailed": {
+    "message": "مقامی کاپی تیار نہیں ہوئی۔ پھر کوشش کریں؛ ریسیور سے رابطہ نہیں ہوا۔",
+    "description": "Alcydeo interface: tvFileCopyFailed"
+  },
+  "tvFilePath": {
+    "message": "یہ فائل پاتھ معاون نہیں۔ ویڈیو چن کر مقامی کاپی تیار کریں۔ نیٹ ورک شیئر نہیں کھولے جاتے۔",
+    "description": "Alcydeo interface: tvFilePath"
+  },
+  "tvFileShort": {
+    "message": "Chrome کے مقامی ریموٹ پلے بیک میں ویڈیو 15 سیکنڈ سے لمبی چاہیے۔ اس کلپ کے لیے ٹیب کاسٹ گائیڈ دیکھیں۔",
+    "description": "Alcydeo interface: tvFileShort"
+  },
+  "tvFileCastChange": {
+    "message": "ٹی وی بدلیں / منقطع کریں",
+    "description": "Alcydeo interface: tvFileCastChange"
+  },
+  "tvFileState_disconnected": {
+    "message": "ریسیور چننے کے لیے تیار",
+    "description": "Alcydeo interface: tvFileState_disconnected"
+  },
+  "tvFileState_choosing": {
+    "message": "Chrome میں ٹی وی چنیں…",
+    "description": "Alcydeo interface: tvFileState_choosing"
+  },
+  "tvFileState_connecting": {
+    "message": "منسلک ہو رہا ہے…",
+    "description": "Alcydeo interface: tvFileState_connecting"
+  },
+  "tvFileState_connected": {
+    "message": "ریسیور منسلک ہے",
+    "description": "Alcydeo interface: tvFileState_connected"
+  },
+  "tvFileState_error": {
+    "message": "ریسیور رابطے کی تصدیق نہیں",
+    "description": "Alcydeo interface: tvFileState_error"
+  },
+  "tvFileReceiverLimit": {
+    "message": "Chrome کا فائل Cast بٹن بعض Chromecast آلات اور Google TV Streamer کو سپورٹ کرتا ہے۔ یہ API Nvidia Shield کو قبول نہیں کرتی؛ Chrome مینو سے پلیئر کا ٹیب کاسٹ کریں۔",
+    "description": "Alcydeo interface: tvFileReceiverLimit"
+  },
+  "tvWebPlayerVolume": {
+    "message": "آواز",
+    "description": "Alcydeo interface: tvWebPlayerVolume"
+  },
+  "tvWebPlayerSeek": {
+    "message": "پلے بیک کا مقام",
+    "description": "Alcydeo interface: tvWebPlayerSeek"
+  },
+  "tvWebFullscreen": {
+    "message": "پوری اسکرین",
+    "description": "Alcydeo interface: tvWebFullscreen"
+  },
+  "tvWebExitFullscreen": {
+    "message": "پوری اسکرین سے باہر نکلیں",
+    "description": "Alcydeo interface: tvWebExitFullscreen"
+  },
+  "tvWebUsingOriginal": {
+    "message": "ڈاؤن لوڈ کا اصل ذریعہ",
+    "description": "Alcydeo interface: tvWebUsingOriginal"
+  },
+  "tvWebPreviewUnavailable": {
+    "message": "اس ذریعے کا مقامی پیش نظارہ دستیاب نہیں۔ آپ کا ٹی وی یہ فارمیٹ چلا سکتا ہے؛ کاسٹ آزما سکتے ہیں۔",
+    "description": "Alcydeo interface: tvWebPreviewUnavailable"
+  },
+  "tvWebSeek": {
+    "message": "ٹی وی پر مقام",
+    "description": "Alcydeo interface: tvWebSeek"
+  },
+  "tvWebVolume": {
+    "message": "ٹی وی کی آواز",
+    "description": "Alcydeo interface: tvWebVolume"
+  },
+  "tvWebSource": {
+    "message": "ویڈیو کا پتہ",
+    "description": "Alcydeo interface: tvWebSource"
+  },
+  "tvFileCastTabSteps": {
+    "message": "ٹیب کاسٹ کریں · Chrome کے مراحل",
+    "description": "Alcydeo interface: tvFileCastTabSteps"
+  },
+  "tvFileCastNative": {
+    "message": "نیٹو Cast · موافق آلات",
+    "description": "Alcydeo interface: tvFileCastNative"
+  },
+  "trimStartTime": {
+    "message": "آغاز کا وقت",
+    "description": "Alcydeo interface: trimStartTime"
+  },
+  "trimEndTime": {
+    "message": "اختتام کا وقت",
+    "description": "Alcydeo interface: trimEndTime"
+  },
+  "trimTimeHint": {
+    "message": "سیکنڈ یا m:ss / h:mm:ss درج کریں، زیادہ سے زیادہ تین اعشاری ہندسوں کے ساتھ۔",
+    "description": "Alcydeo interface: trimTimeHint"
+  },
+  "undoAnnotations": {
+    "message": "لکیر واپس لیں",
+    "description": "Alcydeo interface: undoAnnotations"
+  },
+  "clearAnnotations": {
+    "message": "ڈرائنگ صاف کریں",
+    "description": "Alcydeo interface: clearAnnotations"
+  },
+  "language": {
+    "message": "زبان",
+    "description": "Alcydeo interface: language"
+  },
+  "languageAutomatic": {
+    "message": "Chrome کی زبان",
+    "description": "Alcydeo interface: languageAutomatic"
+  },
+  "selectVideo": {
+    "message": "ویڈیو منتخب کریں",
+    "description": "Alcydeo interface: selectVideo"
+  },
+  "selectPage": {
+    "message": "یہ صفحہ منتخب کریں",
+    "description": "Alcydeo interface: selectPage"
+  },
+  "selectedFiles": {
+    "message": "منتخب فائلیں",
+    "description": "Alcydeo interface: selectedFiles"
+  },
+  "selectedCount": {
+    "message": "$1 منتخب",
+    "description": "Alcydeo interface: selectedCount"
+  },
+  "deleteSelection": {
+    "message": "انتخاب حذف کریں",
+    "description": "Alcydeo interface: deleteSelection"
+  },
+  "clearSelection": {
+    "message": "انتخاب ختم کریں",
+    "description": "Alcydeo interface: clearSelection"
+  },
+  "batchSequential": {
+    "message": "فائلیں ایک ایک کر کے پراسیس ہوں گی۔ اصل فائلیں برقرار رہیں گی۔ نیچے دستیاب نہ ہونے والی مقامی کاپیاں چنیں۔",
+    "description": "Alcydeo interface: batchSequential"
+  },
+  "batchPreparing": {
+    "message": "$2 میں سے $1 تیار ہو رہا ہے…",
+    "description": "Alcydeo interface: batchPreparing"
+  },
+  "batchQueued": {
+    "message": "$1 فائلیں قطار میں شامل ہوئیں۔",
+    "description": "Alcydeo interface: batchQueued"
+  },
+  "chooseLocalFiles": {
+    "message": "جاری رکھنے کے لیے محفوظ مقامی فائل چنیں۔",
+    "description": "Alcydeo interface: chooseLocalFiles"
+  },
+  "allowLocalFiles": {
+    "message": "محفوظ فائلوں تک رسائی دیں",
+    "description": "Alcydeo interface: allowLocalFiles"
+  },
+  "compressionSettings": {
+    "message": "کمپریشن کی طے شدہ ترتیبات",
+    "description": "Alcydeo interface: compressionSettings"
+  },
+  "compressionDefaultsHint": {
+    "message": "لائبریری میں کمپریشن کے لیے۔ معیار، زیادہ سے زیادہ ریزولوشن اور آڈیو بٹ ریٹ حجم اور وقت بدلتے ہیں۔",
+    "description": "Alcydeo interface: compressionDefaultsHint"
+  },
+  "captureQuality": {
+    "message": "کیپچر کا معیار",
+    "description": "Alcydeo interface: captureQuality"
+  },
+  "captureSource": {
+    "message": "ماخذ کا ریزولوشن",
+    "description": "Alcydeo interface: captureSource"
+  },
+  "captureQualityHint": {
+    "message": "زیادہ بٹ ریٹ کے ساتھ 4K اور 30 fps تک۔ تفصیل ماخذ پر منحصر ہے؛ پکسل بڑھانے سے گم تفصیل واپس نہیں آتی۔",
+    "description": "Alcydeo interface: captureQualityHint"
+  },
+  "captureHighBitrate": {
+    "message": "زیادہ بٹ ریٹ",
+    "description": "Alcydeo interface: captureHighBitrate"
+  },
+  "annotations": {
+    "message": "کیپچر کردہ ٹیب پر بنائیں",
+    "description": "Alcydeo interface: annotations"
+  },
+  "captureTab": {
+    "message": "یہ ٹیب کیپچر کریں",
+    "description": "Alcydeo interface: captureTab"
+  },
+  "recordDetectedHint": {
+    "message": "معاون HLS لائیو براہ راست ریکارڈ ہوتا ہے۔ دوسرے پلیئر ٹیب کیپچر استعمال کرتے ہیں۔",
+    "description": "Alcydeo interface: recordDetectedHint"
+  },
+  "visualTrim": {
+    "message": "بصری ٹرم ایڈیٹر",
+    "description": "Alcydeo interface: visualTrim"
+  },
+  "visualMerge": {
+    "message": "بصری مرج ایڈیٹر",
+    "description": "Alcydeo interface: visualMerge"
+  },
+  "previewUnavailable": {
+    "message": "Chrome یہ فائل نہیں دکھا سکتا۔ موافق MP4 آزمائیں۔",
+    "description": "Alcydeo interface: previewUnavailable"
+  },
+  "playSelection": {
+    "message": "انتخاب چلائیں",
+    "description": "Alcydeo interface: playSelection"
+  },
+  "cutInHandle": {
+    "message": "ٹرم کا ابتدائی ہینڈل",
+    "description": "Alcydeo interface: cutInHandle"
+  },
+  "cutOutHandle": {
+    "message": "ٹرم کا آخری ہینڈل",
+    "description": "Alcydeo interface: cutOutHandle"
+  },
+  "markStart": {
+    "message": "یہاں آغاز رکھیں",
+    "description": "Alcydeo interface: markStart"
+  },
+  "markEnd": {
+    "message": "یہاں اختتام رکھیں",
+    "description": "Alcydeo interface: markEnd"
+  },
+  "mergeVisualHint": {
+    "message": "کلپ کھینچ کر یا تیروں سے ترتیب بدلیں۔ تھمب نیل دبا کر کلپ دیکھیں۔",
+    "description": "Alcydeo interface: mergeVisualHint"
+  },
+  "totalDuration": {
+    "message": "کل دورانیہ",
+    "description": "Alcydeo interface: totalDuration"
+  },
+  "preciseTimes": {
+    "message": "درست اوقات",
+    "description": "Alcydeo interface: preciseTimes"
+  },
+  "processingDefaults": {
+    "message": "ترتیبات میں طے شدہ اقدار بدلیں",
+    "description": "Alcydeo interface: processingDefaults"
+  },
+  "castReuseFile": {
+    "message": "دوسری کاپی بنائے بغیر Chrome کی فائل لیں:",
+    "description": "Alcydeo interface: castReuseFile"
+  },
+  "castLocalPath": {
+    "message": "مقامی پاتھ (کاپی نہیں)",
+    "description": "Alcydeo interface: castLocalPath"
+  },
+  "cloudProviderRemoved": {
+    "message": "یہ فراہم کنندہ ہٹا دیا گیا۔ پرانا کام منسوخ یا حذف کریں۔",
+    "description": "Alcydeo interface: cloudProviderRemoved"
+  },
+  "conversionSaving": {
+    "message": "MP4 محفوظ ہو رہا ہے",
+    "description": "Alcydeo interface: conversionSaving"
+  },
+  "conversionSettings": {
+    "message": "MP4 میں تبدیلی",
+    "description": "Alcydeo interface: conversionSettings"
+  },
+  "convertMp4": {
+    "message": "MP4 میں تبدیل کریں",
+    "description": "Alcydeo interface: convertMp4"
+  },
+  "chooseConversionFile": {
+    "message": "تبدیل کرنے کے لیے ویڈیو چنیں",
+    "description": "Alcydeo interface: chooseConversionFile"
+  },
+  "conversionHint": {
+    "message": "H.264 ویڈیو اور AAC آڈیو کے ساتھ MP4۔ ایک وقت میں ایک فائل؛ مینیجر کھلا رکھیں۔ اصل فائل برقرار رہتی ہے۔ معاون ٹریک نقل ہوتے ہیں؛ دیگر معاون ٹریک دوبارہ انکوڈ ہوتے ہیں، جس میں وقت لگ سکتا ہے اور معیار بدل سکتا ہے۔",
+    "description": "Alcydeo interface: conversionHint"
+  },
+  "conversionRestartHint": {
+    "message": "ایک وقت میں ایک فائل تبدیل ہوتی ہے۔ روکنے یا مینیجر بند کرنے کے بعد محفوظ ماخذ فائل سے دوبارہ شروع ہوتا ہے۔",
+    "description": "Alcydeo interface: conversionRestartHint"
+  },
+  "preparingConversion": {
+    "message": "تبدیلی کی تیاری",
+    "description": "Alcydeo interface: preparingConversion"
+  },
+  "converting": {
+    "message": "MP4 میں تبدیل ہو رہا ہے",
+    "description": "Alcydeo interface: converting"
+  },
+  "err_conversionCodec": {
+    "message": "Chrome اس فائل کے تمام آڈیو/ویڈیو ٹریک H.264/AAC میں تبدیل نہیں کر سکتا۔ اصل فائل برقرار ہے؛ نامکمل MP4 محفوظ نہیں ہوا۔",
+    "description": "Alcydeo interface: err_conversionCodec"
+  },
+  "err_conversionInput": {
+    "message": "اصل ویڈیو دوبارہ چنیں؛ مقامی تیاری رک گئی تھی یا فائل دستیاب نہیں ہے۔",
+    "description": "Alcydeo interface: err_conversionInput"
+  },
+  "clearHistory": {
+    "message": "تاریخ صاف کریں",
+    "description": "Alcydeo interface: clearHistory"
+  },
+  "clearHistoryTitle": {
+    "message": "ڈاؤن لوڈ کی پوری تاریخ صاف کریں؟",
+    "description": "Alcydeo interface: clearHistoryTitle"
+  },
+  "clearHistoryHint": {
+    "message": "Alcydeo سے تمام صفحات اور فلٹرز میں مکمل، ناکام اور منسوخ ڈاؤن لوڈ کے ریکارڈ اور ان کی عارضی فائلیں حذف ہوں گی، پسندیدہ سمیت۔ محفوظ فائلیں اور جاری یا رکے ہوئے ڈاؤن لوڈ برقرار رہیں گے۔",
+    "description": "Alcydeo interface: clearHistoryHint"
+  },
+  "confirmClearHistory": {
+    "message": "پوری تاریخ صاف کریں",
+    "description": "Alcydeo interface: confirmClearHistory"
+  },
+  "historyCleared": {
+    "message": "تاریخ صاف ہو گئی۔ محفوظ فائلیں برقرار ہیں۔",
+    "description": "Alcydeo interface: historyCleared"
+  },
+  "pagination": {
+    "message": "ڈاؤن لوڈ فہرست کے صفحات",
+    "description": "Alcydeo interface: pagination"
+  },
+  "previousPage": {
+    "message": "پچھلا",
+    "description": "Alcydeo interface: previousPage"
+  },
+  "nextPage": {
+    "message": "اگلا",
+    "description": "Alcydeo interface: nextPage"
+  },
+  "pageStatus": {
+    "message": "$total$ میں سے صفحہ $current$",
+    "description": "Alcydeo interface: pageStatus",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "1"
+      },
+      "total": {
+        "content": "$2",
+        "example": "6"
+      }
+    }
+  },
+  "multipartDownloads": {
+    "message": "کئی حصوں میں ڈاؤن لوڈ",
+    "description": "Alcydeo interface: multipartDownloads"
+  },
+  "multipartEnable": {
+    "message": "موافق فائلوں اور DASH کے لیے متعدد کنکشن استعمال کریں",
+    "description": "Alcydeo interface: multipartEnable"
+  },
+  "multipartConnections": {
+    "message": "فی فائل کنکشن",
+    "description": "Alcydeo interface: multipartConnections"
+  },
+  "multipartHint": {
+    "message": "مینیجر کھلا رکھیں۔ موافق آڈیو اور ویڈیو ٹریک ساتھ ڈاؤن لوڈ ہو سکتے ہیں۔ ایک وسیلہ تقسیم کرنے کے لیے قابل اعتماد بائٹ رینج اور مضبوط ورژن تصدیق درکار ہے؛ ورنہ معمول کی منتقلی ہوتی ہے۔ رفتار سرور اور کنکشن پر منحصر ہے۔",
+    "description": "Alcydeo interface: multipartHint"
+  },
+  "notice_multipartUnavailable": {
+    "message": "اس ماخذ کے لیے متوازی حصے دستیاب نہیں۔ معمول کی منتقلی استعمال ہوگی۔",
+    "description": "Alcydeo interface: notice_multipartUnavailable"
+  },
+  "err_sourceRestricted": {
+    "message": "ماخذ نے اس اسٹریم تک رسائی مسترد کر دی۔ پلیئر کے موجودہ سیشن میں یہ ویڈیو ڈاؤن لوڈ نہیں ہو سکتی۔",
+    "description": "Alcydeo interface: err_sourceRestricted"
+  },
+  "err_sourcePending": {
+    "message": "ڈاؤن لوڈ کا ماخذ دستیاب کرنے کے لیے ویڈیو چند سیکنڈ چلائیں۔",
+    "description": "Alcydeo interface: err_sourcePending"
+  },
+  "sabrRestartHint": {
+    "message": "یہ منتقلی رکنے پر دوبارہ شروع کرنے سے ڈاؤن لوڈ ابتدا سے ہوگا۔",
+    "description": "Alcydeo interface: sabrRestartHint"
+  },
+  "downloadDestination": {
+    "message": "فائلیں محفوظ کرنا",
+    "description": "Alcydeo interface: downloadDestination"
+  },
+  "saveAutomatically": {
+    "message": "خودکار طور پر محفوظ کریں",
+    "description": "Alcydeo interface: saveAutomatically"
+  },
+  "saveAsk": {
+    "message": "ہر ڈاؤن لوڈ پر محفوظ کریں بہ نام دکھائیں",
+    "description": "Alcydeo interface: saveAsk"
+  },
+  "downloadSubfolder": {
+    "message": "Chrome کے ڈاؤن لوڈ فولڈر میں ذیلی فولڈر",
+    "description": "Alcydeo interface: downloadSubfolder"
+  },
+  "downloadFolderHint": {
+    "message": "فائلیں Chrome میں منتخب ڈاؤن لوڈ فولڈر کے اس ذیلی فولڈر میں محفوظ ہوتی ہیں۔ مرکزی فولڈر Chrome کی ڈاؤن لوڈ ترتیبات میں بدلیں۔",
+    "description": "Alcydeo interface: downloadFolderHint"
+  },
+  "chromeDownloadSettings": {
+    "message": "Chrome میں مرکزی فولڈر منتخب کریں",
+    "description": "Alcydeo interface: chromeDownloadSettings"
+  },
+  "err_saveDialog": {
+    "message": "محفوظ کرنا شروع نہیں ہوا۔ دوبارہ کوشش کریں اور محفوظ کریں بہ نام کی کھڑکی میں نام اور مقام منتخب کریں۔",
+    "description": "Alcydeo interface: err_saveDialog"
+  },
+  "technicalDetails": {
+    "message": "تکنیکی تفصیلات",
+    "description": "Alcydeo interface: technicalDetails"
+  },
+  "err_chooseQuality": {
+    "message": "یہ ماخذ اب کئی معیار دکھاتا ہے۔ ویڈیو کے صفحے پر Alcydeo دوبارہ کھولیں، معیار تلاش کریں اور پھر منتخب کریں۔",
+    "description": "Alcydeo interface: err_chooseQuality"
+  },
+  "err_manifestLoop": {
+    "message": "ماخذ پہلے دیکھی گئی پلے لسٹ پر واپس جاتا ہے۔ اصل پلیئر تازہ کریں اور ماخذ دوبارہ تلاش کریں۔",
+    "description": "Alcydeo interface: err_manifestLoop"
+  },
+  "globalDetection": {
+    "message": "میڈیا کی خودکار شناخت",
+    "description": "Alcydeo interface: globalDetection"
+  },
+  "globalDetectionHint": {
+    "message": "پہلے سے فعال۔ Chrome تنصیب پر سائٹس تک رسائی دیتا ہے۔ یہاں شناخت روکیں یا Chrome میں سائٹس تک رسائی محدود کریں۔",
+    "description": "Alcydeo interface: globalDetectionHint"
+  },
+  "err_html": {
+    "message": "ماخذ نے میڈیا کے بجائے HTML صفحہ بھیجا۔ ڈاؤن لوڈ روک دیا گیا۔ اصل پلیئر تازہ کریں اور میڈیا ماخذ دوبارہ تلاش کریں۔",
+    "description": "Alcydeo interface: err_html"
+  },
+  "err_notMedia": {
+    "message": "یہ جواب معاون میڈیا فائل نہیں۔ پلیئر تازہ کریں اور میڈیا ماخذ دوبارہ تلاش کریں۔",
+    "description": "Alcydeo interface: err_notMedia"
+  },
+  "appName": {
+    "message": "Alcydeo",
+    "description": "Alcydeo interface: appName"
+  },
+  "appDescription": {
+    "message": "ویڈیوز تلاش کریں، مقامی طور پر محفوظ کریں اور لائبریری نجی رکھیں۔",
+    "description": "Alcydeo interface: appDescription"
+  },
+  "tagline": {
+    "message": "آپ کی ویڈیوز۔ آپ کا آلہ۔",
+    "description": "Alcydeo interface: tagline"
+  },
+  "detected": {
+    "message": "اس صفحے پر",
+    "description": "Alcydeo interface: detected"
+  },
+  "scan": {
+    "message": "صفحہ اسکین کریں",
+    "description": "Alcydeo interface: scan"
+  },
+  "scanning": {
+    "message": "میڈیا تلاش کیا جا رہا ہے…",
+    "description": "Alcydeo interface: scanning"
+  },
+  "empty": {
+    "message": "شروع کرنے کے لیے ویڈیو چلائیں",
+    "description": "Alcydeo interface: empty"
+  },
+  "emptyHint": {
+    "message": "ویڈیو چلائیں، پھر بھی نظر نہ آئے تو صفحہ تازہ کریں۔",
+    "description": "Alcydeo interface: emptyHint"
+  },
+  "quality": {
+    "message": "معیار",
+    "description": "Alcydeo interface: quality"
+  },
+  "qualities": {
+    "message": "معیار کے اختیارات تلاش کریں",
+    "description": "Alcydeo interface: qualities"
+  },
+  "original": {
+    "message": "اصل ماخذ",
+    "description": "Alcydeo interface: original"
+  },
+  "unknownSize": {
+    "message": "حجم نامعلوم",
+    "description": "Alcydeo interface: unknownSize"
+  },
+  "download": {
+    "message": "ڈاؤن لوڈ کریں",
+    "description": "Alcydeo interface: download"
+  },
+  "preview": {
+    "message": "پیش منظر",
+    "description": "Alcydeo interface: preview"
+  },
+  "close": {
+    "message": "بند کریں",
+    "description": "Alcydeo interface: close"
+  },
+  "queue": {
+    "message": "ڈاؤن لوڈز",
+    "description": "Alcydeo interface: queue"
+  },
+  "library": {
+    "message": "لائبریری",
+    "description": "Alcydeo interface: library"
+  },
+  "settings": {
+    "message": "ترتیبات",
+    "description": "Alcydeo interface: settings"
+  },
+  "local": {
+    "message": "مقامی پروسیسنگ · بغیر اکاؤنٹ",
+    "description": "Alcydeo interface: local"
+  },
+  "manager": {
+    "message": "ڈاؤن لوڈ مینیجر کھولیں",
+    "description": "Alcydeo interface: manager"
+  },
+  "keepOpen": {
+    "message": "ٹکڑوں والے میڈیا کی پروسیسنگ کے دوران یہ مینیجر کھلا رکھیں۔ Chrome بند کرنے سے فعال کام رک جاتے ہیں۔",
+    "description": "Alcydeo interface: keepOpen"
+  },
+  "noTasks": {
+    "message": "آپ کی لائبریری یہیں سے شروع ہوتی ہے",
+    "description": "Alcydeo interface: noTasks"
+  },
+  "search": {
+    "message": "عنوان اور ٹیگ تلاش کریں",
+    "description": "Alcydeo interface: search"
+  },
+  "favorite": {
+    "message": "پسندیدہ",
+    "description": "Alcydeo interface: favorite"
+  },
+  "show": {
+    "message": "فولڈر میں دکھائیں",
+    "description": "Alcydeo interface: show"
+  },
+  "verified": {
+    "message": "ساخت کی جانچ ہو گئی",
+    "description": "Alcydeo interface: verified"
+  },
+  "pause": {
+    "message": "عارضی طور پر روکیں",
+    "description": "Alcydeo interface: pause"
+  },
+  "resume": {
+    "message": "دوبارہ شروع کریں",
+    "description": "Alcydeo interface: resume"
+  },
+  "cancel": {
+    "message": "منسوخ کریں",
+    "description": "Alcydeo interface: cancel"
+  },
+  "remove": {
+    "message": "ریکارڈ اور عارضی فائلیں حذف کریں",
+    "description": "Alcydeo interface: remove"
+  },
+  "export": {
+    "message": "حساس معلومات کے بغیر میٹاڈیٹا برآمد کریں",
+    "description": "Alcydeo interface: export"
+  },
+  "theme": {
+    "message": "تھیم",
+    "description": "Alcydeo interface: theme"
+  },
+  "system": {
+    "message": "سسٹم",
+    "description": "Alcydeo interface: system"
+  },
+  "light": {
+    "message": "روشن",
+    "description": "Alcydeo interface: light"
+  },
+  "dark": {
+    "message": "تاریک",
+    "description": "Alcydeo interface: dark"
+  },
+  "folder": {
+    "message": "ڈاؤن لوڈ فولڈر",
+    "description": "Alcydeo interface: folder"
+  },
+  "badge": {
+    "message": "ٹول بار بیج",
+    "description": "Alcydeo interface: badge"
+  },
+  "count": {
+    "message": "تعداد",
+    "description": "Alcydeo interface: count"
+  },
+  "dot": {
+    "message": "نقطہ",
+    "description": "Alcydeo interface: dot"
+  },
+  "hidden": {
+    "message": "پوشیدہ",
+    "description": "Alcydeo interface: hidden"
+  },
+  "blockedSites": {
+    "message": "مسدود میزبان (ہر سطر میں ایک؛ * استعمال ہو سکتا ہے)",
+    "description": "Alcydeo interface: blockedSites"
+  },
+  "save": {
+    "message": "ترتیبات محفوظ کریں",
+    "description": "Alcydeo interface: save"
+  },
+  "reset": {
+    "message": "ترتیبات بحال کریں",
+    "description": "Alcydeo interface: reset"
+  },
+  "saved": {
+    "message": "محفوظ ہو گیا",
+    "description": "Alcydeo interface: saved"
+  },
+  "title": {
+    "message": "فائل کا نام",
+    "description": "Alcydeo interface: title"
+  },
+  "privacy": {
+    "message": "کوئی ٹیلی میٹری نہیں۔ لائبریری اور کام اسی براؤزر میں رہتے ہیں۔ نیٹ ورک رسائی صرف اجازت یافتہ ذرائع تک محدود ہے۔",
+    "description": "Alcydeo interface: privacy"
+  },
+  "queued": {
+    "message": "قطار میں",
+    "description": "Alcydeo interface: queued"
+  },
+  "fetching": {
+    "message": "ڈاؤن لوڈ ہو رہا ہے",
+    "description": "Alcydeo interface: fetching"
+  },
+  "assembling": {
+    "message": "ٹریک یکجا کیے جا رہے ہیں",
+    "description": "Alcydeo interface: assembling"
+  },
+  "validating": {
+    "message": "فائل کی جانچ کا انتظار",
+    "description": "Alcydeo interface: validating"
+  },
+  "completed": {
+    "message": "مکمل",
+    "description": "Alcydeo interface: completed"
+  },
+  "paused": {
+    "message": "عارضی طور پر رکا ہوا",
+    "description": "Alcydeo interface: paused"
+  },
+  "failed": {
+    "message": "توجہ درکار ہے",
+    "description": "Alcydeo interface: failed"
+  },
+  "cancelled": {
+    "message": "منسوخ",
+    "description": "Alcydeo interface: cancelled"
+  },
+  "err_permission": {
+    "message": "یہ ماخذ دستیاب نہیں ہے۔",
+    "description": "Alcydeo interface: err_permission"
+  },
+  "err_network": {
+    "message": "ماخذ دستیاب نہیں۔ کنکشن جانچیں یا صفحہ تازہ کریں۔",
+    "description": "Alcydeo interface: err_network"
+  },
+  "err_expired": {
+    "message": "سیشن یا ماخذ لنک کی مدت ختم ہو گئی۔ اصل صفحہ تازہ کریں۔",
+    "description": "Alcydeo interface: err_expired"
+  },
+  "err_unsupported": {
+    "message": "اس اسٹریم کی قسم ابھی معاون نہیں۔ براہ راست ماخذ یا دوسرا معیار آزمائیں۔",
+    "description": "Alcydeo interface: err_unsupported"
+  },
+  "err_encrypted": {
+    "message": "خفیہ کردہ یا محفوظ میڈیا معاون نہیں ہے۔",
+    "description": "Alcydeo interface: err_encrypted"
+  },
+  "err_invalid": {
+    "message": "فائل کی تصدیق نہیں ہو سکی۔ یقینی بنائیں کہ ڈاؤن لوڈ کی گئی فائل منتخب ہے۔",
+    "description": "Alcydeo interface: err_invalid"
+  },
+  "err_space": {
+    "message": "عارضی اسٹوریج ناکافی ہے۔ پرانے کام حذف کر کے دوبارہ کوشش کریں۔",
+    "description": "Alcydeo interface: err_space"
+  },
+  "err_excluded": {
+    "message": "یہ ماخذ Alcydeo کے معاون دائرے سے باہر ہے۔",
+    "description": "Alcydeo interface: err_excluded"
+  },
+  "err_blocked": {
+    "message": "ترتیبات میں اس میزبان کے لیے شناخت بند ہے۔",
+    "description": "Alcydeo interface: err_blocked"
+  },
+  "err_interrupted": {
+    "message": "پروسیسنگ رک گئی۔ ماخذ دوبارہ کھولیں اور ممکن ہو تو جاری رکھیں۔",
+    "description": "Alcydeo interface: err_interrupted"
+  },
+  "notice_timedMetadataSkipped": {
+    "message": "محفوظ فائل میں وقت سے وابستہ میٹا ڈیٹا (0x15) شامل نہیں کیا گیا۔",
+    "description": "Alcydeo interface: notice_timedMetadataSkipped"
+  },
+  "deleteSelectionHint": {
+    "message": "منتخب اہل ریکارڈ اور ان کی عارضی فائلیں ہٹائیں۔ ڈسک کی فائلیں، فعال اور رکے ہوئے کام محفوظ رہیں گے۔",
+    "description": "Alcydeo interface: deleteSelectionHint"
+  },
+  "liveSource": {
+    "message": "براہ راست",
+    "description": "Alcydeo interface: liveSource"
+  },
+  "savingFile": {
+    "message": "فائل محفوظ ہو رہی ہے",
+    "description": "Alcydeo interface: savingFile"
+  },
+  "saveRequired": {
+    "message": "محفوظ کرنے کے لیے کارروائی درکار ہے",
+    "description": "Alcydeo interface: saveRequired"
+  },
+  "saveFile": {
+    "message": "فائل محفوظ کریں",
+    "description": "Alcydeo interface: saveFile"
+  },
+  "err_saveInterrupted": {
+    "message": "Chrome نے محفوظ ہونے کی تصدیق نہیں کی۔ ڈاؤن لوڈز یا کھلی بطور محفوظ کریں ونڈو دیکھیں، پھر تیار فائل دوبارہ محفوظ کریں۔",
+    "description": "Alcydeo interface: err_saveInterrupted"
+  },
+  "cloudExperimental": {
+    "message": "تجرباتی",
+    "description": "Alcydeo interface: cloudExperimental"
+  },
+  "cloudMegaupSend": {
+    "message": "MegaUp سے شیئر کریں",
+    "description": "Alcydeo interface: cloudMegaupSend"
+  },
+  "cloudMegaupHint": {
+    "message": "بغیر اکاؤنٹ تجرباتی اشتراک۔ فائلیں عوامی ہیں اور 30 دن غیر فعال رہنے پر ختم ہو سکتی ہیں۔ اصل فائل محفوظ رکھیں۔",
+    "description": "Alcydeo interface: cloudMegaupHint"
+  },
+  "err_cloudMegaupUnavailable": {
+    "message": "MegaUp کا اپ لوڈ صفحہ دستیاب نہیں یا بدل گیا ہے۔ منتقلی شروع نہیں ہوئی۔ بعد میں کوشش کریں یا دوسری منزل چنیں۔",
+    "description": "Alcydeo interface: err_cloudMegaupUnavailable"
+  },
+  "err_cloudFileTooLarge": {
+    "message": "یہ فائل منزل کی اپ لوڈ حد سے بڑی ہے۔ چھوٹی فائل چنیں۔",
+    "description": "Alcydeo interface: err_cloudFileTooLarge"
+  },
+  "cloudMegaupOpen": {
+    "message": "MegaUp کھولیں",
+    "description": "Alcydeo interface: cloudMegaupOpen"
+  }
+}

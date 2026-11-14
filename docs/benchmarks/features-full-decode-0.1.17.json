@@ -1,0 +1,42 @@
+{
+  "version": "0.1.17",
+  "method": "Independent development-only FFmpeg full decoding of every audio/video sample; original timestamps preserved with vsync 0",
+  "compressionInputBytes": 519432,
+  "results": [
+    {
+      "file": "compress.mp4",
+      "bytes": 350759,
+      "sha256": "8eabd554734c623adeb7f0bb4844c95de536dceab1749053828027e6101c7ff3",
+      "exitCode": 0,
+      "diagnostics": ""
+    },
+    {
+      "file": "trim.mp4",
+      "bytes": 242800,
+      "sha256": "6e072e19c3c2b1c9ce862ad50a7e4f1bdb2d868a5a1c4daad344894fc799e605",
+      "exitCode": 0,
+      "diagnostics": ""
+    },
+    {
+      "file": "merge.mp4",
+      "bytes": 2381051,
+      "sha256": "e072b1cf4f0b615438b8c7fa099d744916fc8f7a765ba63615981f06c5a1d828",
+      "exitCode": 0,
+      "diagnostics": ""
+    },
+    {
+      "file": "recording.webm",
+      "bytes": 178684,
+      "sha256": "726551816fbd67de35979481121f906049dd9ee3247ce17c14c52c1000b62fc5",
+      "exitCode": 0,
+      "diagnostics": ""
+    },
+    {
+      "file": "recording-recovered.webm",
+      "bytes": 92694,
+      "sha256": "81fd25817194cae6c3b2105688db95715104835063806054c4857d70499f1610",
+      "exitCode": 0,
+      "diagnostics": ""
+    }
+  ]
+}

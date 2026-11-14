@@ -1,0 +1,110 @@
+{
+  "version": "0.1.34",
+  "date": "2026-11-03",
+  "node": "24.22.2",
+  "pnpm": "12.5.1",
+  "browser": "156.0.8078.80",
+  "platform": "Linux/WSL2",
+  "unitTests": 305,
+  "typecheck": "pass",
+  "lint": "pass",
+  "browserTests": {
+    "local": {
+      "startTime": "2026-11-03T17:20:20.598Z",
+      "duration": 136786.62699999998,
+      "expected": 76,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "storeCloud": {
+      "startTime": "2026-11-03T17:23:07.857Z",
+      "duration": 8345.509,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "logs": [
+      "onefichier-0.1.34-local.log",
+      "onefichier-0.1.34-store.log"
+    ],
+    "fullSuiteRun": false
+  },
+  "verified": {
+    "anonymousInitialization": "onefichier-read-only-0.1.34.json",
+    "noProviderScriptExecuted": true,
+    "oneKnownSizeMultipartRequestPerFile": true,
+    "chromeWireContentLengthAndExactBytes": true,
+    "contentLengthProof": "local HTTPS server reached by original Chrome request, certificate exception confined to isolated test profile",
+    "seededProviderCookiesOmittedUsingAllHeaders": true,
+    "wireCookieAndAuthorizationAbsent": true,
+    "noUploadBeforeSend": true,
+    "multipleFilesSequential": true,
+    "exactReportedFilenameAndSize": true,
+    "fixedNodeReportDownloadLinkValidated": true,
+    "noUploadIdOrDeletionLinkPersisted": true,
+    "uploadRedirectNeverFollowed": true,
+    "metadataAndReportRedirectsRefused": true,
+    "explicitFreshIdWholeFileRetry": true,
+    "indeterminateProgressUntilConfirmation": true,
+    "cancelledJobSurvivesLateReplyAndReload": true,
+    "tenLocalesAndRtl": true,
+    "widths": [
+      1440,
+      900,
+      390
+    ],
+    "megaUpPcloudBatchToolsAndAutomaticSavingRegression": true
+  },
+  "limits": {
+    "conservativeFileBytes": 300000000000,
+    "uploadTimeoutMs": 14400000,
+    "metadataTimeoutMs": 20000,
+    "reportTimeoutMs": 30000,
+    "maximumJsonBytes": 65536,
+    "largeFileLimitTested": false,
+    "independentRemoteChecksumVerified": false,
+    "realProviderFileUploadTested": false,
+    "nativeWindowsDialogsTested": false,
+    "retention": "Anonymous storage not guaranteed after 15 days according to official help",
+    "delayedAvailabilityPossible": true,
+    "interruptedUploadResumption": "Explicit fresh whole-file upload; no byte/range resume; may duplicate after a lost report"
+  },
+  "storeProof": "store-runtime-0.1.34.json",
+  "externalPublication": false,
+  "artifacts": {
+    "testedBuildByteIdentical": true,
+    "crxPayloadEqualsZipAndBuild": true,
+    "runtimeFiles": 90,
+    "pages": 103,
+    "pagesArchiveFiles": 277,
+    "packages": [
+      {
+        "name": "alcydeo-0.1.34-chrome.zip",
+        "bytes": 2318202,
+        "sha256": "86f212cc5b885d72af535eaec0eb85484fbb666c8c9369a56e579dd789513b76"
+      },
+      {
+        "name": "alcydeo-0.1.34-local-test.crx",
+        "bytes": 2332088,
+        "sha256": "12a0d134380ef75b755b8e6b93648e378e11b40cc604cd5dc360a41b6942047a"
+      },
+      {
+        "name": "alcydeo-store-0.1.34-chrome.zip",
+        "bytes": 2267934,
+        "sha256": "c3bf97956e52eb2baa6be5d9f38c3475f34548ca21c3928983f201198ead8ef8"
+      },
+      {
+        "name": "alcydeo-pages-0.1.34.zip",
+        "bytes": 2556591,
+        "sha256": "29f3af526559087f2726daa71153b16df6d3d376488858b3bc37c3eb245f2ab2"
+      },
+      {
+        "name": "alcydeo-brand-0.1.34.zip",
+        "bytes": 1447690,
+        "sha256": "ae2b0a0680118b453fd8657280cdd7f5c4736b278d6b20b78a91be6512ab042b"
+      }
+    ]
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "version": "0.1.59",
+  "date": "2026-11-08",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chromeForTesting": "156.0.8078.4",
+    "platform": "Linux/WSL2 isolated extension profiles",
+    "userChromeSourceTag": "156.0.8078.76",
+    "userChromeSourceCommit": "93ce6b54af3fee27e384d1f30346e80db47a14da",
+    "personalProfileUsed": false
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "unitPassed": 910,
+    "unitFiles": 51,
+    "installedChromeUniqueCases": 39,
+    "localCases": 33,
+    "storeCases": 6,
+    "fullRepositoryE2ESuite": false,
+    "runs": {
+      "native-local-final": {
+        "startTime": "2026-11-08T15:00:37.579Z",
+        "duration": 47206.163,
+        "expected": 27,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "focus-final": {
+        "startTime": "2026-11-08T14:59:55.324Z",
+        "duration": 3256.529,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "focus-store": {
+        "startTime": "2026-11-08T15:01:28.962Z",
+        "duration": 2802.9629999999997,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "recovery-final": {
+        "startTime": "2026-11-08T15:00:05.623Z",
+        "duration": 36286.91499999999,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "recovery-association-final": {
+        "startTime": "2026-11-08T15:01:07.556Z",
+        "duration": 15364.5,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "recovery-store": {
+        "startTime": "2026-11-08T15:01:32.427Z",
+        "duration": 35650.746,
+        "expected": 4,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "reproductions": {
+    "recoveryBaseline58": {
+      "failed": 4,
+      "passed": 0
+    },
+    "hiddenControllerBaseline58": {
+      "failed": 1,
+      "expectedActive": true,
+      "actualActive": false
+    },
+    "finalRecoveryLocalAndStorePass": true,
+    "finalHiddenControllerLocalAndStorePass": true
+  },
+  "behavior": {
+    "nativePromptWithoutAwaitingPlay": true,
+    "realNativePromptInstrumented": true,
+    "directClickRetainsActivation": true,
+    "originalDownloadPreferred": true,
+    "missingOpfsDoesNotMaskNativeFile": true,
+    "missingCastCopyDoesNotMaskOriginal": true,
+    "manualReplacementDetachedFromTask": true,
+    "originalTaskAndBytesPreserved": true,
+    "noDuplicateDownloadWhenOriginalUsable": true,
+    "metadataWaitBoundedAndAbortable": true,
+    "autoSelectionRequiresRemainingActivation": true,
+    "localErrorFocusesPersistentController": true,
+    "connectedStateRequiresNativeEvent": true
+  },
+  "receiverLimit": {
+    "knownShieldNamesFailChromeModelPredicate": true,
+    "actualUserMdnsModelObserved": false,
+    "actualUserExactFailureReproduced": false,
+    "receiverConnectionTested": false,
+    "shieldAutonomousFileCastClaimed": false,
+    "compatiblePhysicalReceiverPlaybackClaimed": false,
+    "manualChromeTabFallbackRetained": true,
+    "privateFileUploadedOrHosted": false,
+    "companionOrLanServerAdded": false,
+    "browserFlagsChanged": false,
+    "arbitraryOriginMirroringAdded": false,
+    "primaryResearch": "local-cast-research-0.1.59.json",
+    "userVersionSourceMatch": "local-cast-source-confirmation-0.1.59.json"
+  },
+  "visual": {
+    "locales": 10,
+    "rtl": [
+      "ar",
+      "ur"
+    ],
+    "widths": [
+      1280,
+      390
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "originalFixtureOnly": true,
+    "screenshots": [
+      "docs/screenshots/local-cast-fr.png",
+      "docs/screenshots/local-cast-ur-narrow.png"
+    ],
+    "inspected": [
+      "French desktop",
+      "Urdu narrow"
+    ],
+    "physicalReceiverInScreenshots": false
+  },
+  "siteQa": {
+    "version": "0.1.59",
+    "browser": "156.0.8078.4",
+    "platform": "Linux isolated headless",
+    "publication": false,
+    "server": {
+      "address": "127.0.0.1",
+      "port": 4180,
+      "ownedByProbe": true,
+      "closed": true
+    },
+    "routes": [
+      {
+        "locale": "en",
+        "url": "/alcydeo/en/guides/tv/",
+        "status": 200,
+        "width": 1280,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "en",
+        "url": "/alcydeo/en/guides/tv/",
+        "status": 200,
+        "width": 390,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "es",
+        "url": "/alcydeo/es/guides/tv/",
+        "status": 200,
+        "width": 1280,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "es",
+        "url": "/alcydeo/es/guides/tv/",
+        "status": 200,
+        "width": 390,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "fr",
+        "url": "/alcydeo/fr/guides/tv/",
+        "status": 200,
+        "width": 1280,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "fr",
+        "url": "/alcydeo/fr/guides/tv/",
+        "status": 200,
+        "width": 390,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "de",
+        "url": "/alcydeo/de/guides/tv/",
+        "status": 200,
+        "width": 1280,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "de",
+        "url": "/alcydeo/de/guides/tv/",
+        "status": 200,
+        "width": 390,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "zh_CN",
+        "url": "/alcydeo/zh-cn/guides/tv/",
+        "status": 200,
+        "width": 1280,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "zh_CN",
+        "url": "/alcydeo/zh-cn/guides/tv/",
+        "status": 200,
+        "width": 390,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "ar",
+        "url": "/alcydeo/ar/guides/tv/",
+        "status": 200,
+        "width": 1280,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "rtl"
+      },
+      {
+        "locale": "ar",
+        "url": "/alcydeo/ar/guides/tv/",
+        "status": 200,
+        "width": 390,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "rtl"
+      },
+      {
+        "locale": "ru",
+        "url": "/alcydeo/ru/guides/tv/",
+        "status": 200,
+        "width": 1280,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "ru",
+        "url": "/alcydeo/ru/guides/tv/",
+        "status": 200,
+        "width": 390,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "pt",
+        "url": "/alcydeo/pt/guides/tv/",
+        "status": 200,
+        "width": 1280,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "pt",
+        "url": "/alcydeo/pt/guides/tv/",
+        "status": 200,
+        "width": 390,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "hi",
+        "url": "/alcydeo/hi/guides/tv/",
+        "status": 200,
+        "width": 1280,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "hi",
+        "url": "/alcydeo/hi/guides/tv/",
+        "status": 200,
+        "width": 390,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "ltr"
+      },
+      {
+        "locale": "ur",
+        "url": "/alcydeo/ur/guides/tv/",
+        "status": 200,
+        "width": 1280,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "rtl"
+      },
+      {
+        "locale": "ur",
+        "url": "/alcydeo/ur/guides/tv/",
+        "status": 200,
+        "width": 390,
+        "exactLimitMessage": true,
+        "overflow": false,
+        "dir": "rtl"
+      }
+    ],
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": [],
+    "screenshots": [
+      ".local/cast59/site-fr-1280.png",
+      ".local/cast59/site-fr-390.png",
+      ".local/cast59/site-ur-1280.png",
+      ".local/cast59/site-ur-390.png"
+    ],
+    "passed": true
+  },
+  "resolvedIntermediateChecks": [
+    {
+      "case": "first root focus fixture",
+      "cause": "The test requested /tv/ instead of /tv/index.html; fixture server directory read failed. Restarted isolated fixture server, corrected test URL; the real old-product hidden-error failure was then reproduced."
+    },
+    {
+      "case": "association output filename",
+      "cause": "CDP accepted Save As with a generated filename, not the suggested name. The test retains its task-association checks and verifies exactly one complete copy with B bytes instead of assuming a dialog filename."
+    }
+  ],
+  "runtimeFingerprints": {
+    "local": {
+      "files": 97,
+      "sha256MapDigest": "4bb7fa0db6abb7a549ac346395d9efd885e426ea4e13a683fc11fe7bc26d0a89"
+    },
+    "store": {
+      "files": 97,
+      "sha256MapDigest": "adf6008576293fa2a7b5a73fa13bb17a597496e523b34d04c39aea19306ecd42"
+    }
+  },
+  "actualExternalFileUploads": 0,
+  "externalPublication": false,
+  "artifactsReport": "local-cast-artifacts-0.1.59.json"
+}

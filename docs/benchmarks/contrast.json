@@ -1,0 +1,100 @@
+[
+  {
+    "theme": "light",
+    "fg": "text",
+    "bg": "surface",
+    "ratio": 14.350592741869539,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "muted",
+    "bg": "surface",
+    "ratio": 5.785218469379893,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "#ffffff",
+    "bg": "primary",
+    "ratio": 5.25113313320885,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "link",
+    "bg": "primary-subtle",
+    "ratio": 4.66735465508556,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "success",
+    "bg": "surface",
+    "ratio": 5.437717062550416,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "error",
+    "bg": "error-subtle",
+    "ratio": 5.642053594501397,
+    "minimum": 4.5
+  },
+  {
+    "theme": "light",
+    "fg": "focus",
+    "bg": "surface",
+    "ratio": 5.25113313320885,
+    "minimum": 3
+  },
+  {
+    "theme": "dark",
+    "fg": "text",
+    "bg": "surface",
+    "ratio": 13.585626549519942,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "muted",
+    "bg": "surface",
+    "ratio": 7.728781937852872,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "#ffffff",
+    "bg": "primary",
+    "ratio": 5.25113313320885,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "link",
+    "bg": "primary-subtle",
+    "ratio": 6.2121096201274355,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "success",
+    "bg": "surface",
+    "ratio": 8.5928117026416,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "error",
+    "bg": "error-subtle",
+    "ratio": 7.11157697317902,
+    "minimum": 4.5
+  },
+  {
+    "theme": "dark",
+    "fg": "focus",
+    "bg": "surface",
+    "ratio": 8.023400706470044,
+    "minimum": 3
+  }
+]

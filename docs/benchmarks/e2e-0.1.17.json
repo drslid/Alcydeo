@@ -1,0 +1,517 @@
+{
+  "version": "0.1.17",
+  "browser": "Chrome for Testing 156.0.8078.80 Linux/WSL2",
+  "method": "Initial full suite, affected-path reruns and final targeted + ten new native-locale cases; this is a deduplicated union, not one all-green final full run.",
+  "reports": [
+    "artifacts/evidence/features/full-suite-initial.json",
+    "artifacts/evidence/features/targeted-before-locales.json",
+    "artifacts/evidence/features/final-targeted.json",
+    "artifacts/evidence/features/lazy-recording-and-popup.json"
+  ],
+  "counts": {
+    "skipped": 3,
+    "expected": 97
+  },
+  "cases": [
+    {
+      "file": "badge-latency.spec.ts",
+      "title": "DOM source announces its badge while a parser-blocking resource is still loading",
+      "status": "expected"
+    },
+    {
+      "file": "badge-latency.spec.ts",
+      "title": "network source announces its badge without waiting for an unrelated frame or quality lookup",
+      "status": "expected"
+    },
+    {
+      "file": "badge-latency.spec.ts",
+      "title": "continuous unrelated DOM updates do not postpone a newly inserted video link",
+      "status": "expected"
+    },
+    {
+      "file": "badge-latency.spec.ts",
+      "title": "a waking worker processes media before restoring observers in other loading tabs",
+      "status": "expected"
+    },
+    {
+      "file": "badge-latency.spec.ts",
+      "title": "a busy cross-site renderer cannot hold up a confirmed network badge",
+      "status": "expected"
+    },
+    {
+      "file": "binary-media.spec.ts",
+      "title": "generic binary proxy response keeps the final signed source and rejects HTML",
+      "status": "expected"
+    },
+    {
+      "file": "binary-media.spec.ts",
+      "title": "generic binary video response keeps the final signed source and rejects HTML",
+      "status": "expected"
+    },
+    {
+      "file": "components.spec.ts",
+      "title": "open component media and dynamically inserted nested media are observed",
+      "status": "expected"
+    },
+    {
+      "file": "components.spec.ts",
+      "title": "a closed component can be recovered from already loaded media resources",
+      "status": "expected"
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "MKV and MOV become real MP4 files with identical H.264/AAC packets",
+      "status": "expected"
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "VP8/Opus is actually re-encoded to AVC/AAC offline without losing either track",
+      "status": "expected"
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "a downloaded nonstandard original offers conversion and remains intact afterwards",
+      "status": "expected"
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "two managers process a persisted conversion queue one file at a time",
+      "status": "expected"
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "an unsupported video track is refused without exporting an audio-only MP4",
+      "status": "expected"
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "conversion uses the saved folder and Save As preference when another manager changed them",
+      "status": "expected"
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "pause, cancel and real manager closure keep the source and restart conversion after recovery",
+      "status": "expected"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "detect, choose quality, download, verify and find the file",
+      "status": "expected"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "HLS TS, HLS fMP4 separate audio, and DASH create playable MP4 files",
+      "status": "expected"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "popup closes and service worker restarts without losing the library",
+      "status": "expected"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "empty and dark popup states at actual dimensions",
+      "status": "expected"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "protected sources are refused and missing segments produce actionable errors",
+      "status": "expected"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "pause checkpoints, concurrent managers, resume and cancellation",
+      "status": "expected"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "closing the manager recovers a persisted checkpoint after lease expiry",
+      "status": "expected"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "dynamic DOM observation rescans an authorized page",
+      "status": "expected"
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "revoked host permissions stop manifest access",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "nineteen actual video/audio containers are detected and saved byte for byte",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "default 10 KB, larger threshold, known versus unknown sizes, and pasted blacklist URLs",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "local compress produces a real validated H.264/AAC MP4",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "local trim produces a real validated H.264/AAC MP4",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "local merge produces a real validated H.264/AAC MP4",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "Gofile uploads only after the explicit click and confirms a real server response, locally simulated",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "local help remains available before the Pages site is published",
+      "status": "expected"
+    },
+    {
+      "file": "grouping.spec.ts",
+      "title": "direct quality links share a card, retain the selection and save the chosen file",
+      "status": "expected"
+    },
+    {
+      "file": "grouping.spec.ts",
+      "title": "master and observed HLS qualities become one card without a manual lookup",
+      "status": "expected"
+    },
+    {
+      "file": "history.spec.ts",
+      "title": "pagination reaches records beyond 100, filters first and clamps after deleting the last page",
+      "status": "expected"
+    },
+    {
+      "file": "history.spec.ts",
+      "title": "confirmed bulk clear removes all captured history, retains saved files, live leases and resumed/new tasks",
+      "status": "expected"
+    },
+    {
+      "file": "hls-resolution.spec.ts",
+      "title": "a removed quality gives a specific recovery message and expandable diagnostics",
+      "status": "expected"
+    },
+    {
+      "file": "hls-resolution.spec.ts",
+      "title": "nested HLS lists expose actual qualities and save the selected complete video",
+      "status": "expected"
+    },
+    {
+      "file": "hls-resolution.spec.ts",
+      "title": "a unique HLS rendition on a restricted CDN stays visible until Chrome grants access",
+      "status": "expected"
+    },
+    {
+      "file": "host-permissions.spec.ts",
+      "title": "fresh install detects before opening the popup without extra activation",
+      "status": "expected"
+    },
+    {
+      "file": "host-permissions.spec.ts",
+      "title": "Chrome site restrictions, scoped grants and worker termination are respected",
+      "status": "expected"
+    },
+    {
+      "file": "host-permissions.spec.ts",
+      "title": "old preferences migrate once and a later explicit pause survives reload",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale en and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale es and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale fr and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale de and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale zh_CN and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale ar and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale ru and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale pt and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale hi and layout",
+      "status": "expected"
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale ur and layout",
+      "status": "expected"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "settings persist, reject invalid counts and produce a bit-identical file over four concurrent ranges",
+      "status": "expected"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "unsupported ignore source falls back to the native download",
+      "status": "expected"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "unsupported noetag source falls back to the native download",
+      "status": "expected"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "unsupported weak source falls back to the native download",
+      "status": "expected"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "invalid wrong response saves no partial file",
+      "status": "expected"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "invalid html response saves no partial file",
+      "status": "expected"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "pause from another manager, worker restart and resume reuse persisted bytes and queue-time settings",
+      "status": "expected"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "a changed source validator stops resume without combining old and new versions",
+      "status": "expected"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "cancellation stops all part requests and never saves a partial file",
+      "status": "expected"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "closing every manager recovers partial bytes after the real lease expires",
+      "status": "expected"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "large direct range file is saved without remux and matches the original hash",
+      "status": "skipped"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "limited temporary storage fails clearly without starting part transfers or saving a file",
+      "status": "skipped"
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "controlled per-response throttling demonstrates concurrent transfer throughput",
+      "status": "expected"
+    },
+    {
+      "file": "recording.spec.ts",
+      "title": "real Chrome tab capture is flushed progressively and saved as playable VP8/Opus",
+      "status": "expected"
+    },
+    {
+      "file": "recording.spec.ts",
+      "title": "closing the manager retains flushed recording bytes and recovers a partial file",
+      "status": "expected"
+    },
+    {
+      "file": "regressions.spec.ts",
+      "title": "empty src attributes never become the HTML page URL",
+      "status": "expected"
+    },
+    {
+      "file": "regressions.spec.ts",
+      "title": "authorized pages populate their badge with the popup closed",
+      "status": "expected"
+    },
+    {
+      "file": "regressions.spec.ts",
+      "title": "HLS in an authorized cross-origin iframe is detected and downloadable",
+      "status": "expected"
+    },
+    {
+      "file": "regressions.spec.ts",
+      "title": "cross-origin MIME-only sources include Range totals and download as media",
+      "status": "expected"
+    },
+    {
+      "file": "regressions.spec.ts",
+      "title": "automatic detection is enabled by default and stops when disabled",
+      "status": "expected"
+    },
+    {
+      "file": "regressions.spec.ts",
+      "title": "an HTML session response is rejected instead of becoming a saved video",
+      "status": "expected"
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "compact proposals truncate long titles, remove filename fields and show only actual thumbnails",
+      "status": "expected"
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "save mode, Chrome folder shortcut and subfolder persist without a page filename editor",
+      "status": "expected"
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "direct and assembled downloads pass both native save modes and use the chosen relative folder",
+      "status": "expected"
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "a dismissed save request can retry a direct file and reuse an assembled output",
+      "status": "expected"
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "TS with timed ID3 keeps audio/video, reports metadata omission and has no native warning",
+      "status": "expected"
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "initialization and media byte ranges from one MP4 produce a complete file",
+      "status": "expected"
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "observed playlists identify opaque MP4 fragments before opening the popup",
+      "status": "expected"
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "an unsupported video track is refused instead of silently saving only audio",
+      "status": "expected"
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "rejecting an HTML native transfer does not suggest a filename after cancellation",
+      "status": "expected"
+    },
+    {
+      "file": "sources.spec.ts",
+      "title": "redirected player and final file share one real quality; HTML sources stay excluded",
+      "status": "expected"
+    },
+    {
+      "file": "stress.spec.ts",
+      "title": "direct download and local validation of a >2 GB synthetic course",
+      "status": "skipped"
+    },
+    {
+      "file": "youtube.spec.ts",
+      "title": "complete sabr separate-track file is saved, verified and found",
+      "status": "expected"
+    },
+    {
+      "file": "youtube.spec.ts",
+      "title": "complete adaptive separate-track file is saved, verified and found",
+      "status": "expected"
+    },
+    {
+      "file": "youtube.spec.ts",
+      "title": "server attestation refusal stops partial media without saving a download",
+      "status": "expected"
+    },
+    {
+      "file": "youtube.spec.ts",
+      "title": "HTML returned by a SABR endpoint remains an HTML diagnostic without saving a file",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "a trim outside the source duration saves no partial or audio-only output",
+      "status": "expected"
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "a locally simulated cloud failure stays paused until explicit retry",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale en",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale es",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale fr",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale de",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale zh_CN",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale ar",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale ru",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale pt",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale hi",
+      "status": "expected"
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale ur",
+      "status": "expected"
+    }
+  ]
+}

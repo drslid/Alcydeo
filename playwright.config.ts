@@ -1,0 +1,2 @@
+import { defineConfig } from '@playwright/test';
+export default defineConfig({ testDir:'tests/e2e', timeout:60_000, workers:1, reporter:[['list'],['html',{open:'never'}],['json',{outputFile:process.env.PLAYWRIGHT_JSON_OUTPUT_NAME??'artifacts/evidence/test-results.json'}]], use:{trace:'retain-on-failure'}, webServer:{ command:'node scripts/fixture-server.mjs', url:'http://127.0.0.1:4179', reuseExistingServer:!process.env.CI } });

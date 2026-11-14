@@ -1,0 +1,29 @@
+{
+  "version": "0.1.29",
+  "name": "Alcydeo",
+  "rootChooser": true,
+  "checkedRoutes": [
+    "en/",
+    "en/guides/tv/",
+    "es/",
+    "es/guides/tv/",
+    "fr/",
+    "fr/guides/tv/",
+    "de/",
+    "de/guides/tv/",
+    "zh-cn/",
+    "zh-cn/guides/tv/",
+    "ar/",
+    "ar/guides/tv/",
+    "ru/",
+    "ru/guides/tv/",
+    "pt/",
+    "pt/guides/tv/",
+    "hi/",
+    "hi/guides/tv/",
+    "ur/",
+    "ur/guides/tv/"
+  ],
+  "overflow": false,
+  "publication": false
+}

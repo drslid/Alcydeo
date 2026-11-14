@@ -1,0 +1,31 @@
+name: Report a problem
+description: Detection, saving, editing or display problems
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include cookies, signed media URLs, private files or full diagnostic logs. Use private vulnerability reporting for security issues."
+  - type: input
+    id: version
+    attributes:
+      label: Alcydeo version and build
+      placeholder: 0.2.0 development preview / Store preparation
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser version and operating system
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Steps, expected result and actual result
+      description: For detection, say whether the video plays normally. A public page URL is optional; never paste a signed media URL.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostic
+    attributes:
+      label: Optional sanitized diagnostic or screenshot
+      description: Use the explicit diagnostic preview/copy action, and review it before sharing.

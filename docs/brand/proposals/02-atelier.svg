@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+<title>Alcydeo — L’Atelier</title><desc>Martin-pêcheur original de profil : poitrine ronde, couronne bleue, œil unique et bec allongé.</desc>
+<defs><path id="silhouette" d="M163 439L182 367C128 339 113 292 127 247C138 209 166 189 191 181C176 136 199 83 246 67C304 47 354 81 362 125L466 176L360 176C360 197 350 221 335 236C360 282 349 333 311 363C285 384 251 392 224 383L185 445L190 390Z"/></defs>
+<g id="canonical-mark"><use href="#silhouette" fill="#0B70B5"/>
+<path d="M202 135C203 103 228 78 259 78C293 77 319 95 331 116C286 98 246 112 202 135Z" fill="#2DD4BF"/>
+<path d="M313 194C307 219 285 233 267 244C302 285 287 342 245 371C284 379 316 352 329 325C352 280 331 233 313 194Z" fill="#F28C28"/>
+<path d="M263 171C284 184 312 182 337 168C337 191 316 208 296 217C281 211 270 194 263 171Z" fill="#F6F9FC"/>
+<path d="M183 237C150 266 161 318 197 335C222 316 241 276 225 237C212 222 196 225 183 237Z" fill="#071B2D" opacity=".2"/>
+<path d="M354 131L466 176H352Z" fill="#071B2D"/>
+<ellipse id="eye" cx="313" cy="140" rx="9" ry="11" fill="#071B2D"/>
+</g></svg>

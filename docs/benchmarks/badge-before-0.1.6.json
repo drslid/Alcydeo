@@ -1,0 +1,22 @@
+{
+  "version": "0.1.6",
+  "browser": "Chrome for Testing 156.0.8078.80 Linux",
+  "measurement": "Elapsed after a DOM candidate or page media response was available, until Chrome action badge state became nonempty. Native toolbar painting is not measured.",
+  "measurements": [
+    {
+      "scenario": "DOM before document idle",
+      "badgeMs": 2504,
+      "pageReadyState": "complete"
+    },
+    {
+      "scenario": "Network while iframe loads",
+      "badgeMs": 2323,
+      "pageReadyState": "complete"
+    },
+    {
+      "scenario": "Worker wake with another loading tab",
+      "badgeMs": 2957,
+      "pageReadyState": "complete"
+    }
+  ]
+}

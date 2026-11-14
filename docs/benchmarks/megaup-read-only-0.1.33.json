@@ -1,0 +1,16 @@
+{
+  "version": "0.1.33",
+  "source": "https://megaup.net/",
+  "capturedAt": "2026-11-03T16:50:52.932544+00:00",
+  "http": 200,
+  "configurationParsed": true,
+  "anonymousSessionDetected": true,
+  "uploadEndpointOrigin": "https://f106.mupload.store",
+  "maximumFileBytes": 5368709120,
+  "maximumChunkBytes": 100000000,
+  "providerScriptExecuted": false,
+  "sessionValuesRecorded": false,
+  "cookiesCopied": false,
+  "fileUploaded": false,
+  "apiDocumentationFound": false
+}

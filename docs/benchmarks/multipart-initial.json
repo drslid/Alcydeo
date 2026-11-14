@@ -1,0 +1,43 @@
+{
+  "bytes": 1837555,
+  "maxConnections": 4,
+  "parts": [
+    {
+      "start": 0,
+      "end": 459388,
+      "received": 459389
+    },
+    {
+      "start": 459389,
+      "end": 918777,
+      "received": 459389
+    },
+    {
+      "start": 918778,
+      "end": 1378166,
+      "received": 459389
+    },
+    {
+      "start": 1378167,
+      "end": 1837554,
+      "received": 459388
+    }
+  ],
+  "validation": {
+    "duration": 6,
+    "tracks": [
+      {
+        "type": "video",
+        "codec": "avc"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "bytes": 1837555,
+    "method": "local-structure",
+    "checkedAt": 1793558108883
+  },
+  "equalsOriginal": true
+}

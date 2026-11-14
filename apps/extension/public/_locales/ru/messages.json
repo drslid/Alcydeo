@@ -1,0 +1,2006 @@
+{
+  "detectionDiagnostics": {
+    "message": "Диагностика обнаружения",
+    "description": "Alcydeo interface: detectionDiagnostics"
+  },
+  "detectionDiagnosticsReport": {
+    "message": "Локальный отчёт об обнаружении",
+    "description": "Alcydeo interface: detectionDiagnosticsReport"
+  },
+  "detectionDiagnosticsLoading": {
+    "message": "Подготовка локального отчёта…",
+    "description": "Alcydeo interface: detectionDiagnosticsLoading"
+  },
+  "detectionDiagnosticsRefresh": {
+    "message": "Обновить",
+    "description": "Alcydeo interface: detectionDiagnosticsRefresh"
+  },
+  "detectionDiagnosticsCopy": {
+    "message": "Копировать отчёт",
+    "description": "Alcydeo interface: detectionDiagnosticsCopy"
+  },
+  "detectionDiagnosticsCopied": {
+    "message": "Отчёт скопирован.",
+    "description": "Alcydeo interface: detectionDiagnosticsCopied"
+  },
+  "detectionDiagnosticsCopyHint": {
+    "message": "Буфер обмена недоступен. Отчёт выделен для копирования вручную.",
+    "description": "Alcydeo interface: detectionDiagnosticsCopyHint"
+  },
+  "detectionDiagnosticsError": {
+    "message": "Не удалось подготовить отчёт. Нажмите «Обновить» ещё раз.",
+    "description": "Alcydeo interface: detectionDiagnosticsError"
+  },
+  "detectionDiagnosticsPrivacy": {
+    "message": "Локальный отчёт без ссылок на видео, cookie и подписей. Ничего не отправляется.",
+    "description": "Alcydeo interface: detectionDiagnosticsPrivacy"
+  },
+  "detectionDiagnosticsAccessError": {
+    "message": "Откройте сведения об Alcydeo в chrome://extensions, чтобы проверить доступ к сайтам.",
+    "description": "Alcydeo interface: detectionDiagnosticsAccessError"
+  },
+  "cropTool": {
+    "message": "Кадрировать",
+    "description": "Alcydeo interface: cropTool"
+  },
+  "cropHint": {
+    "message": "Выберите область видео для экспорта в новый MP4. Оригинал сохраняется.",
+    "description": "Alcydeo interface: cropHint"
+  },
+  "cropDrawHint": {
+    "message": "Потяните, чтобы нарисовать новую область. Тяните внутри для перемещения или за маркеры для изменения размера. Стрелки сдвигают на 1 пиксель, с Shift — на 10 пикселей.",
+    "description": "Alcydeo interface: cropDrawHint"
+  },
+  "cropArea": {
+    "message": "Выбранная область",
+    "description": "Alcydeo interface: cropArea"
+  },
+  "cropReset": {
+    "message": "Весь кадр",
+    "description": "Alcydeo interface: cropReset"
+  },
+  "cropLeft": {
+    "message": "X (пикс.)",
+    "description": "Alcydeo interface: cropLeft"
+  },
+  "cropTop": {
+    "message": "Y (пикс.)",
+    "description": "Alcydeo interface: cropTop"
+  },
+  "cropWidth": {
+    "message": "Ширина (пикс.)",
+    "description": "Alcydeo interface: cropWidth"
+  },
+  "cropHeight": {
+    "message": "Высота (пикс.)",
+    "description": "Alcydeo interface: cropHeight"
+  },
+  "cropPreview": {
+    "message": "Предпросмотр кадрирования",
+    "description": "Alcydeo interface: cropPreview"
+  },
+  "cropExport": {
+    "message": "Экспортировать кадрированное видео",
+    "description": "Alcydeo interface: cropExport"
+  },
+  "cropResize": {
+    "message": "Изменить размер области",
+    "description": "Alcydeo interface: cropResize"
+  },
+  "cropRange": {
+    "message": "Выберите область не меньше 2 × 2 пикселей, целиком внутри видео.",
+    "description": "Alcydeo interface: cropRange"
+  },
+  "chromeSiteAccess": {
+    "message": "Доступ к сайтам в Chrome",
+    "description": "Alcydeo interface: chromeSiteAccess"
+  },
+  "chromeAccessRestricted": {
+    "message": "Настройки Chrome ограничивают доступ к этому сайту.",
+    "description": "Alcydeo interface: chromeAccessRestricted"
+  },
+  "openWebPage": {
+    "message": "Откройте веб-страницу",
+    "description": "Alcydeo interface: openWebPage"
+  },
+  "openWebPageHint": {
+    "message": "Откройте сайт с видео для обнаружения источников.",
+    "description": "Alcydeo interface: openWebPageHint"
+  },
+  "popupActivity": {
+    "message": "Активность",
+    "description": "Alcydeo interface: popupActivity"
+  },
+  "moreActions": {
+    "message": "Другие действия",
+    "description": "Alcydeo interface: moreActions"
+  },
+  "tiktokHint": {
+    "message": "Держите вкладку TikTok и менеджер открытыми. После прерывания этот файл загружается заново.",
+    "description": "Alcydeo interface: tiktokHint"
+  },
+  "tools": {
+    "message": "Инструменты видео",
+    "description": "Alcydeo interface: tools"
+  },
+  "manager_tools_description": {
+    "message": "Обрежьте видео или соедините клипы в нужном порядке. Обработка выполняется на вашем устройстве.",
+    "description": "Alcydeo interface: manager_tools_description"
+  },
+  "popupSources": {
+    "message": "Источники",
+    "description": "Alcydeo interface: popupSources"
+  },
+  "popupSaved": {
+    "message": "Сохранено",
+    "description": "Alcydeo interface: popupSaved"
+  },
+  "popupContinue": {
+    "message": "Загрузки продолжаются после закрытия окна. Для сегментированных потоков оставьте вкладку менеджера открытой.",
+    "description": "Alcydeo interface: popupContinue"
+  },
+  "conversionQuality": {
+    "message": "Качество видео",
+    "description": "Alcydeo interface: conversionQuality"
+  },
+  "conversionQuality_auto": {
+    "message": "Авто · копировать совместимое видео",
+    "description": "Alcydeo interface: conversionQuality_auto"
+  },
+  "conversionQuality_high": {
+    "message": "Высокое качество",
+    "description": "Alcydeo interface: conversionQuality_high"
+  },
+  "conversionQuality_balanced": {
+    "message": "Сбалансированное",
+    "description": "Alcydeo interface: conversionQuality_balanced"
+  },
+  "conversionQuality_small": {
+    "message": "Меньший размер",
+    "description": "Alcydeo interface: conversionQuality_small"
+  },
+  "conversionResolution": {
+    "message": "Максимальное разрешение",
+    "description": "Alcydeo interface: conversionResolution"
+  },
+  "conversionOriginal": {
+    "message": "Исходное · без увеличения",
+    "description": "Alcydeo interface: conversionOriginal"
+  },
+  "conversionAudio": {
+    "message": "Битрейт аудио",
+    "description": "Alcydeo interface: conversionAudio"
+  },
+  "conversionAudioAuto": {
+    "message": "Авто · копировать совместимый AAC",
+    "description": "Alcydeo interface: conversionAudioAuto"
+  },
+  "conversionOptionsHint": {
+    "message": "Параметры MP4 по умолчанию. Изменение качества, разрешения или звука может потребовать перекодирования. Размер и скорость зависят от исходника и компьютера.",
+    "description": "Alcydeo interface: conversionOptionsHint"
+  },
+  "liveRefresh": {
+    "message": "Обновить источники",
+    "description": "Alcydeo interface: liveRefresh"
+  },
+  "liveStopping": {
+    "message": "Завершение текущего сегмента",
+    "description": "Alcydeo interface: liveStopping"
+  },
+  "liveMode": {
+    "message": "Поток плеера",
+    "description": "Alcydeo interface: liveMode"
+  },
+  "captureMode": {
+    "message": "Захват вкладки",
+    "description": "Alcydeo interface: captureMode"
+  },
+  "liveTitle": {
+    "message": "Записать прямой поток",
+    "description": "Alcydeo interface: liveTitle"
+  },
+  "liveSources": {
+    "message": "Обнаруженные источники HLS",
+    "description": "Alcydeo interface: liveSources"
+  },
+  "liveNoSource": {
+    "message": "Выберите источник или вставьте URL",
+    "description": "Alcydeo interface: liveNoSource"
+  },
+  "liveUrl": {
+    "message": "Или URL потока HLS (.m3u8)",
+    "description": "Alcydeo interface: liveUrl"
+  },
+  "liveStart": {
+    "message": "Записать поток",
+    "description": "Alcydeo interface: liveStart"
+  },
+  "liveHint": {
+    "message": "Сохраняйте сегменты HLS напрямую с исходным качеством. Поддерживаются незашифрованные TS/fMP4 с аудио и видео в одном потоке. Не закрывайте менеджер. Для других источников используйте захват вкладки.",
+    "description": "Alcydeo interface: liveHint"
+  },
+  "liveBoundary": {
+    "message": "Начинает с недавнего полного сегмента, возможно за несколько секунд до нажатия. Остановка завершает текущий сегмент и создаёт проверенный MP4. Более ранняя часть эфира не восстанавливается.",
+    "description": "Alcydeo interface: liveBoundary"
+  },
+  "liveAudio": {
+    "message": "У этого эфира отдельное аудио. Выберите объединённый HLS или захват вкладки; файл с потерянной аудиодорожкой не сохраняется.",
+    "description": "Alcydeo interface: liveAudio"
+  },
+  "notLive": {
+    "message": "Это не текущий прямой HLS-поток. Для завершённого видео используйте загрузку или выберите другой источник.",
+    "description": "Alcydeo interface: notLive"
+  },
+  "liveGap": {
+    "message": "Сегменты эфира больше недоступны. Запись остановлена; сохранена только непрерывно полученная часть.",
+    "description": "Alcydeo interface: liveGap"
+  },
+  "liveVariant": {
+    "message": "Этот вариант HLS-эфира не поддерживается. Выберите источник с полными сегментами или захват вкладки.",
+    "description": "Alcydeo interface: liveVariant"
+  },
+  "liveEmpty": {
+    "message": "Не получено ни одного полного сегмента. Пустой файл не сохранён.",
+    "description": "Alcydeo interface: liveEmpty"
+  },
+  "liveInterrupted": {
+    "message": "Запись эфира прервана. Сохраните полученную часть; пропущенное время эфира не восстанавливается.",
+    "description": "Alcydeo interface: liveInterrupted"
+  },
+  "notice_liveIncomplete": {
+    "message": "Частичная запись эфира: файл содержит только непрерывно полученную часть.",
+    "description": "Alcydeo interface: notice_liveIncomplete"
+  },
+  "cloudOptional": {
+    "message": "Необязательная отправка",
+    "description": "Alcydeo interface: cloudOptional"
+  },
+  "help": {
+    "message": "Помощь",
+    "description": "Alcydeo interface: help"
+  },
+  "helpLocal": {
+    "message": "Сайт справки подготовлен локально и ещё не опубликован.",
+    "description": "Alcydeo interface: helpLocal"
+  },
+  "helpOpen": {
+    "message": "Открыть сайт справки",
+    "description": "Alcydeo interface: helpOpen"
+  },
+  "minimumSize": {
+    "message": "Игнорировать файлы меньше",
+    "description": "Alcydeo interface: minimumSize"
+  },
+  "sizeFilterHint": {
+    "message": "Неизвестные размеры остаются видимыми. Размер плейлиста — не размер видео.",
+    "description": "Alcydeo interface: sizeFilterHint"
+  },
+  "blockedHint": {
+    "message": "Один домен или URL на строку, включая поддомены. Остальные сайты сканируются при автоматическом обнаружении.",
+    "description": "Alcydeo interface: blockedHint"
+  },
+  "mediaTools": {
+    "message": "Инструменты видео",
+    "description": "Alcydeo interface: mediaTools"
+  },
+  "operation": {
+    "message": "Действие",
+    "description": "Alcydeo interface: operation"
+  },
+  "convertTool": {
+    "message": "Конвертировать в MP4",
+    "description": "Alcydeo interface: convertTool"
+  },
+  "compressTool": {
+    "message": "Сжать",
+    "description": "Alcydeo interface: compressTool"
+  },
+  "mergeTool": {
+    "message": "Объединить клипы",
+    "description": "Alcydeo interface: mergeTool"
+  },
+  "trimTool": {
+    "message": "Обрезать",
+    "description": "Alcydeo interface: trimTool"
+  },
+  "convertHint": {
+    "message": "Локальная конвертация в MP4 H.264/AAC. Неподдерживаемые кодеки отмечаются.",
+    "description": "Alcydeo interface: convertHint"
+  },
+  "compressHint": {
+    "message": "Создайте локальный MP4 H.264/AAC с параметрами сжатия из настроек. Уменьшение размера не гарантируется.",
+    "description": "Alcydeo interface: compressHint"
+  },
+  "mergeHint": {
+    "message": "Выберите и упорядочьте 2–20 клипов. MP4 до 720p/30 кадров/с. Нужна одна видеодорожка и одинаковое наличие звука.",
+    "description": "Alcydeo interface: mergeHint"
+  },
+  "trimHint": {
+    "message": "Перетащите маркеры начала и конца, просмотрите выделение и сохраните его в MP4.",
+    "description": "Alcydeo interface: trimHint"
+  },
+  "chooseVideos": {
+    "message": "Выбрать видео",
+    "description": "Alcydeo interface: chooseVideos"
+  },
+  "trimStart": {
+    "message": "Начало (секунды)",
+    "description": "Alcydeo interface: trimStart"
+  },
+  "trimEnd": {
+    "message": "Конец (секунды)",
+    "description": "Alcydeo interface: trimEnd"
+  },
+  "moveUp": {
+    "message": "Вверх",
+    "description": "Alcydeo interface: moveUp"
+  },
+  "moveDown": {
+    "message": "Вниз",
+    "description": "Alcydeo interface: moveDown"
+  },
+  "startTool": {
+    "message": "Добавить в обработку",
+    "description": "Alcydeo interface: startTool"
+  },
+  "trimRange": {
+    "message": "Выберите допустимый диапазон внутри видео.",
+    "description": "Alcydeo interface: trimRange"
+  },
+  "mergeTracks": {
+    "message": "Дорожки или настройки кодеков этих клипов несовместимы для объединения.",
+    "description": "Alcydeo interface: mergeTracks"
+  },
+  "record": {
+    "message": "Запись",
+    "description": "Alcydeo interface: record"
+  },
+  "recordStream": {
+    "message": "Записать поток",
+    "description": "Alcydeo interface: recordStream"
+  },
+  "recording": {
+    "message": "Идёт запись",
+    "description": "Alcydeo interface: recording"
+  },
+  "startRecording": {
+    "message": "Выбрать вкладку для записи",
+    "description": "Alcydeo interface: startRecording"
+  },
+  "stopRecording": {
+    "message": "Остановить и сохранить",
+    "description": "Alcydeo interface: stopRecording"
+  },
+  "recordHint": {
+    "message": "Записывайте вкладку из окна расширения или выберите экран здесь. Повышенный битрейт и разрешение до исходного. Оставьте менеджер открытым.",
+    "description": "Alcydeo interface: recordHint"
+  },
+  "recordNoAudio": {
+    "message": "Звук не предоставлен. При необходимости остановите и выберите вкладку заново со звуком.",
+    "description": "Alcydeo interface: recordNoAudio"
+  },
+  "recoverRecording": {
+    "message": "Сохранить записанную часть",
+    "description": "Alcydeo interface: recoverRecording"
+  },
+  "recordingInterrupted": {
+    "message": "Запись прервана. Записанную часть можно проверить и сохранить. Новая запись требует повторного выбора.",
+    "description": "Alcydeo interface: recordingInterrupted"
+  },
+  "recordingDenied": {
+    "message": "Запись не разрешена или окно выбора закрыто.",
+    "description": "Alcydeo interface: recordingDenied"
+  },
+  "recordingUnavailable": {
+    "message": "Chrome не смог захватить выбранную область.",
+    "description": "Alcydeo interface: recordingUnavailable"
+  },
+  "recordingSlow": {
+    "message": "Запись остановлена: хранилище не успевало. Доступная часть сохранена.",
+    "description": "Alcydeo interface: recordingSlow"
+  },
+  "notice_recordingIncomplete": {
+    "message": "Восстановленная запись: файл содержит только записанную часть.",
+    "description": "Alcydeo interface: notice_recordingIncomplete"
+  },
+  "cloud": {
+    "message": "Облако",
+    "description": "Alcydeo interface: cloud"
+  },
+  "cloudHint": {
+    "message": "Отправляется только выбранный файл по вашему нажатию. Автоматической синхронизации нет.",
+    "description": "Alcydeo interface: cloudHint"
+  },
+  "cloudProvider": {
+    "message": "Назначение",
+    "description": "Alcydeo interface: cloudProvider"
+  },
+  "cloudChooseFile": {
+    "message": "Выбрать файл для отправки",
+    "description": "Alcydeo interface: cloudChooseFile"
+  },
+  "cloudShare": {
+    "message": "Поделиться через Gofile",
+    "description": "Alcydeo interface: cloudShare"
+  },
+  "cloudSave": {
+    "message": "Сохранить в моё облако",
+    "description": "Alcydeo interface: cloudSave"
+  },
+  "gofilePublic": {
+    "message": "Gofile не требует входа и создаёт публичную ссылку. Любой с этой ссылкой получит доступ. Срок хранения зависит от Gofile.",
+    "description": "Alcydeo interface: gofilePublic"
+  },
+  "cloudConnected": {
+    "message": "Подключено для этого сеанса",
+    "description": "Alcydeo interface: cloudConnected"
+  },
+  "cloudDisconnected": {
+    "message": "Не подключено",
+    "description": "Alcydeo interface: cloudDisconnected"
+  },
+  "cloudConnect": {
+    "message": "Подключить аккаунт",
+    "description": "Alcydeo interface: cloudConnect"
+  },
+  "cloudDisconnect": {
+    "message": "Отключить",
+    "description": "Alcydeo interface: cloudDisconnect"
+  },
+  "cloudConfiguration": {
+    "message": "Настройка подключения",
+    "description": "Alcydeo interface: cloudConfiguration"
+  },
+  "cloudConfigurationHint": {
+    "message": "Нужно зарегистрировать OAuth-приложение для ID расширения. Drive использует клиент Chrome Extension при сборке, OneDrive — публичный SPA-клиент с этим URI возврата. Секрет клиента в расширение не включается.",
+    "description": "Alcydeo interface: cloudConfigurationHint"
+  },
+  "cloudClientId": {
+    "message": "Публичный ID клиента",
+    "description": "Alcydeo interface: cloudClientId"
+  },
+  "cloudKeepOpen": {
+    "message": "Не закрывайте менеджер. Выбранный файл хранится во временной локальной копии. Удаление записи очищает эту копию, сохраняя удалённый файл.",
+    "description": "Alcydeo interface: cloudKeepOpen"
+  },
+  "gofileRestart": {
+    "message": "Здесь Gofile не поддерживает продолжение по частям. Возобновление начнёт отправку заново.",
+    "description": "Alcydeo interface: gofileRestart"
+  },
+  "cloudOpen": {
+    "message": "Открыть удалённый файл",
+    "description": "Alcydeo interface: cloudOpen"
+  },
+  "cloudSetup": {
+    "message": "OAuth не настроен для этой локальной сборки. См. настройку подключения.",
+    "description": "Alcydeo interface: cloudSetup"
+  },
+  "cloudAuth": {
+    "message": "Подключите выбранный облачный аккаунт заново.",
+    "description": "Alcydeo interface: cloudAuth"
+  },
+  "cloudNetwork": {
+    "message": "Загрузка не завершена. Проверьте соединение и повторите.",
+    "description": "Alcydeo interface: cloudNetwork"
+  },
+  "cloudResponse": {
+    "message": "Сервис не подтвердил корректный загруженный файл.",
+    "description": "Alcydeo interface: cloudResponse"
+  },
+  "cloudRate": {
+    "message": "Сервис ограничивает загрузки. Подождите перед повтором.",
+    "description": "Alcydeo interface: cloudRate"
+  },
+  "cloudExpired": {
+    "message": "Сеанс истёк. Возобновление начнёт новую загрузку. Проверьте, нет ли уже готового файла в облаке.",
+    "description": "Alcydeo interface: cloudExpired"
+  },
+  "cloudInput": {
+    "message": "Выберите локальный файл заново: временная копия отсутствует или неполна.",
+    "description": "Alcydeo interface: cloudInput"
+  },
+  "cloudInterrupted": {
+    "message": "Менеджер закрыт или загрузка прервана. Возобновите, когда готовы.",
+    "description": "Alcydeo interface: cloudInterrupted"
+  },
+  "cloud_preparing": {
+    "message": "Подготовка файла",
+    "description": "Alcydeo interface: cloud_preparing"
+  },
+  "cloud_queued": {
+    "message": "В очереди",
+    "description": "Alcydeo interface: cloud_queued"
+  },
+  "cloud_uploading": {
+    "message": "Загружается",
+    "description": "Alcydeo interface: cloud_uploading"
+  },
+  "cloud_paused": {
+    "message": "Приостановлено",
+    "description": "Alcydeo interface: cloud_paused"
+  },
+  "cloud_completed": {
+    "message": "Отправлено",
+    "description": "Alcydeo interface: cloud_completed"
+  },
+  "cloud_cancelled": {
+    "message": "Отменено",
+    "description": "Alcydeo interface: cloud_cancelled"
+  },
+  "cloud_failed": {
+    "message": "Ошибка",
+    "description": "Alcydeo interface: cloud_failed"
+  },
+  "formatsScope": {
+    "message": "Скачивание оригиналов: расширение не гарантирует воспроизведение или конвертацию всех кодеков в Chrome. M3U8 и MPD описывают сегментированные потоки.",
+    "description": "Alcydeo interface: formatsScope"
+  },
+  "featureLimits": {
+    "message": "Chrome для компьютера. Локальные тесты оригиналов, незашифрованного HLS VOD и DASH с одним периодом. DRM и универсальная поддержка кодеков исключены. Cast экспериментальный; приёмники ещё нужно проверить. Качество записи зависит от источника и ПК.",
+    "description": "Alcydeo interface: featureLimits"
+  },
+  "cloudSharing": {
+    "message": "Поделиться ссылкой",
+    "description": "Alcydeo interface: cloudSharing"
+  },
+  "cloudStorage": {
+    "message": "Сохранить в облако",
+    "description": "Alcydeo interface: cloudStorage"
+  },
+  "cloudNoAccount": {
+    "message": "Без аккаунта",
+    "description": "Alcydeo interface: cloudNoAccount"
+  },
+  "cloudWithAccount": {
+    "message": "Нужен аккаунт",
+    "description": "Alcydeo interface: cloudWithAccount"
+  },
+  "cloudUploadLink": {
+    "message": "Ссылка для загрузки",
+    "description": "Alcydeo interface: cloudUploadLink"
+  },
+  "cloudPcloudDestination": {
+    "message": "Ссылка или код для загрузки",
+    "description": "Alcydeo interface: cloudPcloudDestination"
+  },
+  "cloudPcloudRegion": {
+    "message": "Регион данных папки",
+    "description": "Alcydeo interface: cloudPcloudRegion"
+  },
+  "cloudRegionEu": {
+    "message": "Европа",
+    "description": "Alcydeo interface: cloudRegionEu"
+  },
+  "cloudRegionUs": {
+    "message": "США",
+    "description": "Alcydeo interface: cloudRegionUs"
+  },
+  "cloudPcloudSend": {
+    "message": "Отправить в pCloud",
+    "description": "Alcydeo interface: cloudPcloudSend"
+  },
+  "cloudPcloudHint": {
+    "message": "Без входа здесь: вставьте существующую ссылку pCloud для загрузки и выберите регион папки. Владельцу нужен аккаунт pCloud. Файл будет помещён в эту папку без создания публичной ссылки для скачивания.",
+    "description": "Alcydeo interface: cloudPcloudHint"
+  },
+  "cloudPcloudLink": {
+    "message": "Введите действительную ссылку или код pCloud для загрузки и проверьте регион папки. Ссылка для скачивания не подходит.",
+    "description": "Alcydeo interface: cloudPcloudLink"
+  },
+  "cloudPcloudQuota": {
+    "message": "Достигнут лимит места или файлов в папке назначения.",
+    "description": "Alcydeo interface: cloudPcloudQuota"
+  },
+  "cloudPcloudSent": {
+    "message": "pCloud подтвердил загрузку. Владелец папки может получить файл; публичная ссылка не создана.",
+    "description": "Alcydeo interface: cloudPcloudSent"
+  },
+  "cloudRestart": {
+    "message": "Повторная попытка отправит весь файл. Если ответ потерян, сначала проверьте папку, чтобы избежать дубликата.",
+    "description": "Alcydeo interface: cloudRestart"
+  },
+  "cloudValidation": {
+    "message": "Протоколы облака проверены локально. Реальные передачи ещё нужно проверить; MegaUp экспериментальный. pCloud требует готовую ссылку загрузки.",
+    "description": "Alcydeo interface: cloudValidation"
+  },
+  "cloudOnefichierSend": {
+    "message": "Поделиться через 1fichier",
+    "description": "Alcydeo interface: cloudOnefichierSend"
+  },
+  "cloudOnefichierOpen": {
+    "message": "Открыть 1fichier",
+    "description": "Alcydeo interface: cloudOnefichierOpen"
+  },
+  "cloudOnefichierHint": {
+    "message": "Экспериментальный обмен без аккаунта. Файл доступен всем, у кого есть ссылка. Хранение после 15 дней не гарантируется; сохраните оригинал. Доступность после отправки может задерживаться.",
+    "description": "Alcydeo interface: cloudOnefichierHint"
+  },
+  "cloudOnefichierPending": {
+    "message": "Файл отправляется. Точный процент для этого сервиса недоступен; ожидается подтверждение.",
+    "description": "Alcydeo interface: cloudOnefichierPending"
+  },
+  "err_cloudOnefichierUnavailable": {
+    "message": "1fichier не предоставил допустимый адрес загрузки. При этой попытке файл не отправлен. Повторите позже или выберите другой сервис.",
+    "description": "Alcydeo interface: err_cloudOnefichierUnavailable"
+  },
+  "cloudSendAll": {
+    "message": "Отправить во все облака без настройки",
+    "description": "Alcydeo interface: cloudSendAll"
+  },
+  "cloudSendAllHint": {
+    "message": "Gofile · MegaUp · 1fichier · Turbobit. У каждого сервиса свои ограничения.",
+    "description": "Alcydeo interface: cloudSendAllHint"
+  },
+  "cloudPreparedDestinations": {
+    "message": "Уже подготовлено: $1",
+    "description": "Alcydeo interface: cloudPreparedDestinations"
+  },
+  "cloudTargetTooLarge": {
+    "message": "$1 · $2: файл больше $3; пропущен.",
+    "description": "Alcydeo interface: cloudTargetTooLarge"
+  },
+  "cloudTargetPreparationFailed": {
+    "message": "$1 · $2: $3",
+    "description": "Alcydeo interface: cloudTargetPreparationFailed"
+  },
+  "cloudSendActions": {
+    "message": "Варианты отправки",
+    "description": "Alcydeo interface: cloudSendActions"
+  },
+  "cloudClearTemporary": {
+    "message": "Удалить временные файлы",
+    "description": "Alcydeo interface: cloudClearTemporary"
+  },
+  "cloudClearTemporaryHint": {
+    "message": "Удаляет локальные копии раздела «Облако» и отменяет ожидающие отправки. Оригиналы и ссылки для обмена сохраняются.",
+    "description": "Alcydeo interface: cloudClearTemporaryHint"
+  },
+  "cloudTemporaryCleared": {
+    "message": "Временные файлы удалены. История отправок и ссылки для обмена сохранены.",
+    "description": "Alcydeo interface: cloudTemporaryCleared"
+  },
+  "cloudTemporaryBusy": {
+    "message": "Идёт передача или подготовка. Дождитесь завершения или отмените процесс перед очисткой.",
+    "description": "Alcydeo interface: cloudTemporaryBusy"
+  },
+  "cloudTemporaryFailed": {
+    "message": "Не удалось удалить некоторые временные копии. Повторите попытку.",
+    "description": "Alcydeo interface: cloudTemporaryFailed"
+  },
+  "cloudSendAllCompact": {
+    "message": "Все без настройки",
+    "description": "Alcydeo interface: cloudSendAllCompact"
+  },
+  "cloudClearTemporaryCompact": {
+    "message": "Очистить локальные копии",
+    "description": "Alcydeo interface: cloudClearTemporaryCompact"
+  },
+  "cloudProviderDetails": {
+    "message": "О сервисе",
+    "description": "Alcydeo interface: cloudProviderDetails"
+  },
+  "cloudHistory": {
+    "message": "Отправки",
+    "description": "Alcydeo interface: cloudHistory"
+  },
+  "cloudKeepOpenShort": {
+    "message": "Не закрывайте эту страницу во время отправки.",
+    "description": "Alcydeo interface: cloudKeepOpenShort"
+  },
+  "cloudCopyUnavailable": {
+    "message": "Локальная копия недоступна для повтора",
+    "description": "Alcydeo interface: cloudCopyUnavailable"
+  },
+  "concurrentDownloads": {
+    "message": "Одновременные загрузки",
+    "description": "Alcydeo interface: concurrentDownloads"
+  },
+  "concurrentFiles": {
+    "message": "Файлов одновременно",
+    "description": "Alcydeo interface: concurrentFiles"
+  },
+  "concurrentFilesHint": {
+    "message": "От 1 до 8 файлов одновременно, независимо от числа соединений на файл. Файлы из очереди начинают загружаться, как только освобождается место.",
+    "description": "Alcydeo interface: concurrentFilesHint"
+  },
+  "concurrentFilesChangeHint": {
+    "message": "Снижение лимита не прерывает текущие загрузки. Конвертация по-прежнему выполняется по одному файлу.",
+    "description": "Alcydeo interface: concurrentFilesChangeHint"
+  },
+  "cloudTurbobitSend": {
+    "message": "Поделиться через Turbobit",
+    "description": "Alcydeo interface: cloudTurbobitSend"
+  },
+  "cloudTurbobitOpen": {
+    "message": "Открыть Turbobit",
+    "description": "Alcydeo interface: cloudTurbobitOpen"
+  },
+  "cloudTurbobitHint": {
+    "message": "Экспериментальный обмен без аккаунта, до 200 МБ на файл. Доступен всем, у кого есть ссылка; хранение до 7 дней. Сохраните оригинал и проверьте файл на Turbobit.",
+    "description": "Alcydeo interface: cloudTurbobitHint"
+  },
+  "err_cloudTurbobitUnavailable": {
+    "message": "Turbobit не предоставил допустимый адрес гостевой загрузки. Файл не отправлен. Повторите позже или выберите другой сервис.",
+    "description": "Alcydeo interface: err_cloudTurbobitUnavailable"
+  },
+  "playlistSnapshot": {
+    "message": "Этот микс меняется: показаны только названия, уже загруженные YouTube. Выберите нужные; будущие рекомендации не включены.",
+    "description": "Alcydeo interface: playlistSnapshot"
+  },
+  "playlistTitle": {
+    "message": "Плейлист YouTube",
+    "description": "Alcydeo interface: playlistTitle"
+  },
+  "playlistLoading": {
+    "message": "Чтение плейлиста…",
+    "description": "Alcydeo interface: playlistLoading"
+  },
+  "playlistSelection": {
+    "message": "Выбрано $selected$ / $total$ видео",
+    "description": "Alcydeo interface: playlistSelection",
+    "placeholders": {
+      "selected": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "playlistSelectAll": {
+    "message": "Выбрать все видео",
+    "description": "Alcydeo interface: playlistSelectAll"
+  },
+  "playlistDownload": {
+    "message": "Скачать выбранное ($count$)",
+    "description": "Alcydeo interface: playlistDownload",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "playlistFolder": {
+    "message": "Папка плейлиста:",
+    "description": "Alcydeo interface: playlistFolder"
+  },
+  "playlistBest": {
+    "message": "Лучшее доступное",
+    "description": "Alcydeo interface: playlistBest"
+  },
+  "playlistUnavailable": {
+    "message": "Видео недоступно",
+    "description": "Alcydeo interface: playlistUnavailable"
+  },
+  "playlistEmpty": {
+    "message": "В плейлисте нет доступных видео.",
+    "description": "Alcydeo interface: playlistEmpty"
+  },
+  "playlistPreparing": {
+    "message": "Подготовка следующего видео…",
+    "description": "Alcydeo interface: playlistPreparing"
+  },
+  "playlistProgress": {
+    "message": "Сохранено $done$ / $total$ · ошибок: $failed$",
+    "description": "Alcydeo interface: playlistProgress",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "playlistPartial": {
+    "message": "Завершено с ошибками",
+    "description": "Alcydeo interface: playlistPartial"
+  },
+  "playlistRetry": {
+    "message": "Повторить неудавшиеся видео",
+    "description": "Alcydeo interface: playlistRetry"
+  },
+  "playlistHint": {
+    "message": "Каждое видео подготавливается в рабочей вкладке без звука. Не закрывайте менеджер. Сохраняются только доступные видео; приватные, удалённые и отклонённые отмечаются отдельно.",
+    "description": "Alcydeo interface: playlistHint"
+  },
+  "playlistRead": {
+    "message": "Не удалось прочитать весь плейлист. Обновите страницу YouTube и повторите поиск.",
+    "description": "Alcydeo interface: playlistRead"
+  },
+  "playlistLimit": {
+    "message": "Плейлист превышает локальный предел чтения (5000 видео или 100 страниц). Неполный список не начнёт полное скачивание.",
+    "description": "Alcydeo interface: playlistLimit"
+  },
+  "playlistPlayer": {
+    "message": "Плеер не предоставил рабочий источник. Запустите видео обычным образом на YouTube и повторите попытку.",
+    "description": "Alcydeo interface: playlistPlayer"
+  },
+  "playlistInterrupted": {
+    "message": "Плейлист приостановлен после прерывания. Продолжите без повторного скачивания сохранённых видео.",
+    "description": "Alcydeo interface: playlistInterrupted"
+  },
+  "playlistTabClosed": {
+    "message": "Рабочая вкладка закрыта или изменена. Возобновите плейлист для продолжения.",
+    "description": "Alcydeo interface: playlistTabClosed"
+  },
+  "playlistStopped": {
+    "message": "Плейлист приостановлен после прерывания. Продолжите без повторного скачивания сохранённых видео.",
+    "description": "Alcydeo interface: playlistStopped"
+  },
+  "playlistNotSaved": {
+    "message": "Плейлист приостановлен после прерывания. Продолжите без повторного скачивания сохранённых видео.",
+    "description": "Alcydeo interface: playlistNotSaved"
+  },
+  "playlistQuality": {
+    "message": "Нет источника выбранного или более низкого качества.",
+    "description": "Alcydeo interface: playlistQuality"
+  },
+  "cloudSendTitle": {
+    "message": "Отправить файл",
+    "description": "Alcydeo interface: cloudSendTitle"
+  },
+  "workspaceNavigation": {
+    "message": "Основная навигация",
+    "description": "Alcydeo interface: workspaceNavigation"
+  },
+  "skipContent": {
+    "message": "Перейти к содержимому",
+    "description": "Alcydeo interface: skipContent"
+  },
+  "addVideo": {
+    "message": "Добавить видео",
+    "description": "Alcydeo interface: addVideo"
+  },
+  "clearSearch": {
+    "message": "Очистить поиск",
+    "description": "Alcydeo interface: clearSearch"
+  },
+  "manager_queue_description": {
+    "message": "Все ваши загрузки в одном месте.",
+    "description": "Alcydeo interface: manager_queue_description"
+  },
+  "manager_library_description": {
+    "message": "Видео, загрузки и обработка в одном месте.",
+    "description": "Alcydeo interface: manager_library_description"
+  },
+  "manager_record_description": {
+    "message": "Запишите момент и сохраните на устройстве.",
+    "description": "Alcydeo interface: manager_record_description"
+  },
+  "manager_cloud_description": {
+    "message": "Отправьте выбранный файл в удобное хранилище.",
+    "description": "Alcydeo interface: manager_cloud_description"
+  },
+  "manager_settings_description": {
+    "message": "Настройте Alcydeo под себя.",
+    "description": "Alcydeo interface: manager_settings_description"
+  },
+  "manager_help_description": {
+    "message": "Помощь, когда она нужна.",
+    "description": "Alcydeo interface: manager_help_description"
+  },
+  "managerResults": {
+    "message": "Записей: $count$",
+    "description": "Alcydeo interface: managerResults",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "managerNoResults": {
+    "message": "Совпадений пока нет",
+    "description": "Alcydeo interface: managerNoResults"
+  },
+  "managerNoResultsHint": {
+    "message": "Попробуйте другой заголовок или сбросьте фильтры.",
+    "description": "Alcydeo interface: managerNoResultsHint"
+  },
+  "managerEmptyHint": {
+    "message": "Скачайте видео со страницы через значок Alcydeo. Оно появится здесь.",
+    "description": "Alcydeo interface: managerEmptyHint"
+  },
+  "resetFilters": {
+    "message": "Сбросить фильтры",
+    "description": "Alcydeo interface: resetFilters"
+  },
+  "detectionSettings": {
+    "message": "Обнаружение",
+    "description": "Alcydeo interface: detectionSettings"
+  },
+  "detectionSettingsHint": {
+    "message": "Выберите, что показывать в списке загрузок.",
+    "description": "Alcydeo interface: detectionSettingsHint"
+  },
+  "appearanceSettings": {
+    "message": "Оформление",
+    "description": "Alcydeo interface: appearanceSettings"
+  },
+  "appearanceSettingsHint": {
+    "message": "Удобный вид днём и ночью.",
+    "description": "Alcydeo interface: appearanceSettingsHint"
+  },
+  "destinationSettingsHint": {
+    "message": "Выберите, как и куда сохранять файлы.",
+    "description": "Alcydeo interface: destinationSettingsHint"
+  },
+  "blockedExample": {
+    "message": "example.com",
+    "description": "Alcydeo interface: blockedExample"
+  },
+  "tvKeepOpen": {
+    "message": "Оставляйте этот плеер открытым во время трансляции.",
+    "description": "Alcydeo interface: tvKeepOpen"
+  },
+  "sourceNone": {
+    "message": "Обнаруженные источники отклонены",
+    "description": "Alcydeo interface: sourceNone"
+  },
+  "sourceRetryHint": {
+    "message": "Проверка выявила недействительные, недоступные или слишком маленькие источники. Обновите исходный плеер и повторите поиск.",
+    "description": "Alcydeo interface: sourceRetryHint"
+  },
+  "tv": {
+    "message": "Воспроизведение на ТВ",
+    "description": "Alcydeo interface: tv"
+  },
+  "manager_tv_description": {
+    "message": "Транслируйте найденное видео или откройте локальный файл для трансляции вкладки.",
+    "description": "Alcydeo interface: manager_tv_description"
+  },
+  "tvOpen": {
+    "message": "Открыть ТВ-плеер",
+    "description": "Alcydeo interface: tvOpen"
+  },
+  "tvExperimental": {
+    "message": "Экспериментальная функция: воспроизведение на реальных приёмниках ещё не проверено.",
+    "description": "Alcydeo interface: tvExperimental"
+  },
+  "tvNoAirplay": {
+    "message": "AirPlay недоступен в Chrome на этом устройстве.",
+    "description": "Alcydeo interface: tvNoAirplay"
+  },
+  "tvNoDevice": {
+    "message": "Совместимый приёмник не найден. Проверьте, что устройства подключены к одной сети.",
+    "description": "Alcydeo interface: tvNoDevice"
+  },
+  "tvNotSupported": {
+    "message": "Источник или браузер не может начать трансляцию. Попробуйте транслировать исходную вкладку через меню Chrome.",
+    "description": "Alcydeo interface: tvNotSupported"
+  },
+  "tvConnected": {
+    "message": "Подключено к приёмнику",
+    "description": "Alcydeo interface: tvConnected"
+  },
+  "tvConnecting": {
+    "message": "Подключение…",
+    "description": "Alcydeo interface: tvConnecting"
+  },
+  "tvDisconnected": {
+    "message": "Выберите приёмник для начала.",
+    "description": "Alcydeo interface: tvDisconnected"
+  },
+  "tvHint": {
+    "message": "Нативная трансляция зависит от Chrome, приёмника и формата. Alcydeo не добавляет ретранслятор. Если прямое воспроизведение не подходит, трансляция вкладки использует исходный плеер.",
+    "description": "Alcydeo interface: tvHint"
+  },
+  "sourceChecking": {
+    "message": "Проверка источника…",
+    "description": "Alcydeo interface: sourceChecking"
+  },
+  "sourceReady": {
+    "message": "Доступен",
+    "description": "Alcydeo interface: sourceReady"
+  },
+  "sourceUnknown": {
+    "message": "Не подтверждён",
+    "description": "Alcydeo interface: sourceUnknown"
+  },
+  "sourceCheckHint": {
+    "message": "Перед загрузкой проверяется небольшой образец, а не весь файл. Обновите список для повторной проверки.",
+    "description": "Alcydeo interface: sourceCheckHint"
+  },
+  "err_tooSmall": {
+    "message": "Размер источника меньше минимального, выбранного в настройках.",
+    "description": "Alcydeo interface: err_tooSmall"
+  },
+  "tvUnavailable": {
+    "message": "Недоступно",
+    "description": "Alcydeo interface: tvUnavailable"
+  },
+  "tvPreparing": {
+    "message": "Подготовка плеера…",
+    "description": "Alcydeo interface: tvPreparing"
+  },
+  "tvAirplayWindows": {
+    "message": "Chrome для Windows не предоставляет отправку AirPlay. Apple TV только с AirPlay не является приёмником Google Cast.",
+    "description": "Alcydeo interface: tvAirplayWindows"
+  },
+  "tvStreamTab": {
+    "message": "Поток использует плеер исходного сайта. Вернитесь на его вкладку и выберите трансляцию в меню Chrome.",
+    "description": "Alcydeo interface: tvStreamTab"
+  },
+  "tvDeviceAvailable": {
+    "message": "Chrome сообщает о совместимом приёмнике.",
+    "description": "Alcydeo interface: tvDeviceAvailable"
+  },
+  "tvDeviceUnconfirmed": {
+    "message": "Chrome не сообщает о совместимом приёмнике для этого видео. Повторите попытку или транслируйте исходную вкладку.",
+    "description": "Alcydeo interface: tvDeviceUnconfirmed"
+  },
+  "tvDeviceChecking": {
+    "message": "Chrome ещё не подтвердил доступность приёмников.",
+    "description": "Alcydeo interface: tvDeviceChecking"
+  },
+  "tvShortClip": {
+    "message": "Chrome 156 может отклонять прямую трансляцию роликов до 15 секунд включительно. Используйте трансляцию вкладки.",
+    "description": "Alcydeo interface: tvShortClip"
+  },
+  "tvNoConnection": {
+    "message": "Chrome не удалось связаться с приёмником. Проверьте совместимость или транслируйте вкладку через меню Chrome.",
+    "description": "Alcydeo interface: tvNoConnection"
+  },
+  "tvPermission": {
+    "message": "Chrome заблокировал выбор приёмника. Проверьте политику трансляции или используйте меню Chrome.",
+    "description": "Alcydeo interface: tvPermission"
+  },
+  "tvActivation": {
+    "message": "Снова нажмите Cast для выбора приёмника.",
+    "description": "Alcydeo interface: tvActivation"
+  },
+  "tvBusy": {
+    "message": "Выбор приёмника уже открыт. Сначала завершите его.",
+    "description": "Alcydeo interface: tvBusy"
+  },
+  "tvMediaCodec": {
+    "message": "Chrome не может декодировать источник в этом плеере. Откройте исходную вкладку или выберите другое качество.",
+    "description": "Alcydeo interface: tvMediaCodec"
+  },
+  "tvMediaNetwork": {
+    "message": "Видео не загрузилось здесь. Ссылка могла истечь или требовать сеанс исходной страницы. Вернитесь на её вкладку.",
+    "description": "Alcydeo interface: tvMediaNetwork"
+  },
+  "tvOriginalMissing": {
+    "message": "Исходная вкладка закрыта или изменена. Откройте страницу видео и обнаружьте источник заново.",
+    "description": "Alcydeo interface: tvOriginalMissing"
+  },
+  "tvCastTab": {
+    "message": "Транслировать исходную вкладку",
+    "description": "Alcydeo interface: tvCastTab"
+  },
+  "tvOriginal": {
+    "message": "Вернуться к исходному плееру",
+    "description": "Alcydeo interface: tvOriginal"
+  },
+  "tvChromeSteps": {
+    "message": "Вернитесь на исходную вкладку, запустите видео и откройте Chrome ⋮ → Трансляция, сохранение и отправка → Транслировать… → Источники → Транслировать вкладку. Выберите ТВ. Этот выбор открывается из меню Chrome.",
+    "description": "Alcydeo interface: tvChromeSteps"
+  },
+  "tvNetworkHint": {
+    "message": "Используйте приёмник Google Cast в той же локальной сети. Если Chrome тоже не видит его, проверьте сеть, VPN и брандмауэр.",
+    "description": "Alcydeo interface: tvNetworkHint"
+  },
+  "tvWebTitle": {
+    "message": "Плеер Google Cast",
+    "description": "Alcydeo interface: tvWebTitle"
+  },
+  "tvWebOpen": {
+    "message": "Выбрать ТВ",
+    "description": "Alcydeo interface: tvWebOpen"
+  },
+  "tvWebPreparing": {
+    "message": "Загрузка управления Google Cast…",
+    "description": "Alcydeo interface: tvWebPreparing"
+  },
+  "tvWebLoad": {
+    "message": "Воспроизвести на ТВ",
+    "description": "Alcydeo interface: tvWebLoad"
+  },
+  "tvWebStop": {
+    "message": "Отключить",
+    "description": "Alcydeo interface: tvWebStop"
+  },
+  "tvWebNoMedia": {
+    "message": "Вставьте прямую ссылку на видео, выберите ТВ и нажмите Воспроизвести на ТВ.",
+    "description": "Alcydeo interface: tvWebNoMedia"
+  },
+  "tvWebHint": {
+    "message": "Отдельная страница загружает Google Cast SDK. После выбора приёмника его плеер получает ссылку и название видео. Cookies и пароли не передаются.",
+    "description": "Alcydeo interface: tvWebHint"
+  },
+  "tvWebUnavailable": {
+    "message": "В этой установке веб-плеер Google Cast недоступен. Для локального теста используйте меню трансляции Chrome.",
+    "description": "Alcydeo interface: tvWebUnavailable"
+  },
+  "tvWebLoadError": {
+    "message": "Приёмник не загрузил видео. Ссылка может требовать cookies, истечь или иметь неподдерживаемый формат. Транслируйте исходную вкладку.",
+    "description": "Alcydeo interface: tvWebLoadError"
+  },
+  "tvWebSdkError": {
+    "message": "Управление Google Cast не загрузилось. Проверьте Chrome, соединение и доступ к SDK Google.",
+    "description": "Alcydeo interface: tvWebSdkError"
+  },
+  "tvNative": {
+    "message": "Нативный прототип",
+    "description": "Alcydeo interface: tvNative"
+  },
+  "tvWebPlay": {
+    "message": "Воспроизвести",
+    "description": "Alcydeo interface: tvWebPlay"
+  },
+  "castVideo": {
+    "message": "Транслировать",
+    "description": "Alcydeo interface: castVideo"
+  },
+  "tvCastBuiltIn": {
+    "message": "Выберите ТВ в окне приёмников Chrome. Оставьте эту вкладку открытой для управления.",
+    "description": "Alcydeo interface: tvCastBuiltIn"
+  },
+  "tvCastAutoQuality": {
+    "message": "ТВ получает полный поток и выбирает совместимые качество и звук.",
+    "description": "Alcydeo interface: tvCastAutoQuality"
+  },
+  "tvCastTimeout": {
+    "message": "Приёмник не подтвердил воспроизведение вовремя. Повторите попытку или транслируйте исходную вкладку.",
+    "description": "Alcydeo interface: tvCastTimeout"
+  },
+  "tvCastLocalFile": {
+    "message": "Файл только на ПК не имеет ссылки, доступной ТВ. Откройте локальный файл в Chrome и транслируйте вкладку.",
+    "description": "Alcydeo interface: tvCastLocalFile"
+  },
+  "tvCast_idle": {
+    "message": "Выберите приёмник для этого видео.",
+    "description": "Alcydeo interface: tvCast_idle"
+  },
+  "tvCast_choosing": {
+    "message": "Выберите ТВ в Chrome…",
+    "description": "Alcydeo interface: tvCast_choosing"
+  },
+  "tvCast_connecting": {
+    "message": "Подключение к приёмнику…",
+    "description": "Alcydeo interface: tvCast_connecting"
+  },
+  "tvCast_loading": {
+    "message": "Приёмник загружает видео…",
+    "description": "Alcydeo interface: tvCast_loading"
+  },
+  "tvCast_playing": {
+    "message": "Воспроизведение на ТВ",
+    "description": "Alcydeo interface: tvCast_playing"
+  },
+  "tvCast_paused": {
+    "message": "Пауза на ТВ",
+    "description": "Alcydeo interface: tvCast_paused"
+  },
+  "tvCast_finished": {
+    "message": "Воспроизведение завершено",
+    "description": "Alcydeo interface: tvCast_finished"
+  },
+  "tvCast_error": {
+    "message": "Воспроизведение не подтверждено.",
+    "description": "Alcydeo interface: tvCast_error"
+  },
+  "tvFileClose": {
+    "message": "Закрыть файл",
+    "description": "Alcydeo interface: tvFileClose"
+  },
+  "tvDetectedVideo": {
+    "message": "Найденное видео",
+    "description": "Alcydeo interface: tvDetectedVideo"
+  },
+  "tvLocalFile": {
+    "message": "Файл с ПК",
+    "description": "Alcydeo interface: tvLocalFile"
+  },
+  "tvFileIntro": {
+    "message": "Воспроизведите файл здесь, затем выберите способ трансляции, поддерживаемый приёмником.",
+    "description": "Alcydeo interface: tvFileIntro"
+  },
+  "tvFileChoose": {
+    "message": "Выбрать видеофайл",
+    "description": "Alcydeo interface: tvFileChoose"
+  },
+  "tvFileChooseSaved": {
+    "message": "Выберите сохранённый файл на ПК:",
+    "description": "Alcydeo interface: tvFileChooseSaved"
+  },
+  "tvFileCastGuide": {
+    "message": "Как транслировать этот плеер",
+    "description": "Alcydeo interface: tvFileCastGuide"
+  },
+  "tvFileStepPlay": {
+    "message": "Откройте видеофайл в Alcydeo и запустите воспроизведение.",
+    "description": "Alcydeo interface: tvFileStepPlay"
+  },
+  "tvFileStepMenu": {
+    "message": "Откройте Chrome ⋮ → Трансляция, сохранение и отправка → Транслировать…. Эта кнопка показывает шаги; выбор ТВ открывается из меню Chrome.",
+    "description": "Alcydeo interface: tvFileStepMenu"
+  },
+  "tvFileStepTab": {
+    "message": "В разделе «Источники» выберите трансляцию вкладки, затем ТВ, например NVIDIA SHIELD.",
+    "description": "Alcydeo interface: tvFileStepTab"
+  },
+  "tvFileKeepOpen": {
+    "message": "Оставьте вкладку открытой. Управляйте воспроизведением в плеере, а остановкой трансляции — в Chrome. Трансляция вкладки может сильнее нагружать процессор, чем отправка ссылки.",
+    "description": "Alcydeo interface: tvFileKeepOpen"
+  },
+  "tvFilePrivacy": {
+    "message": "Файлы остаются на ПК; нативный Cast Chrome передаёт медиа выбранному приёмнику. Alcydeo не загружает их на хостинг.",
+    "description": "Alcydeo interface: tvFilePrivacy"
+  },
+  "tvFileInvalid": {
+    "message": "Выберите непустой видеофайл.",
+    "description": "Alcydeo interface: tvFileInvalid"
+  },
+  "tvFileCodec": {
+    "message": "Chrome не может воспроизвести файл. Попробуйте преобразовать его в MP4 в видеоинструментах.",
+    "description": "Alcydeo interface: tvFileCodec"
+  },
+  "tvFileChooseAgain": {
+    "message": "Сохранённая копия недоступна. Выберите файл на этом ПК.",
+    "description": "Alcydeo interface: tvFileChooseAgain"
+  },
+  "tvFilePlayFirst": {
+    "message": "Запустите видео в плеере, затем нажмите кнопку трансляции.",
+    "description": "Alcydeo interface: tvFilePlayFirst"
+  },
+  "tvFilePrepare": {
+    "message": "Подготовить файл к трансляции",
+    "description": "Alcydeo interface: tvFilePrepare"
+  },
+  "tvFileCopying": {
+    "message": "Подготовка локального файла…",
+    "description": "Alcydeo interface: tvFileCopying"
+  },
+  "tvFileAccess": {
+    "message": "Включите доступ к URL файлов в настройках расширения Alcydeo в Chrome и снова откройте плеер.",
+    "description": "Alcydeo interface: tvFileAccess"
+  },
+  "tvFileAccessHint": {
+    "message": "Для трансляции нужен необязательный доступ к сохранённому файлу. Файл не загружается на сервер. После подготовки нажмите кнопку трансляции в плеере.",
+    "description": "Alcydeo interface: tvFileAccessHint"
+  },
+  "tvFileCopyHint": {
+    "message": "Нативной трансляции нужен сохранённый файл. Подготовка откроет «Сохранить как» для локальной копии; оригинал останется.",
+    "description": "Alcydeo interface: tvFileCopyHint"
+  },
+  "tvFileCopyFailed": {
+    "message": "Не удалось подготовить локальную копию. Повторите попытку; соединение с приёмником не установлено.",
+    "description": "Alcydeo interface: tvFileCopyFailed"
+  },
+  "tvFilePath": {
+    "message": "Путь не поддерживается. Выберите видео и подготовьте локальную копию. Сетевые папки не открываются.",
+    "description": "Alcydeo interface: tvFilePath"
+  },
+  "tvFileShort": {
+    "message": "Для нативного удалённого воспроизведения Chrome нужно видео длиннее 15 секунд. Для этого ролика используйте инструкцию трансляции вкладки.",
+    "description": "Alcydeo interface: tvFileShort"
+  },
+  "tvFileCastChange": {
+    "message": "Сменить ТВ / отключиться",
+    "description": "Alcydeo interface: tvFileCastChange"
+  },
+  "tvFileState_disconnected": {
+    "message": "Готово к выбору приёмника",
+    "description": "Alcydeo interface: tvFileState_disconnected"
+  },
+  "tvFileState_choosing": {
+    "message": "Выберите ТВ в Chrome…",
+    "description": "Alcydeo interface: tvFileState_choosing"
+  },
+  "tvFileState_connecting": {
+    "message": "Подключение…",
+    "description": "Alcydeo interface: tvFileState_connecting"
+  },
+  "tvFileState_connected": {
+    "message": "Приёмник подключён",
+    "description": "Alcydeo interface: tvFileState_connected"
+  },
+  "tvFileState_error": {
+    "message": "Соединение с приёмником не подтверждено",
+    "description": "Alcydeo interface: tvFileState_error"
+  },
+  "tvFileReceiverLimit": {
+    "message": "Кнопка Cast для файлов в Chrome поддерживает некоторые устройства Chromecast и Google TV Streamer. Этот API исключает Nvidia Shield; транслируйте вкладку плеера через меню Chrome.",
+    "description": "Alcydeo interface: tvFileReceiverLimit"
+  },
+  "tvWebPlayerVolume": {
+    "message": "Громкость",
+    "description": "Alcydeo interface: tvWebPlayerVolume"
+  },
+  "tvWebPlayerSeek": {
+    "message": "Позиция воспроизведения",
+    "description": "Alcydeo interface: tvWebPlayerSeek"
+  },
+  "tvWebFullscreen": {
+    "message": "Полный экран",
+    "description": "Alcydeo interface: tvWebFullscreen"
+  },
+  "tvWebExitFullscreen": {
+    "message": "Выйти из полного экрана",
+    "description": "Alcydeo interface: tvWebExitFullscreen"
+  },
+  "tvWebUsingOriginal": {
+    "message": "Исходный источник загрузки",
+    "description": "Alcydeo interface: tvWebUsingOriginal"
+  },
+  "tvWebPreviewUnavailable": {
+    "message": "Локальный просмотр недоступен. Телевизор может поддерживать этот формат; можно попробовать трансляцию.",
+    "description": "Alcydeo interface: tvWebPreviewUnavailable"
+  },
+  "tvWebSeek": {
+    "message": "Позиция на ТВ",
+    "description": "Alcydeo interface: tvWebSeek"
+  },
+  "tvWebVolume": {
+    "message": "Громкость ТВ",
+    "description": "Alcydeo interface: tvWebVolume"
+  },
+  "tvWebSource": {
+    "message": "Адрес видео",
+    "description": "Alcydeo interface: tvWebSource"
+  },
+  "tvFileCastTabSteps": {
+    "message": "Трансляция вкладки · шаги Chrome",
+    "description": "Alcydeo interface: tvFileCastTabSteps"
+  },
+  "tvFileCastNative": {
+    "message": "Встроенный Cast · совместимые устройства",
+    "description": "Alcydeo interface: tvFileCastNative"
+  },
+  "trimStartTime": {
+    "message": "Время начала",
+    "description": "Alcydeo interface: trimStartTime"
+  },
+  "trimEndTime": {
+    "message": "Время конца",
+    "description": "Alcydeo interface: trimEndTime"
+  },
+  "trimTimeHint": {
+    "message": "Введите секунды или m:ss / h:mm:ss, до трёх знаков после запятой.",
+    "description": "Alcydeo interface: trimTimeHint"
+  },
+  "undoAnnotations": {
+    "message": "Отменить штрих",
+    "description": "Alcydeo interface: undoAnnotations"
+  },
+  "clearAnnotations": {
+    "message": "Очистить рисунок",
+    "description": "Alcydeo interface: clearAnnotations"
+  },
+  "language": {
+    "message": "Язык",
+    "description": "Alcydeo interface: language"
+  },
+  "languageAutomatic": {
+    "message": "Как в Chrome",
+    "description": "Alcydeo interface: languageAutomatic"
+  },
+  "selectVideo": {
+    "message": "Выбрать видео",
+    "description": "Alcydeo interface: selectVideo"
+  },
+  "selectPage": {
+    "message": "Выбрать эту страницу",
+    "description": "Alcydeo interface: selectPage"
+  },
+  "selectedFiles": {
+    "message": "Выбранные файлы",
+    "description": "Alcydeo interface: selectedFiles"
+  },
+  "selectedCount": {
+    "message": "Выбрано: $1",
+    "description": "Alcydeo interface: selectedCount"
+  },
+  "deleteSelection": {
+    "message": "Удалить выбранное",
+    "description": "Alcydeo interface: deleteSelection"
+  },
+  "clearSelection": {
+    "message": "Снять выделение",
+    "description": "Alcydeo interface: clearSelection"
+  },
+  "batchSequential": {
+    "message": "Файлы обрабатываются по одному, оригиналы сохраняются. Выберите недостающие локальные копии ниже.",
+    "description": "Alcydeo interface: batchSequential"
+  },
+  "batchPreparing": {
+    "message": "Подготовка $1 из $2…",
+    "description": "Alcydeo interface: batchPreparing"
+  },
+  "batchQueued": {
+    "message": "В очередь добавлено файлов: $1.",
+    "description": "Alcydeo interface: batchQueued"
+  },
+  "chooseLocalFiles": {
+    "message": "Выберите сохранённый локальный файл.",
+    "description": "Alcydeo interface: chooseLocalFiles"
+  },
+  "allowLocalFiles": {
+    "message": "Разрешить доступ к сохранённым файлам",
+    "description": "Alcydeo interface: allowLocalFiles"
+  },
+  "compressionSettings": {
+    "message": "Параметры сжатия",
+    "description": "Alcydeo interface: compressionSettings"
+  },
+  "compressionDefaultsHint": {
+    "message": "Используются при сжатии в библиотеке. Качество, разрешение и битрейт звука влияют на размер и время.",
+    "description": "Alcydeo interface: compressionDefaultsHint"
+  },
+  "captureQuality": {
+    "message": "Качество захвата",
+    "description": "Alcydeo interface: captureQuality"
+  },
+  "captureSource": {
+    "message": "Разрешение источника",
+    "description": "Alcydeo interface: captureSource"
+  },
+  "captureQualityHint": {
+    "message": "До 4K при 30 кадрах/с с повышенным битрейтом. Детали зависят от источника; масштабирование не восстановит утраченное.",
+    "description": "Alcydeo interface: captureQualityHint"
+  },
+  "captureHighBitrate": {
+    "message": "Высокий битрейт",
+    "description": "Alcydeo interface: captureHighBitrate"
+  },
+  "annotations": {
+    "message": "Рисовать на записываемой вкладке",
+    "description": "Alcydeo interface: annotations"
+  },
+  "captureTab": {
+    "message": "Записать эту вкладку",
+    "description": "Alcydeo interface: captureTab"
+  },
+  "recordDetectedHint": {
+    "message": "Поддерживаемый HLS эфир записывается напрямую. Для других плееров используется запись вкладки.",
+    "description": "Alcydeo interface: recordDetectedHint"
+  },
+  "visualTrim": {
+    "message": "Визуальный редактор обрезки",
+    "description": "Alcydeo interface: visualTrim"
+  },
+  "visualMerge": {
+    "message": "Визуальный редактор объединения",
+    "description": "Alcydeo interface: visualMerge"
+  },
+  "previewUnavailable": {
+    "message": "Chrome не может показать файл. Попробуйте совместимый MP4.",
+    "description": "Alcydeo interface: previewUnavailable"
+  },
+  "playSelection": {
+    "message": "Воспроизвести выделенное",
+    "description": "Alcydeo interface: playSelection"
+  },
+  "cutInHandle": {
+    "message": "Начало обрезки",
+    "description": "Alcydeo interface: cutInHandle"
+  },
+  "cutOutHandle": {
+    "message": "Конец обрезки",
+    "description": "Alcydeo interface: cutOutHandle"
+  },
+  "markStart": {
+    "message": "Начать отсюда",
+    "description": "Alcydeo interface: markStart"
+  },
+  "markEnd": {
+    "message": "Закончить здесь",
+    "description": "Alcydeo interface: markEnd"
+  },
+  "mergeVisualHint": {
+    "message": "Перетаскивайте клипы или используйте стрелки для порядка. Нажмите миниатюру для просмотра.",
+    "description": "Alcydeo interface: mergeVisualHint"
+  },
+  "totalDuration": {
+    "message": "Общая длительность",
+    "description": "Alcydeo interface: totalDuration"
+  },
+  "preciseTimes": {
+    "message": "Точное время",
+    "description": "Alcydeo interface: preciseTimes"
+  },
+  "processingDefaults": {
+    "message": "Изменить параметры в настройках",
+    "description": "Alcydeo interface: processingDefaults"
+  },
+  "castReuseFile": {
+    "message": "Используйте файл Chrome без ещё одной копии:",
+    "description": "Alcydeo interface: castReuseFile"
+  },
+  "castLocalPath": {
+    "message": "Путь к файлу (без копии)",
+    "description": "Alcydeo interface: castLocalPath"
+  },
+  "cloudProviderRemoved": {
+    "message": "Провайдер удалён. Отмените или удалите старую задачу.",
+    "description": "Alcydeo interface: cloudProviderRemoved"
+  },
+  "conversionSaving": {
+    "message": "Сохранение MP4",
+    "description": "Alcydeo interface: conversionSaving"
+  },
+  "conversionSettings": {
+    "message": "Конвертация в MP4",
+    "description": "Alcydeo interface: conversionSettings"
+  },
+  "convertMp4": {
+    "message": "Конвертировать в MP4",
+    "description": "Alcydeo interface: convertMp4"
+  },
+  "chooseConversionFile": {
+    "message": "Выбрать видео для конвертации",
+    "description": "Alcydeo interface: chooseConversionFile"
+  },
+  "conversionHint": {
+    "message": "MP4 с видео H.264 и аудио AAC. По одному файлу; оставьте менеджер открытым. Оригинал сохраняется. Совместимые дорожки копируются, остальные поддерживаемые дорожки перекодируются. Это может занять время и изменить качество.",
+    "description": "Alcydeo interface: conversionHint"
+  },
+  "conversionRestartHint": {
+    "message": "Файлы конвертируются по одному. После паузы или закрытия менеджера конвертация начнётся заново из сохранённого исходного файла.",
+    "description": "Alcydeo interface: conversionRestartHint"
+  },
+  "preparingConversion": {
+    "message": "Подготовка конвертации",
+    "description": "Alcydeo interface: preparingConversion"
+  },
+  "converting": {
+    "message": "Конвертация в MP4",
+    "description": "Alcydeo interface: converting"
+  },
+  "err_conversionCodec": {
+    "message": "Chrome не может преобразовать все аудио- и видеодорожки файла в H.264/AAC. Оригинал сохранён; неполный MP4 не записан.",
+    "description": "Alcydeo interface: err_conversionCodec"
+  },
+  "err_conversionInput": {
+    "message": "Выберите исходное видео ещё раз: локальная подготовка прервана или файл недоступен.",
+    "description": "Alcydeo interface: err_conversionInput"
+  },
+  "clearHistory": {
+    "message": "Очистить историю",
+    "description": "Alcydeo interface: clearHistory"
+  },
+  "clearHistoryTitle": {
+    "message": "Очистить всю историю загрузок?",
+    "description": "Alcydeo interface: clearHistoryTitle"
+  },
+  "clearHistoryHint": {
+    "message": "Из Alcydeo будут удалены записи завершённых, неудачных и отменённых загрузок и их временные файлы на всех страницах и при любых фильтрах, включая избранное. Сохранённые файлы, активные и приостановленные загрузки останутся.",
+    "description": "Alcydeo interface: clearHistoryHint"
+  },
+  "confirmClearHistory": {
+    "message": "Очистить всю историю",
+    "description": "Alcydeo interface: confirmClearHistory"
+  },
+  "historyCleared": {
+    "message": "История очищена. Сохранённые файлы оставлены.",
+    "description": "Alcydeo interface: historyCleared"
+  },
+  "pagination": {
+    "message": "Страницы списка загрузок",
+    "description": "Alcydeo interface: pagination"
+  },
+  "previousPage": {
+    "message": "Назад",
+    "description": "Alcydeo interface: previousPage"
+  },
+  "nextPage": {
+    "message": "Далее",
+    "description": "Alcydeo interface: nextPage"
+  },
+  "pageStatus": {
+    "message": "Страница $current$ из $total$",
+    "description": "Alcydeo interface: pageStatus",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "1"
+      },
+      "total": {
+        "content": "$2",
+        "example": "6"
+      }
+    }
+  },
+  "multipartDownloads": {
+    "message": "Многопоточная загрузка",
+    "description": "Alcydeo interface: multipartDownloads"
+  },
+  "multipartEnable": {
+    "message": "Несколько соединений для совместимых файлов и DASH",
+    "description": "Alcydeo interface: multipartEnable"
+  },
+  "multipartConnections": {
+    "message": "Соединений на файл",
+    "description": "Alcydeo interface: multipartConnections"
+  },
+  "multipartHint": {
+    "message": "Не закрывайте менеджер. Совместимые аудио- и видеодорожки могут загружаться одновременно. Для разделения одного ресурса нужны надёжные диапазоны байтов и строгий валидатор версии; иначе используется обычная передача. Скорость зависит от сервера и соединения.",
+    "description": "Alcydeo interface: multipartHint"
+  },
+  "notice_multipartUnavailable": {
+    "message": "Параллельные части недоступны для этого источника. Используется обычная передача.",
+    "description": "Alcydeo interface: notice_multipartUnavailable"
+  },
+  "err_sourceRestricted": {
+    "message": "Источник отказал в доступе к потоку. Видео нельзя скачать в текущем сеансе проигрывателя.",
+    "description": "Alcydeo interface: err_sourceRestricted"
+  },
+  "err_sourcePending": {
+    "message": "Воспроизведите видео несколько секунд, чтобы источник загрузки стал доступен.",
+    "description": "Alcydeo interface: err_sourcePending"
+  },
+  "sabrRestartHint": {
+    "message": "При прерывании этой передачи возобновление начнётся с начала.",
+    "description": "Alcydeo interface: sabrRestartHint"
+  },
+  "downloadDestination": {
+    "message": "Сохранение файлов",
+    "description": "Alcydeo interface: downloadDestination"
+  },
+  "saveAutomatically": {
+    "message": "Сохранять автоматически",
+    "description": "Alcydeo interface: saveAutomatically"
+  },
+  "saveAsk": {
+    "message": "Показывать «Сохранить как» при каждой загрузке",
+    "description": "Alcydeo interface: saveAsk"
+  },
+  "downloadSubfolder": {
+    "message": "Подпапка в папке загрузок Chrome",
+    "description": "Alcydeo interface: downloadSubfolder"
+  },
+  "downloadFolderHint": {
+    "message": "Файлы сохраняются в этой подпапке каталога загрузок, выбранного в Chrome. Основную папку можно изменить в настройках загрузок Chrome.",
+    "description": "Alcydeo interface: downloadFolderHint"
+  },
+  "chromeDownloadSettings": {
+    "message": "Выбрать основную папку в Chrome",
+    "description": "Alcydeo interface: chromeDownloadSettings"
+  },
+  "err_saveDialog": {
+    "message": "Сохранение не началось. Повторите попытку и выберите имя и место в окне «Сохранить как».",
+    "description": "Alcydeo interface: err_saveDialog"
+  },
+  "technicalDetails": {
+    "message": "Технические сведения",
+    "description": "Alcydeo interface: technicalDetails"
+  },
+  "err_chooseQuality": {
+    "message": "Теперь источник предлагает несколько вариантов качества. Откройте Alcydeo на странице видео, найдите варианты качества и выберите заново.",
+    "description": "Alcydeo interface: err_chooseQuality"
+  },
+  "err_manifestLoop": {
+    "message": "Источник ссылается на уже просмотренный плейлист. Обновите исходный плеер и повторите обнаружение.",
+    "description": "Alcydeo interface: err_manifestLoop"
+  },
+  "globalDetection": {
+    "message": "Автоматическое обнаружение медиа",
+    "description": "Alcydeo interface: globalDetection"
+  },
+  "globalDetectionHint": {
+    "message": "Включено по умолчанию. Chrome предоставляет доступ к сайтам при установке. Здесь можно приостановить обнаружение или ограничить доступ в Chrome.",
+    "description": "Alcydeo interface: globalDetectionHint"
+  },
+  "err_html": {
+    "message": "Источник вернул HTML вместо медиа. Загрузка остановлена. Обновите исходный плеер и повторите обнаружение источника.",
+    "description": "Alcydeo interface: err_html"
+  },
+  "err_notMedia": {
+    "message": "Ответ не является поддерживаемым медиафайлом. Обновите плеер и повторите обнаружение.",
+    "description": "Alcydeo interface: err_notMedia"
+  },
+  "appName": {
+    "message": "Alcydeo",
+    "description": "Alcydeo interface: appName"
+  },
+  "appDescription": {
+    "message": "Находите видео, сохраняйте локально и храните медиатеку приватно.",
+    "description": "Alcydeo interface: appDescription"
+  },
+  "tagline": {
+    "message": "Ваши видео. Ваше устройство.",
+    "description": "Alcydeo interface: tagline"
+  },
+  "detected": {
+    "message": "На этой странице",
+    "description": "Alcydeo interface: detected"
+  },
+  "scan": {
+    "message": "Сканировать страницу",
+    "description": "Alcydeo interface: scan"
+  },
+  "scanning": {
+    "message": "Поиск медиа…",
+    "description": "Alcydeo interface: scanning"
+  },
+  "empty": {
+    "message": "Включите видео для начала",
+    "description": "Alcydeo interface: empty"
+  },
+  "emptyHint": {
+    "message": "Включите видео и обновите страницу, если оно ещё не появилось.",
+    "description": "Alcydeo interface: emptyHint"
+  },
+  "quality": {
+    "message": "Качество",
+    "description": "Alcydeo interface: quality"
+  },
+  "qualities": {
+    "message": "Найти варианты качества",
+    "description": "Alcydeo interface: qualities"
+  },
+  "original": {
+    "message": "Исходный источник",
+    "description": "Alcydeo interface: original"
+  },
+  "unknownSize": {
+    "message": "Размер неизвестен",
+    "description": "Alcydeo interface: unknownSize"
+  },
+  "download": {
+    "message": "Скачать",
+    "description": "Alcydeo interface: download"
+  },
+  "preview": {
+    "message": "Просмотр",
+    "description": "Alcydeo interface: preview"
+  },
+  "close": {
+    "message": "Закрыть",
+    "description": "Alcydeo interface: close"
+  },
+  "queue": {
+    "message": "Загрузки",
+    "description": "Alcydeo interface: queue"
+  },
+  "library": {
+    "message": "Медиатека",
+    "description": "Alcydeo interface: library"
+  },
+  "settings": {
+    "message": "Настройки",
+    "description": "Alcydeo interface: settings"
+  },
+  "local": {
+    "message": "Локальная обработка · без аккаунта",
+    "description": "Alcydeo interface: local"
+  },
+  "manager": {
+    "message": "Открыть менеджер загрузок",
+    "description": "Alcydeo interface: manager"
+  },
+  "keepOpen": {
+    "message": "Не закрывайте менеджер во время обработки сегментов. Закрытие Chrome останавливает активные задачи.",
+    "description": "Alcydeo interface: keepOpen"
+  },
+  "noTasks": {
+    "message": "Здесь начинается ваша медиатека",
+    "description": "Alcydeo interface: noTasks"
+  },
+  "search": {
+    "message": "Поиск по названиям и тегам",
+    "description": "Alcydeo interface: search"
+  },
+  "favorite": {
+    "message": "Избранное",
+    "description": "Alcydeo interface: favorite"
+  },
+  "show": {
+    "message": "Показать в папке",
+    "description": "Alcydeo interface: show"
+  },
+  "verified": {
+    "message": "Структура проверена",
+    "description": "Alcydeo interface: verified"
+  },
+  "pause": {
+    "message": "Приостановить",
+    "description": "Alcydeo interface: pause"
+  },
+  "resume": {
+    "message": "Продолжить",
+    "description": "Alcydeo interface: resume"
+  },
+  "cancel": {
+    "message": "Отменить",
+    "description": "Alcydeo interface: cancel"
+  },
+  "remove": {
+    "message": "Удалить запись и временные файлы",
+    "description": "Alcydeo interface: remove"
+  },
+  "export": {
+    "message": "Экспорт очищенных метаданных",
+    "description": "Alcydeo interface: export"
+  },
+  "theme": {
+    "message": "Тема",
+    "description": "Alcydeo interface: theme"
+  },
+  "system": {
+    "message": "Системная",
+    "description": "Alcydeo interface: system"
+  },
+  "light": {
+    "message": "Светлая",
+    "description": "Alcydeo interface: light"
+  },
+  "dark": {
+    "message": "Тёмная",
+    "description": "Alcydeo interface: dark"
+  },
+  "folder": {
+    "message": "Папка загрузки",
+    "description": "Alcydeo interface: folder"
+  },
+  "badge": {
+    "message": "Значок на панели",
+    "description": "Alcydeo interface: badge"
+  },
+  "count": {
+    "message": "Количество",
+    "description": "Alcydeo interface: count"
+  },
+  "dot": {
+    "message": "Точка",
+    "description": "Alcydeo interface: dot"
+  },
+  "hidden": {
+    "message": "Скрыт",
+    "description": "Alcydeo interface: hidden"
+  },
+  "blockedSites": {
+    "message": "Заблокированные хосты (один в строке; можно *)",
+    "description": "Alcydeo interface: blockedSites"
+  },
+  "save": {
+    "message": "Сохранить настройки",
+    "description": "Alcydeo interface: save"
+  },
+  "reset": {
+    "message": "Сбросить настройки",
+    "description": "Alcydeo interface: reset"
+  },
+  "saved": {
+    "message": "Сохранено",
+    "description": "Alcydeo interface: saved"
+  },
+  "title": {
+    "message": "Имя файла",
+    "description": "Alcydeo interface: title"
+  },
+  "privacy": {
+    "message": "Без телеметрии. Медиатека и задачи остаются в браузере. Сетевой доступ только к разрешённым источникам.",
+    "description": "Alcydeo interface: privacy"
+  },
+  "queued": {
+    "message": "В очереди",
+    "description": "Alcydeo interface: queued"
+  },
+  "fetching": {
+    "message": "Загрузка",
+    "description": "Alcydeo interface: fetching"
+  },
+  "assembling": {
+    "message": "Объединение дорожек",
+    "description": "Alcydeo interface: assembling"
+  },
+  "validating": {
+    "message": "Ожидание проверки файла",
+    "description": "Alcydeo interface: validating"
+  },
+  "completed": {
+    "message": "Завершено",
+    "description": "Alcydeo interface: completed"
+  },
+  "paused": {
+    "message": "Приостановлено",
+    "description": "Alcydeo interface: paused"
+  },
+  "failed": {
+    "message": "Требует внимания",
+    "description": "Alcydeo interface: failed"
+  },
+  "cancelled": {
+    "message": "Отменено",
+    "description": "Alcydeo interface: cancelled"
+  },
+  "err_permission": {
+    "message": "Этот источник недоступен.",
+    "description": "Alcydeo interface: err_permission"
+  },
+  "err_network": {
+    "message": "Источник недоступен. Проверьте соединение или обновите страницу.",
+    "description": "Alcydeo interface: err_network"
+  },
+  "err_expired": {
+    "message": "Сессия или ссылка истекла. Обновите исходную страницу.",
+    "description": "Alcydeo interface: err_expired"
+  },
+  "err_unsupported": {
+    "message": "Этот вариант потока пока не поддерживается. Попробуйте прямой источник или другое качество.",
+    "description": "Alcydeo interface: err_unsupported"
+  },
+  "err_encrypted": {
+    "message": "Зашифрованные или защищённые медиа не поддерживаются.",
+    "description": "Alcydeo interface: err_encrypted"
+  },
+  "err_invalid": {
+    "message": "Не удалось проверить файл. Убедитесь, что выбран скачанный файл.",
+    "description": "Alcydeo interface: err_invalid"
+  },
+  "err_space": {
+    "message": "Недостаточно временного хранилища. Удалите старые задачи и повторите.",
+    "description": "Alcydeo interface: err_space"
+  },
+  "err_excluded": {
+    "message": "Этот источник не входит в поддерживаемую область Alcydeo.",
+    "description": "Alcydeo interface: err_excluded"
+  },
+  "err_blocked": {
+    "message": "Обнаружение для этого хоста отключено в настройках.",
+    "description": "Alcydeo interface: err_blocked"
+  },
+  "err_interrupted": {
+    "message": "Обработка остановлена. Откройте источник и продолжите, если возможно.",
+    "description": "Alcydeo interface: err_interrupted"
+  },
+  "notice_timedMetadataSkipped": {
+    "message": "Временные метаданные (0x15) не включены в сохранённый файл.",
+    "description": "Alcydeo interface: notice_timedMetadataSkipped"
+  },
+  "deleteSelectionHint": {
+    "message": "Удалить выбранные допустимые записи и временные файлы. Файлы на диске и активные или приостановленные задачи сохраняются.",
+    "description": "Alcydeo interface: deleteSelectionHint"
+  },
+  "liveSource": {
+    "message": "Прямой эфир",
+    "description": "Alcydeo interface: liveSource"
+  },
+  "savingFile": {
+    "message": "Сохранение файла",
+    "description": "Alcydeo interface: savingFile"
+  },
+  "saveRequired": {
+    "message": "Требуется завершить сохранение",
+    "description": "Alcydeo interface: saveRequired"
+  },
+  "saveFile": {
+    "message": "Сохранить файл",
+    "description": "Alcydeo interface: saveFile"
+  },
+  "err_saveInterrupted": {
+    "message": "Chrome не подтвердил сохранение. Проверьте загрузки или открытое окно «Сохранить как», затем повторите сохранение подготовленного файла.",
+    "description": "Alcydeo interface: err_saveInterrupted"
+  },
+  "cloudExperimental": {
+    "message": "Экспериментально",
+    "description": "Alcydeo interface: cloudExperimental"
+  },
+  "cloudMegaupSend": {
+    "message": "Поделиться через MegaUp",
+    "description": "Alcydeo interface: cloudMegaupSend"
+  },
+  "cloudMegaupHint": {
+    "message": "Экспериментальный обмен без аккаунта. Файлы публичны и могут удаляться через 30 дней бездействия. Сохраните оригинал.",
+    "description": "Alcydeo interface: cloudMegaupHint"
+  },
+  "err_cloudMegaupUnavailable": {
+    "message": "Страница загрузки MegaUp недоступна или изменилась. Передача не началась. Повторите позже или выберите другой сервис.",
+    "description": "Alcydeo interface: err_cloudMegaupUnavailable"
+  },
+  "err_cloudFileTooLarge": {
+    "message": "Файл превышает лимит загрузки сервиса. Выберите файл меньшего размера.",
+    "description": "Alcydeo interface: err_cloudFileTooLarge"
+  },
+  "cloudMegaupOpen": {
+    "message": "Открыть MegaUp",
+    "description": "Alcydeo interface: cloudMegaupOpen"
+  }
+}

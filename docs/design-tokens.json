@@ -1,0 +1,53 @@
+{
+  "product": "Alcydeo",
+  "slug": "alcydeo",
+  "license": "MIT",
+  "logo": {
+    "bird": "martin-pêcheur",
+    "motion": "vol",
+    "secondary_symbol": null,
+    "formats": [
+      "SVG illustration",
+      "SVG outlined wordmarks",
+      "SVG derived emblem icon",
+      "SVG monochrome",
+      "PNG 16/32/48/64/128/256/512",
+      "PNG illustration 1024/2048",
+      "PNG publication 2400/3200",
+      "ICO 16/32/48"
+    ],
+    "style": "original minimal kingfisher emblem, flat vector geometry, one eye and no arrow",
+    "small_icon": "exact complete emblem from the master; shared geometry at all sizes",
+    "face": "coherent side profile, one visible eye",
+    "edge": "transparent artwork without external cutout stroke; app icons use a pale rounded canvas"
+  },
+  "colors": {
+    "primary": "#0B70B5",
+    "accent": "#2DD4BF",
+    "orange": "#F28C28",
+    "background_light": "#F6F9FC",
+    "background_dark": "#071B2D",
+    "surface_dark": "#12293B"
+  },
+  "locales": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "zh_CN",
+    "ar",
+    "ru",
+    "pt",
+    "hi",
+    "ur"
+  ],
+  "rtl_locales": [
+    "ar",
+    "ur"
+  ],
+  "fallback": "en",
+  "platform": "Chrome desktop MV3",
+  "companion": false,
+  "telemetry_default": false,
+  "publication": "GitHub code, Release and Pages explicitly authorized 2026-11-14; Store submissions remain separate"
+}

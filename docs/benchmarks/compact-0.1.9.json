@@ -1,0 +1,44 @@
+[
+  {
+    "height": 100,
+    "visible": true,
+    "title": "A very long product and lesson title that must remain readable in its tooltip while taking just one line in the compact download list, even with many sources on the same page",
+    "tooltip": "A very long product and lesson title that must remain readable in its tooltip while taking just one line in the compact download list, even with many sources on the same page",
+    "truncated": true
+  },
+  {
+    "height": 100,
+    "visible": true,
+    "title": "Another long video title that would previously occupy several lines above an unnecessary filename editor and a decorative preview",
+    "tooltip": "Another long video title that would previously occupy several lines above an unnecessary filename editor and a decorative preview",
+    "truncated": true
+  },
+  {
+    "height": 100,
+    "visible": true,
+    "title": "A third long source title that remains available as a complete accessible name even when the visible text is truncated",
+    "tooltip": "A third long source title that remains available as a complete accessible name even when the visible text is truncated",
+    "truncated": true
+  },
+  {
+    "height": 100,
+    "visible": false,
+    "title": "Fourth video source",
+    "tooltip": "Fourth video source",
+    "truncated": false
+  },
+  {
+    "height": 100,
+    "visible": false,
+    "title": "Fifth video source",
+    "tooltip": "Fifth video source",
+    "truncated": false
+  },
+  {
+    "height": 100,
+    "visible": false,
+    "title": "Sixth video source",
+    "tooltip": "Sixth video source",
+    "truncated": false
+  }
+]

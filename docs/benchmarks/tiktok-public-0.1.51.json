@@ -1,0 +1,462 @@
+{
+  "version": "0.1.51",
+  "date": "2026-11-06",
+  "page": "https://www.tiktok.com/@ler0i_off/video/7700630488859315489",
+  "incidentStatus": "The user confirms native playback after reload and popup version 0.1.50. The detection failure remains unconfirmed in the laboratory. Separate reproducible catalogue and startup-policy lifecycle races were corrected.",
+  "officialBlocker": {
+    "repository": "https://github.com/uBlockOrigin/uBOL-home",
+    "release": "https://github.com/uBlockOrigin/uBOL-home/releases/tag/2026.1103.1743",
+    "asset": "https://github.com/uBlockOrigin/uBOL-home/releases/download/2026.1103.1743/uBOLite_2026.1103.1743.chromium.zip",
+    "version": "2026.1103.1743",
+    "sha256": "79236476535b63706749e088e0ce99bb31d3d2ff15fabb4d7e990be23d6e4613",
+    "matchesOfficialGithubAssetDigest": true
+  },
+  "linuxBaseline50": {
+    "extensionVersion": "0.1.50",
+    "browser": "156.0.8078.4",
+    "browserMode": "native GUI Linux, no UA override",
+    "blocker": {
+      "name": "uBlock Origin Lite",
+      "version": "2026.1103.1743",
+      "mode": "Complete",
+      "rulesets": [
+        "ublock-filters",
+        "easylist",
+        "easyprivacy",
+        "pgl",
+        "ublock-badware",
+        "urlhaus-full"
+      ]
+    },
+    "directLoadResult": "not reproduced: available at the first immediate popup inspection and remained available",
+    "phases": [
+      {
+        "phase": "dom-ready",
+        "page": "https://www.tiktok.com/@ler0i_off/video/7700630488859315489",
+        "badge": "",
+        "cards": 0,
+        "readyQualities": 0,
+        "pending": false,
+        "nativeVideo": [],
+        "hydrationStillPresent": true
+      },
+      {
+        "phase": "popup-immediate",
+        "page": "https://www.tiktok.com/@ler0i_off/video/7700630488859315489",
+        "badge": "1",
+        "cards": 1,
+        "readyQualities": 5,
+        "pending": false,
+        "nativeVideo": [
+          {
+            "width": 576,
+            "height": 1024,
+            "currentTime": 0.465927,
+            "readyState": 4,
+            "paused": false
+          }
+        ],
+        "hydrationStillPresent": true
+      },
+      {
+        "phase": "after-1s",
+        "page": "https://www.tiktok.com/@ler0i_off/video/7700630488859315489",
+        "badge": "1",
+        "cards": 1,
+        "readyQualities": 5,
+        "pending": false,
+        "nativeVideo": [
+          {
+            "width": 576,
+            "height": 1024,
+            "currentTime": 2.515655,
+            "readyState": 4,
+            "paused": false
+          }
+        ],
+        "hydrationStillPresent": true
+      },
+      {
+        "phase": "after-5s",
+        "page": "https://www.tiktok.com/@ler0i_off/video/7700630488859315489",
+        "badge": "1",
+        "cards": 1,
+        "readyQualities": 5,
+        "pending": false,
+        "nativeVideo": [
+          {
+            "width": 576,
+            "height": 1024,
+            "currentTime": 6.655052,
+            "readyState": 4,
+            "paused": false
+          }
+        ],
+        "hydrationStillPresent": true
+      },
+      {
+        "phase": "after-13s",
+        "page": "https://www.tiktok.com/@ler0i_off/video/7700630488859315489",
+        "badge": "1",
+        "cards": 1,
+        "readyQualities": 5,
+        "pending": false,
+        "nativeVideo": [
+          {
+            "width": 576,
+            "height": 1024,
+            "currentTime": 14.785215,
+            "readyState": 4,
+            "paused": false
+          }
+        ],
+        "hydrationStillPresent": true
+      }
+    ],
+    "profileEntry": {
+      "page": "https://www.tiktok.com/@ler0i_off",
+      "nativeResult": "The website showed Something went wrong and no post/player list. There was no target link available to exercise native profile-to-video SPA navigation.",
+      "targetVideoLinks": 0,
+      "notAttributedToExtension": true
+    },
+    "sessionsClosed": true,
+    "newExportRequested": false
+  },
+  "windowsBaseline50": {
+    "extensionVersion": "0.1.50",
+    "platform": "win32",
+    "browser": "156.0.8078.4",
+    "nodeHarness": "v22.14.0",
+    "productionBuildNode": "24.22.2 on Linux",
+    "personalProfileUsed": false,
+    "userAgentOverridden": false,
+    "httpStatus": 200,
+    "blocker": {
+      "version": "2026.1103.1743",
+      "complete": true,
+      "rulesets": [
+        "ublock-filters",
+        "easylist",
+        "easyprivacy",
+        "pgl",
+        "ublock-badware",
+        "urlhaus-full",
+        "fra-0"
+      ]
+    },
+    "phase": "after12s",
+    "badge": "1",
+    "cards": 1,
+    "sources": [
+      {
+        "providerId": "tiktok:7700630488859315489",
+        "kind": "direct",
+        "variants": [
+          {
+            "label": "1920p · HEVC",
+            "state": "ready",
+            "bytes": 2956190,
+            "contentType": "video/mp4"
+          },
+          {
+            "label": "1280p · HEVC",
+            "state": "ready",
+            "bytes": 1985456,
+            "contentType": "video/mp4"
+          },
+          {
+            "label": "1024p · H.264",
+            "state": "ready",
+            "bytes": 2683229,
+            "contentType": "video/mp4"
+          },
+          {
+            "label": "1024p · H.264",
+            "state": "ready",
+            "bytes": 1556555,
+            "contentType": "video/mp4"
+          },
+          {
+            "label": "1024p · HEVC",
+            "state": "ready",
+            "bytes": 1491413,
+            "contentType": "video/mp4"
+          }
+        ]
+      }
+    ],
+    "nativePlayback": [
+      {
+        "width": 720,
+        "height": 1280,
+        "time": 10.730667,
+        "paused": false,
+        "ready": 4
+      }
+    ],
+    "profileClosed": true,
+    "newTaskOrExport": false
+  },
+  "windowsRelease51": {
+    "extensionVersion": "0.1.51",
+    "platform": "win32",
+    "browser": "156.0.8078.4",
+    "nodeHarness": "v22.14.0",
+    "productionBuildNode": "24.22.2 on Linux",
+    "personalProfileUsed": false,
+    "userAgentOverridden": false,
+    "httpStatus": 200,
+    "blocker": {
+      "version": "2026.1103.1743",
+      "complete": true,
+      "rulesets": [
+        "ublock-filters",
+        "easylist",
+        "easyprivacy",
+        "pgl",
+        "ublock-badware",
+        "urlhaus-full",
+        "fra-0"
+      ]
+    },
+    "phase": "after12s",
+    "badge": "1",
+    "cards": 1,
+    "sources": [
+      {
+        "providerId": "tiktok:7700630488859315489",
+        "kind": "direct",
+        "variants": [
+          {
+            "label": "1920p · HEVC",
+            "state": "ready",
+            "bytes": 2956190,
+            "contentType": "video/mp4"
+          },
+          {
+            "label": "1280p · HEVC",
+            "state": "ready",
+            "bytes": 1985456,
+            "contentType": "video/mp4"
+          },
+          {
+            "label": "1024p · H.264",
+            "state": "ready",
+            "bytes": 2683229,
+            "contentType": "video/mp4"
+          },
+          {
+            "label": "1024p · H.264",
+            "state": "ready",
+            "bytes": 1556555,
+            "contentType": "video/mp4"
+          },
+          {
+            "label": "1024p · HEVC",
+            "state": "ready",
+            "bytes": 1491413,
+            "contentType": "video/mp4"
+          }
+        ]
+      }
+    ],
+    "nativePlayback": [
+      {
+        "width": 720,
+        "height": 1280,
+        "time": 10.736151,
+        "paused": false,
+        "ready": 4
+      }
+    ],
+    "profileClosed": true,
+    "newTaskOrExport": false,
+    "measuredRuntimeTreeSha256": "fd24a61260b4cd72262da3da72667d2de68225754076478d82fb985f52f4662d"
+  },
+  "releaseRuntime": {
+    "version": "0.1.51",
+    "manifestSha256": "7caeb623408dfb7237195c1ceda644d8ed5b4f94723d4488c2749bf011013ac4",
+    "treeSha256": "e947d230976433fa8602aac72beaac8e0929b9599392b80539b798f60ba5e6d5",
+    "files": 99,
+    "bytes": 5733977,
+    "method": "ordered relative path NUL file SHA256 NUL byte size newline, UTF8, then SHA256"
+  },
+  "originalFixture": {
+    "synthetic": true,
+    "publicMediaUsed": false,
+    "baselineVersion": "0.1.50",
+    "baselineResult": {
+      "failed": 1,
+      "reason": "Native JSON was synchronously removed before the40ms scan. The exact post was not detected.",
+      "observerRegisteredBeforeNavigation": true
+    },
+    "releaseVersion": "0.1.51",
+    "releaseResult": {
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "durationMs": 5235.239,
+      "runtimeTreeSha256": "e947d230976433fa8602aac72beaac8e0929b9599392b80539b798f60ba5e6d5"
+    },
+    "cases": [
+      "Native JSON removed before the40ms scan",
+      "Late JSON added and removed in one event-loop turn",
+      "Ready catalogue preserved through a real service-worker shutdown and observer reinjection",
+      "SPA post isolation and explicit native refusal",
+      "Known HTTP-refused source stays excluded after a rescan"
+    ],
+    "targetedUnitTests": {
+      "files": 3,
+      "passed": 59
+    },
+    "beforePolicyFixStoreResult": {
+      "passed": 4,
+      "failed": 1,
+      "skipped": 0,
+      "flaky": 0,
+      "reason": "Even with both qualities ready and sourcePending false before shutdown, a service-worker restart cleared the ready card and re-read both prefixes (2 to4). Scheduled scans could run before the access policy was restored."
+    },
+    "storeReleaseResult": {
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "durationMs": 5069.197,
+      "runtimeTreeSha256": "7e4910bdb433a46fc13d56480854215120ab42fc07432e9a49d5cc3d200324d0"
+    },
+    "restartGuard": {
+      "exactlyTwoReadyQualitiesBeforeShutdown": true,
+      "sourcePendingBeforeShutdown": false,
+      "prefixRequestCountUnchangedAfterRecovery": true
+    }
+  },
+  "change": {
+    "capture": "Only the three existing native TikTok JSON block IDs; no fetch/API interception",
+    "cache": "One parsed catalogue per frame, exact page URL and post ID, at most24formats; no raw JSON retained",
+    "bounds": {
+      "scriptsExaminedPerMutationBatch": 128,
+      "nativeBlocksCapturedPerBatch": 32,
+      "temporaryTextCharactersPerBatch": 8388608,
+      "parsingCharactersPerCall": 8388608
+    },
+    "emptyRefusalPreventsResurrection": true,
+    "knownHttpRefusedUrlsExcluded": true,
+    "validObserverReplacementPreservesCatalogue": true,
+    "trueRuntimeInvalidationAndExplicitCleanupClearCatalogue": true,
+    "newPermissionsEndpointsOrTransport": false,
+    "scheduledScansAwaitRestoredAccessPolicy": true,
+    "backgroundTabRestorationIsNotAwaited": true
+  },
+  "limits": [
+    "The public post already worked on baseline50 in the fresh Linux and Windows profiles; the fixed race is not proven to be the cause in the user profile.",
+    "The public Windows51 test is playback/prefix evidence only, with no new task/export or complete-file decode.",
+    "No personal Chrome profile, account, cookie value or authentication data was copied. No access challenge was bypassed.",
+    "The profile entry test showed no native post list; its SPA path was not exercised.",
+    "Feeds, all regional layouts, private posts, live streams and full HEVC exports remain outside these specific proofs.",
+    "Raw native data, signed CDN URLs, public clips and screenshots are ignored local evidence and are not distributed."
+  ],
+  "userReport": {
+    "popupVersion": "0.1.50",
+    "nativePlaybackAfterReload": true,
+    "persistentDetectionFailureReproducedInLab": false
+  },
+  "previousReleaseRuntime": {
+    "version": "0.1.51",
+    "manifestSha256": "7caeb623408dfb7237195c1ceda644d8ed5b4f94723d4488c2749bf011013ac4",
+    "treeSha256": "fd24a61260b4cd72262da3da72667d2de68225754076478d82fb985f52f4662d",
+    "files": 99,
+    "bytes": 5733969,
+    "method": "ordered relative path NUL file SHA256 NUL byte size newline, UTF8, then SHA256"
+  },
+  "storeReleaseRuntime": {
+    "version": "0.1.51",
+    "manifestSha256": "7caeb623408dfb7237195c1ceda644d8ed5b4f94723d4488c2749bf011013ac4",
+    "treeSha256": "7e4910bdb433a46fc13d56480854215120ab42fc07432e9a49d5cc3d200324d0",
+    "files": 99,
+    "bytes": 5483782,
+    "method": "ordered relative path NUL file SHA256 NUL byte size newline, UTF8, then SHA256"
+  },
+  "publicLatestWindows": {
+    "extensionVersion": "0.1.51",
+    "platform": "win32",
+    "browser": "156.0.8078.4",
+    "nodeHarness": "v22.14.0",
+    "productionBuildNode": "24.22.2 on Linux",
+    "personalProfileUsed": false,
+    "userAgentOverridden": false,
+    "httpStatus": 200,
+    "blocker": {
+      "version": "2026.1103.1743",
+      "complete": true,
+      "rulesets": [
+        "ublock-filters",
+        "easylist",
+        "easyprivacy",
+        "pgl",
+        "ublock-badware",
+        "urlhaus-full",
+        "fra-0"
+      ]
+    },
+    "phase": "after12s",
+    "badge": "1",
+    "cards": 1,
+    "sources": [
+      {
+        "providerId": "tiktok:7700630488859315489",
+        "kind": "direct",
+        "variants": [
+          {
+            "label": "1920p · HEVC",
+            "state": "ready",
+            "bytes": 2956190,
+            "contentType": "video/mp4"
+          },
+          {
+            "label": "1280p · HEVC",
+            "state": "ready",
+            "bytes": 1985456,
+            "contentType": "video/mp4"
+          },
+          {
+            "label": "1024p · H.264",
+            "state": "ready",
+            "bytes": 2683229,
+            "contentType": "video/mp4"
+          },
+          {
+            "label": "1024p · H.264",
+            "state": "ready",
+            "bytes": 1556555,
+            "contentType": "video/mp4"
+          },
+          {
+            "label": "1024p · HEVC",
+            "state": "ready",
+            "bytes": 1491413,
+            "contentType": "video/mp4"
+          }
+        ]
+      }
+    ],
+    "nativePlayback": [
+      {
+        "width": 720,
+        "height": 1280,
+        "time": 10.798169,
+        "paused": false,
+        "ready": 4
+      }
+    ],
+    "profileClosed": true,
+    "newTaskOrExport": false,
+    "runtime": {
+      "version": "0.1.51",
+      "runtimeTreeSha256": "e947d230976433fa8602aac72beaac8e0929b9599392b80539b798f60ba5e6d5",
+      "fileCount": 99,
+      "bytes": 5733977,
+      "method": "SHA256 of ordered UTF-8 relative-path NUL per-file-sha256 NUL byte-size newline transcript"
+    }
+  }
+}

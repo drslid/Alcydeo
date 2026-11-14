@@ -1,0 +1,510 @@
+{
+  "version": "0.1.18",
+  "method": "Actual browser computed colors, CSS color-mix/transparent ancestors composited; WCAG relative luminance",
+  "results": [
+    {
+      "theme": "light",
+      "selector": ".manager-intro h1",
+      "color": [
+        16,
+        44,
+        67,
+        1
+      ],
+      "background": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "ratio": 14.35,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".manager-description",
+      "color": [
+        82,
+        104,
+        124,
+        1
+      ],
+      "background": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "ratio": 5.79,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".result-count",
+      "color": [
+        82,
+        104,
+        124,
+        1
+      ],
+      "background": [
+        249,
+        251,
+        252,
+        1
+      ],
+      "ratio": 5.57,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".manager-tabs button.active",
+      "color": [
+        11,
+        112,
+        181,
+        1
+      ],
+      "background": [
+        233,
+        243,
+        250,
+        1
+      ],
+      "ratio": 4.67,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".manager-tabs button:not(.active)",
+      "color": [
+        82,
+        104,
+        124,
+        1
+      ],
+      "background": [
+        246,
+        249,
+        252,
+        1
+      ],
+      "ratio": 5.48,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".sidebar-add",
+      "color": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "background": [
+        11,
+        112,
+        181,
+        1
+      ],
+      "ratio": 5.25,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".task-title h2",
+      "color": [
+        16,
+        44,
+        67,
+        1
+      ],
+      "background": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "ratio": 14.35,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".task-title p>span:not(.task-state)",
+      "color": [
+        82,
+        104,
+        124,
+        1
+      ],
+      "background": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "ratio": 5.79,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".validation",
+      "color": [
+        19,
+        120,
+        90,
+        1
+      ],
+      "background": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "ratio": 5.44,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".task-state[data-state=completed]",
+      "color": [
+        19,
+        120,
+        90,
+        1
+      ],
+      "background": [
+        234,
+        243,
+        240,
+        1
+      ],
+      "ratio": 4.81,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".task-state[data-state=paused]",
+      "color": [
+        82,
+        104,
+        124,
+        1
+      ],
+      "background": [
+        238,
+        243,
+        248,
+        1
+      ],
+      "ratio": 5.18,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".task-state[data-state=failed]",
+      "color": [
+        181,
+        44,
+        59,
+        1
+      ],
+      "background": [
+        255,
+        241,
+        242,
+        1
+      ],
+      "ratio": 5.64,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".sidebar-version",
+      "color": [
+        82,
+        104,
+        124,
+        1
+      ],
+      "background": [
+        246,
+        249,
+        252,
+        1
+      ],
+      "ratio": 5.48,
+      "required": 4.5
+    },
+    {
+      "theme": "light",
+      "selector": ".manager-footer",
+      "color": [
+        82,
+        104,
+        124,
+        1
+      ],
+      "background": [
+        246,
+        249,
+        252,
+        1
+      ],
+      "ratio": 5.48,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".manager-intro h1",
+      "color": [
+        238,
+        245,
+        252,
+        1
+      ],
+      "background": [
+        18,
+        41,
+        59,
+        1
+      ],
+      "ratio": 13.59,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".manager-description",
+      "color": [
+        169,
+        189,
+        207,
+        1
+      ],
+      "background": [
+        18,
+        41,
+        59,
+        1
+      ],
+      "ratio": 7.73,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".result-count",
+      "color": [
+        169,
+        189,
+        207,
+        1
+      ],
+      "background": [
+        21,
+        45,
+        64,
+        1
+      ],
+      "ratio": 7.34,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".manager-tabs button.active",
+      "color": [
+        105,
+        181,
+        239,
+        1
+      ],
+      "background": [
+        20,
+        47,
+        69,
+        1
+      ],
+      "ratio": 6.21,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".manager-tabs button:not(.active)",
+      "color": [
+        169,
+        189,
+        207,
+        1
+      ],
+      "background": [
+        7,
+        27,
+        45,
+        1
+      ],
+      "ratio": 9.03,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".sidebar-add",
+      "color": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "background": [
+        11,
+        112,
+        181,
+        1
+      ],
+      "ratio": 5.25,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".task-title h2",
+      "color": [
+        238,
+        245,
+        252,
+        1
+      ],
+      "background": [
+        18,
+        41,
+        59,
+        1
+      ],
+      "ratio": 13.59,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".task-title p>span:not(.task-state)",
+      "color": [
+        169,
+        189,
+        207,
+        1
+      ],
+      "background": [
+        18,
+        41,
+        59,
+        1
+      ],
+      "ratio": 7.73,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".validation",
+      "color": [
+        101,
+        217,
+        173,
+        1
+      ],
+      "background": [
+        18,
+        41,
+        59,
+        1
+      ],
+      "ratio": 8.59,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".task-state[data-state=completed]",
+      "color": [
+        101,
+        217,
+        173,
+        1
+      ],
+      "background": [
+        25,
+        57,
+        69,
+        1
+      ],
+      "ratio": 7.06,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".task-state[data-state=paused]",
+      "color": [
+        169,
+        189,
+        207,
+        1
+      ],
+      "background": [
+        25,
+        52,
+        72,
+        1
+      ],
+      "ratio": 6.68,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".task-state[data-state=failed]",
+      "color": [
+        255,
+        155,
+        166,
+        1
+      ],
+      "background": [
+        60,
+        35,
+        48,
+        1
+      ],
+      "ratio": 7.11,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".sidebar-version",
+      "color": [
+        169,
+        189,
+        207,
+        1
+      ],
+      "background": [
+        7,
+        27,
+        45,
+        1
+      ],
+      "ratio": 9.03,
+      "required": 4.5
+    },
+    {
+      "theme": "dark",
+      "selector": ".manager-footer",
+      "color": [
+        169,
+        189,
+        207,
+        1
+      ],
+      "background": [
+        7,
+        27,
+        45,
+        1
+      ],
+      "ratio": 9.03,
+      "required": 4.5
+    }
+  ]
+}

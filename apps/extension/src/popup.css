@@ -1,0 +1,85 @@
+/* The action popup has one primary action per source and one stable footer. */
+.popup .shell{display:flex;flex-direction:column;max-block-size:600px;isolation:isolate}
+.popup .header{flex:none;padding:16px 20px;gap:16px;min-block-size:76px}
+.popup .brand{gap:10px;min-inline-size:0}
+.popup .brand>span{font-size:22px;line-height:1.15;letter-spacing:-.65px;min-inline-size:0}
+.popup .brand small{font-size:10px;line-height:1.5;letter-spacing:.1px;margin-block-start:4px;white-space:nowrap}
+.popup .brand img{flex:none}
+.popup .header-actions{align-items:center;gap:4px;flex:none}
+.popup .header-actions>.icon-button{inline-size:34px;block-size:34px}
+.popup .header-actions .language-picker{margin-inline-end:6px}
+.popup main{flex:1 1 auto;min-block-size:0;max-block-size:none;padding:16px 20px 18px;overflow-y:auto;scrollbar-gutter:stable;overscroll-behavior:contain}
+.popup .page-intro{gap:10px;margin-block-end:16px;min-inline-size:0}
+.popup .page-intro>div{min-inline-size:0;flex:1}
+.popup .page-intro h1{font-size:17px;letter-spacing:-.25px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;line-height:1.4}
+.popup .eyebrow{font-size:9px;letter-spacing:1.1px;margin-block-end:3px}
+.popup .page-media-count{background:var(--primary-subtle);color:var(--link);font-size:11px;font-weight:650;min-inline-size:25px;block-size:25px;padding-inline:6px;display:grid;place-items:center;border-radius:8px}
+.popup .page-intro>.icon-button{flex:none;inline-size:32px;block-size:32px}
+.popup .popup-tabs{margin-block-end:14px;padding:3px;border:1px solid var(--border);border-radius:11px}
+.popup .popup-tabs button{min-block-size:34px;padding:5px 10px;font-size:11px}
+.popup .media-list{gap:10px}
+.popup .media-card{padding:12px;border-radius:14px;box-shadow:0 2px 6px #071b2d03}
+.popup .media-heading{gap:10px;margin-block-end:12px}
+.popup .media-thumbnail{inline-size:48px;block-size:38px;border-radius:7px}
+.popup .media-info h2{font-size:12px;line-height:1.5;font-weight:650}
+.popup .media-info p{flex-wrap:wrap;gap:3px 7px;line-height:1.5;margin-block-start:4px;font-size:10px}
+.popup .format{font-size:9px;letter-spacing:.2px}
+.popup .source-check{max-inline-size:125px;display:inline-flex;align-items:center;gap:4px}
+.popup .source-check.confirmed::before{content:'';inline-size:4px;block-size:4px;border-radius:50%;background:currentColor;flex:none}
+.popup .source-actions{align-items:center;align-self:flex-start;gap:2px}
+.popup .source-actions .icon-button{inline-size:30px;block-size:30px;padding:6px;border-radius:8px}
+.popup .source-actions svg{inline-size:18px;block-size:18px}
+.popup .media-controls{gap:8px;align-items:stretch}
+.popup .quality{display:flex;flex:1;min-inline-size:80px}
+.popup .quality select{block-size:auto;min-block-size:36px;border-radius:9px;font-size:11px;padding:6px 9px;background:var(--background);text-overflow:ellipsis}
+.popup .media-controls .primary,.popup .media-controls .source-cast{min-block-size:36px;max-inline-size:175px;font-size:11px;line-height:1.4;padding:7px 12px;gap:6px;border-radius:9px}
+.popup .media-controls .primary{min-inline-size:116px}
+.popup .media-controls .source-cast{width:auto;color:var(--link);background:var(--primary-subtle);border-color:transparent}
+.popup .media-controls .source-cast:hover{border-color:var(--link)}
+.popup .media-controls .source-cast svg,.popup .media-controls .primary svg{inline-size:16px;block-size:16px}
+.popup .media-controls .source-cast span{font-size:11px;white-space:normal}
+.popup .capture-source-hint{padding-inline:0;align-self:center}
+.popup .empty-state{padding:22px 16px 26px}
+.popup .empty-bird{inline-size:92px;block-size:92px;border-radius:30px}
+.popup .empty-bird img{inline-size:68px;block-size:68px}
+.popup .empty-state h2{font-size:16px;margin-block:18px 7px}
+.popup .empty-state p{font-size:12px;margin-block-end:0;line-height:1.7}
+.popup .empty-state .primary{margin-block-start:16px}
+.popup .popup-task{padding:13px;border-radius:14px}
+.popup .popup-task-heading h2{font-size:12px;font-weight:650}
+.popup .popup-task-meta{gap:4px 8px;line-height:1.6;margin-block-start:6px}
+.popup .popup-task-meta>span:first-child{color:var(--link);font-weight:600}
+.popup .popup-task[data-state=completed] .popup-task-meta>span:first-child{color:var(--success)}
+.popup .popup-task-actions{gap:8px;margin-block-start:10px}
+.popup .popup-task-actions>.text-button{min-block-size:32px;padding:6px 9px;line-height:1.5;border:1px solid var(--border);border-radius:8px;color:var(--text);background:var(--surface);max-inline-size:100%;text-align:start}
+.popup .popup-task-actions>.text-button:hover{background:var(--subtle)}
+.popup .popup-task-actions>.danger{color:var(--error);margin-inline-start:auto;border-color:transparent}
+.popup .popup-task-actions>.icon-button{inline-size:32px;block-size:32px;padding:7px;border-color:var(--border);border-radius:8px}
+.popup .popup-task-actions .popup-tools{color:var(--link);background:var(--primary-subtle);border-color:transparent;margin-inline-start:auto}
+.popup .popup-progress-hint{font-size:10px;line-height:1.7;padding:0 3px}
+.popup .popup-footer{flex:none;display:flex;flex-direction:column;align-items:stretch;gap:11px;padding:12px 20px 10px}
+.popup .popup-footer-actions{display:flex;align-items:stretch;gap:10px;min-inline-size:0}
+.popup .popup-quick-actions{display:flex;flex:1;align-items:stretch;gap:6px;padding:0;min-inline-size:0}
+.popup .popup-quick-actions>.secondary{flex:1;min-inline-size:0}
+.popup .popup-footer-actions .secondary{font-size:11px;line-height:1.5;min-block-size:38px;padding:7px 10px;gap:7px;text-align:start}
+.popup .popup-footer-actions .secondary svg{inline-size:17px;block-size:17px}
+.popup .popup-library{flex:1;min-inline-size:0;color:var(--link);background:var(--primary-subtle);border-color:transparent}
+.popup .popup-library:hover{border-color:var(--link)}
+.popup .popup-library .count{background:var(--surface);color:var(--link)}
+.popup .popup-library svg:last-child{inline-size:14px;block-size:14px;margin-inline-start:auto}
+.popup .popup-footer>.footer-brand{display:flex;justify-content:center;gap:5px;font-size:9px;letter-spacing:.1px;line-height:1.5;color:var(--muted)}
+/* Native popovers render above the scrolling list; Chrome handles Escape and outside clicks. */
+.action-popover{position:fixed;inset:auto;margin:0;inline-size:224px;max-inline-size:calc(100vw - 24px);max-block-size:calc(100vh - 24px);overflow-y:auto;padding:6px;border:1px solid var(--border);border-radius:13px;background:var(--surface);color:var(--text);box-shadow:0 6px 24px #071b2d26}
+.action-popover button{display:flex;align-items:center;gap:10px;inline-size:100%;min-block-size:38px;padding:8px 10px;border:0;border-radius:8px;background:transparent;color:var(--text);text-align:start;font-size:12px;line-height:1.5}
+.action-popover button:hover{background:var(--subtle)}
+.action-popover button svg{inline-size:18px;block-size:18px;color:var(--muted)}
+.action-popover button:focus-visible{outline-offset:-3px}
+.popup button:disabled{cursor:default}
+@supports(position-area:bottom span-left){
+ .action-popover{position-area:bottom span-left;position-try-fallbacks:flip-block,flip-inline,flip-block flip-inline;margin-block:6px}
+ [dir=rtl] .action-popover{position-area:bottom span-right}
+}
+/* A calm brand surface keeps the original dark ink readable without a cutout stroke. */
+.popup .brand img{background:#e9f3fa;border-radius:12px}
+.popup .empty-bird{inline-size:104px;block-size:104px;border-radius:50%;background:#e9f3fa;transform:none}
+.popup .empty-bird img{inline-size:84px;block-size:84px;transform:none}

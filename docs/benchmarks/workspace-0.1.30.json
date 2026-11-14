@@ -1,0 +1,92 @@
+{
+  "version": "0.1.30",
+  "date": "2026-11-03",
+  "node": "24.22.2",
+  "pnpm": "12.5.1",
+  "browser": "156.0.8078.80",
+  "platform": "Linux/WSL2",
+  "unitTests": 254,
+  "typecheck": "pass",
+  "lint": "pass",
+  "e2eSuites": [
+    {
+      "suite": "workspace",
+      "startTime": "2026-11-03T15:43:01.009Z",
+      "duration": 294585.316,
+      "expected": 117,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    {
+      "suite": "regression",
+      "startTime": "2026-11-03T15:48:31.724Z",
+      "duration": 117478.296,
+      "expected": 44,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  ],
+  "e2eExecutions": 161,
+  "uniqueE2ECases": 145,
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "zh_CN",
+    "ar",
+    "ru",
+    "pt",
+    "hi",
+    "ur"
+  ],
+  "manualLanguageWithoutReload": true,
+  "unifiedLibrary": true,
+  "realRandomThumbnails": true,
+  "nativeFileThumbnailWithPermission": true,
+  "sequentialBulkConversion": true,
+  "bulkCloudProtocolOnly": true,
+  "visualTrimRealOutput": true,
+  "visualMergeRealOutput": true,
+  "capturedTabProof": "capture-popup-0.1.30.json",
+  "providerChecks": {
+    "gofile": "local protocol test; success user-reported",
+    "pcloud": "modern EU link accepted; read-only real showuploadlink result 0; upload protocol simulated",
+    "drive": "removed at user request",
+    "onedrive": "removed at user request"
+  },
+  "cast": {
+    "onePopupClickActivation": true,
+    "preparedOriginalPathWithoutDuplicate": true,
+    "nativeRemotePlaybackPrompt": true,
+    "nativeChooserNoReceiverLaboratory": true,
+    "detectedSourceShieldPlayback": "user-reported working",
+    "physicalPcFilePlaybackValidated": false,
+    "airplayWindows": false
+  },
+  "windowsUserChromeTested": false,
+  "externalPublication": false,
+  "artifacts": {
+    "runtimeFiles": 90,
+    "zipBytes": 2308768,
+    "zipMatchesBuild": true,
+    "crxMatchesBuild": true,
+    "manifestPermissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "downloads",
+      "webRequest",
+      "tabCapture"
+    ],
+    "storeRuntime": "store-runtime-0.1.30.json",
+    "site": "site-0.1.30.json",
+    "localFontVerified": {
+      "family": "Noto Sans Devanagari",
+      "isCustomFont": true,
+      "glyphCount": 5
+    }
+  }
+}

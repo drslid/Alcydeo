@@ -1,0 +1,29 @@
+{
+  "version": "0.1.46",
+  "method": "independent full WebCodecs decode of every audio/video sample",
+  "browser": "156.0.8078.4",
+  "files": [
+    {
+      "source": "sequential.mp4",
+      "bytes": 8404291,
+      "duration": 472.82899305555554,
+      "width": 256,
+      "height": 144,
+      "videoSamples": 11821,
+      "audioSamples": 23641,
+      "lastVideo": 472.8289930555556,
+      "lastAudio": 472.82
+    },
+    {
+      "source": "parallel.mp4",
+      "bytes": 8404291,
+      "duration": 472.82899305555554,
+      "width": 256,
+      "height": 144,
+      "videoSamples": 11821,
+      "audioSamples": 23641,
+      "lastVideo": 472.8289930555556,
+      "lastAudio": 472.82
+    }
+  ]
+}

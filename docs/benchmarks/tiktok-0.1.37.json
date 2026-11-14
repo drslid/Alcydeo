@@ -1,0 +1,275 @@
+{
+  "version": "0.1.37",
+  "date": "2026-11-03",
+  "node": "24.22.2",
+  "pnpm": "12.5.1",
+  "browser": "156.0.8078.80",
+  "platform": "Linux/WSL2",
+  "unitTests": 377,
+  "newTikTokUnitTests": 30,
+  "typecheck": "pass",
+  "lint": "pass",
+  "browserTests": {
+    "targetedLocal": {
+      "startTime": "2026-11-03T19:07:23.583Z",
+      "duration": 286327.929,
+      "expected": 107,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "commandExitCode": 0,
+    "fullSuiteRun": false,
+    "storeTikTok": {
+      "startTime": "2026-11-03T19:01:58.293Z",
+      "duration": 4047.1990000000005,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "storeCommandExitCode": 0,
+    "storeRuntime": {
+      "version": "0.1.37",
+      "browser": "156.0.8078.80",
+      "synthetic": true,
+      "youtubeMedia": 0,
+      "youtubeBadge": "",
+      "youtubeLiveMedia": 0,
+      "youtubePlaylistUi": 0,
+      "playlistBrowseRequests": 0,
+      "playlistApiRejected": true,
+      "ordinaryMedia": 1,
+      "ordinaryKind": "direct"
+    }
+  },
+  "publicPost": {
+    "version": "0.1.37",
+    "networkTikTok": true,
+    "page": "https://www.tiktok.com/@drslid/video/7604511060657278230",
+    "browser": "156.0.8078.80",
+    "date": "2026-11-03T18:54:04.465Z",
+    "accessBypass": false,
+    "status": 200,
+    "beforePopup": {
+      "badge": "1",
+      "media": [
+        {
+          "title": "#Ubud 🌴☀️🕶️",
+          "providerId": "tiktok:7604511060657278230",
+          "kind": "direct",
+          "variants": [
+            {
+              "label": "1024p · H.264",
+              "height": 1024,
+              "size": 9510143,
+              "host": "v16-webapp-prime.tiktok.com"
+            },
+            {
+              "label": "1024p · HEVC",
+              "height": 1024,
+              "size": 3903905,
+              "host": "v16-webapp-prime.tiktok.com"
+            }
+          ]
+        }
+      ]
+    },
+    "checked": [
+      {
+        "title": "#Ubud 🌴☀️🕶️",
+        "providerId": "tiktok:7604511060657278230",
+        "variants": [
+          {
+            "label": "1024p · H.264",
+            "check": {
+              "checkedAt": 1793732047489,
+              "contentType": "video/mp4",
+              "size": 9510143,
+              "state": "ready"
+            }
+          },
+          {
+            "label": "1024p · HEVC",
+            "check": {
+              "checkedAt": 1793732047490,
+              "contentType": "video/mp4",
+              "size": 3903905,
+              "state": "ready"
+            }
+          }
+        ]
+      }
+    ],
+    "download": {
+      "filename": "#Ubud 🌴☀️🕶️ (1).mp4",
+      "state": "complete",
+      "exists": true,
+      "bytes": 9510143
+    },
+    "task": {
+      "title": "#Ubud 🌴☀️🕶️",
+      "state": "completed",
+      "saved": true,
+      "validation": {
+        "duration": 33.666666666666664,
+        "tracks": [
+          {
+            "type": "audio",
+            "codec": "aac"
+          },
+          {
+            "type": "video",
+            "codec": "avc"
+          }
+        ],
+        "bytes": 9510143,
+        "method": "local-structure",
+        "checkedAt": 1793732050581
+      }
+    },
+    "sourceMetadataFileHashMatches": true
+  },
+  "fullDecode": {
+    "version": "0.1.37",
+    "method": "independent full WebCodecs decode of every audio/video sample",
+    "browser": "156.0.8078.80",
+    "files": [
+      {
+        "source": "actual.mp4",
+        "bytes": 9510143,
+        "duration": 33.666666666666664,
+        "width": 576,
+        "height": 1024,
+        "videoSamples": 1005,
+        "audioSamples": 728,
+        "lastVideo": 33.666666666666664,
+        "lastAudio": 33.647120181405896
+      }
+    ]
+  },
+  "syntheticFixture": {
+    "version": "0.1.37",
+    "synthetic": true,
+    "networkTikTok": false,
+    "browser": "156.0.8078.80",
+    "badgeBeforePopup": "1",
+    "expectedTitle": "Cours TikTok _ clip original 🌴",
+    "requests": [
+      {
+        "range": "bytes=0-4095",
+        "origin": "https://www.tiktok.com",
+        "referrer": "https://www.tiktok.com/",
+        "quality": "high"
+      },
+      {
+        "range": "bytes=0-4095",
+        "origin": "https://www.tiktok.com",
+        "referrer": "https://www.tiktok.com/",
+        "quality": "low"
+      },
+      {
+        "origin": "https://www.tiktok.com",
+        "referrer": "https://www.tiktok.com/",
+        "quality": "low"
+      }
+    ],
+    "validation": {
+      "duration": 6,
+      "tracks": [
+        {
+          "type": "video",
+          "codec": "avc"
+        },
+        {
+          "type": "audio",
+          "codec": "aac"
+        }
+      ],
+      "bytes": 525622,
+      "method": "local-structure",
+      "checkedAt": 1793733047607
+    },
+    "exactDiskBytes": true
+  },
+  "limits": {
+    "nativeJsonBytesPerScript": 8388608,
+    "formats": 24,
+    "sampleBytes": 4096,
+    "bridgeChunkBytes": 262144,
+    "sampleTimeoutMs": 8000,
+    "headerTimeoutMs": 15000,
+    "idleReaderTimeoutMs": 30000,
+    "workerRpcTimeoutMs": 35000,
+    "readerSlotsPerFrame": 2,
+    "resumeRestarts": true,
+    "originalTabRequired": true,
+    "managerRequired": true
+  },
+  "notValidated": [
+    "native Windows dialogs and CRX installation",
+    "very large direct-file and real quota-override browser cases",
+    "full HEVC download/decode",
+    "TikTok feeds, live, private posts and every regional layout",
+    "long TikTok files and whole-browser shutdown",
+    "physical Cast and original-CDN receiver access"
+  ],
+  "publication": false,
+  "artifacts": {
+    "version": "0.1.37",
+    "publication": false,
+    "files": [
+      {
+        "name": "alcydeo-0.1.37-chrome.zip",
+        "bytes": 2348678,
+        "sha256": "48034131c0681fdaff314826bc61cafe843ef6bbc4cd2e029b43bbc816a00f4f"
+      },
+      {
+        "name": "alcydeo-0.1.37-local-test.crx",
+        "bytes": 2362806,
+        "sha256": "9d34bbc2c3630ff0c6ee57b326ac0dd4fec28f5bd1a4642a500d8896bd60d0c5"
+      },
+      {
+        "name": "alcydeo-store-0.1.37-chrome.zip",
+        "bytes": 2292368,
+        "sha256": "ed6e15711a0dc347616c150b2acb3896796c15ff7e3337d6cd0f12b644037d93"
+      },
+      {
+        "name": "alcydeo-pages-0.1.37.zip",
+        "bytes": 2629558,
+        "sha256": "9b5e74078bceb5e032690515752205333e4f3f9247afbc951b78facfa005abe1"
+      },
+      {
+        "name": "alcydeo-brand-0.1.37.zip",
+        "bytes": 1447690,
+        "sha256": "cea5f4ef10ed39bdf67c214a1fbc66b2dc374681a53ae55538ca2d6825d0e749"
+      }
+    ],
+    "local": {
+      "files": 99,
+      "archiveEqualsBuild": true,
+      "executableAndUiMatchTestedBuild": true,
+      "regeneratedLicenseArchives": [
+        "licenses/mediabunny-1.65.0-source.zip",
+        "licenses/mediabunny-aac-encoder-1.65.0-source.zip"
+      ],
+      "correspondingPinnedSourcesUnchanged": true
+    },
+    "store": {
+      "files": 99,
+      "archiveEqualsBuild": true,
+      "executableAndUiMatchTestedBuild": true,
+      "regeneratedLicenseArchives": [],
+      "correspondingPinnedSourcesUnchanged": true
+    },
+    "crx3PayloadMatchesLocalZip": true,
+    "pages": {
+      "files": 277,
+      "htmlPages": 103,
+      "localeRoutes": 10,
+      "base": "/alcydeo/",
+      "archiveEqualsBuild": true
+    },
+    "brandKitFiles": 40
+  }
+}

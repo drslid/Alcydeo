@@ -1,0 +1,81 @@
+{
+  "version": "0.1.3",
+  "extraRuntimeActivation": false,
+  "browser": "156.0.8078.80",
+  "page": "https://anime-sama.to/catalogue/you-and-i-are-polar-opposites/saison2/vf/",
+  "pageTitle": "You and I Are Polar Opposites - Saison 2 | Anime-Sama - Streaming et catalogage d'animes et scans.",
+  "navigationStatus": 200,
+  "frames": [
+    {
+      "origin": "https://anime-sama.to",
+      "videoProtocols": [],
+      "manifestTimings": 0
+    },
+    {
+      "origin": "https://ansembed.net",
+      "videoProtocols": [
+        "blob"
+      ],
+      "manifestTimings": 3
+    },
+    {
+      "origin": "null",
+      "videoProtocols": [],
+      "manifestTimings": 0
+    }
+  ],
+  "badgeBeforeOpeningPopup": "3",
+  "detectedSources": [
+    {
+      "origin": "https://prx-1353-ant-23.vmpx.online",
+      "kind": "hls"
+    },
+    {
+      "origin": "https://prx-1353-ant-23.vmpx.online",
+      "kind": "hls"
+    },
+    {
+      "origin": "https://prx-1353-ant-23.vmpx.online",
+      "kind": "hls"
+    }
+  ],
+  "manifestChecks": [
+    {
+      "origin": "https://prx-1353-ant-23.vmpx.online",
+      "kind": "hls",
+      "expansionOk": true,
+      "qualityLabels": [
+        "1080p",
+        "480p"
+      ]
+    },
+    {
+      "origin": "https://prx-1353-ant-23.vmpx.online",
+      "kind": "hls",
+      "expansionOk": true,
+      "qualityLabels": [
+        ""
+      ]
+    }
+  ],
+  "fullEpisodeDownloaded": false,
+  "observationState": {
+    "settings": {
+      "badge": "count",
+      "blocked": [],
+      "folder": "Alcydeo",
+      "globalDetection": true,
+      "minSize": 0,
+      "theme": "system"
+    },
+    "registrations": [
+      {
+        "id": "alcydeo-observer",
+        "matches": [
+          "http://*/*",
+          "https://*/*"
+        ]
+      }
+    ]
+  }
+}

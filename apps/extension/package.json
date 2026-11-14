@@ -1,0 +1,25 @@
+{
+  "name": "@alcydeo/extension",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node ../../scripts/conversion-assets.mjs && wxt -b chrome",
+    "build": "wxt build -b chrome",
+    "zip": "wxt zip -b chrome",
+    "typecheck": "node ../../scripts/conversion-assets.mjs && wxt prepare && vue-tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@mediabunny/aac-encoder": "1.65.0",
+    "fast-xml-parser": "5.12.0",
+    "googlevideo": "5.0.1",
+    "mediabunny": "1.65.0",
+    "vue": "3.5.44"
+  },
+  "devDependencies": {
+    "@wxt-dev/module-vue": "1.0.3",
+    "vue-tsc": "3.3.14",
+    "wxt": "0.21.5"
+  }
+}

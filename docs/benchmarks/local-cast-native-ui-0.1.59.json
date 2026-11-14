@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-11-08T14:54:59.161Z",
+  "environment": {
+    "node": "v24.22.2",
+    "browser": "156.0.8078.4",
+    "platform": "linux",
+    "headless": true,
+    "isolatedTemporaryProfile": true,
+    "playwrightDefaultArgsDisabled": true,
+    "featureOrOriginOverrides": false,
+    "launchArgs": [
+      "--headless=new",
+      "--remote-debugging-pipe",
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--no-sandbox"
+    ]
+  },
+  "urlProbes": [
+    {
+      "requestedUrl": "chrome://chrome-urls/",
+      "finalUrl": "chrome://chrome-urls/",
+      "navigationError": null,
+      "title": "Chrome URLs",
+      "bodyPresent": true,
+      "bodyCharacterCount": 6686,
+      "errorCode": null,
+      "bodyIndication": "Internal URL directory",
+      "requestedUrlsListed": []
+    },
+    {
+      "requestedUrl": "chrome://media-router/",
+      "finalUrl": "chrome-error://chromewebdata/",
+      "navigationError": "page.goto: net::ERR_INVALID_URL at chrome://media-router/",
+      "title": "chrome://media-router/",
+      "bodyPresent": true,
+      "bodyCharacterCount": 163,
+      "errorCode": "ERR_INVALID_URL",
+      "bodyIndication": "Chrome error page"
+    },
+    {
+      "requestedUrl": "chrome://cast/",
+      "finalUrl": "chrome-error://chromewebdata/",
+      "navigationError": "page.goto: net::ERR_INVALID_URL at chrome://cast/",
+      "title": "chrome://cast/",
+      "bodyPresent": true,
+      "bodyCharacterCount": 155,
+      "errorCode": "ERR_INVALID_URL",
+      "bodyIndication": "Chrome error page"
+    },
+    {
+      "requestedUrl": "chrome://media-router-internals/",
+      "finalUrl": "chrome://debug-webuis-disabled/?host=chrome://media-router-internals/",
+      "navigationError": null,
+      "title": "Internal debugging pages are currently disabled.",
+      "bodyPresent": true,
+      "bodyCharacterCount": 280,
+      "errorCode": null,
+      "bodyIndication": "Other internal page"
+    },
+    {
+      "requestedUrl": "chrome://access-code-cast/",
+      "finalUrl": "chrome-error://chromewebdata/",
+      "navigationError": "page.goto: net::ERR_INVALID_URL at chrome://access-code-cast/",
+      "title": "chrome://access-code-cast/",
+      "bodyPresent": true,
+      "bodyCharacterCount": 167,
+      "errorCode": "ERR_INVALID_URL",
+      "bodyIndication": "Chrome error page"
+    }
+  ],
+  "presentationConstructorProbes": [
+    {
+      "url": "urn:x-org.chromium.media:source:tab:1",
+      "pageUrl": "about:blank",
+      "secureContext": false,
+      "constructorType": "undefined",
+      "routeRequested": false,
+      "constructed": false,
+      "error": {
+        "name": "ReferenceError",
+        "message": "PresentationRequest is not defined"
+      }
+    },
+    {
+      "url": "remote-playback:media-element?source=https%3A%2F%2Fexample.invalid%2Flocal-media.mp4",
+      "pageUrl": "about:blank",
+      "secureContext": false,
+      "constructorType": "undefined",
+      "routeRequested": false,
+      "constructed": false,
+      "error": {
+        "name": "ReferenceError",
+        "message": "PresentationRequest is not defined"
+      }
+    },
+    {
+      "url": "urn:x-org.chromium.media:source:tab:1",
+      "pageUrl": "about:blank",
+      "secureContext": true,
+      "constructorType": "function",
+      "routeRequested": false,
+      "constructed": false,
+      "error": {
+        "name": "NotSupportedError",
+        "message": "Failed to construct 'PresentationRequest': An empty sequence of URLs is not supported."
+      },
+      "context": "about:blank inherited from trusted loopback opener"
+    },
+    {
+      "url": "remote-playback:media-element?source=https%3A%2F%2Fexample.invalid%2Flocal-media.mp4",
+      "pageUrl": "about:blank",
+      "secureContext": true,
+      "constructorType": "function",
+      "routeRequested": false,
+      "constructed": false,
+      "error": {
+        "name": "NotSupportedError",
+        "message": "Failed to construct 'PresentationRequest': An empty sequence of URLs is not supported."
+      },
+      "context": "about:blank inherited from trusted loopback opener"
+    }
+  ],
+  "limitations": [
+    "Headless Linux navigation test; no physical receiver or graphical browser toolbar tested.",
+    "Internal page availability is not proof of a supported extension API or ordinary Cast selector.",
+    "PresentationRequest constructor parsing only; start, reconnect and getAvailability were never called.",
+    "No media loaded, no Cast route requested and no file uploaded."
+  ],
+  "ordinaryCastSelectorObserved": false,
+  "ordinaryCastSelectorObservationScope": "No ordinary Cast selector page was observed in the five navigations; native toolbar UI cannot be verified in this headless probe."
+}

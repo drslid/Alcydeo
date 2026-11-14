@@ -1,0 +1,181 @@
+{
+  "version": "0.1.40",
+  "date": "2026-11-05",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "browser": "156.0.8078.4",
+    "platform": "Chrome for Testing, Linux/WSL2",
+    "windowsProfileDriven": false
+  },
+  "unitTests": 399,
+  "unitFiles": 28,
+  "installedChromeCases": 60,
+  "localCases": 49,
+  "storeCases": 11,
+  "targetedRunNotFullSuite": true,
+  "suites": {
+    "local": {
+      "passed": 36,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "cases": [
+        "tests/e2e/grouping.spec.ts:19:1 › direct quality links share a card, retain the selection and save the chosen file (3.4s)",
+        "tests/e2e/grouping.spec.ts:29:1 › master and observed HLS qualities become one card without a manual lookup (3.2s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in en (1.8s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in es (1.6s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in fr (1.5s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in de (1.6s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in zh_CN (1.4s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in ar (1.5s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in ru (1.7s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in pt (1.3s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in hi (1.3s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in ur (1.2s)",
+        "tests/e2e/popup-design.spec.ts:66:1 › empty, restricted, failed and saved popup states keep useful controls reachable (1.1s)",
+        "tests/e2e/popup-flow.spec.ts:16:1 › real action popup keeps focus, shows native progress and restores tasks after closing (3.3s)",
+        "tests/e2e/popup-flow.spec.ts:21:1 › managed multipart transfer stays in the real popup, survives closure and wakes a reused hidden manager (10.9s)",
+        "tests/e2e/popup-flow.spec.ts:30:1 › a direct saved file offers the explicit tools action without opening a manager on download (2.3s)",
+        "tests/e2e/popup-locales.spec.ts:4:80 › popup download progress in en (1.8s)",
+        "tests/e2e/popup-locales.spec.ts:4:80 › popup download progress in es (1.8s)",
+        "tests/e2e/popup-locales.spec.ts:4:80 › popup download progress in fr (1.8s)",
+        "tests/e2e/popup-locales.spec.ts:4:80 › popup download progress in de (1.8s)",
+        "tests/e2e/popup-locales.spec.ts:4:80 › popup download progress in zh_CN (1.8s)",
+        "tests/e2e/popup-locales.spec.ts:4:80 › popup download progress in ar (1.8s)",
+        "tests/e2e/popup-locales.spec.ts:4:80 › popup download progress in ru (1.8s)",
+        "tests/e2e/popup-locales.spec.ts:4:80 › popup download progress in pt (1.8s)",
+        "tests/e2e/popup-locales.spec.ts:4:80 › popup download progress in hi (1.9s)",
+        "tests/e2e/popup-locales.spec.ts:4:80 › popup download progress in ur (1.8s)",
+        "tests/e2e/saving.spec.ts:16:1 › compact proposals truncate long titles, remove filename fields and show only actual thumbnails (533ms)",
+        "tests/e2e/saving.spec.ts:26:1 › save mode, Chrome folder shortcut and subfolder persist without a page filename editor (667ms)",
+        "tests/e2e/saving.spec.ts:35:1 › direct and assembled downloads pass both native save modes and use the chosen relative folder (1.8s)",
+        "tests/e2e/saving.spec.ts:57:1 › a dismissed save request can retry a direct file and reuse an assembled output (1.4s)",
+        "tests/e2e/youtube-live.spec.ts:6:1 › live SABR/blob player gets its badge before opening the popup and offers recording without sampling/downloading HTML (926ms)",
+        "tests/e2e/youtube-live.spec.ts:7:1 › an exposed combined HLS YouTube live records checked media from the popup without a pasted URL (2.8s)",
+        "tests/e2e/youtube-live.spec.ts:8:1 › a finished live event retains its replay download action (632ms)",
+        "tests/e2e/youtube-live.spec.ts:10:1 › an inaccessible live manifest keeps a labelled tab recording action without a fake media download (724ms)",
+        "tests/e2e/youtube-live.spec.ts:11:1 › record-only live proposals stay compact and localized in all ten languages, including RTL (986ms)",
+        "tests/e2e/youtube-live.spec.ts:12:1 › a protected live player is not exposed by the record-only fallback (1.1s)"
+      ],
+      "evidence": "popup-0.1.40-local.log"
+    },
+    "store": {
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "cases": [
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in en (2.0s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in es (2.0s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in fr (1.6s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in de (1.6s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in zh_CN (1.8s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in ar (1.6s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in ru (1.5s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in pt (1.5s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in hi (1.4s)",
+        "tests/e2e/popup-design.spec.ts:18:49 › popup hierarchy, scrolling, menus and real preview in ur (1.5s)",
+        "tests/e2e/popup-design.spec.ts:66:1 › empty, restricted, failed and saved popup states keep useful controls reachable (1.6s)"
+      ],
+      "evidence": "popup-0.1.40-store.log"
+    },
+    "cast": {
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "cases": [
+        "tests/e2e/tv.spec.ts:17:43 › Cast button stays inside the extension, no web server, localized en (1.5s)",
+        "tests/e2e/tv.spec.ts:17:43 › Cast button stays inside the extension, no web server, localized es (1.5s)",
+        "tests/e2e/tv.spec.ts:17:43 › Cast button stays inside the extension, no web server, localized fr (1.5s)",
+        "tests/e2e/tv.spec.ts:17:43 › Cast button stays inside the extension, no web server, localized de (1.1s)",
+        "tests/e2e/tv.spec.ts:17:43 › Cast button stays inside the extension, no web server, localized zh_CN (1.2s)",
+        "tests/e2e/tv.spec.ts:17:43 › Cast button stays inside the extension, no web server, localized ar (1.5s)",
+        "tests/e2e/tv.spec.ts:17:43 › Cast button stays inside the extension, no web server, localized ru (1.4s)",
+        "tests/e2e/tv.spec.ts:17:43 › Cast button stays inside the extension, no web server, localized pt (1.2s)",
+        "tests/e2e/tv.spec.ts:17:43 › Cast button stays inside the extension, no web server, localized hi (1.2s)",
+        "tests/e2e/tv.spec.ts:17:43 › Cast button stays inside the extension, no web server, localized ur (1.2s)",
+        "tests/e2e/tv.spec.ts:22:1 › binary CDN MIME remains castable instead of leaving an inert button (1.0s)"
+      ],
+      "evidence": "popup-0.1.40-cast.log"
+    },
+    "manager": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "cases": [
+        "tests/e2e/workspace.spec.ts:5:1 › flag picker changes all ten locales and RTL without reloading the editor or its video (4.3s)"
+      ],
+      "evidence": "popup-0.1.40-manager.log"
+    },
+    "playlist": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "cases": [
+        "tests/e2e/youtube-playlists.spec.ts:68:46 › playlist is translated and compact in fr (991ms)"
+      ],
+      "evidence": "popup-0.1.40-playlist.log"
+    }
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "semanticContrastPairs": 16,
+    "localAndStoreZip": true,
+    "crxPayloadChecked": true,
+    "pagesBuild": true,
+    "siteRuntime": {
+      "browser": "156.0.8078.4",
+      "locales": 10,
+      "mobileOverflow": false,
+      "pageErrors": [],
+      "base": "/alcydeo/"
+    },
+    "storeYoutubeExcluded": true,
+    "newPermissions": false,
+    "externalPublication": false
+  },
+  "visuals": {
+    "width": 525,
+    "maximumHeight": 600,
+    "locales": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "zh_CN",
+      "ar",
+      "ru",
+      "pt",
+      "hi",
+      "ur"
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "states": [
+      "empty",
+      "source checking",
+      "one or multiple sources",
+      "qualities",
+      "preview",
+      "progress",
+      "paused",
+      "saved",
+      "failed",
+      "site restrictions",
+      "playlist",
+      "menus",
+      "language picker"
+    ],
+    "scanScreenshot": "Installed extension, scan response held 2.5 s by a test-only message wrapper to render the pending state. No production delay added.",
+    "savedErrorState": "Synthetic history for layout; real saved fixture files checked separately by popup-flow, saving and grouping.",
+    "physicalReceiverValidated": false
+  },
+  "artifacts": "popup-artifacts-0.1.40.json"
+}

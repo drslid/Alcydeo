@@ -1,0 +1,71 @@
+{
+  "decoder": "Development-only FFmpeg, independently from Chrome",
+  "version": "0.1.16",
+  "timing": "Preserve input timing with -vsync 0 -enc_time_base -1; the source MKV itself also triggers null-muxer rounding diagnostics without these settings.",
+  "results": [
+    {
+      "file": "artifacts/evidence/conversion/copy-mkv.mp4",
+      "bytes": 1838870,
+      "sha256": "e980af10ad1441eb2dacd6139e8d6cbcc43fc5f194d4030dc6ed4e6c04c10932",
+      "exitCode": 0,
+      "decodeErrors": "",
+      "decodedVideoFrames": 144
+    },
+    {
+      "file": "artifacts/evidence/conversion/copy-mov.mp4",
+      "bytes": 1837202,
+      "sha256": "b59fc71547a44adde76dd989081f3a6326907386a7c00040fecbaef6bc7dd649",
+      "exitCode": 0,
+      "decodeErrors": "",
+      "decodedVideoFrames": 144
+    },
+    {
+      "file": "artifacts/evidence/conversion/webm.mp4",
+      "bytes": 715411,
+      "sha256": "b9514369d4960f1c70917328b80e0f0c559445a1508c5eb5aff68a9b30e6223e",
+      "exitCode": 0,
+      "decodeErrors": "",
+      "decodedVideoFrames": 144
+    },
+    {
+      "file": "artifacts/evidence/conversion/downloaded-webm.mp4",
+      "bytes": 715411,
+      "sha256": "fd5369693dd6ac7074d00374f6582a21a01468362fd6c575cc67ee06a7fbc239",
+      "exitCode": 0,
+      "decodeErrors": "",
+      "decodedVideoFrames": 144
+    },
+    {
+      "file": "artifacts/evidence/conversion/queued-first.mp4",
+      "bytes": 715411,
+      "sha256": "4a12738f3c8efa18ad378a03d65181a357af4f1b173bf3f26fa8fdcc919f1915",
+      "exitCode": 0,
+      "decodeErrors": "",
+      "decodedVideoFrames": 144
+    },
+    {
+      "file": "artifacts/evidence/conversion/queued-second.mp4",
+      "bytes": 1838870,
+      "sha256": "6a37c6b35fbc6ffae64d16aff62c5161a372d41aa02728d480804ff613cc1a5d",
+      "exitCode": 0,
+      "decodeErrors": "",
+      "decodedVideoFrames": 144
+    },
+    {
+      "file": "artifacts/evidence/conversion/save-as.mp4",
+      "bytes": 715411,
+      "sha256": "865b3daa571c9b683f563c9ee608700a6f9c7cd995fd012fc4e3528b26da3cd2",
+      "exitCode": 0,
+      "decodeErrors": "",
+      "decodedVideoFrames": 144
+    },
+    {
+      "file": "artifacts/evidence/conversion/recovered-long.mp4",
+      "bytes": 18336888,
+      "sha256": "60912a781c437710cf8be685944d014b6523ed9fe250f6eff714a948ac86ef02",
+      "exitCode": 0,
+      "decodeErrors": "",
+      "decodedVideoFrames": 1432
+    }
+  ]
+}

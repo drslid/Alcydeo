@@ -1,0 +1,138 @@
+{
+  "version": "0.1.41",
+  "date": "2026-11-05",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "browser": "156.0.8078.4",
+    "platform": "Chrome for Testing, Linux/WSL2",
+    "windowsProfileDriven": false
+  },
+  "unitTests": 399,
+  "unitFiles": 28,
+  "chromeCases": 35,
+  "localCases": 24,
+  "storeCases": 11,
+  "targetedRunNotFullSuite": true,
+  "suites": {
+    "local": {
+      "passed": 14,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "durationMs": 32576.506999999998
+    },
+    "manager": {
+      "passed": 10,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "durationMs": 18817.318
+    },
+    "store": {
+      "passed": 11,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "durationMs": 17140.908
+    }
+  },
+  "brandAssets": {
+    "version": "0.1.41",
+    "canonicalFaceSha256": "9ef31cf6ad9b55021001d19180ce3976d5e47163be670ac298a04e807ed40d28",
+    "portraitContainsExactCanonicalHead": true,
+    "independentPortraitDrawing": false,
+    "externalWhiteCutoutStroke": false,
+    "artwork": [
+      {
+        "name": "master",
+        "transparentCorners": true,
+        "opaquePixels": 72446,
+        "opaquePaleEdgePixels": 0
+      },
+      {
+        "name": "portrait",
+        "transparentCorners": true,
+        "opaquePixels": 81051,
+        "opaquePaleEdgePixels": 0
+      }
+    ],
+    "icons": [
+      {
+        "size": 16,
+        "bluePixels": 26,
+        "orangePixels": 2,
+        "inkPixels": 3
+      },
+      {
+        "size": 32,
+        "bluePixels": 114,
+        "orangePixels": 18,
+        "inkPixels": 72
+      },
+      {
+        "size": 48,
+        "bluePixels": 249,
+        "orangePixels": 45,
+        "inkPixels": 210
+      },
+      {
+        "size": 64,
+        "bluePixels": 411,
+        "orangePixels": 95,
+        "inkPixels": 433
+      },
+      {
+        "size": 128,
+        "bluePixels": 1589,
+        "orangePixels": 418,
+        "inkPixels": 1976
+      },
+      {
+        "size": 256,
+        "bluePixels": 6200,
+        "orangePixels": 1792,
+        "inkPixels": 8519
+      },
+      {
+        "size": 512,
+        "bluePixels": 24507,
+        "orangePixels": 7336,
+        "inkPixels": 35190
+      }
+    ],
+    "applicationIconBackground": "Pale rounded tile, transparent corners; distinct from the transparent artwork",
+    "receiverOrMediaEngineChanged": false,
+    "monochromeMaskFill": "none, preserving open-stroke geometry without implicit filled wedges"
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "localAndStoreZip": true,
+    "crxPayload": true,
+    "brandKit": 41,
+    "site": {
+      "browser": "156.0.8078.4",
+      "locales": 10,
+      "mobileOverflow": false,
+      "pageErrors": [],
+      "base": "/alcydeo/"
+    },
+    "storeYoutubeExclusion": true
+  },
+  "visualReview": {
+    "views": [
+      "popup empty light/dark with both portraits",
+      "popup sources/menu/languages",
+      "manager empty light/dark",
+      "brand board and icon sizes",
+      "site desktop/mobile RTL"
+    ],
+    "locales": 10,
+    "newPermissions": false,
+    "mediaOrCloudEngineChanged": false,
+    "newPublicMediaOrCloudTransfers": false,
+    "physicalReceiverTested": false
+  },
+  "publication": false
+}

@@ -1,0 +1,185 @@
+{
+  "version": "0.1.50",
+  "date": "2026-11-06",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "platform": "isolated Linux/WSL2 Chrome profiles; public native GUI and fixture headless",
+    "userWindowsProfileDriven": false
+  },
+  "scope": {
+    "confirmedNormalSourcesOnly": true,
+    "candidateInventoryRetainedInternally": true,
+    "backgroundChecksWithoutPopup": true,
+    "explicitQualityPreservedWhileRechecking": true,
+    "exactCurrentInstagramNativeCatalog": true,
+    "noRemoteExecutableCode": true,
+    "noNewPermissions": true,
+    "noNativeContextOrSignatureFabrication": true
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "unitPassed": 635,
+    "unitFiles": 41,
+    "targetedInstalledChromeCases": 133,
+    "localCases": 71,
+    "storeCases": 62,
+    "runs": {
+      "localRegression": {
+        "startTime": "2026-11-06T20:30:42.644Z",
+        "duration": 151094.195,
+        "expected": 57,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "localPackagedCoflix": {
+        "startTime": "2026-11-06T20:33:35.736Z",
+        "duration": 7238.388,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "localConfirmedSources": {
+        "startTime": "2026-11-06T20:30:44.570Z",
+        "duration": 23370.949,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "localInstagram": {
+        "startTime": "2026-11-06T20:30:36.119Z",
+        "duration": 8447.976,
+        "expected": 8,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "targetedStore": {
+        "startTime": "2026-11-06T20:33:52.604Z",
+        "duration": 167072.301,
+        "expected": 62,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "fullE2eSuiteRerun": false,
+    "storeYoutubeExclusion": {
+      "version": "0.1.50",
+      "browser": "156.0.8078.4",
+      "synthetic": true,
+      "youtubeMedia": 0,
+      "youtubeBadge": "",
+      "youtubeLiveMedia": 0,
+      "youtubePlaylistUi": 0,
+      "playlistBrowseRequests": 0,
+      "playlistApiRejected": true,
+      "ordinaryMedia": 1,
+      "ordinaryKind": "direct"
+    }
+  },
+  "confirmedSourceFixture": {
+    "observedCandidates": 9,
+    "visibleConfirmedCards": 1,
+    "badgeValues": [
+      "",
+      "1"
+    ],
+    "checksRunWithoutPopup": true,
+    "maximumSampleConcurrency": 2,
+    "unknownAndUnavailableProposalsVisible": false,
+    "spaPageBudgetReset": true,
+    "unresponsiveManifestRequests": 1,
+    "unresponsiveManifestFinalPending": false,
+    "savedOriginal": {
+      "title": "Cours original de capture",
+      "bytes": 525622,
+      "exactBytes": true,
+      "state": "completed",
+      "downloadCount": 1
+    }
+  },
+  "metadata": {
+    "initialPrefixBytes": 4096,
+    "additionalDirectPresentationHeaderGetRequests": 4,
+    "maximumAdditionalRequestedAndRetainedBytes": 65536,
+    "sharedDeadlineMs": 8000,
+    "encodedOrInconsistentTotalUnknown": true,
+    "strongEtagCheckedWhenAvailable": true,
+    "unknownMetadataNeverInvented": true,
+    "remuxAndCompleteDurationHlsEstimatesMarked": true,
+    "dimensionsAreContainerMetadataNotWholeFileDecode": true
+  },
+  "runtimeUsedForFinalLocalFixtureTests": {
+    "version": "0.1.50",
+    "manifestSha256": "4159ce0d4aa144388a7361522d490b4c3c900c2cb965e045109ea6299527d0a5",
+    "runtimeTreeSha256": "7618c838b1ac17eb657cd853f739bfa133ba7b0ef4fe49a91e44fd064fa72f63",
+    "method": "SHA256 of ordered UTF-8 relative-path NUL per-file-sha256 NUL byte-size newline transcript",
+    "fileCount": 99,
+    "bytes": 5718942
+  },
+  "publicEvidence": {
+    "platforms": "platforms-public-0.1.50.json",
+    "tiktok": "tiktok-public-0.1.50.json",
+    "completeInstagramFileStage": "intermediate 0.1.50, saved and every audio/video sample decoded",
+    "completeTikTokFileStage": "0.1.49, saved and every audio/video sample decoded",
+    "laterMetadataProbes": "0.1.50 snapshot before unrelated final DASH/YouTube cache fixes; no additional complete exports",
+    "odysee": "0.1.49 native playback, manifests and four checked qualities; no complete transfer",
+    "profilesIsolatedWithOfficialUblockOriginLiteComplete": true,
+    "publicMediaOrRawJsonDistributed": false
+  },
+  "intermediateFindings": [
+    "Red confirmed-source fixture shows badge9 on 0.1.49; final empty-or1 behavior and exact saved bytes pass.",
+    "Metadata red cases cover HTTP totals, bounded exact ranges, large presentation headers, transforms, deadlines and late parent replies.",
+    "First main regression35:27pass/8fail; source refresh, preference, eligibility and assertions investigated and corrected.",
+    "Next main regression60:57pass/3fail; explicit DASH refresh, dependent-worker cascade and same-pair YouTube adaptive cache corrected.",
+    "Typecheck caught a variant-ID shadow in the final DASH correction; renamed before final runtime rebuild and fixture tests.",
+    "One extra Coflix run overlapped local packaging and missed manager launch; rerun on the stable packaged runtime passes all3, retained separately.",
+    "Initial CRX pack omitted laboratory shared-library search path; corrected environment produced verified CRX3 without source changes."
+  ],
+  "visuals": {
+    "popupLightDarkInspected": true,
+    "tenLocalesAndRtl": true,
+    "globalCheckingAndConfirmedOriginalFixtureInspected": true,
+    "publicFrameCapturesDistributed": false
+  },
+  "siteValidation": {
+    "browser": "156.0.8078.4",
+    "locales": 10,
+    "mobileOverflow": false,
+    "pageErrors": [],
+    "base": "/alcydeo/"
+  },
+  "artifactValidation": "confirmed-sources-artifacts-0.1.50.json",
+  "artifactSummary": {
+    "localFiles": 99,
+    "storeFiles": 99,
+    "pages": {
+      "files": 277,
+      "htmlPages": 103,
+      "localeRoutes": 10,
+      "base": "/alcydeo/",
+      "archiveEqualsBuild": true
+    },
+    "brandKitFiles": 41,
+    "executableAndUiMatchTestedBuild": true,
+    "regeneratedSourceArchivesOnly": [
+      "licenses/mediabunny-1.65.0-source.zip",
+      "licenses/mediabunny-aac-encoder-1.65.0-source.zip"
+    ],
+    "unchangedPinnedSourceArchiveContents": true
+  },
+  "limits": [
+    "A recognizable prefix does not guarantee every later segment or future server response.",
+    "Metadata can remain unknown; exact source HTTP bytes differ from eventual remux size.",
+    "Only the supplied public TikTok/Reel/session were exported; no Odysee complete file, public film, full feed/private/live coverage or universal detection claim.",
+    "The public metadata-probe snapshot and packaged candidate are separately identified; public files were not downloaded again.",
+    "No native Windows profile/dialog, physical receiver, external publication or cloud upload in this revision."
+  ],
+  "externalPublication": false
+}

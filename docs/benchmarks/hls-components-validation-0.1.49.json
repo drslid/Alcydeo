@@ -1,0 +1,184 @@
+{
+  "version": "0.1.49",
+  "date": "2026-11-06",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "platform": "isolated Linux/WSL2 Chrome profiles; public native GUI and fixture headless",
+    "userWindowsProfileDriven": false
+  },
+  "scope": {
+    "checkedHlsComponentGrouping": true,
+    "nativeVideoAndAudioUrlsUnchanged": true,
+    "qualityAndIdPreservedOnRescan": true,
+    "differentAudioAndFramesRemainSeparate": true,
+    "contradictoryProofNotReused": true,
+    "newerCheckRetainsOwnTransport": true,
+    "nativeSuccessDoesNotRenewCheckAge": true,
+    "existingPreflightSamplesReused": true,
+    "maximumTrackIdentityTranscriptCharacters": 262144,
+    "maximumTracks": 2,
+    "maximumAudioAliasesPerVariant": 64,
+    "noNewPermissionsOrProviders": true
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "unitPassed": 485,
+    "unitFiles": 35,
+    "targetedInstalledChromeCases": 57,
+    "localCases": 35,
+    "storeCases": 22,
+    "runs": {
+      "hlsComponentsLocal": {
+        "startTime": "2026-11-06T14:26:11.254Z",
+        "duration": 4864.167,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "regressionLocal": {
+        "startTime": "2026-11-06T14:22:45.541Z",
+        "duration": 95033.606,
+        "expected": 34,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "targetedStore": {
+        "startTime": "2026-11-06T14:30:07.997Z",
+        "duration": 31868.976000000002,
+        "expected": 22,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "fullE2eSuiteRerun": false,
+    "storeYoutubeExclusion": {
+      "version": "0.1.49",
+      "browser": "156.0.8078.4",
+      "synthetic": true,
+      "youtubeMedia": 0,
+      "youtubeBadge": "",
+      "youtubeLiveMedia": 0,
+      "youtubePlaylistUi": 0,
+      "playlistBrowseRequests": 0,
+      "playlistApiRejected": true,
+      "ordinaryMedia": 1,
+      "ordinaryKind": "direct"
+    }
+  },
+  "completeOriginalFixture": {
+    "originalSyntheticMedia": true,
+    "bytes": 1837166,
+    "durationSeconds": 6.021333333333334,
+    "tracks": [
+      {
+        "type": "video",
+        "codec": "avc"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "validationMethod": "local-structure",
+    "fullNativeFragments": 9,
+    "automaticChromeSave": true,
+    "cardsOnTwelveNativeRefreshes": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "unusedAliasRefusalPreservesPair": true,
+    "selectedAudioRefusalRemovesTransport": true,
+    "freshCompleteAlternativeAllowedAfterRefusal": true,
+    "secondExportAfterRefusal": false
+  },
+  "publicPageAudit": "public-pages-0.1.49.json",
+  "publicWholeFilmDownloadedThisRevision": false,
+  "intermediateFindings": [
+    "Baseline 0.1.48 fixture fails to converge on one native video/audio proposal; final 0.1.49 passes.",
+    "Independent review found canonicalization could replace a fresh checked variant with older proof; corrected with tests before final build.",
+    "Review caught unrelated non-HLS adaptive audio removal; corrected with regression before final build.",
+    "A test first required all cards to vanish on selected native audio refusal; actual state showed a fresh checked declared two-track alternative. Final assertion rejects the refused transport and permits only complete fresh alternatives.",
+    "A documentation dark screenshot caught a CSS transition in progress; capture waits for animations to finish. The actual stable runtime dark state is correct; no product CSS change.",
+    "Final visual documentation review removed obsolete manual-file-verification wording from the quality guide in all ten site locales; final Pages build and mobile/RTL QA pass."
+  ],
+  "visuals": {
+    "popupLightDarkInspected": true,
+    "tenLocalesAndRtl": true,
+    "fixturePopup": "../../artifacts/evidence/hls-components49/popup.png",
+    "thirdPartyPublicFrameCapturesDistributed": false
+  },
+  "limits": [
+    "Original-fixture full transfer and local track/structure checks do not prove full public films or every codec.",
+    "Dailymotion GUI, Horror and Uqload public detection were measured against 0.1.48; Apocalypse and Imp\u00e9ratrice have baseline 0.1.48 and follow-up 0.1.49 probes; final French-stream GUI uses 0.1.49.",
+    "Initial French-stream attempts without a blocker did not reach the movie; the separate later uBlock Origin Lite Complete probes confirm Vidzy/Voe playback and ready sources. Fembed returned 500 and Uptobox exposed no source during the original six-page audit.",
+    "A Dailymotion source explicitly named Advertisement remains alongside the clip.",
+    "No user Windows profile/native dialog, full public-film export, physical Cast/AirPlay or long-file performance validation in this revision."
+  ],
+  "externalPublication": false,
+  "siteValidation": {
+    "browser": "156.0.8078.4",
+    "locales": 10,
+    "mobileOverflow": false,
+    "pageErrors": [],
+    "base": "/alcydeo/"
+  },
+  "artifactValidation": "hls-components-artifacts-0.1.49.json",
+  "frenchStreamFollowUp": {
+    "date": "2026-11-06",
+    "sameUnchangedBuild": "0.1.49",
+    "blocker": {
+      "name": "uBlock Origin Lite",
+      "version": "2026.1103.1743",
+      "mode": "Complete",
+      "isolatedTestProfile": true,
+      "bundledWithAlcydeo": false
+    },
+    "vidzy": {
+      "actualNativeClock": [
+        "0:07",
+        "0:31"
+      ],
+      "dimensions": [
+        864,
+        360
+      ],
+      "readyCardsAfterChecks": 1,
+      "readyTracks": 2,
+      "height": 360
+    },
+    "voe": {
+      "actualCurrentTimeSeconds": [
+        5.760571,
+        38.993133
+      ],
+      "dimensions": [
+        1728,
+        720
+      ],
+      "readyCardsAfterChecks": 1,
+      "readyTracks": 1,
+      "height": 720
+    },
+    "dood": "Native player loads, then top-level about:blank with a Cloudflare DNS failure; playback not validated",
+    "alcydeoTasksCreated": 0,
+    "completeFilmDownloaded": false,
+    "priorUnitAndChromeRegressionCountsUnchanged": true,
+    "details": "public-pages-0.1.49.json"
+  }
+}

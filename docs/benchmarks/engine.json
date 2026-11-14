@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-01T11:22:00.683Z",
+  "environment": {
+    "node": "v24.22.2",
+    "os": "linux 6.18.54.1-microsoft-standard-WSL2",
+    "cpu": "13th Gen Intel(R) Core(TM) i5-13600KF",
+    "logicalCpus": 20,
+    "totalMemoryBytes": 16689008640
+  },
+  "corpus": {
+    "source": "original synthetic test pattern + tone",
+    "durationSeconds": 6,
+    "mp4Bytes": 1837555,
+    "tsBytes": 1895792
+  },
+  "results": [
+    {
+      "name": "MP4 metadata — MP4Box.js",
+      "iterations": 10,
+      "medianMs": 1.1890349999999899,
+      "minMs": 0.9726959999999849,
+      "maxMs": 1.6340040000000045,
+      "rssAfterBytes": 143380480,
+      "rssBeforeBytes": 124375040
+    },
+    {
+      "name": "MP4 metadata — Mediabunny",
+      "iterations": 10,
+      "medianMs": 1.0405489999999986,
+      "minMs": 0.937972000000002,
+      "maxMs": 1.2298289999999952,
+      "rssAfterBytes": 167006208,
+      "rssBeforeBytes": 146198528
+    },
+    {
+      "name": "TS transmux — mux.js (memory output)",
+      "iterations": 10,
+      "medianMs": 7.8854820000000245,
+      "minMs": 6.424434000000019,
+      "maxMs": 16.107098000000008,
+      "rssAfterBytes": 235401216,
+      "rssBeforeBytes": 191746048
+    },
+    {
+      "name": "TS remux — production engine (streamed file + validation)",
+      "iterations": 10,
+      "medianMs": 16.984973999999966,
+      "minMs": 14.988301000000092,
+      "maxMs": 32.51489300000003,
+      "rssAfterBytes": 295952384,
+      "rssBeforeBytes": 238350336
+    }
+  ],
+  "limitations": [
+    "Node microbenchmark; not a Chrome or Windows measurement.",
+    "Different operations and output strategies; not a head-to-head ranking.",
+    "RSS includes the shared Node process and earlier libraries; it is not an isolated engine peak.",
+    "No conclusion about multi-GB files, hardware decoding, network speed or 8K."
+  ]
+}

@@ -1,0 +1,3 @@
+Original synthetic Alcydeo media only. Twelve seconds: repeat fixtures/media/high.mp4 twice with continuous timestamps, copy AVC/AAC packets, segment at keyframes every two seconds. Development-only FFmpeg preparation; never installed or shipped as an extension companion. Served through scripts/live-fixture.mjs as a controlled rolling HLS playlist.
+Regenerate TS: FFMPEG -stream_loop 1 -i fixtures/media/high.mp4 -c copy -f hls -hls_time 2 -hls_list_size 0 -hls_segment_filename fixtures/live-ts/segment-%d.ts fixtures/live-ts/index.m3u8
+For live-fmp4 add -hls_segment_type fmp4 -hls_fmp4_init_filename init.mp4 and use segment-%d.m4s.

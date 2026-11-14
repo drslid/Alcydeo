@@ -1,0 +1,30 @@
+{
+  "version": "0.1.27",
+  "date": "2026-11-03",
+  "unitTests": 230,
+  "e2e": {
+    "startTime": "2026-11-03T11:37:21.775Z",
+    "duration": 34877.254,
+    "expected": 25,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "nativeWindow": {
+    "version": "0.1.27",
+    "browser": "156.0.8078.80",
+    "headed": true,
+    "nativePresentationApi": true,
+    "castPhase": "choosing",
+    "automationRouterDisableFlagRemoved": true,
+    "webSenderRequests": 0,
+    "realReceiverTested": false
+  },
+  "nativeLocales": 10,
+  "webSenderRequired": false,
+  "realReceiverTested": false,
+  "nativeWindowsTested": false,
+  "userReportedReceiver": "Nvidia Shield",
+  "userReportedChromeMenuWorks": true,
+  "publication": false
+}

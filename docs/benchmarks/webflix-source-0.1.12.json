@@ -1,0 +1,162 @@
+{
+  "version": "0.1.12",
+  "page": "https://webflix.bio/movie/star-wars-le-rveil-de-la-force-film-streaming-complet-vf",
+  "date": "2026-11-01T18:14:59.251Z",
+  "responses": [],
+  "errors": [],
+  "http": 200,
+  "title": "Star Wars : Le Réveil de la Force (2015) Streaming VF Gratuit | Webflix",
+  "controls": [
+    {
+      "text": "Rechercher",
+      "label": "Rechercher"
+    },
+    {
+      "text": "",
+      "label": "Rechercher"
+    },
+    {
+      "text": "",
+      "label": "Notifications"
+    },
+    {
+      "text": "",
+      "label": "Compte"
+    },
+    {
+      "text": "",
+      "label": "Ouvrir le menu Plus"
+    },
+    {
+      "text": "Réessayer",
+      "label": null
+    },
+    {
+      "text": "Lecteur 4KLecteur 4K",
+      "label": null
+    },
+    {
+      "text": "Lecteur 4K",
+      "label": null
+    },
+    {
+      "text": "Lecteur HD",
+      "label": null
+    },
+    {
+      "text": "Lecteur Nexus",
+      "label": null
+    },
+    {
+      "text": "Lecteur Vidzy",
+      "label": null
+    },
+    {
+      "text": "Lecteur Pandora",
+      "label": null
+    },
+    {
+      "text": "Lecteur Uqload",
+      "label": null
+    },
+    {
+      "text": "Lecteur Viper",
+      "label": null
+    },
+    {
+      "text": "Lecteur Frembed",
+      "label": null
+    },
+    {
+      "text": "Lecteur Kakaflix",
+      "label": null
+    },
+    {
+      "text": "Lecteur Kakaflix",
+      "label": null
+    },
+    {
+      "text": "VOSTFR 1",
+      "label": null
+    },
+    {
+      "text": "VOSTFR 2",
+      "label": null
+    },
+    {
+      "text": "",
+      "label": "Ajouter à ma liste"
+    },
+    {
+      "text": "4K",
+      "label": "Télécharger le film"
+    },
+    {
+      "text": "",
+      "label": "Partager"
+    },
+    {
+      "text": "Distribution40 acteurs",
+      "label": null
+    },
+    {
+      "text": "Lancer la bande-annonce",
+      "label": "Lire la bande-annonce de Star Wars, épisode I - La Menace fantôme"
+    },
+    {
+      "text": "",
+      "label": "Matrix (Element)"
+    },
+    {
+      "text": "",
+      "label": "X"
+    },
+    {
+      "text": "",
+      "label": "LinksBio"
+    },
+    {
+      "text": "Valider",
+      "label": null
+    }
+  ],
+  "frames": [
+    {
+      "url": "https://webflix.bio",
+      "media": []
+    },
+    {
+      "url": "https://local.invalid",
+      "media": []
+    },
+    {
+      "url": "https://challenges.cloudflare.com",
+      "media": []
+    }
+  ],
+  "detected": [],
+  "badge": "",
+  "browser": "Chrome for Testing 156.0.8078.80, Linux",
+  "securityVerification": "failed before media playback",
+  "fullFilmDownloadAttempted": false,
+  "reportedSignedURLReplayed": false,
+  "independentHeaderChecks": {
+    "unsignedCDN": {
+      "method": "HEAD",
+      "statusChain": [
+        302,
+        302,
+        200
+      ],
+      "finalType": "text/html; charset=utf-8"
+    },
+    "proxy": {
+      "method": "HEAD",
+      "statusChain": [
+        302,
+        200
+      ],
+      "finalType": "text/html; charset=utf-8"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "version": "0.1.63",
+  "date": "2026-11-08",
+  "scope": "Selected regression suites, not the entire repository end-to-end corpus. Original fixtures and intercepted Cloud requests.",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "automatedBrowser": "Chrome for Testing156.0.8078.4, isolated Linux profiles",
+    "userBrowser": "Windows Chrome156.0.8078.76",
+    "receiverInLaboratory": false
+  },
+  "staticChecks": {
+    "typecheck": true,
+    "lint": true,
+    "unitTests": 997,
+    "unitFiles": 56
+  },
+  "installedExtension": {
+    "local": {
+      "cloudCleanupUiAndActions": {
+        "report": ".local/cloud-cast63/cloud-final.json",
+        "passed": 24,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "durationSeconds": 119.863
+      },
+      "nativeCastAndActivation": {
+        "report": ".local/cloud-cast63/native-cast-final.json",
+        "passed": 25,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "durationSeconds": 100.555
+      },
+      "webHandoff": {
+        "report": ".local/cloud-cast63/cast-handoff-final.json",
+        "passed": 2,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "durationSeconds": 2.303
+      }
+    },
+    "store": {
+      "cleanupCompactAndActivation": {
+        "report": ".local/cloud-cast63/store-final.json",
+        "passed": 19,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "durationSeconds": 84.123
+      }
+    },
+    "localCases": 51,
+    "storeCases": 19
+  },
+  "webSender": {
+    "contractTests": {
+      "report": ".local/cloud-cast63/cast/web-final.json",
+      "passed": 18,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "durationSeconds": 14.787
+    },
+    "sdkInAutomatedContracts": "simulated CAF; real browser page and local original media",
+    "nativeSdkProbe": "Actual official Google SDK and native requestSession invoked with a real gesture in graphical Chrome; no receiver or LOAD in laboratory.",
+    "physicalUserTests": "cast-user-tests-0.1.63.json"
+  },
+  "cloudCleanup": {
+    "originalFixtureBytes": 525622,
+    "physicalCloudDirectoriesAfterPurge": 0,
+    "libraryOriginalsAndHistoryPreserved": true,
+    "ordinaryDeletionFailureInPersonalSessionReproduced": false,
+    "reproducedFailures": "Storage root/iteration failures used generic source error; stale individual Remove could delete a resumed/queued/live-leased job.",
+    "providerTransfers": "intercepted only; no actual provider file upload"
+  },
+  "castCorrections": [
+    "Real user activation checked after asynchronous native preparation.",
+    "Official web SDK outside the extension, checked-source handoff in erased fragment, bounded protocol2 readiness.",
+    "Initial loading and each buffering episode bounded; route/LOAD ACK not treated as PLAYING.",
+    "Receiver IDLE/ERROR is terminal failure, not successful finish; live flag only from ready evidence.",
+    "Safe explicit error report; arbitrary MIME subtype is not copied.",
+    "Packaged local Arabic/Devanagari fonts used in standalone player."
+  ],
+  "limitations": [
+    "User confirms only official Google37s sample on Shield; W3C sample failed without established cause.",
+    "Private File/Blob transport to Shield remains unavailable in the extension-only scope; Chrome tab casting guide retained.",
+    "Production web page is prepared but unpublished; local ZIP uses development localhost4180, Store has empty sender URL.",
+    "No universal source/codec, receiver, HLS live physical playback or private reference-backend validation."
+  ],
+  "externalPublication": false
+}

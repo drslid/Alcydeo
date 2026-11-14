@@ -1,0 +1,770 @@
+{
+  "version": "0.1.22",
+  "environment": {
+    "node": "v24.22.2",
+    "pnpm": "12.5.1",
+    "browser": "156.0.8078.80",
+    "platform": "Linux/WSL2",
+    "nativeWindowsDialogsTested": false,
+    "crxInstalledInWindows": false
+  },
+  "tests": {
+    "unit": 183,
+    "distinctPassed": 89,
+    "optionalSkipped": [
+      {
+        "file": "multipart.spec.ts",
+        "title": "large direct range file is saved without remux and matches the original hash",
+        "status": "skipped",
+        "annotations": [
+          {
+            "type": "skip",
+            "description": "Optional >2 GB original fixture",
+            "location": {
+              "file": "/home/slid/apps/Alcydeo/tests/e2e/multipart.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          }
+        ]
+      },
+      {
+        "file": "multipart.spec.ts",
+        "title": "limited temporary storage fails clearly without starting part transfers or saving a file",
+        "status": "skipped",
+        "annotations": [
+          {
+            "type": "skip",
+            "description": "Chrome rejected CDP quota override for the extension origin; the failure guard is tested with a simulated quota in unit tests.",
+            "location": {
+              "file": "/home/slid/apps/Alcydeo/tests/e2e/multipart.spec.ts",
+              "line": 36,
+              "column": 7
+            }
+          }
+        ]
+      }
+    ],
+    "lastAffectedRun": {
+      "startTime": "2026-11-01T21:53:50.743Z",
+      "duration": 210159.582,
+      "expected": 37,
+      "skipped": 2,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "localeProgress": 10,
+    "siteGuides": 20,
+    "notes": "Union of the initial targeted regression run and the affected-path rerun after the stale-task fix, plus ten popup language cases. Not a complete project-suite run.",
+    "lastAffectedRunLauncherExitCode": 143,
+    "finalSmoke": {
+      "passed": 4,
+      "exitCode": 0,
+      "fixtureServer": "explicitly managed separate process",
+      "cases": [
+        "stale snapshot",
+        "real native popup",
+        "managed multipart popup",
+        "explicit tools"
+      ]
+    }
+  },
+  "popup": {
+    "realActionPopup": true,
+    "nativeCreatesNoManager": true,
+    "managedHostInactive": true,
+    "progressBytesPercentage": true,
+    "pauseResumeCancel": true,
+    "reopenWhileDownloading": true,
+    "managedContinuesWhenPopupCloses": true,
+    "explicitToolsAndSameRouteReopen": true,
+    "managedHostMustStayOpen": true
+  },
+  "conversion": {
+    "savedDefaults": true,
+    "perFileOverrides": true,
+    "defaultProfile": {
+      "quality": "auto",
+      "maxHeight": 0,
+      "audioKbps": 0
+    },
+    "testedProfile": {
+      "quality": "balanced",
+      "maxHeight": 480,
+      "audioKbps": 128
+    },
+    "output": {
+      "bytes": 170691,
+      "sha256": "babd95d6ac1effeff9e1cb15efb644b18bf61e5a897bfe52351dada6747afc48",
+      "width": 852,
+      "height": 480,
+      "duration": 2.005333333333333,
+      "tracks": [
+        {
+          "type": "video",
+          "codec": "avc"
+        },
+        {
+          "type": "audio",
+          "codec": "aac"
+        }
+      ]
+    },
+    "compatiblePacketsKept": true,
+    "originalFilenamesAndFilesPreserved": true
+  },
+  "race": {
+    "controlledStaleSnapshotBeforeFix": {
+      "workerStarts": 1
+    },
+    "controlledStaleSnapshotAfterFix": {
+      "workerStarts": 0
+    },
+    "weakValidatorNativeFallback": true,
+    "managerLeaseRecovery": true
+  },
+  "site": {
+    "pages": 102,
+    "locales": 10,
+    "base": "/alcydeo/",
+    "publication": false
+  },
+  "limitations": [
+    "Optional >2 GB and real extension-origin quota override tests skipped",
+    "Physical Cast/AirPlay receivers and real cloud providers not retested",
+    "Real popup verified through Chrome DevTools; headless inactive-tab status verified, browser scheduling differs from Windows"
+  ],
+  "cases": [
+    {
+      "file": "conversion-names.spec.ts",
+      "title": "real native conversion names retain accents/dots, add one suffix and never overwrite the first output",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "conversion-names.spec.ts",
+      "title": "editing an assembled download never exposes output.mp4 as its input or exported name",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "MKV and MOV become real MP4 files with identical H.264/AAC packets",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "VP8/Opus is actually re-encoded to AVC/AAC offline without losing either track",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "a downloaded nonstandard original offers conversion and remains intact afterwards",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "two managers process a persisted conversion queue one file at a time",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "an unsupported video track is refused without exporting an audio-only MP4",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "conversion uses the saved folder and Save As preference when another manager changed them",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "pause, cancel and real manager closure keep the source and restart conversion after recovery",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "conversion.spec.ts",
+      "title": "conversion defaults persist, resize real video and allow per-file quality/audio overrides",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "detect, choose quality, download, verify and find the file",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "HLS TS, HLS fMP4 separate audio, and DASH create playable MP4 files",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "popup closes and service worker restarts without losing the library",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "empty and dark popup states at actual dimensions",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "protected and missing sources are rejected by preflight without creating downloads or requesting keys",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "pause checkpoints, concurrent managers, resume and cancellation",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "closing the manager recovers a persisted checkpoint after lease expiry",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "dynamic DOM observation rescans an authorized page",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "extension.spec.ts",
+      "title": "revoked host permissions stop manifest access",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "nineteen actual video/audio containers are detected and saved byte for byte",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "default 10 KB, larger threshold, known versus unknown sizes, and pasted blacklist URLs",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "local compress produces a real validated H.264/AAC MP4",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "local trim produces a real validated H.264/AAC MP4",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "local merge produces a real validated H.264/AAC MP4",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "Gofile uploads only after the explicit click and confirms a real server response, locally simulated",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "local help remains available before the Pages site is published",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "a trim outside the source duration saves no partial or audio-only output",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "features.spec.ts",
+      "title": "a locally simulated cloud failure stays paused until explicit retry",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "grouping.spec.ts",
+      "title": "direct quality links share a card, retain the selection and save the chosen file",
+      "status": "passed",
+      "annotations": [
+        {
+          "type": "serial",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/grouping.spec.ts",
+            "line": 0,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "grouping.spec.ts",
+      "title": "master and observed HLS qualities become one card without a manual lookup",
+      "status": "passed",
+      "annotations": [
+        {
+          "type": "serial",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/grouping.spec.ts",
+            "line": 0,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale en and layout",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale es and layout",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale fr and layout",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale de and layout",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale zh_CN and layout",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale ar and layout",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale ru and layout",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale pt and layout",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale hi and layout",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "locales.spec.ts",
+      "title": "native Chrome locale ur and layout",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "settings persist, reject invalid counts and produce a bit-identical file over four concurrent ranges",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "unsupported ignore source falls back to the native download",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "unsupported noetag source falls back to the native download",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "unsupported weak source falls back to the native download",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "invalid wrong response saves no partial file",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "invalid html response saves no partial file",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "pause from another manager, worker restart and resume reuse persisted bytes and queue-time settings",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "a changed source validator stops resume without combining old and new versions",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "cancellation stops all part requests and never saves a partial file",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "closing every manager recovers partial bytes after the real lease expires",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "large direct range file is saved without remux and matches the original hash",
+      "status": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Optional >2 GB original fixture",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/multipart.spec.ts",
+            "line": 33,
+            "column": 7
+          }
+        }
+      ]
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "limited temporary storage fails clearly without starting part transfers or saving a file",
+      "status": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Chrome rejected CDP quota override for the extension origin; the failure guard is tested with a simulated quota in unit tests.",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/multipart.spec.ts",
+            "line": 36,
+            "column": 7
+          }
+        }
+      ]
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "controlled per-response throttling demonstrates concurrent transfer throughput",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "popup-flow.spec.ts",
+      "title": "real action popup keeps focus, shows native progress and restores tasks after closing",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "popup-flow.spec.ts",
+      "title": "managed multipart transfer stays in the real popup, survives closure and wakes a reused hidden manager",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "popup-flow.spec.ts",
+      "title": "a direct saved file offers the explicit tools action without opening a manager on download",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "preflight.spec.ts",
+      "title": "probes alternatives, rejects disguised HTML/tiny/404 and downloads only the working source",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "preflight.spec.ts",
+      "title": "uses the top-level page title for unnamed iframe media and the real saved filename",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "preflight.spec.ts",
+      "title": "lowering the minimum size restores a previously rejected source without reloading its page",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "preflight.spec.ts",
+      "title": "the native guard still rejects a source that becomes HTML after its successful sample",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "preflight.spec.ts",
+      "title": "a MIME discovered during the sample makes a dynamic endpoint downloadable",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "compact proposals truncate long titles, remove filename fields and show only actual thumbnails",
+      "status": "passed",
+      "annotations": [
+        {
+          "type": "serial",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/saving.spec.ts",
+            "line": 0,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "save mode, Chrome folder shortcut and subfolder persist without a page filename editor",
+      "status": "passed",
+      "annotations": [
+        {
+          "type": "serial",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/saving.spec.ts",
+            "line": 0,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "direct and assembled downloads pass both native save modes and use the chosen relative folder",
+      "status": "passed",
+      "annotations": [
+        {
+          "type": "serial",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/saving.spec.ts",
+            "line": 0,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "saving.spec.ts",
+      "title": "a dismissed save request can retry a direct file and reuse an assembled output",
+      "status": "passed",
+      "annotations": [
+        {
+          "type": "serial",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/saving.spec.ts",
+            "line": 0,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "TS with timed ID3 keeps audio/video, reports metadata omission and has no native warning",
+      "status": "passed",
+      "annotations": [
+        {
+          "type": "serial",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/segmented.spec.ts",
+            "line": 0,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "initialization and media byte ranges from one MP4 produce a complete file",
+      "status": "passed",
+      "annotations": [
+        {
+          "type": "serial",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/segmented.spec.ts",
+            "line": 0,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "observed playlists identify opaque MP4 fragments before opening the popup",
+      "status": "passed",
+      "annotations": [
+        {
+          "type": "serial",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/segmented.spec.ts",
+            "line": 0,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "an unsupported video track is refused instead of silently saving only audio",
+      "status": "passed",
+      "annotations": [
+        {
+          "type": "serial",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/segmented.spec.ts",
+            "line": 0,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "segmented.spec.ts",
+      "title": "rejecting an HTML native transfer does not suggest a filename after cancellation",
+      "status": "passed",
+      "annotations": [
+        {
+          "type": "serial",
+          "location": {
+            "file": "/home/slid/apps/Alcydeo/tests/e2e/segmented.spec.ts",
+            "line": 0,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale en",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale es",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale fr",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale de",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale zh_CN",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale ar",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale ru",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale pt",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale hi",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "tools-locales.spec.ts",
+      "title": "media tools, recording and cloud native locale ur",
+      "status": "passed",
+      "annotations": []
+    },
+    {
+      "file": "multipart.spec.ts",
+      "title": "a stale queue snapshot never restarts a task already handed to native Chrome",
+      "status": "passed",
+      "annotations": []
+    }
+  ],
+  "packaging": {
+    "testedCodeMatchesPackagedBuild": true,
+    "filesChecked": 13,
+    "artifacts": [
+      {
+        "name": "alcydeo-0.1.22-chrome.zip",
+        "bytes": 2107086,
+        "sha256": "2ec2ad6ce9ac8ff5026f3a217b3af54ffffa39298a2792bc9c1ed82ef096e4db"
+      },
+      {
+        "name": "alcydeo-store-0.1.22-chrome.zip",
+        "bytes": 2057305,
+        "sha256": "2bef5a4a1f44903aa476e516e8f5eb90c17680018b1b0d499ce334697ffdf7b4"
+      },
+      {
+        "name": "alcydeo-0.1.22-local-test.crx",
+        "bytes": 2120308,
+        "sha256": "703fd8353a9d1d83fb98b503e363ffda78496e51fd060060094bea987173dd71"
+      },
+      {
+        "name": "alcydeo-pages-0.1.22.zip",
+        "bytes": 2218994,
+        "sha256": "236e0583e4e47a9f6bdddbca406d281aef48de1a29fb25306a18bd6a437c21a2"
+      }
+    ]
+  }
+}

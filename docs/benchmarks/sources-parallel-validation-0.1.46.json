@@ -1,0 +1,83 @@
+{
+  "version": "0.1.46",
+  "date": "2026-11-06",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "platform": "isolated Linux/WSL2 profiles",
+    "windowsUserProfileDriven": false
+  },
+  "unit": {
+    "passed": 446,
+    "files": 32
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "localAndStoreBuild": true,
+    "pagesHtml": 103,
+    "tenLocaleSiteRuntime": true,
+    "storeYoutubeExclusion": true
+  },
+  "finalChrome": {
+    "local": {
+      "startTime": "2026-11-06T10:07:23.906Z",
+      "duration": 70490.08,
+      "expected": 36,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "store": {
+      "startTime": "2026-11-06T10:06:36.964Z",
+      "duration": 36936.628000000004,
+      "expected": 21,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "targetedCases": 57,
+    "wholeSuiteRerun": false
+  },
+  "coverage": [
+    "Equivalent checked HLS VOD alternatives use one native URL and known quality; selection survives refresh/scan; real fixture MP4 saved",
+    "Opaque HLS fragments found by preflight are inventoried; separate audio aliases remain scoped to audio/frame",
+    "Known native403 evicts candidate; transient500 keeps it recoverable; native200 restores",
+    "DASH global2/4/8 measured connection budgets, default-off sequence, noETag whole-track concurrency, version failure without export, pause/resume",
+    "Existing HLS nested qualities, direct/HLS grouping, HTML/tiny/404 guards, title fallback, XML signatures and VK audio/video output",
+    "Real action popup direct/multipart progress and recovery; ten languages, light/dark/RTL, menus and empty/saved/error states"
+  ],
+  "publicEvidence": {
+    "coflix": "coflix-public-0.1.46.json",
+    "coflixFullDecode": "coflix-decode-0.1.46.json",
+    "vkServerProbe": "vk-range-probe-0.1.46.json",
+    "vkSequentialAndParallel": "vk-parallel-public-0.1.46.json",
+    "vkFullDecode": "vk-parallel-decode-0.1.46.json",
+    "scope": "Public0.1.46 trials precede the final same-audio/frame alias guards; final packaged builds cover those guards with unit and browser fixtures. Media transfer engines unchanged after public trials."
+  },
+  "review": {
+    "independentReviews": 2,
+    "audioAndFrameAliasIssuesCorrected": true,
+    "blockersRemaining": 0
+  },
+  "earlierRuns": {
+    "coflixFixture": "One initial browser fixture read the rescan snapshot before asynchronous checks finished. It now waits for the one checked native HLS result; final runs pass.",
+    "dashPauseFixture": "One initial pause case finished before the UI refresh; only the fixture response delay changed800ms to3000ms. Final full local/Store suites pass.",
+    "audioRegression": "Two new unit failures reproduced cross-audio plan identity reuse before the fix; final suite446passes."
+  },
+  "artifacts": "sources-parallel-artifacts-0.1.46.json",
+  "siteRuntime": {
+    "browser": "156.0.8078.4",
+    "locales": 10,
+    "mobileOverflow": false,
+    "pageErrors": [],
+    "base": "/alcydeo/"
+  },
+  "limits": [
+    "One publicVK144p timing pair, not a statistical speed benchmark; nativeCDN lacksETag so no same-resource range speedup claimed",
+    "No complete720p revalidation, userWindowsprofile/CRXinstallation, physicalCast or realCloud provider transfer in this lot",
+    "No universal site/codec/DRM support claim; public video/signatures not redistributed"
+  ],
+  "externalPublication": false
+}

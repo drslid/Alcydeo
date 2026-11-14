@@ -1,0 +1,41 @@
+import{test,expect,chromium,type BrowserContext,type Page}from'@playwright/test';
+import{resolve}from'node:path';import{readFile,mkdir}from'node:fs/promises';
+import{historyTask,seedHistory}from'./history-fixture';
+const catalogs=JSON.parse(await readFile('packages/i18n/catalogs.json','utf8'))as Record<string,Record<string,string>>;
+const original=await readFile('fixtures/media/low.mp4'),out='artifacts/evidence/library-cloud-0.1.61';
+let context:BrowserContext,ui:Page,base:string,id:string;
+test.beforeEach(async()=>{
+ const ext=resolve(process.env.ALCYDEO_EXTENSION_PATH??'apps/extension/.output/chrome-mv3');context=await chromium.launchPersistentContext('',{executablePath:process.env.CHROMIUM_PATH,headless:true,acceptDownloads:true,args:[`--load-extension=${ext}`,`--disable-extensions-except=${ext}`,'--no-sandbox','--test-type']});const sw=context.serviceWorkers()[0]??await context.waitForEvent('serviceworker');base=`chrome-extension://${new URL(sw.url()).host}`;ui=await context.newPage();await ui.setViewportSize({width:1280,height:850});await ui.goto(base+'/manager.html');const cdp=await context.browser()!.newBrowserCDPSession();await cdp.send('Browser.setDownloadBehavior',{behavior:'default'});await cdp.detach();
+ const source=await context.newPage();await source.goto('http://127.0.0.1:4179/empty.html');const tabId=await ui.evaluate(async url=>(await chrome.tabs.query({})).find(tab=>tab.url===url)!.id!,source.url());await source.evaluate(()=>{const link=document.createElement('a');link.href='/media/low.mp4';link.textContent='Original library fixture';document.body.append(link);});await ui.goto(`${base}/popup.html?tabId=${tabId}`);await ui.getByRole('button',{name:'Download',exact:true}).click();await expect.poll(async()=>(await ui.evaluate(()=>chrome.runtime.sendMessage({type:'snapshot'}))).data.tasks[0]?.saved).toBe(true);
+ const task=(await ui.evaluate(()=>chrome.runtime.sendMessage({type:'snapshot'}))).data.tasks[0];id=task.id;expect((await readFile(task.filename)).equals(original)).toBe(true);
+ await ui.evaluate(async({task,bytes})=>{const dir=await(await navigator.storage.getDirectory()).getDirectoryHandle(task.id,{create:true}),writer=await(await dir.getFileHandle('source.mp4',{create:true})).createWritable();await writer.write(new Uint8Array(bytes));await writer.close();},{task,bytes:[...original]});await seedHistory(ui,[{...task,output:'source.mp4'}]);await ui.goto(base+'/manager.html#library');await expect(ui.locator(`[data-task-id="${id}"]`)).toBeVisible();await mkdir(out,{recursive:true});
+});
+test.afterEach(async()=>context?.close());
+test('saved files have seven named icon actions, keyboard access and one compact row in ten languages and RTL',async()=>{
+ const card=ui.locator(`[data-task-id="${id}"]`),actions=card.locator('.task-file-actions'),buttons=actions.getByRole('button');
+ for(const[locale,c]of Object.entries(catalogs)){
+  await ui.evaluate(language=>chrome.storage.local.set({language}),locale);await expect(buttons).toHaveCount(7);const names=[c.trimTool,c.cropTool,c.mergeTool,c.convertTool,c.compressTool,c.cloud,c.show];await expect.poll(()=>buttons.evaluateAll(nodes=>nodes.map(node=>node.getAttribute('aria-label')))).toEqual(names);
+  for(let index=0;index<names.length;index++){await expect(buttons.nth(index)).toHaveAttribute('title',names[index]!);await expect(buttons.nth(index)).toBeEnabled();expect((await buttons.nth(index).innerText()).trim()).toBe('');await expect(buttons.nth(index).locator('svg path')).not.toHaveCount(0);}
+  await expect(card.locator('.task-actions').getByRole('button')).toHaveCount(7);await expect(card.locator('.library-cast')).toHaveAccessibleName(c.castVideo!);await expect(card.locator('.library-cast')).toBeEnabled();await expect(ui.locator('html')).toHaveAttribute('dir',['ar','ur'].includes(locale)?'rtl':'ltr');
+  for(const width of[1280,390]){await ui.setViewportSize({width,height:850});await ui.evaluate(()=>document.fonts.ready);expect(await ui.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);const tops=await buttons.evaluateAll(nodes=>nodes.map(node=>Math.round(node.getBoundingClientRect().top)));expect(new Set(tops).size).toBe(1);}
+  if(['fr','ur'].includes(locale)){for(const theme of['light','dark']){await ui.evaluate(theme=>document.documentElement.dataset.theme=theme,theme);await ui.screenshot({path:`${out}/${locale}-${theme}-narrow.png`,fullPage:true,animations:'disabled'});}await ui.setViewportSize({width:1280,height:850});await ui.screenshot({path:`${out}/${locale}-dark-desktop.png`,fullPage:true,animations:'disabled'});}
+ }
+ await buttons.first().focus();for(let index=1;index<7;index++){await ui.keyboard.press('Tab');await expect(buttons.nth(index)).toBeFocused();}
+});
+test('file icons open the intended editor or operation with the actual file, and merging keeps the first clip',async()=>{
+ const c=catalogs.en!,card=ui.locator(`[data-task-id="${id}"]`),filename=(await ui.evaluate(()=>chrome.runtime.sendMessage({type:'snapshot'}))).data.tasks[0].filename.split(/[\\/]/).pop();
+ for(const kind of['trim','crop','merge']){
+  await card.getByRole('button',{name:c[kind+'Tool'],exact:true}).click();await expect(ui).toHaveURL(base+'/manager.html#tools');const panel=ui.locator('.tools-panel');await expect(panel.getByRole('button',{name:c[kind+'Tool'],exact:true})).toHaveAttribute('aria-pressed','true');
+  if(kind==='trim')await expect(panel.locator('.timeline-frames img')).toHaveCount(6);
+  if(kind==='crop')await expect(panel.locator('.crop-screen video')).toBeVisible();
+  if(kind==='merge'){await expect(panel.locator('.merge-clips li')).toHaveCount(1);await expect(panel.getByRole('button',{name:c.startTool,exact:true})).toBeDisabled();await panel.getByLabel(c.chooseVideos!,{exact:true}).setInputFiles({name:'Second.mp4',mimeType:'video/mp4',buffer:original});await expect(panel.locator('.merge-clips li')).toHaveCount(2);await expect(panel.locator('.merge-clips li').first()).toContainText(filename);await expect(panel.locator('.merge-clips li').nth(1)).toContainText('Second.mp4');}
+  await ui.locator('.manager-tabs').getByRole('button',{name:c.library,exact:true}).click();
+ }
+ for(const kind of['convert','compress']){await card.getByRole('button',{name:c[kind+'Tool'],exact:true}).click();const dialog=ui.locator('.batch-dialog');await expect(dialog).toBeVisible();await expect(dialog.locator('.batch-files li>span')).toHaveText(filename);await expect(dialog.getByRole('button',{name:c[kind+'Tool'],exact:true})).toBeEnabled();await dialog.getByRole('button',{name:c.cancel,exact:true}).click();}
+ expect((await ui.evaluate(()=>chrome.runtime.sendMessage({type:'snapshot'}))).data.tasks).toHaveLength(1);
+});
+test('audio, retained files without a disk download and paused work keep honest action availability',async()=>{
+ const audio=historyTask('Audio fixture',{variant:{id:'audio',url:'https://example.invalid/track.mp3',label:'MP3',contentType:'audio/mpeg'}}),retained=historyTask('Retained fixture'),paused=historyTask('Paused fixture',{saved:false,state:'paused'}),owned=historyTask('Owned fixture',{owner:'another-manager',leaseUntil:Date.now()+60000});await seedHistory(ui,[audio,retained,paused,owned]);await ui.reload();
+ const audioActions=ui.locator(`[data-task-id="${audio.id}"] .task-file-actions`).getByRole('button');await expect(audioActions).toHaveCount(7);for(const index of[0,1,2,3,4,6])await expect(audioActions.nth(index)).toBeDisabled();await expect(audioActions.nth(5)).toHaveAccessibleName(catalogs.en!.cloud!);await expect(audioActions.nth(5)).toBeEnabled();
+ await expect(ui.locator(`[data-task-id="${retained.id}"]`).getByRole('button',{name:'Show in folder',exact:true})).toBeDisabled();await expect(ui.locator(`[data-task-id="${retained.id}"] .task-file-actions`).getByRole('button',{name:catalogs.en!.cloud!,exact:true})).toBeEnabled();await expect(ui.locator(`[data-task-id="${owned.id}"] .task-file-actions`).getByRole('button',{name:catalogs.en!.cloud!,exact:true})).toBeDisabled();const work=ui.locator(`[data-task-id="${paused.id}"]`);await expect(work.locator('.task-file-actions')).toHaveCount(0);await expect(work.getByRole('button',{name:'Resume',exact:true})).toBeEnabled();await expect(work.getByRole('button',{name:'Cancel',exact:true})).toBeVisible();
+});

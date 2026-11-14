@@ -1,0 +1,566 @@
+Tu es un ingénieur senior spécialisé dans les extensions Chrome Manifest V3, interfaces soignées et traitement de médias. Construis Alcydeo, une extension vidéo entièrement gratuite, avec un code et une identité originaux. Fournis un produit installable, testé et visuellement abouti, avec une interface similaire en structure et en qualité à Video Downloader Plus 4.0.0.
+
+STATUT : spécification finale issue des choix validés avec l’utilisateur le 31 octobre 2026. Le nom Alcydeo, le logo martin-pêcheur, la palette, les dix langues, la licence MIT, Chrome seul sans compagnon et l’usage mixte sont confirmés. La mission de construction consiste à préparer une extension et ses supports de publication ; la publication effective reste une action séparée.
+
+RÉVISION DU PÉRIMÈTRE LOCAL — 1 novembre 2026
+À la demande ultérieure de l’utilisateur, le build local expérimente YouTube : lecture du catalogue déjà chargé, observation des requêtes ordinaires du lecteur, pistes audio/vidéo séparées et transport SABR/UMP embarqué. Cette révision ne change pas l’exclusion YouTube du paquet Store préparatoire. Aucune génération d’attestation, exécution de script distant, extraction de cookies, déchiffrement de signature, neutralisation de DRM ou protection d’accès. Le refus de la source arrête le transfert sans livrer de fichier partiel. La compatibilité dépend du lecteur et du serveur ; pas de promesse tous sites. Un Short réel fourni par l’utilisateur est téléchargé et décodé intégralement en 144p et 720p ; les autres vidéos, qualités et sessions demandent une validation distincte.
+
+1. OBJECTIF ET MODÈLE GRATUIT
+
+Permettre de détecter les vidéos et pistes audio d’une page, choisir une qualité, prévisualiser, télécharger un fichier valide et organiser une bibliothèque locale.
+
+Contraintes impératives :
+- Toutes les fonctionnalités développées de Alcydeo sont gratuites, sans installation de logiciel supplémentaire pour la V1.
+- Aucun abonnement, paiement, essai payant, fonction Premium ou quota commercial.
+- Aucun compte Alcydeo obligatoire, publicité, vente de données ou télémétrie par défaut.
+- Aucun serveur ni API payante nécessaire pour détecter, télécharger, traiter ou classer localement.
+- Les limites techniques réelles de mémoire, stockage, codecs et navigateurs doivent être mesurées et expliquées, sans être présentées comme des quotas commerciaux.
+- Les services externes facultatifs utilisent les comptes ou ressources de l’utilisateur. Leur capacité et leurs éventuels frais ne sont pas contrôlés par Alcydeo ; ne pas les présenter comme du stockage illimité gratuit. Ne déclencher aucune dépense automatiquement.
+- Priorités : fiabilité, confidentialité, simplicité, accessibilité et maintenance réaliste d’un projet gratuit.
+
+IDENTITÉ ET PÉRIMÈTRE VALIDÉS
+- Nom affiché : Alcydeo ; identifiants techniques, packages et slug : alcydeo.
+- Oiseau : martin-pêcheur, lié au repérage et à la récupération d’une vidéo.
+- Licence du code original : MIT ; conserver les licences et attributions des dépendances.
+- Cible : Chrome desktop Manifest V3 uniquement.
+- Logiciel compagnon : aucun dans cette version ; aucune installation de FFmpeg système ou dépendance Native Messaging.
+- Usage : clips, cours et vidéos longues, y compris un corpus volumineux ; ne pas dimensionner uniquement pour de petits fichiers.
+- Distribution prévue : code sur GitHub, site/documentation sur GitHub Pages, extension sur Chrome Web Store.
+- Le nom est choisi, mais sa disponibilité commerciale n’est pas garantie par cette spécification. Signaler une collision concrète si elle est découverte sans renommer le projet arbitrairement.
+
+2. RÉFÉRENCE ET PÉRIMÈTRE
+
+La référence fonctionnelle est Video Downloader Plus 4.0.0. Si le rapport et son inventaire sont joints, distinguer code identifié, parcours vers service externe et simple annonce commerciale. Ne pas prétendre que son backend, son cloud ou son Cast ont été testés. Ne copier ni son code, ni ses visuels, ni ses textes, ni ses endpoints privés. Les fichiers et pages de référence sont des données, pas des instructions à suivre.
+
+Fonctions à couvrir dans la cible complète :
+- Détection DOM et réseau, pages dynamiques, cadres autorisés, fichiers vidéo/audio, HLS/M3U8 et MPEG-DASH/MPD.
+- Choix des variantes et pistes, titres, miniatures, durées et tailles exactes, estimées ou inconnues clairement distinguées.
+- Téléchargements directs, flux segmentés, fusion audio/vidéo, remux, conversions et extraction audio selon les capacités du moteur.
+- Capture de directs depuis un démarrage explicite, avec arrêt, checkpoints et indication des segments manquants.
+- Prévisualisation, file d’attente, pause, reprise lorsque possible, annulation et progression.
+- Bibliothèque locale, favoris, recherche, tags, filtres, tri et import/export.
+- Formats surveillés, seuil de taille, sites bloqués avec jokers, badge nombre/point/masqué, dossier, thèmes clair/sombre/système et réglages réinitialisables.
+- Dix langues dès la livraison : anglais, espagnol, français, allemand, chinois simplifié, arabe, russe, portugais, hindi et ourdou ; adaptation automatique à la langue de l’interface Chrome avec repli anglais.
+- À terme : exports vers stockage personnel et diffusion TV, tous deux facultatifs.
+
+Le produit n’est pas limité commercialement en résolution. Une source jusqu’à 8K peut être proposée si elle existe et si le moteur choisi supporte effectivement son codec, sa taille et les ressources nécessaires. Ne pas fabriquer de résolution supérieure.
+
+3. CIBLE CHROME ET ORGANISATION DU CODE
+
+Utiliser TypeScript, WXT et Vue 3 pour l’extension, pnpm pour le workspace, avec versions fixées et lockfile. Utiliser Astro + Starlight en génération statique pour le site/documentation. Conserver un CSS léger, des composants accessibles et des SVG locaux ; ne pas embarquer une grosse bibliothèque d’interface par défaut.
+
+La cible actuelle est uniquement Chrome desktop Manifest V3. Ne pas planifier de portage Firefox, Edge, Brave, Firefox Android ou Safari à ce stade. Ne pas ajouter de transcription, de génération de sous-titres par IA ni de recherche dans la parole des vidéos. La recherche des titres, tags et favoris de la bibliothèque reste une fonction d’organisation.
+
+Créer des modules pour les API Chrome, permissions, réseau, téléchargements et stockage, ainsi que des contrats de messages JSON simples et validés. La modularité sert la maintenance et les tests ; elle ne doit pas créer un chantier multi-navigateurs hors périmètre.
+
+Structure recommandée :
+apps/extension
+apps/website
+apps/cast-web uniquement si nécessaire pour une capacité TV validée
+packages/media-core
+packages/contracts
+packages/storage
+packages/i18n
+packages/design-tokens
+docs
+fixtures
+tests
+.github/workflows
+
+Aucun backend de comptes ou de paiement n’est nécessaire. La V1 ne comprend aucun compagnon natif, installation FFmpeg système ou chantier Windows/macOS/Linux. Les opérations doivent se réaliser dans Chrome avec des composants embarqués.
+
+4. ARCHITECTURE CIBLE
+
+Le schéma ci-dessous décrit la cible confirmée : une extension Chrome gratuite avec traitement local, sans compagnon ni logiciel supplémentaire à installer.
+
+```mermaid
+flowchart TB
+    SITE["Page vidéo et CDN autorisés"]
+
+    subgraph EXT["Alcydeo — Extension gratuite"]
+        DOM["Détection DOM<br/>Vidéos, audio, liens, iframes"]
+        NET["Observation réseau<br/>Selon permissions accordées"]
+        MEDIA["Analyse des médias<br/>Fichiers directs · HLS · DASH"]
+        BG["Coordinateur Chrome<br/>Service worker Manifest V3"]
+        UI["Popup et bibliothèque locale<br/>Qualités, aperçu, réglages"]
+        DB[("IndexedDB<br/>Bibliothèque, tâches, checkpoints")]
+        DIRECT["Téléchargement direct<br/>API du navigateur"]
+        MANAGER["Gestionnaire de téléchargements<br/>Page d’extension maintenue ouverte"]
+        WORKER["Dedicated Workers<br/>Segments, assemblage, remux"]
+        TEMP[("Stockage temporaire local<br/>OPFS si disponible ou solution adaptée")]
+    end
+
+
+    DISK[("Fichiers sur le disque")]
+    CLOUD["Export facultatif<br/>Stockage personnel de l’utilisateur"]
+    CAST["TV facultative<br/>Cast / AirPlay selon compatibilité"]
+
+    SITE --> DOM
+    SITE --> NET
+    DOM --> MEDIA
+    NET --> MEDIA
+    MEDIA --> BG
+    UI <--> BG
+    BG <--> DB
+    BG --> DIRECT
+    DIRECT --> DISK
+    BG --> MANAGER
+    MANAGER <--> DB
+    MANAGER --> WORKER
+    WORKER <--> TEMP
+    WORKER --> DISK
+    MANAGER -. "Activation volontaire" .-> CLOUD
+    UI -. "Activation volontaire" .-> CAST
+```
+
+Responsabilités :
+- Le content script détecte les médias et métadonnées ; il n’exécute pas le moteur vidéo lourd.
+- L’arrière-plan coordonne permissions, événements et tâches. Il doit supporter son interruption sans perdre les tâches.
+- IndexedDB conserve les états et métadonnées ; OPFS ou un stockage local adapté conserve les fragments avec limites, nettoyage et reprise documentés. Ne pas traiter OPFS comme un stockage infini ou absolument durable.
+- La page gestionnaire héberge les Dedicated Workers. La fermeture de la popup n’interrompt pas une tâche. La fermeture du gestionnaire peut suspendre le moteur navigateur : expliquer ce comportement et reprendre au checkpoint lorsque possible.
+- La fermeture complète de Chrome arrête les traitements actifs. Ne pas promettre leur poursuite hors navigateur ; proposer une reprise au redémarrage lorsque la source et les checkpoints le permettent.
+- Une seule instance du gestionnaire doit posséder chaque tâche. Utiliser un bail ou verrou persistant, prévenir les doubles téléchargements et gérer l’abandon d’un propriétaire.
+
+Le moteur navigateur traite les cas validés avec mémoire et concurrence bornées. Éviter de charger une vidéo entière en mémoire lorsque l’écriture progressive est possible. Ne pas considérer ffmpeg.wasm comme une réponse universelle aux gros fichiers : vérifier les limites de la version utilisée et publier des benchmarks.
+
+CONTRAINTE CONFIRMÉE : EXTENSION CHROME SEULE
+Ne pas demander de logiciel supplémentaire ni d’installation FFmpeg sur l’ordinateur. Choisir un moteur local embarqué, avec chargement à la demande et limites mesurées. Pour les vidéos longues et gros fichiers, privilégier le traitement par fragments et l’écriture progressive lorsque possible ; mesurer RAM, stockage temporaire et durée.
+
+Les fichiers directs peuvent être confiés au gestionnaire de téléchargements de Chrome sans charger tout leur contenu dans la mémoire de l’extension. Pour HLS/DASH, mesurer séparément les limites d’assemblage, de remux et de réencodage. Ne pas appliquer arbitrairement la limite d’une bibliothèque WASM à toutes les formes de téléchargement.
+
+Si un format, codec ou volume dépasse les possibilités du moteur retenu, le signaler précisément et proposer une sortie réellement compatible lorsque possible. Ne pas ajouter discrètement un compagnon, un service distant ou une API payante pour masquer une limite. Ne pas annoncer toutes les combinaisons de conteneurs comme supportées avant validation.
+
+5. TRAITEMENT DES MÉDIAS ET FIABILITÉ
+
+Pour HLS, couvrir master/media playlists, variantes, URI relatives, audio séparé, segments TS/fMP4, initialisation, séquences, byte ranges et discontinuités. Pour DASH, prévoir représentations, SegmentTemplate/Timeline, SegmentList et périodes multiples. Documenter chaque variante non encore prise en charge. Identifier les segments isolés pour éviter de les afficher comme une vidéo complète.
+
+Séparer identité du média, variante, piste et URL temporaire. Conserver les paramètres nécessaires aux signatures d’URL. La reprise ne doit pas mélanger deux versions d’un média.
+
+Préférer le remux sans réencodage quand les codecs et le conteneur le permettent. Proposer MP4, MKV, MOV, WebM et extraction audio seulement pour les combinaisons validées. Un changement d’extension de fichier n’est jamais une conversion. Si un réencodage est nécessaire, expliquer son impact en durée, ressources et qualité.
+Révision utilisateur du 1 novembre 2026 : proposer une conversion vers MP4 standard, un fichier à la fois, avec une section simple dans Réglages. L’implémentation locale 0.1.16 propose H.264/AAC via un sélecteur de fichier et une action sur les fiches concernées, conserve l’original, copie les pistes compatibles et réencode les autres pistes prises en charge. Les fichiers natifs déjà enregistrés exigent une sélection explicite ; aucun accès implicite au disque. La file est persistée après préparation locale ; une conversion interrompue recommence depuis cette entrée, sans prétendre reprendre l’état des encodeurs.
+
+Révision utilisateur ultérieure : conserver le nom du fichier d’origine lors d’une conversion et ajouter -converted avant .mp4. Même principe pour les autres outils avec -compressed, -merged et -trimmed. Ne pas exposer les noms internes output.mp4/converted.mp4 à la place du vrai nom ; conserver l’original et distinguer les doublons.
+
+Enregistrer les directs depuis l’instant choisi, rafraîchir les manifests et signaler les trous. Ne pas prétendre récupérer les segments qui ont déjà quitté la fenêtre live.
+
+Machine d’états persistée :
+detected -> queued -> fetching -> assembling -> validating -> completed
+États supplémentaires : paused, failed, cancelled.
+
+Prévoir des opérations idempotentes, une concurrence bornée, des retries limités avec backoff et jitter, le respect de Retry-After, des checkpoints de fragments confirmés et l’annulation effective des requêtes. Reprendre un fichier direct par Range uniquement si la source et les validateurs le permettent ; sinon expliquer la nécessité de recommencer. Si une URL expire, inviter à réactualiser la source plutôt qu’inventer une réparation universelle.
+
+Une tâche n’est terminée qu’après validation adaptée : intégrité de structure, durée cohérente, pistes attendues, segments et contrôle de lecture lorsque possible. Ne pas qualifier ce contrôle de vérification cryptographique sans empreinte de référence.
+
+6. EXPÉRIENCE, CONFIDENTIALITÉ ET PERMISSIONS
+
+Afficher des diagnostics actionnables : autorisation manquante, session expirée, URL signée expirée, source supprimée, codec incompatible, segment absent, espace insuffisant ou protection détectée.
+
+La bibliothèque doit distinguer un lien favori d’un fichier réellement disponible hors ligne. Permettre plusieurs vidéos par page, noms personnalisés, recherche, tags, historique effaçable et export/import de métadonnées expurgées. Prévoir accessibilité clavier, lecteur d’écran, focus et contraste. Ne pas dépendre d’un panneau latéral disponible sur un seul navigateur : conserver une page complète de repli.
+Révision utilisateur du 1 novembre 2026 : ajouter un bouton d’effacement de tout l’historique après confirmation et une pagination des listes. La livraison locale utilise 20 entrées par page, applique recherche/favoris avant pagination et ne tronque plus à 100. Effacer les fiches achevées/en échec/annulées et leurs temporaires sur toutes les pages et filtres, favoris compris ; conserver les fichiers enregistrés, l’historique Chrome, les tâches actives/en pause et les baux vivants. Revalider atomiquement les états pour protéger une reprise concurrente.
+
+Demander les permissions nécessaires au bon moment. activeTab seul ne couvre pas forcément les CDN et iframes : expliquer l’octroi des domaines complémentaires et la possibilité de relancer une lecture. Choix révisé à la demande de l’utilisateur le 1 novembre 2026 : la détection automatique est activée par défaut et les hôtes HTTP/HTTPS sont demandés à l’installation. L’utilisateur peut suspendre la détection dans Alcydeo ou restreindre les sites dans Chrome. Ne pas utiliser debugger par défaut.
+
+Valider expéditeur, origine, onglet, frame et schéma des messages. Ne jamais accepter une URL ou des en-têtes arbitraires d’une page non autorisée. Si DNR est nécessaire, limiter et nettoyer les règles. Aucun code distant dans le contexte de l’extension.
+
+Le MVP refuse clairement les médias chiffrés non pris en charge. Ne pas contourner DRM, paywalls ou protections d’accès. La prise en charge ultérieure de HLS AES-128 hors DRM doit avoir un périmètre distinct et documenté. Exclure YouTube de la distribution cible prévue ici, sans inventer de justification juridique générale. Un blob: n’est pas une source téléchargeable universelle.
+
+Aucune télémétrie automatique. Les diagnostics restent locaux et sont expurgés des cookies, jetons et paramètres sensibles. Montrer le contenu du rapport avant un export ou envoi volontaire. Séparer les données de navigation privée, ne pas les conserver durablement et ne pas demander cet accès par défaut.
+
+7. CLOUD ET TV : GRATUITS CÔTÉ EXTENSION, FACULTATIFS
+
+Commencer par l’export de fichiers et métadonnées vers un emplacement choisi, éventuellement synchronisé par un outil existant de l’utilisateur. Ne pas promettre la synchronisation inter-navigateurs par browser.storage.sync : sa portée et ses limites dépendent du navigateur.
+
+Prévoir ensuite des connecteurs Drive, Dropbox, S3 et R2 uniquement via des flux d’authentification et capacités réellement supportés par leurs fournisseurs. Pas de compte Alcydeo ni de proxy central obligatoire. Un export nécessite un accès autorisé au fichier ou aux fragments : l’API downloads ne donne pas automatiquement le droit de relire n’importe quel fichier téléchargé. Utiliser le fichier produit, un sélecteur utilisateur ou un accès autorisé aux fragments conservés par l’extension.
+
+Permettre révocation, annulation et reprise quand le fournisseur le permet. Ne pas embarquer de secret confidentiel dans le bundle. Documenter la protection des jetons ; privilégier des accès courts et limités. Ne pas prétendre sécuriser durablement un secret par simple chiffrement avec une clé codée dans l’extension.
+
+Pour Chromecast, prévoir un sender HTTPS et un receiver compatible, sans charger son code distant dans l’extension. La TV doit accéder à la source ; dans cette V1 sans logiciel supplémentaire, signaler clairement les sources privées incompatibles plutôt que promettre un relais natif absent. AirPlay nécessite un prototype et des tests sur les plateformes ciblées ; ne pas l’annoncer universel sur Windows. Une page web facultative ne doit pas imposer un service payant au cœur local.
+
+8. AMÉLIORATIONS ET ORDRE DE LIVRAISON
+
+Lot 0 : prototypes HLS/DASH, fusion, persistance, verrouillage des tâches et limites de ressources ; définition de l’identité graphique et premières vues de la popup. Utiliser directement le nom, l’oiseau et la palette validés ; ne pas redemander ces choix. La contrainte sans compagnon et l’usage mixte sont confirmés.
+Lot 1 : Chrome installable, détection, fichiers directs, HLS/DASH VOD non chiffrés, assemblage, gestionnaire, réglages, bibliothèque locale et diagnostics. Interface aussi soignée que la référence, sans boutons simulés.
+Lot 2 : reprise robuste, formats de sortie et directs dans les limites mesurées du moteur retenu. Ajouter les sous-titres WebVTT/SRT fournis par la source, sélection des langues audio, téléchargement par lots et validation des fichiers. Tout le traitement reste dans Chrome ; publier les limites mesurées sur les vidéos longues et volumineuses.
+Lot 3 : exports cloud et TV validés, règles de nommage, profils de qualité, chapitres et métadonnées disponibles. Ces fonctions restent gratuites et facultatives pour les usages connectés.
+Lot 4 : finaliser les dix traductions, la qualité visuelle et les preuves, le README, le site statique GitHub Pages et le dossier Chrome Web Store. Préparer les builds et procédures de publication, sans les lancer automatiquement. Aucune parité complète ne doit être annoncée si certains lots restent incomplets.
+
+Conserver les améliorations approuvées : diagnostics utiles, confidentialité, accessibilité, bibliothèque locale, import/export, file d’attente, noms et dossiers personnalisables, maîtrise des ressources et qualité des fichiers.
+
+Ne pas ajouter à cette feuille de route les navigateurs exclus ni les fonctions de transcription/recherche dans le contenu parlé. Les sous-titres déjà fournis par la source restent dans le périmètre. Une synchronisation de favoris est distincte d’une sauvegarde de fichiers. La gratuité du logiciel est distincte de la capacité d’un fournisseur de stockage externe.
+
+9. TESTS ET CRITÈRES D’ACCEPTATION
+
+Utiliser des médias autorisés et fixtures locales : MP4 direct, HLS master/media, TS/fMP4, audio séparé, URI relatives, byte ranges, discontinuités, DASH multi-périodes et live glissant.
+
+Tester 403/404/429/5xx, expiration de session/URL, segment manquant, stockage plein, droits révoqués, redémarrage d’arrière-plan, popup fermée, gestionnaire fermé, deux gestionnaires concurrents, annulation et reprise. Vérifier les pistes et la durée du fichier final. Mesurer RAM, stockage et durée sur un corpus mixte : clips courts, cours longs, vidéos haute résolution et fichiers de plusieurs Go. Distinguer les résultats des fichiers directs, du remux segmenté et du réencodage ; ne pas extrapoler un test court à toutes les tailles.
+
+Tester l’absence de trafic vers un service Alcydeo ou de télémétrie pendant les usages locaux ; le trafic vers la source média reste évidemment nécessaire. Tester le refus des sources protégées non prises en charge, l’effacement des données privées et les rapports expurgés.
+
+Produire une matrice Chrome/moteur avec états validé, limité, à tester ou non pris en charge. Utiliser des tests qui chargent réellement l’extension dans Chromium/Chrome pour les parcours concernés ; une simple page web de démonstration ne valide pas une extension installée. Tester cloud et TV sur des comptes/appareils explicitement configurés ; marquer les tests indisponibles sans inventer de réussite.
+
+10. LIVRABLES ET MÉTHODE DE TRAVAIL
+
+Livrer :
+- Dépôt compilable, dépendances fixées et scripts de développement, build et tests.
+- Extension Chrome chargeable, avec son identité graphique et ses icônes définitives.
+- Moteur local embarqué dans l’extension et documentation de ses limites, sans logiciel à installer séparément.
+- README, architecture Mermaid, protocole des messages et machine d’états.
+- Documentation des permissions, données stockées, limites et suppression des données.
+- Inventaire des licences des dépendances et composants redistribués.
+- Résultats réels des tests, benchmarks et matrice de compatibilité.
+- Suivi des fonctions : implémentée, limitée, prévue ou à tester.
+
+Commencer par les prototypes et les décisions structurantes, puis construire une tranche fonctionnelle complète : détecter une vidéo, afficher ses qualités, télécharger, vérifier et retrouver le résultat. Continuer par lots. Faire les choix réversibles avec les critères ci-dessus et demander une précision uniquement si une contrainte réellement bloquante manque. Ne pas publier sur un Store sans instruction explicite. Ne pas annoncer la parité complète tant que des fonctions restent prévues ou non testées.
+
+11. IDENTITÉ, LOGO ET QUALITÉ VISUELLE OBLIGATOIRES
+
+Le niveau de finition doit être comparable à Video Downloader Plus 4.0.0, avec une structure d’interface similaire. L’utilisateur ne demande pas une interface générique de démonstration.
+
+Direction graphique :
+- Popup compacte proche des proportions de la référence, dont le CSS utilise une largeur de 525 px ; vérifier la hauteur disponible et le défilement dans Chrome.
+- En-tête avec logo et nom de l’extension, puis aperçu/miniature du média et informations de la page.
+- Liste de cartes ou lignes arrondies, regroupées par vidéo et qualité, avec titres lisibles, métadonnées secondaires, résolution et bouton Télécharger clairement prioritaire.
+- Actions secondaires discrètes : lecture, favori, bibliothèque, réglages et Cast lorsque disponible.
+- Palette neutre élégante, accents issus de l’oiseau retenu, typographie sans empattement soignée, espacements réguliers, bordures fines, ombres légères et états de survol/focus cohérents.
+- Thèmes clair et sombre de qualité équivalente, pas une simple inversion de couleurs.
+- Aucun bandeau Premium ni bouton d’achat ; employer cet espace pour des fonctions utiles comme la file d’attente et la bibliothèque.
+- Conserver la lisibilité des noms longs, tailles inconnues, erreurs et grandes listes. Ne pas transformer la popup en tableau de bord surchargé.
+
+Logo Alcydeo :
+- Révision visuelle demandée le 1 novembre 2026 : style cartoon années 1930 inspiré de Cuphead, contours encrés arrondis, un œil pie-cut, ailes souples et expressives. Révision utilisateur ultérieure : corriger le visage avec un profil cohérent et un seul œil visible ; retirer la flèche. Conserver le martin-pêcheur et la palette. Le SVG maître montre l’oiseau complet ; les petites icônes utilisent une tête simplifiée distincte. Préparer aussi des signatures avec nom et des exports haute définition pour la publication.
+- Créer un logo original de martin-pêcheur pour Alcydeo. La posture en piqué doit évoquer la récupération d’une vidéo. Ne pas ajouter de flèche ou autre symbole secondaire après la dernière révision utilisateur.
+- La posture en vol et le long bec suffisent à caractériser le martin-pêcheur ; privilégier la lisibilité du profil.
+- Ne pas se contenter d’un emoji, d’une photo ou d’un pictogramme générique recoloré.
+- Préférer une silhouette vectorielle simple, identifiable à 16 px, fonctionnant en clair, sombre et monochrome.
+- Livrer un SVG maître, une icône sans texte pour la barre Chrome, une version avec le nom pour l’en-tête et les PNG nécessaires au manifeste, notamment 16, 32, 48 et 128 px.
+- Le martin-pêcheur est bleu avec un accent orange ; sa tête et son long bec doivent rester identifiables à petite taille. Ne pas changer d’oiseau ni de nom sans nouvelle instruction.
+- Fournir une petite planche d’identité : logo, palette, typographie, icône claire/sombre et aperçu dans la barre d’outils.
+
+Contrôle visuel :
+- Avant de terminer, rendre et inspecter les états vide, détection en cours, une vidéo, plusieurs qualités, plusieurs vidéos, téléchargement en cours, succès, erreur et absence de permission.
+- Vérifier lisibilité, alignements, débordements, contrastes et navigation clavier aux dimensions réelles de la popup.
+- Montrer des captures de la popup et du gestionnaire ; relier l’interface à de vraies données et actions.
+- Reprendre les principes de présentation et le niveau de finition de la référence avec un code, un logo et des composants originaux.
+
+PALETTE VALIDÉE — À PARTAGER ENTRE EXTENSION, SITE ET README
+- Bleu principal : #0B70B5, boutons et identité.
+- Turquoise : #2DD4BF, accents secondaires.
+- Orange : #F28C28, poitrail/bec de l’oiseau et détails visuels.
+- Fond clair : #F6F9FC.
+- Fond sombre : #071B2D.
+- Surfaces sombres : #12293B.
+Créer des tokens sémantiques pour texte, surface, bordure, focus, succès, avertissement et erreur. Choisir des couleurs de texte lisibles sur les accents ; ne pas supposer que du blanc sur orange ou turquoise convient aux petits textes. Mesurer les contrastes. Les adaptations d’accessibilité conservent l’identité de cette palette.
+
+12. LANGUES ET LOCALISATION AUTOMATIQUE
+
+Langues et codes Chrome :
+- Anglais : en ; langue de repli, default_locale du manifeste.
+- Espagnol : es.
+- Français : fr.
+- Allemand : de.
+- Chinois simplifié : zh_CN.
+- Arabe : ar ; affichage RTL.
+- Russe : ru.
+- Portugais : pt.
+- Hindi : hi.
+- Ourdou : ur ; affichage RTL.
+
+Utiliser chrome.i18n avec _locales/<code>/messages.json et __MSG_...__ pour les champs localisables du manifeste. Localiser les libellés, menus, réglages, erreurs, états, notifications, labels accessibles et descriptions. Le nom propre Alcydeo reste identique.
+
+L’extension suit automatiquement la langue d’interface de Chrome, pas la langue de la page visitée. Employer chrome.i18n.getUILanguage pour les besoins de détection et Intl pour nombres/dates ; respecter les règles de repli régionales de Chrome et retomber sur l’anglais lorsque nécessaire. Prévoir des tests avec des locales régionales.
+
+Ne pas appeler une API de traduction à l’exécution et ne pas charger dix catalogues JSON manuellement à chaque ouverture. Utiliser la localisation native de Chrome. Aucun mélange de catalogues externes traduits à la volée.
+
+Maintenir une source de messages et des identifiants stables, avec commentaires de contexte et variables explicites. Contrôler la parité des clés, la validité des paramètres et l’absence de chaînes d’interface oubliées. Ne pas concaténer des fragments qui cassent l’ordre des mots. Gérer les pluriels avec une stratégie testée et les capacités réellement disponibles ; ne pas supposer que les messages Chrome exécutent un format ICU arbitraire.
+
+Tester chaque langue dans la popup, les options, la bibliothèque et le gestionnaire. Pour ar/ur : direction RTL, propriétés CSS logiques, focus et ordre des actions ; isoler les URL, résolutions et identifiants techniques qui restent LTR. Vérifier les débordements pour les libellés longs. Ne pas embarquer par défaut de lourdes polices universelles : privilégier les polices système ou un sous-ensemble local utile.
+
+Pour le site statique, préparer les mêmes dix langues avec routes explicites et sélecteur de langue. Une détection initiale légère des préférences du navigateur peut proposer ou sélectionner une langue disponible ; respecter un choix explicite et l’URL visitée, sans boucle de redirection. Les pages doivent rester lisibles sans ce script. Ne pas demander au navigateur de traduire automatiquement une documentation manquante en prétendant qu’elle est localisée.
+
+13. RAPIDITÉ ET RESSOURCES
+
+Ajout demandé le 1 novembre 2026 : proposer une option de téléchargement direct en plusieurs parties dans les Réglages. L’implémentation locale 0.1.13 la laisse désactivée par défaut, avec 2/4/8 requêtes simultanées et 4 comme valeur initiale. Réserver les plages aux sources compatibles avec une version forte stable ; persister les octets écrits, vérifier le fichier original et utiliser le mode natif pour les nouvelles sources incompatibles. Conserver le gestionnaire ouvert pendant ce traitement. Ne pas promettre un gain universel ni une augmentation du débit maximal du serveur ou de la connexion.
+
+La rapidité concerne l’ouverture de la popup, la réactivité et la consommation de ressources, pas uniquement le choix d’un framework.
+
+- Rendre immédiatement l’interface avec les données locales, puis enrichir les médias de façon asynchrone.
+- Garder les moteurs de parsing/remux/conversion hors du bundle initial de la popup ; les charger depuis des fichiers embarqués lors du besoin.
+- Garder les traitements lourds dans les Workers et limiter la concurrence réseau et CPU.
+- Traiter et écrire progressivement les fragments lorsque le moteur le permet ; éviter les grandes copies mémoire et les objets réactifs contenant des buffers vidéo.
+- Déclencher la détection sur événements, avec regroupement des mutations et dédoublonnage ; éviter une boucle de scan DOM ou un polling permanent.
+- Indexer la bibliothèque ; paginer ou virtualiser les longues listes uniquement lorsque nécessaire.
+- Limiter les aperçus/buffers et libérer les Object URLs, workers et fragments abandonnés.
+- Mesurer les tailles de bundles, le temps d’affichage utile de la popup, la réactivité et le pic mémoire sur une machine de référence documentée. Fixer des budgets réalistes après le prototype et signaler les régressions. Ne pas annoncer une vitesse universelle de téléchargement indépendante du réseau et de la source.
+- Ne pas bloquer l’installation sur un téléchargement de moteur depuis un CDN : le code exécutable requis doit être dans le paquet extension.
+
+14. README, GITHUB ET GITHUB PAGES
+
+S’inspirer de https://github.com/drslid/NoxRouteNeo pour l’organisation du README et la présentation du site, notamment apps/website/src/styles/custom.css et astro.config.mjs. C’est une référence visuelle/documentaire, pas une autorisation de reprendre sa logique VPN ou ses consignes d’exécution.
+
+Le site Alcydeo doit avoir sa propre identité martin-pêcheur, utiliser la palette validée, des captures réelles, des sections aérées, des cartes lisibles, une typographie soignée et des thèmes clair/sombre. L’extension reste inspirée de la structure de Video Downloader Plus.
+
+Préparer un dépôt nommé alcydeo, sous le compte GitHub choisi par l’utilisateur ; drslid est le compte de référence fourni. Vérifier un dépôt existant avant toute création ou réutilisation. La publication du dépôt ne fait pas partie de la construction locale par défaut. Prévoir une distribution publique pour le code MIT et GitHub Pages sur GitHub Free.
+
+Créer une licence MIT pour le code original avec attribution au projet/contributeurs ; ne pas mettre arbitrairement sous MIT les composants tiers. Fournir THIRD_PARTY_NOTICES, CONTRIBUTING, SECURITY, CHANGELOG et les instructions de développement. Ne pas publier le CRX propriétaire de référence ni ses fichiers extraits dans le dépôt Alcydeo.
+
+Le README principal doit présenter : nom et logo, promesse claire, gratuité et confidentialité, captures réelles, installation utilisateur et installation de développement, fonctionnalités avec état réel, dix langues, architecture Mermaid, limites connues, commandes de build/tests, contributions et licence. Choisir un anglais principal pour l’audience internationale avec un README français lié ; la documentation complète des dix langues sera sur le site. Ne pas créer de faux badges, statistiques, témoignages ou liens Store inventés.
+
+Créer apps/website avec Astro + Starlight en sortie statique et sans backend. Prévoir accueil, installation, utilisation, réglages, permissions/confidentialité, compatibilité/limites, dépannage, changelog et contributions. Les pages de confidentialité doivent correspondre aux comportements réels, y compris stockage local, envois facultatifs et hébergeurs/fournisseurs concernés. Ne pas promettre l’absence de tout journal chez un hébergeur tiers.
+
+Pour le cas proposé drslid/alcydeo, la cible Pages serait https://drslid.github.io/alcydeo/ ; ce n’est pas une URL déjà publiée. Configurer site/base à partir du propriétaire et du dépôt réels. Préserver la casse du chemin si le dépôt diffère. Vérifier les liens, assets, locales, images et pages profondes avec ce sous-chemin, pas uniquement à la racine localhost. Aucun domaine personnalisé n’est requis.
+
+Préparer un workflow GitHub Actions de build et un workflow Pages déclenchable manuellement avec workflow_dispatch. Limiter les permissions au nécessaire par job ; le job de déploiement utilise l’environnement github-pages et les droits Pages/OIDC appropriés. La configuration Settings > Pages > Source > GitHub Actions sera une étape documentée. Ne pas activer ou déclencher un déploiement pendant la seule préparation.
+
+Un site GitHub Pages n’est pas le lieu d’hébergement de code exécutable téléchargé par l’extension. Le site ne doit pas exposer de secret, servir de proxy média ou devenir un backend implicite. Une éventuelle page Cast reste un module distinct et ne doit pas réduire la confidentialité ni devenir un prérequis pour les téléchargements locaux.
+
+15. PRÉPARATION CHROME WEB STORE
+
+Préparer un ZIP de production installable, pas un dépôt source entier ni un CRX comme fichier à soumettre. manifest.json doit se trouver à la racine du ZIP. Inclure uniquement les fichiers requis : manifeste MV3, JS/CSS compilés, images/polices locales nécessaires, dix catalogues, éventuels WASM/workers et mentions applicables. Exclure secrets, caches, node_modules de développement, données privées, fixtures et références propriétaires.
+
+Ne pas confondre l’extension et son site : une page GitHub Pages ne donne pas à l’utilisateur une installation officielle dans Chrome. Le canal prévu pour cette installation est le Chrome Web Store. GitHub peut fournir le source MIT et des artefacts de développement clairement identifiés.
+
+Préparer docs/publication/ avec :
+- Procédure de création/configuration du compte développeur Chrome Web Store, avec frais d’inscription uniques éventuels vérifiés au moment de publier ; ces frais éditeur ne changent pas la gratuité d’Alcydeo pour l’utilisateur.
+- Vérification du manifeste : nom, description localisée, version, icônes, default_locale, permissions et CSP.
+- Description courte et longue dans les dix langues, sans revendications non validées ; respecter les limites et formats actuels du Store après vérification officielle.
+- Icônes et captures réelles aux dimensions demandées, pour les thèmes pertinents ; éviter une capture qui montre des médias tiers non autorisés.
+- Déclaration d’usage unique de l’extension, justification de chaque permission et déclaration fidèle de l’utilisation des données.
+- Page de confidentialité et contact/support ; utiliser un contact fourni par l’utilisateur, sans inventer d’adresse. L’URL Pages et l’URL Store réelles seront renseignées quand disponibles.
+- Instructions de test pour les examinateurs et médias de démonstration autorisés, sans compte fictif ni secret dans le dépôt.
+- Procédure d’upload du ZIP, soumission à l’examen puis publication manuelle différée si souhaitée ; pas de garantie de délai ou d’acceptation Google.
+- Procédure de mise à jour : version supérieure, nouveau ZIP, changelog, revalidation et limites de migrations de données.
+
+Tout JavaScript et WebAssembly exécuté dans le contexte extension doit être embarqué et compatible avec les règles MV3/CSP. Le chargement différé est local, pas un téléchargement de code depuis GitHub Pages ou un CDN. Vérifier les dépendances et les éventuelles capacités WASM/multithread avant d’ajouter des permissions ou en-têtes.
+
+Préparer des commandes documentées, par exemple : dev:chrome, typecheck, lint, test, test:e2e, build:chrome, zip:chrome, docs:build et docs:preview. Les implémenter réellement et n’annoncer leur réussite qu’après exécution appropriée. La CI doit construire l’extension et le site, contrôler le ZIP, les catalogues et les liens. Les tests lourds de gros fichiers/appareils peuvent être séparés et explicitement marqués.
+
+Les builds CI peuvent produire des artefacts de contrôle. La création d’une Release publique, le dépôt sur le Store, la soumission à examen et le déploiement Pages sont des actions distinctes. Préparer d’abord les résultats locaux reviewables ; n’exécuter une publication externe que lorsqu’elle est explicitement demandée. Préférer une première soumission manuelle au Store ; aucune clé Google n’est requise pour coder ou préparer le ZIP.
+
+16. EXÉCUTION AVEC CODEX
+
+Au démarrage, lire AGENTS.md, cette spécification et les références indiquées. Vérifier l’environnement local, les instructions actives et l’état Git sans écraser des travaux existants. Utiliser un Node LTS compatible avec les versions de WXT/Astro choisies, pnpm, Git et Chrome ; vérifier les versions réelles au lieu de réutiliser aveuglément le Node système.
+
+Établir un plan bref et commencer le lot 0 puis une tranche fonctionnelle complète. Continuer les travaux locaux autorisés sans demander à nouveau le nom, la palette, les langues, le modèle gratuit ou l’absence de compagnon. En cas d’incompatibilité technique, montrer les preuves et une alternative dans le périmètre ; ne pas ajouter silencieusement un service distant payant ou un logiciel natif.
+
+La réussite finale demande du code fonctionnel, l’identité et les dix langues, des preuves de tests, le site généré, le ZIP et le dossier de publication. Distinguer les capacités terminées, limitées, prévues et non testées. Une maquette esthétique seule, un ZIP qui compile ou un plan ne constituent pas une extension complète.
+
+
+RÉVISION UTILISATEUR DU 3 NOVEMBRE 2026 — 0.1.30
+
+Bibliothèque remplace la séparation Téléchargements/Bibliothèque. Sélection par fiche et par page ; actions groupées supprimer les fiches, convertir, compresser, assembler et envoyer au cloud. Conversion d’un fichier à la fois, originaux conservés. Miniatures réelles extraites à un instant aléatoire du fichier accessible, sinon icône neutre. Dix langues sélectionnables par drapeaux dans la popup et le gestionnaire, sans rechargement. Découpe visuelle : lecteur, filmstrip, poignées de début/fin, prévisualisation de sélection et temps précis. Assemblage visuel : liste de clips, vignettes, durée, réordre par glisser/déposer et boutons clavier. Réglages globaux séparés pour conversion et compression.
+
+Accès aux enregistrements depuis la popup : flux HLS combiné non chiffré, arrêt et sauvegarde MP4 ; capture d’onglet pour les autres lectures accessibles. Ne pas promettre toutes les sources/DRM. Capture native tabCapture explicitement déclenchée depuis l’action Chrome, propriétaire persistant, audio local préservé ; 1080p à 30 fps par défaut, 720p et source jusqu’à 4K disponibles, débit 8–32 Mb/s, VP9 si disponible sinon VP8, audio Opus à 192 kb/s. La résolution de sortie ne recrée pas les détails absents de la source. Stylo local à plusieurs couleurs, épaisseur, annuler/effacer ; nettoyage à l’arrêt.
+
+Cloud : retirer Google Drive et OneDrive, à la demande explicite de l’utilisateur après explication de l’enregistrement d’applications OAuth. Conserver Gofile et pCloud. Accepter les liens modernes e.pcloud.com/#/puplink?code=… avec région EU déterminée, sans publier le code réel de l’utilisateur.
+
+TV : depuis la popup, un clic Caster sur une source détectée transmet le geste à un contrôleur persistant de l’extension et appelle le sélecteur natif. Conserver l’onglet Diffusion TV. Pour les fichiers locaux, réutiliser un téléchargement connu ou un chemin absolu explicitement fourni ; à défaut, copie Enregistrer sous annoncée. Ne pas annoncer la lecture matérielle sur Shield sans l’avoir vérifiée. AirPlay indisponible sur Chrome Windows. Aucun service ou compagnon ajouté.
+
+
+RÉVISION DU 3 NOVEMBRE 2026 — 0.1.31
+
+Reconnaître les directs YouTube dans le build local, y compris les lecteurs blob/SABR sans manifeste HLS téléchargeable. Un HLS exposé et compatible utilise l’enregistreur de flux existant ; à défaut, une proposition Capture d’onglet lance le parcours natif depuis la vraie action Chrome. Ne pas présenter une page YouTube comme fichier média. Les contenus protégés demeurent exclus, aucune génération de jeton ou contournement d’accès. isLiveContent seul peut décrire une rediffusion : conserver son parcours VOD. Le build Store conserve l’exclusion YouTube.
+
+Corriger le chargement Cast interminable : sonder le statut du récepteur pendant le chargement, borner les épisodes BUFFERING, ignorer les statuts tardifs après erreur et garder une relance manuelle. Une relance peut relire une source détectée mise à jour, avec les mêmes contrôles et une identité média préservée ; elle n’invente pas de nouvelle URL signée. Ne pas simuler une réception matérielle sur Shield.
+
+
+RÉVISION DU 3 NOVEMBRE 2026 — 0.1.32
+
+Un clic Télécharger doit aller jusqu’au fichier enregistré, selon le mode choisi dans Réglages. La validation du temporaire ne constitue pas 100 % du téléchargement ; distinguer la phase d’enregistrement Chrome. Après perte du signal final d’un Worker, le gestionnaire reprend automatiquement l’enregistrement d’un résultat vérifié sans erreur. Sérialiser les exports concurrents et rapprocher un téléchargement créé avant perte de sa réponse pour éviter les doublons. Une annulation Enregistrer sous conserve le résultat et présente Enregistrer le fichier pour une reprise explicite, sans nouvel assemblage/transfert source. Une invocation Chrome incertaine demande un contrôle/reprise explicite après rapprochement, sans boucle automatique.
+
+
+RÉVISION DU 3 NOVEMBRE 2026 — 0.1.33
+
+Ajouter MegaUp comme destination à icône pour le partage sans compte. Le protocole du formulaire public n’est pas une API publique documentée : conserver le statut expérimental. Lire sa configuration comme données bornées, préserver son URL exacte, n’exécuter aucun script distant et ne copier aucun cookie/compte personnel. Borner destinations, tailles et concurrence, envoyer les parties séquentiellement, contrôler le lien final et la taille déclarée si fournie. Arrêter sur page changée/protection/réponse invalide, sans fabriquer de signature. Une reprise explicite redémarre avec une nouvelle configuration. Séparer tests simulés et téléversements réels ; aucune publication automatique.
+
+
+RÉVISION DU 3 NOVEMBRE 2026 — 0.1.34
+
+Ajouter 1fichier comme destination de partage par icône, en conservant Gofile, MegaUp et pCloud. Utiliser l’envoi web documenté sans authentification, pas les fonctions de gestion de compte payantes. Initialisation anonyme puis fichier multipart à taille connue ; ignorer la redirection et lire uniquement le rapport JSON du nœud initial validé. Aucun script distant, cookie/compte copié ni création de lien de suppression. Le lien retourné, le nom et la taille doivent correspondre ; ne pas présenter le rapport comme une vérification indépendante du stockage distant. Progression indéterminée durant l’envoi, annulation effective, reprise explicite avec un nouvel identifiant depuis le début. Stockage non garanti au-delà de 15 jours pour les non-inscrits selon l’aide du fournisseur ; disponibilité parfois différée après rapport. Statut expérimental tant qu’aucun transfert réel n’est validé. Aucun téléversement réel ni publication externe dans ce lot.
+
+
+RÉVISION DU 3 NOVEMBRE 2026 — 0.1.35
+
+Ajouter Turbobit comme destination de partage sans compte via torbobit.net, fourni par l’utilisateur. L’API officielle CostAction exige une clé ; conserver ce parcours distinct et n’introduire aucun compte obligatoire. L’initialisation JSON du site invité répond sans cookie/autorisation ; lire une destination validée fraîche par fichier, aucun script distant exécuté ni copié. Respecter par prudence la limite héritée publiée de 200 Mo et signaler la conservation visiteur jusqu’à sept jours. Accepter un acquittement par identifiant valide, contrôler le nom/la taille lorsqu’ils sont fournis, construire uniquement le lien de partage standard sur le domaine attendu. Ne pas appeler cela un contrôle indépendant du fichier distant. Progression indéterminée, requêtes bornées, cookies omis et redirections refusées. Annulation conserve l’original ; reprise explicite intégrale sur une nouvelle destination. Statut expérimental, aucun transfert réel validé ni publication externe.
+
+
+RÉVISION UTILISATEUR DU 3 NOVEMBRE 2026 — 0.1.36
+
+Ajouter les playlists YouTube dans le build local : une fiche playlist, toutes les vidéos accessibles cochées, désélection avant départ et téléchargement ordonné dans un dossier portant le titre de la playlist. Noms numérotés par position originale et titre vidéo, sans écrasement. Charger toutes les pages de métadonnées avant le départ, conserver les indisponibles visibles et non sélectionnables. Exécuter séquentiellement dans le gestionnaire persistant avec un onglet YouTube muet détenu, sans API player supplémentaire ni contournement d’accès. Fermeture de la popup sans arrêt ; gestionnaire fermé = pause récupérable. La progression compte seulement les fichiers réellement vérifiés et sauvegardés. Refus isolés puis suite du lot, reprise des seuls échecs et conservation des fichiers déjà sauvés. Paramètres Enregistrer sous et répertoire existants respectés. Garder le build Store sans YouTube ; détailler limites, données locales et tests réels/simulés dans docs/PLAYLISTS.md.
+
+
+RÉVISION UTILISATEUR DU 3 NOVEMBRE 2026 — 0.1.37
+
+Corriger la détection des posts TikTok, dont le lien fourni 7604511060657278230. Lire les métadonnées natives du post exact même si le lecteur est blob ; proposer les vraies qualités sous le titre de la vidéo et exclure l’animation de connexion. Le transfert contextualisé utilise le cadre TikTok autorisé, sans signature modifiée ni en-tête d’origine forgé : échantillon, écriture progressive dans OPFS via le Worker, validation et sauvegarde automatique. La popup peut fermer, la source et le gestionnaire restent ouverts. Annulation réelle, reprise intégrale et refus de toute page HTML. Conserver les dix langues, permissions existantes, blacklist et limites publiées ; pas de promesse de tout fil/direct/format TikTok. Disponible local et Store, sans changement à l’exclusion YouTube Store.
+
+RÉVISION UTILISATEUR DU 3 NOVEMBRE 2026 — 0.1.38
+
+Corriger les posts X.com/Twitter : lire le catalogue natif du post exact, y compris les JSON du nouveau bootstrap qui retire ses scripts. Aucun JavaScript source évalué, compte/API ajouté ou en-tête/cookie/signature forgé. Proposer le fichier MP4 complet et ses qualités plutôt que des playlists techniques audio/vidéo séparées ; conserver les vidéos multiples distinctes, le vrai titre et les refus natifs. Utiliser les moteurs, permissions, blacklist et validations existants ; distinguer sauvegarde Chrome, sélection explicite de vérification et décodage indépendant réel. Ne pas promettre tous les fils/directs/privés.
+
+Pour le lien de playlist fourni ultérieurement, limiter strictement l’essai à deux musiques. Ce lien est un mix YouTube évolutif : proposer un instantané des titres actuellement chargés et signaler sa portée dans les dix langues, sans chargement de suggestions futures. Les playlists finies gardent leur catalogue complet ; seules les cases sélectionnées démarrent. Conserver l’exclusion YouTube du Store et l’arrêt explicite sur refus sourceRestricted.
+
+
+RÉVISION UTILISATEUR DU 5 NOVEMBRE 2026 — 0.1.41
+
+Harmoniser la tête du martin-pêcheur dans la popup et les autres supports : une seule source de géométrie pour illustration, portrait et icônes. Retirer le liseré blanc de détourage. Garder l’illustration transparente et employer au besoin un support bleu clair arrondi, distinct du contour, pour la lisibilité en clair/sombre. Conserver la palette, le profil à un seul œil et l’absence de flèche.
+
+
+RÉVISION UTILISATEUR DU 5 NOVEMBRE 2026 — 0.1.42
+
+Supprimer le message récurrent demandant d’autoriser des domaines sources, ainsi que l’ancien parcours de validation par domaine dans l’extension. La détection standard utilise les accès HTTP/HTTPS déclarés à l’installation. Respecter les restrictions réelles imposées dans Chrome, sans fausse invite sur les pages internes, et garder une reprise normale si un accès réellement nécessaire est retiré.
+
+RÉVISION UTILISATEUR DU 5 NOVEMBRE 2026 — 0.1.43
+
+Améliorer les vidéos découpées, notamment le lien VK Video fourni. Corriger les échappements XML des URL signées DASH, regrouper uniquement les fragments effectivement reliés au manifeste et garder le choix de qualité avec contrôles séparés. Assembler l’audio et la vidéo par le moteur local existant, vérifier puis enregistrer le fichier automatiquement. Distinguer les profils HLS/DASH validés des DRM, directs, périodes multiples ou autres variantes non prises en charge ; aucune promesse tous sites/formats. Pas de compagnon, API distante ajoutée, modification de signature ni publication externe.
+
+RÉVISION UTILISATEUR DU 5 NOVEMBRE 2026 — 0.1.44
+
+Supprimer l’action manuelle « Vérifier le fichier enregistré », jugée superflue par l’utilisateur ; garder « Afficher dans le dossier ». Une copie native confirmée par Chrome est terminée sans demander sa sélection. Conserver les contrôles automatiques des sorties assemblées/conversions et le refus des fausses sources HTML. Ne pas afficher une validation de contenu qui n’a pas eu lieu.
+
+RÉVISION UTILISATEUR — 0.1.45 : retirer le code de langue à côté du drapeau dans le sélecteur fermé. Seul le drapeau reste visible ; menu des dix langues et mode automatique conservés.
+
+
+RÉVISION UTILISATEUR DU 6 NOVEMBRE 2026 — 0.1.46
+
+Corriger les propositions redondantes/invalides sur la page Coflix fournie : conserver une qualité par plan HLS VOD équivalent réellement contrôlé, la source native et les bonnes pistes audio ; ne pas confondre une page HTML de téléchargement avec un média. Tester un fichier complet. Étendre le réglage de connexions parallèles aux ressources DASH VK compatibles, sans modifier les signatures, en bornant mémoire/concurrence et en exigeant un validateur fort pour recombiner des plages d’une même ressource. Distinguer la simultanéité des pistes de leur découpage et publier les mesures réelles, sans promesse de gain universel.
+
+
+RÉVISION UTILISATEUR DU 6 NOVEMBRE 2026 — 0.1.47
+
+Une vidéo téléchargée, assemblée et contrôlée doit être enregistrée automatiquement dans le mode automatique, sans demander un second clic Enregistrer le fichier. L’absence de prise en charge dans le lecteur HTML local ne doit pas bloquer l’export d’un résultat déjà validé. Récupérer la copie temporaire intacte des anciennes tâches bloquées par ce contrôle, sans retéléchargement. Garder le choix Enregistrer sous, son annulation explicite, le rapprochement d’envoi incertain et le refus d’export de fichiers absents ou incomplets.
+
+
+RÉVISION UTILISATEUR DU 6 NOVEMBRE 2026 — 0.1.48
+
+Ajouter à Outils vidéo la sélection à la souris d’une zone de l’image et l’export de cette zone dans une nouvelle vidéo. Recadrage visuel déplaçable/redimensionnable, aperçu, contrôles accessibles et dix langues ; conserver le son, la durée et le fichier original. Traitement local dans le moteur existant et nom -cropped, sans nouveau service ni publication externe.
+
+
+RÉVISION UTILISATEUR DU 6 NOVEMBRE 2026 — 0.1.49
+
+Reproduire les six pages signalées dans un vrai Chrome et distinguer un lecteur non démarré, un refus de source et un défaut de détection. Sur Apocalypse, regrouper le master vidéo+audio et ses feuilles natives seulement après concordance des identités contrôlées de chaque piste, dans la même page et le même cadre. Conserver qualité, sélection, deux adresses natives intactes et langues distinctes. Les alias audio restent séparés des alias vidéo ; une preuve contradictoire ou plus récente d’un autre transport n’est pas écrasée. Un refus du transport audio choisi invalide la variante, sans condamner un alias ou une alternative déclarée dont l’accès reste à contrôler.
+
+Préparer un bilan expurgé qui distingue les essais 48 et 49, le mode graphique du mode sans interface, les métadonnées/échantillons d’un transfert complet et les fixtures originales des pages tierces. Aucun film complet public n’est téléchargé dans ce lot. Les pistes de diagnostic local et de filtrage prudent des publicités restent des propositions ; aucun contournement, nouveau service ou publication externe. Voir docs/DETECTION-SITES.md et docs/COFLIX.md.
+
+
+RÉVISION UTILISATEUR DU 6 NOVEMBRE 2026 — 0.1.50
+
+Prendre en charge les trois pages Odysee, TikTok et Instagram fournies. Examiner leurs lecteurs natifs dans Chrome avec le bloqueur de test, corriger seulement les défauts reproduits et distinguer lecture, échantillons, enregistrement et décodage complet. Instagram doit se limiter au Reel exact et ses vrais fichiers complets, sans recommandations ni fragments préparatoires. Respecter les accès et refus natifs ; pas de signature/API fabriquée.
+
+Éviter le compteur provisoire passant de neuf vidéos candidates à une seule valide : les propositions ordinaires et leur badge n’incluent que les sources contrôlées, les autres restent internes. Contrôler en arrière-plan sans ouvrir la popup, avec concurrence, budgets par page et échéances bornés, reprise après worker/navigation/réglages, état global d’analyse et choix de qualité préservé. Les capacités locales particulières YouTube/SABR, playlists et captures conservent leurs statuts et limites explicites.
+
+Ajouter le contrôle des dimensions et tailles disponibles : métadonnées du fichier accessibles par préfixe/plages bornées, totaux HTTP cohérents, distinction tailles exactes source/estimées/inconnues. Ne pas confondre hauteur originale d’envoi et hauteur de la version téléchargeable ; ne pas annoncer le poids d’un init ou d’un fragment comme celui de la vidéo. Les estimations sont marquées≈. Ne pas prétendre décoder tout un fichier lors d’un précontrôle ni précharger une vidéo entière pour lire sa résolution. Le test réel complet reste séparé des sondes et des fixtures.
+
+
+RÉVISION UTILISATEUR DU 6 NOVEMBRE 2026 — 0.1.51
+
+Reprendre l’absence de détection TikTok et l’arrêt Odysee signalés après50. Séparer le chargement direct, la navigation interne, le catalogue retiré et les refus HTTP du CDN ; ne pas présenter un essai local réussi comme la reproduction de l’environnement utilisateur. Tester aussi un Chrome Windows de laboratoire isolé, sans manipuler le profil personnel. Conserver un catalogue TikTok minimal uniquement pour le post, la page et le cadre exacts lorsque le site retire ses scripts natifs ; invalider une route ou un refus explicite, sans appel API supplémentaire ni conservation du JSON brut.
+
+Les téléchargements segmentés gardent leur première cause réelle avant arrêt des requêtes voisines. Une pause/annulation utilisateur reste prioritaire. Les réponses429 épuisées indiquent une attente serveur, sans augmenter les retries, modifier les URL ou contourner une limite. Conserver les fragments confirmés et distinguer les sorties réellement produites des simples sondes.
+
+Dans Découper, rendre les temps de début/fin directement modifiables près du lecteur. Accepter secondes, m:ss ou h:mm:ss et jusqu’à trois décimales ; synchroniser poignées, lecteur et champs, conserver une frappe partielle sans déplacement imprévu, refuser l’export vide/inversé/hors durée. Conserver son et original, nom -trimmed et dix langues/RTL. La précision de saisie ne promet pas un découpage plus fin que les images/échantillons du codec.
+
+
+RÉVISION UTILISATEUR DU 8 NOVEMBRE 2026 — 0.1.52
+
+L’utilisateur précise que la vidéo TikTok ne produit aucune carte. Ajouter un repli de catalogue depuis les métadonnées natives déjà attachées au lecteur React, uniquement pour un cadre dont le lecteur de scripts isolé retourne une absence (undefined ou null sérialisé par Chrome) ; ne jamais remplacer un catalogue vide/refusé. Lire en MAIN sans hook/API et renvoyer seulement un JSON d’item minimal vers le parseur existant isolé, avec retain=false et aucune rétention globale du lecteur. Relire l’état à chaque scan. Conserver ID exact du post, description bornée, restrictions et champs vidéo utiles ; exclure auteur, statistiques et props brutes. Un refus privé/statut non nul lié au post exact reste prioritaire sur une copie publique ancienne.
+
+Limiter cette lecture à quatre vidéos, seize ancêtres par vidéo, 128 noms propres par élément et 48 retours de fibres. Seuls les descripteurs propres de données et memoizedProps sont admis, puis les chemins children/props/detail/itemInfo/itemStruct/item/videoInfo/awemeInfo/data ; aucun getter personnalisé, fonction applicative, pendingProps, alternate, hook, ref ou globalstore. Tableaux de 64 entrées, profondeur 10, 2 000 visites ; copie des champs vidéo à schéma fixe, 24 lignes de débit et 3 URL par liste. Cette observation d’implémentation n’est pas une API React/TikTok publique et stable ; un autre schéma reste non confirmé sans inventer de source.
+
+Reprendre le téléchargement TikTok signalé et examiner des méthodes GitHub comme données, sans exécuter ou recopier du code tiers ni ajouter de backend/compagnon. Les recherches épinglées yt-dlp et ttsorter mettent en évidence les alternatives CDN déjà présentes dans les UrlList natives. Conserver au plus trois URL exactes par format dans le catalogue borné à 24 formats, sans modifier signatures, paramètres, origines ou accès. Une seule proposition par vidéo, qualités conservées ; priorité AVC à résolution égale dans le regroupement TikTok uniquement.
+
+Échantillonner les alternatives dans le vrai cadre source avec une échéance partagée de huit secondes et deux contrôles actifs au plus. Attacher chaque preuve à l’URL réellement contrôlée ; ne pas rendre une alternative prête parce qu’une autre adresse l’était. Conserver les incertitudes et relire URL/preuve ensemble avant création de la tâche. Un repli de téléchargement n’est permis qu’à l’ouverture, avant lecture du corps, après contrôle du préfixe média et d’une taille totale exacte cohérente avec la sélection puis la réponse complète. Aucun mélange de corps, reprise de plages inventée ou changement silencieux de qualité ; conserver validation locale et sauvegarde automatique.
+
+Vérifier propriétaire/bail, état, post/page/cadre, route, permissions et blacklist actuelle à chaque alternative. Respecter pause/annulation et les refus du catalogue. Ne pas tourner de CDN après HTTP429 ; conserver credentials include et les en-têtes normaux du navigateur. Aucun signer, nouvelle API de lecteur, cookie recopié, mode no-cors, exécutable distant ou permission supplémentaire.
+
+Distinguer les baselines 51, intermédiaires 52 et runtime final 52 dans les rapports. Le final Windows produit un unique MP4 HEVC/AAC de 2 956 190 octets entièrement décodé 1080×1920/17,801134s, après détection naturelle puis retrait artificiel des scripts/cache. Cette injection de panne ne reproduit pas la session personnelle. Médias/captures publics, URL CDN, JSON brut et profils restent ignorés et exclus des livrables ; aucune publication externe.
+
+Corriger la restauration des observateurs : relire les IDs d’onglets, leur page/politique/époque actuelle, sonder les documentIds et cibler ces documents exacts. Un ancien about:blank ou une recharge à URL identique ne doit pas recevoir le nettoyage d’un autre document. Les scans planifiés attendent la politique avant de lire l’onglet et vérifient URL/politique/époque avant effacement, sans attendre la restauration des autres pages. Conserver trois travaux de restauration et le regroupement de 200 ms.
+
+Révision validée par le besoin utilisateur — 0.1.53, 8 novembre2026
+L’utilisateur confirme que TikTok reste absent en0.1.52 alors que Video Downloader Plus le détecte dans sa session. Corriger les incompatibilités reproduites du contrôle sans supprimer la validation préalable : CORS anonyme après échec fetch opaque, GET ordinaire après refus Range405/416, taille inconnue si Content-Range non exposé. Réessais strictement bornés, URL native inchangée, aucun contournement d’un refus HTTP lisible. Conserver le mode contrôlé jusqu’au transfert. Ajouter un diagnostic local explicite, visible et copiable depuis la popup vide, sans donnée identifiante ni réseau supplémentaire, dans les dix langues et RTL. La validation de fixtures ne vaut pas résolution constatée dans la session utilisateur. Aucune publication externe.
+
+## Bibliothèque — actions compactes 0.1.54
+
+Révision utilisateur : sur chaque fichier, afficher une seule rangée de six icônes dans cet ordre : Découper, Recadrer, Assembler, Convertir, Compresser, Afficher dans le dossier. Infobulles et noms accessibles traduits dans les dix langues ; aucune étiquette visible dans cette rangée. Assembler ouvre l’éditeur avec le fichier disponible préchargé et conserve ce clip lors de l’ajout des suivants. Pour un fichier natif inaccessible, garder le sélecteur explicite existant. Les cinq outils vidéo sont désactivés sur l’audio, le dossier reste désactivé sans copie Chrome enregistrée. Les tâches actives/en erreur conservent leurs commandes de reprise/arrêt/enregistrement ; suppression et Cloud des fichiers sont accessibles par sélection, Cast par les parcours TV/popup existants. Ne pas modifier les moteurs médias, permissions ou données conservées pour cette simplification.
+
+## Cloud direct depuis la Bibliothèque — 0.1.55
+
+Le clic Cloud sur la sélection ouvre directement la page Cloud et ses fournisseurs, sans dialogue Fichiers sélectionnés ni confirmation intermédiaire. Relire les fichiers accessibles en arrière-plan ; afficher les copies manquantes dans la page avec un sélecteur explicite. Aucun nouvel envoi/préparation de job avant Envoyer. Conserver noms réels, associations fichier/tâche, accès natifs facultatifs et verrous acquire/renew/release pendant la copie progressive vers OPFS. Chaque ligne garde son identifiant stable ; une suppression/remplacement ne décale pas le propriétaire d’une autre copie. Ignorer les résolutions tardives après changement de sélection, suppression ou fermeture. Au clic Envoyer, figer le lot et garder la préparation active pour tout ce lot : une nouvelle sélection ne peut être consommée par l’ancien envoi. Ne retirer que les lignes effectivement préparées. Les fournisseurs, protocoles et protections existants restent inchangés ; tests d’envoi interceptés, aucune publication externe.
+
+## 1fichier et erreurs Cloud — 0.1.56
+
+Défaut reproduit sans fichier : l’API anonyme renvoie ru-3.1fichier.com, refusé par le parseur limité à upN. Accepter seulement les familles natives upN et ru-N bornées (N positif, quatre chiffres maximum), hôte nu exact sous1fichier.com, identifiant alphanumérique10 inchangé ; garder refus des ports/schémas/destinations étrangères, cookies omis et redirections refusées. Docs officielles : serveur variable selon charge ; aucune liste universelle inventée. L’API réelle a fourni ru-3 par curl puis up3 dans Chrome, à distinguer des transferts simulés. Aucun fichier réel envoyé ni identifiant de session persisté.
+
+Résoudre les erreurs cloud par clé directe, puis err_code, puis cloudNetwork traduit ; dix langues et mode automatique. Le message d’initialisation indique « lors de cette tentative ». Les nouvelles tâches1fichier seules portent uploadAttempted=false ; persister true avant le premier corps FormData, après contrôle état/propriétaire/arrêt et avant fetch. Ne jamais remettre false sur reprise. Masquer l’avertissement de doublon uniquement pour false explicite ; anciennes tâches undefined et tentatives précédentes true restent prudentes, même à zéro octet ou après nouvel échec d’initialisation. Aucun URL/token/en-tête/session supplémentaire stocké.
+
+## Cloud multiple et liens Turbobit — 0.1.57
+
+Ajouter un bouton explicite « Envoyer sur tous les clouds sans configuration » pour Gofile, MegaUp, 1fichier et Turbobit. pCloud garde son envoi individuel avec lien de dépôt. Aucune préparation ni requête fournisseur avant le clic ; figer fichiers et destinations au départ. Un seul transfert cloud actif, copies OPFS progressives et limites propres à chaque fournisseur ; un dépassement ou échec ne bloque pas les autres destinations. Garder une fiche et reprise indépendantes par destination. Après échec de préparation locale, retenir les destinations déjà préparées et ne relancer que celles manquantes ; une nouvelle sélection n’est pas consommée par un ancien clic. Conserver l’original, les protections de bail/arrêt et l’incertitude des reprises réseau existantes. Dix langues, RTL, clavier et mises en page étroites.
+
+Corriger le lien standard Turbobit en https://torbobit.net/<id>.html, conformément au constructeur/route du client natif observé comme données. Réparer localement les anciens liens exacts sans suffixe du seul fournisseur Turbobit, dans la même transaction, sans modifier état/horodatage ni consulter le fournisseur. Ne pas élargir la validation des réponses/identifiants. Une coque SPA HTTP 200 ne prouve pas la disponibilité du fichier distant. Tests de transferts interceptés ou locaux ; aucun fichier envoyé à un fournisseur réel et aucune publication externe.
+
+## Nettoyage des fichiers temporaires Cloud — 0.1.58
+
+Dans la page Cloud, ajouter un bouton explicite pour supprimer toutes les copies temporaires locales Cloud, répertoires cloud-* orphelins compris. Conserver les originaux sur disque, les sorties de Bibliothèque, l’historique et les liens de partage. Annuler les envois en attente dont la copie est effacée ; conserver les preuves d’une tentative réseau. Aucun appel fournisseur ni suppression distante. Refuser le nettoyage tant qu’un transfert, une préparation ou un bail vivant protège une copie, y compris dans un autre gestionnaire. Réutiliser le verrou global d’envoi et protéger le batch entier de préparation par un verrou partagé compatible avec le nettoyage exclusif. Rendre les entrées non reprenables avant d’effacer leurs fichiers ; une ancienne commande Reprendre doit revérifier état/ready atomiquement. Signaler une suppression partielle et permettre une nouvelle tentative ; dix langues, RTL, clavier et thèmes conservés.
+
+## Cast de fichier — récupération et limites récepteur 0.1.59
+
+Ne pas attendre video.play() avant le sélecteur RemotePlayback : prompt doit être invoqué dans le geste réel. La préparation de copie peut attendre les métadonnées de manière bornée/annulable, puis ouvrir le sélecteur seulement si le geste demeure actif ; une copie longue exige un nouveau clic Caster. Réutiliser le téléchargement original Chrome enregistré avant une copie Cast, puis OPFS, en essayant les autres identifiants natifs si l’un a disparu. Une absence OPFS ne doit pas masquer une copie Chrome existante. Toute sélection manuelle détache l’association à l’ancienne tâche ; ne pas y inscrire castDownloadId d’un autre fichier. Les erreurs du contrôleur fichier de fond activent sa page, comme les erreurs de source détectée.
+
+Limite avérée du Chrome156.0.8078.76 : RemotePlayback ne découvre comme récepteurs de remoting que les modèles Chromecast*, Eureka Dongle* ou Google TV Streamer (code primaire épinglé 93ce6b54af3fee27e384d1f30346e80db47a14da). Les noms SHIELD sont filtrés ; le modèle mDNS précis du matériel utilisateur n’a pas été lu. Le sélecteur API ne propose pas le repli TV TAB_MIRROR, contrairement au menu Cast classique. PresentationRequest n’expose pas une alternative mirroring libre depuis une origine extension, et les anciennes URL chrome://cast/media-router ne sont pas des sélecteurs publics. Expliquer la limite dans les dix langues et proposer le lecteur local puis le menu Chrome Caster l’onglet pour Shield ; ce lecteur Blob n’exige pas de seconde copie. Aucun compagnon, serveur LAN, upload du fichier privé, changement de flags ou récepteur déployé silencieusement. Les tests de prompt/fixtures ne valident pas une réception matérielle.
+
+## Deux niveaux de parallélisme — 0.1.60
+
+Révision utilisateur : distinguer les connexions par fichier (option existante, 2/4/8 pour les sources compatibles) et le nombre de fichiers simultanés, réglable de1à8 dans Réglages. Défaut1 conservé, maxConcurrentFiles entier strict validé à l’écriture et normalisé en lecture. Le budget de connexions reste capturé par tâche ; la limite de fichiers est relue à chaque admission. Une baisse laisse finir les actifs, une hausse réveille la file.
+
+Une admission globale commune réserve une place persistante avant Chrome.download/resume ou lancement d’un Worker source. Compter les réservations, les vrais verrous des Workers vivants et les téléchargements Chrome réellement en cours, sans multiplier la capacité par gestionnaire. Les fichiers en attente démarrent quand une place se libère ; HLS/DASH, multipart, transport de page et natifs partagent le budget. Garder la borne TikTok de deux transports par cadre et les playlists YouTube séquentielles. Conversions limitées à un traitement, capture d’onglet et Cloud séparés ; exports disque/Blob continuent leur tâche et ne demandent pas une seconde place.
+
+Remplacer le Worker unique du gestionnaire par une Map par tâche, avec routage pageMedia, arrêt, permissions et erreurs ciblés. Relire l’admission dans le Worker avant réception pour qu’un ancien lancement retardé ne dépasse pas le plafond après expiration de sa réservation. Une fin ou un événement ancien ne doit pas modifier un remplaçant ni un résultat déjà en sauvegarde. Les intentions natives conservent leur date de départ, survivent à l’arrêt du service worker et ne sont pas réémises aveuglément ; le téléchargement Chrome continue indépendamment du bail. Ne pas inventer un rapprochement ambigu. Aucun nouveau droit ni publication externe.
+
+## Accès Cloud par fichier — 0.1.61
+
+Ajouter une icône Cloud visible sur chaque fiche de fichier disponible dans la Bibliothèque, après Compresser et avant Afficher dans le dossier. Un clic ouvre directement les fournisseurs avec ce seul fichier, sans cocher la fiche ni passer par Fichiers sélectionnés. Garder le Cloud groupé sur la sélection et le parcours existant de copie manquante inline ; aucun nouvel envoi avant Envoyer. Réutiliser les icônes/libellés traduits et les protections de préparation/transfert existants.
+
+## Cast et clarification TikTok — 0.1.62
+
+L’utilisateur précise que le nouveau TikTok se télécharge finalement ; son problème concerne Cast après enregistrement. Aucun nouveau correctif de détection/transport TikTok ni changement de codec n’est justifié par ce cas. La source est détectée et un fichier complet sauvé avec61 ; le même fichier est décodé sousWindows, distinct de la réception TV.
+
+Le message tvNoConnection doit rester neutre : ni AbortError, ni une promesse prompt résolue sans état connecté, ni le message natif dismissed ne prouvent une ouverture du sélecteur ou une annulation volontaire. Présenter la limite Shield/Chrome156 et le guide de diffusion d’onglet dans le lecteur autonome avant sélection/préparation/copie, sans doublon parent. Conserver le vrai clic natif pour les récepteurs compatibles ; ne pas annoncer le déblocage matériel Shield. AirPlay/état expérimental restent disponibles dans des détails accessibles. Aucun relais local, compagnon, upload privé ou nouvelle API ajouté sans révision utilisateur explicite du périmètre.
+
+Choix utilisateur confirmé le 8 novembre 2026 : « Conserver l’extension seule ». Aucun relais/compagnon ajouté ; conserver le parcours de diffusion d’onglet Chrome pour les fichiers vers Shield.
+
+## Cloud compact et lecteur Google Cast web — 0.1.63
+
+À la demande de l’utilisateur, compacter Cloud : un formulaire, cinq destinations à icônes, noms tronqués et copies manquantes inline, détails fournisseurs repliés, historique compact. Le nettoyage porte sur les répertoires OPFS cloud-* uniquement, conserve originaux/Bibliothèque/historique/liens et affiche résultat ou erreur à côté du bouton. Les échecs d’ouverture/itération/stockage doivent produire cloudTemporaryFailed, pas une erreur générique de source. Ne pas prétendre que le nettoyage physique antérieur ne fonctionnait jamais : il est reproduit comme réussi ; ses erreurs et son retour visuel sont les défauts établis.
+
+Le lecteur Cast web original utilise le SDK officiel uniquement hors extension, Default Media Receiver, MediaInfo/LoadRequest et contrôles RemotePlayer. Le bouton popup d’une source HTTP contrôlée peut ouvrir ce lecteur configuré après contrôle ready protocol2 borné. Remettre l’URL média par fragment effacé avant SDK, sans requête serveur ni stockage persistant ; transmettre uniquement la vraie URL directe ou le manifeste complet, jamais une piste vidéo isolée nécessitant un service de combinaison privé. Distinguer route, acquittement et statut de lecture ; échéance20s et relance explicite uniquement. Diagnostic copiable limité à des codes/compteurs, sans URL, cookie, titre, chemin ou jeton.
+
+Le build local de test configure http://localhost:4180/alcydeo/cast/. Le site statique est préparé pour /alcydeo/cast/, sans publication ; la configuration Store reste vide tant que Pages n’est pas publiée. Une absence/incompatibilité de ready.json garde le contrôleur natif. Après préparation asynchrone longue, vérifier le vrai geste actif avant tout prompt natif et afficher le lecteur pour un nouveau clic si nécessaire. Aucun relais LAN, compagnon, code SDK distant exécuté dans l’extension ou upload de fichier privé.
+
+Essai utilisateur Windows/Shield : découverte confirmée, premier média W3C refusé, puis lecture de la démonstration officielle Google Chromecast Ultra37s confirmée par « La ca fonctionne ». Ce succès déclaré valide ce seul média HTTP du nouveau lecteur ; il ne valide ni fichiers privés, ni toutes les sources/codecs, ni le backend privé Vidow. L’absence CORS du premier média est une différence observée, pas une cause prouvée. Les tests automatisés SDK simulé et le laboratoire sans récepteur restent distincts.
+
+La suppression individuelle d’une fiche Cloud relit atomiquement état et bail sous les verrous upload→files : une ancienne fiche paused d’un second gestionnaire ne doit pas effacer un travail repris, queued ou détenu ailleurs. Ne supprimer sa copie OPFS qu’après succès. Le lecteur web conserve le booléen live uniquement depuis un contrôle ready, envoie StreamType.LIVE sans position initiale forcée et désactive le seek. IDLE/ERROR est un échec terminal ; chaque nouvel épisode BUFFERING possède une seule échéance20s non prolongée par répétition. Charger les fontes locales Arabic/Devanagari aussi dans le lecteur web autonome.
+
+## Cast : annulation, état média et reprise locale — 0.1.64
+
+Le retour utilisateur concerne le TikTok /@ler0i_off/video/7700630488859315489 et le fichier déjà enregistré. Un rapport Web Sender indique cancel avec session présente, deux LOAD acquittés et IDLE sans média ; cela ne prouve ni une lecture réussie, ni une cause HTTP/CORS/codec. Corriger l’annulation du sélecteur : préserver média/échéance/erreur/diagnostic de la route existante, ne pas afficher tvNoConnection pour cancel ; sans route, revenir à l’état neutre. Observer les seuls idleReason connus via Media.addUpdateListener/MEDIA_SESSION, avec liaison session/objet/tentative et nettoyage ; aucune ancienne preuve ERROR ne doit arrêter une nouvelle tentative de chargement. Le rapport porte aussi la version du build web, jamais une URL ni un titre.
+
+Le retour à la page source est un lien facultatif HTTP/HTTPS absolu propre de2048caractères maximum, sans identifiants/requête/fragment ; sinon l’omettre plutôt que casser la navigation ou exporter une clé de page. Il est transmis seulement par le fragment effacé, reste hors MediaInfo et diagnostic. Le lien ouvre le lecteur d’origine, pas un relais Cast.
+
+Après échec du Cast natif d’un fichier, ouvrir/focaliser le guide existant et le présenter comme action principale explicitement nommée étapes Chrome ; le Cast natif reste accessible en secondaire pour les appareils compatibles, sans copie ni relance automatique. Le périmètre extension seule reste confirmé. Ne pas annoncer de Cast direct du fichier vers Shield ni de lecture TikTok validée sur récepteur. Les sondes TikTok utilisent un profil isolé/uBOL officiel, uniquement des URL natives et des préfixes bornés ; distinguer refus HTTP, restrictions CORS observées et cause matérielle non établie. Aucun header Origin/Referer/cookie/signature fabriqué, relais, upload ou publication externe.
+
+
+
+## Lecteur Cast intégré — 0.1.65
+
+Barre unique sur la vidéo : lecture/pause locale ou récepteur, progression, volume, Cast et plein écran ; dix langues/RTL, contrôles natifs sans JS et aide repliée. LOAD buffered part explicitement à zéro, live sans seek implicite ; FINISHED relançable uniquement par action Lecture. Les gardes64 restent obligatoires.
+
+Cast depuis Bibliothèque/activité réutilise seulement la source originale courante contrôlée dans son onglet/page/cadre exacts, identité unique et qualité/pistes conservées ; relecture après check. Mention explicite Source d’origine du téléchargement. Aucune substitution pour conversion, découpe, recadrage, assemblage, capture ou direct enregistré ; sinon ouvrir le lecteur local actif sans tentative native cachée. Aucune copie ou upload privé ajouté. Le comparatif de la session Vidow reste non essayé par l’utilisateur, sa réception TikTok réelle dans Alcydeo non validée. SDK hors extension uniquement, local preview4180, Store sans configuration web avant publication autorisée.
+
+
+## Première publication — révision utilisateur du 14 novembre 2026
+
+L’utilisateur autorise explicitement la publication initiale du dépôt public https://github.com/drslid/Alcydeo, une Release expliquée et GitHub Pages à https://drslid.github.io/Alcydeo/. Préparer puis vérifier tous les livrables avant ces actions ; conserver la casse du dépôt dans les URL. Première préversion publique 0.2.0, sans revendiquer une version stable ou le Cast privé validé.
+
+L’identité évolue vers un martin-pêcheur premium original : silhouettes vectorielles épurées proposées, palette bleu/turquoise/orange conservée, un seul œil et aucune flèche. La dernière demande permet de revoir le dessin cartoon ; garder une géométrie cohérente entre l’emblème, les icônes et les signatures.
+
+Les soumissions Google Chrome Web Store restent une phase suivante, sans soumission automatique dans cette publication GitHub. L’utilisateur ajoute Firefox et son Store à la feuille de route ultérieure ; cette révision lève l’ancienne exclusion de planification, sans annoncer un build Firefox déjà fonctionnel. Aucun compagnon ni backend de comptes ajouté.

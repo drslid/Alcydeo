@@ -1,0 +1,129 @@
+{
+  "version": "0.1.39",
+  "date": "2026-11-03",
+  "node": "24.22.2",
+  "pnpm": "12.5.1",
+  "browser": "156.0.8078.80",
+  "platform": "Linux/WSL2",
+  "unitTests": 399,
+  "typecheck": "pass",
+  "lint": "pass",
+  "browserTests": {
+    "local": {
+      "startTime": "2026-11-03T21:56:31.909Z",
+      "duration": 71582.914,
+      "expected": 63,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "localExitCode": 0,
+    "store": {
+      "startTime": "2026-11-03T21:57:35.451Z",
+      "duration": 7851.45,
+      "expected": 7,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "storeExitCode": 0,
+    "fullSuiteRun": false,
+    "storeRuntime": {
+      "version": "0.1.39",
+      "browser": "156.0.8078.80",
+      "synthetic": true,
+      "youtubeMedia": 0,
+      "youtubeBadge": "",
+      "youtubeLiveMedia": 0,
+      "youtubePlaylistUi": 0,
+      "playlistBrowseRequests": 0,
+      "playlistApiRejected": true,
+      "ordinaryMedia": 1,
+      "ordinaryKind": "direct"
+    }
+  },
+  "reproduction": {
+    "version": "0.1.39",
+    "browser": "156.0.8078.80",
+    "nativeReload": {
+      "beforeVersion": "0.1.38",
+      "beforeErrors": 6,
+      "beforeMessage": "Error: Extension context invalidated.",
+      "afterVersion": "0.1.39",
+      "afterErrors": 0
+    },
+    "missingRuntime": {
+      "method": "controlled API-unavailability injection into the actual installed content-script context",
+      "beforeVersion": "0.1.38",
+      "beforeErrors": 6,
+      "beforeMessage": "TypeError: Cannot read properties of undefined (reading 'sendMessage')",
+      "source": "content-scripts/observe.js",
+      "line": 1,
+      "afterVersion": "0.1.39",
+      "afterErrors": 0,
+      "obsoleteObserverStopped": true
+    },
+    "windowsProfileDriven": false
+  },
+  "noNewManifestPermission": true,
+  "noPollingAdded": true,
+  "nativeWindowsProfileValidated": false,
+  "publication": false,
+  "artifacts": {
+    "version": "0.1.39",
+    "publication": false,
+    "files": [
+      {
+        "name": "alcydeo-0.1.39-chrome.zip",
+        "bytes": 2353436,
+        "sha256": "3bb1e81ade59ac0e9ccf55e546da236f07c4e3d8d989c8e5ae796144454c6421"
+      },
+      {
+        "name": "alcydeo-0.1.39-local-test.crx",
+        "bytes": 2367568,
+        "sha256": "68a965a584211fb85e68aac72ef96ed364daf6046b9ddf5a746d27dbc62aee8c"
+      },
+      {
+        "name": "alcydeo-store-0.1.39-chrome.zip",
+        "bytes": 2297116,
+        "sha256": "a2d044148d62af9e18befe656f5692ca0e4e143c3f17b5aacf646551f954fbdf"
+      },
+      {
+        "name": "alcydeo-pages-0.1.39.zip",
+        "bytes": 2669838,
+        "sha256": "d65869423d3ce7e059d37d03b0451c6675fc697dc2b44794583f7e6ff3181703"
+      },
+      {
+        "name": "alcydeo-brand-0.1.39.zip",
+        "bytes": 1447690,
+        "sha256": "4abcb99384f5ef20b50bb7c0467868bea9b572259b0d9638223b1bfa0ef608cb"
+      }
+    ],
+    "local": {
+      "files": 99,
+      "archiveEqualsBuild": true,
+      "executableAndUiMatchTestedBuild": true,
+      "regeneratedLicenseArchives": [
+        "licenses/mediabunny-1.65.0-source.zip",
+        "licenses/mediabunny-aac-encoder-1.65.0-source.zip"
+      ],
+      "correspondingPinnedSourcesUnchanged": true
+    },
+    "store": {
+      "files": 99,
+      "archiveEqualsBuild": true,
+      "executableAndUiMatchTestedBuild": true,
+      "regeneratedLicenseArchives": [],
+      "correspondingPinnedSourcesUnchanged": true
+    },
+    "crx3PayloadMatchesLocalZip": true,
+    "pages": {
+      "files": 277,
+      "htmlPages": 103,
+      "localeRoutes": 10,
+      "base": "/alcydeo/",
+      "archiveEqualsBuild": true
+    },
+    "brandKitFiles": 40
+  }
+}

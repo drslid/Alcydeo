@@ -1,0 +1,29 @@
+{
+  "browser": "156.0.8078.4",
+  "syntheticCorpus": true,
+  "containers": [
+    "mp4",
+    "webm",
+    "m4v",
+    "mkv",
+    "ts",
+    "mov",
+    "avi",
+    "ogg",
+    "mpg",
+    "wmv",
+    "flv",
+    "3gp",
+    "m2ts",
+    "mts",
+    "mp3",
+    "aac",
+    "m4a",
+    "flac",
+    "wav"
+  ],
+  "detected": 19,
+  "saved": 19,
+  "byteExact": true,
+  "scope": "Original download only; decoding/conversion is a separate capability"
+}

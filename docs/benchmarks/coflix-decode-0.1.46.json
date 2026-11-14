@@ -1,0 +1,52 @@
+{
+  "version": "0.1.46",
+  "date": "2026-11-06T10:04:38.852Z",
+  "sourcePage": "https://coflix.esq/episode/how-to-ruin-diwali-meet-the-parents-1x3/",
+  "method": "Independent full WebCodecs decode of every audio/video sample through Mediabunny UrlSource and a local HTTP Range server",
+  "localFile": {
+    "bytes": 409639001,
+    "sha256": "2659a3a636c53717157481fe27427df1d7d71ef827162feeb3f1d1af2fbb2e91"
+  },
+  "sourceCacheLimit": 16777216,
+  "externalMediaTransfer": false,
+  "publication": false,
+  "browser": "156.0.8078.4",
+  "decoded": {
+    "duration": 2651.56,
+    "width": 868,
+    "height": 488,
+    "videoCodec": "avc",
+    "audioCodec": "aac",
+    "videoSamples": 66287,
+    "audioSamples": 114190,
+    "firstVideo": 0.08,
+    "firstAudio": 0,
+    "lastVideo": 2651.56,
+    "lastAudio": 2651.4866213151927
+  },
+  "status": "passed",
+  "elapsedMs": 47321,
+  "localHttp": {
+    "requests": 585,
+    "rangeRequests": 585,
+    "active": 0,
+    "maximumActive": 2,
+    "streamedBytes": 1350379364,
+    "note": "Aggregate local range stream bytes, including overlapping/prefetched reads; not the media size or an external transfer."
+  },
+  "mediabunny": "1.65.0",
+  "platform": "isolated Linux/WSL2 Chrome profile",
+  "trackInventory": [
+    {
+      "trackId": 1,
+      "handler": "vide",
+      "declaredSamples": 66287
+    },
+    {
+      "trackId": 2,
+      "handler": "soun",
+      "declaredSamples": 114190
+    }
+  ],
+  "declaredAndDecodedSampleCountsMatch": true
+}

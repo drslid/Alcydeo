@@ -1,0 +1,72 @@
+{
+  "version": "0.1.38",
+  "networkYouTube": true,
+  "source": "https://www.youtube.com/watch?v=ckPbVDXw9Gc&list=RDCLAK5uy_ly6s4irLuZAcjEDwJmqcA_UtSipMyGgbQ&index=2",
+  "browser": "156.0.8078.80",
+  "date": "2026-11-03T19:25:35.854Z",
+  "maximumSelected": 2,
+  "accessBypass": false,
+  "httpStatus": 200,
+  "catalog": {
+    "id": "RDCLAK5uy_ly6s4irLuZAcjEDwJmqcA_UtSipMyGgbQ",
+    "title": "The Hit List",
+    "count": 25,
+    "complete": true,
+    "snapshot": true
+  },
+  "selected": [
+    {
+      "index": 0,
+      "videoId": "ckPbVDXw9Gc",
+      "title": "KAROL G, Judeline, rusowsky - BbY WOW (Live From New York)"
+    },
+    {
+      "index": 1,
+      "videoId": "6Db-cEgbmC4",
+      "title": "Dj Goja x Jason Derulo x Melody - Mi Chico (Official Music Video)"
+    }
+  ],
+  "batch": {
+    "state": "completed",
+    "items": [
+      {
+        "videoId": "ckPbVDXw9Gc",
+        "index": 0,
+        "title": "KAROL G, Judeline, rusowsky - BbY WOW (Live From New York)",
+        "state": "failed",
+        "error": "sourceRestricted"
+      },
+      {
+        "videoId": "6Db-cEgbmC4",
+        "index": 1,
+        "title": "Dj Goja x Jason Derulo x Melody - Mi Chico (Official Music Video)",
+        "state": "failed",
+        "error": "sourceRestricted"
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "title": "002 - Dj Goja x Jason Derulo x Melody - Mi Chico (Official Music Video)",
+      "state": "failed",
+      "error": "sourceRestricted",
+      "destination": {
+        "folder": "Alcydeo",
+        "subfolder": "The Hit List",
+        "saveAs": false
+      }
+    },
+    {
+      "title": "001 - KAROL G, Judeline, rusowsky - BbY WOW (Live From New York)",
+      "state": "failed",
+      "error": "sourceRestricted",
+      "destination": {
+        "folder": "Alcydeo",
+        "subfolder": "The Hit List",
+        "saveAs": false
+      }
+    }
+  ],
+  "downloads": [],
+  "otherEntriesStarted": false
+}

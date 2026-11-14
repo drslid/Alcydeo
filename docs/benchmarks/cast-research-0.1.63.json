@@ -1,0 +1,98 @@
+{
+  "version": "0.1.63",
+  "checkedAtUtc": "2026-11-08T16:20:59.192034+00:00",
+  "scope": "Read-only comparison of current Alcydeo bridge, pinned Chromium 156.0.8078.76 and public sender source/docs. No third-party code executed or copied into the product; no media transfer, receiver test or publication. Vidow inspection belongs to root and is not claimed here.",
+  "primaryRepositories": [
+    {
+      "repo": "googlecast/CastVideos-chrome",
+      "commit": "e97c410d0f21d38f2717c990df10db8577958cc4",
+      "license": "Apache-2.0; Google APIs and Cast SDK terms apply separately",
+      "url": "https://github.com/googlecast/CastVideos-chrome/tree/e97c410d0f21d38f2717c990df10db8577958cc4",
+      "method": "Hosted web sender loads official Google SDK; CastContext setOptions, google-cast-launcher, MediaInfo/LoadRequest and loadMedia; local HTML5 and remote controls share UI. Example currently selects its published demo receiver, with comments explaining Default Media Receiver. Uses network media URLs, not private File bytes."
+    },
+    {
+      "repo": "silvermine/videojs-chromecast",
+      "commit": "ee87f9bcad423b48560cbb5340b5b577d61af853",
+      "license": "MIT",
+      "url": "https://github.com/silvermine/videojs-chromecast/tree/ee87f9bcad423b48560cbb5340b5b577d61af853",
+      "method": "Player control invokes CastContext.requestSession directly; after session, sends source src and MIME using MediaInfo/LoadRequest. Exposes modifyLoadRequestFn for format-specific HLS fields. Does not replace the official SDK or add a file transport."
+    },
+    {
+      "repo": "chromium/chromium",
+      "commit": "93ce6b54af3fee27e384d1f30346e80db47a14da",
+      "license": "BSD-3-Clause for these source files; referenced only as data",
+      "url": "https://github.com/chromium/chromium/tree/93ce6b54af3fee27e384d1f30346e80db47a14da",
+      "method": "Browser Presentation-to-Cast bridge handles v2_message envelopes, session identity, request ID generation/mapping, receiver CONNECT and native channel."
+    }
+  ],
+  "findings": [
+    {
+      "id": "bridge-envelope-compatible",
+      "status": "verified-static",
+      "localFile": "packages/media-core/cast-session.ts",
+      "sources": [
+        "chrome/browser/media/router/providers/cast/cast_internal_message_util.cc",
+        "chrome/browser/media/router/providers/cast/cast_session_client_impl.cc",
+        "chrome/browser/media/router/providers/cast/app_activity.cc"
+      ],
+      "finding": "The current clientId, sequenceNumber, message.sessionId and v2_message layout agrees with Chromium156. LOAD/GET_STATUS are forwarded as media commands. client_connect is obsolete and explicitly ignored. Missing explicit CASTV2 CONNECT/requestId at the JS layer is not an established bug because Chromium handles those layers."
+    },
+    {
+      "id": "initial-session-race-unproven",
+      "status": "no-defect-proven",
+      "sources": [
+        "third_party/blink/renderer/modules/presentation/presentation_connection_callbacks.cc",
+        "third_party/blink/renderer/modules/presentation/presentation_connection.cc"
+      ],
+      "finding": "Blink creates and initializes the connection then resolves start(); incoming Mojo events run on presentation tasks. The await continuation attaches listeners before subsequent queued events under normal task ordering. No definite dropped-new_session race was established. Physical receiver exchange remains unobserved."
+    },
+    {
+      "id": "hls-packaging-fields",
+      "status": "documented-conditional-gap",
+      "localFile": "packages/media-core/cast-session.ts:105",
+      "urls": [
+        "https://developers.google.com/cast/docs/media/streaming_protocols",
+        "https://developers.google.com/cast/docs/reference/web_receiver/cast.framework.messages.MediaInformation"
+      ],
+      "finding": "Alcydeo never sends hlsSegmentFormat/hlsVideoSegmentFormat. Protocol documentation describes default TS expectations and explicit FMP4 fields for CMAF; MediaInformation reference qualifies the requirement for MPL. A checked fMP4 HLS source should preserve its real packaging in LOAD. This is a concrete format-description gap, not proof of the reported universal failure or a local-file transport fix."
+    },
+    {
+      "id": "long-cdn-url-id",
+      "status": "documented-limit-gap-not-reproduced",
+      "urls": [
+        "https://developers.google.com/cast/docs/media/messages",
+        "https://developers.google.com/cast/docs/reference/web_receiver/cast.framework.messages.MediaInformation"
+      ],
+      "finding": "Alcydeo permits URLs up to16384 characters and puts the full URL in contentId; message docs specify contentId up to1k. contentUrl exists for actual transport URL separate from identifier. A short stable ID plus exact contentUrl would require updating response matching, which currently only accepts contentId equal to the URL. No receiver rejection for a long actual user URL has been observed."
+    },
+    {
+      "id": "activation-after-async-prepare",
+      "status": "reproduced-controlled-runtime",
+      "localFile": "apps/extension/src/TVPanel.vue:36",
+      "finding": "Unchanged snapshot62 quickMessage and native PresentationRequest.start were exercised with only checkSource readiness delay injected. Both incoming extension messages had activation=true. At100ms native start retained activation and rejected NotFoundError without a receiver. At6500ms native start had activation=false and rejected InvalidAccessError; sender nevertheless got started:true. Manual click after readiness retained activation and reached NotFoundError. This proves the delayed path bug, not the actual user device cause.",
+      "evidence": "activation-probe.json"
+    },
+    {
+      "id": "official-sdk-route",
+      "status": "documented-alternative",
+      "urls": [
+        "https://developers.google.com/cast/docs/web_sender",
+        "https://developers.google.com/cast/docs/web_sender/integrate",
+        "https://developers.google.com/cast/docs/web_receiver"
+      ],
+      "finding": "Officially documented web integration uses an HTTPS sender and the remote Google SDK; Default Media Receiver needs no custom receiver registration. It still requires a receiver-reachable media URL and codecs. It does not turn a private PC file into a remote HTTP source or guarantee sources needing browser cookies/headers."
+    },
+    {
+      "id": "mv3-sandbox-nuance",
+      "status": "documented-policy-not-runtime-prototype",
+      "urls": [
+        "https://developer.chrome.com/docs/webstore/program-policies/mv3-requirements",
+        "https://developer.chrome.com/docs/extensions/develop/migrate/improve-security"
+      ],
+      "finding": "Chrome policy exempts isolated iframe/sandbox contexts from the remote-code restriction under review/data requirements. Therefore a blanket assertion that SDK execution is impossible in every extension context would be inaccurate. The current project contract is stricter: no remote executable code in the extension. Opaque origin, presentation permission and activation of a sandbox SDK have not been prototyped; no silent architecture change is recommended."
+    }
+  ],
+  "userReceiverEvidence": "cast-user-tests-0.1.63.json",
+  "privateVidowBackendValidated": false,
+  "thirdPartySourceCopied": false
+}

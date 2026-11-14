@@ -1,0 +1,8 @@
+{
+  "source": "actual multi-part saved output on original fixture",
+  "bytes": 1837555,
+  "sha256": "f76cd91d59b4a73dad0f37521aaa4d16623d7cfd87386d6aaf6683c979384c36",
+  "developmentOnlyDecoder": "FFmpeg, never shipped/required by Alcydeo",
+  "allAudioVideoFramesDecoded": true,
+  "exitCode": 0
+}

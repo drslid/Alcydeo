@@ -1,0 +1,91 @@
+{
+  "version": "0.1.36",
+  "date": "2026-11-03",
+  "node": "24.22.2",
+  "pnpm": "12.5.1",
+  "browser": "156.0.8078.80",
+  "platform": "Linux/WSL2",
+  "unitTests": 347,
+  "typecheck": "pass",
+  "lint": "pass",
+  "browserTests": {
+    "targetedLocal": {
+      "startTime": "2026-11-03T18:21:40.915Z",
+      "duration": 146245.862,
+      "expected": 70,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "commandExitCode": 0,
+    "fullSuiteRun": false,
+    "storeRuntime": {
+      "version": "0.1.36",
+      "browser": "156.0.8078.80",
+      "synthetic": true,
+      "youtubeMedia": 0,
+      "youtubeBadge": "",
+      "youtubeLiveMedia": 0,
+      "youtubePlaylistUi": 0,
+      "playlistBrowseRequests": 0,
+      "playlistApiRejected": true,
+      "ordinaryMedia": 1,
+      "ordinaryKind": "direct"
+    }
+  },
+  "publicPlaylist": {
+    "metadataEntries": 18,
+    "watchPageCatalogEntries": 18,
+    "largeCatalogEntries": 1593,
+    "selectedVideos": 2,
+    "savedVideos": 1,
+    "sourceRefusedVideos": 1,
+    "entirePublicPlaylistDownloadValidated": false
+  },
+  "decode": {
+    "version": "0.1.36",
+    "method": "independent full WebCodecs decode of every audio/video sample",
+    "browser": "156.0.8078.80",
+    "files": [
+      {
+        "source": "public-1.mp4",
+        "bytes": 3262174,
+        "duration": 60.070022675736965,
+        "width": 854,
+        "height": 480,
+        "videoSamples": 1440,
+        "audioSamples": 2587,
+        "lastVideo": 60,
+        "lastAudio": 60.07002267573696
+      }
+    ]
+  },
+  "limits": {
+    "playlistEntries": 5000,
+    "catalogPages": 100,
+    "metadataResponseBytes": 2097152,
+    "metadataTimeoutMs": 15000,
+    "playerPrepareTimeoutMs": 45000,
+    "concurrentBatches": 1,
+    "unfinishedBatches": 4,
+    "ownedPlayerTabs": 1,
+    "concurrentFiles": 1,
+    "entryRowsPerPage": 50
+  },
+  "publication": false,
+  "windowsNativeDialogsValidated": false,
+  "artifacts": {
+    "local": {
+      "files": 99,
+      "executableAndUiMatchTestedBuild": true,
+      "regeneratedLicenseArchives": [],
+      "correspondingPinnedSourcesUnchanged": true
+    },
+    "store": {
+      "files": 99,
+      "executableAndUiMatchTestedBuild": true,
+      "regeneratedLicenseArchives": [],
+      "correspondingPinnedSourcesUnchanged": true
+    }
+  }
+}

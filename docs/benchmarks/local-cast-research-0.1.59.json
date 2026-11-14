@@ -1,0 +1,248 @@
+{
+  "capturedAtUtc": "2026-11-08T14:54:51.782158+00:00",
+  "scope": "Read-only source/doc research, isolated native UI probe separately. No product edits, upload, receiver connection or personal browser profile.",
+  "chromiumTag": "156.0.8078.80",
+  "chromiumCommit": "fb096c0011f9d50f0a264a9376420cdea9c421e3",
+  "rawTagMatchesPinnedCommit": true,
+  "sources": [
+    {
+      "key": "deviceFilter",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/media/remoting/device_capability_checker.cc",
+      "bytes": 2569,
+      "sha256": "e7a509865ad55ef0f29c1b59b6c60eef685f4b0bb977e11e081d9d2a206aa59f"
+    },
+    {
+      "key": "providerFilter",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/chrome/browser/media/router/providers/cast/cast_media_route_provider.cc",
+      "bytes": 14506,
+      "sha256": "bcd5682ce9cb48263b875cd2ce2c296c8cf959566050cfb3df91b58f8982b7be"
+    },
+    {
+      "key": "apiPrompt",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/third_party/blink/renderer/modules/remoteplayback/remote_playback.cc",
+      "bytes": 26571,
+      "sha256": "51bfee1eccea5acf05b7eeae9aabe9d15369942aa0150c00f7a4f0d315d3d07d"
+    },
+    {
+      "key": "fileTransport",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/media/remoting/renderer_controller.cc",
+      "bytes": 26272,
+      "sha256": "3130f979f11db47e8d4d49ffc19439650edf1b624f4259c8be974abd4a759acb"
+    },
+    {
+      "key": "castSource",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/components/media_router/common/providers/cast/cast_media_source.cc",
+      "bytes": 18595,
+      "sha256": "d734381d06e6b713df8efbc22246f311e30356078954b6b1fe9e6701fda8a56b"
+    },
+    {
+      "key": "gmcDeviceList",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/chrome/browser/ui/global_media_controls/cast_device_list_host.cc",
+      "bytes": 7796,
+      "sha256": "0b436a3ead52929981a8b505e9111e103390c1b88383359f7a37b19b4281d99d"
+    },
+    {
+      "key": "presentationProtocols",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/third_party/blink/renderer/modules/presentation/presentation_request.cc",
+      "bytes": 9622,
+      "sha256": "82dd5354c08e91d188a06b9519b6315a2f4d31ef3f9712085de0613d158d1d5b"
+    },
+    {
+      "key": "featureDefaults",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/chrome/browser/media/router/media_router_feature.cc",
+      "bytes": 7908,
+      "sha256": "73a24bfbf5e6422e8004a7f9e983d4704b78e670b02c2be932800a92b9ad80d5"
+    },
+    {
+      "key": "mediaFeatures",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/media/base/media_switches.cc",
+      "bytes": 87903,
+      "sha256": "b1e51dbd3a611e5b50163861487e2f95884e92fe1b12c9e11ff3060f4e45cecc"
+    },
+    {
+      "key": "blinkFeatureDefaults",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/third_party/blink/renderer/platform/runtime_enabled_features.json5",
+      "bytes": 241679,
+      "sha256": "b838570f94fe95e0f465b7a82723d1fd9a61e3c9ef1c5dfc65196313781f93d7"
+    },
+    {
+      "key": "constants",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/media/base/remoting_constants.h",
+      "bytes": 1349,
+      "sha256": "942ad254c11554a2d135aa227ec55e8efdea89ed5965d505061f39513baf5adc"
+    },
+    {
+      "key": "webUiConstants",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/chrome/common/webui_url_constants.h",
+      "bytes": 34180,
+      "sha256": "81ff2f72c736006172e7b189cfbecaa9cac0d0dc42ab93683b7faa45ca489920"
+    },
+    {
+      "key": "routeStarter",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/chrome/browser/ui/media_router/media_route_starter.cc",
+      "bytes": 14367,
+      "sha256": "6ffb16565b671e3c352722da3f454134e8b5ba0410329e74d599707f54dc5042"
+    },
+    {
+      "key": "notificationService",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/chrome/browser/ui/global_media_controls/media_notification_service.cc",
+      "bytes": 32616,
+      "sha256": "b48fc7716a23f1cd594b84db1a9b3e7c62b9f15b8d5125af45dc62de4a4aef1f"
+    },
+    {
+      "key": "socketManifestFeature",
+      "url": "https://raw.githubusercontent.com/chromium/chromium/fb096c0011f9d50f0a264a9376420cdea9c421e3/extensions/common/api/_manifest_features.json",
+      "bytes": 18386,
+      "sha256": "5ffb94f2b1c5d03f92b931f2c456f003151b9b918a884fc20567dbc64ac9e667"
+    }
+  ],
+  "findings": [
+    {
+      "topic": "Real native transport exists",
+      "sourceKeys": [
+        "fileTransport",
+        "castSource",
+        "apiPrompt"
+      ],
+      "facts": "The compatibility path accepts file URLs in addition to HTTP(S). Desktop remote-playback sources use Cast Streaming. Successful native connection requests playback and media remoting; the renderer has audio/video data pipes. This is a genuine browser transport path, not just a public file URL sent to the receiver.",
+      "limitation": "Opening a selector or a resolved prompt does not prove remote decoding."
+    },
+    {
+      "topic": "TV models are filtered",
+      "sourceKeys": [
+        "deviceFilter",
+        "providerFilter"
+      ],
+      "facts": "Remote Playback discovery requires a valid video codec and a known remoting model. The native model predicate accepts names beginning Chromecast or Eureka Dongle, or exactly Google TV Streamer. Video/audio codecs are filtered separately. Names such as SHIELD, SHIELD Android TV and NVIDIA SHIELD do not satisfy that predicate.",
+      "inference": "A Shield exposing a Shield model name can appear in the ordinary Chrome Cast menu and detected-URL Default Media Receiver while being absent from the file Remote Playback selector.",
+      "limitation": "The actual user receiver advertised model_name has not been observed. The user supplied a receiver/product name, not the internal mDNS model field."
+    },
+    {
+      "topic": "Global Media Controls does not provide TV tab fallback here",
+      "sourceKeys": [
+        "gmcDeviceList",
+        "notificationService",
+        "routeStarter"
+      ],
+      "facts": "The API prompt opens the browser GMC device picker. Its preferred-mode chooser accepts Presentation or Remote Playback first; the TAB_MIRROR fallback is limited to audio-only sink icons CAST_AUDIO and CAST_AUDIO_GROUP. A TV lacking the supported Remote Playback mode is not rescued by that fallback.",
+      "limitation": "The ordinary toolbar Cast dialog has broader tab/screen choices and is a different entry point."
+    },
+    {
+      "topic": "Prompt activation and priming",
+      "sourceKeys": [
+        "apiPrompt"
+      ],
+      "facts": "prompt checks transient user activation synchronously and also rejects detached windows, disabled backend, known unavailable devices or unsupported current source. The native connection-success code itself starts playback on desktop. Availability sources are disabled for duration at or below 15 seconds.",
+      "recommendation": "Do not await potentially slow play() before calling prompt inside a genuine click. Keep local media preparation distinct from requesting a receiver; asynchronous Save As or disk reads cannot be assumed to preserve a gesture indefinitely.",
+      "limitation": "A gesture fix does not remove the model/codec restrictions."
+    },
+    {
+      "topic": "Feature defaults",
+      "sourceKeys": [
+        "featureDefaults",
+        "mediaFeatures",
+        "blinkFeatureDefaults",
+        "constants"
+      ],
+      "facts": "The backend is stable on Windows, Linux and macOS; media remoting without fullscreen is enabled by default there. Native remoting availability starts above 15 seconds; automatic fullscreen switching uses a separate 60-second threshold, and pixel-rate sampling uses five seconds. The extension should not change browser flags."
+    },
+    {
+      "topic": "Presentation substitutions are constrained",
+      "sourceKeys": [
+        "presentationProtocols",
+        "providerFilter",
+        "castSource",
+        "featureDefaults"
+      ],
+      "facts": "PresentationRequest accepts HTTP(S), cast and cast-dial schemes; internal tab-mirroring URNs and remote-playback schemes are not exposed by its constructor. Cast Streaming app IDs in either cast or legacy Google Cast URL forms are considered site-initiated mirroring and limited to the native origin allowlist unless a browser flag is changed.",
+      "allowlistedOrigins": [
+        "https://docs.google.com",
+        "https://meet.google.com",
+        "https://music.youtube.com"
+      ],
+      "recommendation": "Do not manufacture another origin or claim a raw mirroring app request bypasses these rules. A Default Media Receiver route alone cannot read a private PC file."
+    },
+    {
+      "topic": "Native picker URL",
+      "sourceKeys": [
+        "webUiConstants"
+      ],
+      "facts": "The current constants expose media-router-internals, access-code-cast and cast-feedback, not a generic chrome://media-router or chrome://cast picker. The former chrome://media-router dialog URL was removed in 2019.",
+      "historySource": "https://chromium.googlesource.com/chromium/src/+/51ddebbb066433f24af2cc25ea69c5f14e66535e",
+      "nativeProbeReport": "native-ui-probe.json",
+      "limitation": "Access-code casting is a separate receiver-code flow, not the ordinary Shield picker."
+    },
+    {
+      "topic": "A LAN HTTP server is not a drop-in extension permission",
+      "sourceKeys": [
+        "socketManifestFeature"
+      ],
+      "facts": "The sockets manifest feature is normally restricted to platform apps; its ordinary-extension branch has a narrow native allowlist. Alcydeo is not on that list. A normal MV3 desktop extension cannot simply add this permission to listen on a LAN TCP port.",
+      "limitation": "This does not rule out a separately installed companion/server or another application type; those change the confirmed scope."
+    }
+  ],
+  "conclusion": {
+    "compatibleDeviceFilePath": "A native file-backed HTML video plus RemotePlayback.prompt can use Chrome remoting on supported receiver models/codecs. Fix gesture/priming races and test a real supported receiver before claiming complete playback.",
+    "knownShieldConstraint": "A Shield model string does not match the pinned Remote Playback allowlist. No public extension API found that can remove this browser-side restriction or directly invoke the ordinary toolbar Cast tab dialog.",
+    "bestAuthorizedFallback": "Keep a playable local video in a persistent Alcydeo tab and give explicit instructions for Chrome menu Cast tab. This uses the user-confirmed working Shield menu path, stays local, and needs no duplicate disk copy just to mirror a Blob-backed local preview.",
+    "changeOfScopeRequiredForOtherTransport": "A default receiver needs a reachable media URL, or another receiver/transport. Adding a LAN companion/server, externally uploading the private file, or deploying a custom receiver would change the confirmed scope and cannot be silently introduced.",
+    "userHardwareConnectionValidated": false,
+    "userExactFailureReproduced": false,
+    "factsVsUserInference": "Browser-side model/codecs/picker restrictions are confirmed in the exact user Chrome156.0.8078.76 sources. The user actual model_name, exact runtime error and hardware route remain unobserved; this research must not be claimed as an end-to-end reproduction of that personal session."
+  },
+  "officialUserDocumentation": [
+    "https://www.w3.org/TR/remote-playback/",
+    "https://support.google.com/chrome/answer/3228332"
+  ],
+  "redaction": "No user cast token, task ID, file path, filename, device ID, LAN address, credentials or uploaded media in this report.",
+  "userVersionSourceConfirmation": {
+    "tag": "156.0.8078.76",
+    "commit": "93ce6b54af3fee27e384d1f30346e80db47a14da",
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/chromium/chromium/93ce6b54af3fee27e384d1f30346e80db47a14da/media/remoting/device_capability_checker.cc",
+        "sha256": "e7a509865ad55ef0f29c1b59b6c60eef685f4b0bb977e11e081d9d2a206aa59f",
+        "bytes": 2569,
+        "sameAs156_80": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/chromium/chromium/93ce6b54af3fee27e384d1f30346e80db47a14da/chrome/browser/media/router/providers/cast/cast_media_route_provider.cc",
+        "sha256": "bcd5682ce9cb48263b875cd2ce2c296c8cf959566050cfb3df91b58f8982b7be",
+        "bytes": 14506,
+        "sameAs156_80": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/chromium/chromium/93ce6b54af3fee27e384d1f30346e80db47a14da/chrome/browser/ui/global_media_controls/cast_device_list_host.cc",
+        "sha256": "0b436a3ead52929981a8b505e9111e103390c1b88383359f7a37b19b4281d99d",
+        "bytes": 7796,
+        "sameAs156_80": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/chromium/chromium/93ce6b54af3fee27e384d1f30346e80db47a14da/third_party/blink/renderer/modules/remoteplayback/remote_playback.cc",
+        "sha256": "51bfee1eccea5acf05b7eeae9aabe9d15369942aa0150c00f7a4f0d315d3d07d",
+        "bytes": 26571,
+        "sameAs156_80": true
+      }
+    ]
+  },
+  "nativeUiProbe": {
+    "report": "native-ui-probe.json",
+    "script": "native-ui-probe.mjs",
+    "browser": "156.0.8078.4",
+    "platform": "Linux headless, isolated temporary profile",
+    "featureOrOriginOverrides": false,
+    "ordinaryCastSelectorObserved": false,
+    "urlResults": {
+      "chrome://media-router/": "ERR_INVALID_URL",
+      "chrome://cast/": "ERR_INVALID_URL",
+      "chrome://access-code-cast/": "ERR_INVALID_URL",
+      "chrome://media-router-internals/": "chrome://debug-webuis-disabled/"
+    },
+    "secureContextPresentationConstructorResults": {
+      "urn:x-org.chromium.media:source:tab:1": "NotSupportedError",
+      "remote-playback:media-element?...": "NotSupportedError"
+    },
+    "routeRequested": false,
+    "limitations": "No Windows graphical toolbar or physical receiver; parsing/navigation only. A fresh insecure about:blank does not expose PresentationRequest, so parsing was repeated in a secure inherited blank."
+  }
+}

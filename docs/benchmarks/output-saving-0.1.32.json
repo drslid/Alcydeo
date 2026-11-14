@@ -1,0 +1,62 @@
+{
+  "version": "0.1.32",
+  "date": "2026-11-03",
+  "node": "24.22.2",
+  "pnpm": "12.5.1",
+  "browser": "156.0.8078.80",
+  "platform": "Linux/WSL2",
+  "unitTests": 268,
+  "typecheck": "pass",
+  "lint": "pass",
+  "browserTests": {
+    "distinctCasesValidated": 68,
+    "successfulExecutions": 75,
+    "mainRun": {
+      "passed": 66,
+      "failed": 1,
+      "skipped": 1
+    },
+    "followUp": {
+      "startTime": "2026-11-03T16:47:15.186Z",
+      "duration": 11468.987000000001,
+      "expected": 9,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "remainingFailingCases": 0,
+    "explanation": "The main run retained an obsolete source-pane initialization assumption in a helper. Waiting for the mounted cards and selecting Sources fixes the helper; all nine saving/segmented cases then pass. No product source changed between these runs."
+  },
+  "baseline": {
+    "version": "0.1.31",
+    "fault": "drop final ready notification, then reload manager",
+    "result": "checked temporary file remained unsaved after 20 seconds, with a Download button",
+    "log": "output-saving-0.1.31-before.log"
+  },
+  "verified": {
+    "automaticSavingAfterReload": true,
+    "concurrentManagersOneExport": true,
+    "createdNativeDownloadReconciledAfterLostReply": true,
+    "uncertainInvocationRequiresExplicitRetry": true,
+    "dismissedSaveAsNotRepeatedAutomatically": true,
+    "retryReusesPreparedBytesAndValidation": true,
+    "nativeFileReadBack": true,
+    "progressBelow100UntilSaved": true,
+    "popupReopensOnSavedResults": true,
+    "tenLocalesAndRtl": true,
+    "conversionAndLiveRegression": true,
+    "directMultipartHlsAdaptiveAndSabrFixtures": true
+  },
+  "artifacts": {
+    "runtimeFiles": 90,
+    "executableAndUiBytesMatchTestedBuild": true,
+    "regeneratedSourceZipMetadataOnly": true,
+    "sourceZipExtractedContentsUnchanged": true,
+    "pages": 103,
+    "pagesArchiveFiles": 277,
+    "zipSha256": "e23e88dd40e19466383b8ffa5208a5c464de31b29a98eaf7726dbaa34ba73276"
+  },
+  "storeProof": "store-runtime-0.1.32.json",
+  "nativeWindowsDialogTested": false,
+  "externalPublication": false
+}

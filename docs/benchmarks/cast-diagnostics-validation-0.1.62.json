@@ -1,0 +1,716 @@
+{
+  "version": "0.1.62",
+  "date": "2026-11-08",
+  "environment": {
+    "buildNode": "24.22.2",
+    "pnpm": "12.5.1",
+    "chromeForTesting": "156.0.8078.4",
+    "platform": "Linux/WSL2 isolated extension profiles; separate native Windows TikTok decode",
+    "personalProfileUsed": false
+  },
+  "userClarification": "TikTok downloads successfully; the remaining issue is casting the saved file.",
+  "userDecision": "Keep extension only; no optional local relay/companion.",
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "targetedEvidencePathLint": true,
+    "unitPassed": 981,
+    "unitFiles": 54,
+    "installedChromeSelectedCases": 38,
+    "localCases": 32,
+    "storeCases": 6,
+    "fullRepositoryE2ESuite": false,
+    "runs": {
+      "cast-local": {
+        "startTime": "2026-11-08T16:05:25.583Z",
+        "duration": 87840.03300000001,
+        "expected": 32,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cast-store": {
+        "startTime": "2026-11-08T16:05:22.767Z",
+        "duration": 43808.54,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "changes": {
+    "neutralConnectionMessage": {
+      "locales": 10,
+      "doesNotClaimPickerOpenedOrClosed": true,
+      "mappingAndControllerRegressions": [
+        "AbortError",
+        "NotAllowedError dismissed",
+        "resolved prompt without connected state"
+      ]
+    },
+    "standaloneFilePlayer": {
+      "receiverLimitInsidePlayer": true,
+      "guideAvailableBeforeFileChoiceOrPreparation": true,
+      "noDuplicatedParentNotice": true,
+      "keyboardGuideFocus": true,
+      "nativePromptRemainsSynchronous": true
+    },
+    "airplayAndExperimentalNotices": "retained in native keyboard-accessible technical details",
+    "newRemoteCodeOrApi": false,
+    "newHostPermission": false,
+    "newCompanionOrRelay": false
+  },
+  "interface": {
+    "timestamp": "2026-11-08T16:08:45.054Z",
+    "extensionVersion": "0.1.62",
+    "node": "v24.22.2",
+    "environment": "Chrome for Testing Linux headless, temporary isolated profiles",
+    "nativeHardwareSimulated": false,
+    "featureOrOriginOverrides": false,
+    "locales": [
+      {
+        "locale": "fr",
+        "console": [],
+        "pageErrors": [],
+        "startupExternalRequests": [
+          {
+            "scheme": "https:",
+            "destinationHost": "www.gstatic.com",
+            "type": "script",
+            "ancestors": [
+              {
+                "scheme": "chrome-untrusted:",
+                "context": "web"
+              },
+              {
+                "scheme": "chrome:",
+                "context": "new-tab-page"
+              }
+            ]
+          },
+          {
+            "scheme": "https:",
+            "destinationHost": "www.gstatic.com",
+            "type": "stylesheet",
+            "ancestors": [
+              {
+                "scheme": "chrome-untrusted:",
+                "context": "web"
+              },
+              {
+                "scheme": "chrome:",
+                "context": "new-tab-page"
+              }
+            ]
+          }
+        ],
+        "startupBlockedExternalRequests": [
+          {
+            "scheme": "https:",
+            "destinationHost": "www.gstatic.com",
+            "type": "script",
+            "ancestors": [
+              {
+                "scheme": "chrome-untrusted:",
+                "context": "web"
+              },
+              {
+                "scheme": "chrome:",
+                "context": "new-tab-page"
+              }
+            ]
+          },
+          {
+            "scheme": "https:",
+            "destinationHost": "www.gstatic.com",
+            "type": "stylesheet",
+            "ancestors": [
+              {
+                "scheme": "chrome-untrusted:",
+                "context": "web"
+              },
+              {
+                "scheme": "chrome:",
+                "context": "new-tab-page"
+              }
+            ]
+          }
+        ],
+        "externalRequests": [],
+        "blockedExternalRequests": [],
+        "captures": [
+          {
+            "file": "fr-1280-light-guide-before-file.png",
+            "theme": "light",
+            "width": 1280,
+            "documentWidth": 1280,
+            "noHorizontalOverflow": true,
+            "lang": "fr",
+            "direction": "ltr",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": null
+          },
+          {
+            "file": "fr-1280-dark-guide-before-file.png",
+            "theme": "dark",
+            "width": 1280,
+            "documentWidth": 1280,
+            "noHorizontalOverflow": true,
+            "lang": "fr",
+            "direction": "ltr",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": null
+          },
+          {
+            "file": "fr-390-light-guide-before-file.png",
+            "theme": "light",
+            "width": 390,
+            "documentWidth": 375,
+            "noHorizontalOverflow": true,
+            "lang": "fr",
+            "direction": "ltr",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": null
+          },
+          {
+            "file": "fr-390-dark-guide-before-file.png",
+            "theme": "dark",
+            "width": 390,
+            "documentWidth": 375,
+            "noHorizontalOverflow": true,
+            "lang": "fr",
+            "direction": "ltr",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": null
+          },
+          {
+            "file": "fr-1280-light-native-error.png",
+            "theme": "light",
+            "width": 1280,
+            "documentWidth": 1265,
+            "noHorizontalOverflow": true,
+            "lang": "fr",
+            "direction": "ltr",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": "error"
+          },
+          {
+            "file": "fr-1280-dark-native-error.png",
+            "theme": "dark",
+            "width": 1280,
+            "documentWidth": 1265,
+            "noHorizontalOverflow": true,
+            "lang": "fr",
+            "direction": "ltr",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": "error"
+          },
+          {
+            "file": "fr-390-light-native-error.png",
+            "theme": "light",
+            "width": 390,
+            "documentWidth": 375,
+            "noHorizontalOverflow": true,
+            "lang": "fr",
+            "direction": "ltr",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": "error"
+          },
+          {
+            "file": "fr-390-dark-native-error.png",
+            "theme": "dark",
+            "width": 390,
+            "documentWidth": 375,
+            "noHorizontalOverflow": true,
+            "lang": "fr",
+            "direction": "ltr",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": "error"
+          }
+        ],
+        "browser": "156.0.8078.4",
+        "initialPages": [
+          {
+            "scheme": "chrome:",
+            "context": "new-tab-page"
+          }
+        ],
+        "initialPagesClosedBeforeExtensionTest": true,
+        "keyboard": {
+          "openedByEnter": true,
+          "focusTransferredToGuide": true,
+          "guideTabIndex": "-1",
+          "nextFocusedControl": {
+            "tag": "INPUT",
+            "type": "file"
+          }
+        },
+        "before": {
+          "nativeFileAccessAllowed": true,
+          "optionalFilePermission": false,
+          "downloads": 0
+        },
+        "after": {
+          "optionalFilePermission": true,
+          "downloads": 0,
+          "nativeCalls": [
+            {
+              "activation": true,
+              "name": "NotAllowedError"
+            }
+          ],
+          "media": {
+            "readyState": 4,
+            "duration": 24.048096,
+            "width": 320,
+            "height": 180,
+            "usesFileScheme": true
+          },
+          "phase": "error",
+          "errorText": "Chrome n\u2019a pas pu communiquer avec le r\u00e9cepteur. V\u00e9rifiez sa compatibilit\u00e9 ou diffusez l\u2019onglet depuis le menu Chrome."
+        },
+        "passed": true,
+        "temporaryProfileRemoved": true
+      },
+      {
+        "locale": "ur",
+        "console": [],
+        "pageErrors": [],
+        "startupExternalRequests": [
+          {
+            "scheme": "https:",
+            "destinationHost": "www.gstatic.com",
+            "type": "script",
+            "ancestors": [
+              {
+                "scheme": "chrome-untrusted:",
+                "context": "web"
+              },
+              {
+                "scheme": "chrome:",
+                "context": "new-tab-page"
+              }
+            ]
+          },
+          {
+            "scheme": "https:",
+            "destinationHost": "www.gstatic.com",
+            "type": "stylesheet",
+            "ancestors": [
+              {
+                "scheme": "chrome-untrusted:",
+                "context": "web"
+              },
+              {
+                "scheme": "chrome:",
+                "context": "new-tab-page"
+              }
+            ]
+          }
+        ],
+        "startupBlockedExternalRequests": [
+          {
+            "scheme": "https:",
+            "destinationHost": "www.gstatic.com",
+            "type": "script",
+            "ancestors": [
+              {
+                "scheme": "chrome-untrusted:",
+                "context": "web"
+              },
+              {
+                "scheme": "chrome:",
+                "context": "new-tab-page"
+              }
+            ]
+          },
+          {
+            "scheme": "https:",
+            "destinationHost": "www.gstatic.com",
+            "type": "stylesheet",
+            "ancestors": [
+              {
+                "scheme": "chrome-untrusted:",
+                "context": "web"
+              },
+              {
+                "scheme": "chrome:",
+                "context": "new-tab-page"
+              }
+            ]
+          }
+        ],
+        "externalRequests": [],
+        "blockedExternalRequests": [],
+        "captures": [
+          {
+            "file": "ur-1280-light-guide-before-file.png",
+            "theme": "light",
+            "width": 1280,
+            "documentWidth": 1280,
+            "noHorizontalOverflow": true,
+            "lang": "ur",
+            "direction": "rtl",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": null
+          },
+          {
+            "file": "ur-1280-dark-guide-before-file.png",
+            "theme": "dark",
+            "width": 1280,
+            "documentWidth": 1280,
+            "noHorizontalOverflow": true,
+            "lang": "ur",
+            "direction": "rtl",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": null
+          },
+          {
+            "file": "ur-390-light-guide-before-file.png",
+            "theme": "light",
+            "width": 390,
+            "documentWidth": 375,
+            "noHorizontalOverflow": true,
+            "lang": "ur",
+            "direction": "rtl",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": null
+          },
+          {
+            "file": "ur-390-dark-guide-before-file.png",
+            "theme": "dark",
+            "width": 390,
+            "documentWidth": 375,
+            "noHorizontalOverflow": true,
+            "lang": "ur",
+            "direction": "rtl",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": null
+          },
+          {
+            "file": "ur-1280-light-native-error.png",
+            "theme": "light",
+            "width": 1280,
+            "documentWidth": 1265,
+            "noHorizontalOverflow": true,
+            "lang": "ur",
+            "direction": "rtl",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": "error"
+          },
+          {
+            "file": "ur-1280-dark-native-error.png",
+            "theme": "dark",
+            "width": 1280,
+            "documentWidth": 1265,
+            "noHorizontalOverflow": true,
+            "lang": "ur",
+            "direction": "rtl",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": "error"
+          },
+          {
+            "file": "ur-390-light-native-error.png",
+            "theme": "light",
+            "width": 390,
+            "documentWidth": 375,
+            "noHorizontalOverflow": true,
+            "lang": "ur",
+            "direction": "rtl",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": "error"
+          },
+          {
+            "file": "ur-390-dark-native-error.png",
+            "theme": "dark",
+            "width": 390,
+            "documentWidth": 375,
+            "noHorizontalOverflow": true,
+            "lang": "ur",
+            "direction": "rtl",
+            "guideOpen": true,
+            "guideExpanded": "true",
+            "phase": "error"
+          }
+        ],
+        "browser": "156.0.8078.4",
+        "initialPages": [
+          {
+            "scheme": "chrome:",
+            "context": "new-tab-page"
+          }
+        ],
+        "initialPagesClosedBeforeExtensionTest": true,
+        "keyboard": {
+          "openedByEnter": true,
+          "focusTransferredToGuide": true,
+          "guideTabIndex": "-1",
+          "nextFocusedControl": {
+            "tag": "INPUT",
+            "type": "file"
+          }
+        },
+        "before": {
+          "nativeFileAccessAllowed": true,
+          "optionalFilePermission": false,
+          "downloads": 0
+        },
+        "after": {
+          "optionalFilePermission": true,
+          "downloads": 0,
+          "nativeCalls": [
+            {
+              "activation": true,
+              "name": "NotAllowedError"
+            }
+          ],
+          "media": {
+            "readyState": 4,
+            "duration": 24.048096,
+            "width": 320,
+            "height": 180,
+            "usesFileScheme": true
+          },
+          "phase": "error",
+          "errorText": "Chrome \u0631\u06cc\u0633\u06cc\u0648\u0631 \u0633\u06d2 \u0631\u0627\u0628\u0637\u06c1 \u0646\u06c1\u06cc\u06ba \u06a9\u0631 \u0633\u06a9\u0627\u06d4 \u0645\u0637\u0627\u0628\u0642\u062a \u062f\u06cc\u06a9\u06be\u06cc\u06ba \u06cc\u0627 Chrome \u0645\u06cc\u0646\u0648 \u0633\u06d2 \u0679\u06cc\u0628 \u06a9\u0627\u0633\u0679 \u06a9\u0631\u06cc\u06ba\u06d4"
+        },
+        "passed": true,
+        "temporaryProfileRemoved": true
+      }
+    ],
+    "limitations": [
+      "No physical receiver; native API failure is observed, not a hardware reception test.",
+      "Network assertions cover page/extension HTTP(S) requests observed by Playwright."
+    ]
+  },
+  "tiktok": {
+    "actualReport": "tiktok-public-0.1.62.json",
+    "testedRuntime": "0.1.61",
+    "parserTransportOrCodecModified": false,
+    "oneLinuxPublicDiskExport": true,
+    "sameFileFullyDecodedUnderWindows": true,
+    "noSecondWindowsPublicExport": true,
+    "backgroundAndObserverByteIdenticalIn62": true,
+    "unchangedRuntime": {
+      "comparedWith": "0.1.61 real TikTok tested local snapshot",
+      "sameBackground": true,
+      "sameObserver": true,
+      "unchangedJs": [
+        {
+          "path": "background.js",
+          "sha256": "6ecf69f637734efb8a99baad817d875847133ec376535a12f282db4ce4bffdb6"
+        },
+        {
+          "path": "content-scripts/observe.js",
+          "sha256": "b07c27d0518088d0bb640988bb0f86c58fb4dced73c66ca020c95b36300618df"
+        },
+        {
+          "path": "assets/aac-worker-DYDtwVUS.js",
+          "sha256": "f6687bf77e5f6c70b09b2981f20c45e1c1357bbee6f029ad49deac4b367c9ac1"
+        },
+        {
+          "path": "assets/media.worker-gUYOfeR1.js",
+          "sha256": "712ff1333c1264fa705271a77a32da5bd0222eb3e3ffb7fff42e673edab50bc9"
+        },
+        {
+          "path": "assets/cloud.worker-C07VEtb9.js",
+          "sha256": "7a497cb34bad5afcc0376a1d9e55a7d3ae448e60fbd696883701804d5d83b0b1"
+        },
+        {
+          "path": "assets/recording.worker-BqTif1gG.js",
+          "sha256": "021f28e208f63a61bf4213d5a6d979e4234e0177dbc98d81eef3d81cd2e7e0f3"
+        },
+        {
+          "path": "chunks/api-BPdjhsdC.js",
+          "sha256": "895fc6acadff2c32241c517094ec68393f0ef95d82b64e4f15ce921f1400602b"
+        },
+        {
+          "path": "chunks/src-U92kgbz4.js",
+          "sha256": "44d86342bac0340147b6dd317329276f810c16f78b3e697c6f1dbbc3b6db4787"
+        },
+        {
+          "path": "chunks/runtime-dom.esm-bundler-CKu9h2G3.js",
+          "sha256": "0d5a2d4f00984a1d9a9444c21a3a19bfb2eb28da83cde69f999a86efce3ea113"
+        },
+        {
+          "path": "chunks/YoutubePlaylistBatches-P6dso537.js",
+          "sha256": "efc6e1e7bc1a7bd8a215713302c30a8d46b49cdf1dcfe273728c7033c6e09910"
+        },
+        {
+          "path": "chunks/contracts-CJJNexhs.js",
+          "sha256": "d0075a7100da825673fa382e26b005a7a5789343109717143efd2adb5728b136"
+        },
+        {
+          "path": "chunks/YoutubePlaylistPanel-BtD97WzW.js",
+          "sha256": "1cdd1c2052936cfb88926ad9a91986d170468af486cfaf767d85e858cba2e733"
+        },
+        {
+          "path": "chunks/plan-Dk7qnnn0.js",
+          "sha256": "961839daf00fcc8d00bfac604abfe770eaedd8efc9fb3dec52f584536ca3df38"
+        },
+        {
+          "path": "chunks/network-C3CJa4Lc.js",
+          "sha256": "31241ad9c5b22d842f97966667bc2f3ee918d79310bf3a1b085940ea3b71c91e"
+        },
+        {
+          "path": "chunks/storage-PEzqBbSu.js",
+          "sha256": "b674daa82a1cd2a5a08ecb1901d2e8fddae816265db3b80aec3d14bbb59518aa"
+        },
+        {
+          "path": "chunks/YoutubePlaylistRunner-DQ4RFLOR.js",
+          "sha256": "93e61df0ce65e30d4d0681af0ef9d439652f9fb8375da433e11a0d4829fe9117"
+        },
+        {
+          "path": "chunks/output-saving-2G66E0LY.js",
+          "sha256": "bbade1a474e0b85ddeaf25fa94c48a8b126635db3de20dd46790369d6984ef0c"
+        },
+        {
+          "path": "chunks/engine-D5p7nHc4.js",
+          "sha256": "065533ec43067d3dc26b02a44fbc51096c381b3051c994e864c420d067af68ee"
+        },
+        {
+          "path": "chunks/PlaylistBatchCard-CAZuuvH8.js",
+          "sha256": "8173c1d6b7346b326ee683f0e301847d421b3d65d90d505e15263afcb49bf7eb"
+        },
+        {
+          "path": "chunks/src-YhJJIwZW.js",
+          "sha256": "51afb487c444e63df01816df5171083775f40a9461c0d07f8f9b6f18cabe373f"
+        }
+      ]
+    }
+  },
+  "website": {
+    "kind": "static generated HTML checks, not a new browser site run",
+    "passed": true,
+    "cases": [
+      {
+        "locale": "en",
+        "newIntro": true,
+        "fileReceiverLimit": true,
+        "guideFirstStep": true
+      },
+      {
+        "locale": "es",
+        "newIntro": true,
+        "fileReceiverLimit": true,
+        "guideFirstStep": true
+      },
+      {
+        "locale": "fr",
+        "newIntro": true,
+        "fileReceiverLimit": true,
+        "guideFirstStep": true
+      },
+      {
+        "locale": "de",
+        "newIntro": true,
+        "fileReceiverLimit": true,
+        "guideFirstStep": true
+      },
+      {
+        "locale": "zh_CN",
+        "newIntro": true,
+        "fileReceiverLimit": true,
+        "guideFirstStep": true
+      },
+      {
+        "locale": "ar",
+        "newIntro": true,
+        "fileReceiverLimit": true,
+        "guideFirstStep": true
+      },
+      {
+        "locale": "ru",
+        "newIntro": true,
+        "fileReceiverLimit": true,
+        "guideFirstStep": true
+      },
+      {
+        "locale": "pt",
+        "newIntro": true,
+        "fileReceiverLimit": true,
+        "guideFirstStep": true
+      },
+      {
+        "locale": "hi",
+        "newIntro": true,
+        "fileReceiverLimit": true,
+        "guideFirstStep": true
+      },
+      {
+        "locale": "ur",
+        "newIntro": true,
+        "fileReceiverLimit": true,
+        "guideFirstStep": true
+      }
+    ]
+  },
+  "storeRuntime": {
+    "version": "0.1.62",
+    "browser": "156.0.8078.4",
+    "synthetic": true,
+    "youtubeMedia": 0,
+    "youtubeBadge": "",
+    "youtubeLiveMedia": 0,
+    "youtubePlaylistUi": 0,
+    "playlistBrowseRequests": 0,
+    "playlistApiRejected": true,
+    "ordinaryMedia": 1,
+    "ordinaryKind": "direct"
+  },
+  "runtimeFingerprints": {
+    "local": {
+      "files": 97,
+      "sha256MapDigest": "f22ea19aca4bd1c91d97288973a5494bfa034292f1f29d5e6f650d3dbba2449c"
+    },
+    "store": {
+      "files": 97,
+      "sha256MapDigest": "188911b6ff04d7055e8ce942a5f840c54ffe94bbc644dc42aeb4fb88bd6c9413"
+    }
+  },
+  "resolvedIntermediateChecks": [
+    {
+      "case": "neutral-message units on61",
+      "result": "Two assertions fail on old phrasing; all final981 unit tests pass."
+    },
+    {
+      "case": "standalone guide on61",
+      "result": "The receiver notice only existed in the parent. RED browser check fails; inside-player notice/guide assertions pass on62."
+    },
+    {
+      "case": "initial screenshot-profile network",
+      "result": "Two startup script/CSS attempts per profile are attributed to www.gstatic.com inside Chrome new-tab-page, blocked and preserved. Final capture run separates startup from extension phase; no external request observed during extension tests."
+    },
+    {
+      "case": "public HEVC file on Linux",
+      "result": "Local WebCodecs decoder unavailable. The same SHA256 file plays and fully decodes on native Windows; no corrupt-file verdict or export gate added."
+    }
+  ],
+  "limitations": [
+    "Native file casting to Shield is not enabled by this correction. Chrome156 receiver-model filtering remains; the device actual mDNS model is not observed.",
+    "The supported no-companion file route retained is Chrome tab casting; no physical Shield reception is validated.",
+    "Native prompt calls and original-fixture playback/copies do not prove receiver discovery or TV decoding.",
+    "AirPlay remains unavailable in the target Chrome Windows environment.",
+    "No actual Cloud file upload, public publication, Windows CRX installation or private profile use."
+  ],
+  "physicalReceiverTested": false,
+  "actualExternalFileUploads": 0,
+  "externalPublication": false,
+  "artifactsReport": "cast-diagnostics-artifacts-0.1.62.json"
+}

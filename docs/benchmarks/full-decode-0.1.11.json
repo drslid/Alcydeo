@@ -1,0 +1,96 @@
+{
+  "tool": "Development-only FFmpeg; never bundled or required by Alcydeo",
+  "allVideoAndAudioFramesDecoded": true,
+  "outputs": [
+    {
+      "file": "artifacts/evidence/hls-ts.mp4",
+      "networkYouTube": false,
+      "bytes": 1838138,
+      "sha256": "d4f2b1919455b1c212d1e222ac98d697e5e33b3cd08b688c0db05095d9361a67",
+      "exitCode": 0,
+      "seconds": 0.037,
+      "error": ""
+    },
+    {
+      "file": "artifacts/evidence/hls-fmp4.mp4",
+      "networkYouTube": false,
+      "bytes": 1837166,
+      "sha256": "278a86a4b05f7312ef0569588a08116323c2259f94c0bb753038eceebdfa6f16",
+      "exitCode": 0,
+      "seconds": 0.03,
+      "error": ""
+    },
+    {
+      "file": "artifacts/evidence/dash.mp4",
+      "networkYouTube": false,
+      "bytes": 1837166,
+      "sha256": "38ec3c613267f815158c1f877212461f47c9b8183d1aeda9cd09d4e75aa4e28a",
+      "exitCode": 0,
+      "seconds": 0.031,
+      "error": ""
+    },
+    {
+      "file": "artifacts/evidence/hls-byte-ranges.mp4",
+      "networkYouTube": false,
+      "bytes": 1837166,
+      "sha256": "b929593dc9ad00647700574203bdd030a8e3c3f2a9801324a03a6946cd20f6d0",
+      "exitCode": 0,
+      "seconds": 0.032,
+      "error": ""
+    },
+    {
+      "file": "artifacts/evidence/hls-id3.mp4",
+      "networkYouTube": false,
+      "bytes": 1838138,
+      "sha256": "2bf4979733b0b7c1eb6d5acb46ad0fab3ee6086da31b815244e323c5d5bce9af",
+      "exitCode": 0,
+      "seconds": 0.033,
+      "error": ""
+    },
+    {
+      "file": "artifacts/evidence/hls-opaque.mp4",
+      "networkYouTube": false,
+      "bytes": 1837166,
+      "sha256": "233b053823302d6e457d2956df09e8483feba106c7fe684ba007d37d80b3606c",
+      "exitCode": 0,
+      "seconds": 0.03,
+      "error": ""
+    },
+    {
+      "file": "artifacts/evidence/hls-nested.mp4",
+      "networkYouTube": false,
+      "bytes": 526199,
+      "sha256": "b36063e739426247d59bf608e32338a3df3ca97bffa7b6fc49db7d7c8c6a1720",
+      "exitCode": 0,
+      "seconds": 0.019,
+      "error": ""
+    },
+    {
+      "file": "artifacts/evidence/youtube/adaptive-original.mp4",
+      "networkYouTube": false,
+      "bytes": 1837166,
+      "sha256": "0d024650a2171cc11fc205880ba013dfd9b96cc23f0e0acc1ff690c7f081c4af",
+      "exitCode": 0,
+      "seconds": 0.03,
+      "error": ""
+    },
+    {
+      "file": "artifacts/evidence/youtube/sabr-original.mp4",
+      "networkYouTube": false,
+      "bytes": 1837166,
+      "sha256": "5734d0efe2e7c02de9288c3511c16ddb5fe48c3e05357aa8b986d5fba076051a",
+      "exitCode": 0,
+      "seconds": 0.029,
+      "error": ""
+    },
+    {
+      "file": "artifacts/evidence/youtube/shorts-144p.mp4",
+      "networkYouTube": true,
+      "bytes": 1300696,
+      "sha256": "a1a2b63011905eb4d24146f35f29813c963e4848e726b40d1a1b07123f321d68",
+      "exitCode": 0,
+      "seconds": 0.081,
+      "error": ""
+    }
+  ]
+}

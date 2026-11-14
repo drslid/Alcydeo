@@ -1,0 +1,2006 @@
+{
+  "detectionDiagnostics": {
+    "message": "检测诊断",
+    "description": "Alcydeo interface: detectionDiagnostics"
+  },
+  "detectionDiagnosticsReport": {
+    "message": "本地检测报告",
+    "description": "Alcydeo interface: detectionDiagnosticsReport"
+  },
+  "detectionDiagnosticsLoading": {
+    "message": "正在生成本地报告…",
+    "description": "Alcydeo interface: detectionDiagnosticsLoading"
+  },
+  "detectionDiagnosticsRefresh": {
+    "message": "刷新",
+    "description": "Alcydeo interface: detectionDiagnosticsRefresh"
+  },
+  "detectionDiagnosticsCopy": {
+    "message": "复制报告",
+    "description": "Alcydeo interface: detectionDiagnosticsCopy"
+  },
+  "detectionDiagnosticsCopied": {
+    "message": "报告已复制。",
+    "description": "Alcydeo interface: detectionDiagnosticsCopied"
+  },
+  "detectionDiagnosticsCopyHint": {
+    "message": "无法访问剪贴板。报告已选中，可手动复制。",
+    "description": "Alcydeo interface: detectionDiagnosticsCopyHint"
+  },
+  "detectionDiagnosticsError": {
+    "message": "无法生成报告。请点击“刷新”重试。",
+    "description": "Alcydeo interface: detectionDiagnosticsError"
+  },
+  "detectionDiagnosticsPrivacy": {
+    "message": "本地报告，不包含视频链接、Cookie 或签名。不会发送任何内容。",
+    "description": "Alcydeo interface: detectionDiagnosticsPrivacy"
+  },
+  "detectionDiagnosticsAccessError": {
+    "message": "请在 chrome://extensions 中打开 Alcydeo 的详情，检查网站访问权限。",
+    "description": "Alcydeo interface: detectionDiagnosticsAccessError"
+  },
+  "cropTool": {
+    "message": "裁剪画面",
+    "description": "Alcydeo interface: cropTool"
+  },
+  "cropHint": {
+    "message": "选择视频区域并导出为新的 MP4。原文件会保留。",
+    "description": "Alcydeo interface: cropHint"
+  },
+  "cropDrawHint": {
+    "message": "拖动以绘制新区域。在区域内拖动可移动，使用控制柄可调整大小。方向键每次移动 1 像素，按住 Shift 则移动 10 像素。",
+    "description": "Alcydeo interface: cropDrawHint"
+  },
+  "cropArea": {
+    "message": "选定区域",
+    "description": "Alcydeo interface: cropArea"
+  },
+  "cropReset": {
+    "message": "完整画面",
+    "description": "Alcydeo interface: cropReset"
+  },
+  "cropLeft": {
+    "message": "X（像素）",
+    "description": "Alcydeo interface: cropLeft"
+  },
+  "cropTop": {
+    "message": "Y（像素）",
+    "description": "Alcydeo interface: cropTop"
+  },
+  "cropWidth": {
+    "message": "宽度（像素）",
+    "description": "Alcydeo interface: cropWidth"
+  },
+  "cropHeight": {
+    "message": "高度（像素）",
+    "description": "Alcydeo interface: cropHeight"
+  },
+  "cropPreview": {
+    "message": "裁剪预览",
+    "description": "Alcydeo interface: cropPreview"
+  },
+  "cropExport": {
+    "message": "导出裁剪后的视频",
+    "description": "Alcydeo interface: cropExport"
+  },
+  "cropResize": {
+    "message": "调整区域大小",
+    "description": "Alcydeo interface: cropResize"
+  },
+  "cropRange": {
+    "message": "请选择完全位于视频内且至少为 2 × 2 像素的区域。",
+    "description": "Alcydeo interface: cropRange"
+  },
+  "chromeSiteAccess": {
+    "message": "Chrome 网站访问权限",
+    "description": "Alcydeo interface: chromeSiteAccess"
+  },
+  "chromeAccessRestricted": {
+    "message": "Chrome 设置限制了对此网站的访问。",
+    "description": "Alcydeo interface: chromeAccessRestricted"
+  },
+  "openWebPage": {
+    "message": "打开网页",
+    "description": "Alcydeo interface: openWebPage"
+  },
+  "openWebPageHint": {
+    "message": "打开包含视频的网站以检测其来源。",
+    "description": "Alcydeo interface: openWebPageHint"
+  },
+  "popupActivity": {
+    "message": "动态",
+    "description": "Alcydeo interface: popupActivity"
+  },
+  "moreActions": {
+    "message": "更多操作",
+    "description": "Alcydeo interface: moreActions"
+  },
+  "tiktokHint": {
+    "message": "请保持 TikTok 标签页和管理器打开。中断后继续将从头重新下载此文件。",
+    "description": "Alcydeo interface: tiktokHint"
+  },
+  "tools": {
+    "message": "视频工具",
+    "description": "Alcydeo interface: tools"
+  },
+  "manager_tools_description": {
+    "message": "裁剪视频或按所选顺序合并片段。处理在您的设备上进行。",
+    "description": "Alcydeo interface: manager_tools_description"
+  },
+  "popupSources": {
+    "message": "来源",
+    "description": "Alcydeo interface: popupSources"
+  },
+  "popupSaved": {
+    "message": "已保存",
+    "description": "Alcydeo interface: popupSaved"
+  },
+  "popupContinue": {
+    "message": "关闭弹窗后下载会继续。分段流需要保持管理器标签页打开。",
+    "description": "Alcydeo interface: popupContinue"
+  },
+  "conversionQuality": {
+    "message": "视频质量",
+    "description": "Alcydeo interface: conversionQuality"
+  },
+  "conversionQuality_auto": {
+    "message": "自动 · 复制兼容的视频",
+    "description": "Alcydeo interface: conversionQuality_auto"
+  },
+  "conversionQuality_high": {
+    "message": "高质量",
+    "description": "Alcydeo interface: conversionQuality_high"
+  },
+  "conversionQuality_balanced": {
+    "message": "均衡",
+    "description": "Alcydeo interface: conversionQuality_balanced"
+  },
+  "conversionQuality_small": {
+    "message": "较小文件",
+    "description": "Alcydeo interface: conversionQuality_small"
+  },
+  "conversionResolution": {
+    "message": "最高分辨率",
+    "description": "Alcydeo interface: conversionResolution"
+  },
+  "conversionOriginal": {
+    "message": "原始 · 不放大",
+    "description": "Alcydeo interface: conversionOriginal"
+  },
+  "conversionAudio": {
+    "message": "音频码率",
+    "description": "Alcydeo interface: conversionAudio"
+  },
+  "conversionAudioAuto": {
+    "message": "自动 · 复制兼容的 AAC",
+    "description": "Alcydeo interface: conversionAudioAuto"
+  },
+  "conversionOptionsHint": {
+    "message": "MP4 转换默认设置。画质、分辨率或音频的变更可能需要重新编码。文件大小和速度取决于源文件和电脑。",
+    "description": "Alcydeo interface: conversionOptionsHint"
+  },
+  "liveRefresh": {
+    "message": "刷新来源",
+    "description": "Alcydeo interface: liveRefresh"
+  },
+  "liveStopping": {
+    "message": "正在完成当前分段",
+    "description": "Alcydeo interface: liveStopping"
+  },
+  "liveMode": {
+    "message": "播放器流",
+    "description": "Alcydeo interface: liveMode"
+  },
+  "captureMode": {
+    "message": "标签页录制",
+    "description": "Alcydeo interface: captureMode"
+  },
+  "liveTitle": {
+    "message": "保存直播流",
+    "description": "Alcydeo interface: liveTitle"
+  },
+  "liveSources": {
+    "message": "检测到的 HLS 来源",
+    "description": "Alcydeo interface: liveSources"
+  },
+  "liveNoSource": {
+    "message": "选择来源或粘贴网址",
+    "description": "Alcydeo interface: liveNoSource"
+  },
+  "liveUrl": {
+    "message": "或 HLS 流网址（.m3u8）",
+    "description": "Alcydeo interface: liveUrl"
+  },
+  "liveStart": {
+    "message": "录制流",
+    "description": "Alcydeo interface: liveStart"
+  },
+  "liveHint": {
+    "message": "直接保存收到的 HLS 分段，保留源质量。支持未加密、音视频在同一流中的 TS/fMP4。请保持管理器打开。其他来源可使用标签页录制。",
+    "description": "Alcydeo interface: liveHint"
+  },
+  "liveBoundary": {
+    "message": "从最近的完整分段开始，可能包含点击前几秒。停止并保存会完成当前分段，再生成经过检查的 MP4。不会恢复更早的直播内容。",
+    "description": "Alcydeo interface: liveBoundary"
+  },
+  "liveAudio": {
+    "message": "此直播的音频单独传输。请选择音视频合一的 HLS 来源或标签页录制；不会保存缺少原音轨的视频。",
+    "description": "Alcydeo interface: liveAudio"
+  },
+  "notLive": {
+    "message": "此 HLS 流不是正在进行的直播。已结束的视频请使用下载，或选择其他来源。",
+    "description": "Alcydeo interface: notLive"
+  },
+  "liveGap": {
+    "message": "直播分段已不可用。录制已停止，仅保留连续接收到的部分。",
+    "description": "Alcydeo interface: liveGap"
+  },
+  "liveVariant": {
+    "message": "暂不支持此 HLS 直播变体。请尝试完整分段的来源或标签页录制。",
+    "description": "Alcydeo interface: liveVariant"
+  },
+  "liveEmpty": {
+    "message": "未收到完整的直播分段，未保存空视频。",
+    "description": "Alcydeo interface: liveEmpty"
+  },
+  "liveInterrupted": {
+    "message": "直播录制已中断。可保存已接收的部分，无法恢复错过的直播时段。",
+    "description": "Alcydeo interface: liveInterrupted"
+  },
+  "notice_liveIncomplete": {
+    "message": "直播部分录制：此文件仅包含连续接收到的部分。",
+    "description": "Alcydeo interface: notice_liveIncomplete"
+  },
+  "cloudOptional": {
+    "message": "可选传输",
+    "description": "Alcydeo interface: cloudOptional"
+  },
+  "help": {
+    "message": "帮助",
+    "description": "Alcydeo interface: help"
+  },
+  "helpLocal": {
+    "message": "帮助网站已在本地准备好，尚未发布。",
+    "description": "Alcydeo interface: helpLocal"
+  },
+  "helpOpen": {
+    "message": "打开帮助网站",
+    "description": "Alcydeo interface: helpOpen"
+  },
+  "minimumSize": {
+    "message": "忽略小于此大小的文件",
+    "description": "Alcydeo interface: minimumSize"
+  },
+  "sizeFilterHint": {
+    "message": "未知大小仍会显示。播放列表大小不代表视频大小。",
+    "description": "Alcydeo interface: sizeFilterHint"
+  },
+  "blockedHint": {
+    "message": "每行一个域名或网址，包括子域名。启用自动检测时会扫描所有其他网站。",
+    "description": "Alcydeo interface: blockedHint"
+  },
+  "mediaTools": {
+    "message": "视频工具",
+    "description": "Alcydeo interface: mediaTools"
+  },
+  "operation": {
+    "message": "操作",
+    "description": "Alcydeo interface: operation"
+  },
+  "convertTool": {
+    "message": "转换为 MP4",
+    "description": "Alcydeo interface: convertTool"
+  },
+  "compressTool": {
+    "message": "压缩",
+    "description": "Alcydeo interface: compressTool"
+  },
+  "mergeTool": {
+    "message": "合并片段",
+    "description": "Alcydeo interface: mergeTool"
+  },
+  "trimTool": {
+    "message": "裁剪",
+    "description": "Alcydeo interface: trimTool"
+  },
+  "convertHint": {
+    "message": "本地转换为 H.264/AAC MP4。不支持的编解码器会明确提示。",
+    "description": "Alcydeo interface: convertHint"
+  },
+  "compressHint": {
+    "message": "使用设置中的压缩参数在本地生成 H.264/AAC MP4。无法保证文件一定变小。",
+    "description": "Alcydeo interface: compressHint"
+  },
+  "mergeHint": {
+    "message": "选择并排序 2–20 个片段。统一为最高 720p/30 fps 的 MP4。各片段须有一个视频轨道，且音频布局一致。",
+    "description": "Alcydeo interface: mergeHint"
+  },
+  "trimHint": {
+    "message": "拖动手柄选择起点和终点，预览选区，然后保存为 MP4。",
+    "description": "Alcydeo interface: trimHint"
+  },
+  "chooseVideos": {
+    "message": "选择视频",
+    "description": "Alcydeo interface: chooseVideos"
+  },
+  "trimStart": {
+    "message": "起点（秒）",
+    "description": "Alcydeo interface: trimStart"
+  },
+  "trimEnd": {
+    "message": "终点（秒）",
+    "description": "Alcydeo interface: trimEnd"
+  },
+  "moveUp": {
+    "message": "上移",
+    "description": "Alcydeo interface: moveUp"
+  },
+  "moveDown": {
+    "message": "下移",
+    "description": "Alcydeo interface: moveDown"
+  },
+  "startTool": {
+    "message": "加入处理队列",
+    "description": "Alcydeo interface: startTool"
+  },
+  "trimRange": {
+    "message": "请选择视频时长内的有效范围。",
+    "description": "Alcydeo interface: trimRange"
+  },
+  "mergeTracks": {
+    "message": "这些片段的轨道布局或编解码器配置无法合并。",
+    "description": "Alcydeo interface: mergeTracks"
+  },
+  "record": {
+    "message": "录制",
+    "description": "Alcydeo interface: record"
+  },
+  "recordStream": {
+    "message": "录制流",
+    "description": "Alcydeo interface: recordStream"
+  },
+  "recording": {
+    "message": "正在录制",
+    "description": "Alcydeo interface: recording"
+  },
+  "startRecording": {
+    "message": "选择要录制的标签页",
+    "description": "Alcydeo interface: startRecording"
+  },
+  "stopRecording": {
+    "message": "停止并保存",
+    "description": "Alcydeo interface: stopRecording"
+  },
+  "recordHint": {
+    "message": "从弹窗录制当前标签页，或在此选择屏幕。使用更高码率及最高源分辨率。请保持管理器打开。",
+    "description": "Alcydeo interface: recordHint"
+  },
+  "recordNoAudio": {
+    "message": "未共享音频。如需声音，请停止并重新选择标签页及其音频。",
+    "description": "Alcydeo interface: recordNoAudio"
+  },
+  "recoverRecording": {
+    "message": "保存已录制部分",
+    "description": "Alcydeo interface: recoverRecording"
+  },
+  "recordingInterrupted": {
+    "message": "录制已中断。已写入的部分可以检查并保存。重新录制需要再次选择。",
+    "description": "Alcydeo interface: recordingInterrupted"
+  },
+  "recordingDenied": {
+    "message": "未允许录制或已关闭选择器。",
+    "description": "Alcydeo interface: recordingDenied"
+  },
+  "recordingUnavailable": {
+    "message": "Chrome 无法捕获所选画面。",
+    "description": "Alcydeo interface: recordingUnavailable"
+  },
+  "recordingSlow": {
+    "message": "存储速度不足，录制已停止。已有部分会保留。",
+    "description": "Alcydeo interface: recordingSlow"
+  },
+  "notice_recordingIncomplete": {
+    "message": "恢复的录制：文件仅包含已捕获的部分。",
+    "description": "Alcydeo interface: notice_recordingIncomplete"
+  },
+  "cloud": {
+    "message": "云端",
+    "description": "Alcydeo interface: cloud"
+  },
+  "cloudHint": {
+    "message": "仅在点击发送时上传所选文件。不会自动同步。",
+    "description": "Alcydeo interface: cloudHint"
+  },
+  "cloudProvider": {
+    "message": "目标",
+    "description": "Alcydeo interface: cloudProvider"
+  },
+  "cloudChooseFile": {
+    "message": "选择要发送的文件",
+    "description": "Alcydeo interface: cloudChooseFile"
+  },
+  "cloudShare": {
+    "message": "通过 Gofile 分享",
+    "description": "Alcydeo interface: cloudShare"
+  },
+  "cloudSave": {
+    "message": "保存到我的云端",
+    "description": "Alcydeo interface: cloudSave"
+  },
+  "gofilePublic": {
+    "message": "Gofile 无需登录，会生成公开分享链接。任何持有链接的人都能访问文件。保留时间由 Gofile 决定。",
+    "description": "Alcydeo interface: gofilePublic"
+  },
+  "cloudConnected": {
+    "message": "已连接，仅限本次浏览器会话",
+    "description": "Alcydeo interface: cloudConnected"
+  },
+  "cloudDisconnected": {
+    "message": "未连接",
+    "description": "Alcydeo interface: cloudDisconnected"
+  },
+  "cloudConnect": {
+    "message": "连接账号",
+    "description": "Alcydeo interface: cloudConnect"
+  },
+  "cloudDisconnect": {
+    "message": "断开连接",
+    "description": "Alcydeo interface: cloudDisconnect"
+  },
+  "cloudConfiguration": {
+    "message": "连接配置",
+    "description": "Alcydeo interface: cloudConfiguration"
+  },
+  "cloudConfigurationHint": {
+    "message": "须为此扩展 ID 注册 OAuth 应用。Drive 在构建时使用 Chrome Extension 客户端；OneDrive 使用此回调网址的公开 SPA 客户端。扩展中不应包含客户端密钥。",
+    "description": "Alcydeo interface: cloudConfigurationHint"
+  },
+  "cloudClientId": {
+    "message": "公开客户端 ID",
+    "description": "Alcydeo interface: cloudClientId"
+  },
+  "cloudKeepOpen": {
+    "message": "请保持管理器打开。所选文件会暂存在本地。移除云端任务会清除本地副本，保留远程文件。",
+    "description": "Alcydeo interface: cloudKeepOpen"
+  },
+  "gofileRestart": {
+    "message": "此处 Gofile 不支持分块续传。恢复将从头重新发送。",
+    "description": "Alcydeo interface: gofileRestart"
+  },
+  "cloudOpen": {
+    "message": "打开远端文件",
+    "description": "Alcydeo interface: cloudOpen"
+  },
+  "cloudSetup": {
+    "message": "本地版本尚未配置 OAuth。请查看连接配置。",
+    "description": "Alcydeo interface: cloudSetup"
+  },
+  "cloudAuth": {
+    "message": "请连接或重新连接所选云端账号。",
+    "description": "Alcydeo interface: cloudAuth"
+  },
+  "cloudNetwork": {
+    "message": "上传未完成。请检查连接后重试。",
+    "description": "Alcydeo interface: cloudNetwork"
+  },
+  "cloudResponse": {
+    "message": "服务未确认有效的已上传文件。",
+    "description": "Alcydeo interface: cloudResponse"
+  },
+  "cloudRate": {
+    "message": "服务限制上传，请稍后重试。",
+    "description": "Alcydeo interface: cloudRate"
+  },
+  "cloudExpired": {
+    "message": "上传会话已过期。恢复将开始新上传，请先检查云端是否已有完整文件。",
+    "description": "Alcydeo interface: cloudExpired"
+  },
+  "cloudInput": {
+    "message": "请重新选择本地文件，其临时副本缺失或不完整。",
+    "description": "Alcydeo interface: cloudInput"
+  },
+  "cloudInterrupted": {
+    "message": "管理器已关闭或上传中断。准备好后可恢复。",
+    "description": "Alcydeo interface: cloudInterrupted"
+  },
+  "cloud_preparing": {
+    "message": "正在准备文件",
+    "description": "Alcydeo interface: cloud_preparing"
+  },
+  "cloud_queued": {
+    "message": "排队中",
+    "description": "Alcydeo interface: cloud_queued"
+  },
+  "cloud_uploading": {
+    "message": "正在上传",
+    "description": "Alcydeo interface: cloud_uploading"
+  },
+  "cloud_paused": {
+    "message": "已暂停",
+    "description": "Alcydeo interface: cloud_paused"
+  },
+  "cloud_completed": {
+    "message": "已发送",
+    "description": "Alcydeo interface: cloud_completed"
+  },
+  "cloud_cancelled": {
+    "message": "已取消",
+    "description": "Alcydeo interface: cloud_cancelled"
+  },
+  "cloud_failed": {
+    "message": "失败",
+    "description": "Alcydeo interface: cloud_failed"
+  },
+  "formatsScope": {
+    "message": "下载原始文件；扩展名不保证 Chrome 能播放或转换所有编解码器。M3U8 和 MPD 描述分段流。",
+    "description": "Alcydeo interface: formatsScope"
+  },
+  "featureLimits": {
+    "message": "桌面 Chrome。已在本地测试原始文件、未加密 HLS VOD 和单周期 DASH。不支持 DRM 或所有编解码器。Cast 为实验功能，接收设备待验证。录制质量取决于来源和电脑。",
+    "description": "Alcydeo interface: featureLimits"
+  },
+  "cloudSharing": {
+    "message": "分享链接",
+    "description": "Alcydeo interface: cloudSharing"
+  },
+  "cloudStorage": {
+    "message": "保存到云存储",
+    "description": "Alcydeo interface: cloudStorage"
+  },
+  "cloudNoAccount": {
+    "message": "无需账号",
+    "description": "Alcydeo interface: cloudNoAccount"
+  },
+  "cloudWithAccount": {
+    "message": "需要账号",
+    "description": "Alcydeo interface: cloudWithAccount"
+  },
+  "cloudUploadLink": {
+    "message": "上传链接",
+    "description": "Alcydeo interface: cloudUploadLink"
+  },
+  "cloudPcloudDestination": {
+    "message": "上传链接或代码",
+    "description": "Alcydeo interface: cloudPcloudDestination"
+  },
+  "cloudPcloudRegion": {
+    "message": "文件夹数据区域",
+    "description": "Alcydeo interface: cloudPcloudRegion"
+  },
+  "cloudRegionEu": {
+    "message": "欧洲",
+    "description": "Alcydeo interface: cloudRegionEu"
+  },
+  "cloudRegionUs": {
+    "message": "美国",
+    "description": "Alcydeo interface: cloudRegionUs"
+  },
+  "cloudPcloudSend": {
+    "message": "发送到 pCloud",
+    "description": "Alcydeo interface: cloudPcloudSend"
+  },
+  "cloudPcloudHint": {
+    "message": "此处无需登录：粘贴已有的 pCloud 上传链接并选择文件夹的数据区域。文件夹所有者须有 pCloud 账号。文件将上传至该文件夹，不会创建公开下载链接。",
+    "description": "Alcydeo interface: cloudPcloudHint"
+  },
+  "cloudPcloudLink": {
+    "message": "请输入有效的 pCloud 上传链接或代码，并检查文件夹区域。下载分享链接不是上传链接。",
+    "description": "Alcydeo interface: cloudPcloudLink"
+  },
+  "cloudPcloudQuota": {
+    "message": "目标文件夹已达到空间或文件数量限制。",
+    "description": "Alcydeo interface: cloudPcloudQuota"
+  },
+  "cloudPcloudSent": {
+    "message": "pCloud 已确认上传。文件夹所有者可获取文件；未创建公开下载链接。",
+    "description": "Alcydeo interface: cloudPcloudSent"
+  },
+  "cloudRestart": {
+    "message": "重试将重新发送整个文件。若上次响应丢失，请先检查目标以避免重复。",
+    "description": "Alcydeo interface: cloudRestart"
+  },
+  "cloudValidation": {
+    "message": "云端协议已进行本地测试。真实服务传输仍待验证；MegaUp 为实验功能。pCloud 需要已有上传链接。",
+    "description": "Alcydeo interface: cloudValidation"
+  },
+  "cloudOnefichierSend": {
+    "message": "通过 1fichier 分享",
+    "description": "Alcydeo interface: cloudOnefichierSend"
+  },
+  "cloudOnefichierOpen": {
+    "message": "打开 1fichier",
+    "description": "Alcydeo interface: cloudOnefichierOpen"
+  },
+  "cloudOnefichierHint": {
+    "message": "无需账号的实验性分享。任何持链接的人都能访问文件。15 天后的保存不受保证，请保留原文件。发送后可能需要等待才能访问。",
+    "description": "Alcydeo interface: cloudOnefichierHint"
+  },
+  "cloudOnefichierPending": {
+    "message": "正在发送文件。此目标不提供精确百分比，正在等待确认。",
+    "description": "Alcydeo interface: cloudOnefichierPending"
+  },
+  "err_cloudOnefichierUnavailable": {
+    "message": "1fichier 未提供有效的上传目标。本次尝试未发送文件。请稍后重试或选择其他目标。",
+    "description": "Alcydeo interface: err_cloudOnefichierUnavailable"
+  },
+  "cloudSendAll": {
+    "message": "无需配置，发送到所有云端",
+    "description": "Alcydeo interface: cloudSendAll"
+  },
+  "cloudSendAllHint": {
+    "message": "Gofile · MegaUp · 1fichier · Turbobit。各服务有各自的限制。",
+    "description": "Alcydeo interface: cloudSendAllHint"
+  },
+  "cloudPreparedDestinations": {
+    "message": "已准备：$1",
+    "description": "Alcydeo interface: cloudPreparedDestinations"
+  },
+  "cloudTargetTooLarge": {
+    "message": "$1 · $2：文件超过 $3，已跳过。",
+    "description": "Alcydeo interface: cloudTargetTooLarge"
+  },
+  "cloudTargetPreparationFailed": {
+    "message": "$1 · $2：$3",
+    "description": "Alcydeo interface: cloudTargetPreparationFailed"
+  },
+  "cloudSendActions": {
+    "message": "发送选项",
+    "description": "Alcydeo interface: cloudSendActions"
+  },
+  "cloudClearTemporary": {
+    "message": "删除临时文件",
+    "description": "Alcydeo interface: cloudClearTemporary"
+  },
+  "cloudClearTemporaryHint": {
+    "message": "删除云端功能的本地副本并取消等待中的上传。保留原始文件和分享链接。",
+    "description": "Alcydeo interface: cloudClearTemporaryHint"
+  },
+  "cloudTemporaryCleared": {
+    "message": "已删除临时文件。保留传输记录和分享链接。",
+    "description": "Alcydeo interface: cloudTemporaryCleared"
+  },
+  "cloudTemporaryBusy": {
+    "message": "正在传输或准备文件。请等待完成或取消操作后再清理。",
+    "description": "Alcydeo interface: cloudTemporaryBusy"
+  },
+  "cloudTemporaryFailed": {
+    "message": "部分临时副本无法删除。请重试。",
+    "description": "Alcydeo interface: cloudTemporaryFailed"
+  },
+  "cloudSendAllCompact": {
+    "message": "全部免配置",
+    "description": "Alcydeo interface: cloudSendAllCompact"
+  },
+  "cloudClearTemporaryCompact": {
+    "message": "清理本地副本",
+    "description": "Alcydeo interface: cloudClearTemporaryCompact"
+  },
+  "cloudProviderDetails": {
+    "message": "服务详情",
+    "description": "Alcydeo interface: cloudProviderDetails"
+  },
+  "cloudHistory": {
+    "message": "传输",
+    "description": "Alcydeo interface: cloudHistory"
+  },
+  "cloudKeepOpenShort": {
+    "message": "发送期间请保持此页面打开。",
+    "description": "Alcydeo interface: cloudKeepOpenShort"
+  },
+  "cloudCopyUnavailable": {
+    "message": "本地副本不可用于重试",
+    "description": "Alcydeo interface: cloudCopyUnavailable"
+  },
+  "concurrentDownloads": {
+    "message": "同时下载",
+    "description": "Alcydeo interface: concurrentDownloads"
+  },
+  "concurrentFiles": {
+    "message": "同时下载的文件数",
+    "description": "Alcydeo interface: concurrentFiles"
+  },
+  "concurrentFilesHint": {
+    "message": "每次同时下载 1 到 8 个文件，与每个文件的连接数无关。一有空位，等待中的文件就会开始下载。",
+    "description": "Alcydeo interface: concurrentFilesHint"
+  },
+  "concurrentFilesChangeHint": {
+    "message": "降低上限不会中断正在进行的下载。转换仍逐个处理。",
+    "description": "Alcydeo interface: concurrentFilesChangeHint"
+  },
+  "cloudTurbobitSend": {
+    "message": "通过 Turbobit 分享",
+    "description": "Alcydeo interface: cloudTurbobitSend"
+  },
+  "cloudTurbobitOpen": {
+    "message": "打开 Turbobit",
+    "description": "Alcydeo interface: cloudTurbobitOpen"
+  },
+  "cloudTurbobitHint": {
+    "message": "无需账号的实验性分享，每个文件最多 200 MB。持链接者均可访问，访客文件最多保存 7 天。请保留原文件并在 Turbobit 上检查文件。",
+    "description": "Alcydeo interface: cloudTurbobitHint"
+  },
+  "err_cloudTurbobitUnavailable": {
+    "message": "Turbobit 未提供有效的访客上传目标。尚未发送文件。请稍后重试或选择其他目标。",
+    "description": "Alcydeo interface: err_cloudTurbobitUnavailable"
+  },
+  "playlistSnapshot": {
+    "message": "此合辑会变化：仅列出 YouTube 当前已加载的曲目。请选择要保存的内容，不包含后续推荐。",
+    "description": "Alcydeo interface: playlistSnapshot"
+  },
+  "playlistTitle": {
+    "message": "YouTube 播放列表",
+    "description": "Alcydeo interface: playlistTitle"
+  },
+  "playlistLoading": {
+    "message": "正在读取播放列表…",
+    "description": "Alcydeo interface: playlistLoading"
+  },
+  "playlistSelection": {
+    "message": "已选择 $selected$ / $total$ 个视频",
+    "description": "Alcydeo interface: playlistSelection",
+    "placeholders": {
+      "selected": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "playlistSelectAll": {
+    "message": "选择全部视频",
+    "description": "Alcydeo interface: playlistSelectAll"
+  },
+  "playlistDownload": {
+    "message": "下载所选视频（$count$）",
+    "description": "Alcydeo interface: playlistDownload",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "playlistFolder": {
+    "message": "播放列表文件夹：",
+    "description": "Alcydeo interface: playlistFolder"
+  },
+  "playlistBest": {
+    "message": "最佳可用画质",
+    "description": "Alcydeo interface: playlistBest"
+  },
+  "playlistUnavailable": {
+    "message": "视频不可用",
+    "description": "Alcydeo interface: playlistUnavailable"
+  },
+  "playlistEmpty": {
+    "message": "此播放列表中没有可访问的视频。",
+    "description": "Alcydeo interface: playlistEmpty"
+  },
+  "playlistPreparing": {
+    "message": "正在准备下一个视频…",
+    "description": "Alcydeo interface: playlistPreparing"
+  },
+  "playlistProgress": {
+    "message": "已保存 $done$ / $total$ · $failed$ 个失败",
+    "description": "Alcydeo interface: playlistProgress",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "playlistPartial": {
+    "message": "已完成，但有错误",
+    "description": "Alcydeo interface: playlistPartial"
+  },
+  "playlistRetry": {
+    "message": "重试失败的视频",
+    "description": "Alcydeo interface: playlistRetry"
+  },
+  "playlistHint": {
+    "message": "静音工作标签页会逐个准备视频。请保持管理器打开。仅保存可访问的视频；私密、已删除或被拒绝的视频会单独标明。",
+    "description": "Alcydeo interface: playlistHint"
+  },
+  "playlistRead": {
+    "message": "无法读取完整播放列表。请刷新 YouTube 页面后重新检测。",
+    "description": "Alcydeo interface: playlistRead"
+  },
+  "playlistLimit": {
+    "message": "此播放列表超过本地读取上限（5000 个视频或 100 页）。不完整列表不会启动完整下载。",
+    "description": "Alcydeo interface: playlistLimit"
+  },
+  "playlistPlayer": {
+    "message": "播放器未提供可用来源。请先在 YouTube 正常播放该视频，再重试。",
+    "description": "Alcydeo interface: playlistPlayer"
+  },
+  "playlistInterrupted": {
+    "message": "播放列表因中断而暂停。恢复后将继续，不会重复已保存的视频。",
+    "description": "Alcydeo interface: playlistInterrupted"
+  },
+  "playlistTabClosed": {
+    "message": "工作标签页已关闭或更改。请恢复播放列表以继续。",
+    "description": "Alcydeo interface: playlistTabClosed"
+  },
+  "playlistStopped": {
+    "message": "播放列表因中断而暂停。恢复后将继续，不会重复已保存的视频。",
+    "description": "Alcydeo interface: playlistStopped"
+  },
+  "playlistNotSaved": {
+    "message": "播放列表因中断而暂停。恢复后将继续，不会重复已保存的视频。",
+    "description": "Alcydeo interface: playlistNotSaved"
+  },
+  "playlistQuality": {
+    "message": "所选画质或更低画质没有可用来源。",
+    "description": "Alcydeo interface: playlistQuality"
+  },
+  "cloudSendTitle": {
+    "message": "发送文件",
+    "description": "Alcydeo interface: cloudSendTitle"
+  },
+  "workspaceNavigation": {
+    "message": "主导航",
+    "description": "Alcydeo interface: workspaceNavigation"
+  },
+  "skipContent": {
+    "message": "跳转到内容",
+    "description": "Alcydeo interface: skipContent"
+  },
+  "addVideo": {
+    "message": "添加视频",
+    "description": "Alcydeo interface: addVideo"
+  },
+  "clearSearch": {
+    "message": "清除搜索",
+    "description": "Alcydeo interface: clearSearch"
+  },
+  "manager_queue_description": {
+    "message": "在一处管理所有下载。",
+    "description": "Alcydeo interface: manager_queue_description"
+  },
+  "manager_library_description": {
+    "message": "在一处管理视频、下载及处理任务。",
+    "description": "Alcydeo interface: manager_library_description"
+  },
+  "manager_record_description": {
+    "message": "录下精彩时刻，保存在设备上。",
+    "description": "Alcydeo interface: manager_record_description"
+  },
+  "manager_cloud_description": {
+    "message": "将所选文件发送到喜欢的目标。",
+    "description": "Alcydeo interface: manager_cloud_description"
+  },
+  "manager_settings_description": {
+    "message": "按你的习惯设置 Alcydeo。",
+    "description": "Alcydeo interface: manager_settings_description"
+  },
+  "manager_help_description": {
+    "message": "需要时，随时获得帮助。",
+    "description": "Alcydeo interface: manager_help_description"
+  },
+  "managerResults": {
+    "message": "项目：$count$",
+    "description": "Alcydeo interface: managerResults",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "managerNoResults": {
+    "message": "暂无匹配结果",
+    "description": "Alcydeo interface: managerNoResults"
+  },
+  "managerNoResultsHint": {
+    "message": "试试其他标题或清除筛选条件。",
+    "description": "Alcydeo interface: managerNoResultsHint"
+  },
+  "managerEmptyHint": {
+    "message": "通过 Alcydeo 图标从网页下载视频，即可在此找到。",
+    "description": "Alcydeo interface: managerEmptyHint"
+  },
+  "resetFilters": {
+    "message": "清除筛选",
+    "description": "Alcydeo interface: resetFilters"
+  },
+  "detectionSettings": {
+    "message": "检测",
+    "description": "Alcydeo interface: detectionSettings"
+  },
+  "detectionSettingsHint": {
+    "message": "选择下载列表中显示的内容。",
+    "description": "Alcydeo interface: detectionSettingsHint"
+  },
+  "appearanceSettings": {
+    "message": "外观",
+    "description": "Alcydeo interface: appearanceSettings"
+  },
+  "appearanceSettingsHint": {
+    "message": "日夜都舒适的界面。",
+    "description": "Alcydeo interface: appearanceSettingsHint"
+  },
+  "destinationSettingsHint": {
+    "message": "选择文件的保存方式和位置。",
+    "description": "Alcydeo interface: destinationSettingsHint"
+  },
+  "blockedExample": {
+    "message": "example.com",
+    "description": "Alcydeo interface: blockedExample"
+  },
+  "tvKeepOpen": {
+    "message": "播放期间请保持此播放器打开。",
+    "description": "Alcydeo interface: tvKeepOpen"
+  },
+  "sourceNone": {
+    "message": "已排除检测到的来源",
+    "description": "Alcydeo interface: sourceNone"
+  },
+  "sourceRetryHint": {
+    "message": "检查发现来源无效、不可用或过小。请重新加载原播放器，然后再次检测。",
+    "description": "Alcydeo interface: sourceRetryHint"
+  },
+  "tv": {
+    "message": "电视播放",
+    "description": "Alcydeo interface: tv"
+  },
+  "manager_tv_description": {
+    "message": "投放检测到的视频，或打开本地文件以投放其标签页。",
+    "description": "Alcydeo interface: manager_tv_description"
+  },
+  "tvOpen": {
+    "message": "打开电视播放器",
+    "description": "Alcydeo interface: tvOpen"
+  },
+  "tvExperimental": {
+    "message": "实验性功能：尚未在真实接收设备上验证播放。",
+    "description": "Alcydeo interface: tvExperimental"
+  },
+  "tvNoAirplay": {
+    "message": "此设备上的 Chrome 不支持 AirPlay。",
+    "description": "Alcydeo interface: tvNoAirplay"
+  },
+  "tvNoDevice": {
+    "message": "未找到兼容接收设备。请检查两台设备是否在同一网络。",
+    "description": "Alcydeo interface: tvNoDevice"
+  },
+  "tvNotSupported": {
+    "message": "此来源或浏览器无法启动远程播放。请尝试通过 Chrome 菜单投放原标签页。",
+    "description": "Alcydeo interface: tvNotSupported"
+  },
+  "tvConnected": {
+    "message": "已连接接收设备",
+    "description": "Alcydeo interface: tvConnected"
+  },
+  "tvConnecting": {
+    "message": "正在连接…",
+    "description": "Alcydeo interface: tvConnecting"
+  },
+  "tvDisconnected": {
+    "message": "选择接收设备以开始。",
+    "description": "Alcydeo interface: tvDisconnected"
+  },
+  "tvHint": {
+    "message": "原生 Cast 取决于 Chrome、接收设备和媒体格式。Alcydeo 不添加中继服务器。直接播放不适用时，投放标签页可使用原网站播放器。",
+    "description": "Alcydeo interface: tvHint"
+  },
+  "sourceChecking": {
+    "message": "正在检查来源…",
+    "description": "Alcydeo interface: sourceChecking"
+  },
+  "sourceReady": {
+    "message": "可访问",
+    "description": "Alcydeo interface: sourceReady"
+  },
+  "sourceUnknown": {
+    "message": "未确认",
+    "description": "Alcydeo interface: sourceUnknown"
+  },
+  "sourceCheckHint": {
+    "message": "下载前会检查少量样本，不代表完整文件已验证。刷新可重新检查候选来源。",
+    "description": "Alcydeo interface: sourceCheckHint"
+  },
+  "err_tooSmall": {
+    "message": "此来源小于设置中选择的最小大小。",
+    "description": "Alcydeo interface: err_tooSmall"
+  },
+  "tvUnavailable": {
+    "message": "不可用",
+    "description": "Alcydeo interface: tvUnavailable"
+  },
+  "tvPreparing": {
+    "message": "正在准备播放器…",
+    "description": "Alcydeo interface: tvPreparing"
+  },
+  "tvAirplayWindows": {
+    "message": "Windows 版 Chrome 不提供 AirPlay 发送功能。仅支持 AirPlay 的 Apple TV 不是 Google Cast 接收设备。",
+    "description": "Alcydeo interface: tvAirplayWindows"
+  },
+  "tvStreamTab": {
+    "message": "此流使用原网站播放器。请返回原标签页，通过 Chrome 的投放菜单显示到电视。",
+    "description": "Alcydeo interface: tvStreamTab"
+  },
+  "tvDeviceAvailable": {
+    "message": "Chrome 已报告兼容的接收设备。",
+    "description": "Alcydeo interface: tvDeviceAvailable"
+  },
+  "tvDeviceUnconfirmed": {
+    "message": "Chrome 尚未报告此视频的兼容接收设备。可重试或投放原标签页。",
+    "description": "Alcydeo interface: tvDeviceUnconfirmed"
+  },
+  "tvDeviceChecking": {
+    "message": "Chrome 尚未确认接收设备可用性。",
+    "description": "Alcydeo interface: tvDeviceChecking"
+  },
+  "tvShortClip": {
+    "message": "Chrome 156 可能拒绝直接远程播放不超过 15 秒的片段。请投放标签页。",
+    "description": "Alcydeo interface: tvShortClip"
+  },
+  "tvNoConnection": {
+    "message": "Chrome 无法与接收设备通信。请检查兼容性，或通过 Chrome 菜单投放标签页。",
+    "description": "Alcydeo interface: tvNoConnection"
+  },
+  "tvPermission": {
+    "message": "Chrome 阻止了接收设备选择。请检查投放策略或使用投放菜单。",
+    "description": "Alcydeo interface: tvPermission"
+  },
+  "tvActivation": {
+    "message": "请再次点击 Cast 打开接收设备选择器。",
+    "description": "Alcydeo interface: tvActivation"
+  },
+  "tvBusy": {
+    "message": "接收设备选择器已打开，请先完成选择。",
+    "description": "Alcydeo interface: tvBusy"
+  },
+  "tvMediaCodec": {
+    "message": "Chrome 无法在此播放器解码该来源。请尝试原标签页或其他画质。",
+    "description": "Alcydeo interface: tvMediaCodec"
+  },
+  "tvMediaNetwork": {
+    "message": "此处无法加载视频。链接可能已过期或需要原网页会话。请返回原标签页。",
+    "description": "Alcydeo interface: tvMediaNetwork"
+  },
+  "tvOriginalMissing": {
+    "message": "原标签页已关闭或改变。请重新打开视频页并检测来源。",
+    "description": "Alcydeo interface: tvOriginalMissing"
+  },
+  "tvCastTab": {
+    "message": "投放原标签页",
+    "description": "Alcydeo interface: tvCastTab"
+  },
+  "tvOriginal": {
+    "message": "返回原播放器",
+    "description": "Alcydeo interface: tvOriginal"
+  },
+  "tvChromeSteps": {
+    "message": "返回原标签页并播放视频，然后打开 Chrome ⋮ → 投放、保存和分享 → 投放… → 来源 → 投放标签页，选择电视。此选择器需从 Chrome 菜单打开。",
+    "description": "Alcydeo interface: tvChromeSteps"
+  },
+  "tvNetworkHint": {
+    "message": "请使用同一本地网络中的 Google Cast 兼容设备。若 Chrome 也无法发现，请检查网络、VPN 和防火墙。",
+    "description": "Alcydeo interface: tvNetworkHint"
+  },
+  "tvWebTitle": {
+    "message": "Google Cast 播放器",
+    "description": "Alcydeo interface: tvWebTitle"
+  },
+  "tvWebOpen": {
+    "message": "选择电视",
+    "description": "Alcydeo interface: tvWebOpen"
+  },
+  "tvWebPreparing": {
+    "message": "正在加载 Google Cast 控件…",
+    "description": "Alcydeo interface: tvWebPreparing"
+  },
+  "tvWebLoad": {
+    "message": "在电视上播放",
+    "description": "Alcydeo interface: tvWebLoad"
+  },
+  "tvWebStop": {
+    "message": "断开连接",
+    "description": "Alcydeo interface: tvWebStop"
+  },
+  "tvWebNoMedia": {
+    "message": "粘贴视频直链，选择电视，然后点击在电视上播放。",
+    "description": "Alcydeo interface: tvWebNoMedia"
+  },
+  "tvWebHint": {
+    "message": "独立网页加载 Google Cast SDK。选择接收设备后，其播放器会收到视频链接和标题。不会传送 Cookie 或密码。",
+    "description": "Alcydeo interface: tvWebHint"
+  },
+  "tvWebUnavailable": {
+    "message": "此安装中 Google Cast 网页播放器不可用。本地测试请使用 Chrome 的投放菜单。",
+    "description": "Alcydeo interface: tvWebUnavailable"
+  },
+  "tvWebLoadError": {
+    "message": "接收设备未能加载视频。链接可能需要 Cookie、已过期或格式不支持。请改为投放原标签页。",
+    "description": "Alcydeo interface: tvWebLoadError"
+  },
+  "tvWebSdkError": {
+    "message": "Google Cast 控件无法加载。请检查 Chrome、网络和 Google SDK 访问。",
+    "description": "Alcydeo interface: tvWebSdkError"
+  },
+  "tvNative": {
+    "message": "原生原型",
+    "description": "Alcydeo interface: tvNative"
+  },
+  "tvWebPlay": {
+    "message": "播放",
+    "description": "Alcydeo interface: tvWebPlay"
+  },
+  "castVideo": {
+    "message": "投放",
+    "description": "Alcydeo interface: castVideo"
+  },
+  "tvCastBuiltIn": {
+    "message": "请在 Chrome 接收设备选择器中选择电视。保持此标签页打开以控制播放。",
+    "description": "Alcydeo interface: tvCastBuiltIn"
+  },
+  "tvCastAutoQuality": {
+    "message": "电视会收到完整流并选择兼容的画质和音轨。",
+    "description": "Alcydeo interface: tvCastAutoQuality"
+  },
+  "tvCastTimeout": {
+    "message": "接收设备未及时确认播放。请重试或投放原标签页。",
+    "description": "Alcydeo interface: tvCastTimeout"
+  },
+  "tvCastLocalFile": {
+    "message": "仅存于电脑的文件没有电视可访问的链接。请在 Chrome 播放本地文件，再投放标签页。",
+    "description": "Alcydeo interface: tvCastLocalFile"
+  },
+  "tvCast_idle": {
+    "message": "请选择接收设备投放此视频。",
+    "description": "Alcydeo interface: tvCast_idle"
+  },
+  "tvCast_choosing": {
+    "message": "请在 Chrome 中选择电视…",
+    "description": "Alcydeo interface: tvCast_choosing"
+  },
+  "tvCast_connecting": {
+    "message": "正在连接接收设备…",
+    "description": "Alcydeo interface: tvCast_connecting"
+  },
+  "tvCast_loading": {
+    "message": "接收设备正在加载视频…",
+    "description": "Alcydeo interface: tvCast_loading"
+  },
+  "tvCast_playing": {
+    "message": "正在电视上播放",
+    "description": "Alcydeo interface: tvCast_playing"
+  },
+  "tvCast_paused": {
+    "message": "电视播放已暂停",
+    "description": "Alcydeo interface: tvCast_paused"
+  },
+  "tvCast_finished": {
+    "message": "播放已结束",
+    "description": "Alcydeo interface: tvCast_finished"
+  },
+  "tvCast_error": {
+    "message": "未确认播放。",
+    "description": "Alcydeo interface: tvCast_error"
+  },
+  "tvFileClose": {
+    "message": "关闭文件",
+    "description": "Alcydeo interface: tvFileClose"
+  },
+  "tvDetectedVideo": {
+    "message": "检测到的视频",
+    "description": "Alcydeo interface: tvDetectedVideo"
+  },
+  "tvLocalFile": {
+    "message": "电脑上的文件",
+    "description": "Alcydeo interface: tvLocalFile"
+  },
+  "tvFileIntro": {
+    "message": "在此播放文件，然后选择接收设备支持的投放方式。",
+    "description": "Alcydeo interface: tvFileIntro"
+  },
+  "tvFileChoose": {
+    "message": "选择视频文件",
+    "description": "Alcydeo interface: tvFileChoose"
+  },
+  "tvFileChooseSaved": {
+    "message": "请选择电脑上保存的文件：",
+    "description": "Alcydeo interface: tvFileChooseSaved"
+  },
+  "tvFileCastGuide": {
+    "message": "如何投放此播放器",
+    "description": "Alcydeo interface: tvFileCastGuide"
+  },
+  "tvFileStepPlay": {
+    "message": "在 Alcydeo 中打开视频文件并开始播放。",
+    "description": "Alcydeo interface: tvFileStepPlay"
+  },
+  "tvFileStepMenu": {
+    "message": "打开 Chrome ⋮ → 投放、保存和分享 → 投放…。此按钮显示步骤，接收设备选择器需从 Chrome 菜单打开。",
+    "description": "Alcydeo interface: tvFileStepMenu"
+  },
+  "tvFileStepTab": {
+    "message": "在“来源”中选择“投放标签页”，再选择电视，例如 NVIDIA SHIELD。",
+    "description": "Alcydeo interface: tvFileStepTab"
+  },
+  "tvFileKeepOpen": {
+    "message": "请保持此标签页打开。使用播放器控制播放，通过 Chrome 投放按钮停止投放。投放标签页可能比发送视频链接占用更多 CPU。",
+    "description": "Alcydeo interface: tvFileKeepOpen"
+  },
+  "tvFilePrivacy": {
+    "message": "文件保留在电脑上；Chrome 原生投放会将媒体传输给所选接收设备。Alcydeo 不会将其上传至托管服务。",
+    "description": "Alcydeo interface: tvFilePrivacy"
+  },
+  "tvFileInvalid": {
+    "message": "请选择非空视频文件。",
+    "description": "Alcydeo interface: tvFileInvalid"
+  },
+  "tvFileCodec": {
+    "message": "Chrome 无法播放此文件。请尝试在视频工具中将其转换为 MP4。",
+    "description": "Alcydeo interface: tvFileCodec"
+  },
+  "tvFileChooseAgain": {
+    "message": "保留的文件不可用。请选择此电脑上保存的副本。",
+    "description": "Alcydeo interface: tvFileChooseAgain"
+  },
+  "tvFilePlayFirst": {
+    "message": "请先在此播放器中播放，再点击投放。",
+    "description": "Alcydeo interface: tvFilePlayFirst"
+  },
+  "tvFilePrepare": {
+    "message": "准备文件以投放",
+    "description": "Alcydeo interface: tvFilePrepare"
+  },
+  "tvFileCopying": {
+    "message": "正在准备本地文件…",
+    "description": "Alcydeo interface: tvFileCopying"
+  },
+  "tvFileAccess": {
+    "message": "请在 Chrome 的 Alcydeo 扩展详情中启用“允许访问文件网址”，然后重新打开此播放器。",
+    "description": "Alcydeo interface: tvFileAccess"
+  },
+  "tvFileAccessHint": {
+    "message": "投放需要对已保存文件的可选访问权限。不会上传文件。准备好后，请在此播放器中点击投放。",
+    "description": "Alcydeo interface: tvFileAccessHint"
+  },
+  "tvFileCopyHint": {
+    "message": "原生投放需要已保存的文件。准备过程会打开“另存为”以创建本地副本，原文件将保留。",
+    "description": "Alcydeo interface: tvFileCopyHint"
+  },
+  "tvFileCopyFailed": {
+    "message": "无法准备本地副本。请重试；尚未连接接收设备。",
+    "description": "Alcydeo interface: tvFileCopyFailed"
+  },
+  "tvFilePath": {
+    "message": "不支持此文件路径。请选择视频并准备本地副本。不会打开网络共享。",
+    "description": "Alcydeo interface: tvFilePath"
+  },
+  "tvFileShort": {
+    "message": "Chrome 原生远程播放要求视频超过 15 秒。请对此短片使用标签页投放指南。",
+    "description": "Alcydeo interface: tvFileShort"
+  },
+  "tvFileCastChange": {
+    "message": "更换电视 / 断开连接",
+    "description": "Alcydeo interface: tvFileCastChange"
+  },
+  "tvFileState_disconnected": {
+    "message": "已准备好选择接收设备",
+    "description": "Alcydeo interface: tvFileState_disconnected"
+  },
+  "tvFileState_choosing": {
+    "message": "请在 Chrome 中选择电视…",
+    "description": "Alcydeo interface: tvFileState_choosing"
+  },
+  "tvFileState_connecting": {
+    "message": "正在连接…",
+    "description": "Alcydeo interface: tvFileState_connecting"
+  },
+  "tvFileState_connected": {
+    "message": "接收设备已连接",
+    "description": "Alcydeo interface: tvFileState_connected"
+  },
+  "tvFileState_error": {
+    "message": "尚未确认接收设备连接",
+    "description": "Alcydeo interface: tvFileState_error"
+  },
+  "tvFileReceiverLimit": {
+    "message": "Chrome 的文件投放按钮支持部分 Chromecast 设备和 Google TV Streamer。此 API 不支持 Nvidia Shield；请通过 Chrome 菜单投放播放器标签页。",
+    "description": "Alcydeo interface: tvFileReceiverLimit"
+  },
+  "tvWebPlayerVolume": {
+    "message": "音量",
+    "description": "Alcydeo interface: tvWebPlayerVolume"
+  },
+  "tvWebPlayerSeek": {
+    "message": "播放位置",
+    "description": "Alcydeo interface: tvWebPlayerSeek"
+  },
+  "tvWebFullscreen": {
+    "message": "全屏",
+    "description": "Alcydeo interface: tvWebFullscreen"
+  },
+  "tvWebExitFullscreen": {
+    "message": "退出全屏",
+    "description": "Alcydeo interface: tvWebExitFullscreen"
+  },
+  "tvWebUsingOriginal": {
+    "message": "下载文件的原始来源",
+    "description": "Alcydeo interface: tvWebUsingOriginal"
+  },
+  "tvWebPreviewUnavailable": {
+    "message": "此来源无法本地预览。电视可能支持该格式，您仍可尝试投放。",
+    "description": "Alcydeo interface: tvWebPreviewUnavailable"
+  },
+  "tvWebSeek": {
+    "message": "电视播放位置",
+    "description": "Alcydeo interface: tvWebSeek"
+  },
+  "tvWebVolume": {
+    "message": "电视音量",
+    "description": "Alcydeo interface: tvWebVolume"
+  },
+  "tvWebSource": {
+    "message": "视频地址",
+    "description": "Alcydeo interface: tvWebSource"
+  },
+  "tvFileCastTabSteps": {
+    "message": "投放标签页 · Chrome 步骤",
+    "description": "Alcydeo interface: tvFileCastTabSteps"
+  },
+  "tvFileCastNative": {
+    "message": "原生投放 · 兼容设备",
+    "description": "Alcydeo interface: tvFileCastNative"
+  },
+  "trimStartTime": {
+    "message": "开始时间",
+    "description": "Alcydeo interface: trimStartTime"
+  },
+  "trimEndTime": {
+    "message": "结束时间",
+    "description": "Alcydeo interface: trimEndTime"
+  },
+  "trimTimeHint": {
+    "message": "输入秒数或 m:ss / h:mm:ss，最多保留三位小数。",
+    "description": "Alcydeo interface: trimTimeHint"
+  },
+  "undoAnnotations": {
+    "message": "撤销笔画",
+    "description": "Alcydeo interface: undoAnnotations"
+  },
+  "clearAnnotations": {
+    "message": "清除绘图",
+    "description": "Alcydeo interface: clearAnnotations"
+  },
+  "language": {
+    "message": "语言",
+    "description": "Alcydeo interface: language"
+  },
+  "languageAutomatic": {
+    "message": "跟随 Chrome",
+    "description": "Alcydeo interface: languageAutomatic"
+  },
+  "selectVideo": {
+    "message": "选择视频",
+    "description": "Alcydeo interface: selectVideo"
+  },
+  "selectPage": {
+    "message": "选择本页",
+    "description": "Alcydeo interface: selectPage"
+  },
+  "selectedFiles": {
+    "message": "已选文件",
+    "description": "Alcydeo interface: selectedFiles"
+  },
+  "selectedCount": {
+    "message": "已选择 $1 个",
+    "description": "Alcydeo interface: selectedCount"
+  },
+  "deleteSelection": {
+    "message": "删除所选项",
+    "description": "Alcydeo interface: deleteSelection"
+  },
+  "clearSelection": {
+    "message": "取消选择",
+    "description": "Alcydeo interface: clearSelection"
+  },
+  "batchSequential": {
+    "message": "文件将逐个处理并保留原件。请在下方选择缺失的本地副本。",
+    "description": "Alcydeo interface: batchSequential"
+  },
+  "batchPreparing": {
+    "message": "正在准备第 $1 个，共 $2 个…",
+    "description": "Alcydeo interface: batchPreparing"
+  },
+  "batchQueued": {
+    "message": "已将 $1 个文件加入处理队列。",
+    "description": "Alcydeo interface: batchQueued"
+  },
+  "chooseLocalFiles": {
+    "message": "请选择已保存的本地文件以继续。",
+    "description": "Alcydeo interface: chooseLocalFiles"
+  },
+  "allowLocalFiles": {
+    "message": "允许访问已保存文件",
+    "description": "Alcydeo interface: allowLocalFiles"
+  },
+  "compressionSettings": {
+    "message": "默认压缩设置",
+    "description": "Alcydeo interface: compressionSettings"
+  },
+  "compressionDefaultsHint": {
+    "message": "用于媒体库的压缩操作。画质、最大分辨率和音频码率影响文件大小与处理时间。",
+    "description": "Alcydeo interface: compressionDefaultsHint"
+  },
+  "captureQuality": {
+    "message": "录制画质",
+    "description": "Alcydeo interface: captureQuality"
+  },
+  "captureSource": {
+    "message": "源分辨率",
+    "description": "Alcydeo interface: captureSource"
+  },
+  "captureQualityHint": {
+    "message": "最高 4K、30 帧/秒和更高码率。细节取决于录制源；放大像素无法恢复缺失细节。",
+    "description": "Alcydeo interface: captureQualityHint"
+  },
+  "captureHighBitrate": {
+    "message": "高码率",
+    "description": "Alcydeo interface: captureHighBitrate"
+  },
+  "annotations": {
+    "message": "在录制标签页上绘制",
+    "description": "Alcydeo interface: annotations"
+  },
+  "captureTab": {
+    "message": "录制此标签页",
+    "description": "Alcydeo interface: captureTab"
+  },
+  "recordDetectedHint": {
+    "message": "直接录制支持的 HLS 直播。其他播放器使用标签页录制。",
+    "description": "Alcydeo interface: recordDetectedHint"
+  },
+  "visualTrim": {
+    "message": "可视化裁剪编辑器",
+    "description": "Alcydeo interface: visualTrim"
+  },
+  "visualMerge": {
+    "message": "可视化合并编辑器",
+    "description": "Alcydeo interface: visualMerge"
+  },
+  "previewUnavailable": {
+    "message": "Chrome 无法预览此文件。请尝试兼容的 MP4。",
+    "description": "Alcydeo interface: previewUnavailable"
+  },
+  "playSelection": {
+    "message": "播放选区",
+    "description": "Alcydeo interface: playSelection"
+  },
+  "cutInHandle": {
+    "message": "裁剪起点滑块",
+    "description": "Alcydeo interface: cutInHandle"
+  },
+  "cutOutHandle": {
+    "message": "裁剪终点滑块",
+    "description": "Alcydeo interface: cutOutHandle"
+  },
+  "markStart": {
+    "message": "在此设置起点",
+    "description": "Alcydeo interface: markStart"
+  },
+  "markEnd": {
+    "message": "在此设置终点",
+    "description": "Alcydeo interface: markEnd"
+  },
+  "mergeVisualHint": {
+    "message": "拖动片段或使用箭头调整顺序。点击缩略图预览片段。",
+    "description": "Alcydeo interface: mergeVisualHint"
+  },
+  "totalDuration": {
+    "message": "总时长",
+    "description": "Alcydeo interface: totalDuration"
+  },
+  "preciseTimes": {
+    "message": "精确时间",
+    "description": "Alcydeo interface: preciseTimes"
+  },
+  "processingDefaults": {
+    "message": "在设置中修改默认值",
+    "description": "Alcydeo interface: processingDefaults"
+  },
+  "castReuseFile": {
+    "message": "复用 Chrome 保存的文件，无需再次复制：",
+    "description": "Alcydeo interface: castReuseFile"
+  },
+  "castLocalPath": {
+    "message": "本地文件路径（不复制）",
+    "description": "Alcydeo interface: castLocalPath"
+  },
+  "cloudProviderRemoved": {
+    "message": "此服务已移除。请取消或删除旧任务。",
+    "description": "Alcydeo interface: cloudProviderRemoved"
+  },
+  "conversionSaving": {
+    "message": "正在保存 MP4",
+    "description": "Alcydeo interface: conversionSaving"
+  },
+  "conversionSettings": {
+    "message": "MP4 转换",
+    "description": "Alcydeo interface: conversionSettings"
+  },
+  "convertMp4": {
+    "message": "转换为 MP4",
+    "description": "Alcydeo interface: convertMp4"
+  },
+  "chooseConversionFile": {
+    "message": "选择要转换的视频",
+    "description": "Alcydeo interface: chooseConversionFile"
+  },
+  "conversionHint": {
+    "message": "MP4，使用 H.264 视频和 AAC 音频。一次处理一个文件，请保持管理器打开。原文件会保留。兼容轨道直接复制，其他受支持的轨道会重新编码，可能耗时并影响画质。",
+    "description": "Alcydeo interface: conversionHint"
+  },
+  "conversionRestartHint": {
+    "message": "一次转换一个文件。暂停或关闭管理器后，将从保留的源文件重新开始。",
+    "description": "Alcydeo interface: conversionRestartHint"
+  },
+  "preparingConversion": {
+    "message": "正在准备转换",
+    "description": "Alcydeo interface: preparingConversion"
+  },
+  "converting": {
+    "message": "正在转换为 MP4",
+    "description": "Alcydeo interface: converting"
+  },
+  "err_conversionCodec": {
+    "message": "Chrome 无法将此文件的所有音视频轨道转换为 H.264/AAC。原文件会保留，未保存不完整的 MP4。",
+    "description": "Alcydeo interface: err_conversionCodec"
+  },
+  "err_conversionInput": {
+    "message": "请重新选择原视频；本地准备已中断或文件不可用。",
+    "description": "Alcydeo interface: err_conversionInput"
+  },
+  "clearHistory": {
+    "message": "清除历史记录",
+    "description": "Alcydeo interface: clearHistory"
+  },
+  "clearHistoryTitle": {
+    "message": "清除所有下载历史记录？",
+    "description": "Alcydeo interface: clearHistoryTitle"
+  },
+  "clearHistoryHint": {
+    "message": "将从 Alcydeo 中删除所有页面及筛选条件下已完成、失败和取消的记录及其临时文件，包括收藏记录。已保存的文件以及正在进行或暂停的下载将保留。",
+    "description": "Alcydeo interface: clearHistoryHint"
+  },
+  "confirmClearHistory": {
+    "message": "清除所有历史记录",
+    "description": "Alcydeo interface: confirmClearHistory"
+  },
+  "historyCleared": {
+    "message": "历史记录已清除。已保存的文件已保留。",
+    "description": "Alcydeo interface: historyCleared"
+  },
+  "pagination": {
+    "message": "下载列表分页",
+    "description": "Alcydeo interface: pagination"
+  },
+  "previousPage": {
+    "message": "上一页",
+    "description": "Alcydeo interface: previousPage"
+  },
+  "nextPage": {
+    "message": "下一页",
+    "description": "Alcydeo interface: nextPage"
+  },
+  "pageStatus": {
+    "message": "第 $current$ 页，共 $total$ 页",
+    "description": "Alcydeo interface: pageStatus",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "1"
+      },
+      "total": {
+        "content": "$2",
+        "example": "6"
+      }
+    }
+  },
+  "multipartDownloads": {
+    "message": "多部分下载",
+    "description": "Alcydeo interface: multipartDownloads"
+  },
+  "multipartEnable": {
+    "message": "为兼容文件和 DASH 使用多个连接",
+    "description": "Alcydeo interface: multipartEnable"
+  },
+  "multipartConnections": {
+    "message": "每个文件的连接数",
+    "description": "Alcydeo interface: multipartConnections"
+  },
+  "multipartHint": {
+    "message": "请保持管理器打开。兼容的音视频轨道可同时下载。拆分单个资源需要可靠的字节范围和强版本校验，否则使用标准传输。速度取决于服务器和您的连接。",
+    "description": "Alcydeo interface: multipartHint"
+  },
+  "notice_multipartUnavailable": {
+    "message": "此来源不支持并行分块，使用标准传输。",
+    "description": "Alcydeo interface: notice_multipartUnavailable"
+  },
+  "err_sourceRestricted": {
+    "message": "来源拒绝访问此流。无法在当前播放器会话中下载此视频。",
+    "description": "Alcydeo interface: err_sourceRestricted"
+  },
+  "err_sourcePending": {
+    "message": "请播放视频几秒钟，以获取可用的下载来源。",
+    "description": "Alcydeo interface: err_sourcePending"
+  },
+  "sabrRestartHint": {
+    "message": "此传输中断后，继续时将从头重新开始。",
+    "description": "Alcydeo interface: sabrRestartHint"
+  },
+  "downloadDestination": {
+    "message": "文件保存",
+    "description": "Alcydeo interface: downloadDestination"
+  },
+  "saveAutomatically": {
+    "message": "自动保存",
+    "description": "Alcydeo interface: saveAutomatically"
+  },
+  "saveAsk": {
+    "message": "每次下载都显示另存为",
+    "description": "Alcydeo interface: saveAsk"
+  },
+  "downloadSubfolder": {
+    "message": "Chrome 下载目录中的子文件夹",
+    "description": "Alcydeo interface: downloadSubfolder"
+  },
+  "downloadFolderHint": {
+    "message": "文件将保存在 Chrome 所选下载目录的此子文件夹中。可在 Chrome 下载设置中更改主目录。",
+    "description": "Alcydeo interface: downloadFolderHint"
+  },
+  "chromeDownloadSettings": {
+    "message": "在 Chrome 中选择主文件夹",
+    "description": "Alcydeo interface: chromeDownloadSettings"
+  },
+  "err_saveDialog": {
+    "message": "保存未开始。请重试，并在另存为对话框中选择名称和位置。",
+    "description": "Alcydeo interface: err_saveDialog"
+  },
+  "technicalDetails": {
+    "message": "技术详情",
+    "description": "Alcydeo interface: technicalDetails"
+  },
+  "err_chooseQuality": {
+    "message": "此来源现在列出了多种画质。请在视频页面重新打开 Alcydeo，查找画质并重新选择。",
+    "description": "Alcydeo interface: err_chooseQuality"
+  },
+  "err_manifestLoop": {
+    "message": "此来源循环指向已访问的播放列表。请刷新原始播放器并重新检测来源。",
+    "description": "Alcydeo interface: err_manifestLoop"
+  },
+  "globalDetection": {
+    "message": "自动检测媒体",
+    "description": "Alcydeo interface: globalDetection"
+  },
+  "globalDetectionHint": {
+    "message": "默认启用。Chrome 在安装时授予网站访问权限。可在此暂停检测，或在 Chrome 中限制网站访问。",
+    "description": "Alcydeo interface: globalDetectionHint"
+  },
+  "err_html": {
+    "message": "来源返回了 HTML 页面而非媒体，下载已停止。请刷新原始播放器并重新检测媒体来源。",
+    "description": "Alcydeo interface: err_html"
+  },
+  "err_notMedia": {
+    "message": "此响应不是支持的媒体文件。请刷新播放器并重新检测媒体来源。",
+    "description": "Alcydeo interface: err_notMedia"
+  },
+  "appName": {
+    "message": "Alcydeo",
+    "description": "Alcydeo interface: appName"
+  },
+  "appDescription": {
+    "message": "发现视频，保存到本地，保护媒体库隐私。",
+    "description": "Alcydeo interface: appDescription"
+  },
+  "tagline": {
+    "message": "你的视频，你的设备。",
+    "description": "Alcydeo interface: tagline"
+  },
+  "detected": {
+    "message": "当前页面",
+    "description": "Alcydeo interface: detected"
+  },
+  "scan": {
+    "message": "扫描页面",
+    "description": "Alcydeo interface: scan"
+  },
+  "scanning": {
+    "message": "正在查找媒体…",
+    "description": "Alcydeo interface: scanning"
+  },
+  "empty": {
+    "message": "播放视频以开始",
+    "description": "Alcydeo interface: empty"
+  },
+  "emptyHint": {
+    "message": "播放视频；如果仍未列出，请刷新页面。",
+    "description": "Alcydeo interface: emptyHint"
+  },
+  "quality": {
+    "message": "画质",
+    "description": "Alcydeo interface: quality"
+  },
+  "qualities": {
+    "message": "查找画质",
+    "description": "Alcydeo interface: qualities"
+  },
+  "original": {
+    "message": "原始来源",
+    "description": "Alcydeo interface: original"
+  },
+  "unknownSize": {
+    "message": "大小未知",
+    "description": "Alcydeo interface: unknownSize"
+  },
+  "download": {
+    "message": "下载",
+    "description": "Alcydeo interface: download"
+  },
+  "preview": {
+    "message": "预览",
+    "description": "Alcydeo interface: preview"
+  },
+  "close": {
+    "message": "关闭",
+    "description": "Alcydeo interface: close"
+  },
+  "queue": {
+    "message": "下载任务",
+    "description": "Alcydeo interface: queue"
+  },
+  "library": {
+    "message": "媒体库",
+    "description": "Alcydeo interface: library"
+  },
+  "settings": {
+    "message": "设置",
+    "description": "Alcydeo interface: settings"
+  },
+  "local": {
+    "message": "本地处理 · 无需账号",
+    "description": "Alcydeo interface: local"
+  },
+  "manager": {
+    "message": "打开下载管理器",
+    "description": "Alcydeo interface: manager"
+  },
+  "keepOpen": {
+    "message": "处理分段媒体时请保持管理器打开。关闭 Chrome 会停止正在运行的任务。",
+    "description": "Alcydeo interface: keepOpen"
+  },
+  "noTasks": {
+    "message": "在此建立你的媒体库",
+    "description": "Alcydeo interface: noTasks"
+  },
+  "search": {
+    "message": "搜索标题和标签",
+    "description": "Alcydeo interface: search"
+  },
+  "favorite": {
+    "message": "收藏",
+    "description": "Alcydeo interface: favorite"
+  },
+  "show": {
+    "message": "在文件夹中显示",
+    "description": "Alcydeo interface: show"
+  },
+  "verified": {
+    "message": "结构已检查",
+    "description": "Alcydeo interface: verified"
+  },
+  "pause": {
+    "message": "暂停",
+    "description": "Alcydeo interface: pause"
+  },
+  "resume": {
+    "message": "继续",
+    "description": "Alcydeo interface: resume"
+  },
+  "cancel": {
+    "message": "取消",
+    "description": "Alcydeo interface: cancel"
+  },
+  "remove": {
+    "message": "删除记录和临时文件",
+    "description": "Alcydeo interface: remove"
+  },
+  "export": {
+    "message": "导出已清理的元数据",
+    "description": "Alcydeo interface: export"
+  },
+  "theme": {
+    "message": "主题",
+    "description": "Alcydeo interface: theme"
+  },
+  "system": {
+    "message": "跟随系统",
+    "description": "Alcydeo interface: system"
+  },
+  "light": {
+    "message": "浅色",
+    "description": "Alcydeo interface: light"
+  },
+  "dark": {
+    "message": "深色",
+    "description": "Alcydeo interface: dark"
+  },
+  "folder": {
+    "message": "下载文件夹",
+    "description": "Alcydeo interface: folder"
+  },
+  "badge": {
+    "message": "工具栏徽标",
+    "description": "Alcydeo interface: badge"
+  },
+  "count": {
+    "message": "数量",
+    "description": "Alcydeo interface: count"
+  },
+  "dot": {
+    "message": "圆点",
+    "description": "Alcydeo interface: dot"
+  },
+  "hidden": {
+    "message": "隐藏",
+    "description": "Alcydeo interface: hidden"
+  },
+  "blockedSites": {
+    "message": "屏蔽的主机（每行一个，支持 *）",
+    "description": "Alcydeo interface: blockedSites"
+  },
+  "save": {
+    "message": "保存设置",
+    "description": "Alcydeo interface: save"
+  },
+  "reset": {
+    "message": "重置设置",
+    "description": "Alcydeo interface: reset"
+  },
+  "saved": {
+    "message": "已保存",
+    "description": "Alcydeo interface: saved"
+  },
+  "title": {
+    "message": "文件名",
+    "description": "Alcydeo interface: title"
+  },
+  "privacy": {
+    "message": "无遥测。媒体库和任务保留在此浏览器中。仅访问你授权的来源。",
+    "description": "Alcydeo interface: privacy"
+  },
+  "queued": {
+    "message": "排队中",
+    "description": "Alcydeo interface: queued"
+  },
+  "fetching": {
+    "message": "下载中",
+    "description": "Alcydeo interface: fetching"
+  },
+  "assembling": {
+    "message": "正在合并轨道",
+    "description": "Alcydeo interface: assembling"
+  },
+  "validating": {
+    "message": "等待文件验证",
+    "description": "Alcydeo interface: validating"
+  },
+  "completed": {
+    "message": "已完成",
+    "description": "Alcydeo interface: completed"
+  },
+  "paused": {
+    "message": "已暂停",
+    "description": "Alcydeo interface: paused"
+  },
+  "failed": {
+    "message": "需要处理",
+    "description": "Alcydeo interface: failed"
+  },
+  "cancelled": {
+    "message": "已取消",
+    "description": "Alcydeo interface: cancelled"
+  },
+  "err_permission": {
+    "message": "无法访问此来源。",
+    "description": "Alcydeo interface: err_permission"
+  },
+  "err_network": {
+    "message": "来源不可用。请检查连接或刷新页面。",
+    "description": "Alcydeo interface: err_network"
+  },
+  "err_expired": {
+    "message": "会话或来源链接已过期。请刷新原始页面。",
+    "description": "Alcydeo interface: err_expired"
+  },
+  "err_unsupported": {
+    "message": "暂不支持此流变体。请尝试直接来源或其他画质。",
+    "description": "Alcydeo interface: err_unsupported"
+  },
+  "err_encrypted": {
+    "message": "不支持加密或受保护的媒体。",
+    "description": "Alcydeo interface: err_encrypted"
+  },
+  "err_invalid": {
+    "message": "无法验证文件。请确认选择了下载的文件。",
+    "description": "Alcydeo interface: err_invalid"
+  },
+  "err_space": {
+    "message": "临时存储空间不足。请删除旧任务后重试。",
+    "description": "Alcydeo interface: err_space"
+  },
+  "err_excluded": {
+    "message": "此来源不在 Alcydeo 支持范围内。",
+    "description": "Alcydeo interface: err_excluded"
+  },
+  "err_blocked": {
+    "message": "设置中已禁用此主机的检测。",
+    "description": "Alcydeo interface: err_blocked"
+  },
+  "err_interrupted": {
+    "message": "处理已停止。请重新打开来源并尝试继续。",
+    "description": "Alcydeo interface: err_interrupted"
+  },
+  "notice_timedMetadataSkipped": {
+    "message": "保存的文件未包含定时元数据（0x15）。",
+    "description": "Alcydeo interface: notice_timedMetadataSkipped"
+  },
+  "deleteSelectionHint": {
+    "message": "移除符合条件的选中记录及临时文件。磁盘中的文件、活动及暂停任务会保留。",
+    "description": "Alcydeo interface: deleteSelectionHint"
+  },
+  "liveSource": {
+    "message": "直播",
+    "description": "Alcydeo interface: liveSource"
+  },
+  "savingFile": {
+    "message": "正在保存文件",
+    "description": "Alcydeo interface: savingFile"
+  },
+  "saveRequired": {
+    "message": "保存需要处理",
+    "description": "Alcydeo interface: saveRequired"
+  },
+  "saveFile": {
+    "message": "保存文件",
+    "description": "Alcydeo interface: saveFile"
+  },
+  "err_saveInterrupted": {
+    "message": "Chrome 尚未确认保存。请检查下载记录或已打开的另存为窗口，再重试保存已准备好的文件。",
+    "description": "Alcydeo interface: err_saveInterrupted"
+  },
+  "cloudExperimental": {
+    "message": "实验性",
+    "description": "Alcydeo interface: cloudExperimental"
+  },
+  "cloudMegaupSend": {
+    "message": "通过 MegaUp 分享",
+    "description": "Alcydeo interface: cloudMegaupSend"
+  },
+  "cloudMegaupHint": {
+    "message": "无需账号的实验性分享。文件为公开文件，闲置 30 天后可能过期。请保留原文件。",
+    "description": "Alcydeo interface: cloudMegaupHint"
+  },
+  "err_cloudMegaupUnavailable": {
+    "message": "MegaUp 上传页面不可用或已更改。尚未开始传输。请稍后重试或选择其他目标。",
+    "description": "Alcydeo interface: err_cloudMegaupUnavailable"
+  },
+  "err_cloudFileTooLarge": {
+    "message": "此文件超出目标的上传大小限制。请选择较小的文件。",
+    "description": "Alcydeo interface: err_cloudFileTooLarge"
+  },
+  "cloudMegaupOpen": {
+    "message": "打开 MegaUp",
+    "description": "Alcydeo interface: cloudMegaupOpen"
+  }
+}

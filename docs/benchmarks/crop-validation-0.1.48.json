@@ -1,0 +1,141 @@
+{
+  "version": "0.1.48",
+  "date": "2026-11-06",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "platform": "isolated Linux/WSL2 Chrome profiles",
+    "userWindowsProfileDriven": false
+  },
+  "feature": {
+    "operation": "spatial crop in displayed video pixels",
+    "mouseDrawMoveResize": true,
+    "fourKeyboardAccessibleHandles": true,
+    "numericCoordinates": true,
+    "croppedPreview": true,
+    "sourcePreserved": true,
+    "soundAndDurationRetained": true,
+    "suffix": "-cropped.mp4",
+    "coordinatesAfterRotation": true,
+    "h264EvenDimensions": true,
+    "audio": "AAC-LC packet copy; other supported codecs reencode AAC; no audio/video track discarded",
+    "oneVideoTrackRequired": true,
+    "localPersistentQueueAndAutomaticSave": true
+  },
+  "checks": {
+    "unitPassed": 472,
+    "unitFiles": 34,
+    "newCropUnitCases": 21,
+    "newNameCases": 2,
+    "typecheck": true,
+    "lint": true,
+    "targetedInstalledChromeCases": 62,
+    "separateChromeWorkerCases": 7,
+    "runs": {
+      "cropLocal": {
+        "startTime": "2026-11-06T10:33:00.360Z",
+        "duration": 16039.433,
+        "expected": 13,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "regressionLocal": {
+        "startTime": "2026-11-06T10:34:19.835Z",
+        "duration": 31196.716,
+        "expected": 20,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "store": {
+        "startTime": "2026-11-06T10:35:31.096Z",
+        "duration": 34277.962,
+        "expected": 29,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "engineWorkers": {
+        "startTime": "2026-11-06T10:28:05.993Z",
+        "duration": 2372.4709999999995,
+        "expected": 7,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "wholeBrowserSuiteRerun": false,
+    "storeYoutubeExcluded": true,
+    "site": {
+      "browser": "156.0.8078.4",
+      "locales": 10,
+      "mobileOverflow": false,
+      "pageErrors": [],
+      "base": "/alcydeo/"
+    }
+  },
+  "realUiExport": {
+    "browser": "156.0.8078.4",
+    "build": "0.1.48",
+    "selected": {
+      "x": 90,
+      "y": 50,
+      "width": 360,
+      "height": 200
+    },
+    "source": {
+      "width": 720,
+      "height": 404,
+      "duration": 6,
+      "videoCodec": "avc",
+      "audioCodec": "aac",
+      "channels": 1
+    },
+    "output": {
+      "width": 360,
+      "height": 200,
+      "duration": 6,
+      "videoCodec": "avc",
+      "audioCodec": "aac",
+      "channels": 1
+    },
+    "bytes": 154717,
+    "originalUnchanged": true,
+    "httpRequests": 0
+  },
+  "engineCoverage": [
+    "Decoded pixels of an offset four-color crop, not just metadata dimensions",
+    "Rotation90 applied before crop and absent from final metadata",
+    "Odd selection dimensions become even H264 dimensions",
+    "One and two AAC audio tracks retain exact encoded packets",
+    "Opus becomes real AAC and the result is decoded",
+    "Out-of-bounds/missing/non-integer/too-small selections and multiple video tracks refused",
+    "Cancellation removes incomplete output and retains the source"
+  ],
+  "interfaceCoverage": [
+    "Draw/move/corner resize; arrows1pixel/Shift10; coordinate fields and preview",
+    "Viewport390 and rotated portrait404x720; reset after choosing a different file",
+    "Ten manually switched languages without document reload, including Arabic/Urdu RTL without mirrored coordinates",
+    "Light/dark actual screen captures, five tool modes and responsive layout"
+  ],
+  "review": {
+    "independentEngineAndCoordinateReview": true,
+    "blockingFindingsRemaining": 0
+  },
+  "earlierRuns": [
+    "Initial UI resize test found a two-pixel handle-anchor jump; product uses pointer delta from the original corner, final cases pass.",
+    "One export filename assertion assumed no existing Chrome duplicate; isolated profile download preferences and the valid Chrome uniqueness suffix were added to the test.",
+    "A parallel regression run lost the fixture server when another suite-owned server ended; one early5second wait also expired. The full20case rerun against the durable server passes without product changes.",
+    "An intermediate Opus test intercepted the AAC sub-Worker incorrectly. The final7case engine run uses a real local HTTP server and the embedded AAC worker."
+  ],
+  "artifacts": "crop-artifacts-0.1.48.json",
+  "limitations": [
+    "Short original synthetic videos only; no long4K encode speed or memory limit is claimed",
+    "Anamorphic/flip metadata and broader codec combinations lack dedicated fixtures",
+    "Native Windows profile/dialog and physical TV receiver not driven",
+    "Crop has a fixed rectangle for the whole duration; supported preview/decoding/encoding depend on Chrome and the local engine"
+  ],
+  "externalPublication": false
+}

@@ -1,0 +1,112 @@
+{
+  "version": "0.1.65",
+  "date": "2026-11-08",
+  "scope": "Integrated Cast player controls, buffered LOAD from zero, and checked original-source handoff from Library/activity. Not private PC file transport to Shield.",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "browser": "Isolated Linux CFT156.0.8078.4",
+    "userBrowser": "Windows Chrome156.0.8078.76",
+    "physicalReceiverInLaboratory": false
+  },
+  "staticChecks": {
+    "typecheck": true,
+    "lint": true,
+    "unitTests": 1023,
+    "unitFiles": 58
+  },
+  "installedExtension": {
+    "local": {
+      "report": ".local/player65/extension-final.json",
+      "passed": 28,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "seconds": 66.462
+    },
+    "sourceAndLibraryHandoff": {
+      "report": ".local/player65/handoff-final.json",
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "seconds": 5.363
+    },
+    "localCases": 32,
+    "store": {
+      "report": ".local/player65/store-final.json",
+      "passed": 17,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "seconds": 50.44
+    },
+    "storeCases": 17
+  },
+  "webPlayer": {
+    "controlledCafContracts": {
+      "report": ".local/player65/web-final.json",
+      "passed": 31,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "seconds": 34.882
+    },
+    "realBrowserOriginalMediaPlayback": true,
+    "sdkReceiverContractSimulated": true,
+    "localeThemeWidthViews": 40,
+    "localControls": [
+      "play",
+      "pause",
+      "seek",
+      "volume",
+      "fullscreen"
+    ],
+    "castButtonMinimumPixels": 44
+  },
+  "realOfficialSdkProbe": {
+    "report": ".local/player65/real-sdk.json",
+    "executedCandidateBuild": "0.1.64",
+    "candidateSenderJsMatchesFinal": true,
+    "graphical": true,
+    "ignoreDefaultArgs": true,
+    "sdkHttp200": true,
+    "trustedClick": true,
+    "activation": true,
+    "presentationStart": true,
+    "mediaRequests": 0,
+    "loads": 0,
+    "selectedReceiver": false,
+    "physicalPlayback": false,
+    "note": "Executed after integrated controls froze and before the metadata-only version bump; same sender.js as final65. Escape led to native NotFoundError/SDK session_error, not a proven user cancellation or hardware result."
+  },
+  "reproducedDefects": [
+    "Ended local preview sent its last position in a buffered receiver LOAD; an original six-second fixture proves RED and now LOAD.currentTime is0.",
+    "Library/activity taskId bypassed the official-SDK web player even for an unchanged download with a matching checked current source."
+  ],
+  "sourceHandoffGuards": [
+    "Original only; no conversion, trim, crop, merge, compression, capture or live-recorded output substitution.",
+    "Exact current tab/page/frame, unique provider/media identity, selected dimensions and audio association preserved.",
+    "Fresh checkSource plus current snapshots/task provenance/tab recheck; fresh refusal wins over older ready.",
+    "downloadSource hint is outside MediaInfo and report; signed URL is never manufactured or rewritten.",
+    "No reliable original source means active local-file player without a hidden native selection, upload or new copy."
+  ],
+  "referenceInspection": {
+    "officialCrxVersion": "4.0.0",
+    "readAsData": true,
+    "installedOrExecuted": false,
+    "privateServiceInvoked": false,
+    "fileUploaded": false,
+    "proprietaryCodeRedistributed": false,
+    "currentVidowSessionUsesDirectTikTokUrl": true,
+    "localFileClientHasUploadPreparation": true,
+    "userSameSourceComparisonTried": false
+  },
+  "limits": [
+    "No physical Shield in the laboratory. The user confirmed only the earlier official Google sample, not this TikTok in Alcydeo.",
+    "The same-source comparison of the current Vidow URL is still untried by the user; physical source failure cause remains unestablished.",
+    "Standalone private PC file transport to Shield is not added. User chose extension only; no helper, local relay, private upload or receiver deployment.",
+    "Local ZIP uses localhost4180 static preview; Store sender configuration remains empty while Pages is unpublished."
+  ],
+  "publication": false
+}

@@ -1,0 +1,1 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Page with dynamic frames</title><div id="noise"></div><script>for(let i=0;i<6;i++){const f=document.createElement('iframe');f.src='/badge-noise-frame.html?phase='+i;document.body.append(f);}setInterval(()=>noise.textContent=String(performance.now()),19);</script></html>

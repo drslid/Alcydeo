@@ -1,0 +1,78 @@
+{
+  "version": "0.1.43",
+  "date": "2026-11-05",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "browser": "156.0.8078.4",
+    "platform": "Linux/WSL2",
+    "windowsProfileDriven": false
+  },
+  "unitTests": 412,
+  "unitFiles": 30,
+  "chromeCases": 47,
+  "targetedRunNotFullSuite": true,
+  "suites": {
+    "local": {
+      "passed": 31,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "durationMs": 119374.268
+    },
+    "store": {
+      "passed": 16,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "durationMs": 33306.895000000004
+    }
+  },
+  "behaviour": {
+    "signedDashXmlDecodedOnce": true,
+    "allSingleFileRepresentationsInventoried": true,
+    "nativeVkSlicesRequireExactDeclaredResource": true,
+    "interfaceSoundsExcluded": 3,
+    "otherAudioRetained": true,
+    "perRepresentationSourceChecks": true,
+    "htmlQualityDoesNotBlockValidQuality": true,
+    "lateSlicesAfterWorkerRestartExcluded": true,
+    "fragmentWriteBufferBytes": 524288,
+    "fragmentInactivityTimeoutMs": 120000,
+    "activeVirtualTransfer150SecondsCompletes": true,
+    "bytesReportedDuringLargeTrack": true,
+    "completeFragmentsOnlyCheckpointed": true,
+    "stopResumeAndOwnerExpiry": true,
+    "originalLocalHlsAndDashFilesSavedAndValidated": true,
+    "publicVideoComplete144p": true,
+    "publicVideoComplete720p": false
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "localZip": true,
+    "storeZip": true,
+    "crxPayload": true,
+    "site": {
+      "browser": "156.0.8078.4",
+      "locales": 10,
+      "mobileOverflow": false,
+      "pageErrors": [],
+      "base": "/alcydeo/"
+    },
+    "pages": 103,
+    "storeYoutubeExcluded": true
+  },
+  "validationNotes": [
+    "The initial legacy end-to-end test assumed Sources remained selected after a download. It now explicitly returns to Sources before the next HLS/DASH download; its cascading library-count failure is resolved.",
+    "An intermediate unnecessary Sources click on a fresh tab was removed before the final green run.",
+    "The first Store run lost a shared fixture server when another test process finished; final runs use an independently owned local fixture server.",
+    "Final local and Store runs have no failures, skips or flaky results.",
+    "Real public 144p file verification preceded the fragment-writer improvement; the final writer is tested with original local files and virtual idle timing. VK imposed an antirobot challenge on later public visits, which was not bypassed."
+  ],
+  "publication": false,
+  "newPermissions": false,
+  "newDependencies": false,
+  "hardwareReceiverTested": false,
+  "publicEvidence": "vk-public-0.1.43.json; vk-decode-0.1.43.json"
+}

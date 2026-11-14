@@ -1,0 +1,66 @@
+{
+  "version": "0.1.38",
+  "synthetic": true,
+  "networkYouTube": false,
+  "metadataRequests": 1,
+  "selected": 2,
+  "saved": [
+    {
+      "title": "004 - Cours C _ troisième partie",
+      "destination": {
+        "folder": "Alcydeo",
+        "subfolder": "Playlist _ cours _ exemples",
+        "saveAs": false
+      },
+      "validation": {
+        "duration": 6.021333333333334,
+        "tracks": [
+          {
+            "type": "video",
+            "codec": "avc"
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ],
+        "bytes": 1837166,
+        "method": "local-structure",
+        "checkedAt": 1793734634324
+      }
+    },
+    {
+      "title": "001 - Cours A _ première partie",
+      "destination": {
+        "folder": "Alcydeo",
+        "subfolder": "Playlist _ cours _ exemples",
+        "saveAs": false
+      },
+      "validation": {
+        "duration": 6.021333333333334,
+        "tracks": [
+          {
+            "type": "video",
+            "codec": "avc"
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ],
+        "bytes": 1837166,
+        "method": "local-structure",
+        "checkedAt": 1793734633608
+      }
+    }
+  ],
+  "watchIds": [
+    "abcdefghijk",
+    "cdefghijklm"
+  ],
+  "transferIds": [
+    "abcdefghijk",
+    "cdefghijklm"
+  ],
+  "browser": "156.0.8078.80"
+}

@@ -1,0 +1,319 @@
+{
+  "version": "0.1.19",
+  "editableVectors": "packages/design-tokens/brand",
+  "profile": "one visible eye; no download arrow",
+  "icon": "separately drawn simplified head at every manifest size",
+  "svgCount": 20,
+  "files": [
+    {
+      "path": "docs/brand/icon-128.png",
+      "width": 128,
+      "height": 128,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 6889,
+      "sha256": "cb5d31cd1f8febe16cebd59ee60c21139e17bff2e8c17c08ae6fbfe3c0424eb9"
+    },
+    {
+      "path": "docs/brand/icon-16.png",
+      "width": 16,
+      "height": 16,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 694,
+      "sha256": "849cf3e7b81afc1afd99efc4b5295062114603dd19f04e7b5ca6aa3b80ac3676"
+    },
+    {
+      "path": "docs/brand/icon-256.png",
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 14360,
+      "sha256": "4c9928069fb9dbcdffef2b3d69521446efae960daf1e2157f8218ee759e152ef"
+    },
+    {
+      "path": "docs/brand/icon-32.png",
+      "width": 32,
+      "height": 32,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 1613,
+      "sha256": "2cc136ed96c9c71207cb1745a2ab83856514287355b35dc8fecdb061efd89f9a"
+    },
+    {
+      "path": "docs/brand/icon-48.png",
+      "width": 48,
+      "height": 48,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 2547,
+      "sha256": "611e119d06e88ca73c95238d56ced42b97cc3e7cfb0c9546e7581f78ade1e14c"
+    },
+    {
+      "path": "docs/brand/icon-512.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 32036,
+      "sha256": "330bc3aa0155deddf0e95aead2c233c33c76aad5d2c6dc2bd150553397d9bca3"
+    },
+    {
+      "path": "docs/brand/icon-64.png",
+      "width": 64,
+      "height": 64,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 3350,
+      "sha256": "413bac7378db9f67218a880d3034de7b151b76e7c8ab1e5b3a20cf0254220cdc"
+    },
+    {
+      "path": "docs/brand/kingfisher-1024.png",
+      "width": 1024,
+      "height": 1024,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 98305,
+      "sha256": "1b6ec7ea51b0d15e3bbc6bc30e37d29d86374b18ebd2adce1f85ac0981718972"
+    },
+    {
+      "path": "docs/brand/kingfisher-2048.png",
+      "width": 2048,
+      "height": 2048,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 236007,
+      "sha256": "c01acc14fed69c57921fc7ed644a11dcae41e9a28f101ad01344baeca3a50efa"
+    },
+    {
+      "path": "docs/brand/kingfisher.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 42903,
+      "sha256": "87f46019b5e876547fda0a94b4179f1595e6d60f18596e3e67c183425680b843"
+    },
+    {
+      "path": "docs/brand/lockup-stacked-dark.png",
+      "width": 1600,
+      "height": 1600,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 129719,
+      "sha256": "c2544cc88b76b78f2c21174e0888f454e9cfd92c4505c997118b1a1b9e4aace7"
+    },
+    {
+      "path": "docs/brand/lockup-stacked.png",
+      "width": 1600,
+      "height": 1600,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 130159,
+      "sha256": "23c959221e01b9c8ff66efc908501530b5dd23400b7492fa67eebdaefb425e4f"
+    },
+    {
+      "path": "docs/brand/mono-dark.png",
+      "width": 1024,
+      "height": 1024,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 34852,
+      "sha256": "25f0220e41a2a165d33b7bf49edd72579cb0394e10a291546879da8ab4ff1da3"
+    },
+    {
+      "path": "docs/brand/mono-light.png",
+      "width": 1024,
+      "height": 1024,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 35326,
+      "sha256": "e838efa615b14b618d8069ffcdf2e1d1a1b830eef8e0008924c8826be5417570"
+    },
+    {
+      "path": "docs/brand/social-dark.png",
+      "width": 3200,
+      "height": 1800,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "bytes": 263572,
+      "sha256": "0a7f26f3be1d9a0689e556b97ba983314d92886304f54d94045e1f409ae8a2e8"
+    },
+    {
+      "path": "docs/brand/social-light.png",
+      "width": 3200,
+      "height": 1800,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "bytes": 241419,
+      "sha256": "b22c7534a1e73800160b60c20633b251a8154eb52648e2151e324245161926a9"
+    },
+    {
+      "path": "docs/brand/wordmark-dark.png",
+      "width": 2400,
+      "height": 720,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 105906,
+      "sha256": "848c0ba27d38dcbbd40ad03ca2ad8f762b090e4f398517b1779f7553c265df8d"
+    },
+    {
+      "path": "docs/brand/wordmark.png",
+      "width": 2400,
+      "height": 720,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 108316,
+      "sha256": "1b7baad2c2a4f28ae2389a11f2460482e55f6a7e3794bc132f401e10fed8638c"
+    },
+    {
+      "path": "apps/extension/public/icons/128.png",
+      "width": 128,
+      "height": 128,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 6889,
+      "sha256": "cb5d31cd1f8febe16cebd59ee60c21139e17bff2e8c17c08ae6fbfe3c0424eb9"
+    },
+    {
+      "path": "apps/extension/public/icons/16.png",
+      "width": 16,
+      "height": 16,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 694,
+      "sha256": "849cf3e7b81afc1afd99efc4b5295062114603dd19f04e7b5ca6aa3b80ac3676"
+    },
+    {
+      "path": "apps/extension/public/icons/32.png",
+      "width": 32,
+      "height": 32,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 1613,
+      "sha256": "2cc136ed96c9c71207cb1745a2ab83856514287355b35dc8fecdb061efd89f9a"
+    },
+    {
+      "path": "apps/extension/public/icons/48.png",
+      "width": 48,
+      "height": 48,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 2547,
+      "sha256": "611e119d06e88ca73c95238d56ced42b97cc3e7cfb0c9546e7581f78ade1e14c"
+    }
+  ],
+  "palettePreserved": true,
+  "nativeWindowsToolbarInspected": false
+}

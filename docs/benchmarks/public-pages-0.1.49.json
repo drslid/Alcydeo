@@ -1,0 +1,387 @@
+{
+  "version": "0.1.49",
+  "date": "2026-11-06",
+  "browser": "156.0.8078.4",
+  "platform": "Linux; isolated Chrome for Testing profiles; native GUI and headless runs distinguished",
+  "userWindowsProfileTested": false,
+  "publication": false,
+  "wholePublicFilmDownloadAttempted": false,
+  "publicFileExportAttempted": false,
+  "publicFullDecodeAttempted": false,
+  "scope": "Six user-supplied public pages; mixed 0.1.48 observations and 0.1.49 reruns. Player preload and bounded existing source checks are distinct from complete-file transfers.",
+  "pages": [
+    {
+      "page": "https://coflix.esq/film/apocalypse-z-nouveau-monde/",
+      "extensionVersion": "0.1.49",
+      "mode": "headless",
+      "pageStatus": 200,
+      "cardsAfterChecks": 1,
+      "badge": "1",
+      "sources": [
+        {
+          "kind": "hls",
+          "qualities": [
+            {
+              "height": 360,
+              "state": "ready",
+              "checkedTracks": 2
+            }
+          ]
+        }
+      ],
+      "nativeVideoAndAudioObserved": true,
+      "nativeGateRetainedOnBoth": true,
+      "observedMediaBytes": 1456624,
+      "playbackConfirmed": false,
+      "limitation": "A separate normal-click attempt encountered an advertising overlay; loaded metadata is not a successful playback claim. No complete movie transferred."
+    },
+    {
+      "page": "https://coflix.esq/episode/limperatrice-remariee-1x3/",
+      "extensionVersion": "0.1.49",
+      "mode": "headless",
+      "pageStatus": 200,
+      "cardsAfterChecks": 1,
+      "badge": "1",
+      "sources": [
+        {
+          "kind": "hls",
+          "qualities": [
+            {
+              "height": 432,
+              "state": "ready",
+              "checkedTracks": 1
+            }
+          ]
+        }
+      ],
+      "observedMediaBytes": 301176,
+      "playbackConfirmed": false,
+      "limitation": "Video metadata loaded; the normal play click was intercepted by an advertising overlay. Initial 0.1.48 run and 0.1.49 rerun remain distinct."
+    },
+    {
+      "page": "https://coflix.tips/episode/horror-collector-1x01-6acb4382201ce/",
+      "extensionVersion": "0.1.48",
+      "mode": "headless",
+      "pageStatus": 200,
+      "cardsAfterChecks": 1,
+      "badge": "1",
+      "sources": [
+        {
+          "kind": "hls",
+          "qualities": [
+            {
+              "height": 720,
+              "state": "ready"
+            }
+          ]
+        }
+      ],
+      "playbackConfirmed": true,
+      "playedSeconds": 9.41,
+      "videoDimensions": [
+        1280,
+        720
+      ],
+      "observedMediaBytes": 4795880,
+      "closedAdvertisingPopups": 1,
+      "limitation": "Playback began through the visible Voe Play control. No 0.1.49 rerun or complete-file transfer claimed."
+    },
+    {
+      "page": "https://www.voir-series.lol/5290639-un-homme-en-colere.html",
+      "extensionVersion": "0.1.48",
+      "mode": "headless; explicit player choices",
+      "pageStatus": 200,
+      "providers": [
+        {
+          "name": "Uqload",
+          "cardsAfterChecks": 1,
+          "qualityHeight": 360,
+          "kind": "hls",
+          "state": "ready",
+          "completeTransferValidated": false
+        },
+        {
+          "name": "Fembed",
+          "loaderHttpStatus": 500,
+          "newMediaObserved": false
+        },
+        {
+          "name": "Uptobox",
+          "newMediaObserved": false,
+          "previousUqloadSourceRemainedCached": true
+        }
+      ],
+      "limitation": "A failed or ineffective alternative player selection does not invalidate the working Uqload source. No complete-file export or decode."
+    },
+    {
+      "page": "https://www.dailymotion.com/video/xbtzj8e",
+      "extensionVersion": "0.1.48",
+      "mode": "native GUI; native user agent",
+      "pageStatus": 200,
+      "cardsAfterChecks": 2,
+      "badge": "2",
+      "mainClip": {
+        "kind": "hls",
+        "qualityHeights": [
+          1920,
+          1280,
+          848,
+          640
+        ],
+        "portraitHeightLabels": true,
+        "allQualitiesReady": true,
+        "nativeManifestObserved": true
+      },
+      "separateAdvertisement": {
+        "title": "Advertisement",
+        "kind": "direct",
+        "qualityHeight": 1080,
+        "state": "ready"
+      },
+      "headlessControl": {
+        "withExtension": "SSR HTML without an executable player or media",
+        "withoutExtension": "same absence of player and media"
+      },
+      "wholeClipPlaybackValidated": false,
+      "completeTransferValidated": false,
+      "limitation": "Main clip manifests and fMP4 prefixes were checked. The separate advertisement remains UI noise; no crawler request, invented player API call or user-agent spoofing was used."
+    },
+    {
+      "page": "https://french-stream.net/index.php?newsid=15138750",
+      "extensionVersion": "0.1.49",
+      "mode": "Native GUI; separate profiles without blocker and with official uBOL Complete",
+      "moviePlaybackConfirmed": true,
+      "completeMovieTransferValidated": false,
+      "conditions": [
+        {
+          "pageStatus": 200,
+          "ordinaryPlayClicks": 3,
+          "closedAdvertisingPopups": 4,
+          "moviePlayerLoaded": false,
+          "movieManifestOrMediaObserved": false,
+          "movieValidated": false,
+          "detectedCards": [
+            {
+              "kind": "sabr",
+              "title": "Heart Of The Beast - Bande-annonce VOST [Actuellement au cinéma]",
+              "variants": [
+                {
+                  "label": "1080p",
+                  "height": 1080
+                },
+                {
+                  "label": "720p",
+                  "height": 720
+                },
+                {
+                  "label": "480p",
+                  "height": 480
+                },
+                {
+                  "label": "360p",
+                  "height": 360
+                },
+                {
+                  "label": "240p",
+                  "height": 240
+                },
+                {
+                  "label": "144p",
+                  "height": 144
+                }
+              ]
+            }
+          ],
+          "youtubeTrailerLocalBuildOnly": true,
+          "storeExcludesYouTube": true,
+          "tasksCreated": 0,
+          "downloadAttempted": false,
+          "limitation": "Advertising intercepted all three ordinary play clicks. Only the independently titled YouTube trailer was exposed; this does not test download of an accessible main movie.",
+          "condition": "Earlier native GUI profile without an ad blocker",
+          "adBlocker": null,
+          "extensionVersion": "0.1.49",
+          "result": "Three ordinary clicks were intercepted by advertising; only the YouTube trailer was exposed. This initial condition did not test the movie after player startup."
+        },
+        {
+          "condition": "Native GUI isolated profile with official uBlock Origin Lite in Complete mode",
+          "extensionVersion": "0.1.49",
+          "adBlocker": "uBlock Origin Lite",
+          "adBlockerVersion": "2026.1103.1743",
+          "filteringMode": "Complete",
+          "nativeUserAgent": true,
+          "providers": [
+            {
+              "name": "Vidzy",
+              "playbackConfirmed": true,
+              "videoDimensions": [
+                864,
+                360
+              ],
+              "readyState": 4,
+              "visiblePlayerClock": [
+                "0:07",
+                "0:31"
+              ],
+              "cardsBeforeChecks": 3,
+              "cardsAfterChecks": [
+                {
+                  "kind": "hls",
+                  "qualities": [
+                    {
+                      "height": 360,
+                      "state": "ready",
+                      "trackIdentityCount": 2
+                    }
+                  ]
+                }
+              ],
+              "badge": "1",
+              "newTaskOrExportAttempted": false
+            },
+            {
+              "name": "Dood",
+              "playbackConfirmed": false,
+              "nativeIframeLoaded": true,
+              "opaqueVideoCandidateObserved": true,
+              "videoDimensions": [
+                0,
+                0
+              ],
+              "readyState": 0,
+              "unsolicitedTopLevelNavigation": "about:blank",
+              "cloudflareRelatedDnsFailureObserved": true,
+              "limitation": "Playback failed to start in this profile. No language selection, access bypass or general provider-availability conclusion is asserted.",
+              "newTaskOrExportAttempted": false
+            },
+            {
+              "name": "Voe",
+              "playbackConfirmed": true,
+              "videoDimensions": [
+                1728,
+                720
+              ],
+              "readyState": 4,
+              "paused": false,
+              "currentTimeObservationsSeconds": [
+                5.760571,
+                19.625559,
+                38.993133
+              ],
+              "durationSeconds": 6299.833,
+              "cardsAfterChecks": [
+                {
+                  "kind": "hls",
+                  "qualities": [
+                    {
+                      "height": 720,
+                      "state": "ready",
+                      "trackIdentityCount": 1
+                    }
+                  ]
+                }
+              ],
+              "badge": "1",
+              "newTaskOrExportAttempted": false
+            }
+          ],
+          "wholePublicFilmDownloadAttempted": false,
+          "publicFileExportAttempted": false,
+          "productChanges": false,
+          "newAlcydeoBuildMade": false,
+          "sessionsClosed": true,
+          "sharedIsolatedBlockerProfile": true,
+          "sequentialChromeSessions": 2
+        }
+      ],
+      "storeExcludesYouTube": true,
+      "limitation": "Vidzy and Voe expose and play the movie with the external blocker. The earlier trailer-only observation applies to the no-blocker profile. Dood playback remains unvalidated. These are environment trials, not an Alcydeo product update."
+    }
+  ],
+  "originalFixture": {
+    "network": "Intercepted responses serving original local HLS video/audio fixtures; separate from public-site observations",
+    "version": "0.1.49",
+    "savedAndExists": true,
+    "bytes": 1837166,
+    "durationSeconds": 6.021333333333334,
+    "tracks": [
+      {
+        "type": "video",
+        "codec": "avc"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "validationMethod": "local-structure",
+    "fullFragments": 9,
+    "nativeVideoAndAudioPreserved": true,
+    "cardCountsDuringNativeRefresh": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "unusedAliasRefusalPreservesPair": true,
+    "chosenRefusedTransportRemoved": true,
+    "freshControlledDeclaredAlternative": [
+      {
+        "declaredAudio": true,
+        "tracks": 2,
+        "checkedAt": 1793975421989,
+        "freshAfterRefusal": true
+      }
+    ],
+    "additionalExportAfterRefusal": false,
+    "fullDecodeClaimed": false
+  },
+  "qa": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "unitTestsPassed": 485,
+    "unitFilesPassed": 35,
+    "localChromeTestsPassed": 35,
+    "storeChromeTestsPassed": 22,
+    "meaning": "Regression tests, not 57 independent public-site trials."
+  },
+  "privacy": {
+    "rawPublicArtifactsDistributed": false,
+    "signedMediaUrlsIncluded": false,
+    "cookiesOrPersonalHeadersIncluded": false,
+    "rawArtifactDirectory": ".local/detection49 is ignored and excluded from deliverables"
+  },
+  "limitations": [
+    "No universal site, codec, session or future availability guarantee.",
+    "No CAPTCHA interaction, manual advertising-overlay removal, forced click, payment or DRM bypass.",
+    "No source URL, signature, cookie or Origin/Referer header fabricated.",
+    "Public player preload and bounded probes do not verify a complete downloaded film."
+  ],
+  "additionalPublicEnvironmentTrials": {
+    "count": 3,
+    "date": "2026-11-06",
+    "page": "https://french-stream.net/index.php?newsid=15138750",
+    "alcydeoVersion": "0.1.49",
+    "productChanged": false,
+    "automatedRegressionCountsChanged": false,
+    "blockerProvenance": {
+      "repository": "https://github.com/uBlockOrigin/uBOL-home",
+      "release": "https://github.com/uBlockOrigin/uBOL-home/releases/tag/2026.1103.1743",
+      "asset": "https://github.com/uBlockOrigin/uBOL-home/releases/download/2026.1103.1743/uBOLite_2026.1103.1743.chromium.zip",
+      "bytes": 9094147,
+      "sha256": "79236476535b63706749e088e0ce99bb31d3d2ff15fabb4d7e990be23d6e4613",
+      "matchesOfficialGithubAssetDigest": true,
+      "version": "2026.1103.1743"
+    },
+    "filteringMode": "Complete",
+    "selectedThroughBlockerUi": true,
+    "blockerIncludedInAlcydeoPackages": false
+  }
+}

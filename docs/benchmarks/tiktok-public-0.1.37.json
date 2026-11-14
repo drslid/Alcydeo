@@ -1,0 +1,87 @@
+{
+  "version": "0.1.37",
+  "networkTikTok": true,
+  "page": "https://www.tiktok.com/@drslid/video/7604511060657278230",
+  "browser": "156.0.8078.80",
+  "date": "2026-11-03T18:54:04.465Z",
+  "accessBypass": false,
+  "status": 200,
+  "beforePopup": {
+    "badge": "1",
+    "media": [
+      {
+        "title": "#Ubud 🌴☀️🕶️",
+        "providerId": "tiktok:7604511060657278230",
+        "kind": "direct",
+        "variants": [
+          {
+            "label": "1024p · H.264",
+            "height": 1024,
+            "size": 9510143,
+            "host": "v16-webapp-prime.tiktok.com"
+          },
+          {
+            "label": "1024p · HEVC",
+            "height": 1024,
+            "size": 3903905,
+            "host": "v16-webapp-prime.tiktok.com"
+          }
+        ]
+      }
+    ]
+  },
+  "checked": [
+    {
+      "title": "#Ubud 🌴☀️🕶️",
+      "providerId": "tiktok:7604511060657278230",
+      "variants": [
+        {
+          "label": "1024p · H.264",
+          "check": {
+            "checkedAt": 1793732047489,
+            "contentType": "video/mp4",
+            "size": 9510143,
+            "state": "ready"
+          }
+        },
+        {
+          "label": "1024p · HEVC",
+          "check": {
+            "checkedAt": 1793732047490,
+            "contentType": "video/mp4",
+            "size": 3903905,
+            "state": "ready"
+          }
+        }
+      ]
+    }
+  ],
+  "download": {
+    "filename": "#Ubud 🌴☀️🕶️ (1).mp4",
+    "state": "complete",
+    "exists": true,
+    "bytes": 9510143
+  },
+  "task": {
+    "title": "#Ubud 🌴☀️🕶️",
+    "state": "completed",
+    "saved": true,
+    "validation": {
+      "duration": 33.666666666666664,
+      "tracks": [
+        {
+          "type": "audio",
+          "codec": "aac"
+        },
+        {
+          "type": "video",
+          "codec": "avc"
+        }
+      ],
+      "bytes": 9510143,
+      "method": "local-structure",
+      "checkedAt": 1793732050581
+    }
+  },
+  "sourceMetadataFileHashMatches": true
+}

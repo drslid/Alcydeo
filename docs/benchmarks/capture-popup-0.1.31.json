@@ -1,0 +1,31 @@
+{
+  "version": "0.1.31",
+  "browser": "156.0.8078.80",
+  "genuineToolbarInvocation": true,
+  "popupCapture": true,
+  "youtubeLivePlayerFixture": true,
+  "realYouTubeLiveCapture": false,
+  "annotationDrawn": true,
+  "annotationRemovedAfterStop": true,
+  "actualCapture": "1080p",
+  "validation": {
+    "duration": 3.584,
+    "tracks": [
+      {
+        "type": "video",
+        "codec": "vp9"
+      },
+      {
+        "type": "audio",
+        "codec": "opus"
+      }
+    ],
+    "bytes": 1561956,
+    "method": "local-structure",
+    "checkedAt": 1793722551575
+  },
+  "bytes": 1561956,
+  "randomThumbnail": true,
+  "visualRecordingTrim": true,
+  "windowsTested": false
+}

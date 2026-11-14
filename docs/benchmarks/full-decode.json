@@ -1,0 +1,29 @@
+{
+  "tool": "Development-only FFmpeg, not used or shipped by the extension",
+  "results": [
+    {
+      "file": "direct.mp4",
+      "bytes": 525622,
+      "fullDecodeExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "hls-ts.mp4",
+      "bytes": 1838138,
+      "fullDecodeExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "hls-fmp4.mp4",
+      "bytes": 1837166,
+      "fullDecodeExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "dash.mp4",
+      "bytes": 1837166,
+      "fullDecodeExitCode": 0,
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "browser": "156.0.8078.80",
+  "source": "Synthetic local tab with automatic chooser selection for test only",
+  "validation": {
+    "duration": 1.996,
+    "tracks": [
+      {
+        "type": "video",
+        "codec": "vp9"
+      },
+      {
+        "type": "audio",
+        "codec": "opus"
+      }
+    ],
+    "bytes": 819089,
+    "method": "local-structure",
+    "checkedAt": 1793720816137
+  },
+  "bytes": 819089,
+  "progressiveFlush": true,
+  "windowsUserChromeTested": false
+}

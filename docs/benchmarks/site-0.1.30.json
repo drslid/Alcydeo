@@ -1,0 +1,20 @@
+{
+  "version": "0.1.30",
+  "browser": "156.0.8078.80",
+  "localPreview": true,
+  "base": "/alcydeo/",
+  "locales": 10,
+  "homeAndUseRoutes": 20,
+  "rtl": [
+    "ar",
+    "ur"
+  ],
+  "widths": [
+    390,
+    1440
+  ],
+  "failedResponses": [],
+  "pageErrors": [],
+  "localDevanagariFont": true,
+  "publication": false
+}

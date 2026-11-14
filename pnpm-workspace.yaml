@@ -1,0 +1,9 @@
+packages:
+  - apps/*
+allowBuilds:
+  esbuild: true
+  sharp: true
+
+# Temporary, scoped security patch; remove when typescript-estree adopts v11.
+overrides:
+  '@typescript-eslint/typescript-estree@8.72.1>minimatch': 11.0.1

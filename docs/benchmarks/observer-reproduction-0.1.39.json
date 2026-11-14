@@ -1,0 +1,23 @@
+{
+  "version": "0.1.39",
+  "browser": "156.0.8078.80",
+  "nativeReload": {
+    "beforeVersion": "0.1.38",
+    "beforeErrors": 6,
+    "beforeMessage": "Error: Extension context invalidated.",
+    "afterVersion": "0.1.39",
+    "afterErrors": 0
+  },
+  "missingRuntime": {
+    "method": "controlled API-unavailability injection into the actual installed content-script context",
+    "beforeVersion": "0.1.38",
+    "beforeErrors": 6,
+    "beforeMessage": "TypeError: Cannot read properties of undefined (reading 'sendMessage')",
+    "source": "content-scripts/observe.js",
+    "line": 1,
+    "afterVersion": "0.1.39",
+    "afterErrors": 0,
+    "obsoleteObserverStopped": true
+  },
+  "windowsProfileDriven": false
+}

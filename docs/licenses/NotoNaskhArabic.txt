@@ -1,0 +1,5 @@
+Unmodified official Arabic subset (variable weights 400–700), loaded locally only for ar/ur.
+Source: https://fonts.gstatic.com/s/notonaskharabic/v44/RrQKbpV-9Dd1b1OAGA6M9PkyDuVBeN2DHV20Lg.woff2
+License source: https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/OFL.txt
+SHA-256: 2a10d33e1f7129ab2b6ec76666e82ac5b509fbcfa7b4a3a1289bff42d2d64cd7
+Retrieved 2026-11-01.

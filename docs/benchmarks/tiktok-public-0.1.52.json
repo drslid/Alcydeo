@@ -1,0 +1,547 @@
+{
+  "version": "0.1.52",
+  "date": "2026-11-08",
+  "suppliedPost": "https://www.tiktok.com/@ler0i_off/video/7700630488859315489",
+  "userReport": "Native playback works; no visible source in the popup. Previous confirmed version0.1.50; current version not reconfirmed.",
+  "userSessionFailureNaturallyReproduced": false,
+  "linuxIntermediate52": {
+    "scope": "Direct load and one explicit H.264 selection; before final null-result integration fix. Native JSON was present, so new player fallback was not required.",
+    "saved": {
+      "chosenLabel": "1024p · H.264",
+      "expectedBytes": 2683229,
+      "bytes": 2683229,
+      "state": "completed",
+      "saved": true,
+      "validation": {
+        "duration": 17.833333333333332,
+        "tracks": [
+          {
+            "type": "audio",
+            "codec": "aac"
+          },
+          {
+            "type": "video",
+            "codec": "avc"
+          }
+        ],
+        "bytes": 2683229,
+        "method": "local-structure",
+        "checkedAt": 1794138126828
+      },
+      "native": {
+        "state": "complete",
+        "exists": true,
+        "name": "😍😍😍 #viral #money #fyp.mp4"
+      },
+      "downloadCount": 1
+    },
+    "decode": {
+      "version": "0.1.52",
+      "method": "independent full WebCodecs decode of every audio/video sample",
+      "browser": "156.0.8078.4",
+      "files": [
+        {
+          "source": "actual.mp4",
+          "bytes": 2683229,
+          "duration": 17.833333333333332,
+          "width": 576,
+          "height": 1024,
+          "videoSamples": 535,
+          "audioSamples": 387,
+          "lastVideo": 17.833333333333336,
+          "lastAudio": 17.811111111111114
+        }
+      ]
+    }
+  },
+  "baseline51": {
+    "linuxDefaultFullFileBytes": 2956190,
+    "windows": {
+      "date": "2026-11-08",
+      "extensionVersion": "0.1.51",
+      "runtimeTreeSha256": "e947d230976433fa8602aac72beaac8e0929b9599392b80539b798f60ba5e6d5",
+      "platform": "win32",
+      "browser": "156.0.8078.4",
+      "testHarnessNode": "v22.14.0",
+      "personalProfileUsed": false,
+      "userAgentOverridden": false,
+      "officialBlocker": {
+        "version": "2026.1103.1743",
+        "complete": true,
+        "rulesets": [
+          "ublock-filters",
+          "easylist",
+          "easyprivacy",
+          "pgl",
+          "ublock-badware",
+          "urlhaus-full",
+          "fra-0"
+        ]
+      },
+      "sourceHttpStatus": 200,
+      "badge": "1",
+      "defaultQuality": "1920p · HEVC",
+      "attempts": [
+        {
+          "index": 0,
+          "label": "1920p · HEVC",
+          "sourceBytes": 2956190,
+          "state": "completed",
+          "saved": true,
+          "validation": {
+            "duration": 17.801134467801134,
+            "tracks": [
+              {
+                "type": "audio",
+                "codec": "aac"
+              },
+              {
+                "type": "video",
+                "codec": "hevc"
+              }
+            ],
+            "bytes": 2956190,
+            "method": "local-structure",
+            "checkedAt": 1794136853340
+          },
+          "bytes": 2956190,
+          "finalState": "completed",
+          "download": {
+            "state": "complete",
+            "exists": true,
+            "bytes": 2956190,
+            "name": "😍😍😍 #viral #money #fyp.mp4"
+          },
+          "savedBytes": 2956190
+        }
+      ],
+      "downloadCount": 1,
+      "independentDecode": {
+        "platform": "win32",
+        "browser": "156.0.8078.4",
+        "extensionVersion": "0.1.51",
+        "method": "Independent full WebCodecs decode, file already saved by extension",
+        "bytes": 2956190,
+        "duration": 17.801134467801134,
+        "width": 1080,
+        "height": 1920,
+        "videoCodec": "hevc",
+        "audioCodec": "aac",
+        "videoCanDecode": true,
+        "audioCanDecode": true,
+        "videoSamples": 1067,
+        "audioSamples": 387,
+        "lastVideo": 17.801134467801134,
+        "lastAudio": 17.811111111111114,
+        "success": true
+      },
+      "profileClosed": true,
+      "publicTransfers": 1,
+      "causeOfUserIncidentReproduced": false
+    }
+  },
+  "research": [
+    {
+      "project": "yt-dlp",
+      "revision": "412e7f0a4b0588fe884a02b344ac66a06538475b",
+      "license": "Unlicense",
+      "source": "https://github.com/yt-dlp/yt-dlp/blob/412e7f0a4b0588fe884a02b344ac66a06538475b/yt_dlp/extractor/tiktok.py#L606",
+      "usedPrinciple": "Keep native CDN alternatives; original implementation, no code copied."
+    },
+    {
+      "project": "ttsorter",
+      "revision": "a84dcefcadc56017d3fc16b75c09214404c19c02",
+      "license": "MIT",
+      "source": "https://github.com/Andrei-Alb/ttsorter/blob/a84dcefcadc56017d3fc16b75c09214404c19c02/ttsorter/src/hook.js#L216",
+      "usedPrinciple": "Try already declared alternatives sequentially. Retain Alcydeo bounded streaming/guards instead of whole-file JS buffering."
+    }
+  ],
+  "limits": {
+    "universalTikTokSupport": false,
+    "nativeSpaProfileTransition": "Not exercised in isolated public sessions: profile unavailable or TikTok date-of-birth dialog. No date fabricated or API forced. Synthetic SPA fixtures are separate.",
+    "credentialsChanged": false,
+    "thirdPartyMediaDistributed": false,
+    "rawPropsOrNativeJsonDistributed": false,
+    "externalPublication": false
+  },
+  "windowsBeforeObserverRestorationFix": {
+    "date": "2026-11-08",
+    "extensionVersion": "0.1.52",
+    "runtimeTreeSha256": "7003b96a6f6052acd8f0eb3af8e813863d2672bfac4d0cece58bace21c9bd874",
+    "platform": "win32",
+    "browser": "156.0.8078.4",
+    "testHarnessNode": "v22.14.0",
+    "personalProfileUsed": false,
+    "userAgentOverridden": false,
+    "officialBlocker": {
+      "version": "2026.1103.1743",
+      "complete": true,
+      "rulesets": [
+        "ublock-filters",
+        "easylist",
+        "easyprivacy",
+        "pgl",
+        "ublock-badware",
+        "urlhaus-full",
+        "fra-0"
+      ]
+    },
+    "sourceHttpStatus": 200,
+    "natural": {
+      "cards": 1,
+      "variants": 5,
+      "tasks": 0,
+      "badge": "1",
+      "native": [
+        {
+          "width": 720,
+          "height": 1280,
+          "time": 0,
+          "paused": true,
+          "ready": 1
+        },
+        {
+          "width": 720,
+          "height": 816,
+          "time": 1.2224,
+          "paused": false,
+          "ready": 4
+        }
+      ]
+    },
+    "faultInjection": {
+      "description": "Laboratory-only removal of native hydration scripts and Alcydeo isolated catalogue; not a natural-session reproduction",
+      "publicApisInvented": false,
+      "removedScripts": 1,
+      "isolated": {
+        "cataloguePresent": false
+      },
+      "beforeScan": {
+        "scripts": 0,
+        "native": [
+          {
+            "width": 720,
+            "height": 1280,
+            "time": 0.992436,
+            "paused": false,
+            "ready": 4
+          }
+        ]
+      },
+      "scanOk": true,
+      "afterScan": {
+        "cards": 1,
+        "variants": [
+          {
+            "label": "1920p · HEVC",
+            "size": 2956190,
+            "check": {
+              "checkedAt": 1794138354773,
+              "contentType": "video/mp4",
+              "size": 2956190,
+              "state": "ready"
+            }
+          },
+          {
+            "label": "1280p · HEVC",
+            "size": 1985456,
+            "check": {
+              "checkedAt": 1794138354696,
+              "contentType": "video/mp4",
+              "size": 1985456,
+              "state": "ready"
+            }
+          },
+          {
+            "label": "1024p · H.264",
+            "size": 2683229,
+            "check": {
+              "checkedAt": 1794138356043,
+              "contentType": "video/mp4",
+              "size": 2683229,
+              "state": "ready"
+            }
+          },
+          {
+            "label": "1024p · H.264",
+            "size": 1556555,
+            "check": {
+              "checkedAt": 1794138355899,
+              "contentType": "video/mp4",
+              "size": 1556555,
+              "state": "ready"
+            }
+          },
+          {
+            "label": "1024p · HEVC",
+            "size": 1491413,
+            "check": {
+              "checkedAt": 1794138356138,
+              "contentType": "video/mp4",
+              "size": 1491413,
+              "state": "ready"
+            }
+          }
+        ],
+        "tasks": 0,
+        "badge": "1"
+      },
+      "cataloguePresentAfterScan": false
+    },
+    "defaultQuality": "1920p · HEVC",
+    "attempts": [
+      {
+        "index": 0,
+        "label": "1920p · HEVC",
+        "sourceBytes": 2956190,
+        "state": "completed",
+        "saved": true,
+        "validation": {
+          "duration": 17.801134467801134,
+          "tracks": [
+            {
+              "type": "audio",
+              "codec": "aac"
+            },
+            {
+              "type": "video",
+              "codec": "hevc"
+            }
+          ],
+          "bytes": 2956190,
+          "method": "local-structure",
+          "checkedAt": 1794138357760
+        },
+        "bytes": 2956190,
+        "finalState": "completed",
+        "download": {
+          "state": "complete",
+          "exists": true,
+          "bytes": 2956190,
+          "name": "😍😍😍 #viral #money #fyp.mp4"
+        },
+        "savedBytes": 2956190
+      }
+    ],
+    "downloadCount": 1,
+    "independentDecode": {
+      "platform": "win32",
+      "browser": "156.0.8078.4",
+      "extensionVersion": "0.1.52",
+      "method": "Independent full WebCodecs decode, file already saved by extension",
+      "bytes": 2956190,
+      "duration": 17.801134467801134,
+      "width": 1080,
+      "height": 1920,
+      "videoCodec": "hevc",
+      "audioCodec": "aac",
+      "videoCanDecode": true,
+      "audioCanDecode": true,
+      "videoSamples": 1067,
+      "audioSamples": 387,
+      "lastVideo": 17.801134467801134,
+      "lastAudio": 17.811111111111114,
+      "success": true
+    },
+    "profileClosed": true,
+    "publicTransfers": 1,
+    "causeOfUserIncidentReproduced": false,
+    "publicMetadataAfterFault": true,
+    "faultIsLaboratoryIntervention": true,
+    "offlineReopen": {
+      "httpHttpsAborted": true,
+      "taskState": "completed",
+      "saved": true,
+      "bytes": 2956190,
+      "nativeHistoryDownloadRecords": 1,
+      "additionalDownload": false
+    }
+  },
+  "windowsFinal": {
+    "date": "2026-11-08",
+    "extensionVersion": "0.1.52",
+    "runtimeTreeSha256": "efc4cf6165af3caa20046a4c06aa377f754e243030b82d54555510e05ee6acd4",
+    "platform": "win32",
+    "browser": "156.0.8078.4",
+    "testHarnessNode": "v22.14.0",
+    "personalProfileUsed": false,
+    "userAgentOverridden": false,
+    "officialBlocker": {
+      "version": "2026.1103.1743",
+      "complete": true,
+      "rulesets": [
+        "ublock-filters",
+        "easylist",
+        "easyprivacy",
+        "pgl",
+        "ublock-badware",
+        "urlhaus-full",
+        "fra-0"
+      ]
+    },
+    "sourceHttpStatus": 200,
+    "natural": {
+      "cards": 1,
+      "variants": 5,
+      "tasks": 0,
+      "badge": "1",
+      "native": [
+        {
+          "width": 720,
+          "height": 1280,
+          "time": 0,
+          "paused": true,
+          "ready": 1
+        },
+        {
+          "width": 720,
+          "height": 816,
+          "time": 1.2506,
+          "paused": false,
+          "ready": 4
+        }
+      ]
+    },
+    "faultInjection": {
+      "description": "Laboratory-only removal of native hydration scripts and Alcydeo isolated catalogue; not a natural-session reproduction",
+      "publicApisInvented": false,
+      "removedScripts": 1,
+      "isolated": {
+        "cataloguePresent": false
+      },
+      "beforeScan": {
+        "scripts": 0,
+        "native": [
+          {
+            "width": 720,
+            "height": 1280,
+            "time": 1.012,
+            "paused": false,
+            "ready": 4
+          }
+        ]
+      },
+      "scanOk": true,
+      "afterScan": {
+        "cards": 1,
+        "variants": [
+          {
+            "label": "1920p · HEVC",
+            "size": 2956190,
+            "check": {
+              "checkedAt": 1794139033533,
+              "contentType": "video/mp4",
+              "size": 2956190,
+              "state": "ready"
+            }
+          },
+          {
+            "label": "1280p · HEVC",
+            "size": 1985456,
+            "check": {
+              "checkedAt": 1794139033446,
+              "contentType": "video/mp4",
+              "size": 1985456,
+              "state": "ready"
+            }
+          },
+          {
+            "label": "1024p · H.264",
+            "size": 2683229,
+            "check": {
+              "checkedAt": 1794139034725,
+              "contentType": "video/mp4",
+              "size": 2683229,
+              "state": "ready"
+            }
+          },
+          {
+            "label": "1024p · H.264",
+            "size": 1556555,
+            "check": {
+              "checkedAt": 1794139034694,
+              "contentType": "video/mp4",
+              "size": 1556555,
+              "state": "ready"
+            }
+          },
+          {
+            "label": "1024p · HEVC",
+            "size": 1491413,
+            "check": {
+              "checkedAt": 1794139034945,
+              "contentType": "video/mp4",
+              "size": 1491413,
+              "state": "ready"
+            }
+          }
+        ],
+        "tasks": 0,
+        "badge": "1"
+      },
+      "cataloguePresentAfterScan": false
+    },
+    "defaultQuality": "1920p · HEVC",
+    "attempts": [
+      {
+        "index": 0,
+        "label": "1920p · HEVC",
+        "sourceBytes": 2956190,
+        "state": "completed",
+        "saved": true,
+        "validation": {
+          "duration": 17.801134467801134,
+          "tracks": [
+            {
+              "type": "audio",
+              "codec": "aac"
+            },
+            {
+              "type": "video",
+              "codec": "hevc"
+            }
+          ],
+          "bytes": 2956190,
+          "method": "local-structure",
+          "checkedAt": 1794139036863
+        },
+        "bytes": 2956190,
+        "finalState": "completed",
+        "download": {
+          "state": "complete",
+          "exists": true,
+          "bytes": 2956190,
+          "name": "😍😍😍 #viral #money #fyp.mp4"
+        },
+        "savedBytes": 2956190
+      }
+    ],
+    "downloadCount": 1,
+    "independentDecode": {
+      "platform": "win32",
+      "browser": "156.0.8078.4",
+      "extensionVersion": "0.1.52",
+      "method": "Independent full WebCodecs decode, file already saved by extension",
+      "bytes": 2956190,
+      "duration": 17.801134467801134,
+      "width": 1080,
+      "height": 1920,
+      "videoCodec": "hevc",
+      "audioCodec": "aac",
+      "videoCanDecode": true,
+      "audioCanDecode": true,
+      "videoSamples": 1067,
+      "audioSamples": 387,
+      "lastVideo": 17.801134467801134,
+      "lastAudio": 17.811111111111114,
+      "success": true
+    },
+    "profileClosed": true,
+    "publicTransfers": 1,
+    "causeOfUserIncidentReproduced": false,
+    "faultIsLaboratoryIntervention": true,
+    "nativeHistoryDownloadRecordsAfterClosure": 1,
+    "additionalCopiesInThisProfile": false
+  },
+  "sourceUiFailureNaturalUserSessionReproduced": false
+}

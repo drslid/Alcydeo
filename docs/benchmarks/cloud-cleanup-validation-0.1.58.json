@@ -1,0 +1,151 @@
+{
+  "version": "0.1.58",
+  "date": "2026-11-08",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "platform": "Linux/WSL2 isolated profiles",
+    "personalProfileUsed": false
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "unitPassed": 905,
+    "unitFiles": 50,
+    "installedChromeCases": 25,
+    "localCases": 18,
+    "storeCases": 7,
+    "fullRepositoryE2ESuite": false,
+    "runs": {
+      "cleanup-local-final": {
+        "startTime": "2026-11-08T14:44:51.149Z",
+        "duration": 17609.33,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cleanup-local-lease": {
+        "startTime": "2026-11-08T14:46:33.934Z",
+        "duration": 5088.612999999999,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cleanup-store-final": {
+        "startTime": "2026-11-08T14:46:49.679Z",
+        "duration": 22323.229,
+        "expected": 7,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "regression-final": {
+        "startTime": "2026-11-08T14:45:16.084Z",
+        "duration": 50388.963,
+        "expected": 10,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "locales-final": {
+        "startTime": "2026-11-08T14:44:37.197Z",
+        "duration": 6850.393,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "behavior": {
+    "explicitCloudCleanup": true,
+    "cloudDirectoriesIncludingOrphansRemoved": true,
+    "unrelatedDirectoriesAndRootFilesPreserved": true,
+    "libraryOutputAndDiskFixturePreserved": true,
+    "historyAndSharingLinksPreserved": true,
+    "pendingJobsCancelledAndReadyFalse": true,
+    "checkpointAndDestinationCleared": true,
+    "uploadAttemptEvidencePreserved": true,
+    "invalidationCommittedBeforeFileRemoval": true,
+    "globalUploadLockAndBatchPreparationLock": true,
+    "preparationBeforeFirstPersistedJobProtected": true,
+    "liveLeaseCheckedAtomicallyBeforeAllMutations": true,
+    "expiredLeaseDoesNotBlock": true,
+    "staleResumeRechecksReadyAndRefreshesUi": true,
+    "partialDeleteContinuesAndExplicitRetryWorks": true,
+    "providerRequestsFromCleanup": 0
+  },
+  "visual": {
+    "locales": 10,
+    "directions": [
+      "ltr",
+      "rtl"
+    ],
+    "widths": [
+      1280,
+      390
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "combinations": 40,
+    "keyboardFocus": true,
+    "successRetranslatesWithoutReload": true,
+    "inspected": [
+      "fr-light-1280",
+      "fr-dark-390",
+      "ur-dark-390"
+    ],
+    "screenshots": [
+      "docs/screenshots/cloud-cleanup-fr.png",
+      "docs/screenshots/cloud-cleanup-ur-narrow.png"
+    ]
+  },
+  "pages": {
+    "guideRoutes": 40,
+    "locales": 10,
+    "overflow": 0,
+    "browserErrors": 0,
+    "htmlPages": 103,
+    "base": "/alcydeo/"
+  },
+  "resolvedIntermediateChecks": [
+    {
+      "case": "initial vue-tsc",
+      "cause": "Native OPFS entries needs the DOM.AsyncIterable type library; an erased triple-slash reference fixes the type declaration without a runtime shim."
+    },
+    {
+      "case": "stale Resume after cleanup",
+      "before": {
+        "passed": 4,
+        "failed": 1
+      },
+      "cause": "IDB already refuses requeue but the frozen manager view stayed paused after throwing. Refresh now precedes error reporting; the final local and Store case passes."
+    },
+    {
+      "case": "live-lease test fixture",
+      "cause": "The test froze its stale-manager polling, then expired the lease only in IDB. Reload before retry restores the actual state; the original atomic no-mutation assertion is preserved."
+    },
+    {
+      "case": "site screenshot anchor",
+      "cause": "The old Cloud57 guide heading remains historical. Screenshot now anchors to the new localized cleanup text rather than a nonexistent Cloud58 heading; all40 routes pass."
+    }
+  ],
+  "runtimeFingerprints": {
+    "local": {
+      "files": 99,
+      "sha256MapDigest": "23f7a82048da12844c311024560e5082c25609872afde72335a74cfb2a77ff13"
+    },
+    "store": {
+      "files": 99,
+      "sha256MapDigest": "fe60187929c3bfd3f8d65cfb2c9acf62bb3926cd939cf52aa68581936a4a28f9"
+    }
+  },
+  "actualExternalFileUploads": 0,
+  "externalPublication": false,
+  "artifactsReport": "cloud-cleanup-artifacts-0.1.58.json"
+}

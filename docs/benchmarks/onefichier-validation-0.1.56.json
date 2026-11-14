@@ -1,0 +1,94 @@
+{
+  "version": "0.1.56",
+  "date": "2026-11-08",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "platform": "Linux/WSL2 isolated extension profiles",
+    "personalProfileUsed": false
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "unitPassed": 862,
+    "unitFiles": 49,
+    "installedChromeCases": 43,
+    "localCases": 39,
+    "storeCases": 4,
+    "fullRepositoryE2ESuite": false,
+    "runs": {
+      "errors-local": {
+        "startTime": "2026-11-08T13:59:38.727Z",
+        "duration": 7768.377,
+        "expected": 4,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "errors-store": {
+        "startTime": "2026-11-08T14:01:54.798Z",
+        "duration": 7642.487,
+        "expected": 4,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "protocol-local": {
+        "startTime": "2026-11-08T14:00:50.119Z",
+        "duration": 41190.165,
+        "expected": 27,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cloud-regression-local": {
+        "startTime": "2026-11-08T14:00:51.269Z",
+        "duration": 15314.743,
+        "expected": 8,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "reproductions": {
+    "nativeInitializationRejectedRu3BeforePatch": true,
+    "parserUnitRed": {
+      "failed": 1,
+      "passed": 33
+    },
+    "parserUnitGreen": 34,
+    "localizationUnitRedFailures": 20,
+    "localizationUnitGreen": 21
+  },
+  "behavior": {
+    "nativeNodeFamilies": [
+      "upN.1fichier.com",
+      "ru-N.1fichier.com"
+    ],
+    "hostnameAndIdNotRewritten": true,
+    "unsafeAndForeignNodesRejected": true,
+    "localizedCloudErrorsManualAndNative": 10,
+    "unknownCloudErrorsUseTranslatedFallback": true,
+    "newOnefichierJobsBeginAttemptFalse": true,
+    "attemptTrueCommittedBeforeMultipartRequest": true,
+    "attemptNeverResetOnRetry": true,
+    "legacyAbsentAttemptConservative": true,
+    "zeroConfirmedBytesDoNotProveNoUpload": true,
+    "markerOwnerStateAbortGuard": true,
+    "originalBytesAndNamesVerifiedWithInterceptedTransfers": true
+  },
+  "realNetworkEvidence": "onefichier-initialization-0.1.56.json",
+  "actualExternalMediaUploads": 0,
+  "visual": {
+    "frenchErrorAndUncertainRetryInspected": true,
+    "originalLocalFixtureOnly": true,
+    "paths": [
+      "docs/screenshots/onefichier-error-fr.png",
+      "docs/screenshots/onefichier-retry-fr.png"
+    ]
+  },
+  "artifactsReport": "onefichier-artifacts-0.1.56.json",
+  "externalPublication": false
+}

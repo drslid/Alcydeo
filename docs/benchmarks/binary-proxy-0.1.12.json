@@ -1,0 +1,12 @@
+{
+  "fixture": true,
+  "mode": "proxy",
+  "badge": "1",
+  "proposals": 1,
+  "mime": "application/octet-stream",
+  "signedQueryPreserved": true,
+  "bytes": 1837555,
+  "equalsOriginal": true,
+  "completed": true,
+  "workerRestart": true
+}

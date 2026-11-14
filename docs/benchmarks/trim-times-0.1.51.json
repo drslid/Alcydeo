@@ -1,0 +1,163 @@
+{
+  "version": "0.1.51",
+  "date": "2026-11-06",
+  "scope": "Inline precise start/end editing in local video trim tools",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "platform": "Isolated Linux/WSL2 Chrome profiles; user Windows profile not driven"
+  },
+  "runtime": {
+    "version": "0.1.51",
+    "runtime": ".local/detection51/final/chrome-mv3",
+    "runtimeTreeSha256": "4de1bf7a614cd117f80ffae28f26d45409988c26ab24b335f158436d6454368f",
+    "manifestSha256": "7caeb623408dfb7237195c1ceda644d8ed5b4f94723d4488c2749bf011013ac4",
+    "fileCount": 99,
+    "bytes": 5733876,
+    "method": "SHA256 ordered path NUL per-file-sha256 NUL byte-size newline"
+  },
+  "releaseEquivalence": {
+    "runtimeTreeSha256": "e947d230976433fa8602aac72beaac8e0929b9599392b80539b798f60ba5e6d5",
+    "files": 99,
+    "uiAndMediaFilesByteIdentical": true,
+    "changedFiles": [
+      "background.js",
+      "content-scripts/observe.js",
+      "licenses/mediabunny-1.65.0-source.zip",
+      "licenses/mediabunny-aac-encoder-1.65.0-source.zip"
+    ],
+    "observedLifecycleAndPolicyWarmupTestedSeparatelyByRoot": true,
+    "uiCaseRuntimeRemainsRecordedAbove": true
+  },
+  "unit": {
+    "command": "pnpm exec vitest run tests/unit/trim-time.test.ts",
+    "passed": 49,
+    "coverage": [
+      "Seconds, m:ss and h:mm:ss, dot/comma and millisecond precision",
+      "Arabic, Persian, Devanagari and fullwidth digits",
+      "Incomplete input, negative values, unsafe numbers, invalid minute/second components",
+      "Inverted/out-of-duration selection, fractional native duration and long clocks"
+    ]
+  },
+  "browser": {
+    "finalUniqueCasesPassed": 27,
+    "skipped": 0,
+    "flaky": 0,
+    "runs": {
+      "uiAndTools": {
+        "startTime": "2026-11-06T21:03:07.358Z",
+        "duration": 39045.797,
+        "expected": 24,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "adaptedFeatures": {
+        "startTime": "2026-11-06T21:03:07.356Z",
+        "duration": 4896.991,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "captureRepeats": {
+        "startTime": "2026-11-06T21:05:45.619Z",
+        "duration": 6186.199,
+        "expected": 4,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "json": [
+      "artifacts/evidence/trim51-final.json",
+      "artifacts/evidence/trim51-final-features.json"
+    ],
+    "captureRepeatJson": "artifacts/evidence/trim51-final-captures.json",
+    "coverage": [
+      "Visible inline inputs and unchanged incomplete text during typing",
+      "Valid seconds/clock updates synchronized with sliders and player",
+      "Invalid/out-of-bounds/reversed range prevents click and synthetic form submit without a task",
+      "Enter normalization, Escape restoration, file-change reset",
+      "Actual MP4 save and native complete playback, original byte identity",
+      "Ten languages without document reload, RTL, desktop/390px alignment",
+      "Existing trim/merge workspace and feature regression paths"
+    ]
+  },
+  "history": {
+    "beforeFix": "Installed 0.1.50 baseline had zero inline fields where two were expected; dedicated browser case fails before the UI change.",
+    "intermediateRun": {
+      "passed": 22,
+      "failed": 11,
+      "causes": [
+        "Ten mobile field-alignment cases exposed flex sizing; corrected 300px basis keeps both fields together.",
+        "Legacy threshold fixture expected provisional19/18 candidates; checked totals correctly hide the three sub100KB files from the start. Test now expects16, then19 after lowering the threshold."
+      ]
+    },
+    "finalProductChange": "Only the small-width flex basis after the first intermediate build; final runs pass.",
+    "captureStabilization": "Four repeated locale captures disable finite theme transitions; these are repeats, not additional unique cases."
+  },
+  "export": {
+    "build": "0.1.51",
+    "originalFixture": true,
+    "operation": {
+      "kind": "trim",
+      "start": 1.125,
+      "end": 3.875,
+      "options": {
+        "quality": "auto",
+        "maxHeight": 0,
+        "audioKbps": 0
+      }
+    },
+    "output": {
+      "duration": 2.752,
+      "tracks": [
+        {
+          "type": "video",
+          "codec": "avc"
+        },
+        {
+          "type": "audio",
+          "codec": "aac"
+        }
+      ]
+    },
+    "playback": {
+      "duration": 2.773333,
+      "ended": true,
+      "width": 720,
+      "height": 404
+    },
+    "bytes": 331393,
+    "downloadCount": 1,
+    "originalUnchanged": true,
+    "httpRequests": 0
+  },
+  "visual": {
+    "publicationCapturesUse": "Original local MP4 pattern/tone fixture; actual release UI, native player played then paused",
+    "captureSource": "artifacts/evidence/trim-time51/capture-source.json",
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "locales": [
+      "fr",
+      "ar",
+      "ur"
+    ],
+    "widths": [
+      1280,
+      390
+    ],
+    "invalidRangeAndDisabledExportInspected": true,
+    "publicMediaUsed": false
+  },
+  "limits": [
+    "Millisecond input does not guarantee a cut between unavailable frames. Requested duration2.750s produced structural duration2.752s and native Chrome playback duration2.773333s.",
+    "Existing codecs, one-file processing queue, persistent-manager requirement and restart rules remain.",
+    "No user Windows Chrome/CRX installation or physical receiver check in this change."
+  ],
+  "externalPublication": false
+}

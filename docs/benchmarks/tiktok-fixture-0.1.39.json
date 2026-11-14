@@ -1,0 +1,44 @@
+{
+  "version": "0.1.39",
+  "synthetic": true,
+  "networkTikTok": false,
+  "browser": "156.0.8078.4",
+  "badgeBeforePopup": "1",
+  "expectedTitle": "Cours TikTok _ clip original 🌴",
+  "requests": [
+    {
+      "range": "bytes=0-4095",
+      "origin": "https://www.tiktok.com",
+      "referrer": "https://www.tiktok.com/",
+      "quality": "high"
+    },
+    {
+      "range": "bytes=0-4095",
+      "origin": "https://www.tiktok.com",
+      "referrer": "https://www.tiktok.com/",
+      "quality": "low"
+    },
+    {
+      "origin": "https://www.tiktok.com",
+      "referrer": "https://www.tiktok.com/",
+      "quality": "low"
+    }
+  ],
+  "validation": {
+    "duration": 6,
+    "tracks": [
+      {
+        "type": "video",
+        "codec": "avc"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "bytes": 525622,
+    "method": "local-structure",
+    "checkedAt": 1794000005518
+  },
+  "exactDiskBytes": true
+}

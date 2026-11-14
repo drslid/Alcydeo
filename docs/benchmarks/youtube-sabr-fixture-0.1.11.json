@@ -1,0 +1,22 @@
+{
+  "fixture": true,
+  "networkYouTube": false,
+  "kind": "sabr",
+  "state": "completed",
+  "validation": {
+    "duration": 6.021333333333334,
+    "tracks": [
+      {
+        "type": "video",
+        "codec": "avc"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "bytes": 1837166,
+    "method": "local-structure",
+    "checkedAt": 1793997188352
+  }
+}

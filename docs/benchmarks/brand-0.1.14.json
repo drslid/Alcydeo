@@ -1,0 +1,89 @@
+{
+  "version": "0.1.14",
+  "originalVector": true,
+  "smallIcons": "Optical head portrait at 16/32/48 px; full bird at 128 px",
+  "files": [
+    {
+      "path": "apps/extension/public/icons/16.png",
+      "width": 16,
+      "height": 16,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 667,
+      "sha256": "7780fc167a4b9ff8518ab285f1d37ccc4018f44eda442cb2ca3e87e3935e3437"
+    },
+    {
+      "path": "apps/extension/public/icons/32.png",
+      "width": 32,
+      "height": 32,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 1587,
+      "sha256": "e359da03eae927d5b25120264a7b100c41a6def9a878dee5993b03e452ce81e1"
+    },
+    {
+      "path": "apps/extension/public/icons/48.png",
+      "width": 48,
+      "height": 48,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 2477,
+      "sha256": "6723a16dc3444ea17702c1a1ca9f7ca97a2569ace43e5e3e4d494f58cf9fb930"
+    },
+    {
+      "path": "apps/extension/public/icons/128.png",
+      "width": 128,
+      "height": 128,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 9318,
+      "sha256": "6b31426b22867f101c7aa93938946f4c0e665faf6a779f47c01aea9b43848196"
+    },
+    {
+      "path": "docs/brand/kingfisher.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": true,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bytes": 43032,
+      "sha256": "2ec1cb1fa04c30517eb03013008a4a42a118e14e22ef3916492122e5f2ef97d9"
+    }
+  ],
+  "visualInspection": [
+    "Identity board, light/dark, monochrome",
+    "Actual Chrome popup, light/dark",
+    "Actual RTL Urdu popup",
+    "Native PNG sizes on identity board"
+  ],
+  "nativeWindowsToolbarInspected": false,
+  "storeScreenshot": {
+    "width": 1280,
+    "height": 800,
+    "source": "Installed extension, original synthetic media, no compositing"
+  }
+}

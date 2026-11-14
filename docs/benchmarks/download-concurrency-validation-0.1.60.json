@@ -1,0 +1,1465 @@
+{
+  "version": "0.1.60",
+  "date": "2026-11-08",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chromeForTesting": "156.0.8078.4",
+    "platform": "Linux/WSL2 isolated extension profiles",
+    "personalProfileUsed": false
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "unitPassed": 976,
+    "unitFiles": 54,
+    "installedChromeUniqueCases": 29,
+    "localCases": 24,
+    "storeCases": 5,
+    "fullRepositoryE2ESuite": false,
+    "runs": {
+      "downloads-local": {
+        "startTime": "2026-11-08T15:33:14.434Z",
+        "duration": 18461.978000000003,
+        "expected": 5,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "downloads-store": {
+        "startTime": "2026-11-08T15:34:48.346Z",
+        "duration": 19554.406,
+        "expected": 5,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "locales-final": {
+        "startTime": "2026-11-08T15:33:14.388Z",
+        "duration": 13379.294,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "multipart-regression": {
+        "startTime": "2026-11-08T15:34:57.040Z",
+        "duration": 23625.528000000002,
+        "expected": 7,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "media-regression": {
+        "startTime": "2026-11-08T15:34:58.353Z",
+        "duration": 25809.646,
+        "expected": 11,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "behavior": {
+    "maxConcurrentFiles": {
+      "default": 1,
+      "options": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sharedAcrossManagers": true,
+      "strictSavedSetting": true
+    },
+    "connectionsPerCompatibleFile": {
+      "defaultEnabled": false,
+      "options": [
+        2,
+        4,
+        8
+      ],
+      "capturedPerTask": true
+    },
+    "mixedNativeAndHls": {
+      "peakActiveOriginalSources": 8,
+      "queuedNinth": true,
+      "managers": 2,
+      "realServiceWorkerRestart": true,
+      "duplicateNativeDownloads": 0,
+      "cancellationIsolated": true
+    },
+    "loweringLimit": {
+      "from": 8,
+      "to": 1,
+      "activeBodiesPreserved": true,
+      "successorsSerial": true
+    },
+    "multipart": {
+      "simultaneousFiles": 2,
+      "connectionsPerFile": 4,
+      "activePartRequests": 8,
+      "thirdFileWaits": true,
+      "exactOutputBytes": true
+    },
+    "staleWorkerAdmission": {
+      "expiredReservationBehindHeldPermission": true,
+      "otherManagerUsesFreedPlace": true,
+      "oldWorkerCannotStartNinthBody": true
+    },
+    "conversions": {
+      "twoJobsWhileSourcePlacesFull": true,
+      "peakConcurrentConversions": 1,
+      "downloadSlotsUsed": 0
+    },
+    "nativeRecovery": [
+      "persisted invocation time",
+      "unique exact URL, extension and start-time reconciliation",
+      "legacy intent recovery",
+      "no blind retry of uncertain invocation",
+      "pause/cancel before or after native ID",
+      "native source fallback uses shared admission"
+    ],
+    "regressions": [
+      "multipart fallback for ignored ranges and weak/missing validators",
+      "pause, worker restart and persisted resume settings",
+      "changed ETag refusal",
+      "cancellation without partial export",
+      "stale native queue snapshot",
+      "lost ready notification recovers automatic save",
+      "lost Chrome reply does not duplicate copy",
+      "Save As cancellation remains explicit retry",
+      "uncertain native invocation reconciliation",
+      "first fragment error and exhausted429 preserved",
+      "explicit pause/cancel retains priority",
+      "TikTok source-frame transport, chosen quality, popup closure and pause/resume"
+    ]
+  },
+  "interface": {
+    "locales": 10,
+    "catalogKeysPerLocale": 474,
+    "combinations": 40,
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "widths": [
+      1280,
+      390
+    ],
+    "rtl": [
+      "ar",
+      "ur"
+    ],
+    "persistedIndependentValues": {
+      "files": 4,
+      "connections": 8
+    },
+    "generatedCaptures": 12,
+    "visuallyInspected": [
+      "fr-light-1280",
+      "ur-dark-390",
+      "original-fixture popup activity"
+    ],
+    "overflow": false,
+    "browserErrors": [],
+    "externalRequests": []
+  },
+  "website": {
+    "version": "0.1.60",
+    "previewRoot": ".local/pages-preview/alcydeo",
+    "origin": "http://127.0.0.1:4180",
+    "readOnly": true,
+    "startedAt": "2026-11-08T15:39:15.347Z",
+    "widths": [
+      1280,
+      390
+    ],
+    "guides": [
+      "settings",
+      "use",
+      "changelog"
+    ],
+    "cases": [
+      {
+        "locale": "en",
+        "guide": "settings",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/en/guides/settings/",
+        "status": 200,
+        "observed": [
+          "Simultaneous downloads \u2014 0.1.60",
+          "Files in parallel: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "1 to 8 files at a time, independently of connections per file. Queued files start as soon as a slot is free.",
+          "Lowering the limit lets current downloads finish. Conversions still run one at a time.",
+          "Multi-part downloads",
+          "Use multiple connections for compatible files and DASH.",
+          "Connections per file: 2 / 4 / 8.",
+          "Keep the manager open. Compatible audio/video tracks can download together. Splitting one resource requires reliable byte ranges and a strong version validator; otherwise standard transfer is used. Speed depends on the server and your connection."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "en",
+        "guide": "settings",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/en/guides/settings/",
+        "status": 200,
+        "observed": [
+          "Simultaneous downloads \u2014 0.1.60",
+          "Files in parallel: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "1 to 8 files at a time, independently of connections per file. Queued files start as soon as a slot is free.",
+          "Lowering the limit lets current downloads finish. Conversions still run one at a time.",
+          "Multi-part downloads",
+          "Use multiple connections for compatible files and DASH.",
+          "Connections per file: 2 / 4 / 8.",
+          "Keep the manager open. Compatible audio/video tracks can download together. Splitting one resource requires reliable byte ranges and a strong version validator; otherwise standard transfer is used. Speed depends on the server and your connection."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "en",
+        "guide": "use",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/en/guides/use/",
+        "status": 200,
+        "observed": [
+          "Simultaneous downloads \u2014 0.1.60",
+          "Files in parallel: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "1 to 8 files at a time, independently of connections per file. Queued files start as soon as a slot is free.",
+          "Lowering the limit lets current downloads finish. Conversions still run one at a time.",
+          "Multi-part downloads",
+          "Use multiple connections for compatible files and DASH.",
+          "Connections per file: 2 / 4 / 8.",
+          "Keep the manager open. Compatible audio/video tracks can download together. Splitting one resource requires reliable byte ranges and a strong version validator; otherwise standard transfer is used. Speed depends on the server and your connection."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "en",
+        "guide": "use",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/en/guides/use/",
+        "status": 200,
+        "observed": [
+          "Simultaneous downloads \u2014 0.1.60",
+          "Files in parallel: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "1 to 8 files at a time, independently of connections per file. Queued files start as soon as a slot is free.",
+          "Lowering the limit lets current downloads finish. Conversions still run one at a time.",
+          "Multi-part downloads",
+          "Use multiple connections for compatible files and DASH.",
+          "Connections per file: 2 / 4 / 8.",
+          "Keep the manager open. Compatible audio/video tracks can download together. Splitting one resource requires reliable byte ranges and a strong version validator; otherwise standard transfer is used. Speed depends on the server and your connection."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "en",
+        "guide": "changelog",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/en/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "Simultaneous downloads \u2014 0.1.60",
+          "Files in parallel: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "1 to 8 files at a time, independently of connections per file. Queued files start as soon as a slot is free.",
+          "Lowering the limit lets current downloads finish. Conversions still run one at a time.",
+          "Multi-part downloads",
+          "Use multiple connections for compatible files and DASH.",
+          "Connections per file: 2 / 4 / 8.",
+          "Keep the manager open. Compatible audio/video tracks can download together. Splitting one resource requires reliable byte ranges and a strong version validator; otherwise standard transfer is used. Speed depends on the server and your connection."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "en",
+        "guide": "changelog",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/en/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "Simultaneous downloads \u2014 0.1.60",
+          "Files in parallel: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "1 to 8 files at a time, independently of connections per file. Queued files start as soon as a slot is free.",
+          "Lowering the limit lets current downloads finish. Conversions still run one at a time.",
+          "Multi-part downloads",
+          "Use multiple connections for compatible files and DASH.",
+          "Connections per file: 2 / 4 / 8.",
+          "Keep the manager open. Compatible audio/video tracks can download together. Splitting one resource requires reliable byte ranges and a strong version validator; otherwise standard transfer is used. Speed depends on the server and your connection."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "es",
+        "guide": "settings",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/es/guides/settings/",
+        "status": 200,
+        "observed": [
+          "Descargas simult\u00e1neas \u2014 0.1.60",
+          "Archivos en paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 a 8 archivos a la vez, independientemente del n\u00famero de conexiones por archivo. Los archivos en espera empiezan en cuanto queda un puesto libre.",
+          "Bajar el l\u00edmite permite que terminen las descargas en curso. Las conversiones se siguen procesando una a una.",
+          "Descargas en varias partes",
+          "Usar varias conexiones para archivos y DASH compatibles.",
+          "Conexiones por archivo: 2 / 4 / 8.",
+          "Mant\u00e9n abierto el gestor. Las pistas de audio y v\u00eddeo compatibles pueden descargarse juntas. Dividir un recurso exige rangos fiables y un validador de versi\u00f3n fuerte; de lo contrario se usa la transferencia normal. La velocidad depende del servidor y de tu conexi\u00f3n."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "es",
+        "guide": "settings",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/es/guides/settings/",
+        "status": 200,
+        "observed": [
+          "Descargas simult\u00e1neas \u2014 0.1.60",
+          "Archivos en paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 a 8 archivos a la vez, independientemente del n\u00famero de conexiones por archivo. Los archivos en espera empiezan en cuanto queda un puesto libre.",
+          "Bajar el l\u00edmite permite que terminen las descargas en curso. Las conversiones se siguen procesando una a una.",
+          "Descargas en varias partes",
+          "Usar varias conexiones para archivos y DASH compatibles.",
+          "Conexiones por archivo: 2 / 4 / 8.",
+          "Mant\u00e9n abierto el gestor. Las pistas de audio y v\u00eddeo compatibles pueden descargarse juntas. Dividir un recurso exige rangos fiables y un validador de versi\u00f3n fuerte; de lo contrario se usa la transferencia normal. La velocidad depende del servidor y de tu conexi\u00f3n."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "es",
+        "guide": "use",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/es/guides/use/",
+        "status": 200,
+        "observed": [
+          "Descargas simult\u00e1neas \u2014 0.1.60",
+          "Archivos en paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 a 8 archivos a la vez, independientemente del n\u00famero de conexiones por archivo. Los archivos en espera empiezan en cuanto queda un puesto libre.",
+          "Bajar el l\u00edmite permite que terminen las descargas en curso. Las conversiones se siguen procesando una a una.",
+          "Descargas en varias partes",
+          "Usar varias conexiones para archivos y DASH compatibles.",
+          "Conexiones por archivo: 2 / 4 / 8.",
+          "Mant\u00e9n abierto el gestor. Las pistas de audio y v\u00eddeo compatibles pueden descargarse juntas. Dividir un recurso exige rangos fiables y un validador de versi\u00f3n fuerte; de lo contrario se usa la transferencia normal. La velocidad depende del servidor y de tu conexi\u00f3n."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "es",
+        "guide": "use",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/es/guides/use/",
+        "status": 200,
+        "observed": [
+          "Descargas simult\u00e1neas \u2014 0.1.60",
+          "Archivos en paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 a 8 archivos a la vez, independientemente del n\u00famero de conexiones por archivo. Los archivos en espera empiezan en cuanto queda un puesto libre.",
+          "Bajar el l\u00edmite permite que terminen las descargas en curso. Las conversiones se siguen procesando una a una.",
+          "Descargas en varias partes",
+          "Usar varias conexiones para archivos y DASH compatibles.",
+          "Conexiones por archivo: 2 / 4 / 8.",
+          "Mant\u00e9n abierto el gestor. Las pistas de audio y v\u00eddeo compatibles pueden descargarse juntas. Dividir un recurso exige rangos fiables y un validador de versi\u00f3n fuerte; de lo contrario se usa la transferencia normal. La velocidad depende del servidor y de tu conexi\u00f3n."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "es",
+        "guide": "changelog",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/es/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "Descargas simult\u00e1neas \u2014 0.1.60",
+          "Archivos en paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 a 8 archivos a la vez, independientemente del n\u00famero de conexiones por archivo. Los archivos en espera empiezan en cuanto queda un puesto libre.",
+          "Bajar el l\u00edmite permite que terminen las descargas en curso. Las conversiones se siguen procesando una a una.",
+          "Descargas en varias partes",
+          "Usar varias conexiones para archivos y DASH compatibles.",
+          "Conexiones por archivo: 2 / 4 / 8.",
+          "Mant\u00e9n abierto el gestor. Las pistas de audio y v\u00eddeo compatibles pueden descargarse juntas. Dividir un recurso exige rangos fiables y un validador de versi\u00f3n fuerte; de lo contrario se usa la transferencia normal. La velocidad depende del servidor y de tu conexi\u00f3n."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "es",
+        "guide": "changelog",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/es/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "Descargas simult\u00e1neas \u2014 0.1.60",
+          "Archivos en paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 a 8 archivos a la vez, independientemente del n\u00famero de conexiones por archivo. Los archivos en espera empiezan en cuanto queda un puesto libre.",
+          "Bajar el l\u00edmite permite que terminen las descargas en curso. Las conversiones se siguen procesando una a una.",
+          "Descargas en varias partes",
+          "Usar varias conexiones para archivos y DASH compatibles.",
+          "Conexiones por archivo: 2 / 4 / 8.",
+          "Mant\u00e9n abierto el gestor. Las pistas de audio y v\u00eddeo compatibles pueden descargarse juntas. Dividir un recurso exige rangos fiables y un validador de versi\u00f3n fuerte; de lo contrario se usa la transferencia normal. La velocidad depende del servidor y de tu conexi\u00f3n."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "fr",
+        "guide": "settings",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/fr/guides/settings/",
+        "status": 200,
+        "observed": [
+          "T\u00e9l\u00e9chargements simultan\u00e9s \u2014 0.1.60",
+          "Fichiers en parall\u00e8le: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 \u00e0 8 fichiers \u00e0 la fois, ind\u00e9pendamment du nombre de connexions par fichier. Les fichiers en attente d\u00e9marrent d\u00e8s qu\u2019une place se lib\u00e8re.",
+          "Une baisse de la limite laisse finir les t\u00e9l\u00e9chargements en cours. Les conversions restent trait\u00e9es une par une.",
+          "T\u00e9l\u00e9chargements en plusieurs parties",
+          "Utiliser plusieurs connexions pour les fichiers et DASH compatibles.",
+          "Connexions par fichier: 2 / 4 / 8.",
+          "Gardez le gestionnaire ouvert. Les pistes audio et vid\u00e9o compatibles peuvent se t\u00e9l\u00e9charger ensemble. Diviser une ressource exige des plages fiables et un validateur de version fort ; sinon le transfert standard est utilis\u00e9. Le gain d\u00e9pend du serveur et de votre connexion."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "fr",
+        "guide": "settings",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/fr/guides/settings/",
+        "status": 200,
+        "observed": [
+          "T\u00e9l\u00e9chargements simultan\u00e9s \u2014 0.1.60",
+          "Fichiers en parall\u00e8le: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 \u00e0 8 fichiers \u00e0 la fois, ind\u00e9pendamment du nombre de connexions par fichier. Les fichiers en attente d\u00e9marrent d\u00e8s qu\u2019une place se lib\u00e8re.",
+          "Une baisse de la limite laisse finir les t\u00e9l\u00e9chargements en cours. Les conversions restent trait\u00e9es une par une.",
+          "T\u00e9l\u00e9chargements en plusieurs parties",
+          "Utiliser plusieurs connexions pour les fichiers et DASH compatibles.",
+          "Connexions par fichier: 2 / 4 / 8.",
+          "Gardez le gestionnaire ouvert. Les pistes audio et vid\u00e9o compatibles peuvent se t\u00e9l\u00e9charger ensemble. Diviser une ressource exige des plages fiables et un validateur de version fort ; sinon le transfert standard est utilis\u00e9. Le gain d\u00e9pend du serveur et de votre connexion."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "fr",
+        "guide": "use",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/fr/guides/use/",
+        "status": 200,
+        "observed": [
+          "T\u00e9l\u00e9chargements simultan\u00e9s \u2014 0.1.60",
+          "Fichiers en parall\u00e8le: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 \u00e0 8 fichiers \u00e0 la fois, ind\u00e9pendamment du nombre de connexions par fichier. Les fichiers en attente d\u00e9marrent d\u00e8s qu\u2019une place se lib\u00e8re.",
+          "Une baisse de la limite laisse finir les t\u00e9l\u00e9chargements en cours. Les conversions restent trait\u00e9es une par une.",
+          "T\u00e9l\u00e9chargements en plusieurs parties",
+          "Utiliser plusieurs connexions pour les fichiers et DASH compatibles.",
+          "Connexions par fichier: 2 / 4 / 8.",
+          "Gardez le gestionnaire ouvert. Les pistes audio et vid\u00e9o compatibles peuvent se t\u00e9l\u00e9charger ensemble. Diviser une ressource exige des plages fiables et un validateur de version fort ; sinon le transfert standard est utilis\u00e9. Le gain d\u00e9pend du serveur et de votre connexion."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "fr",
+        "guide": "use",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/fr/guides/use/",
+        "status": 200,
+        "observed": [
+          "T\u00e9l\u00e9chargements simultan\u00e9s \u2014 0.1.60",
+          "Fichiers en parall\u00e8le: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 \u00e0 8 fichiers \u00e0 la fois, ind\u00e9pendamment du nombre de connexions par fichier. Les fichiers en attente d\u00e9marrent d\u00e8s qu\u2019une place se lib\u00e8re.",
+          "Une baisse de la limite laisse finir les t\u00e9l\u00e9chargements en cours. Les conversions restent trait\u00e9es une par une.",
+          "T\u00e9l\u00e9chargements en plusieurs parties",
+          "Utiliser plusieurs connexions pour les fichiers et DASH compatibles.",
+          "Connexions par fichier: 2 / 4 / 8.",
+          "Gardez le gestionnaire ouvert. Les pistes audio et vid\u00e9o compatibles peuvent se t\u00e9l\u00e9charger ensemble. Diviser une ressource exige des plages fiables et un validateur de version fort ; sinon le transfert standard est utilis\u00e9. Le gain d\u00e9pend du serveur et de votre connexion."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "fr",
+        "guide": "changelog",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/fr/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "T\u00e9l\u00e9chargements simultan\u00e9s \u2014 0.1.60",
+          "Fichiers en parall\u00e8le: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 \u00e0 8 fichiers \u00e0 la fois, ind\u00e9pendamment du nombre de connexions par fichier. Les fichiers en attente d\u00e9marrent d\u00e8s qu\u2019une place se lib\u00e8re.",
+          "Une baisse de la limite laisse finir les t\u00e9l\u00e9chargements en cours. Les conversions restent trait\u00e9es une par une.",
+          "T\u00e9l\u00e9chargements en plusieurs parties",
+          "Utiliser plusieurs connexions pour les fichiers et DASH compatibles.",
+          "Connexions par fichier: 2 / 4 / 8.",
+          "Gardez le gestionnaire ouvert. Les pistes audio et vid\u00e9o compatibles peuvent se t\u00e9l\u00e9charger ensemble. Diviser une ressource exige des plages fiables et un validateur de version fort ; sinon le transfert standard est utilis\u00e9. Le gain d\u00e9pend du serveur et de votre connexion."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "fr",
+        "guide": "changelog",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/fr/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "T\u00e9l\u00e9chargements simultan\u00e9s \u2014 0.1.60",
+          "Fichiers en parall\u00e8le: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 \u00e0 8 fichiers \u00e0 la fois, ind\u00e9pendamment du nombre de connexions par fichier. Les fichiers en attente d\u00e9marrent d\u00e8s qu\u2019une place se lib\u00e8re.",
+          "Une baisse de la limite laisse finir les t\u00e9l\u00e9chargements en cours. Les conversions restent trait\u00e9es une par une.",
+          "T\u00e9l\u00e9chargements en plusieurs parties",
+          "Utiliser plusieurs connexions pour les fichiers et DASH compatibles.",
+          "Connexions par fichier: 2 / 4 / 8.",
+          "Gardez le gestionnaire ouvert. Les pistes audio et vid\u00e9o compatibles peuvent se t\u00e9l\u00e9charger ensemble. Diviser une ressource exige des plages fiables et un validateur de version fort ; sinon le transfert standard est utilis\u00e9. Le gain d\u00e9pend du serveur et de votre connexion."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "de",
+        "guide": "settings",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/de/guides/settings/",
+        "status": 200,
+        "observed": [
+          "Gleichzeitige Downloads \u2014 0.1.60",
+          "Dateien gleichzeitig: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "1 bis 8 Dateien gleichzeitig, unabh\u00e4ngig von der Anzahl der Verbindungen je Datei. Wartende Dateien starten, sobald ein Platz frei wird.",
+          "Beim Senken des Limits werden laufende Downloads zu Ende gef\u00fchrt. Konvertierungen laufen weiterhin einzeln.",
+          "Downloads in mehreren Teilen",
+          "Mehrere Verbindungen f\u00fcr kompatible Dateien und DASH verwenden.",
+          "Verbindungen je Datei: 2 / 4 / 8.",
+          "Manager ge\u00f6ffnet lassen. Kompatible Audio- und Videospuren k\u00f6nnen gleichzeitig laden. Das Aufteilen einer Ressource erfordert zuverl\u00e4ssige Bytebereiche und eine starke Versionskennung; sonst erfolgt die normale \u00dcbertragung. Die Geschwindigkeit h\u00e4ngt von Server und Verbindung ab."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "de",
+        "guide": "settings",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/de/guides/settings/",
+        "status": 200,
+        "observed": [
+          "Gleichzeitige Downloads \u2014 0.1.60",
+          "Dateien gleichzeitig: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "1 bis 8 Dateien gleichzeitig, unabh\u00e4ngig von der Anzahl der Verbindungen je Datei. Wartende Dateien starten, sobald ein Platz frei wird.",
+          "Beim Senken des Limits werden laufende Downloads zu Ende gef\u00fchrt. Konvertierungen laufen weiterhin einzeln.",
+          "Downloads in mehreren Teilen",
+          "Mehrere Verbindungen f\u00fcr kompatible Dateien und DASH verwenden.",
+          "Verbindungen je Datei: 2 / 4 / 8.",
+          "Manager ge\u00f6ffnet lassen. Kompatible Audio- und Videospuren k\u00f6nnen gleichzeitig laden. Das Aufteilen einer Ressource erfordert zuverl\u00e4ssige Bytebereiche und eine starke Versionskennung; sonst erfolgt die normale \u00dcbertragung. Die Geschwindigkeit h\u00e4ngt von Server und Verbindung ab."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "de",
+        "guide": "use",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/de/guides/use/",
+        "status": 200,
+        "observed": [
+          "Gleichzeitige Downloads \u2014 0.1.60",
+          "Dateien gleichzeitig: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "1 bis 8 Dateien gleichzeitig, unabh\u00e4ngig von der Anzahl der Verbindungen je Datei. Wartende Dateien starten, sobald ein Platz frei wird.",
+          "Beim Senken des Limits werden laufende Downloads zu Ende gef\u00fchrt. Konvertierungen laufen weiterhin einzeln.",
+          "Downloads in mehreren Teilen",
+          "Mehrere Verbindungen f\u00fcr kompatible Dateien und DASH verwenden.",
+          "Verbindungen je Datei: 2 / 4 / 8.",
+          "Manager ge\u00f6ffnet lassen. Kompatible Audio- und Videospuren k\u00f6nnen gleichzeitig laden. Das Aufteilen einer Ressource erfordert zuverl\u00e4ssige Bytebereiche und eine starke Versionskennung; sonst erfolgt die normale \u00dcbertragung. Die Geschwindigkeit h\u00e4ngt von Server und Verbindung ab."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "de",
+        "guide": "use",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/de/guides/use/",
+        "status": 200,
+        "observed": [
+          "Gleichzeitige Downloads \u2014 0.1.60",
+          "Dateien gleichzeitig: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "1 bis 8 Dateien gleichzeitig, unabh\u00e4ngig von der Anzahl der Verbindungen je Datei. Wartende Dateien starten, sobald ein Platz frei wird.",
+          "Beim Senken des Limits werden laufende Downloads zu Ende gef\u00fchrt. Konvertierungen laufen weiterhin einzeln.",
+          "Downloads in mehreren Teilen",
+          "Mehrere Verbindungen f\u00fcr kompatible Dateien und DASH verwenden.",
+          "Verbindungen je Datei: 2 / 4 / 8.",
+          "Manager ge\u00f6ffnet lassen. Kompatible Audio- und Videospuren k\u00f6nnen gleichzeitig laden. Das Aufteilen einer Ressource erfordert zuverl\u00e4ssige Bytebereiche und eine starke Versionskennung; sonst erfolgt die normale \u00dcbertragung. Die Geschwindigkeit h\u00e4ngt von Server und Verbindung ab."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "de",
+        "guide": "changelog",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/de/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "Gleichzeitige Downloads \u2014 0.1.60",
+          "Dateien gleichzeitig: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "1 bis 8 Dateien gleichzeitig, unabh\u00e4ngig von der Anzahl der Verbindungen je Datei. Wartende Dateien starten, sobald ein Platz frei wird.",
+          "Beim Senken des Limits werden laufende Downloads zu Ende gef\u00fchrt. Konvertierungen laufen weiterhin einzeln.",
+          "Downloads in mehreren Teilen",
+          "Mehrere Verbindungen f\u00fcr kompatible Dateien und DASH verwenden.",
+          "Verbindungen je Datei: 2 / 4 / 8.",
+          "Manager ge\u00f6ffnet lassen. Kompatible Audio- und Videospuren k\u00f6nnen gleichzeitig laden. Das Aufteilen einer Ressource erfordert zuverl\u00e4ssige Bytebereiche und eine starke Versionskennung; sonst erfolgt die normale \u00dcbertragung. Die Geschwindigkeit h\u00e4ngt von Server und Verbindung ab."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "de",
+        "guide": "changelog",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/de/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "Gleichzeitige Downloads \u2014 0.1.60",
+          "Dateien gleichzeitig: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "1 bis 8 Dateien gleichzeitig, unabh\u00e4ngig von der Anzahl der Verbindungen je Datei. Wartende Dateien starten, sobald ein Platz frei wird.",
+          "Beim Senken des Limits werden laufende Downloads zu Ende gef\u00fchrt. Konvertierungen laufen weiterhin einzeln.",
+          "Downloads in mehreren Teilen",
+          "Mehrere Verbindungen f\u00fcr kompatible Dateien und DASH verwenden.",
+          "Verbindungen je Datei: 2 / 4 / 8.",
+          "Manager ge\u00f6ffnet lassen. Kompatible Audio- und Videospuren k\u00f6nnen gleichzeitig laden. Das Aufteilen einer Ressource erfordert zuverl\u00e4ssige Bytebereiche und eine starke Versionskennung; sonst erfolgt die normale \u00dcbertragung. Die Geschwindigkeit h\u00e4ngt von Server und Verbindung ab."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "zh_CN",
+        "guide": "settings",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/zh-cn/guides/settings/",
+        "status": 200,
+        "observed": [
+          "\u540c\u65f6\u4e0b\u8f7d \u2014 0.1.60",
+          "\u540c\u65f6\u4e0b\u8f7d\u7684\u6587\u4ef6\u6570: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u6bcf\u6b21\u540c\u65f6\u4e0b\u8f7d 1 \u5230 8 \u4e2a\u6587\u4ef6\uff0c\u4e0e\u6bcf\u4e2a\u6587\u4ef6\u7684\u8fde\u63a5\u6570\u65e0\u5173\u3002\u4e00\u6709\u7a7a\u4f4d\uff0c\u7b49\u5f85\u4e2d\u7684\u6587\u4ef6\u5c31\u4f1a\u5f00\u59cb\u4e0b\u8f7d\u3002",
+          "\u964d\u4f4e\u4e0a\u9650\u4e0d\u4f1a\u4e2d\u65ad\u6b63\u5728\u8fdb\u884c\u7684\u4e0b\u8f7d\u3002\u8f6c\u6362\u4ecd\u9010\u4e2a\u5904\u7406\u3002",
+          "\u591a\u90e8\u5206\u4e0b\u8f7d",
+          "\u4e3a\u517c\u5bb9\u6587\u4ef6\u548c DASH \u4f7f\u7528\u591a\u4e2a\u8fde\u63a5.",
+          "\u6bcf\u4e2a\u6587\u4ef6\u7684\u8fde\u63a5\u6570: 2 / 4 / 8.",
+          "\u8bf7\u4fdd\u6301\u7ba1\u7406\u5668\u6253\u5f00\u3002\u517c\u5bb9\u7684\u97f3\u89c6\u9891\u8f68\u9053\u53ef\u540c\u65f6\u4e0b\u8f7d\u3002\u62c6\u5206\u5355\u4e2a\u8d44\u6e90\u9700\u8981\u53ef\u9760\u7684\u5b57\u8282\u8303\u56f4\u548c\u5f3a\u7248\u672c\u6821\u9a8c\uff0c\u5426\u5219\u4f7f\u7528\u6807\u51c6\u4f20\u8f93\u3002\u901f\u5ea6\u53d6\u51b3\u4e8e\u670d\u52a1\u5668\u548c\u60a8\u7684\u8fde\u63a5\u3002"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "zh_CN",
+        "guide": "settings",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/zh-cn/guides/settings/",
+        "status": 200,
+        "observed": [
+          "\u540c\u65f6\u4e0b\u8f7d \u2014 0.1.60",
+          "\u540c\u65f6\u4e0b\u8f7d\u7684\u6587\u4ef6\u6570: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u6bcf\u6b21\u540c\u65f6\u4e0b\u8f7d 1 \u5230 8 \u4e2a\u6587\u4ef6\uff0c\u4e0e\u6bcf\u4e2a\u6587\u4ef6\u7684\u8fde\u63a5\u6570\u65e0\u5173\u3002\u4e00\u6709\u7a7a\u4f4d\uff0c\u7b49\u5f85\u4e2d\u7684\u6587\u4ef6\u5c31\u4f1a\u5f00\u59cb\u4e0b\u8f7d\u3002",
+          "\u964d\u4f4e\u4e0a\u9650\u4e0d\u4f1a\u4e2d\u65ad\u6b63\u5728\u8fdb\u884c\u7684\u4e0b\u8f7d\u3002\u8f6c\u6362\u4ecd\u9010\u4e2a\u5904\u7406\u3002",
+          "\u591a\u90e8\u5206\u4e0b\u8f7d",
+          "\u4e3a\u517c\u5bb9\u6587\u4ef6\u548c DASH \u4f7f\u7528\u591a\u4e2a\u8fde\u63a5.",
+          "\u6bcf\u4e2a\u6587\u4ef6\u7684\u8fde\u63a5\u6570: 2 / 4 / 8.",
+          "\u8bf7\u4fdd\u6301\u7ba1\u7406\u5668\u6253\u5f00\u3002\u517c\u5bb9\u7684\u97f3\u89c6\u9891\u8f68\u9053\u53ef\u540c\u65f6\u4e0b\u8f7d\u3002\u62c6\u5206\u5355\u4e2a\u8d44\u6e90\u9700\u8981\u53ef\u9760\u7684\u5b57\u8282\u8303\u56f4\u548c\u5f3a\u7248\u672c\u6821\u9a8c\uff0c\u5426\u5219\u4f7f\u7528\u6807\u51c6\u4f20\u8f93\u3002\u901f\u5ea6\u53d6\u51b3\u4e8e\u670d\u52a1\u5668\u548c\u60a8\u7684\u8fde\u63a5\u3002"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "zh_CN",
+        "guide": "use",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/zh-cn/guides/use/",
+        "status": 200,
+        "observed": [
+          "\u540c\u65f6\u4e0b\u8f7d \u2014 0.1.60",
+          "\u540c\u65f6\u4e0b\u8f7d\u7684\u6587\u4ef6\u6570: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u6bcf\u6b21\u540c\u65f6\u4e0b\u8f7d 1 \u5230 8 \u4e2a\u6587\u4ef6\uff0c\u4e0e\u6bcf\u4e2a\u6587\u4ef6\u7684\u8fde\u63a5\u6570\u65e0\u5173\u3002\u4e00\u6709\u7a7a\u4f4d\uff0c\u7b49\u5f85\u4e2d\u7684\u6587\u4ef6\u5c31\u4f1a\u5f00\u59cb\u4e0b\u8f7d\u3002",
+          "\u964d\u4f4e\u4e0a\u9650\u4e0d\u4f1a\u4e2d\u65ad\u6b63\u5728\u8fdb\u884c\u7684\u4e0b\u8f7d\u3002\u8f6c\u6362\u4ecd\u9010\u4e2a\u5904\u7406\u3002",
+          "\u591a\u90e8\u5206\u4e0b\u8f7d",
+          "\u4e3a\u517c\u5bb9\u6587\u4ef6\u548c DASH \u4f7f\u7528\u591a\u4e2a\u8fde\u63a5.",
+          "\u6bcf\u4e2a\u6587\u4ef6\u7684\u8fde\u63a5\u6570: 2 / 4 / 8.",
+          "\u8bf7\u4fdd\u6301\u7ba1\u7406\u5668\u6253\u5f00\u3002\u517c\u5bb9\u7684\u97f3\u89c6\u9891\u8f68\u9053\u53ef\u540c\u65f6\u4e0b\u8f7d\u3002\u62c6\u5206\u5355\u4e2a\u8d44\u6e90\u9700\u8981\u53ef\u9760\u7684\u5b57\u8282\u8303\u56f4\u548c\u5f3a\u7248\u672c\u6821\u9a8c\uff0c\u5426\u5219\u4f7f\u7528\u6807\u51c6\u4f20\u8f93\u3002\u901f\u5ea6\u53d6\u51b3\u4e8e\u670d\u52a1\u5668\u548c\u60a8\u7684\u8fde\u63a5\u3002"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "zh_CN",
+        "guide": "use",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/zh-cn/guides/use/",
+        "status": 200,
+        "observed": [
+          "\u540c\u65f6\u4e0b\u8f7d \u2014 0.1.60",
+          "\u540c\u65f6\u4e0b\u8f7d\u7684\u6587\u4ef6\u6570: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u6bcf\u6b21\u540c\u65f6\u4e0b\u8f7d 1 \u5230 8 \u4e2a\u6587\u4ef6\uff0c\u4e0e\u6bcf\u4e2a\u6587\u4ef6\u7684\u8fde\u63a5\u6570\u65e0\u5173\u3002\u4e00\u6709\u7a7a\u4f4d\uff0c\u7b49\u5f85\u4e2d\u7684\u6587\u4ef6\u5c31\u4f1a\u5f00\u59cb\u4e0b\u8f7d\u3002",
+          "\u964d\u4f4e\u4e0a\u9650\u4e0d\u4f1a\u4e2d\u65ad\u6b63\u5728\u8fdb\u884c\u7684\u4e0b\u8f7d\u3002\u8f6c\u6362\u4ecd\u9010\u4e2a\u5904\u7406\u3002",
+          "\u591a\u90e8\u5206\u4e0b\u8f7d",
+          "\u4e3a\u517c\u5bb9\u6587\u4ef6\u548c DASH \u4f7f\u7528\u591a\u4e2a\u8fde\u63a5.",
+          "\u6bcf\u4e2a\u6587\u4ef6\u7684\u8fde\u63a5\u6570: 2 / 4 / 8.",
+          "\u8bf7\u4fdd\u6301\u7ba1\u7406\u5668\u6253\u5f00\u3002\u517c\u5bb9\u7684\u97f3\u89c6\u9891\u8f68\u9053\u53ef\u540c\u65f6\u4e0b\u8f7d\u3002\u62c6\u5206\u5355\u4e2a\u8d44\u6e90\u9700\u8981\u53ef\u9760\u7684\u5b57\u8282\u8303\u56f4\u548c\u5f3a\u7248\u672c\u6821\u9a8c\uff0c\u5426\u5219\u4f7f\u7528\u6807\u51c6\u4f20\u8f93\u3002\u901f\u5ea6\u53d6\u51b3\u4e8e\u670d\u52a1\u5668\u548c\u60a8\u7684\u8fde\u63a5\u3002"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "zh_CN",
+        "guide": "changelog",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/zh-cn/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "\u540c\u65f6\u4e0b\u8f7d \u2014 0.1.60",
+          "\u540c\u65f6\u4e0b\u8f7d\u7684\u6587\u4ef6\u6570: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u6bcf\u6b21\u540c\u65f6\u4e0b\u8f7d 1 \u5230 8 \u4e2a\u6587\u4ef6\uff0c\u4e0e\u6bcf\u4e2a\u6587\u4ef6\u7684\u8fde\u63a5\u6570\u65e0\u5173\u3002\u4e00\u6709\u7a7a\u4f4d\uff0c\u7b49\u5f85\u4e2d\u7684\u6587\u4ef6\u5c31\u4f1a\u5f00\u59cb\u4e0b\u8f7d\u3002",
+          "\u964d\u4f4e\u4e0a\u9650\u4e0d\u4f1a\u4e2d\u65ad\u6b63\u5728\u8fdb\u884c\u7684\u4e0b\u8f7d\u3002\u8f6c\u6362\u4ecd\u9010\u4e2a\u5904\u7406\u3002",
+          "\u591a\u90e8\u5206\u4e0b\u8f7d",
+          "\u4e3a\u517c\u5bb9\u6587\u4ef6\u548c DASH \u4f7f\u7528\u591a\u4e2a\u8fde\u63a5.",
+          "\u6bcf\u4e2a\u6587\u4ef6\u7684\u8fde\u63a5\u6570: 2 / 4 / 8.",
+          "\u8bf7\u4fdd\u6301\u7ba1\u7406\u5668\u6253\u5f00\u3002\u517c\u5bb9\u7684\u97f3\u89c6\u9891\u8f68\u9053\u53ef\u540c\u65f6\u4e0b\u8f7d\u3002\u62c6\u5206\u5355\u4e2a\u8d44\u6e90\u9700\u8981\u53ef\u9760\u7684\u5b57\u8282\u8303\u56f4\u548c\u5f3a\u7248\u672c\u6821\u9a8c\uff0c\u5426\u5219\u4f7f\u7528\u6807\u51c6\u4f20\u8f93\u3002\u901f\u5ea6\u53d6\u51b3\u4e8e\u670d\u52a1\u5668\u548c\u60a8\u7684\u8fde\u63a5\u3002"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "zh_CN",
+        "guide": "changelog",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/zh-cn/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "\u540c\u65f6\u4e0b\u8f7d \u2014 0.1.60",
+          "\u540c\u65f6\u4e0b\u8f7d\u7684\u6587\u4ef6\u6570: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u6bcf\u6b21\u540c\u65f6\u4e0b\u8f7d 1 \u5230 8 \u4e2a\u6587\u4ef6\uff0c\u4e0e\u6bcf\u4e2a\u6587\u4ef6\u7684\u8fde\u63a5\u6570\u65e0\u5173\u3002\u4e00\u6709\u7a7a\u4f4d\uff0c\u7b49\u5f85\u4e2d\u7684\u6587\u4ef6\u5c31\u4f1a\u5f00\u59cb\u4e0b\u8f7d\u3002",
+          "\u964d\u4f4e\u4e0a\u9650\u4e0d\u4f1a\u4e2d\u65ad\u6b63\u5728\u8fdb\u884c\u7684\u4e0b\u8f7d\u3002\u8f6c\u6362\u4ecd\u9010\u4e2a\u5904\u7406\u3002",
+          "\u591a\u90e8\u5206\u4e0b\u8f7d",
+          "\u4e3a\u517c\u5bb9\u6587\u4ef6\u548c DASH \u4f7f\u7528\u591a\u4e2a\u8fde\u63a5.",
+          "\u6bcf\u4e2a\u6587\u4ef6\u7684\u8fde\u63a5\u6570: 2 / 4 / 8.",
+          "\u8bf7\u4fdd\u6301\u7ba1\u7406\u5668\u6253\u5f00\u3002\u517c\u5bb9\u7684\u97f3\u89c6\u9891\u8f68\u9053\u53ef\u540c\u65f6\u4e0b\u8f7d\u3002\u62c6\u5206\u5355\u4e2a\u8d44\u6e90\u9700\u8981\u53ef\u9760\u7684\u5b57\u8282\u8303\u56f4\u548c\u5f3a\u7248\u672c\u6821\u9a8c\uff0c\u5426\u5219\u4f7f\u7528\u6807\u51c6\u4f20\u8f93\u3002\u901f\u5ea6\u53d6\u51b3\u4e8e\u670d\u52a1\u5668\u548c\u60a8\u7684\u8fde\u63a5\u3002"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ar",
+        "guide": "settings",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/ar/guides/settings/",
+        "status": 200,
+        "observed": [
+          "\u0627\u0644\u062a\u0646\u0632\u064a\u0644\u0627\u062a \u0627\u0644\u0645\u062a\u0632\u0627\u0645\u0646\u0629 \u2014 0.1.60",
+          "\u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0628\u0627\u0644\u062a\u0648\u0627\u0632\u064a: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u0645\u0646 \u0645\u0644\u0641 \u0648\u0627\u062d\u062f \u0625\u0644\u0649 8 \u0645\u0644\u0641\u0627\u062a \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0646\u0641\u0633\u0647\u060c \u0628\u0635\u0631\u0641 \u0627\u0644\u0646\u0638\u0631 \u0639\u0646 \u0639\u062f\u062f \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0643\u0644 \u0645\u0644\u0641. \u062a\u0628\u062f\u0623 \u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0627\u0644\u0645\u0646\u062a\u0638\u0631\u0629 \u0641\u0648\u0631 \u062a\u0648\u0641\u0631 \u0645\u0643\u0627\u0646.",
+          "\u064a\u064f\u062a\u064a\u062d \u062e\u0641\u0636 \u0627\u0644\u062d\u062f \u0627\u0643\u062a\u0645\u0627\u0644 \u0627\u0644\u062a\u0646\u0632\u064a\u0644\u0627\u062a \u0627\u0644\u062c\u0627\u0631\u064a\u0629. \u0648\u062a\u0638\u0644 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u0627\u062a \u062a\u064f\u0639\u0627\u0644\u062c \u0648\u0627\u062d\u062f\u064b\u0627 \u062a\u0644\u0648 \u0627\u0644\u0622\u062e\u0631.",
+          "\u0627\u0644\u062a\u0646\u0632\u064a\u0644 \u0639\u0644\u0649 \u0623\u062c\u0632\u0627\u0621",
+          "\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0639\u062f\u0629 \u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0644\u0645\u0644\u0641\u0627\u062a \u0648DASH \u0627\u0644\u0645\u062a\u0648\u0627\u0641\u0642\u0629.",
+          "\u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0643\u0644 \u0645\u0644\u0641: 2 / 4 / 8.",
+          "\u0623\u0628\u0642\u0650 \u0627\u0644\u0645\u062f\u064a\u0631 \u0645\u0641\u062a\u0648\u062d\u064b\u0627. \u064a\u0645\u0643\u0646 \u062a\u0646\u0632\u064a\u0644 \u0645\u0633\u0627\u0631\u0627\u062a \u0627\u0644\u0635\u0648\u062a \u0648\u0627\u0644\u0641\u064a\u062f\u064a\u0648 \u0627\u0644\u0645\u062a\u0648\u0627\u0641\u0642\u0629 \u0645\u0639\u064b\u0627. \u064a\u062a\u0637\u0644\u0628 \u062a\u0642\u0633\u064a\u0645 \u0645\u0648\u0631\u062f \u0648\u0627\u062d\u062f \u0646\u0637\u0627\u0642\u0627\u062a \u0628\u0627\u064a\u062a \u0645\u0648\u062b\u0648\u0642\u0629 \u0648\u0645\u062a\u062d\u0642\u0642 \u0625\u0635\u062f\u0627\u0631 \u0642\u0648\u064a\u064b\u0627\u061b \u0648\u0625\u0644\u0627 \u064a\u064f\u0633\u062a\u062e\u062f\u0645 \u0627\u0644\u0646\u0642\u0644 \u0627\u0644\u0639\u0627\u062f\u064a. \u062a\u0639\u062a\u0645\u062f \u0627\u0644\u0633\u0631\u0639\u0629 \u0639\u0644\u0649 \u0627\u0644\u062e\u0627\u062f\u0645 \u0648\u0627\u0644\u0627\u062a\u0635\u0627\u0644."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ar",
+        "guide": "settings",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/ar/guides/settings/",
+        "status": 200,
+        "observed": [
+          "\u0627\u0644\u062a\u0646\u0632\u064a\u0644\u0627\u062a \u0627\u0644\u0645\u062a\u0632\u0627\u0645\u0646\u0629 \u2014 0.1.60",
+          "\u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0628\u0627\u0644\u062a\u0648\u0627\u0632\u064a: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u0645\u0646 \u0645\u0644\u0641 \u0648\u0627\u062d\u062f \u0625\u0644\u0649 8 \u0645\u0644\u0641\u0627\u062a \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0646\u0641\u0633\u0647\u060c \u0628\u0635\u0631\u0641 \u0627\u0644\u0646\u0638\u0631 \u0639\u0646 \u0639\u062f\u062f \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0643\u0644 \u0645\u0644\u0641. \u062a\u0628\u062f\u0623 \u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0627\u0644\u0645\u0646\u062a\u0638\u0631\u0629 \u0641\u0648\u0631 \u062a\u0648\u0641\u0631 \u0645\u0643\u0627\u0646.",
+          "\u064a\u064f\u062a\u064a\u062d \u062e\u0641\u0636 \u0627\u0644\u062d\u062f \u0627\u0643\u062a\u0645\u0627\u0644 \u0627\u0644\u062a\u0646\u0632\u064a\u0644\u0627\u062a \u0627\u0644\u062c\u0627\u0631\u064a\u0629. \u0648\u062a\u0638\u0644 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u0627\u062a \u062a\u064f\u0639\u0627\u0644\u062c \u0648\u0627\u062d\u062f\u064b\u0627 \u062a\u0644\u0648 \u0627\u0644\u0622\u062e\u0631.",
+          "\u0627\u0644\u062a\u0646\u0632\u064a\u0644 \u0639\u0644\u0649 \u0623\u062c\u0632\u0627\u0621",
+          "\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0639\u062f\u0629 \u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0644\u0645\u0644\u0641\u0627\u062a \u0648DASH \u0627\u0644\u0645\u062a\u0648\u0627\u0641\u0642\u0629.",
+          "\u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0643\u0644 \u0645\u0644\u0641: 2 / 4 / 8.",
+          "\u0623\u0628\u0642\u0650 \u0627\u0644\u0645\u062f\u064a\u0631 \u0645\u0641\u062a\u0648\u062d\u064b\u0627. \u064a\u0645\u0643\u0646 \u062a\u0646\u0632\u064a\u0644 \u0645\u0633\u0627\u0631\u0627\u062a \u0627\u0644\u0635\u0648\u062a \u0648\u0627\u0644\u0641\u064a\u062f\u064a\u0648 \u0627\u0644\u0645\u062a\u0648\u0627\u0641\u0642\u0629 \u0645\u0639\u064b\u0627. \u064a\u062a\u0637\u0644\u0628 \u062a\u0642\u0633\u064a\u0645 \u0645\u0648\u0631\u062f \u0648\u0627\u062d\u062f \u0646\u0637\u0627\u0642\u0627\u062a \u0628\u0627\u064a\u062a \u0645\u0648\u062b\u0648\u0642\u0629 \u0648\u0645\u062a\u062d\u0642\u0642 \u0625\u0635\u062f\u0627\u0631 \u0642\u0648\u064a\u064b\u0627\u061b \u0648\u0625\u0644\u0627 \u064a\u064f\u0633\u062a\u062e\u062f\u0645 \u0627\u0644\u0646\u0642\u0644 \u0627\u0644\u0639\u0627\u062f\u064a. \u062a\u0639\u062a\u0645\u062f \u0627\u0644\u0633\u0631\u0639\u0629 \u0639\u0644\u0649 \u0627\u0644\u062e\u0627\u062f\u0645 \u0648\u0627\u0644\u0627\u062a\u0635\u0627\u0644."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ar",
+        "guide": "use",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/ar/guides/use/",
+        "status": 200,
+        "observed": [
+          "\u0627\u0644\u062a\u0646\u0632\u064a\u0644\u0627\u062a \u0627\u0644\u0645\u062a\u0632\u0627\u0645\u0646\u0629 \u2014 0.1.60",
+          "\u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0628\u0627\u0644\u062a\u0648\u0627\u0632\u064a: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u0645\u0646 \u0645\u0644\u0641 \u0648\u0627\u062d\u062f \u0625\u0644\u0649 8 \u0645\u0644\u0641\u0627\u062a \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0646\u0641\u0633\u0647\u060c \u0628\u0635\u0631\u0641 \u0627\u0644\u0646\u0638\u0631 \u0639\u0646 \u0639\u062f\u062f \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0643\u0644 \u0645\u0644\u0641. \u062a\u0628\u062f\u0623 \u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0627\u0644\u0645\u0646\u062a\u0638\u0631\u0629 \u0641\u0648\u0631 \u062a\u0648\u0641\u0631 \u0645\u0643\u0627\u0646.",
+          "\u064a\u064f\u062a\u064a\u062d \u062e\u0641\u0636 \u0627\u0644\u062d\u062f \u0627\u0643\u062a\u0645\u0627\u0644 \u0627\u0644\u062a\u0646\u0632\u064a\u0644\u0627\u062a \u0627\u0644\u062c\u0627\u0631\u064a\u0629. \u0648\u062a\u0638\u0644 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u0627\u062a \u062a\u064f\u0639\u0627\u0644\u062c \u0648\u0627\u062d\u062f\u064b\u0627 \u062a\u0644\u0648 \u0627\u0644\u0622\u062e\u0631.",
+          "\u0627\u0644\u062a\u0646\u0632\u064a\u0644 \u0639\u0644\u0649 \u0623\u062c\u0632\u0627\u0621",
+          "\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0639\u062f\u0629 \u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0644\u0645\u0644\u0641\u0627\u062a \u0648DASH \u0627\u0644\u0645\u062a\u0648\u0627\u0641\u0642\u0629.",
+          "\u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0643\u0644 \u0645\u0644\u0641: 2 / 4 / 8.",
+          "\u0623\u0628\u0642\u0650 \u0627\u0644\u0645\u062f\u064a\u0631 \u0645\u0641\u062a\u0648\u062d\u064b\u0627. \u064a\u0645\u0643\u0646 \u062a\u0646\u0632\u064a\u0644 \u0645\u0633\u0627\u0631\u0627\u062a \u0627\u0644\u0635\u0648\u062a \u0648\u0627\u0644\u0641\u064a\u062f\u064a\u0648 \u0627\u0644\u0645\u062a\u0648\u0627\u0641\u0642\u0629 \u0645\u0639\u064b\u0627. \u064a\u062a\u0637\u0644\u0628 \u062a\u0642\u0633\u064a\u0645 \u0645\u0648\u0631\u062f \u0648\u0627\u062d\u062f \u0646\u0637\u0627\u0642\u0627\u062a \u0628\u0627\u064a\u062a \u0645\u0648\u062b\u0648\u0642\u0629 \u0648\u0645\u062a\u062d\u0642\u0642 \u0625\u0635\u062f\u0627\u0631 \u0642\u0648\u064a\u064b\u0627\u061b \u0648\u0625\u0644\u0627 \u064a\u064f\u0633\u062a\u062e\u062f\u0645 \u0627\u0644\u0646\u0642\u0644 \u0627\u0644\u0639\u0627\u062f\u064a. \u062a\u0639\u062a\u0645\u062f \u0627\u0644\u0633\u0631\u0639\u0629 \u0639\u0644\u0649 \u0627\u0644\u062e\u0627\u062f\u0645 \u0648\u0627\u0644\u0627\u062a\u0635\u0627\u0644."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ar",
+        "guide": "use",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/ar/guides/use/",
+        "status": 200,
+        "observed": [
+          "\u0627\u0644\u062a\u0646\u0632\u064a\u0644\u0627\u062a \u0627\u0644\u0645\u062a\u0632\u0627\u0645\u0646\u0629 \u2014 0.1.60",
+          "\u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0628\u0627\u0644\u062a\u0648\u0627\u0632\u064a: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u0645\u0646 \u0645\u0644\u0641 \u0648\u0627\u062d\u062f \u0625\u0644\u0649 8 \u0645\u0644\u0641\u0627\u062a \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0646\u0641\u0633\u0647\u060c \u0628\u0635\u0631\u0641 \u0627\u0644\u0646\u0638\u0631 \u0639\u0646 \u0639\u062f\u062f \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0643\u0644 \u0645\u0644\u0641. \u062a\u0628\u062f\u0623 \u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0627\u0644\u0645\u0646\u062a\u0638\u0631\u0629 \u0641\u0648\u0631 \u062a\u0648\u0641\u0631 \u0645\u0643\u0627\u0646.",
+          "\u064a\u064f\u062a\u064a\u062d \u062e\u0641\u0636 \u0627\u0644\u062d\u062f \u0627\u0643\u062a\u0645\u0627\u0644 \u0627\u0644\u062a\u0646\u0632\u064a\u0644\u0627\u062a \u0627\u0644\u062c\u0627\u0631\u064a\u0629. \u0648\u062a\u0638\u0644 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u0627\u062a \u062a\u064f\u0639\u0627\u0644\u062c \u0648\u0627\u062d\u062f\u064b\u0627 \u062a\u0644\u0648 \u0627\u0644\u0622\u062e\u0631.",
+          "\u0627\u0644\u062a\u0646\u0632\u064a\u0644 \u0639\u0644\u0649 \u0623\u062c\u0632\u0627\u0621",
+          "\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0639\u062f\u0629 \u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0644\u0645\u0644\u0641\u0627\u062a \u0648DASH \u0627\u0644\u0645\u062a\u0648\u0627\u0641\u0642\u0629.",
+          "\u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0643\u0644 \u0645\u0644\u0641: 2 / 4 / 8.",
+          "\u0623\u0628\u0642\u0650 \u0627\u0644\u0645\u062f\u064a\u0631 \u0645\u0641\u062a\u0648\u062d\u064b\u0627. \u064a\u0645\u0643\u0646 \u062a\u0646\u0632\u064a\u0644 \u0645\u0633\u0627\u0631\u0627\u062a \u0627\u0644\u0635\u0648\u062a \u0648\u0627\u0644\u0641\u064a\u062f\u064a\u0648 \u0627\u0644\u0645\u062a\u0648\u0627\u0641\u0642\u0629 \u0645\u0639\u064b\u0627. \u064a\u062a\u0637\u0644\u0628 \u062a\u0642\u0633\u064a\u0645 \u0645\u0648\u0631\u062f \u0648\u0627\u062d\u062f \u0646\u0637\u0627\u0642\u0627\u062a \u0628\u0627\u064a\u062a \u0645\u0648\u062b\u0648\u0642\u0629 \u0648\u0645\u062a\u062d\u0642\u0642 \u0625\u0635\u062f\u0627\u0631 \u0642\u0648\u064a\u064b\u0627\u061b \u0648\u0625\u0644\u0627 \u064a\u064f\u0633\u062a\u062e\u062f\u0645 \u0627\u0644\u0646\u0642\u0644 \u0627\u0644\u0639\u0627\u062f\u064a. \u062a\u0639\u062a\u0645\u062f \u0627\u0644\u0633\u0631\u0639\u0629 \u0639\u0644\u0649 \u0627\u0644\u062e\u0627\u062f\u0645 \u0648\u0627\u0644\u0627\u062a\u0635\u0627\u0644."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ar",
+        "guide": "changelog",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/ar/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "\u0627\u0644\u062a\u0646\u0632\u064a\u0644\u0627\u062a \u0627\u0644\u0645\u062a\u0632\u0627\u0645\u0646\u0629 \u2014 0.1.60",
+          "\u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0628\u0627\u0644\u062a\u0648\u0627\u0632\u064a: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u0645\u0646 \u0645\u0644\u0641 \u0648\u0627\u062d\u062f \u0625\u0644\u0649 8 \u0645\u0644\u0641\u0627\u062a \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0646\u0641\u0633\u0647\u060c \u0628\u0635\u0631\u0641 \u0627\u0644\u0646\u0638\u0631 \u0639\u0646 \u0639\u062f\u062f \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0643\u0644 \u0645\u0644\u0641. \u062a\u0628\u062f\u0623 \u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0627\u0644\u0645\u0646\u062a\u0638\u0631\u0629 \u0641\u0648\u0631 \u062a\u0648\u0641\u0631 \u0645\u0643\u0627\u0646.",
+          "\u064a\u064f\u062a\u064a\u062d \u062e\u0641\u0636 \u0627\u0644\u062d\u062f \u0627\u0643\u062a\u0645\u0627\u0644 \u0627\u0644\u062a\u0646\u0632\u064a\u0644\u0627\u062a \u0627\u0644\u062c\u0627\u0631\u064a\u0629. \u0648\u062a\u0638\u0644 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u0627\u062a \u062a\u064f\u0639\u0627\u0644\u062c \u0648\u0627\u062d\u062f\u064b\u0627 \u062a\u0644\u0648 \u0627\u0644\u0622\u062e\u0631.",
+          "\u0627\u0644\u062a\u0646\u0632\u064a\u0644 \u0639\u0644\u0649 \u0623\u062c\u0632\u0627\u0621",
+          "\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0639\u062f\u0629 \u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0644\u0645\u0644\u0641\u0627\u062a \u0648DASH \u0627\u0644\u0645\u062a\u0648\u0627\u0641\u0642\u0629.",
+          "\u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0643\u0644 \u0645\u0644\u0641: 2 / 4 / 8.",
+          "\u0623\u0628\u0642\u0650 \u0627\u0644\u0645\u062f\u064a\u0631 \u0645\u0641\u062a\u0648\u062d\u064b\u0627. \u064a\u0645\u0643\u0646 \u062a\u0646\u0632\u064a\u0644 \u0645\u0633\u0627\u0631\u0627\u062a \u0627\u0644\u0635\u0648\u062a \u0648\u0627\u0644\u0641\u064a\u062f\u064a\u0648 \u0627\u0644\u0645\u062a\u0648\u0627\u0641\u0642\u0629 \u0645\u0639\u064b\u0627. \u064a\u062a\u0637\u0644\u0628 \u062a\u0642\u0633\u064a\u0645 \u0645\u0648\u0631\u062f \u0648\u0627\u062d\u062f \u0646\u0637\u0627\u0642\u0627\u062a \u0628\u0627\u064a\u062a \u0645\u0648\u062b\u0648\u0642\u0629 \u0648\u0645\u062a\u062d\u0642\u0642 \u0625\u0635\u062f\u0627\u0631 \u0642\u0648\u064a\u064b\u0627\u061b \u0648\u0625\u0644\u0627 \u064a\u064f\u0633\u062a\u062e\u062f\u0645 \u0627\u0644\u0646\u0642\u0644 \u0627\u0644\u0639\u0627\u062f\u064a. \u062a\u0639\u062a\u0645\u062f \u0627\u0644\u0633\u0631\u0639\u0629 \u0639\u0644\u0649 \u0627\u0644\u062e\u0627\u062f\u0645 \u0648\u0627\u0644\u0627\u062a\u0635\u0627\u0644."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ar",
+        "guide": "changelog",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/ar/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "\u0627\u0644\u062a\u0646\u0632\u064a\u0644\u0627\u062a \u0627\u0644\u0645\u062a\u0632\u0627\u0645\u0646\u0629 \u2014 0.1.60",
+          "\u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0628\u0627\u0644\u062a\u0648\u0627\u0632\u064a: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u0645\u0646 \u0645\u0644\u0641 \u0648\u0627\u062d\u062f \u0625\u0644\u0649 8 \u0645\u0644\u0641\u0627\u062a \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0646\u0641\u0633\u0647\u060c \u0628\u0635\u0631\u0641 \u0627\u0644\u0646\u0638\u0631 \u0639\u0646 \u0639\u062f\u062f \u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0643\u0644 \u0645\u0644\u0641. \u062a\u0628\u062f\u0623 \u0627\u0644\u0645\u0644\u0641\u0627\u062a \u0627\u0644\u0645\u0646\u062a\u0638\u0631\u0629 \u0641\u0648\u0631 \u062a\u0648\u0641\u0631 \u0645\u0643\u0627\u0646.",
+          "\u064a\u064f\u062a\u064a\u062d \u062e\u0641\u0636 \u0627\u0644\u062d\u062f \u0627\u0643\u062a\u0645\u0627\u0644 \u0627\u0644\u062a\u0646\u0632\u064a\u0644\u0627\u062a \u0627\u0644\u062c\u0627\u0631\u064a\u0629. \u0648\u062a\u0638\u0644 \u0627\u0644\u062a\u062d\u0648\u064a\u0644\u0627\u062a \u062a\u064f\u0639\u0627\u0644\u062c \u0648\u0627\u062d\u062f\u064b\u0627 \u062a\u0644\u0648 \u0627\u0644\u0622\u062e\u0631.",
+          "\u0627\u0644\u062a\u0646\u0632\u064a\u0644 \u0639\u0644\u0649 \u0623\u062c\u0632\u0627\u0621",
+          "\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0639\u062f\u0629 \u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0644\u0645\u0644\u0641\u0627\u062a \u0648DASH \u0627\u0644\u0645\u062a\u0648\u0627\u0641\u0642\u0629.",
+          "\u0627\u0644\u0627\u062a\u0635\u0627\u0644\u0627\u062a \u0644\u0643\u0644 \u0645\u0644\u0641: 2 / 4 / 8.",
+          "\u0623\u0628\u0642\u0650 \u0627\u0644\u0645\u062f\u064a\u0631 \u0645\u0641\u062a\u0648\u062d\u064b\u0627. \u064a\u0645\u0643\u0646 \u062a\u0646\u0632\u064a\u0644 \u0645\u0633\u0627\u0631\u0627\u062a \u0627\u0644\u0635\u0648\u062a \u0648\u0627\u0644\u0641\u064a\u062f\u064a\u0648 \u0627\u0644\u0645\u062a\u0648\u0627\u0641\u0642\u0629 \u0645\u0639\u064b\u0627. \u064a\u062a\u0637\u0644\u0628 \u062a\u0642\u0633\u064a\u0645 \u0645\u0648\u0631\u062f \u0648\u0627\u062d\u062f \u0646\u0637\u0627\u0642\u0627\u062a \u0628\u0627\u064a\u062a \u0645\u0648\u062b\u0648\u0642\u0629 \u0648\u0645\u062a\u062d\u0642\u0642 \u0625\u0635\u062f\u0627\u0631 \u0642\u0648\u064a\u064b\u0627\u061b \u0648\u0625\u0644\u0627 \u064a\u064f\u0633\u062a\u062e\u062f\u0645 \u0627\u0644\u0646\u0642\u0644 \u0627\u0644\u0639\u0627\u062f\u064a. \u062a\u0639\u062a\u0645\u062f \u0627\u0644\u0633\u0631\u0639\u0629 \u0639\u0644\u0649 \u0627\u0644\u062e\u0627\u062f\u0645 \u0648\u0627\u0644\u0627\u062a\u0635\u0627\u0644."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ru",
+        "guide": "settings",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/ru/guides/settings/",
+        "status": 200,
+        "observed": [
+          "\u041e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u2014 0.1.60",
+          "\u0424\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u041e\u0442 1 \u0434\u043e 8 \u0444\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e, \u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e \u043e\u0442 \u0447\u0438\u0441\u043b\u0430 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u043d\u0430 \u0444\u0430\u0439\u043b. \u0424\u0430\u0439\u043b\u044b \u0438\u0437 \u043e\u0447\u0435\u0440\u0435\u0434\u0438 \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0442 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c\u0441\u044f, \u043a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u0441\u0432\u043e\u0431\u043e\u0436\u0434\u0430\u0435\u0442\u0441\u044f \u043c\u0435\u0441\u0442\u043e.",
+          "\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435 \u043b\u0438\u043c\u0438\u0442\u0430 \u043d\u0435 \u043f\u0440\u0435\u0440\u044b\u0432\u0430\u0435\u0442 \u0442\u0435\u043a\u0443\u0449\u0438\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438. \u041a\u043e\u043d\u0432\u0435\u0440\u0442\u0430\u0446\u0438\u044f \u043f\u043e-\u043f\u0440\u0435\u0436\u043d\u0435\u043c\u0443 \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0435\u0442\u0441\u044f \u043f\u043e \u043e\u0434\u043d\u043e\u043c\u0443 \u0444\u0430\u0439\u043b\u0443.",
+          "\u041c\u043d\u043e\u0433\u043e\u043f\u043e\u0442\u043e\u0447\u043d\u0430\u044f \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0430",
+          "\u041d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u0434\u043b\u044f \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b\u0445 \u0444\u0430\u0439\u043b\u043e\u0432 \u0438 DASH.",
+          "\u0421\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u043d\u0430 \u0444\u0430\u0439\u043b: 2 / 4 / 8.",
+          "\u041d\u0435 \u0437\u0430\u043a\u0440\u044b\u0432\u0430\u0439\u0442\u0435 \u043c\u0435\u043d\u0435\u0434\u0436\u0435\u0440. \u0421\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b\u0435 \u0430\u0443\u0434\u0438\u043e- \u0438 \u0432\u0438\u0434\u0435\u043e\u0434\u043e\u0440\u043e\u0436\u043a\u0438 \u043c\u043e\u0433\u0443\u0442 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c\u0441\u044f \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e. \u0414\u043b\u044f \u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u044f \u043e\u0434\u043d\u043e\u0433\u043e \u0440\u0435\u0441\u0443\u0440\u0441\u0430 \u043d\u0443\u0436\u043d\u044b \u043d\u0430\u0434\u0451\u0436\u043d\u044b\u0435 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u044b \u0431\u0430\u0439\u0442\u043e\u0432 \u0438 \u0441\u0442\u0440\u043e\u0433\u0438\u0439 \u0432\u0430\u043b\u0438\u0434\u0430\u0442\u043e\u0440 \u0432\u0435\u0440\u0441\u0438\u0438; \u0438\u043d\u0430\u0447\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u043e\u0431\u044b\u0447\u043d\u0430\u044f \u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430. \u0421\u043a\u043e\u0440\u043e\u0441\u0442\u044c \u0437\u0430\u0432\u0438\u0441\u0438\u0442 \u043e\u0442 \u0441\u0435\u0440\u0432\u0435\u0440\u0430 \u0438 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u044f."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ru",
+        "guide": "settings",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/ru/guides/settings/",
+        "status": 200,
+        "observed": [
+          "\u041e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u2014 0.1.60",
+          "\u0424\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u041e\u0442 1 \u0434\u043e 8 \u0444\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e, \u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e \u043e\u0442 \u0447\u0438\u0441\u043b\u0430 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u043d\u0430 \u0444\u0430\u0439\u043b. \u0424\u0430\u0439\u043b\u044b \u0438\u0437 \u043e\u0447\u0435\u0440\u0435\u0434\u0438 \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0442 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c\u0441\u044f, \u043a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u0441\u0432\u043e\u0431\u043e\u0436\u0434\u0430\u0435\u0442\u0441\u044f \u043c\u0435\u0441\u0442\u043e.",
+          "\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435 \u043b\u0438\u043c\u0438\u0442\u0430 \u043d\u0435 \u043f\u0440\u0435\u0440\u044b\u0432\u0430\u0435\u0442 \u0442\u0435\u043a\u0443\u0449\u0438\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438. \u041a\u043e\u043d\u0432\u0435\u0440\u0442\u0430\u0446\u0438\u044f \u043f\u043e-\u043f\u0440\u0435\u0436\u043d\u0435\u043c\u0443 \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0435\u0442\u0441\u044f \u043f\u043e \u043e\u0434\u043d\u043e\u043c\u0443 \u0444\u0430\u0439\u043b\u0443.",
+          "\u041c\u043d\u043e\u0433\u043e\u043f\u043e\u0442\u043e\u0447\u043d\u0430\u044f \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0430",
+          "\u041d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u0434\u043b\u044f \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b\u0445 \u0444\u0430\u0439\u043b\u043e\u0432 \u0438 DASH.",
+          "\u0421\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u043d\u0430 \u0444\u0430\u0439\u043b: 2 / 4 / 8.",
+          "\u041d\u0435 \u0437\u0430\u043a\u0440\u044b\u0432\u0430\u0439\u0442\u0435 \u043c\u0435\u043d\u0435\u0434\u0436\u0435\u0440. \u0421\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b\u0435 \u0430\u0443\u0434\u0438\u043e- \u0438 \u0432\u0438\u0434\u0435\u043e\u0434\u043e\u0440\u043e\u0436\u043a\u0438 \u043c\u043e\u0433\u0443\u0442 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c\u0441\u044f \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e. \u0414\u043b\u044f \u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u044f \u043e\u0434\u043d\u043e\u0433\u043e \u0440\u0435\u0441\u0443\u0440\u0441\u0430 \u043d\u0443\u0436\u043d\u044b \u043d\u0430\u0434\u0451\u0436\u043d\u044b\u0435 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u044b \u0431\u0430\u0439\u0442\u043e\u0432 \u0438 \u0441\u0442\u0440\u043e\u0433\u0438\u0439 \u0432\u0430\u043b\u0438\u0434\u0430\u0442\u043e\u0440 \u0432\u0435\u0440\u0441\u0438\u0438; \u0438\u043d\u0430\u0447\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u043e\u0431\u044b\u0447\u043d\u0430\u044f \u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430. \u0421\u043a\u043e\u0440\u043e\u0441\u0442\u044c \u0437\u0430\u0432\u0438\u0441\u0438\u0442 \u043e\u0442 \u0441\u0435\u0440\u0432\u0435\u0440\u0430 \u0438 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u044f."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ru",
+        "guide": "use",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/ru/guides/use/",
+        "status": 200,
+        "observed": [
+          "\u041e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u2014 0.1.60",
+          "\u0424\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u041e\u0442 1 \u0434\u043e 8 \u0444\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e, \u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e \u043e\u0442 \u0447\u0438\u0441\u043b\u0430 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u043d\u0430 \u0444\u0430\u0439\u043b. \u0424\u0430\u0439\u043b\u044b \u0438\u0437 \u043e\u0447\u0435\u0440\u0435\u0434\u0438 \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0442 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c\u0441\u044f, \u043a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u0441\u0432\u043e\u0431\u043e\u0436\u0434\u0430\u0435\u0442\u0441\u044f \u043c\u0435\u0441\u0442\u043e.",
+          "\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435 \u043b\u0438\u043c\u0438\u0442\u0430 \u043d\u0435 \u043f\u0440\u0435\u0440\u044b\u0432\u0430\u0435\u0442 \u0442\u0435\u043a\u0443\u0449\u0438\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438. \u041a\u043e\u043d\u0432\u0435\u0440\u0442\u0430\u0446\u0438\u044f \u043f\u043e-\u043f\u0440\u0435\u0436\u043d\u0435\u043c\u0443 \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0435\u0442\u0441\u044f \u043f\u043e \u043e\u0434\u043d\u043e\u043c\u0443 \u0444\u0430\u0439\u043b\u0443.",
+          "\u041c\u043d\u043e\u0433\u043e\u043f\u043e\u0442\u043e\u0447\u043d\u0430\u044f \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0430",
+          "\u041d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u0434\u043b\u044f \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b\u0445 \u0444\u0430\u0439\u043b\u043e\u0432 \u0438 DASH.",
+          "\u0421\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u043d\u0430 \u0444\u0430\u0439\u043b: 2 / 4 / 8.",
+          "\u041d\u0435 \u0437\u0430\u043a\u0440\u044b\u0432\u0430\u0439\u0442\u0435 \u043c\u0435\u043d\u0435\u0434\u0436\u0435\u0440. \u0421\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b\u0435 \u0430\u0443\u0434\u0438\u043e- \u0438 \u0432\u0438\u0434\u0435\u043e\u0434\u043e\u0440\u043e\u0436\u043a\u0438 \u043c\u043e\u0433\u0443\u0442 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c\u0441\u044f \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e. \u0414\u043b\u044f \u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u044f \u043e\u0434\u043d\u043e\u0433\u043e \u0440\u0435\u0441\u0443\u0440\u0441\u0430 \u043d\u0443\u0436\u043d\u044b \u043d\u0430\u0434\u0451\u0436\u043d\u044b\u0435 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u044b \u0431\u0430\u0439\u0442\u043e\u0432 \u0438 \u0441\u0442\u0440\u043e\u0433\u0438\u0439 \u0432\u0430\u043b\u0438\u0434\u0430\u0442\u043e\u0440 \u0432\u0435\u0440\u0441\u0438\u0438; \u0438\u043d\u0430\u0447\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u043e\u0431\u044b\u0447\u043d\u0430\u044f \u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430. \u0421\u043a\u043e\u0440\u043e\u0441\u0442\u044c \u0437\u0430\u0432\u0438\u0441\u0438\u0442 \u043e\u0442 \u0441\u0435\u0440\u0432\u0435\u0440\u0430 \u0438 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u044f."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ru",
+        "guide": "use",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/ru/guides/use/",
+        "status": 200,
+        "observed": [
+          "\u041e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u2014 0.1.60",
+          "\u0424\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u041e\u0442 1 \u0434\u043e 8 \u0444\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e, \u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e \u043e\u0442 \u0447\u0438\u0441\u043b\u0430 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u043d\u0430 \u0444\u0430\u0439\u043b. \u0424\u0430\u0439\u043b\u044b \u0438\u0437 \u043e\u0447\u0435\u0440\u0435\u0434\u0438 \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0442 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c\u0441\u044f, \u043a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u0441\u0432\u043e\u0431\u043e\u0436\u0434\u0430\u0435\u0442\u0441\u044f \u043c\u0435\u0441\u0442\u043e.",
+          "\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435 \u043b\u0438\u043c\u0438\u0442\u0430 \u043d\u0435 \u043f\u0440\u0435\u0440\u044b\u0432\u0430\u0435\u0442 \u0442\u0435\u043a\u0443\u0449\u0438\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438. \u041a\u043e\u043d\u0432\u0435\u0440\u0442\u0430\u0446\u0438\u044f \u043f\u043e-\u043f\u0440\u0435\u0436\u043d\u0435\u043c\u0443 \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0435\u0442\u0441\u044f \u043f\u043e \u043e\u0434\u043d\u043e\u043c\u0443 \u0444\u0430\u0439\u043b\u0443.",
+          "\u041c\u043d\u043e\u0433\u043e\u043f\u043e\u0442\u043e\u0447\u043d\u0430\u044f \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0430",
+          "\u041d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u0434\u043b\u044f \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b\u0445 \u0444\u0430\u0439\u043b\u043e\u0432 \u0438 DASH.",
+          "\u0421\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u043d\u0430 \u0444\u0430\u0439\u043b: 2 / 4 / 8.",
+          "\u041d\u0435 \u0437\u0430\u043a\u0440\u044b\u0432\u0430\u0439\u0442\u0435 \u043c\u0435\u043d\u0435\u0434\u0436\u0435\u0440. \u0421\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b\u0435 \u0430\u0443\u0434\u0438\u043e- \u0438 \u0432\u0438\u0434\u0435\u043e\u0434\u043e\u0440\u043e\u0436\u043a\u0438 \u043c\u043e\u0433\u0443\u0442 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c\u0441\u044f \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e. \u0414\u043b\u044f \u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u044f \u043e\u0434\u043d\u043e\u0433\u043e \u0440\u0435\u0441\u0443\u0440\u0441\u0430 \u043d\u0443\u0436\u043d\u044b \u043d\u0430\u0434\u0451\u0436\u043d\u044b\u0435 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u044b \u0431\u0430\u0439\u0442\u043e\u0432 \u0438 \u0441\u0442\u0440\u043e\u0433\u0438\u0439 \u0432\u0430\u043b\u0438\u0434\u0430\u0442\u043e\u0440 \u0432\u0435\u0440\u0441\u0438\u0438; \u0438\u043d\u0430\u0447\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u043e\u0431\u044b\u0447\u043d\u0430\u044f \u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430. \u0421\u043a\u043e\u0440\u043e\u0441\u0442\u044c \u0437\u0430\u0432\u0438\u0441\u0438\u0442 \u043e\u0442 \u0441\u0435\u0440\u0432\u0435\u0440\u0430 \u0438 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u044f."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ru",
+        "guide": "changelog",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/ru/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "\u041e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u2014 0.1.60",
+          "\u0424\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u041e\u0442 1 \u0434\u043e 8 \u0444\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e, \u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e \u043e\u0442 \u0447\u0438\u0441\u043b\u0430 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u043d\u0430 \u0444\u0430\u0439\u043b. \u0424\u0430\u0439\u043b\u044b \u0438\u0437 \u043e\u0447\u0435\u0440\u0435\u0434\u0438 \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0442 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c\u0441\u044f, \u043a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u0441\u0432\u043e\u0431\u043e\u0436\u0434\u0430\u0435\u0442\u0441\u044f \u043c\u0435\u0441\u0442\u043e.",
+          "\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435 \u043b\u0438\u043c\u0438\u0442\u0430 \u043d\u0435 \u043f\u0440\u0435\u0440\u044b\u0432\u0430\u0435\u0442 \u0442\u0435\u043a\u0443\u0449\u0438\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438. \u041a\u043e\u043d\u0432\u0435\u0440\u0442\u0430\u0446\u0438\u044f \u043f\u043e-\u043f\u0440\u0435\u0436\u043d\u0435\u043c\u0443 \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0435\u0442\u0441\u044f \u043f\u043e \u043e\u0434\u043d\u043e\u043c\u0443 \u0444\u0430\u0439\u043b\u0443.",
+          "\u041c\u043d\u043e\u0433\u043e\u043f\u043e\u0442\u043e\u0447\u043d\u0430\u044f \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0430",
+          "\u041d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u0434\u043b\u044f \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b\u0445 \u0444\u0430\u0439\u043b\u043e\u0432 \u0438 DASH.",
+          "\u0421\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u043d\u0430 \u0444\u0430\u0439\u043b: 2 / 4 / 8.",
+          "\u041d\u0435 \u0437\u0430\u043a\u0440\u044b\u0432\u0430\u0439\u0442\u0435 \u043c\u0435\u043d\u0435\u0434\u0436\u0435\u0440. \u0421\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b\u0435 \u0430\u0443\u0434\u0438\u043e- \u0438 \u0432\u0438\u0434\u0435\u043e\u0434\u043e\u0440\u043e\u0436\u043a\u0438 \u043c\u043e\u0433\u0443\u0442 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c\u0441\u044f \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e. \u0414\u043b\u044f \u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u044f \u043e\u0434\u043d\u043e\u0433\u043e \u0440\u0435\u0441\u0443\u0440\u0441\u0430 \u043d\u0443\u0436\u043d\u044b \u043d\u0430\u0434\u0451\u0436\u043d\u044b\u0435 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u044b \u0431\u0430\u0439\u0442\u043e\u0432 \u0438 \u0441\u0442\u0440\u043e\u0433\u0438\u0439 \u0432\u0430\u043b\u0438\u0434\u0430\u0442\u043e\u0440 \u0432\u0435\u0440\u0441\u0438\u0438; \u0438\u043d\u0430\u0447\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u043e\u0431\u044b\u0447\u043d\u0430\u044f \u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430. \u0421\u043a\u043e\u0440\u043e\u0441\u0442\u044c \u0437\u0430\u0432\u0438\u0441\u0438\u0442 \u043e\u0442 \u0441\u0435\u0440\u0432\u0435\u0440\u0430 \u0438 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u044f."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ru",
+        "guide": "changelog",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/ru/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "\u041e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u2014 0.1.60",
+          "\u0424\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u041e\u0442 1 \u0434\u043e 8 \u0444\u0430\u0439\u043b\u043e\u0432 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e, \u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e \u043e\u0442 \u0447\u0438\u0441\u043b\u0430 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u043d\u0430 \u0444\u0430\u0439\u043b. \u0424\u0430\u0439\u043b\u044b \u0438\u0437 \u043e\u0447\u0435\u0440\u0435\u0434\u0438 \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0442 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c\u0441\u044f, \u043a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u0441\u0432\u043e\u0431\u043e\u0436\u0434\u0430\u0435\u0442\u0441\u044f \u043c\u0435\u0441\u0442\u043e.",
+          "\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435 \u043b\u0438\u043c\u0438\u0442\u0430 \u043d\u0435 \u043f\u0440\u0435\u0440\u044b\u0432\u0430\u0435\u0442 \u0442\u0435\u043a\u0443\u0449\u0438\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438. \u041a\u043e\u043d\u0432\u0435\u0440\u0442\u0430\u0446\u0438\u044f \u043f\u043e-\u043f\u0440\u0435\u0436\u043d\u0435\u043c\u0443 \u0432\u044b\u043f\u043e\u043b\u043d\u044f\u0435\u0442\u0441\u044f \u043f\u043e \u043e\u0434\u043d\u043e\u043c\u0443 \u0444\u0430\u0439\u043b\u0443.",
+          "\u041c\u043d\u043e\u0433\u043e\u043f\u043e\u0442\u043e\u0447\u043d\u0430\u044f \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0430",
+          "\u041d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u0434\u043b\u044f \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b\u0445 \u0444\u0430\u0439\u043b\u043e\u0432 \u0438 DASH.",
+          "\u0421\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u0439 \u043d\u0430 \u0444\u0430\u0439\u043b: 2 / 4 / 8.",
+          "\u041d\u0435 \u0437\u0430\u043a\u0440\u044b\u0432\u0430\u0439\u0442\u0435 \u043c\u0435\u043d\u0435\u0434\u0436\u0435\u0440. \u0421\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b\u0435 \u0430\u0443\u0434\u0438\u043e- \u0438 \u0432\u0438\u0434\u0435\u043e\u0434\u043e\u0440\u043e\u0436\u043a\u0438 \u043c\u043e\u0433\u0443\u0442 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044c\u0441\u044f \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e. \u0414\u043b\u044f \u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u044f \u043e\u0434\u043d\u043e\u0433\u043e \u0440\u0435\u0441\u0443\u0440\u0441\u0430 \u043d\u0443\u0436\u043d\u044b \u043d\u0430\u0434\u0451\u0436\u043d\u044b\u0435 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u044b \u0431\u0430\u0439\u0442\u043e\u0432 \u0438 \u0441\u0442\u0440\u043e\u0433\u0438\u0439 \u0432\u0430\u043b\u0438\u0434\u0430\u0442\u043e\u0440 \u0432\u0435\u0440\u0441\u0438\u0438; \u0438\u043d\u0430\u0447\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u043e\u0431\u044b\u0447\u043d\u0430\u044f \u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0430. \u0421\u043a\u043e\u0440\u043e\u0441\u0442\u044c \u0437\u0430\u0432\u0438\u0441\u0438\u0442 \u043e\u0442 \u0441\u0435\u0440\u0432\u0435\u0440\u0430 \u0438 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u044f."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "pt",
+        "guide": "settings",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/pt/guides/settings/",
+        "status": 200,
+        "observed": [
+          "Downloads simult\u00e2neos \u2014 0.1.60",
+          "Arquivos em paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 a 8 arquivos por vez, independentemente do n\u00famero de conex\u00f5es por arquivo. Os arquivos em espera come\u00e7am assim que uma vaga fica livre.",
+          "Ao reduzir o limite, os downloads em andamento terminam normalmente. As convers\u00f5es continuam uma por vez.",
+          "Downloads em v\u00e1rias partes",
+          "Usar v\u00e1rias conex\u00f5es para arquivos e DASH compat\u00edveis.",
+          "Conex\u00f5es por arquivo: 2 / 4 / 8.",
+          "Mantenha o gerenciador aberto. Faixas de \u00e1udio e v\u00eddeo compat\u00edveis podem baixar juntas. Dividir um recurso exige intervalos confi\u00e1veis e um validador forte de vers\u00e3o; caso contr\u00e1rio, usa-se a transfer\u00eancia normal. A velocidade depende do servidor e da conex\u00e3o."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "pt",
+        "guide": "settings",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/pt/guides/settings/",
+        "status": 200,
+        "observed": [
+          "Downloads simult\u00e2neos \u2014 0.1.60",
+          "Arquivos em paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 a 8 arquivos por vez, independentemente do n\u00famero de conex\u00f5es por arquivo. Os arquivos em espera come\u00e7am assim que uma vaga fica livre.",
+          "Ao reduzir o limite, os downloads em andamento terminam normalmente. As convers\u00f5es continuam uma por vez.",
+          "Downloads em v\u00e1rias partes",
+          "Usar v\u00e1rias conex\u00f5es para arquivos e DASH compat\u00edveis.",
+          "Conex\u00f5es por arquivo: 2 / 4 / 8.",
+          "Mantenha o gerenciador aberto. Faixas de \u00e1udio e v\u00eddeo compat\u00edveis podem baixar juntas. Dividir um recurso exige intervalos confi\u00e1veis e um validador forte de vers\u00e3o; caso contr\u00e1rio, usa-se a transfer\u00eancia normal. A velocidade depende do servidor e da conex\u00e3o."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "pt",
+        "guide": "use",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/pt/guides/use/",
+        "status": 200,
+        "observed": [
+          "Downloads simult\u00e2neos \u2014 0.1.60",
+          "Arquivos em paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 a 8 arquivos por vez, independentemente do n\u00famero de conex\u00f5es por arquivo. Os arquivos em espera come\u00e7am assim que uma vaga fica livre.",
+          "Ao reduzir o limite, os downloads em andamento terminam normalmente. As convers\u00f5es continuam uma por vez.",
+          "Downloads em v\u00e1rias partes",
+          "Usar v\u00e1rias conex\u00f5es para arquivos e DASH compat\u00edveis.",
+          "Conex\u00f5es por arquivo: 2 / 4 / 8.",
+          "Mantenha o gerenciador aberto. Faixas de \u00e1udio e v\u00eddeo compat\u00edveis podem baixar juntas. Dividir um recurso exige intervalos confi\u00e1veis e um validador forte de vers\u00e3o; caso contr\u00e1rio, usa-se a transfer\u00eancia normal. A velocidade depende do servidor e da conex\u00e3o."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "pt",
+        "guide": "use",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/pt/guides/use/",
+        "status": 200,
+        "observed": [
+          "Downloads simult\u00e2neos \u2014 0.1.60",
+          "Arquivos em paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 a 8 arquivos por vez, independentemente do n\u00famero de conex\u00f5es por arquivo. Os arquivos em espera come\u00e7am assim que uma vaga fica livre.",
+          "Ao reduzir o limite, os downloads em andamento terminam normalmente. As convers\u00f5es continuam uma por vez.",
+          "Downloads em v\u00e1rias partes",
+          "Usar v\u00e1rias conex\u00f5es para arquivos e DASH compat\u00edveis.",
+          "Conex\u00f5es por arquivo: 2 / 4 / 8.",
+          "Mantenha o gerenciador aberto. Faixas de \u00e1udio e v\u00eddeo compat\u00edveis podem baixar juntas. Dividir um recurso exige intervalos confi\u00e1veis e um validador forte de vers\u00e3o; caso contr\u00e1rio, usa-se a transfer\u00eancia normal. A velocidade depende do servidor e da conex\u00e3o."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "pt",
+        "guide": "changelog",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/pt/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "Downloads simult\u00e2neos \u2014 0.1.60",
+          "Arquivos em paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 a 8 arquivos por vez, independentemente do n\u00famero de conex\u00f5es por arquivo. Os arquivos em espera come\u00e7am assim que uma vaga fica livre.",
+          "Ao reduzir o limite, os downloads em andamento terminam normalmente. As convers\u00f5es continuam uma por vez.",
+          "Downloads em v\u00e1rias partes",
+          "Usar v\u00e1rias conex\u00f5es para arquivos e DASH compat\u00edveis.",
+          "Conex\u00f5es por arquivo: 2 / 4 / 8.",
+          "Mantenha o gerenciador aberto. Faixas de \u00e1udio e v\u00eddeo compat\u00edveis podem baixar juntas. Dividir um recurso exige intervalos confi\u00e1veis e um validador forte de vers\u00e3o; caso contr\u00e1rio, usa-se a transfer\u00eancia normal. A velocidade depende do servidor e da conex\u00e3o."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "pt",
+        "guide": "changelog",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/pt/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "Downloads simult\u00e2neos \u2014 0.1.60",
+          "Arquivos em paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "De 1 a 8 arquivos por vez, independentemente do n\u00famero de conex\u00f5es por arquivo. Os arquivos em espera come\u00e7am assim que uma vaga fica livre.",
+          "Ao reduzir o limite, os downloads em andamento terminam normalmente. As convers\u00f5es continuam uma por vez.",
+          "Downloads em v\u00e1rias partes",
+          "Usar v\u00e1rias conex\u00f5es para arquivos e DASH compat\u00edveis.",
+          "Conex\u00f5es por arquivo: 2 / 4 / 8.",
+          "Mantenha o gerenciador aberto. Faixas de \u00e1udio e v\u00eddeo compat\u00edveis podem baixar juntas. Dividir um recurso exige intervalos confi\u00e1veis e um validador forte de vers\u00e3o; caso contr\u00e1rio, usa-se a transfer\u00eancia normal. A velocidade depende do servidor e da conex\u00e3o."
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "hi",
+        "guide": "settings",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/hi/guides/settings/",
+        "status": 200,
+        "observed": [
+          "\u090f\u0915 \u0938\u093e\u0925 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u2014 0.1.60",
+          "\u0938\u092e\u093e\u0928\u093e\u0902\u0924\u0930 \u092b\u093c\u093e\u0907\u0932\u0947\u0902: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u090f\u0915 \u092c\u093e\u0930 \u092e\u0947\u0902 1 \u0938\u0947 8 \u092b\u093c\u093e\u0907\u0932\u0947\u0902, \u092a\u094d\u0930\u0924\u093f \u092b\u093c\u093e\u0907\u0932 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0915\u0940 \u0938\u0902\u0916\u094d\u092f\u093e \u0938\u0947 \u0938\u094d\u0935\u0924\u0902\u0924\u094d\u0930\u0964 \u091c\u0917\u0939 \u0916\u093e\u0932\u0940 \u0939\u094b\u0924\u0947 \u0939\u0940 \u0915\u0924\u093e\u0930 \u0915\u0940 \u092b\u093c\u093e\u0907\u0932\u0947\u0902 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u0939\u094b\u0928\u0947 \u0932\u0917\u0924\u0940 \u0939\u0948\u0902\u0964",
+          "\u0938\u0940\u092e\u093e \u0918\u091f\u093e\u0928\u0947 \u092a\u0930 \u091a\u0932 \u0930\u0939\u0947 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u092a\u0942\u0930\u0947 \u0939\u094b\u0928\u0947 \u0926\u093f\u090f \u091c\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \u0930\u0942\u092a\u093e\u0902\u0924\u0930\u0923 \u0905\u092c \u092d\u0940 \u090f\u0915-\u090f\u0915 \u0915\u0930\u0915\u0947 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902\u0964",
+          "\u0915\u0908 \u092d\u093e\u0917\u094b\u0902 \u092e\u0947\u0902 \u0921\u093e\u0909\u0928\u0932\u094b\u0921",
+          "\u0938\u0902\u0917\u0924 \u092b\u093c\u093e\u0907\u0932\u094b\u0902 \u0914\u0930 DASH \u0915\u0947 \u0932\u093f\u090f \u0915\u0908 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0947\u0902.",
+          "\u092a\u094d\u0930\u0924\u093f \u092b\u093c\u093e\u0907\u0932 \u0915\u0928\u0947\u0915\u094d\u0936\u0928: 2 / 4 / 8.",
+          "\u092a\u094d\u0930\u092c\u0902\u0927\u0915 \u0916\u0941\u0932\u093e \u0930\u0916\u0947\u0902\u0964 \u0938\u0902\u0917\u0924 \u0911\u0921\u093f\u092f\u094b \u0914\u0930 \u0935\u0940\u0921\u093f\u092f\u094b \u091f\u094d\u0930\u0948\u0915 \u0938\u093e\u0925 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u0939\u094b \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u090f\u0915 \u0938\u0902\u0938\u093e\u0927\u0928 \u092c\u093e\u0901\u091f\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092d\u0930\u094b\u0938\u0947\u092e\u0902\u0926 \u092c\u093e\u0907\u091f \u0930\u0947\u0902\u091c \u0914\u0930 \u092e\u091c\u092c\u0942\u0924 \u0938\u0902\u0938\u094d\u0915\u0930\u0923 \u0938\u0924\u094d\u092f\u093e\u092a\u0915 \u091a\u093e\u0939\u093f\u090f; \u0905\u0928\u094d\u092f\u0925\u093e \u0938\u093e\u092e\u093e\u0928\u094d\u092f \u0938\u094d\u0925\u093e\u0928\u093e\u0902\u0924\u0930\u0923 \u0939\u094b\u0924\u093e \u0939\u0948\u0964 \u0917\u0924\u093f \u0938\u0930\u094d\u0935\u0930 \u0914\u0930 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u092a\u0930 \u0928\u093f\u0930\u094d\u092d\u0930 \u0939\u0948\u0964"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "hi",
+        "guide": "settings",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/hi/guides/settings/",
+        "status": 200,
+        "observed": [
+          "\u090f\u0915 \u0938\u093e\u0925 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u2014 0.1.60",
+          "\u0938\u092e\u093e\u0928\u093e\u0902\u0924\u0930 \u092b\u093c\u093e\u0907\u0932\u0947\u0902: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u090f\u0915 \u092c\u093e\u0930 \u092e\u0947\u0902 1 \u0938\u0947 8 \u092b\u093c\u093e\u0907\u0932\u0947\u0902, \u092a\u094d\u0930\u0924\u093f \u092b\u093c\u093e\u0907\u0932 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0915\u0940 \u0938\u0902\u0916\u094d\u092f\u093e \u0938\u0947 \u0938\u094d\u0935\u0924\u0902\u0924\u094d\u0930\u0964 \u091c\u0917\u0939 \u0916\u093e\u0932\u0940 \u0939\u094b\u0924\u0947 \u0939\u0940 \u0915\u0924\u093e\u0930 \u0915\u0940 \u092b\u093c\u093e\u0907\u0932\u0947\u0902 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u0939\u094b\u0928\u0947 \u0932\u0917\u0924\u0940 \u0939\u0948\u0902\u0964",
+          "\u0938\u0940\u092e\u093e \u0918\u091f\u093e\u0928\u0947 \u092a\u0930 \u091a\u0932 \u0930\u0939\u0947 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u092a\u0942\u0930\u0947 \u0939\u094b\u0928\u0947 \u0926\u093f\u090f \u091c\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \u0930\u0942\u092a\u093e\u0902\u0924\u0930\u0923 \u0905\u092c \u092d\u0940 \u090f\u0915-\u090f\u0915 \u0915\u0930\u0915\u0947 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902\u0964",
+          "\u0915\u0908 \u092d\u093e\u0917\u094b\u0902 \u092e\u0947\u0902 \u0921\u093e\u0909\u0928\u0932\u094b\u0921",
+          "\u0938\u0902\u0917\u0924 \u092b\u093c\u093e\u0907\u0932\u094b\u0902 \u0914\u0930 DASH \u0915\u0947 \u0932\u093f\u090f \u0915\u0908 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0947\u0902.",
+          "\u092a\u094d\u0930\u0924\u093f \u092b\u093c\u093e\u0907\u0932 \u0915\u0928\u0947\u0915\u094d\u0936\u0928: 2 / 4 / 8.",
+          "\u092a\u094d\u0930\u092c\u0902\u0927\u0915 \u0916\u0941\u0932\u093e \u0930\u0916\u0947\u0902\u0964 \u0938\u0902\u0917\u0924 \u0911\u0921\u093f\u092f\u094b \u0914\u0930 \u0935\u0940\u0921\u093f\u092f\u094b \u091f\u094d\u0930\u0948\u0915 \u0938\u093e\u0925 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u0939\u094b \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u090f\u0915 \u0938\u0902\u0938\u093e\u0927\u0928 \u092c\u093e\u0901\u091f\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092d\u0930\u094b\u0938\u0947\u092e\u0902\u0926 \u092c\u093e\u0907\u091f \u0930\u0947\u0902\u091c \u0914\u0930 \u092e\u091c\u092c\u0942\u0924 \u0938\u0902\u0938\u094d\u0915\u0930\u0923 \u0938\u0924\u094d\u092f\u093e\u092a\u0915 \u091a\u093e\u0939\u093f\u090f; \u0905\u0928\u094d\u092f\u0925\u093e \u0938\u093e\u092e\u093e\u0928\u094d\u092f \u0938\u094d\u0925\u093e\u0928\u093e\u0902\u0924\u0930\u0923 \u0939\u094b\u0924\u093e \u0939\u0948\u0964 \u0917\u0924\u093f \u0938\u0930\u094d\u0935\u0930 \u0914\u0930 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u092a\u0930 \u0928\u093f\u0930\u094d\u092d\u0930 \u0939\u0948\u0964"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "hi",
+        "guide": "use",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/hi/guides/use/",
+        "status": 200,
+        "observed": [
+          "\u090f\u0915 \u0938\u093e\u0925 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u2014 0.1.60",
+          "\u0938\u092e\u093e\u0928\u093e\u0902\u0924\u0930 \u092b\u093c\u093e\u0907\u0932\u0947\u0902: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u090f\u0915 \u092c\u093e\u0930 \u092e\u0947\u0902 1 \u0938\u0947 8 \u092b\u093c\u093e\u0907\u0932\u0947\u0902, \u092a\u094d\u0930\u0924\u093f \u092b\u093c\u093e\u0907\u0932 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0915\u0940 \u0938\u0902\u0916\u094d\u092f\u093e \u0938\u0947 \u0938\u094d\u0935\u0924\u0902\u0924\u094d\u0930\u0964 \u091c\u0917\u0939 \u0916\u093e\u0932\u0940 \u0939\u094b\u0924\u0947 \u0939\u0940 \u0915\u0924\u093e\u0930 \u0915\u0940 \u092b\u093c\u093e\u0907\u0932\u0947\u0902 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u0939\u094b\u0928\u0947 \u0932\u0917\u0924\u0940 \u0939\u0948\u0902\u0964",
+          "\u0938\u0940\u092e\u093e \u0918\u091f\u093e\u0928\u0947 \u092a\u0930 \u091a\u0932 \u0930\u0939\u0947 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u092a\u0942\u0930\u0947 \u0939\u094b\u0928\u0947 \u0926\u093f\u090f \u091c\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \u0930\u0942\u092a\u093e\u0902\u0924\u0930\u0923 \u0905\u092c \u092d\u0940 \u090f\u0915-\u090f\u0915 \u0915\u0930\u0915\u0947 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902\u0964",
+          "\u0915\u0908 \u092d\u093e\u0917\u094b\u0902 \u092e\u0947\u0902 \u0921\u093e\u0909\u0928\u0932\u094b\u0921",
+          "\u0938\u0902\u0917\u0924 \u092b\u093c\u093e\u0907\u0932\u094b\u0902 \u0914\u0930 DASH \u0915\u0947 \u0932\u093f\u090f \u0915\u0908 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0947\u0902.",
+          "\u092a\u094d\u0930\u0924\u093f \u092b\u093c\u093e\u0907\u0932 \u0915\u0928\u0947\u0915\u094d\u0936\u0928: 2 / 4 / 8.",
+          "\u092a\u094d\u0930\u092c\u0902\u0927\u0915 \u0916\u0941\u0932\u093e \u0930\u0916\u0947\u0902\u0964 \u0938\u0902\u0917\u0924 \u0911\u0921\u093f\u092f\u094b \u0914\u0930 \u0935\u0940\u0921\u093f\u092f\u094b \u091f\u094d\u0930\u0948\u0915 \u0938\u093e\u0925 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u0939\u094b \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u090f\u0915 \u0938\u0902\u0938\u093e\u0927\u0928 \u092c\u093e\u0901\u091f\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092d\u0930\u094b\u0938\u0947\u092e\u0902\u0926 \u092c\u093e\u0907\u091f \u0930\u0947\u0902\u091c \u0914\u0930 \u092e\u091c\u092c\u0942\u0924 \u0938\u0902\u0938\u094d\u0915\u0930\u0923 \u0938\u0924\u094d\u092f\u093e\u092a\u0915 \u091a\u093e\u0939\u093f\u090f; \u0905\u0928\u094d\u092f\u0925\u093e \u0938\u093e\u092e\u093e\u0928\u094d\u092f \u0938\u094d\u0925\u093e\u0928\u093e\u0902\u0924\u0930\u0923 \u0939\u094b\u0924\u093e \u0939\u0948\u0964 \u0917\u0924\u093f \u0938\u0930\u094d\u0935\u0930 \u0914\u0930 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u092a\u0930 \u0928\u093f\u0930\u094d\u092d\u0930 \u0939\u0948\u0964"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "hi",
+        "guide": "use",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/hi/guides/use/",
+        "status": 200,
+        "observed": [
+          "\u090f\u0915 \u0938\u093e\u0925 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u2014 0.1.60",
+          "\u0938\u092e\u093e\u0928\u093e\u0902\u0924\u0930 \u092b\u093c\u093e\u0907\u0932\u0947\u0902: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u090f\u0915 \u092c\u093e\u0930 \u092e\u0947\u0902 1 \u0938\u0947 8 \u092b\u093c\u093e\u0907\u0932\u0947\u0902, \u092a\u094d\u0930\u0924\u093f \u092b\u093c\u093e\u0907\u0932 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0915\u0940 \u0938\u0902\u0916\u094d\u092f\u093e \u0938\u0947 \u0938\u094d\u0935\u0924\u0902\u0924\u094d\u0930\u0964 \u091c\u0917\u0939 \u0916\u093e\u0932\u0940 \u0939\u094b\u0924\u0947 \u0939\u0940 \u0915\u0924\u093e\u0930 \u0915\u0940 \u092b\u093c\u093e\u0907\u0932\u0947\u0902 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u0939\u094b\u0928\u0947 \u0932\u0917\u0924\u0940 \u0939\u0948\u0902\u0964",
+          "\u0938\u0940\u092e\u093e \u0918\u091f\u093e\u0928\u0947 \u092a\u0930 \u091a\u0932 \u0930\u0939\u0947 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u092a\u0942\u0930\u0947 \u0939\u094b\u0928\u0947 \u0926\u093f\u090f \u091c\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \u0930\u0942\u092a\u093e\u0902\u0924\u0930\u0923 \u0905\u092c \u092d\u0940 \u090f\u0915-\u090f\u0915 \u0915\u0930\u0915\u0947 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902\u0964",
+          "\u0915\u0908 \u092d\u093e\u0917\u094b\u0902 \u092e\u0947\u0902 \u0921\u093e\u0909\u0928\u0932\u094b\u0921",
+          "\u0938\u0902\u0917\u0924 \u092b\u093c\u093e\u0907\u0932\u094b\u0902 \u0914\u0930 DASH \u0915\u0947 \u0932\u093f\u090f \u0915\u0908 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0947\u0902.",
+          "\u092a\u094d\u0930\u0924\u093f \u092b\u093c\u093e\u0907\u0932 \u0915\u0928\u0947\u0915\u094d\u0936\u0928: 2 / 4 / 8.",
+          "\u092a\u094d\u0930\u092c\u0902\u0927\u0915 \u0916\u0941\u0932\u093e \u0930\u0916\u0947\u0902\u0964 \u0938\u0902\u0917\u0924 \u0911\u0921\u093f\u092f\u094b \u0914\u0930 \u0935\u0940\u0921\u093f\u092f\u094b \u091f\u094d\u0930\u0948\u0915 \u0938\u093e\u0925 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u0939\u094b \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u090f\u0915 \u0938\u0902\u0938\u093e\u0927\u0928 \u092c\u093e\u0901\u091f\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092d\u0930\u094b\u0938\u0947\u092e\u0902\u0926 \u092c\u093e\u0907\u091f \u0930\u0947\u0902\u091c \u0914\u0930 \u092e\u091c\u092c\u0942\u0924 \u0938\u0902\u0938\u094d\u0915\u0930\u0923 \u0938\u0924\u094d\u092f\u093e\u092a\u0915 \u091a\u093e\u0939\u093f\u090f; \u0905\u0928\u094d\u092f\u0925\u093e \u0938\u093e\u092e\u093e\u0928\u094d\u092f \u0938\u094d\u0925\u093e\u0928\u093e\u0902\u0924\u0930\u0923 \u0939\u094b\u0924\u093e \u0939\u0948\u0964 \u0917\u0924\u093f \u0938\u0930\u094d\u0935\u0930 \u0914\u0930 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u092a\u0930 \u0928\u093f\u0930\u094d\u092d\u0930 \u0939\u0948\u0964"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "hi",
+        "guide": "changelog",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/hi/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "\u090f\u0915 \u0938\u093e\u0925 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u2014 0.1.60",
+          "\u0938\u092e\u093e\u0928\u093e\u0902\u0924\u0930 \u092b\u093c\u093e\u0907\u0932\u0947\u0902: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u090f\u0915 \u092c\u093e\u0930 \u092e\u0947\u0902 1 \u0938\u0947 8 \u092b\u093c\u093e\u0907\u0932\u0947\u0902, \u092a\u094d\u0930\u0924\u093f \u092b\u093c\u093e\u0907\u0932 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0915\u0940 \u0938\u0902\u0916\u094d\u092f\u093e \u0938\u0947 \u0938\u094d\u0935\u0924\u0902\u0924\u094d\u0930\u0964 \u091c\u0917\u0939 \u0916\u093e\u0932\u0940 \u0939\u094b\u0924\u0947 \u0939\u0940 \u0915\u0924\u093e\u0930 \u0915\u0940 \u092b\u093c\u093e\u0907\u0932\u0947\u0902 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u0939\u094b\u0928\u0947 \u0932\u0917\u0924\u0940 \u0939\u0948\u0902\u0964",
+          "\u0938\u0940\u092e\u093e \u0918\u091f\u093e\u0928\u0947 \u092a\u0930 \u091a\u0932 \u0930\u0939\u0947 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u092a\u0942\u0930\u0947 \u0939\u094b\u0928\u0947 \u0926\u093f\u090f \u091c\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \u0930\u0942\u092a\u093e\u0902\u0924\u0930\u0923 \u0905\u092c \u092d\u0940 \u090f\u0915-\u090f\u0915 \u0915\u0930\u0915\u0947 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902\u0964",
+          "\u0915\u0908 \u092d\u093e\u0917\u094b\u0902 \u092e\u0947\u0902 \u0921\u093e\u0909\u0928\u0932\u094b\u0921",
+          "\u0938\u0902\u0917\u0924 \u092b\u093c\u093e\u0907\u0932\u094b\u0902 \u0914\u0930 DASH \u0915\u0947 \u0932\u093f\u090f \u0915\u0908 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0947\u0902.",
+          "\u092a\u094d\u0930\u0924\u093f \u092b\u093c\u093e\u0907\u0932 \u0915\u0928\u0947\u0915\u094d\u0936\u0928: 2 / 4 / 8.",
+          "\u092a\u094d\u0930\u092c\u0902\u0927\u0915 \u0916\u0941\u0932\u093e \u0930\u0916\u0947\u0902\u0964 \u0938\u0902\u0917\u0924 \u0911\u0921\u093f\u092f\u094b \u0914\u0930 \u0935\u0940\u0921\u093f\u092f\u094b \u091f\u094d\u0930\u0948\u0915 \u0938\u093e\u0925 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u0939\u094b \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u090f\u0915 \u0938\u0902\u0938\u093e\u0927\u0928 \u092c\u093e\u0901\u091f\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092d\u0930\u094b\u0938\u0947\u092e\u0902\u0926 \u092c\u093e\u0907\u091f \u0930\u0947\u0902\u091c \u0914\u0930 \u092e\u091c\u092c\u0942\u0924 \u0938\u0902\u0938\u094d\u0915\u0930\u0923 \u0938\u0924\u094d\u092f\u093e\u092a\u0915 \u091a\u093e\u0939\u093f\u090f; \u0905\u0928\u094d\u092f\u0925\u093e \u0938\u093e\u092e\u093e\u0928\u094d\u092f \u0938\u094d\u0925\u093e\u0928\u093e\u0902\u0924\u0930\u0923 \u0939\u094b\u0924\u093e \u0939\u0948\u0964 \u0917\u0924\u093f \u0938\u0930\u094d\u0935\u0930 \u0914\u0930 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u092a\u0930 \u0928\u093f\u0930\u094d\u092d\u0930 \u0939\u0948\u0964"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "hi",
+        "guide": "changelog",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/hi/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "\u090f\u0915 \u0938\u093e\u0925 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u2014 0.1.60",
+          "\u0938\u092e\u093e\u0928\u093e\u0902\u0924\u0930 \u092b\u093c\u093e\u0907\u0932\u0947\u0902: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u090f\u0915 \u092c\u093e\u0930 \u092e\u0947\u0902 1 \u0938\u0947 8 \u092b\u093c\u093e\u0907\u0932\u0947\u0902, \u092a\u094d\u0930\u0924\u093f \u092b\u093c\u093e\u0907\u0932 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0915\u0940 \u0938\u0902\u0916\u094d\u092f\u093e \u0938\u0947 \u0938\u094d\u0935\u0924\u0902\u0924\u094d\u0930\u0964 \u091c\u0917\u0939 \u0916\u093e\u0932\u0940 \u0939\u094b\u0924\u0947 \u0939\u0940 \u0915\u0924\u093e\u0930 \u0915\u0940 \u092b\u093c\u093e\u0907\u0932\u0947\u0902 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u0939\u094b\u0928\u0947 \u0932\u0917\u0924\u0940 \u0939\u0948\u0902\u0964",
+          "\u0938\u0940\u092e\u093e \u0918\u091f\u093e\u0928\u0947 \u092a\u0930 \u091a\u0932 \u0930\u0939\u0947 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u092a\u0942\u0930\u0947 \u0939\u094b\u0928\u0947 \u0926\u093f\u090f \u091c\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \u0930\u0942\u092a\u093e\u0902\u0924\u0930\u0923 \u0905\u092c \u092d\u0940 \u090f\u0915-\u090f\u0915 \u0915\u0930\u0915\u0947 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902\u0964",
+          "\u0915\u0908 \u092d\u093e\u0917\u094b\u0902 \u092e\u0947\u0902 \u0921\u093e\u0909\u0928\u0932\u094b\u0921",
+          "\u0938\u0902\u0917\u0924 \u092b\u093c\u093e\u0907\u0932\u094b\u0902 \u0914\u0930 DASH \u0915\u0947 \u0932\u093f\u090f \u0915\u0908 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0947\u0902.",
+          "\u092a\u094d\u0930\u0924\u093f \u092b\u093c\u093e\u0907\u0932 \u0915\u0928\u0947\u0915\u094d\u0936\u0928: 2 / 4 / 8.",
+          "\u092a\u094d\u0930\u092c\u0902\u0927\u0915 \u0916\u0941\u0932\u093e \u0930\u0916\u0947\u0902\u0964 \u0938\u0902\u0917\u0924 \u0911\u0921\u093f\u092f\u094b \u0914\u0930 \u0935\u0940\u0921\u093f\u092f\u094b \u091f\u094d\u0930\u0948\u0915 \u0938\u093e\u0925 \u0921\u093e\u0909\u0928\u0932\u094b\u0921 \u0939\u094b \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u090f\u0915 \u0938\u0902\u0938\u093e\u0927\u0928 \u092c\u093e\u0901\u091f\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092d\u0930\u094b\u0938\u0947\u092e\u0902\u0926 \u092c\u093e\u0907\u091f \u0930\u0947\u0902\u091c \u0914\u0930 \u092e\u091c\u092c\u0942\u0924 \u0938\u0902\u0938\u094d\u0915\u0930\u0923 \u0938\u0924\u094d\u092f\u093e\u092a\u0915 \u091a\u093e\u0939\u093f\u090f; \u0905\u0928\u094d\u092f\u0925\u093e \u0938\u093e\u092e\u093e\u0928\u094d\u092f \u0938\u094d\u0925\u093e\u0928\u093e\u0902\u0924\u0930\u0923 \u0939\u094b\u0924\u093e \u0939\u0948\u0964 \u0917\u0924\u093f \u0938\u0930\u094d\u0935\u0930 \u0914\u0930 \u0915\u0928\u0947\u0915\u094d\u0936\u0928 \u092a\u0930 \u0928\u093f\u0930\u094d\u092d\u0930 \u0939\u0948\u0964"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ur",
+        "guide": "settings",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/ur/guides/settings/",
+        "status": 200,
+        "observed": [
+          "\u0628\u06cc\u06a9 \u0648\u0642\u062a \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u2014 0.1.60",
+          "\u0628\u06cc\u06a9 \u0648\u0642\u062a \u0641\u0627\u0626\u0644\u0648\u06ba \u06a9\u06cc \u062a\u0639\u062f\u0627\u062f: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u0627\u06cc\u06a9 \u0648\u0642\u062a \u0645\u06cc\u06ba 1 \u0633\u06d2 8 \u0641\u0627\u0626\u0644\u06cc\u06ba\u060c \u0641\u06cc \u0641\u0627\u0626\u0644 \u06a9\u0646\u06a9\u0634\u0646 \u06a9\u06cc \u062a\u0639\u062f\u0627\u062f \u0633\u06d2 \u0627\u0644\u06af\u06d4 \u062c\u06af\u06c1 \u062e\u0627\u0644\u06cc \u06c1\u0648\u062a\u06d2 \u06c1\u06cc \u0642\u0637\u0627\u0631 \u0645\u06cc\u06ba \u0645\u0648\u062c\u0648\u062f \u0641\u0627\u0626\u0644\u06cc\u06ba \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u06c1\u0648\u0646\u0627 \u0634\u0631\u0648\u0639 \u06c1\u0648 \u062c\u0627\u062a\u06cc \u06c1\u06cc\u06ba\u06d4",
+          "\u062d\u062f \u06a9\u0645 \u06a9\u0631\u0646\u06d2 \u067e\u0631 \u062c\u0627\u0631\u06cc \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u0645\u06a9\u0645\u0644 \u06c1\u0648\u0646\u06d2 \u062f\u06cc\u06d2 \u062c\u0627\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4 \u062a\u0628\u062f\u06cc\u0644\u06cc\u0627\u06ba \u0627\u0628 \u0628\u06be\u06cc \u0627\u06cc\u06a9 \u0627\u06cc\u06a9 \u06a9\u0631 \u06a9\u06d2 \u06c1\u0648\u062a\u06cc \u06c1\u06cc\u06ba\u06d4",
+          "\u06a9\u0626\u06cc \u062d\u0635\u0648\u06ba \u0645\u06cc\u06ba \u0688\u0627\u0624\u0646 \u0644\u0648\u0688",
+          "\u0645\u0648\u0627\u0641\u0642 \u0641\u0627\u0626\u0644\u0648\u06ba \u0627\u0648\u0631 DASH \u06a9\u06d2 \u0644\u06cc\u06d2 \u0645\u062a\u0639\u062f\u062f \u06a9\u0646\u06a9\u0634\u0646 \u0627\u0633\u062a\u0639\u0645\u0627\u0644 \u06a9\u0631\u06cc\u06ba.",
+          "\u0641\u06cc \u0641\u0627\u0626\u0644 \u06a9\u0646\u06a9\u0634\u0646: 2 / 4 / 8.",
+          "\u0645\u06cc\u0646\u06cc\u062c\u0631 \u06a9\u06be\u0644\u0627 \u0631\u06a9\u06be\u06cc\u06ba\u06d4 \u0645\u0648\u0627\u0641\u0642 \u0622\u0688\u06cc\u0648 \u0627\u0648\u0631 \u0648\u06cc\u0688\u06cc\u0648 \u0679\u0631\u06cc\u06a9 \u0633\u0627\u062a\u06be \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u06c1\u0648 \u0633\u06a9\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4 \u0627\u06cc\u06a9 \u0648\u0633\u06cc\u0644\u06c1 \u062a\u0642\u0633\u06cc\u0645 \u06a9\u0631\u0646\u06d2 \u06a9\u06d2 \u0644\u06cc\u06d2 \u0642\u0627\u0628\u0644 \u0627\u0639\u062a\u0645\u0627\u062f \u0628\u0627\u0626\u0679 \u0631\u06cc\u0646\u062c \u0627\u0648\u0631 \u0645\u0636\u0628\u0648\u0637 \u0648\u0631\u0698\u0646 \u062a\u0635\u062f\u06cc\u0642 \u062f\u0631\u06a9\u0627\u0631 \u06c1\u06d2\u061b \u0648\u0631\u0646\u06c1 \u0645\u0639\u0645\u0648\u0644 \u06a9\u06cc \u0645\u0646\u062a\u0642\u0644\u06cc \u06c1\u0648\u062a\u06cc \u06c1\u06d2\u06d4 \u0631\u0641\u062a\u0627\u0631 \u0633\u0631\u0648\u0631 \u0627\u0648\u0631 \u06a9\u0646\u06a9\u0634\u0646 \u067e\u0631 \u0645\u0646\u062d\u0635\u0631 \u06c1\u06d2\u06d4"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ur",
+        "guide": "settings",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/ur/guides/settings/",
+        "status": 200,
+        "observed": [
+          "\u0628\u06cc\u06a9 \u0648\u0642\u062a \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u2014 0.1.60",
+          "\u0628\u06cc\u06a9 \u0648\u0642\u062a \u0641\u0627\u0626\u0644\u0648\u06ba \u06a9\u06cc \u062a\u0639\u062f\u0627\u062f: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u0627\u06cc\u06a9 \u0648\u0642\u062a \u0645\u06cc\u06ba 1 \u0633\u06d2 8 \u0641\u0627\u0626\u0644\u06cc\u06ba\u060c \u0641\u06cc \u0641\u0627\u0626\u0644 \u06a9\u0646\u06a9\u0634\u0646 \u06a9\u06cc \u062a\u0639\u062f\u0627\u062f \u0633\u06d2 \u0627\u0644\u06af\u06d4 \u062c\u06af\u06c1 \u062e\u0627\u0644\u06cc \u06c1\u0648\u062a\u06d2 \u06c1\u06cc \u0642\u0637\u0627\u0631 \u0645\u06cc\u06ba \u0645\u0648\u062c\u0648\u062f \u0641\u0627\u0626\u0644\u06cc\u06ba \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u06c1\u0648\u0646\u0627 \u0634\u0631\u0648\u0639 \u06c1\u0648 \u062c\u0627\u062a\u06cc \u06c1\u06cc\u06ba\u06d4",
+          "\u062d\u062f \u06a9\u0645 \u06a9\u0631\u0646\u06d2 \u067e\u0631 \u062c\u0627\u0631\u06cc \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u0645\u06a9\u0645\u0644 \u06c1\u0648\u0646\u06d2 \u062f\u06cc\u06d2 \u062c\u0627\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4 \u062a\u0628\u062f\u06cc\u0644\u06cc\u0627\u06ba \u0627\u0628 \u0628\u06be\u06cc \u0627\u06cc\u06a9 \u0627\u06cc\u06a9 \u06a9\u0631 \u06a9\u06d2 \u06c1\u0648\u062a\u06cc \u06c1\u06cc\u06ba\u06d4",
+          "\u06a9\u0626\u06cc \u062d\u0635\u0648\u06ba \u0645\u06cc\u06ba \u0688\u0627\u0624\u0646 \u0644\u0648\u0688",
+          "\u0645\u0648\u0627\u0641\u0642 \u0641\u0627\u0626\u0644\u0648\u06ba \u0627\u0648\u0631 DASH \u06a9\u06d2 \u0644\u06cc\u06d2 \u0645\u062a\u0639\u062f\u062f \u06a9\u0646\u06a9\u0634\u0646 \u0627\u0633\u062a\u0639\u0645\u0627\u0644 \u06a9\u0631\u06cc\u06ba.",
+          "\u0641\u06cc \u0641\u0627\u0626\u0644 \u06a9\u0646\u06a9\u0634\u0646: 2 / 4 / 8.",
+          "\u0645\u06cc\u0646\u06cc\u062c\u0631 \u06a9\u06be\u0644\u0627 \u0631\u06a9\u06be\u06cc\u06ba\u06d4 \u0645\u0648\u0627\u0641\u0642 \u0622\u0688\u06cc\u0648 \u0627\u0648\u0631 \u0648\u06cc\u0688\u06cc\u0648 \u0679\u0631\u06cc\u06a9 \u0633\u0627\u062a\u06be \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u06c1\u0648 \u0633\u06a9\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4 \u0627\u06cc\u06a9 \u0648\u0633\u06cc\u0644\u06c1 \u062a\u0642\u0633\u06cc\u0645 \u06a9\u0631\u0646\u06d2 \u06a9\u06d2 \u0644\u06cc\u06d2 \u0642\u0627\u0628\u0644 \u0627\u0639\u062a\u0645\u0627\u062f \u0628\u0627\u0626\u0679 \u0631\u06cc\u0646\u062c \u0627\u0648\u0631 \u0645\u0636\u0628\u0648\u0637 \u0648\u0631\u0698\u0646 \u062a\u0635\u062f\u06cc\u0642 \u062f\u0631\u06a9\u0627\u0631 \u06c1\u06d2\u061b \u0648\u0631\u0646\u06c1 \u0645\u0639\u0645\u0648\u0644 \u06a9\u06cc \u0645\u0646\u062a\u0642\u0644\u06cc \u06c1\u0648\u062a\u06cc \u06c1\u06d2\u06d4 \u0631\u0641\u062a\u0627\u0631 \u0633\u0631\u0648\u0631 \u0627\u0648\u0631 \u06a9\u0646\u06a9\u0634\u0646 \u067e\u0631 \u0645\u0646\u062d\u0635\u0631 \u06c1\u06d2\u06d4"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ur",
+        "guide": "use",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/ur/guides/use/",
+        "status": 200,
+        "observed": [
+          "\u0628\u06cc\u06a9 \u0648\u0642\u062a \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u2014 0.1.60",
+          "\u0628\u06cc\u06a9 \u0648\u0642\u062a \u0641\u0627\u0626\u0644\u0648\u06ba \u06a9\u06cc \u062a\u0639\u062f\u0627\u062f: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u0627\u06cc\u06a9 \u0648\u0642\u062a \u0645\u06cc\u06ba 1 \u0633\u06d2 8 \u0641\u0627\u0626\u0644\u06cc\u06ba\u060c \u0641\u06cc \u0641\u0627\u0626\u0644 \u06a9\u0646\u06a9\u0634\u0646 \u06a9\u06cc \u062a\u0639\u062f\u0627\u062f \u0633\u06d2 \u0627\u0644\u06af\u06d4 \u062c\u06af\u06c1 \u062e\u0627\u0644\u06cc \u06c1\u0648\u062a\u06d2 \u06c1\u06cc \u0642\u0637\u0627\u0631 \u0645\u06cc\u06ba \u0645\u0648\u062c\u0648\u062f \u0641\u0627\u0626\u0644\u06cc\u06ba \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u06c1\u0648\u0646\u0627 \u0634\u0631\u0648\u0639 \u06c1\u0648 \u062c\u0627\u062a\u06cc \u06c1\u06cc\u06ba\u06d4",
+          "\u062d\u062f \u06a9\u0645 \u06a9\u0631\u0646\u06d2 \u067e\u0631 \u062c\u0627\u0631\u06cc \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u0645\u06a9\u0645\u0644 \u06c1\u0648\u0646\u06d2 \u062f\u06cc\u06d2 \u062c\u0627\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4 \u062a\u0628\u062f\u06cc\u0644\u06cc\u0627\u06ba \u0627\u0628 \u0628\u06be\u06cc \u0627\u06cc\u06a9 \u0627\u06cc\u06a9 \u06a9\u0631 \u06a9\u06d2 \u06c1\u0648\u062a\u06cc \u06c1\u06cc\u06ba\u06d4",
+          "\u06a9\u0626\u06cc \u062d\u0635\u0648\u06ba \u0645\u06cc\u06ba \u0688\u0627\u0624\u0646 \u0644\u0648\u0688",
+          "\u0645\u0648\u0627\u0641\u0642 \u0641\u0627\u0626\u0644\u0648\u06ba \u0627\u0648\u0631 DASH \u06a9\u06d2 \u0644\u06cc\u06d2 \u0645\u062a\u0639\u062f\u062f \u06a9\u0646\u06a9\u0634\u0646 \u0627\u0633\u062a\u0639\u0645\u0627\u0644 \u06a9\u0631\u06cc\u06ba.",
+          "\u0641\u06cc \u0641\u0627\u0626\u0644 \u06a9\u0646\u06a9\u0634\u0646: 2 / 4 / 8.",
+          "\u0645\u06cc\u0646\u06cc\u062c\u0631 \u06a9\u06be\u0644\u0627 \u0631\u06a9\u06be\u06cc\u06ba\u06d4 \u0645\u0648\u0627\u0641\u0642 \u0622\u0688\u06cc\u0648 \u0627\u0648\u0631 \u0648\u06cc\u0688\u06cc\u0648 \u0679\u0631\u06cc\u06a9 \u0633\u0627\u062a\u06be \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u06c1\u0648 \u0633\u06a9\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4 \u0627\u06cc\u06a9 \u0648\u0633\u06cc\u0644\u06c1 \u062a\u0642\u0633\u06cc\u0645 \u06a9\u0631\u0646\u06d2 \u06a9\u06d2 \u0644\u06cc\u06d2 \u0642\u0627\u0628\u0644 \u0627\u0639\u062a\u0645\u0627\u062f \u0628\u0627\u0626\u0679 \u0631\u06cc\u0646\u062c \u0627\u0648\u0631 \u0645\u0636\u0628\u0648\u0637 \u0648\u0631\u0698\u0646 \u062a\u0635\u062f\u06cc\u0642 \u062f\u0631\u06a9\u0627\u0631 \u06c1\u06d2\u061b \u0648\u0631\u0646\u06c1 \u0645\u0639\u0645\u0648\u0644 \u06a9\u06cc \u0645\u0646\u062a\u0642\u0644\u06cc \u06c1\u0648\u062a\u06cc \u06c1\u06d2\u06d4 \u0631\u0641\u062a\u0627\u0631 \u0633\u0631\u0648\u0631 \u0627\u0648\u0631 \u06a9\u0646\u06a9\u0634\u0646 \u067e\u0631 \u0645\u0646\u062d\u0635\u0631 \u06c1\u06d2\u06d4"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ur",
+        "guide": "use",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/ur/guides/use/",
+        "status": 200,
+        "observed": [
+          "\u0628\u06cc\u06a9 \u0648\u0642\u062a \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u2014 0.1.60",
+          "\u0628\u06cc\u06a9 \u0648\u0642\u062a \u0641\u0627\u0626\u0644\u0648\u06ba \u06a9\u06cc \u062a\u0639\u062f\u0627\u062f: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u0627\u06cc\u06a9 \u0648\u0642\u062a \u0645\u06cc\u06ba 1 \u0633\u06d2 8 \u0641\u0627\u0626\u0644\u06cc\u06ba\u060c \u0641\u06cc \u0641\u0627\u0626\u0644 \u06a9\u0646\u06a9\u0634\u0646 \u06a9\u06cc \u062a\u0639\u062f\u0627\u062f \u0633\u06d2 \u0627\u0644\u06af\u06d4 \u062c\u06af\u06c1 \u062e\u0627\u0644\u06cc \u06c1\u0648\u062a\u06d2 \u06c1\u06cc \u0642\u0637\u0627\u0631 \u0645\u06cc\u06ba \u0645\u0648\u062c\u0648\u062f \u0641\u0627\u0626\u0644\u06cc\u06ba \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u06c1\u0648\u0646\u0627 \u0634\u0631\u0648\u0639 \u06c1\u0648 \u062c\u0627\u062a\u06cc \u06c1\u06cc\u06ba\u06d4",
+          "\u062d\u062f \u06a9\u0645 \u06a9\u0631\u0646\u06d2 \u067e\u0631 \u062c\u0627\u0631\u06cc \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u0645\u06a9\u0645\u0644 \u06c1\u0648\u0646\u06d2 \u062f\u06cc\u06d2 \u062c\u0627\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4 \u062a\u0628\u062f\u06cc\u0644\u06cc\u0627\u06ba \u0627\u0628 \u0628\u06be\u06cc \u0627\u06cc\u06a9 \u0627\u06cc\u06a9 \u06a9\u0631 \u06a9\u06d2 \u06c1\u0648\u062a\u06cc \u06c1\u06cc\u06ba\u06d4",
+          "\u06a9\u0626\u06cc \u062d\u0635\u0648\u06ba \u0645\u06cc\u06ba \u0688\u0627\u0624\u0646 \u0644\u0648\u0688",
+          "\u0645\u0648\u0627\u0641\u0642 \u0641\u0627\u0626\u0644\u0648\u06ba \u0627\u0648\u0631 DASH \u06a9\u06d2 \u0644\u06cc\u06d2 \u0645\u062a\u0639\u062f\u062f \u06a9\u0646\u06a9\u0634\u0646 \u0627\u0633\u062a\u0639\u0645\u0627\u0644 \u06a9\u0631\u06cc\u06ba.",
+          "\u0641\u06cc \u0641\u0627\u0626\u0644 \u06a9\u0646\u06a9\u0634\u0646: 2 / 4 / 8.",
+          "\u0645\u06cc\u0646\u06cc\u062c\u0631 \u06a9\u06be\u0644\u0627 \u0631\u06a9\u06be\u06cc\u06ba\u06d4 \u0645\u0648\u0627\u0641\u0642 \u0622\u0688\u06cc\u0648 \u0627\u0648\u0631 \u0648\u06cc\u0688\u06cc\u0648 \u0679\u0631\u06cc\u06a9 \u0633\u0627\u062a\u06be \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u06c1\u0648 \u0633\u06a9\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4 \u0627\u06cc\u06a9 \u0648\u0633\u06cc\u0644\u06c1 \u062a\u0642\u0633\u06cc\u0645 \u06a9\u0631\u0646\u06d2 \u06a9\u06d2 \u0644\u06cc\u06d2 \u0642\u0627\u0628\u0644 \u0627\u0639\u062a\u0645\u0627\u062f \u0628\u0627\u0626\u0679 \u0631\u06cc\u0646\u062c \u0627\u0648\u0631 \u0645\u0636\u0628\u0648\u0637 \u0648\u0631\u0698\u0646 \u062a\u0635\u062f\u06cc\u0642 \u062f\u0631\u06a9\u0627\u0631 \u06c1\u06d2\u061b \u0648\u0631\u0646\u06c1 \u0645\u0639\u0645\u0648\u0644 \u06a9\u06cc \u0645\u0646\u062a\u0642\u0644\u06cc \u06c1\u0648\u062a\u06cc \u06c1\u06d2\u06d4 \u0631\u0641\u062a\u0627\u0631 \u0633\u0631\u0648\u0631 \u0627\u0648\u0631 \u06a9\u0646\u06a9\u0634\u0646 \u067e\u0631 \u0645\u0646\u062d\u0635\u0631 \u06c1\u06d2\u06d4"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ur",
+        "guide": "changelog",
+        "width": 1280,
+        "url": "http://127.0.0.1:4180/alcydeo/ur/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "\u0628\u06cc\u06a9 \u0648\u0642\u062a \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u2014 0.1.60",
+          "\u0628\u06cc\u06a9 \u0648\u0642\u062a \u0641\u0627\u0626\u0644\u0648\u06ba \u06a9\u06cc \u062a\u0639\u062f\u0627\u062f: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u0627\u06cc\u06a9 \u0648\u0642\u062a \u0645\u06cc\u06ba 1 \u0633\u06d2 8 \u0641\u0627\u0626\u0644\u06cc\u06ba\u060c \u0641\u06cc \u0641\u0627\u0626\u0644 \u06a9\u0646\u06a9\u0634\u0646 \u06a9\u06cc \u062a\u0639\u062f\u0627\u062f \u0633\u06d2 \u0627\u0644\u06af\u06d4 \u062c\u06af\u06c1 \u062e\u0627\u0644\u06cc \u06c1\u0648\u062a\u06d2 \u06c1\u06cc \u0642\u0637\u0627\u0631 \u0645\u06cc\u06ba \u0645\u0648\u062c\u0648\u062f \u0641\u0627\u0626\u0644\u06cc\u06ba \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u06c1\u0648\u0646\u0627 \u0634\u0631\u0648\u0639 \u06c1\u0648 \u062c\u0627\u062a\u06cc \u06c1\u06cc\u06ba\u06d4",
+          "\u062d\u062f \u06a9\u0645 \u06a9\u0631\u0646\u06d2 \u067e\u0631 \u062c\u0627\u0631\u06cc \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u0645\u06a9\u0645\u0644 \u06c1\u0648\u0646\u06d2 \u062f\u06cc\u06d2 \u062c\u0627\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4 \u062a\u0628\u062f\u06cc\u0644\u06cc\u0627\u06ba \u0627\u0628 \u0628\u06be\u06cc \u0627\u06cc\u06a9 \u0627\u06cc\u06a9 \u06a9\u0631 \u06a9\u06d2 \u06c1\u0648\u062a\u06cc \u06c1\u06cc\u06ba\u06d4",
+          "\u06a9\u0626\u06cc \u062d\u0635\u0648\u06ba \u0645\u06cc\u06ba \u0688\u0627\u0624\u0646 \u0644\u0648\u0688",
+          "\u0645\u0648\u0627\u0641\u0642 \u0641\u0627\u0626\u0644\u0648\u06ba \u0627\u0648\u0631 DASH \u06a9\u06d2 \u0644\u06cc\u06d2 \u0645\u062a\u0639\u062f\u062f \u06a9\u0646\u06a9\u0634\u0646 \u0627\u0633\u062a\u0639\u0645\u0627\u0644 \u06a9\u0631\u06cc\u06ba.",
+          "\u0641\u06cc \u0641\u0627\u0626\u0644 \u06a9\u0646\u06a9\u0634\u0646: 2 / 4 / 8.",
+          "\u0645\u06cc\u0646\u06cc\u062c\u0631 \u06a9\u06be\u0644\u0627 \u0631\u06a9\u06be\u06cc\u06ba\u06d4 \u0645\u0648\u0627\u0641\u0642 \u0622\u0688\u06cc\u0648 \u0627\u0648\u0631 \u0648\u06cc\u0688\u06cc\u0648 \u0679\u0631\u06cc\u06a9 \u0633\u0627\u062a\u06be \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u06c1\u0648 \u0633\u06a9\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4 \u0627\u06cc\u06a9 \u0648\u0633\u06cc\u0644\u06c1 \u062a\u0642\u0633\u06cc\u0645 \u06a9\u0631\u0646\u06d2 \u06a9\u06d2 \u0644\u06cc\u06d2 \u0642\u0627\u0628\u0644 \u0627\u0639\u062a\u0645\u0627\u062f \u0628\u0627\u0626\u0679 \u0631\u06cc\u0646\u062c \u0627\u0648\u0631 \u0645\u0636\u0628\u0648\u0637 \u0648\u0631\u0698\u0646 \u062a\u0635\u062f\u06cc\u0642 \u062f\u0631\u06a9\u0627\u0631 \u06c1\u06d2\u061b \u0648\u0631\u0646\u06c1 \u0645\u0639\u0645\u0648\u0644 \u06a9\u06cc \u0645\u0646\u062a\u0642\u0644\u06cc \u06c1\u0648\u062a\u06cc \u06c1\u06d2\u06d4 \u0631\u0641\u062a\u0627\u0631 \u0633\u0631\u0648\u0631 \u0627\u0648\u0631 \u06a9\u0646\u06a9\u0634\u0646 \u067e\u0631 \u0645\u0646\u062d\u0635\u0631 \u06c1\u06d2\u06d4"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      },
+      {
+        "locale": "ur",
+        "guide": "changelog",
+        "width": 390,
+        "url": "http://127.0.0.1:4180/alcydeo/ur/guides/changelog/",
+        "status": 200,
+        "observed": [
+          "\u0628\u06cc\u06a9 \u0648\u0642\u062a \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u2014 0.1.60",
+          "\u0628\u06cc\u06a9 \u0648\u0642\u062a \u0641\u0627\u0626\u0644\u0648\u06ba \u06a9\u06cc \u062a\u0639\u062f\u0627\u062f: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.",
+          "\u0627\u06cc\u06a9 \u0648\u0642\u062a \u0645\u06cc\u06ba 1 \u0633\u06d2 8 \u0641\u0627\u0626\u0644\u06cc\u06ba\u060c \u0641\u06cc \u0641\u0627\u0626\u0644 \u06a9\u0646\u06a9\u0634\u0646 \u06a9\u06cc \u062a\u0639\u062f\u0627\u062f \u0633\u06d2 \u0627\u0644\u06af\u06d4 \u062c\u06af\u06c1 \u062e\u0627\u0644\u06cc \u06c1\u0648\u062a\u06d2 \u06c1\u06cc \u0642\u0637\u0627\u0631 \u0645\u06cc\u06ba \u0645\u0648\u062c\u0648\u062f \u0641\u0627\u0626\u0644\u06cc\u06ba \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u06c1\u0648\u0646\u0627 \u0634\u0631\u0648\u0639 \u06c1\u0648 \u062c\u0627\u062a\u06cc \u06c1\u06cc\u06ba\u06d4",
+          "\u062d\u062f \u06a9\u0645 \u06a9\u0631\u0646\u06d2 \u067e\u0631 \u062c\u0627\u0631\u06cc \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u0645\u06a9\u0645\u0644 \u06c1\u0648\u0646\u06d2 \u062f\u06cc\u06d2 \u062c\u0627\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4 \u062a\u0628\u062f\u06cc\u0644\u06cc\u0627\u06ba \u0627\u0628 \u0628\u06be\u06cc \u0627\u06cc\u06a9 \u0627\u06cc\u06a9 \u06a9\u0631 \u06a9\u06d2 \u06c1\u0648\u062a\u06cc \u06c1\u06cc\u06ba\u06d4",
+          "\u06a9\u0626\u06cc \u062d\u0635\u0648\u06ba \u0645\u06cc\u06ba \u0688\u0627\u0624\u0646 \u0644\u0648\u0688",
+          "\u0645\u0648\u0627\u0641\u0642 \u0641\u0627\u0626\u0644\u0648\u06ba \u0627\u0648\u0631 DASH \u06a9\u06d2 \u0644\u06cc\u06d2 \u0645\u062a\u0639\u062f\u062f \u06a9\u0646\u06a9\u0634\u0646 \u0627\u0633\u062a\u0639\u0645\u0627\u0644 \u06a9\u0631\u06cc\u06ba.",
+          "\u0641\u06cc \u0641\u0627\u0626\u0644 \u06a9\u0646\u06a9\u0634\u0646: 2 / 4 / 8.",
+          "\u0645\u06cc\u0646\u06cc\u062c\u0631 \u06a9\u06be\u0644\u0627 \u0631\u06a9\u06be\u06cc\u06ba\u06d4 \u0645\u0648\u0627\u0641\u0642 \u0622\u0688\u06cc\u0648 \u0627\u0648\u0631 \u0648\u06cc\u0688\u06cc\u0648 \u0679\u0631\u06cc\u06a9 \u0633\u0627\u062a\u06be \u0688\u0627\u0624\u0646 \u0644\u0648\u0688 \u06c1\u0648 \u0633\u06a9\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4 \u0627\u06cc\u06a9 \u0648\u0633\u06cc\u0644\u06c1 \u062a\u0642\u0633\u06cc\u0645 \u06a9\u0631\u0646\u06d2 \u06a9\u06d2 \u0644\u06cc\u06d2 \u0642\u0627\u0628\u0644 \u0627\u0639\u062a\u0645\u0627\u062f \u0628\u0627\u0626\u0679 \u0631\u06cc\u0646\u062c \u0627\u0648\u0631 \u0645\u0636\u0628\u0648\u0637 \u0648\u0631\u0698\u0646 \u062a\u0635\u062f\u06cc\u0642 \u062f\u0631\u06a9\u0627\u0631 \u06c1\u06d2\u061b \u0648\u0631\u0646\u06c1 \u0645\u0639\u0645\u0648\u0644 \u06a9\u06cc \u0645\u0646\u062a\u0642\u0644\u06cc \u06c1\u0648\u062a\u06cc \u06c1\u06d2\u06d4 \u0631\u0641\u062a\u0627\u0631 \u0633\u0631\u0648\u0631 \u0627\u0648\u0631 \u06a9\u0646\u06a9\u0634\u0646 \u067e\u0631 \u0645\u0646\u062d\u0635\u0631 \u06c1\u06d2\u06d4"
+        ],
+        "passed": true,
+        "errors": [],
+        "theme": "light"
+      }
+    ],
+    "screenshots": [
+      "artifacts/evidence/concurrency-0.1.60/site/fr-settings-1280.png",
+      "artifacts/evidence/concurrency-0.1.60/site/fr-settings-390.png",
+      "artifacts/evidence/concurrency-0.1.60/site/ur-settings-1280.png",
+      "artifacts/evidence/concurrency-0.1.60/site/ur-settings-390.png"
+    ],
+    "pageErrors": [],
+    "consoleErrors": [],
+    "failedResponses": [],
+    "requestFailures": [],
+    "externalRequests": [],
+    "server": {
+      "port": 4180,
+      "owned": true,
+      "stopped": true,
+      "pid": 1275667
+    },
+    "browser": "156.0.8078.4",
+    "finishedAt": "2026-11-08T15:39:38.859Z",
+    "passed": true
+  },
+  "storeRuntime": {
+    "version": "0.1.60",
+    "browser": "156.0.8078.4",
+    "synthetic": true,
+    "youtubeMedia": 0,
+    "youtubeBadge": "",
+    "youtubeLiveMedia": 0,
+    "youtubePlaylistUi": 0,
+    "playlistBrowseRequests": 0,
+    "playlistApiRejected": true,
+    "ordinaryMedia": 1,
+    "ordinaryKind": "direct"
+  },
+  "resolvedIntermediateChecks": [
+    {
+      "case": "initial typecheck",
+      "cause": "Mock storage values require an explicit unknown cast under the current Chrome types; final production and tests typecheck passes."
+    },
+    {
+      "case": "Settings geometry fixture",
+      "cause": "The visually hidden fieldset legend was included in a generic geometry assertion. Visible controls and hints retain their overflow assertions; the final 40 combinations pass."
+    },
+    {
+      "case": "Settings focus spacing",
+      "cause": "Initial screenshots showed the hint too close to the focused select. Final card spacing is adjusted and all final captures were regenerated."
+    },
+    {
+      "case": "older multipart regression harness",
+      "cause": "Updated its old setting names to the current localized labels and pointed it at the immutable tested build; all seven selected behavioral cases pass."
+    },
+    {
+      "case": "historical TikTok fixture writer",
+      "cause": "Its output labels the historical fixture version 39 despite running build60. Current evidence is preserved separately as tiktok-fixture-regression-0.1.60.json and the historical JSON is restored from the earlier saved report."
+    }
+  ],
+  "runtimeFingerprints": {
+    "local": {
+      "files": 97,
+      "sha256MapDigest": "35442156e331a4a4d82b1aa2533703a54ce20a031bdb31db4870e48227ff82e2"
+    },
+    "store": {
+      "files": 97,
+      "sha256MapDigest": "ddc95a3e4ff0e39b26bdb948eef13ff1d691be778c5bce6caf55dbf29d91ac28"
+    }
+  },
+  "limitations": [
+    "Controlled original-fixture transfers establish queue concurrency, not a universal throughput gain.",
+    "No eight large public videos or full repository E2E suite is claimed.",
+    "Native downloads can continue without the manager; managed transfers retain their existing manager/lease recovery requirements.",
+    "YouTube local playlists remain serial, Store excludes YouTube, and page-frame transports retain their own smaller bounds.",
+    "No personal browser, physical Cast receiver or Windows CRX installation is exercised in this lot."
+  ],
+  "actualExternalFileUploads": 0,
+  "externalPublication": false,
+  "artifactsReport": "download-concurrency-artifacts-0.1.60.json"
+}

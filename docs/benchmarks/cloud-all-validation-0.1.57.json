@@ -1,0 +1,193 @@
+{
+  "version": "0.1.57",
+  "date": "2026-11-08",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "platform": "Linux/WSL2 isolated extension profiles",
+    "personalProfileUsed": false
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "unitPassed": 905,
+    "unitFiles": 50,
+    "installedChromeUniqueCases": 58,
+    "localCases": 51,
+    "storeCases": 7,
+    "fullRepositoryE2ESuite": false,
+    "runs": {
+      "fanout-local-postfix": {
+        "startTime": "2026-11-08T14:32:38.585Z",
+        "duration": 43373.353,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "fanout-store-postfix": {
+        "startTime": "2026-11-08T14:33:26.223Z",
+        "duration": 44452.553,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "ui-direct-final": {
+        "startTime": "2026-11-08T14:31:32.147Z",
+        "duration": 43529.240000000005,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "onefichier-regression-final": {
+        "startTime": "2026-11-08T14:33:16.839Z",
+        "duration": 7629.572999999999,
+        "expected": 4,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "shared-protocol-final": {
+        "startTime": "2026-11-08T14:33:54.083Z",
+        "duration": 15321.921,
+        "expected": 8,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "turbobit-local-final": {
+        "startTime": "2026-11-08T14:31:32.359Z",
+        "duration": 40004.628000000004,
+        "expected": 26,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "turbobit-local-final-rerun": {
+        "startTime": "2026-11-08T14:32:56.035Z",
+        "duration": 4243.661,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "turbobit-migration-store-final": {
+        "startTime": "2026-11-08T14:32:56.048Z",
+        "duration": 1111.6860000000001,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "behavior": {
+    "noSetupDestinations": [
+      "gofile",
+      "megaup",
+      "onefichier",
+      "turbobit"
+    ],
+    "pcloudSeparate": true,
+    "noJobsOrProviderTrafficBeforeSend": true,
+    "perProviderSizeCaps": true,
+    "independentProviderFailureAndRetry": true,
+    "immutableFileAndTargetSnapshot": true,
+    "newSelectionRequiresItsOwnClick": true,
+    "partialLocalPreparationRetriesOnlyMissingDestinations": true,
+    "oneActiveUpload": true,
+    "cancelOneJobPreservesOtherInputs": true,
+    "exactFixtureBytesAndNames": true,
+    "sourceLeaseRetainedDuringCopy": true,
+    "lateHeartbeatControllerScopedToItsOwnCopy": true,
+    "turbobitNativeHtmlSuffix": true,
+    "oldExactBareLinksRepairedAtomically": true,
+    "historyRepairNoNetworkOrOtherFieldChanges": true,
+    "historyRepairIdempotentAcrossReload": true
+  },
+  "reproductions": {
+    "turbobitOldBuilderFailedNewExpectations": 3,
+    "turbobitUnitGreen": 57,
+    "heartbeatOldSnapshot": {
+      "passed": 0,
+      "failed": 1,
+      "secondDestinationAborted": "megaup"
+    },
+    "heartbeatFinalLocalAndStorePass": true
+  },
+  "resolvedIntermediateChecks": [
+    {
+      "case": "old cloud-direct descendant selector",
+      "cause": "The action button now belongs to an accessible two-button group; obsolete direct-child selector found no element. Behavior assertion preserved and final case passes."
+    },
+    {
+      "case": "two Turbobit file names",
+      "cause": "The test asserted incidental IDB UUID queue order, which is not a user-order contract. It now verifies the exact set of names and each name-to-acknowledged-link pairing; targeted rerun passes."
+    },
+    {
+      "case": "root protocol run",
+      "cause": "Two cases loaded the mutable .output path during a packaging rebuild, causing ERR_FILE_NOT_FOUND and an absent service worker. All affected cases rerun successfully on the final immutable snapshot; shared protocols rerun after builds finish."
+    },
+    {
+      "case": "first fanout harness run",
+      "cause": "Status-region role and incidental queue-order assumptions corrected in harness; final six cases pass in both distributions."
+    },
+    {
+      "case": "first Store launch",
+      "cause": "Launched before snapshot copy completion; interrupted and repeated only after the snapshot was complete."
+    }
+  ],
+  "visual": {
+    "locales": 10,
+    "directions": [
+      "ltr",
+      "rtl"
+    ],
+    "widths": [
+      1280,
+      390
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "combinations": 40,
+    "keyboardFocusChecked": true,
+    "inspected": [
+      "fr-dark-390",
+      "de-light-1280",
+      "ur-light-390"
+    ],
+    "originalFixtureOnly": true,
+    "screenshots": [
+      "docs/screenshots/cloud-all-fr.png",
+      "docs/screenshots/cloud-all-ur-narrow.png"
+    ]
+  },
+  "pages": {
+    "localGuideRoutes": 40,
+    "locales": 10,
+    "browserErrors": 0,
+    "overflow": 0,
+    "archiveHtmlPages": 103,
+    "publication": false
+  },
+  "runtimeFingerprints": {
+    "local": {
+      "files": 99,
+      "sha256MapDigest": "48526341d0f02cd81154ffbbfefa0ebaedb87ecc23b0c099112d01e05453fb54"
+    },
+    "store": {
+      "files": 99,
+      "sha256MapDigest": "8e9f847c23421bc90abc9541c9d3c18da4f6c42d029b942e5c78d87c205abdde"
+    }
+  },
+  "nativeLinkResearch": "turbobit-link-0.1.57.json",
+  "actualExternalFileUploads": 0,
+  "remoteTurbobitFileIndependentlyVerified": false,
+  "artifactsReport": "cloud-all-artifacts-0.1.57.json",
+  "externalPublication": false
+}

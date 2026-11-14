@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-01T15:36:55.528Z",
+  "browser": "156.0.8078.80",
+  "os": "linux",
+  "bytes": 2203363043,
+  "downloadMs": 7409,
+  "validationMs": 3857,
+  "browserProcessRssSumBefore": 1276944384,
+  "browserProcessRssSumPeak": 1964175360,
+  "limitations": [
+    "Linux Chrome for Testing; Windows Chrome 156 not executed here.",
+    "Summed process RSS includes shared pages and browser overhead; it is not extension heap size.",
+    "Original repeated synthetic H.264/AAC corpus, not a diverse codec corpus.",
+    "Direct download only. Does not validate multi-GB segmented remux or transcoding."
+  ]
+}

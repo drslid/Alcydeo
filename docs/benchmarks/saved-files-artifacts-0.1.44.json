@@ -1,0 +1,57 @@
+{
+  "version": "0.1.44",
+  "publication": false,
+  "files": [
+    {
+      "name": "alcydeo-0.1.44-chrome.zip",
+      "bytes": 2358497,
+      "sha256": "5e15fd3a6c74ab4cd7fb4b1b288e1bed0fd9bd3fcce1d8e90fc4cb3bbae29198"
+    },
+    {
+      "name": "alcydeo-0.1.44-local-test.crx",
+      "bytes": 2372660,
+      "sha256": "a318a18ba0a75709bfded74d6a005ba301e8874608f682db1e6e77baacffabe5"
+    },
+    {
+      "name": "alcydeo-store-0.1.44-chrome.zip",
+      "bytes": 2302217,
+      "sha256": "1159e27e500451b86844e46839f9d35e38a650833508f547595174a215e27159"
+    },
+    {
+      "name": "alcydeo-pages-0.1.44.zip",
+      "bytes": 2670260,
+      "sha256": "ff2d662df37d53bb5f93d97b68e06f85614651376b969b3ea9008c794c3fa4c1"
+    },
+    {
+      "name": "alcydeo-brand-0.1.44.zip",
+      "bytes": 1368207,
+      "sha256": "1bd5dcf5ec9d146097f7aadbfe87b9112b3ab6f585c4c45bcff1dc071ddcbff9"
+    }
+  ],
+  "local": {
+    "files": 99,
+    "archiveEqualsBuild": true,
+    "executableAndUiMatchTestedBuild": true,
+    "regeneratedLicenseArchives": [
+      "licenses/mediabunny-1.65.0-source.zip",
+      "licenses/mediabunny-aac-encoder-1.65.0-source.zip"
+    ],
+    "correspondingPinnedSourcesUnchanged": true
+  },
+  "store": {
+    "files": 99,
+    "archiveEqualsBuild": true,
+    "executableAndUiMatchTestedBuild": true,
+    "regeneratedLicenseArchives": [],
+    "correspondingPinnedSourcesUnchanged": true
+  },
+  "crx3PayloadMatchesLocalZip": true,
+  "pages": {
+    "files": 277,
+    "htmlPages": 103,
+    "localeRoutes": 10,
+    "base": "/alcydeo/",
+    "archiveEqualsBuild": true
+  },
+  "brandKitFiles": 41
+}

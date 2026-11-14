@@ -1,0 +1,5 @@
+FFmpeg AAC encoder: LGPL-2.1-or-later, unmodified, no GPL/version3/nonfree components enabled by upstream.
+Exact source: https://github.com/FFmpeg/FFmpeg/tree/60a2818f76dcd1fee3155b1791304af104a0fc1b
+Source archive: https://github.com/FFmpeg/FFmpeg/archive/60a2818f76dcd1fee3155b1791304af104a0fc1b.tar.gz
+Rebuild instructions, toolchain and upstream binary hash: mediabunny-aac-encoder-1.65.0-source.zip, README.md.
+The local MV3 adaptation replaces only the Blob-worker factory with a packaged module worker. The AAC worker body and its inlined WASM are unchanged. No native program or remote executable is used.

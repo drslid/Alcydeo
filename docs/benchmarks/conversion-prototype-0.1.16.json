@@ -1,0 +1,29 @@
+{
+  "version": "0.1.16",
+  "browser": "156.0.8078.80",
+  "elapsedMs": 476,
+  "state": "completed",
+  "validation": {
+    "duration": 6.037333333333334,
+    "tracks": [
+      {
+        "type": "video",
+        "codec": "avc"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "bytes": 699817,
+    "method": "local-structure",
+    "checkedAt": 1793560678679
+  },
+  "conversion": {
+    "input": "input.original",
+    "inputBytes": 519432,
+    "ready": true,
+    "videoEncoded": true,
+    "audioEncoded": true
+  }
+}

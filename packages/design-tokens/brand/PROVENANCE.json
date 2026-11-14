@@ -1,0 +1,21 @@
+{
+  "illustration": "Original Alcydeo vector artwork, MIT. Le Plongeon: minimal kingfisher in flight, one visible eye, no arrow; premium revision 2026-11-14.",
+  "wordmark": {
+    "font": "Inter",
+    "weight": 700,
+    "opticalSize": 32,
+    "license": "SIL OFL 1.1",
+    "source": "https://raw.githubusercontent.com/rsms/inter/353b61b9f4430d5f420d56605a6e7993e0941470/docs/font-files/InterVariable.ttf",
+    "revision": "353b61b9f4430d5f420d56605a6e7993e0941470",
+    "sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+    "output": "Only outlines for the word Alcydeo; no runtime font dependency"
+  },
+  "nameRevision": "Alcydeo without accent, user request 2026-11-03; accent outline removed, other glyphs unchanged",
+  "derivedMarks": {
+    "source": "kingfisher.svg canonical-mark group",
+    "generator": "scripts/brand.mjs",
+    "colorIcon": "exact complete emblem geometry, cropped viewBox",
+    "monochrome": "same silhouette; original eye/throat become negative space",
+    "independentFaceDrawing": false
+  }
+}

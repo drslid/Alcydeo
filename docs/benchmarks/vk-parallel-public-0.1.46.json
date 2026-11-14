@@ -1,0 +1,109 @@
+{
+  "version": "0.1.46",
+  "date": "2026-11-06T09:56:13.889Z",
+  "browser": "156.0.8078.4",
+  "publicPage": "https://vkvideo.ru/video-26493942_456419693",
+  "runs": [
+    {
+      "mode": "sequential",
+      "connectionsSetting": 4,
+      "fullResourceRequests": 2,
+      "maximumParallelWholeResources": 1,
+      "elapsedMs": 27814,
+      "task": {
+        "state": "completed",
+        "saved": true,
+        "validation": {
+          "duration": 472.82899305555554,
+          "tracks": [
+            {
+              "type": "video",
+              "codec": "av1"
+            },
+            {
+              "type": "audio",
+              "codec": "opus"
+            }
+          ],
+          "bytes": 8404291,
+          "method": "local-structure",
+          "checkedAt": 1793959015920
+        },
+        "checkpointResources": 2
+      },
+      "savedFile": {
+        "bytes": 8404291,
+        "state": "complete",
+        "exists": true
+      }
+    },
+    {
+      "mode": "parallel",
+      "connectionsSetting": 4,
+      "fullResourceRequests": 2,
+      "maximumParallelWholeResources": 2,
+      "elapsedMs": 20782,
+      "task": {
+        "state": "completed",
+        "saved": true,
+        "validation": {
+          "duration": 472.82899305555554,
+          "tracks": [
+            {
+              "type": "video",
+              "codec": "av1"
+            },
+            {
+              "type": "audio",
+              "codec": "opus"
+            }
+          ],
+          "bytes": 8404291,
+          "method": "local-structure",
+          "checkedAt": 1793959036794
+        },
+        "transfer": {
+          "mode": "multipart",
+          "connections": 4
+        },
+        "checkpointResources": 2
+      },
+      "savedFile": {
+        "bytes": 8404291,
+        "state": "complete",
+        "exists": true
+      }
+    }
+  ],
+  "headersOrSignaturesModified": false,
+  "newPermissions": false,
+  "publication": false,
+  "actualManifestVersion": "0.1.46",
+  "pageStatus": 200,
+  "sourceCount": 1,
+  "quality": 144,
+  "badge": "1",
+  "observedRatio": 1.3383697430468675,
+  "limitations": [
+    "Single public144p source in one isolated Chrome session; source-player background traffic and Internet variance remain.",
+    "No ETag on the observed native CDN. Whole audio/video resources run together; no byte-range acceleration is claimed for this CDN.",
+    "720p complete transfer, Windows Chrome profile and physical receivers not tested."
+  ],
+  "outputComparison": {
+    "sequentialSha256": "6e36e2204fcf39cf6c36a30fee12c889996aa8c0d8138914a15c5db05d14b033",
+    "parallelSha256": "e2849e767441495cf583d55779433600707a7c96d6c988500fc6f62894d1d10a",
+    "byteIdentical": false,
+    "meaning": "Comparison of the two locally saved outputs, not a publisher-provided reference digest.",
+    "differingBytes": 10,
+    "onlyCreationModificationTimestampsDiffer": true,
+    "timestampBoxes": [
+      "mvhd",
+      "tkhd",
+      "mdhd",
+      "tkhd",
+      "mdhd"
+    ],
+    "equalAfterExcludingThoseMetadataFields": true,
+    "normalizedSha256": "8864184fd845467df27d5372971bc4d18fdd4c1b6f32b5a242da7cba483c49d3"
+  }
+}

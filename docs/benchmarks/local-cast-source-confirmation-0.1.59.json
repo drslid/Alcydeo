@@ -1,0 +1,30 @@
+{
+  "tag": "156.0.8078.76",
+  "commit": "93ce6b54af3fee27e384d1f30346e80db47a14da",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/chromium/chromium/93ce6b54af3fee27e384d1f30346e80db47a14da/media/remoting/device_capability_checker.cc",
+      "sha256": "e7a509865ad55ef0f29c1b59b6c60eef685f4b0bb977e11e081d9d2a206aa59f",
+      "bytes": 2569,
+      "sameAs156_80": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chromium/chromium/93ce6b54af3fee27e384d1f30346e80db47a14da/chrome/browser/media/router/providers/cast/cast_media_route_provider.cc",
+      "sha256": "bcd5682ce9cb48263b875cd2ce2c296c8cf959566050cfb3df91b58f8982b7be",
+      "bytes": 14506,
+      "sameAs156_80": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chromium/chromium/93ce6b54af3fee27e384d1f30346e80db47a14da/chrome/browser/ui/global_media_controls/cast_device_list_host.cc",
+      "sha256": "0b436a3ead52929981a8b505e9111e103390c1b88383359f7a37b19b4281d99d",
+      "bytes": 7796,
+      "sameAs156_80": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chromium/chromium/93ce6b54af3fee27e384d1f30346e80db47a14da/third_party/blink/renderer/modules/remoteplayback/remote_playback.cc",
+      "sha256": "51bfee1eccea5acf05b7eeae9aabe9d15369942aa0150c00f7a4f0d315d3d07d",
+      "bytes": 26571,
+      "sameAs156_80": true
+    }
+  ]
+}

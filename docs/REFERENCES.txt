@@ -1,0 +1,296 @@
+RÉFÉRENCES POUR ALCYDEO — consultées le 31 octobre 2026
+
+Référence fonctionnelle :
+https://chromewebstore.google.com/detail/video-downloader-plus/hkdmdpdhfaamhgaojpelccmeehpfljgf
+https://vidow.io/
+Le CRX 4.0.0 a été examiné dans le chat de cadrage. L’analyse statique couvre 9 fichiers JavaScript sans échec de syntaxe ; le graphe sémantique est partiel. Les fonctions de cloud, TV et moteur web n’ont pas été testées. Ne pas transformer une annonce en preuve d’exécution. La spécification de ce kit reste autonome sans copie du CRX.
+
+Référence design README/site appartenant à l’utilisateur :
+https://github.com/drslid/NoxRouteNeo
+https://github.com/drslid/NoxRouteNeo/blob/main/apps/website/src/styles/custom.css
+https://github.com/drslid/NoxRouteNeo/blob/main/apps/website/astro.config.mjs
+
+Documentation technique primaire à vérifier pendant l’implémentation :
+https://wxt.dev/guide/introduction.html
+https://vuejs.org/guide/best-practices/performance.html
+https://developer.chrome.com/docs/extensions/reference/api/i18n
+https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/lifecycle
+https://developer.chrome.com/docs/extensions/develop/migrate/remote-hosted-code
+https://developer.chrome.com/docs/webstore/prepare/
+https://developer.chrome.com/docs/webstore/publish/
+https://developer.chrome.com/docs/webstore/register/
+https://docs.astro.build/en/guides/deploy/github/
+https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+https://learn.chatgpt.com/docs/agent-configuration/agents-md
+
+Les URLs ciblées drslid/alcydeo et drslid.github.io/alcydeo sont des propositions de destination, pas des publications existantes confirmées. Ne pas inventer d’ID Chrome Web Store, de contact ou de secret.
+
+RÉFÉRENCE VISUELLE AJOUTÉE LE 1 NOVEMBRE 2026
+https://www.cupheadgame.com/
+Direction demandée : cartoon années 1930, grands yeux pie-cut, encrage et formes arrondies. Le martin-pêcheur Alcydeo est une illustration SVG originale réalisée pour le projet, avec la palette validée et sa flèche de téléchargement.
+
+
+Compléments officiels — lot local 0.1.17, vérifiés le 2026-11-01
+- Chrome getDisplayMedia / capture d’onglet : https://developer.chrome.com/docs/extensions/how-to/web-platform/screen-capture
+- Gofile API (bêta), envoi invité : https://gofile.io/api
+- Google Drive, transferts reprenables : https://developers.google.com/workspace/drive/api/guides/manage-uploads
+- Chrome OAuth / identity : https://developer.chrome.com/docs/extensions/how-to/integrate/oauth
+- OneDrive, sessions d’envoi : https://learn.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-1.0
+- Microsoft OAuth authorization-code/PKCE : https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow
+- Mediabunny Conversion / options : https://mediabunny.dev/guide/converting-media-files
+Les protocoles cloud sont testés par fixtures locales ; aucun compte réel ou transfert réel n’a été validé. Ces références ne constituent pas une annonce de compatibilité universelle.
+
+
+Direction du gestionnaire 0.1.18 — références officielles, 2026-11-01
+https://m3.material.io/foundations/layout/canonical-examples/overview
+https://m3.material.io/components/navigation-rail/overview
+https://m3.material.io/components/lists/overview
+https://developers.google.com/fonts/docs/material_symbols
+SVG locaux Material Symbols Rounded (24 px, 400), Apache-2.0 : https://github.com/google/material-design-icons/tree/10ecc14790612ca8fd164e3f4ffe9c16fc50d5b7
+Le code de l’interface reste original. Sources, empreintes et licence du sous-ensemble d’icônes sont conservées dans packages/design-tokens/icons et docs/licenses/Material-Symbols-Apache-2.0.txt. Aucune police/icône distante à l’exécution.
+
+Identité 0.1.19 : la dernière demande utilisateur retire la flèche et demande un profil cohérent, plusieurs déclinaisons et un favicon simplifié. Illustration SVG originale ; lettres Alcydeo vectorisées depuis Inter Bold, SIL OFL 1.1 : https://github.com/rsms/inter/blob/353b61b9f4430d5f420d56605a6e7993e0941470/LICENSE.txt . Provenance et empreinte dans packages/design-tokens/brand/PROVENANCE.json. Aucune police de logo distante à l’exécution.
+
+Prototype TV natif 0.1.20 — vérifié le 2026-11-01
+https://developer.chrome.com/blog/chrome-121-beta (Remote Playback sur desktop)
+https://www.w3.org/TR/remote-playback/
+https://developer.apple.com/documentation/webkitjs/adding_an_airplay_button_to_your_safari_media_controls
+Remote Playback est présent dans le Chrome Linux 156 testé ; l’API AirPlay WebKit est absente. Aucun récepteur réel validé ; aucune compatibilité AirPlay Chrome Windows annoncée.
+
+Enregistrement HLS local 0.1.24 — 2026-11-01
+https://www.rfc-editor.org/rfc/rfc8216.html#section-6.3.4
+https://www.rfc-editor.org/rfc/rfc8216.html#section-6.3.5
+Rechargement selon TARGETDURATION, suivi des Media Sequence Numbers et contrôle de continuité. La V1 live locale limite ce parcours aux TS/fMP4 non chiffrés avec audio/vidéo combinés ; aucun alignement entre pistes par comparaison de numéros de séquence.
+
+Cloud pCloud (consulté le 2026-11-01) :
+https://docs.pcloud.com/methods/upload_links/uploadtolink.html
+https://docs.pcloud.com/methods/upload_links/createuploadlink.html
+https://docs.pcloud.com/
+
+Cast 0.1.26 — sources officielles, 2026-11-01 :
+https://developers.google.com/cast/docs/web_sender/integrate
+https://developers.google.com/cast/docs/web_receiver
+https://www.nvidia.com/en-eu/shield/support/shield-tv/
+https://support.google.com/chrome/answer/3228332
+https://github.com/chromium/chromium/blob/156.0.8078.80/third_party/blink/renderer/modules/remoteplayback/remote_playback.cc
+https://github.com/chromium/chromium/blob/156.0.8078.80/media/base/remoting_constants.h
+SDK chargé uniquement dans la page web facultative ; aucun récepteur physique testé dans le laboratoire.
+
+Cast natif dans l’extension 0.1.27 — consulté le 2026-11-03
+https://www.w3.org/TR/presentation-api/
+https://github.com/chromium/chromium/blob/156.0.8078.80/components/media_router/common/providers/cast/cast_media_source.cc
+https://github.com/chromium/chromium/blob/156.0.8078.80/chrome/browser/media/router/providers/cast/cast_session_client_impl.cc
+https://github.com/chromium/chromium/blob/156.0.8078.80/chrome/browser/media/router/providers/cast/cast_internal_message_util.cc
+https://developers.google.com/cast/docs/media/messages
+Implémentation TypeScript originale fondée sur les conventions de messages, sans copie de code C++ ni chargement de SDK. Contrôle natif graphique distinct des simulations de récepteur ; aucun matériel TV du laboratoire validé.
+
+Fichiers locaux / TV 0.1.28 — 3 novembre 2026
+https://support.google.com/chrome/answer/3228332
+https://github.com/chromium/chromium/blob/156.0.8078.80/chrome/browser/media/router/providers/cast/cast_media_route_provider.cc
+La procédure Chrome demande de lire le fichier puis de caster depuis son menu. Les sources de mirroring Cast initiées par une page restent soumises à la liste d’origines de Chromium 156 ; aucune usurpation d’origine ni modification de flags dans le produit.
+
+Cast natif de fichiers enregistrés 0.1.29 — 3 novembre 2026
+https://developer.chrome.com/docs/extensions/reference/api/extension#method-isAllowedFileSchemeAccess
+https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions
+https://github.com/chromium/chromium/blob/156.0.8078.80/media/remoting/renderer_controller.cc
+https://github.com/chromium/chromium/blob/156.0.8078.80/media/base/remoting_constants.h
+Le pipeline accepte HTTP/HTTPS/file, pas blob ; le seuil natif est strictement supérieur à 15 secondes. Lecture préalable et bouton RemotePlayback.prompt conservant le geste utilisateur. Les tests réels de fichiers et d’API sans récepteur ne valident pas une TV physique.
+
+
+0.1.31 — YouTube live et chargement Cast, 3 novembre 2026
+https://developers.google.com/cast/docs/media/messages
+https://ytjs.dev/api/interfaces/IStreamingData
+Le catalogue déjà chargé peut exposer hlsManifestUrl ; aucune requête InnerTube supplémentaire ni code de déchiffrement n’est ajouté. Le lien MT9CZTo-qMA fourni est déclaré terminé au moment du test public local ; son catalogue de rediffusion est détecté, sans transfert intégral revendiqué. Le test d’un vrai direct actif reste distinct des fixtures originales.
+
+0.1.32 — enregistrement natif, consulté le 3 novembre 2026
+https://developer.chrome.com/docs/extensions/reference/api/downloads
+Le retour de download fournit un identifiant de démarrage, pas une garantie de fin. Les états et l’existence proviennent de Chrome. Le rapprochement d’un export interrompu utilise l’URL Blob exacte et byExtensionId ; aucun rapprochement par titre/nom approximatif.
+
+MegaUp 0.1.33 — consulté le 3 novembre 2026
+https://megaup.net/
+https://megaup.net/faq
+https://megaup.net/terms
+Aucune documentation API publique trouvée. La lecture du formulaire anonyme a exposé le serveur HTTPS d’envoi, la limite 5 368 709 120 octets et des parties de 100 000 000 octets. Configuration traitée comme données, aucune copie de script distant ni génération de signature. Sessions/paramètres temporaires exclus des sources suivies. La FAQ annonce 30 jours d’inactivité ; aucun téléversement réel testé.
+
+1fichier 0.1.34 — consulté le 3 novembre 2026
+https://1fichier.com/api.html
+https://1fichier.com/hlp.html
+Protocole web multipart documenté, identification facultative ; initialisation anonyme POST testée HTTP 200, sans fichier. Retour d’envoi par redirection non suivie et rapport JSON end.pl sur le même nœud ; nom/taille/lien contrôlés, données d’émission/suppression non enregistrées. Envoi web sans reprise, quatre heures maximum, 300 Go par fichier ; aucune validation de ce maximum. Conservation sans compte non garantie après 15 jours, disponibilité parfois différée. Aucun téléversement réel ni copie de script fournisseur.
+
+Turbobit / torbobit.net 0.1.35 — consulté le 3 novembre 2026
+https://torbobit.net/
+https://cdn.turbobit.net/faq
+https://api.costaction.com/en/v1/docs
+https://api.costaction.com/api-docs/en/v1/description.yml
+Le parcours invité du nouveau site expose une initialisation JSON anonyme ; POST vérifié HTTP 200 sur les deux domaines, destinations HTTPS fdfiles.net, sans transfert de fichier. La documentation CostAction exige une clé : parcours distinct non utilisé. Inspection statique de l’interface publique comme données, sans exécution ni redistribution. La FAQ héritée annonce 200 MB et sept jours pour les non-inscrits ; plafond local conservateur non mesuré. Le client actuel lit un identifiant d’acquittement et construit le lien standard host/id : aucune vérification distante indépendante annoncée.
+
+Playlists YouTube 0.1.36 — consulté le 3 novembre 2026
+https://developer.chrome.com/docs/extensions/reference/api/tabs
+https://developer.chrome.com/docs/extensions/reference/api/scripting
+https://developer.chrome.com/docs/extensions/reference/api/downloads
+https://github.com/LuanRT/YouTube.js/blob/main/src/parser/classes/PlaylistVideo.ts
+https://github.com/LuanRT/YouTube.js/blob/main/src/parser/classes/LockupView.ts
+Schémas des lecteurs playlist hérités et lockup actuels examinés comme données ; aucune dépendance/code de ces classes ajouté. Lecture originale du catalogue natif, continuation browse bornée utilisant le contexte existant dans la page. Onglet lecteur détenu et téléchargements Chrome séquentiels ; aucune API player, génération de jeton, contournement ou code distant ajouté.
+
+Contrôles publics 0.1.36 :
+https://www.youtube.com/playlist?list=PLav47HAVZMjnTFVZL-aImCQIC0uLZtNCz
+https://www.youtube.com/playlist?list=UUSMOQeBJ2RAnuFungnQOxLg
+Catalogue public de 18 vidéos et uploads Blender de 1 593 entrées, lus dans le vrai Chrome avec l’extension. Le format actuel place continuationItemViewModel dans la section des éléments ; ignorer la continuation extérieure de recommandations. Le parcours /watch?list utilise le catalogue browse complet plutôt que le panneau tronqué. Lot réel de deux vidéos : un MP4 480p/60 s sauvé et décodé, un refus sourceRestricted sans export. Voir benchmarks/playlists-public-0.1.36.json et playlists-watch-public-0.1.36.json ; ces mesures ne garantissent pas une playlist réelle entière.
+
+TikTok 0.1.37 — consulté le 3 novembre 2026
+https://www.tiktok.com/@drslid/video/7604511060657278230
+https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/extractor/tiktok.py
+https://developer.chrome.com/docs/extensions/reference/api/scripting
+https://developer.chrome.com/docs/extensions/reference/api/downloads
+Schémas JSON natifs examinés comme données ; lecteur TypeScript original, aucune copie/exécution du code yt-dlp, aucune génération de signature/cookie/challenge. Le lecteur public fonctionne dans Chrome, mais le CDN refuse les demandes depuis l’origine extension. Le cadre source autorisé transmet les octets avec son contexte navigateur normal et les règles CORS ; aucune permission/en-tête modifié. Le fichier réel de 9 510 143 octets (576×1024 H.264/AAC, 33,667 s) est sauvé et décodé intégralement. Rapports expurgés dans benchmarks/tiktok-public-0.1.37.json et tiktok-decode-0.1.37.json.
+
+X / Twitter 0.1.38 — consulté le 3 novembre 2026
+https://x.com/MoviesCIips/status/2117600764822466899
+https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/extractor/twitter.py
+https://developer.chrome.com/docs/extensions/reference/api/scripting
+Schéma ancien video_info examiné comme données, sans copie/exécution de yt-dlp ni appel de ses API. Le vrai HTML X actuel contient des chaînes JSON dans ses scripts SSR TanStack/Relay, media_entities2 et details ; lecture TypeScript originale sans évaluation JS, limitée au post exact. Chrome graphique natif lit le post et télécharge réellement le MP4 ; headless initial 403 distinct et non contourné. Rapports x-public-0.1.38.json et x-decode-0.1.38.json.
+
+Mix YouTube 0.1.38 — exemple utilisateur
+https://www.youtube.com/watch?v=ckPbVDXw9Gc&list=RDCLAK5uy_ly6s4irLuZAcjEDwJmqcA_UtSipMyGgbQ&index=2
+Panneau natif évolutif de 25 titres, lecture sans browse/continuation ; instantané signalé. Essai explicitement limité à deux entrées, toutes deux sourceRestricted sans export partiel ; aucune génération d’attestation ni contournement. Voir youtube-mix-public-0.1.38.json.
+
+Observateur 0.1.39 — 3 novembre 2026
+https://developer.chrome.com/docs/extensions/reference/api/runtime#method-reload
+https://developer.chrome.com/docs/extensions/reference/api/runtime#method-sendMessage
+WXT 0.21.5 embarqué : dist/utils/content-script-context.mjs, getters isInvalid/isValid et onInvalidated. Lecture de la dépendance installée ; aucun changement dans WXT. Le getter détecte l’absence de runtime.id et déclenche l’arrêt. L’appel sendMessage peut lever avant de retourner sa Promise : reproduit dans Chrome avec le paquet 0.1.38 gelé. Rechargement de contexte et reprise de détection sont contrôlés séparément.
+
+Popup 0.1.40 — 5 novembre 2026
+https://developer.mozilla.org/en-US/docs/Web/API/Popover_API/Using
+https://m3.material.io/components/menus/guidelines
+Menus natifs avec popovertarget, top layer, tabulation, Échap et clic extérieur ; placement borné propre à la popup. Aucun SDK, police, framework d’interface ou permission ajouté.
+https://developer.chrome.com/docs/css-ui/anchor-positioning-api
+Ancrage implicite du popover à son bouton, position-area et position-try-fallbacks vérifiés sous Chrome 156.
+
+Accès aux sites 0.1.42 — 5 novembre 2026
+https://developer.chrome.com/docs/extensions/reference/api/permissions
+https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions
+Hôtes HTTP/HTTPS requis à l’installation, contrôle contains et événements de retrait. L’ancienne validation par domaine est retirée de l’interface ; les choix Chrome et les contrôles avant requête restent appliqués.
+
+VK Video / DASH 0.1.43 — consulté le 5 novembre 2026
+https://vkvideo.ru/video-26493942_456419693
+https://www.w3.org/TR/xml/#sec-predefined-ent
+https://www.rfc-editor.org/rfc/rfc8216.html
+Le vrai lecteur Chrome expose un MPD WebM/AV1, BaseURL/SegmentBase, audio Opus et plages bytes sur vkuser.net. Inspection du schéma public yt-dlp/extractor/vk.py sur GitHub comme données uniquement ; aucun code repris, exécuté ou ajouté. Le correctif provient du manifeste réellement observé et du parseur fast-xml-parser 5.11.2 déjà installé : décodage XML standard une seule fois, sans DTD/entités déclarées ni réécriture d’URL. Sources signées et vidéos de contrôle conservées uniquement dans les artefacts locaux ignorés. Voir VK.md et les rapports expurgés.
+
+
+Sources HLS / parallèle DASH 0.1.46 — consulté le 6 novembre 2026
+https://coflix.esq/episode/how-to-ruin-diwali-meet-the-parents-1x3/
+https://vkvideo.ru/video-26493942_456419693
+https://www.rfc-editor.org/rfc/rfc8216.html
+https://www.rfc-editor.org/rfc/rfc9110.html#name-range-requests
+Observation du vrai lecteur Chrome et des manifestes natifs, aucune API inventée ni script fournisseur exécuté dans l’extension. Les alternatives Vidzy ne diffèrent que par un champ gk ajouté aux URL de la playlist et des segments ; comparaison limitée, adresses originales conservées. Coflix : un fichier complet enregistré. VK : sonde 206 sans ETag, deux pistes entières simultanées, comparaison et décodage réels 144p ; découpage conditionnel par ETag exercé séparément sur fixtures originales. Voir COFLIX.md, VK.md et les rapports expurgés 0.1.46.
+
+
+Recadrage 0.1.48 — 6 novembre 2026
+https://mediabunny.dev/guide/converting-media-files#cropping-video
+Mediabunny1.65.0 installé : ConversionVideoOptions.crop {left,top,width,height}, après rotation/flip et avant redimensionnement. La validation locale refuse les bornes invalides au lieu du clamp implicite de la bibliothèque. Vérifications de pixels réellement décodés, piste AAC copiée, Opus réencodé et métadonnée rotation90° sur mires originales.
+https://raw.githubusercontent.com/google/material-design-icons/10ecc14790612ca8fd164e3f4ffe9c16fc50d5b7/symbols/web/crop/materialsymbolsrounded/crop_24px.svg
+Icône crop Material Symbols Rounded400/24 de la même révision épinglée, Apache-2.0 ; SVG, empreinte et provenance dans packages/design-tokens/icons.
+
+HLS vidéo/audio et audit des six pages 0.1.49 — 6 novembre 2026
+https://www.rfc-editor.org/rfc/rfc8216.html
+https://developer.chrome.com/docs/extensions/reference/api/webRequest#caching
+https://developers.dailymotion.com/docs/player-embed-script-web
+https://developers.dailymotion.com/v0/reference/migration-guide-new-embed-endpoint
+Manifestes et lecteurs natifs réellement observés dans Chrome 156, sans création d’URL/PlayerID ni exécution de script fournisseur dans l’extension. Les empreintes des pistes réutilisent les préfixes déjà contrôlés et les ressources ordonnées ; elles ne sont pas un checksum intégral. La comparaison gk Vidzy reste limitée aux clés locales, jamais aux requêtes. Dailymotion graphique fournit un vrai lecteur, alors que le même Chrome headless, avec ou sans extension, ne reçoit que le HTML SEO. Voir DETECTION-SITES.md, COFLIX.md et public-pages-0.1.49.json ; aucun film public complet téléchargé pour ce lot.
+
+Reprise French-stream avec bloqueur — 6 novembre 2026, Alcydeo 0.1.49 inchangé
+https://github.com/uBlockOrigin/uBOL-home
+https://github.com/uBlockOrigin/uBOL-home/releases/tag/2026.1103.1743
+https://french-stream.net/index.php?newsid=15138750
+uBlock Origin Lite MV3 officiel 2026.1103.1743, archive Chromium SHA256 79236476535b63706749e088e0ce99bb31d3d2ff15fabb4d7e990be23d6e4613 conforme au digest GitHub. Mode Complete choisi par le tableau de bord dans un profil Chrome 156 isolé ; six listes par défaut, blocage réseau comparé à un témoin local inoffensif. Extension de test GPL-3.0 conservée uniquement sous .local/test-tools, sans redistribution ni ajout au produit. Lecture réelle Vidzy 360p/audio séparé et Voe 720p, contrôles existants ready ; Dood non validé après redirection about:blank. Aucune requête média/signature inventée ni film complet téléchargé. Bilan expurgé dans DETECTION-SITES.md.
+
+Sources confirmées et métadonnées — 0.1.50, 6 novembre 2026
+https://developer.chrome.com/docs/extensions/reference/api/scripting
+https://mediabunny.dev/guide/reading-media-files
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Range
+https://www.rfc-editor.org/rfc/rfc9110.html#name-content-range
+https://www.rfc-editor.org/rfc/rfc8216.html
+Mediabunny1.65.0 installé relu comme source primaire : Input/BufferSource, dimensions de présentation sans computeDuration ni décodage. CustomSource a été étudié mais écarté ici pour éviter une allocation commandée par la taille moov distante ; parcours ISO-BMFF original borné des en-têtes mvhd/tkhd/hdlr, matrices simples et refus des incertitudes. Les champs de taille partielle ne remplacent pas le total source ; HLS estimate seulement si toutes EXTINF sont complètes. Échéance absolue de l’injection TikTok ajoutée, sans promesse d’annuler chrome.scripting.
+https://odysee.com/@gohantips:1/This-New-Germany-Inspired-Pok%C3%A9mon-Game-Has-Choices,-Regional-Forms---More!:5
+https://www.tiktok.com/@ler0i_off/video/7700630488859315489
+https://www.instagram.com/reels/DfStKkeyi9N/
+Observation de vrais lecteurs/catalogues JSON natifs avec uBOL officiel Complete. TikTok et Odysee déjà détectés en49 ; Reel Instagram corrigé par catalogue focal lu comme données, sans exécution du JS fournisseur ni appel de ses API. Fichiers réels distincts et décodés : TikTok2 683 229octets et Instagram21 929 838octets ; Odysee limité au lecteur/manifeste/échantillons. Les sorties/captures publiques sont ignorées et non distribuées. Voir INSTAGRAM.md,TIKTOK.md et rapports expurgés50.
+
+Diagnostics TikTok/Odysee et découpe précise — 0.1.51, 6 novembre 2026
+https://developer.chrome.com/docs/automation-and-testing/chrome-for-testing
+https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+Chrome for Testing156.0.8078.4 win64 officiel, en plus du laboratoire Linux, dans un profil isolé dédié avec uBOL Complete. Aucun profil Chrome personnel copié ou piloté. Cette comparaison ne suffit pas à identifier l’absence de détection dans la session utilisateur.
+https://www.rfc-editor.org/rfc/rfc9110.html#name-retry-after
+https://www.rfc-editor.org/rfc/rfc6585.html#section-4
+https://vuejs.org/guide/components/v-model.html
+429 et Retry-After restent des limites de source, pas une invitation à modifier une URL ou des identifiants. Saisie des temps par composant local Vue, sans éditeur distant ni nouvelle dépendance.
+
+Alternatives TikTok — 0.1.52, recherches du 8 novembre 2026
+https://github.com/yt-dlp/yt-dlp/blob/412e7f0a4b0588fe884a02b344ac66a06538475b/yt_dlp/extractor/tiktok.py#L606
+https://github.com/yt-dlp/yt-dlp/blob/412e7f0a4b0588fe884a02b344ac66a06538475b/LICENSE
+Source Python relue au commit 412e7f0a4b0588fe884a02b344ac66a06538475b, Unlicense : énumération des UrlList natives de bitrateInfo et playAddr ; downloadAddr potentiellement filigrané, URL de page www.tiktok.com écartées. Aucun code repris, installé ou exécuté. Les mécanismes optionnels d’API mobile/appareil/cookies et l’en-tête Referer explicite ne sont pas transposés dans Alcydeo.
+https://github.com/Andrei-Alb/ttsorter/blob/a84dcefcadc56017d3fc16b75c09214404c19c02/ttsorter/src/hook.js#L24
+https://github.com/Andrei-Alb/ttsorter/blob/a84dcefcadc56017d3fc16b75c09214404c19c02/LICENSE
+Source relue au commit a84dcefcadc56017d3fc16b75c09214404c19c02, MIT : conserve les UrlList natives et essaie plusieurs adresses. Principe utile pour un repli borné original ; aucun hook général, tampon de fichier entier, referrer explicite ou téléchargement sans validation repris. Le transport Alcydeo conserve ses contrôles de portée, son écriture progressive et ses validations.
+https://github.com/N0tMaggi/maggi-media-downloader/blob/12a43075277b27685e78f9935adafe3e88c2d26b/src/shared/provider.ts#L4
+https://github.com/N0tMaggi/maggi-media-downloader/blob/12a43075277b27685e78f9935adafe3e88c2d26b/LICENSE.txt
+Source relue au commit 12a43075277b27685e78f9935adafe3e88c2d26b, MIT : dépend d’un résolveur distant api.maggi.dev ; écarté du cœur local sans backend. Aucun appel à ce service ni code repris.
+https://fetch.spec.whatwg.org/#cors-protocol-and-credentials
+La compatibilité CORS selon le mode de credentials a été étudiée comme hypothèse ; aucun défaut de ce mode n’a été prouvé pour le post utilisateur. Le candidat 0.1.52 conserve include et ne propose pas de retry anonyme ni de no-cors. Note de recherche brute conservée uniquement dans .local/detection52/github-research.md ; seuls les constats et références épinglées sont publiables.
+
+Métadonnées du lecteur TikTok — observation du 8 novembre 2026
+https://www.tiktok.com/@ler0i_off/video/7700630488859315489
+https://developer.chrome.com/docs/extensions/reference/api/scripting#type-ExecutionWorld
+Dans le vrai lecteur de ce post, les props React reliées au DOM vidéo exposent memoizedProps puis children.2.props.detail.itemInfo.itemStruct, sous un retour de fibre observé à 34 puis 39. L’ID correspond au post et cinq lignes natives de qualité sont présentes. Le lecteur original borné ne dépend pas d’un numéro fixe de retour ; aucune API React/TikTok stable n’est revendiquée. Les champs __reactFiber$/__reactProps$, leur graphe et leurs noms sont des détails d’implémentation observés et susceptibles de changer, pas un contrat public pris en charge par le fournisseur.
+Une copie diagnostique restitue 10 586 caractères de JSON minimal en environ 5 ms aller-retour, avant le dernier garde de getter personnalisé. Mesure ponctuelle de requête/injection, pas benchmark CPU ni latence finale garantie. Aucun auteur, statistique, fonction ou prop brute n’est copié ; le JSON minimal est reparsé dans le monde isolé sans rétention de catalogue lecteur. Un refus explicite du catalogue JSON natif garde priorité. Aucun hook fetch/XHR, appel API, signature, cookie ou script distant ajouté. Les chemins expurgés et diagnostics restent sous .local/detection52/ ignoré.
+
+Restauration de l’observation — 8 novembre 2026, Alcydeo 0.1.52
+https://developer.chrome.com/docs/extensions/reference/api/scripting#type-InjectionTarget
+https://developer.chrome.com/docs/extensions/reference/api/scripting#type-InjectionResult
+DocumentIds disponibles depuis Chrome 106, dans la cible Chrome 156. La sonde et le travail ultérieur ciblent le même document pour éviter d’appliquer une ancienne décision à un onglet navigué/rechargé. Tests contrôlés about:blank, rechargement même URL, changement de politique/époque et sonde de trois profils réels. Le retour undefined sérialisé en null a été confirmé par un appel executeScript dans Chrome 156.
+
+Contrôle CORS/Range TikTok et diagnostic — 0.1.53, 8 novembre2026
+https://fetch.spec.whatwg.org/#cors-protocol-and-credentials
+https://developer.mozilla.org/en-US/docs/Glossary/CORS-safelisted_response_header
+https://www.rfc-editor.org/rfc/rfc9110.html#name-416-range-not-satisfiable
+https://developer.chrome.com/docs/extensions/reference/api/permissions#method-contains
+https://developer.chrome.com/docs/extensions/reference/api/scripting#type-InjectionTarget
+Trois scénarios originaux démontrent que lecture native et contrôle peuvent diverger : ACAO* ne permet pas include, Content-Range n’est pas exposé par défaut, Range peut être refusé tandis que GET fonctionne. Ces scénarios ne sont pas présentés comme cause prouvée du post utilisateur. Repli original normal CORS borné ; aucun no-cors, cookie lu/copié, signature ou refus HTTP contourné. Le mode decredentials confirmé est conservé jusqu’au transfert. Le produit Video Downloader Plus n’a pas été exécuté ni son algorithme établi pendant cette révision ; l’observation comparative provient de l’utilisateur. Diagnostic local limité aux compteurs/états/erreurs sûres, sans réseau supplémentaire ni transmission automatique.
+
+1fichier — allocateur et erreursCloud 0.1.56,8novembre2026
+https://1fichier.com/api.html#s-upload-get_upload_server
+POST anonyme réel sans fichier : HTTP200, {id,url}, identifiant10 alphanumérique et ru-3.1fichier.com. Docs GET200 : serveur variable selon charge, champ url=hôte nu ; exemples up2/exemple.1fichier.com non exhaustifs. GET page d’accueil : formulaire up2. Une seconde sonde Chrome156 origine extension reçoit up3 et valide le parseur courant ; ne pas la présenter comme une seconde réponse réelle ru-3. Aucun corps média/rapport distant/redirection/cookie/auth ni identifiant persisté. Familles upN et ru-N bornées ; aucun autre domaine inventé. Tests multipart/completion restent interceptés et le fournisseur expérimental. Rapport expurgé dans benchmarks/onefichier-initialization-0.1.56.json.
+
+
+Cloud compact / Google Cast web — 0.1.63, 8 novembre2026
+https://developers.google.com/cast/docs/web_sender/integrate
+https://developers.google.com/cast/docs/media
+https://github.com/googlecast/CastVideos-chrome/tree/e97c410d0f21d38f2717c990df10db8577958cc4
+Exemple officiel Apache-2.0 : setOptions, requestSession, MediaInfo/LoadRequest, RemotePlayerController. Lecture de référence uniquement ; aucune source redistribuée/copied. SDK Google exécuté sur le site uniquement, pas dans l’extension.
+https://github.com/silvermine/videojs-chromecast/tree/ee87f9bcad423b48560cbb5340b5b577d61af853
+MIT, comparaison du cycle de session/chargement ; aucune dépendance ni code repris.
+https://app.vidow.io/ (session individuelle conservée uniquement dans les archives locales)
+Page publique fournie, ouverte dans un profil isolé CFT156 avec uBOL2026.1103.1743 Complete six listes. UI et scripts publics lus comme données : SDK/framework officiel, requestSession puis LOAD de son URL de session réseau ; certaines pistes utilisent son backend privé combine. Ce n’est pas une validation du service privé ni d’un transport File/Blob vers Shield. Aucun script/code tiers exécuté dans Alcydeo, copié ou redistribué ; données brutes ignorées.
+https://storage.googleapis.com/cpe-sample-media/content.json
+https://storage.googleapis.com/cpe-sample-media/content/ads/chromecast_ultra_ad/prog/chromecast_ultra_ad_prog.mp4
+Démonstration officielle37s/3358787octets : HEAD200, GET2064096octets, video/mp4 et ACAO*, sans redirection. Lecture Shield déclarée réussie par l’utilisateur après échec de la première démo W3C. Le clip n’est pas redistribué. Différence CORS observée, cause du premier échec non établie. Le laboratoire valide SDK/picker sans récepteur et simule séparément les transitions ; ne pas confondre les preuves.
+
+
+Cast cancellation/media lifecycle — 0.1.64,8novembre2026
+https://developers.google.com/cast/docs/reference/web_sender/cast.framework.CastSession
+https://developers.google.com/cast/docs/reference/web_sender/cast.framework.SessionEventType
+https://developers.google.com/cast/docs/reference/web_sender/chrome.cast.media.Media
+https://developers.google.com/cast/docs/reference/web_sender/chrome.cast.ErrorCode
+Media.addUpdateListener/removeUpdateListener, idleReason enums and nullable getMediaSession : observer l’erreur réellement reçue plutôt que déduire une cause de isMediaLoaded=false. Annulation du picker n’est pas un échec média ni la preuve d’une déconnexion d’une route existante. TestsCAFsimulés séparés des prompts natifs réels et des sondesCDN ; aucun récepteur matériel au laboratoire.
+https://developers.google.com/cast/docs/media
+La documentation exige CORS pour les protocoles adaptatifs ; un échec fetchCORS sur le Web Sender ne suffit pas à expliquer la lecture MP4 du récepteur. Ne pas déclarer une cause réseau/cookie/CORS depuis le seul rapport utilisateur. Aucun proxy tiers utilisé.
+
+Lecteur intégré et comparaison de session — 0.1.65, 8 novembre 2026
+https://developers.google.com/cast/docs/reference/web_sender/chrome.cast.media.LoadRequest
+https://developers.google.com/cast/docs/reference/web_sender/cast.framework.RemotePlayerController
+LOAD buffered explicite à zéro après fin d’aperçu ; directs sans position implicite. Commandes lecture/pause, seek et volume du récepteur distinguées des événements HTML locaux. Aucune répétition automatique de LOAD après FINISHED ou refus.
+https://app.vidow.io/ (session individuelle conservée uniquement dans les archives locales)
+Session courante fournie par l’utilisateur, HTML et scripts publics lus comme données. ContentId observé : URL native TikTok directe inchangée, sans audio séparé ; ce constat ne démontre pas un proxy MP4 général. L’outil distinct de fichier local contient un parcours d’upload dans son client ; aucune invocation de son API privée ni upload effectué. Le CRX officiel4.0.0 a été lu/extrait comme données dans .local uniquement, jamais installé/exécuté ou redistribué. L’utilisateur n’a pas encore essayé le comparatif Alcydeo sur exactement cette URL média.
+https://github.com/johanholmerin/browsercast/tree/d61703a9180570bed92fc1d6d59e34cc39d1b4cd
+MIT ; lecture du protocole WebRTC/DataChannel/ServiceWorker côté récepteur comme piste de recherche, aucun code exécuté ou intégré. Un tel transport dépend d’un récepteur enregistré/hébergé distinct ; aucun déploiement, usage du récepteur tiers ni validation Shield dans Alcydeo. Ne pas présenter cette recherche comme un Cast privé fonctionnel.

@@ -1,0 +1,5 @@
+<!doctype html><html><title>Extensionless media player</title><video controls></video><script>
+document.querySelector('video').src=URL.createObjectURL(new MediaSource());
+fetch('http://127.0.0.1:4179/manifest').then(r=>r.text());
+fetch('http://127.0.0.1:4179/direct-stream',{headers:{Range:'bytes=0-1023'}}).then(r=>r.arrayBuffer());
+</script></html>

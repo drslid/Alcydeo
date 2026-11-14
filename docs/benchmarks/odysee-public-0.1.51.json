@@ -1,0 +1,359 @@
+{
+  "version": "0.1.51",
+  "date": "2026-11-06",
+  "realPublicPage": true,
+  "page": "https://odysee.com/@gohantips:1/This-New-Germany-Inspired-Pok%C3%A9mon-Game-Has-Choices,-Regional-Forms---More!:5",
+  "environment": {
+    "node": "24.22.2",
+    "browser": "Google Chrome for Testing156.0.8078.4",
+    "platform": "Linux x86_64 laboratory",
+    "mode": "native GUI",
+    "isolatedTestProfiles": true,
+    "personalWindowsProfileUsed": false,
+    "userAgentOverride": false,
+    "copiedAccountOrCookies": false
+  },
+  "blocker": {
+    "name": "uBlock Origin Lite official MV3",
+    "version": "2026.1103.1743",
+    "repository": "https://github.com/uBlockOrigin/uBOL-home",
+    "release": "https://github.com/uBlockOrigin/uBOL-home/releases/tag/2026.1103.1743",
+    "asset": "https://github.com/uBlockOrigin/uBOL-home/releases/download/2026.1103.1743/uBOLite_2026.1103.1743.chromium.zip",
+    "sha256": "79236476535b63706749e088e0ce99bb31d3d2ff15fabb4d7e990be23d6e4613",
+    "officialAssetDigestMatched": true,
+    "mode": "Complete selected through dashboard UI",
+    "enabledRulesets": [
+      "ublock-filters",
+      "easylist",
+      "easyprivacy",
+      "pgl",
+      "ublock-badware",
+      "urlhaus-full"
+    ],
+    "testToolOnly": true,
+    "bundledInAlcydeo": false
+  },
+  "earlierEvidence": {
+    "version": "0.1.49",
+    "scope": "Playback, manifests and bounded prefixes only; no complete transfer",
+    "report": "platforms-public-0.1.50.json"
+  },
+  "publicTransfers": [
+    {
+      "version": "0.1.50",
+      "stage": "Copied0.1.50 diagnostic runtime before first-error preservation",
+      "startedAt": "2026-11-06T20:48:42.371Z",
+      "quality": "144p",
+      "httpPageStatus": 200,
+      "nativePlaybackPausedBeforeTransfer": true,
+      "managerKeptOpen": true,
+      "explicitDownloadClicks": 1,
+      "totalPlannedFragments": 64,
+      "completeCheckpoints": 18,
+      "checkpointBytes": 3955520,
+      "state": "failed",
+      "error": "cancelled",
+      "workerErrorObserved": false,
+      "leaseExpiredBeforeFailure": false,
+      "assembled": false,
+      "saved": false,
+      "chromeDownloadRecords": 0,
+      "completeFileDecoded": false,
+      "profileClosed": true
+    },
+    {
+      "version": "0.1.51",
+      "stage": "0.1.51 intermediate runtime with first-error preservation and exhausted429 retryLater",
+      "startedAt": "2026-11-06T20:59:17.464Z",
+      "quality": "720p",
+      "httpPageStatus": 200,
+      "nativePlaybackPausedBeforeTransfer": true,
+      "managerKeptOpen": true,
+      "explicitDownloadClicks": 1,
+      "totalPlannedFragments": 64,
+      "completeCheckpoints": 23,
+      "checkpointBytes": 22167268,
+      "state": "failed",
+      "error": "retryLater",
+      "workerErrorObserved": false,
+      "leaseExpiredBeforeFailure": false,
+      "assembled": false,
+      "saved": false,
+      "chromeDownloadRecords": 0,
+      "completeFileDecoded": false,
+      "profileClosed": true
+    }
+  ],
+  "boundedNativePrefixProbes": [
+    {
+      "date": "2026-11-06T20:51:42.279Z",
+      "quality": "144p",
+      "requestedBytesPerSample": 4096,
+      "concurrency": 1,
+      "unchangedNativeUrls": true,
+      "cacheBusting": false,
+      "samples": [
+        {
+          "nativeSegmentIndex": 4,
+          "status": 429,
+          "contentType": "text/plain; charset=utf-8",
+          "readBytes": 15,
+          "retryAfter": null
+        },
+        {
+          "nativeSegmentIndex": 6,
+          "status": 429,
+          "contentType": "text/plain; charset=utf-8",
+          "readBytes": 15,
+          "retryAfter": null
+        },
+        {
+          "nativeSegmentIndex": 5,
+          "status": 206,
+          "contentType": "video/mp2t",
+          "readBytes": 4096,
+          "retryAfter": null
+        }
+      ],
+      "profileClosed": true
+    },
+    {
+      "date": "2026-11-06T20:52:42.780Z",
+      "quality": "360p",
+      "requestedBytesPerSample": 4096,
+      "concurrency": 1,
+      "unchangedNativeUrls": true,
+      "cacheBusting": false,
+      "samples": [
+        {
+          "nativeSegmentIndex": 4,
+          "status": 429,
+          "contentType": "text/plain; charset=utf-8",
+          "readBytes": 15,
+          "retryAfter": null
+        },
+        {
+          "nativeSegmentIndex": 6,
+          "status": 206,
+          "contentType": "video/mp2t",
+          "readBytes": 4096,
+          "retryAfter": null
+        },
+        {
+          "nativeSegmentIndex": 5,
+          "status": 429,
+          "contentType": "text/plain; charset=utf-8",
+          "readBytes": 15,
+          "retryAfter": null
+        }
+      ],
+      "profileClosed": true
+    },
+    {
+      "date": "2026-11-06T20:58:43.369Z",
+      "quality": "720p",
+      "requestedBytesPerSample": 4096,
+      "concurrency": 1,
+      "unchangedNativeUrls": true,
+      "cacheBusting": false,
+      "samples": [
+        {
+          "nativeSegmentIndex": 4,
+          "status": 206,
+          "contentType": "video/mp2t",
+          "readBytes": 4096,
+          "retryAfter": null
+        },
+        {
+          "nativeSegmentIndex": 6,
+          "status": 206,
+          "contentType": "video/mp2t",
+          "readBytes": 4096,
+          "retryAfter": null
+        },
+        {
+          "nativeSegmentIndex": 5,
+          "status": 206,
+          "contentType": "video/mp2t",
+          "readBytes": 4096,
+          "retryAfter": null
+        }
+      ],
+      "profileClosed": true
+    }
+  ],
+  "laterLowCadence720Probe": {
+    "date": "2026-11-06T21:02:04.575Z",
+    "nativeSegmentIndex": 18,
+    "playbackPaused": true,
+    "probeSpacingMs": 3000,
+    "extensionResponses": [
+      {
+        "cacheMode": "no-store",
+        "status": 429,
+        "bytes": 15,
+        "retryAfter": null
+      },
+      {
+        "cacheMode": "default",
+        "status": 429,
+        "bytes": 15,
+        "retryAfter": null
+      }
+    ],
+    "nativeFrameFetches": {
+      "count": 2,
+      "browserFetchRejected": true,
+      "httpStatusNotEstablished": true,
+      "credentialsMode": "include",
+      "matchesObservedNativeMode": false,
+      "limitation": "This earlier credentialed probe did not use the anonymous mode of the native player and was inconclusive for source availability."
+    },
+    "nativePreloadRequestsPrevented": 0,
+    "noPositiveEvidenceOfAlternateContextOrCacheFix": true,
+    "profileClosed": true
+  },
+  "publicFailureDetails": {
+    "144pRefusedIndices": [
+      4,
+      6
+    ],
+    "720pLaterRefusedIndices": [
+      18,
+      19,
+      25
+    ],
+    "retryAfterHeaderPresent": false,
+    "noEtagOnCheckpointedPublicSegments": true,
+    "serverMessage": "Try again later",
+    "requestedInterruptedMessageReproduced": false,
+    "uncaughtWorkerErrorObserved": false,
+    "leaseLossObserved": false,
+    "completePublicFiles": 0,
+    "publicChromeDownloadRecords": 0,
+    "fullFileDecodeClaimed": false
+  },
+  "correction": {
+    "firstActualFragmentErrorCapturedBeforeSiblingAbort": true,
+    "allSettledSlotOrderNoLongerSelectsCause": true,
+    "exhausted429Diagnostic": "retryLater",
+    "maximumHlsFragmentConcurrency": 3,
+    "maximumNetworkAttempts": 4,
+    "existingRetryAfterPolicyUnchanged": true,
+    "explicitPauseOrCancelRetainsState": true,
+    "onlyCompleteFragmentsCheckpointed": true,
+    "manualRecoveryVersionChecksUnchanged": true,
+    "noNewPermissionsOrProviderApi": true,
+    "noRemoteExecutableOrHeaderSignatureWorkaround": true,
+    "noSpeculativeGlobalSchedulerRewrite": true
+  },
+  "verification": {
+    "red50": [
+      "Primary403 expected expired, received cancelled",
+      "Exhausted429 expected retryLater, received cancelled"
+    ],
+    "redNetworkUnit": "Four exhausted429 responses returned network before the classification fix",
+    "unitPassed": 38,
+    "lintTargeted": "passed",
+    "installedChromeFinal": {
+      "version": "0.1.51",
+      "passed": 6,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "durationMs": 11236.244,
+      "cases": [
+        "Primary HLS403 survives sibling cancellation",
+        "Exhausted429 is retryLater",
+        "Explicit pause remains paused",
+        "Explicit cancellation during Retry-After remains cancelled",
+        "Parallel DASH403 preserves cause",
+        "Parallel DASH429 preserves cause"
+      ]
+    },
+    "dashRaceHypothesis": "Not reproduced on the intermediate runtime; cases retained as regression coverage",
+    "publicSuccessNotInferredFromFixtures": true
+  },
+  "runtimeSnapshots": {
+    "baseline50": {
+      "version": "0.1.50",
+      "runtimeTreeSha256": "643c9a89d347a318247a609ad2568283e632615534d98410f76874bdb75cde0e",
+      "files": 99,
+      "bytes": 5718942,
+      "method": "SHA256 ordered relative path NUL per-file-SHA256 NUL byte-size newline transcript"
+    },
+    "intermediate51": {
+      "version": "0.1.51",
+      "runtimeTreeSha256": "18027ec6ab59cd01458262020694216db2825e384b1f32031ab83b0ef0a6c725",
+      "files": 99,
+      "bytes": 5728580,
+      "method": "SHA256 ordered relative path NUL per-file-SHA256 NUL byte-size newline transcript"
+    },
+    "final51": {
+      "version": "0.1.51",
+      "runtimeTreeSha256": "4de1bf7a614cd117f80ffae28f26d45409988c26ab24b335f158436d6454368f",
+      "files": 99,
+      "bytes": 5733876,
+      "method": "SHA256 ordered relative path NUL per-file-SHA256 NUL byte-size newline transcript"
+    }
+  },
+  "budgets": {
+    "720pMaximumTestMs": 240000,
+    "720pApprovedLaboratoryLimitBytes": 200000000,
+    "720pConservativeCancellationThresholdBytes": 150000000,
+    "720pBudgetReached": false,
+    "1080pAttempted": false,
+    "360pCompleteTransferAttempted": false
+  },
+  "limits": [
+    "The exact interrupted report was not reproduced with a fresh manager; the observed failure and its error masking are distinct evidence.",
+    "Persistent429 responses were observed at particular native positions in these sessions, not established as a universal site or quality outage.",
+    "Prefix accessibility and native playback do not prove that every later segment is available.",
+    "No declared equivalent native alternative for the refused resources was used, and no signature/query/cache-busting value was invented.",
+    "Neither public transfer produced a complete file or a decode result.",
+    "Saved fragments without a strong validator are not promised as reusable resumed bytes."
+  ],
+  "allProfilesClosed": true,
+  "publicMediaManifestsCapturesRedistributed": false,
+  "signedSourceUrlsCookiesOrPrivatePathsIncluded": false,
+  "externalUpload": false,
+  "externalPublication": false,
+  "correctedNativeCredentialProbe": {
+    "date": "2026-11-06T21:10:06.974Z",
+    "httpPageStatus": 200,
+    "nativeMediaRequestsObserved": 21,
+    "nativeXhrCount": 19,
+    "nativeXhrWithCredentials": false,
+    "nativeFetchCount": 2,
+    "nativeFetchCredentials": "same-origin",
+    "nativeRequestsModified": false,
+    "nativeSegmentIndex": 18,
+    "requestedPrefixBytes": 4096,
+    "nativePlaybackPaused": true,
+    "comparison": [
+      {
+        "role": "extension",
+        "credentials": "include",
+        "status": 429,
+        "contentType": "text/plain; charset=utf-8",
+        "readBytes": 15,
+        "retryAfter": null
+      },
+      {
+        "role": "native-frame",
+        "credentials": "same-origin",
+        "status": 429,
+        "contentType": "text/plain; charset=utf-8",
+        "readBytes": 15,
+        "retryAfter": null
+      }
+    ],
+    "observedAccessControlAllowOrigin": "*",
+    "nativeAnonymousFetchReadable": true,
+    "nativeAnonymousFetchStillReturned429": true,
+    "initialIncludeProbeCorsErrorWasNotProofOfHttpStatus": true,
+    "positiveEvidenceOfAlternateWorkingTransport": false,
+    "additionalFullDownload": false,
+    "profileClosed": true
+  }
+}

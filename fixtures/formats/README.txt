@@ -1,0 +1,1 @@
+Synthetic local corpus derived from Alcydeo’s original test pattern and sine-wave fixtures. Generated with scripts/feature-fixtures.mjs using development-only FFmpeg. Used to verify original download bytes for each container, not browser playback or universal conversion support.

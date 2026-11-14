@@ -1,0 +1,77 @@
+{
+  "version": "0.1.38",
+  "networkX": true,
+  "page": "https://x.com/MoviesCIips/status/2117600764822466899",
+  "browser": "156.0.8078.80",
+  "date": "2026-11-03T19:33:49.917Z",
+  "accessBypass": false,
+  "status": 200,
+  "beforePopup": {
+    "badge": "1",
+    "media": [
+      {
+        "title": "People getting kill*d daily🔞 on X / X",
+        "providerId": "x:2117600764822466899:2117600683423879169",
+        "kind": "direct",
+        "variants": [
+          {
+            "label": "320p",
+            "height": 320,
+            "host": "video.twimg.com"
+          }
+        ]
+      }
+    ]
+  },
+  "checked": [
+    {
+      "title": "People getting kill*d daily🔞 on X / X",
+      "providerId": "x:2117600764822466899:2117600683423879169",
+      "variants": [
+        {
+          "label": "320p",
+          "check": {
+            "checkedAt": 1793734432985,
+            "contentType": "video/mp4",
+            "size": 1545730,
+            "state": "ready"
+          }
+        }
+      ]
+    }
+  ],
+  "catalogItems": [
+    {
+      "mediaId": "2117600683423879169",
+      "formatCount": 2
+    }
+  ],
+  "download": {
+    "filename": "People getting kill_d daily🔞 on X _ X (2).mp4",
+    "state": "complete",
+    "exists": true,
+    "bytes": 1545730
+  },
+  "explicitLocalFileVerification": true,
+  "task": {
+    "title": "People getting kill_d daily🔞 on X _ X",
+    "state": "completed",
+    "saved": true,
+    "validation": {
+      "duration": 57.55733333333333,
+      "tracks": [
+        {
+          "type": "video",
+          "codec": "avc"
+        },
+        {
+          "type": "audio",
+          "codec": "aac"
+        }
+      ],
+      "bytes": 1545730,
+      "method": "local-structure",
+      "checkedAt": 1793734435513
+    }
+  }
+}

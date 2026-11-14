@@ -1,0 +1,34 @@
+import {test,expect,chromium,type BrowserContext,type Page} from '@playwright/test';
+import {resolve} from 'node:path';
+import {mkdir,writeFile} from 'node:fs/promises';
+import {performance} from 'node:perf_hooks';
+let context:BrowserContext,ui:Page,base:string;
+const measurements:{scenario:string;badgeMs:number;pageReadyState:string}[]=[];
+test.describe.configure({mode:'serial'});
+test.beforeAll(async()=>{
+  const extension=resolve(process.env.ALCYDEO_EXTENSION_PATH??'apps/extension/.output/chrome-mv3');context=await chromium.launchPersistentContext('',{executablePath:process.env.CHROMIUM_PATH,channel:process.env.CHROMIUM_PATH?undefined:'chromium',headless:true,args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,'--no-sandbox','--test-type']});
+  const sw=context.serviceWorkers()[0]??await context.waitForEvent('serviceworker');base=`chrome-extension://${new URL(sw.url()).host}`;ui=await context.newPage();await ui.goto(`${base}/manager.html`);
+});
+test.afterAll(async()=>{await mkdir('artifacts/benchmarks',{recursive:true});await writeFile(`artifacts/benchmarks/${process.env.ALCYDEO_BADGE_REPORT??'badge-latency'}.json`,JSON.stringify({extension:process.env.ALCYDEO_EXTENSION_PATH??'current build',measurements},null,2)+'\n');await context?.close();});
+async function tabId(page:Page){return ui.evaluate(async url=>(await chrome.tabs.query({})).find(t=>t.url===url)!.id!,page.url());}
+async function firstBadge(id:number){const stop=performance.now()+6000;while(performance.now()<stop){const badge=await ui.evaluate(id=>chrome.action.getBadgeText({tabId:id}),id);if(badge)return badge;await new Promise(r=>setTimeout(r,10));}throw new Error('No badge within six seconds');}
+
+test('DOM source announces its badge while a parser-blocking resource is still loading',async()=>{
+  const page=await context.newPage();await page.goto('http://127.0.0.1:4179/badge-dom-early.html',{waitUntil:'commit'});await page.locator('a').waitFor({state:'attached'});const id=await tabId(page),start=performance.now();expect(await firstBadge(id)).toBe('1');const elapsed=performance.now()-start;const ready=await page.evaluate(()=>document.readyState);measurements.push({scenario:'DOM before document idle',badgeMs:Math.round(elapsed),pageReadyState:ready});expect(elapsed).toBeLessThan(600);expect(ready).not.toBe('complete');await page.locator('a').evaluate((a:HTMLAnchorElement)=>a.href='/empty.html');await expect.poll(()=>ui.evaluate(id=>chrome.action.getBadgeText({tabId:id}),id),{timeout:1000}).toBe('');await page.close();
+});
+test('network source waits for its validation before the badge, independently of an unrelated frame',async()=>{
+  const page=await context.newPage();const response=page.waitForResponse(r=>r.url().endsWith('/badge-source.m3u8'));await page.goto('http://127.0.0.1:4179/badge-network-early.html',{waitUntil:'domcontentloaded'});const id=await tabId(page);await response;const start=performance.now();expect(await firstBadge(id)).toBe('1');const elapsed=performance.now()-start;const ready=await page.evaluate(()=>document.readyState);measurements.push({scenario:'Network while iframe loads',badgeMs:Math.round(elapsed),pageReadyState:ready});expect(elapsed).toBeGreaterThanOrEqual(2400);expect(elapsed).toBeLessThan(4000);expect(ready).not.toBe('complete');
+  const resolved=()=>ui.evaluate(async id=>(await chrome.runtime.sendMessage({type:'snapshot',tabId:id})).data.media[0]?.qualitiesResolved??false,id);expect(await resolved()).toBe(true);await page.evaluate(()=>{const f=document.createElement('iframe');f.src='/badge-slow-frame.html';document.body.append(f);});for(let i=0;i<5;i++){expect(await ui.evaluate(id=>chrome.action.getBadgeText({tabId:id}),id)).toBe('1');await new Promise(r=>setTimeout(r,50));}await expect.poll(resolved).toBe(true);expect(await ui.evaluate(id=>chrome.action.getBadgeText({tabId:id}),id)).toBe('1');await page.close();
+});
+test('continuous unrelated DOM updates do not postpone a newly inserted video link',async()=>{
+  const page=await context.newPage();await page.goto('http://127.0.0.1:4179/badge-noise.html');const id=await tabId(page);await page.waitForTimeout(350);const start=performance.now();await page.evaluate(()=>{const a=document.createElement('a');a.href='/media/low.mp4';a.textContent='New video';document.body.append(a);});expect(await firstBadge(id)).toBe('1');const elapsed=performance.now()-start;measurements.push({scenario:'Media inserted during DOM churn',badgeMs:Math.round(elapsed),pageReadyState:await page.evaluate(()=>document.readyState)});expect(elapsed).toBeLessThan(600);await page.close();
+});
+test('a waking worker processes media before restoring observers in other loading tabs',async()=>{
+  const slow=await context.newPage();await slow.goto('http://127.0.0.1:4179/badge-slow-frame.html',{waitUntil:'commit'});
+  const session=await context.browser()!.newBrowserCDPSession();const targets=await session.send('Target.getTargets');const worker=targets.targetInfos.find(t=>t.type==='service_worker'&&t.url.startsWith(base))!;await session.send('Target.closeTarget',{targetId:worker.targetId});
+  const page=await context.newPage();const response=page.waitForResponse(r=>r.url().endsWith('/manifest'));await page.goto('http://127.0.0.1:4179/network-only.html',{waitUntil:'domcontentloaded'});const id=await tabId(page);await response;const start=performance.now();expect(await firstBadge(id)).toMatch(/^[12]$/);const elapsed=performance.now()-start;const ready=await slow.evaluate(()=>document.readyState);measurements.push({scenario:'Worker wake with another loading tab',badgeMs:Math.round(elapsed),pageReadyState:ready});expect(elapsed).toBeLessThan(500);expect(ready).not.toBe('complete');await page.close();await slow.close();
+});
+test('a busy cross-site renderer cannot hold up a confirmed network badge',async()=>{
+  const page=await context.newPage();const key=crypto.randomUUID();await page.goto(`http://127.0.0.1:4179/badge-busy-network.html?case=${key}`,{waitUntil:'commit'});const id=await tabId(page);let sentAt=0;await expect.poll(async()=>{sentAt=(await(await fetch(`http://127.0.0.1:4179/badge-busy-state?case=${key}`)).json()).sentAt;return sentAt;},{intervals:[10],timeout:5000}).toBeGreaterThan(0);
+  expect(await firstBadge(id)).toBe('1');const observedAt=Date.now(),elapsed=observedAt-sentAt;await expect.poll(()=>page.evaluate(()=>(window as any).busyInterval??null)).not.toBeNull();const interval=await page.evaluate(()=>(window as any).busyInterval);expect(sentAt).toBeGreaterThanOrEqual(interval.start);expect(observedAt).toBeLessThan(interval.end);measurements.push({scenario:'Network while cross-site renderer is busy',badgeMs:elapsed,pageReadyState:await page.evaluate(()=>document.readyState)});expect(elapsed).toBeGreaterThanOrEqual(2400);expect(elapsed).toBeLessThan(4000);await page.close();
+});

@@ -1,0 +1,12 @@
+{
+  "version": "0.1.16",
+  "browser": "156.0.8078.80",
+  "elapsedMs": 165,
+  "state": "failed",
+  "error": "conversionCodec",
+  "conversion": {
+    "input": "input.original",
+    "inputBytes": 10531224,
+    "ready": true
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "version": "0.1.23",
+  "environment": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "browser": "156.0.8078.80",
+    "platform": "Linux/WSL2",
+    "nativeWindowsTested": false
+  },
+  "unitTests": 183,
+  "e2e": {
+    "startTime": "2026-11-01T22:03:44.318Z",
+    "duration": 47890.604999999996,
+    "expected": 31,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "scope": "Targeted installed-extension cases; not the full suite",
+  "workspace": {
+    "sidebarTab": true,
+    "directToolsRouteAndReload": true,
+    "trim": {
+      "start": 1,
+      "end": 3,
+      "validatedDurationSeconds": 2
+    },
+    "merge": {
+      "version": "0.1.23",
+      "browser": "156.0.8078.80",
+      "names": [
+        "Second.webm",
+        "First.mov"
+      ],
+      "validation": {
+        "duration": 12.096,
+        "tracks": [
+          {
+            "type": "video",
+            "codec": "avc"
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ],
+        "bytes": 2381047,
+        "method": "local-structure",
+        "checkedAt": 1793570670886
+      }
+    },
+    "locales": 10,
+    "widths": [
+      1440,
+      900,
+      390
+    ],
+    "rtl": [
+      "ar",
+      "ur"
+    ],
+    "originalsKept": true,
+    "sharedEditorModalRegressions": true
+  },
+  "limitations": [
+    "Codec/layout limits of existing media tools remain unchanged",
+    "Windows installation and native dialogs not driven",
+    "No external cloud transfer or publication"
+  ],
+  "packaging": {
+    "testedCodeMatchesPackagedBuild": true,
+    "filesChecked": 13,
+    "artifacts": [
+      {
+        "name": "alcydeo-0.1.23-chrome.zip",
+        "bytes": 2108315,
+        "sha256": "9f26117124e34e3220f9f7ef80594be9367633a467fc2746538a90f51a238add"
+      },
+      {
+        "name": "alcydeo-store-0.1.23-chrome.zip",
+        "bytes": 2058538,
+        "sha256": "b6ee9cfcb82bed84d7942e03b71d2e0c680bb9f4976e7fcfe39faf4279c22ab7"
+      },
+      {
+        "name": "alcydeo-0.1.23-local-test.crx",
+        "bytes": 2121536,
+        "sha256": "928ad94e3bacaadb2791f1413dc73b414072984dd42e8010999bd95abc175573"
+      },
+      {
+        "name": "alcydeo-pages-0.1.23.zip",
+        "bytes": 2222562,
+        "sha256": "2fb3931fb574357a7f45b885b46a24bc87d49678451e550b66ee0ef5e83ee839"
+      }
+    ]
+  },
+  "storeOutputs": {
+    "version": "0.1.23",
+    "storeBuild": true,
+    "browser": "156.0.8078.80",
+    "size": [
+      1280,
+      800
+    ],
+    "realLocalOutputs": [
+      {
+        "operation": "merge",
+        "title": "copy",
+        "validation": {
+          "duration": 12.096,
+          "tracks": [
+            {
+              "type": "video",
+              "codec": "avc"
+            },
+            {
+              "type": "audio",
+              "codec": "aac"
+            }
+          ],
+          "bytes": 2381051,
+          "method": "local-structure",
+          "checkedAt": 1793570779709
+        },
+        "saved": true
+      },
+      {
+        "operation": "trim",
+        "title": "transcode",
+        "validation": {
+          "duration": 2.005333333333333,
+          "tracks": [
+            {
+              "type": "video",
+              "codec": "avc"
+            },
+            {
+              "type": "audio",
+              "codec": "aac"
+            }
+          ],
+          "bytes": 242800,
+          "method": "local-structure",
+          "checkedAt": 1793570778016
+        },
+        "saved": true
+      }
+    ],
+    "publication": false
+  },
+  "site": {
+    "pages": 102,
+    "locales": 10,
+    "guidesVisited": 20,
+    "base": "/alcydeo/",
+    "published": false
+  }
+}

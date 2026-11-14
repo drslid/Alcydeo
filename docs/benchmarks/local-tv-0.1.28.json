@@ -1,0 +1,41 @@
+{
+  "version": "0.1.28",
+  "date": "2026-11-03",
+  "node": "24.22.2",
+  "pnpm": "12.5.1",
+  "browser": "156.0.8078.80",
+  "platform": "Linux/WSL2",
+  "typecheck": "pass",
+  "lint": "pass",
+  "unitTests": 230,
+  "targetedE2E": {
+    "expected": 39,
+    "unexpected": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "localFileTests": 14
+  },
+  "realLocalMP4Playback": true,
+  "localPlaybackLocales": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "zh_CN",
+    "ar",
+    "ru",
+    "pt",
+    "hi",
+    "ur"
+  ],
+  "httpRequestsFromLocalFileSelectionAndPlayback": 0,
+  "guideInvokesPresentationApi": false,
+  "savedOutputs": "OPFS retained copy uses meaningful filename; native disk files require explicit picker",
+  "cleanup": "pause, remove src, revoke URL on replacement, close or navigation",
+  "nativeCastReceiverProtocol": "simulated, separately marked",
+  "physicalReceiverTested": false,
+  "nativeWindowsChromeTested": false,
+  "localFileCastMethod": "user starts Cast tab in Chrome menu; in-app button shows instructions only",
+  "storeSmoke": "pass, synthetic ordinary source and YouTube exclusion",
+  "externalPublication": false
+}

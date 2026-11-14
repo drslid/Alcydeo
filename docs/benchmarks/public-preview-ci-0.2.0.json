@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "version": "0.2.0",
+  "recordedAt": "2026-11-14T16:43:24.936Z",
+  "scope": "Local rehearsal of the explicit GitHub Actions browser-smoke selection. This is not a GitHub-hosted workflow result or a full E2E/hardware certification.",
+  "environment": {
+    "platform": "Linux x64",
+    "node": "v24.22.2",
+    "pnpm": "12.5.1",
+    "playwright": "1.64.1",
+    "browser": "Google Chrome for Testing 156.0.8078.4"
+  },
+  "checks": [
+    {
+      "name": "Complete unit suite",
+      "status": "passed",
+      "files": 60,
+      "tests": 1032
+    },
+    {
+      "name": "Case-sensitive Pages checker regressions",
+      "status": "passed",
+      "tests": 5
+    },
+    {
+      "name": "Metadata logging regressions",
+      "status": "passed",
+      "tests": 3
+    },
+    {
+      "name": "Related media/preflight unit tests",
+      "status": "passed",
+      "tests": 102
+    },
+    {
+      "name": "Extension typecheck",
+      "status": "passed"
+    },
+    {
+      "name": "Changed JavaScript/TypeScript ESLint",
+      "status": "passed"
+    },
+    {
+      "name": "Workflow YAML parsing and full action SHA pins",
+      "status": "passed"
+    },
+    {
+      "name": "Browser smoke",
+      "status": "passed",
+      "passed": 62,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "durationMs": 148326.30299999999,
+      "retries": 0,
+      "workers": 1
+    }
+  ],
+  "browserFiles": [
+    "tests/e2e/extension.spec.ts",
+    "tests/e2e/segmented.spec.ts",
+    "tests/e2e/site-access.spec.ts",
+    "tests/e2e/popup-locales.spec.ts",
+    "tests/e2e/cast-web.spec.ts",
+    "tests/e2e/cast-handoff.spec.ts"
+  ],
+  "coverage": [
+    "Installed-extension detection, quality selection, direct/HLS/DASH downloads and saved files",
+    "Persistence, worker interruption, checkpoint recovery, cancellation and permission removal",
+    "Popup activity in ten languages, including RTL",
+    "Controlled SDK Cast lifecycle and popup/library handoff",
+    "Timed metadata, exact prefix/full-transfer byte ranges, opaque fragments and codec/HTML guards"
+  ],
+  "correctedFailures": [
+    {
+      "baseline": {
+        "passed": 54,
+        "failed": 1,
+        "notRun": 7
+      },
+      "cause": "The background prefix-metadata parser emitted the known timed-ID3 warning outside the existing media logging policy.",
+      "fix": "Use the exact warning policy lazily for bounded metadata parsing; reference-count concurrent logging scopes and retain unknown warnings and codec refusal."
+    },
+    {
+      "baseline": {
+        "passed": 55,
+        "failed": 1,
+        "notRun": 6
+      },
+      "cause": "The legacy Range assertion counted four transfer requests but omitted two current bounded prechecks.",
+      "fix": "Assert the two exact prefix ranges separately from the four exact fixture transfer ranges; keep file, track and duration assertions."
+    }
+  ],
+  "limits": [
+    "The selected browser suite uses original local fixtures and controlled SDK responses.",
+    "Other E2E files remain available and are not included in this 62-test selection.",
+    "Physical Cast/AirPlay receivers, public providers, private accounts and large-file benchmarks are not certified here.",
+    "GitHub Pages deployment and GitHub Release publication are separate maintainer actions."
+  ],
+  "publicationPerformedByThisAgent": false
+}

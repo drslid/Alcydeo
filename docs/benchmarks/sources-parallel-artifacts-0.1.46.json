@@ -1,0 +1,54 @@
+{
+  "version": "0.1.46",
+  "publication": false,
+  "files": [
+    {
+      "name": "alcydeo-0.1.46-chrome.zip",
+      "bytes": 2360782,
+      "sha256": "12c7d0600b756df820e2a58e0335daa605023f7641efb5c69d81ecd3393ecc62"
+    },
+    {
+      "name": "alcydeo-0.1.46-local-test.crx",
+      "bytes": 2374957,
+      "sha256": "7320360762d601fb86accd062b0aec1e05f00c8b90379fe2979e8b94f66e2b67"
+    },
+    {
+      "name": "alcydeo-store-0.1.46-chrome.zip",
+      "bytes": 2304507,
+      "sha256": "eb536e895bb3edb8a51d7b277bc5da081a942ed6d718b02aa16ca4e8bec8e98e"
+    },
+    {
+      "name": "alcydeo-pages-0.1.46.zip",
+      "bytes": 2690414,
+      "sha256": "304071b52c55632d52bb99bc1909f57e8124586a2111e172dea1b6113e3dde2d"
+    },
+    {
+      "name": "alcydeo-brand-0.1.46.zip",
+      "bytes": 1368392,
+      "sha256": "fb71d391437edd47884b210be54729c068139da3f39da952be05fa9bdfde17b2"
+    }
+  ],
+  "local": {
+    "files": 99,
+    "archiveEqualsBuild": true,
+    "executableAndUiMatchTestedBuild": true,
+    "regeneratedLicenseArchives": [],
+    "correspondingPinnedSourcesUnchanged": true
+  },
+  "store": {
+    "files": 99,
+    "archiveEqualsBuild": true,
+    "executableAndUiMatchTestedBuild": true,
+    "regeneratedLicenseArchives": [],
+    "correspondingPinnedSourcesUnchanged": true
+  },
+  "crx3PayloadMatchesLocalZip": true,
+  "pages": {
+    "files": 277,
+    "htmlPages": 103,
+    "localeRoutes": 10,
+    "base": "/alcydeo/",
+    "archiveEqualsBuild": true
+  },
+  "brandKitFiles": 41
+}

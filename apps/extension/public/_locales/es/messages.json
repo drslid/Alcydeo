@@ -1,0 +1,2006 @@
+{
+  "detectionDiagnostics": {
+    "message": "Diagnóstico de detección",
+    "description": "Alcydeo interface: detectionDiagnostics"
+  },
+  "detectionDiagnosticsReport": {
+    "message": "Informe local de detección",
+    "description": "Alcydeo interface: detectionDiagnosticsReport"
+  },
+  "detectionDiagnosticsLoading": {
+    "message": "Preparando el informe local…",
+    "description": "Alcydeo interface: detectionDiagnosticsLoading"
+  },
+  "detectionDiagnosticsRefresh": {
+    "message": "Actualizar",
+    "description": "Alcydeo interface: detectionDiagnosticsRefresh"
+  },
+  "detectionDiagnosticsCopy": {
+    "message": "Copiar informe",
+    "description": "Alcydeo interface: detectionDiagnosticsCopy"
+  },
+  "detectionDiagnosticsCopied": {
+    "message": "Informe copiado.",
+    "description": "Alcydeo interface: detectionDiagnosticsCopied"
+  },
+  "detectionDiagnosticsCopyHint": {
+    "message": "El portapapeles no está disponible. El informe está seleccionado para copiarlo manualmente.",
+    "description": "Alcydeo interface: detectionDiagnosticsCopyHint"
+  },
+  "detectionDiagnosticsError": {
+    "message": "No se pudo preparar el informe. Vuelve a pulsar Actualizar.",
+    "description": "Alcydeo interface: detectionDiagnosticsError"
+  },
+  "detectionDiagnosticsPrivacy": {
+    "message": "Informe local, sin enlaces de vídeo, cookies ni firmas. No se envía nada.",
+    "description": "Alcydeo interface: detectionDiagnosticsPrivacy"
+  },
+  "detectionDiagnosticsAccessError": {
+    "message": "Abre los detalles de Alcydeo en chrome://extensions para revisar el acceso a sitios.",
+    "description": "Alcydeo interface: detectionDiagnosticsAccessError"
+  },
+  "cropTool": {
+    "message": "Recortar encuadre",
+    "description": "Alcydeo interface: cropTool"
+  },
+  "cropHint": {
+    "message": "Selecciona un área del vídeo para exportarla como un MP4 nuevo. Se conserva el original.",
+    "description": "Alcydeo interface: cropHint"
+  },
+  "cropDrawHint": {
+    "message": "Arrastra para dibujar un área nueva. Arrastra dentro para moverla o usa los tiradores para cambiar su tamaño. Las flechas la mueven 1 píxel; mantén Mayús para 10 píxeles.",
+    "description": "Alcydeo interface: cropDrawHint"
+  },
+  "cropArea": {
+    "message": "Área seleccionada",
+    "description": "Alcydeo interface: cropArea"
+  },
+  "cropReset": {
+    "message": "Encuadre completo",
+    "description": "Alcydeo interface: cropReset"
+  },
+  "cropLeft": {
+    "message": "X (px)",
+    "description": "Alcydeo interface: cropLeft"
+  },
+  "cropTop": {
+    "message": "Y (px)",
+    "description": "Alcydeo interface: cropTop"
+  },
+  "cropWidth": {
+    "message": "Anchura (px)",
+    "description": "Alcydeo interface: cropWidth"
+  },
+  "cropHeight": {
+    "message": "Altura (px)",
+    "description": "Alcydeo interface: cropHeight"
+  },
+  "cropPreview": {
+    "message": "Vista previa del encuadre",
+    "description": "Alcydeo interface: cropPreview"
+  },
+  "cropExport": {
+    "message": "Exportar vídeo recortado",
+    "description": "Alcydeo interface: cropExport"
+  },
+  "cropResize": {
+    "message": "Cambiar el tamaño del área",
+    "description": "Alcydeo interface: cropResize"
+  },
+  "cropRange": {
+    "message": "Elige un área de al menos 2 × 2 píxeles completamente dentro del vídeo.",
+    "description": "Alcydeo interface: cropRange"
+  },
+  "chromeSiteAccess": {
+    "message": "Acceso a sitios en Chrome",
+    "description": "Alcydeo interface: chromeSiteAccess"
+  },
+  "chromeAccessRestricted": {
+    "message": "Los ajustes de Chrome restringen el acceso a este sitio.",
+    "description": "Alcydeo interface: chromeAccessRestricted"
+  },
+  "openWebPage": {
+    "message": "Abre una página web",
+    "description": "Alcydeo interface: openWebPage"
+  },
+  "openWebPageHint": {
+    "message": "Abre un sitio con un vídeo para detectar sus fuentes.",
+    "description": "Alcydeo interface: openWebPageHint"
+  },
+  "popupActivity": {
+    "message": "Actividad",
+    "description": "Alcydeo interface: popupActivity"
+  },
+  "moreActions": {
+    "message": "Más acciones",
+    "description": "Alcydeo interface: moreActions"
+  },
+  "tiktokHint": {
+    "message": "Mantén abiertas la pestaña TikTok y el gestor. Tras una interrupción, reanudar reinicia este archivo desde el principio.",
+    "description": "Alcydeo interface: tiktokHint"
+  },
+  "tools": {
+    "message": "Herramientas de vídeo",
+    "description": "Alcydeo interface: tools"
+  },
+  "manager_tools_description": {
+    "message": "Recorta un vídeo o une clips en el orden que elijas. El procesamiento es local.",
+    "description": "Alcydeo interface: manager_tools_description"
+  },
+  "popupSources": {
+    "message": "Fuentes",
+    "description": "Alcydeo interface: popupSources"
+  },
+  "popupSaved": {
+    "message": "Guardado",
+    "description": "Alcydeo interface: popupSaved"
+  },
+  "popupContinue": {
+    "message": "Las descargas continúan al cerrar esta ventana. Mantén abierta la pestaña del gestor para flujos segmentados.",
+    "description": "Alcydeo interface: popupContinue"
+  },
+  "conversionQuality": {
+    "message": "Calidad del vídeo",
+    "description": "Alcydeo interface: conversionQuality"
+  },
+  "conversionQuality_auto": {
+    "message": "Automática · copiar vídeo compatible",
+    "description": "Alcydeo interface: conversionQuality_auto"
+  },
+  "conversionQuality_high": {
+    "message": "Alta calidad",
+    "description": "Alcydeo interface: conversionQuality_high"
+  },
+  "conversionQuality_balanced": {
+    "message": "Equilibrada",
+    "description": "Alcydeo interface: conversionQuality_balanced"
+  },
+  "conversionQuality_small": {
+    "message": "Archivo más pequeño",
+    "description": "Alcydeo interface: conversionQuality_small"
+  },
+  "conversionResolution": {
+    "message": "Resolución máxima",
+    "description": "Alcydeo interface: conversionResolution"
+  },
+  "conversionOriginal": {
+    "message": "Original · sin ampliar",
+    "description": "Alcydeo interface: conversionOriginal"
+  },
+  "conversionAudio": {
+    "message": "Tasa de audio",
+    "description": "Alcydeo interface: conversionAudio"
+  },
+  "conversionAudioAuto": {
+    "message": "Automática · copiar AAC compatible",
+    "description": "Alcydeo interface: conversionAudioAuto"
+  },
+  "conversionOptionsHint": {
+    "message": "Valores predeterminados para MP4. Cambiar calidad, resolución o audio puede requerir recodificar. Tamaño y velocidad dependen del original y del equipo.",
+    "description": "Alcydeo interface: conversionOptionsHint"
+  },
+  "liveRefresh": {
+    "message": "Actualizar fuentes",
+    "description": "Alcydeo interface: liveRefresh"
+  },
+  "liveStopping": {
+    "message": "Terminando el segmento actual",
+    "description": "Alcydeo interface: liveStopping"
+  },
+  "liveMode": {
+    "message": "Flujo del reproductor",
+    "description": "Alcydeo interface: liveMode"
+  },
+  "captureMode": {
+    "message": "Captura de pestaña",
+    "description": "Alcydeo interface: captureMode"
+  },
+  "liveTitle": {
+    "message": "Grabar un flujo en directo",
+    "description": "Alcydeo interface: liveTitle"
+  },
+  "liveSources": {
+    "message": "Fuentes HLS detectadas",
+    "description": "Alcydeo interface: liveSources"
+  },
+  "liveNoSource": {
+    "message": "Elige una fuente o pega su URL",
+    "description": "Alcydeo interface: liveNoSource"
+  },
+  "liveUrl": {
+    "message": "O una URL de flujo HLS (.m3u8)",
+    "description": "Alcydeo interface: liveUrl"
+  },
+  "liveStart": {
+    "message": "Grabar flujo",
+    "description": "Alcydeo interface: liveStart"
+  },
+  "liveHint": {
+    "message": "Guarda directamente los segmentos HLS con la calidad original. Admite TS/fMP4 sin cifrar con audio y vídeo en el mismo flujo. Mantén abierto el gestor. Para otras fuentes usa Captura de pestaña.",
+    "description": "Alcydeo interface: liveHint"
+  },
+  "liveBoundary": {
+    "message": "Empieza en un segmento completo reciente, que puede incluir unos segundos anteriores al clic. Detener y guardar termina el segmento actual y crea un MP4 comprobado. No recupera la emisión anterior.",
+    "description": "Alcydeo interface: liveBoundary"
+  },
+  "liveAudio": {
+    "message": "Este directo tiene audio separado. Usa una fuente HLS combinada o Captura de pestaña; no se guarda un vídeo sin su audio.",
+    "description": "Alcydeo interface: liveAudio"
+  },
+  "notLive": {
+    "message": "No es un flujo HLS en directo activo. Usa Descargar para un vídeo finalizado o elige otra fuente.",
+    "description": "Alcydeo interface: notLive"
+  },
+  "liveGap": {
+    "message": "Hay segmentos en directo no disponibles. Se detuvo la grabación y solo se conserva la parte continua recibida.",
+    "description": "Alcydeo interface: liveGap"
+  },
+  "liveVariant": {
+    "message": "Esta variante HLS en directo no es compatible. Prueba una fuente de segmentos completos o Captura de pestaña.",
+    "description": "Alcydeo interface: liveVariant"
+  },
+  "liveEmpty": {
+    "message": "No se recibió ningún segmento completo. No se guardó un vídeo vacío.",
+    "description": "Alcydeo interface: liveEmpty"
+  },
+  "liveInterrupted": {
+    "message": "Se interrumpió la grabación. Guarda la parte recibida; no se recupera el tiempo de emisión perdido.",
+    "description": "Alcydeo interface: liveInterrupted"
+  },
+  "notice_liveIncomplete": {
+    "message": "Grabación parcial: este archivo solo contiene la parte continua recibida.",
+    "description": "Alcydeo interface: notice_liveIncomplete"
+  },
+  "cloudOptional": {
+    "message": "Transferencia opcional",
+    "description": "Alcydeo interface: cloudOptional"
+  },
+  "help": {
+    "message": "Ayuda",
+    "description": "Alcydeo interface: help"
+  },
+  "helpLocal": {
+    "message": "El sitio de ayuda está preparado localmente y aún no está publicado.",
+    "description": "Alcydeo interface: helpLocal"
+  },
+  "helpOpen": {
+    "message": "Abrir sitio de ayuda",
+    "description": "Alcydeo interface: helpOpen"
+  },
+  "minimumSize": {
+    "message": "Ignorar archivos menores de",
+    "description": "Alcydeo interface: minimumSize"
+  },
+  "sizeFilterHint": {
+    "message": "Los tamaños desconocidos siguen visibles. Una lista no tiene el tamaño del vídeo.",
+    "description": "Alcydeo interface: sizeFilterHint"
+  },
+  "blockedHint": {
+    "message": "Un dominio o URL por línea, incluidos sus subdominios. Los demás sitios se examinan con la detección automática.",
+    "description": "Alcydeo interface: blockedHint"
+  },
+  "mediaTools": {
+    "message": "Herramientas de vídeo",
+    "description": "Alcydeo interface: mediaTools"
+  },
+  "operation": {
+    "message": "Acción",
+    "description": "Alcydeo interface: operation"
+  },
+  "convertTool": {
+    "message": "Convertir a MP4",
+    "description": "Alcydeo interface: convertTool"
+  },
+  "compressTool": {
+    "message": "Comprimir",
+    "description": "Alcydeo interface: compressTool"
+  },
+  "mergeTool": {
+    "message": "Unir clips",
+    "description": "Alcydeo interface: mergeTool"
+  },
+  "trimTool": {
+    "message": "Recortar",
+    "description": "Alcydeo interface: trimTool"
+  },
+  "convertHint": {
+    "message": "Conversión local a MP4 H.264/AAC. Se indican los códecs no admitidos.",
+    "description": "Alcydeo interface: convertHint"
+  },
+  "compressHint": {
+    "message": "Crea un MP4 H.264/AAC local con los valores de compresión de Ajustes. No se garantiza un archivo menor.",
+    "description": "Alcydeo interface: compressHint"
+  },
+  "mergeHint": {
+    "message": "Elige 2–20 clips y ordénalos. MP4 hasta 720p/30 fps. Cada clip debe tener una pista de vídeo y la misma distribución de audio.",
+    "description": "Alcydeo interface: mergeHint"
+  },
+  "trimHint": {
+    "message": "Arrastra los marcadores para elegir el inicio y el final, previsualiza y guarda la selección en MP4.",
+    "description": "Alcydeo interface: trimHint"
+  },
+  "chooseVideos": {
+    "message": "Elegir vídeos",
+    "description": "Alcydeo interface: chooseVideos"
+  },
+  "trimStart": {
+    "message": "Inicio (segundos)",
+    "description": "Alcydeo interface: trimStart"
+  },
+  "trimEnd": {
+    "message": "Fin (segundos)",
+    "description": "Alcydeo interface: trimEnd"
+  },
+  "moveUp": {
+    "message": "Subir",
+    "description": "Alcydeo interface: moveUp"
+  },
+  "moveDown": {
+    "message": "Bajar",
+    "description": "Alcydeo interface: moveDown"
+  },
+  "startTool": {
+    "message": "Añadir a la cola",
+    "description": "Alcydeo interface: startTool"
+  },
+  "trimRange": {
+    "message": "Elige un tramo válido dentro del vídeo.",
+    "description": "Alcydeo interface: trimRange"
+  },
+  "mergeTracks": {
+    "message": "Estos clips no se pueden unir con las pistas o códecs admitidos.",
+    "description": "Alcydeo interface: mergeTracks"
+  },
+  "record": {
+    "message": "Grabar",
+    "description": "Alcydeo interface: record"
+  },
+  "recordStream": {
+    "message": "Grabar emisión",
+    "description": "Alcydeo interface: recordStream"
+  },
+  "recording": {
+    "message": "Grabando",
+    "description": "Alcydeo interface: recording"
+  },
+  "startRecording": {
+    "message": "Elegir pestaña para grabar",
+    "description": "Alcydeo interface: startRecording"
+  },
+  "stopRecording": {
+    "message": "Detener y guardar",
+    "description": "Alcydeo interface: stopRecording"
+  },
+  "recordHint": {
+    "message": "Captura la pestaña desde la ventana del complemento o elige una pantalla aquí. Mayor bitrate y resolución de origen. Mantén abierto el gestor.",
+    "description": "Alcydeo interface: recordHint"
+  },
+  "recordNoAudio": {
+    "message": "No se compartió audio. Detén y vuelve a elegir la pestaña con audio si lo necesitas.",
+    "description": "Alcydeo interface: recordNoAudio"
+  },
+  "recoverRecording": {
+    "message": "Guardar parte grabada",
+    "description": "Alcydeo interface: recoverRecording"
+  },
+  "recordingInterrupted": {
+    "message": "La grabación se interrumpió. Se puede comprobar y guardar la parte escrita. Una nueva grabación requiere otra selección.",
+    "description": "Alcydeo interface: recordingInterrupted"
+  },
+  "recordingDenied": {
+    "message": "La grabación no fue autorizada o se cerró el selector.",
+    "description": "Alcydeo interface: recordingDenied"
+  },
+  "recordingUnavailable": {
+    "message": "Chrome no pudo capturar la superficie elegida.",
+    "description": "Alcydeo interface: recordingUnavailable"
+  },
+  "recordingSlow": {
+    "message": "La grabación se detuvo porque el almacenamiento no pudo seguir el ritmo. Se conserva la parte disponible.",
+    "description": "Alcydeo interface: recordingSlow"
+  },
+  "notice_recordingIncomplete": {
+    "message": "Grabación recuperada: solo contiene la parte capturada.",
+    "description": "Alcydeo interface: notice_recordingIncomplete"
+  },
+  "cloud": {
+    "message": "Nube",
+    "description": "Alcydeo interface: cloud"
+  },
+  "cloudHint": {
+    "message": "Envía solo el archivo elegido al pulsar Enviar. Sin sincronización automática.",
+    "description": "Alcydeo interface: cloudHint"
+  },
+  "cloudProvider": {
+    "message": "Destino",
+    "description": "Alcydeo interface: cloudProvider"
+  },
+  "cloudChooseFile": {
+    "message": "Elegir archivo para enviar",
+    "description": "Alcydeo interface: cloudChooseFile"
+  },
+  "cloudShare": {
+    "message": "Compartir con Gofile",
+    "description": "Alcydeo interface: cloudShare"
+  },
+  "cloudSave": {
+    "message": "Guardar en mi nube",
+    "description": "Alcydeo interface: cloudSave"
+  },
+  "gofilePublic": {
+    "message": "Gofile no requiere iniciar sesión y crea un enlace público. Quien tenga el enlace puede acceder. La conservación depende de Gofile.",
+    "description": "Alcydeo interface: gofilePublic"
+  },
+  "cloudConnected": {
+    "message": "Conectado en esta sesión",
+    "description": "Alcydeo interface: cloudConnected"
+  },
+  "cloudDisconnected": {
+    "message": "Sin conexión",
+    "description": "Alcydeo interface: cloudDisconnected"
+  },
+  "cloudConnect": {
+    "message": "Conectar cuenta",
+    "description": "Alcydeo interface: cloudConnect"
+  },
+  "cloudDisconnect": {
+    "message": "Desconectar",
+    "description": "Alcydeo interface: cloudDisconnect"
+  },
+  "cloudConfiguration": {
+    "message": "Configuración de conexión",
+    "description": "Alcydeo interface: cloudConfiguration"
+  },
+  "cloudConfigurationHint": {
+    "message": "Se debe registrar una aplicación OAuth para este ID de extensión. Drive usa un cliente Chrome Extension al compilar; OneDrive un cliente SPA público con esta URI. La extensión no lleva secretos.",
+    "description": "Alcydeo interface: cloudConfigurationHint"
+  },
+  "cloudClientId": {
+    "message": "ID de cliente público",
+    "description": "Alcydeo interface: cloudClientId"
+  },
+  "cloudKeepOpen": {
+    "message": "Mantén el gestor abierto. Una copia temporal conserva el archivo elegido. Eliminar la entrada borra su copia local y conserva el archivo remoto.",
+    "description": "Alcydeo interface: cloudKeepOpen"
+  },
+  "gofileRestart": {
+    "message": "Gofile no permite reanudar por partes aquí. Reanudar vuelve a enviar desde el inicio.",
+    "description": "Alcydeo interface: gofileRestart"
+  },
+  "cloudOpen": {
+    "message": "Abrir archivo remoto",
+    "description": "Alcydeo interface: cloudOpen"
+  },
+  "cloudSetup": {
+    "message": "OAuth no está configurado en este build local. Consulta la configuración.",
+    "description": "Alcydeo interface: cloudSetup"
+  },
+  "cloudAuth": {
+    "message": "Conecta o vuelve a conectar la cuenta elegida.",
+    "description": "Alcydeo interface: cloudAuth"
+  },
+  "cloudNetwork": {
+    "message": "El envío no terminó. Revisa la conexión y reintenta.",
+    "description": "Alcydeo interface: cloudNetwork"
+  },
+  "cloudResponse": {
+    "message": "El servicio no confirmó un archivo válido.",
+    "description": "Alcydeo interface: cloudResponse"
+  },
+  "cloudRate": {
+    "message": "El servicio limita los envíos. Espera antes de reintentar.",
+    "description": "Alcydeo interface: cloudRate"
+  },
+  "cloudExpired": {
+    "message": "La sesión caducó. Reanudar crea otro envío. Comprueba si ya hay un archivo completo en tu nube.",
+    "description": "Alcydeo interface: cloudExpired"
+  },
+  "cloudInput": {
+    "message": "Elige de nuevo el archivo local; falta su copia temporal o está incompleta.",
+    "description": "Alcydeo interface: cloudInput"
+  },
+  "cloudInterrupted": {
+    "message": "El gestor se cerró o el envío se detuvo. Reanuda cuando quieras.",
+    "description": "Alcydeo interface: cloudInterrupted"
+  },
+  "cloud_preparing": {
+    "message": "Preparando archivo",
+    "description": "Alcydeo interface: cloud_preparing"
+  },
+  "cloud_queued": {
+    "message": "En cola",
+    "description": "Alcydeo interface: cloud_queued"
+  },
+  "cloud_uploading": {
+    "message": "Enviando",
+    "description": "Alcydeo interface: cloud_uploading"
+  },
+  "cloud_paused": {
+    "message": "En pausa",
+    "description": "Alcydeo interface: cloud_paused"
+  },
+  "cloud_completed": {
+    "message": "Enviado",
+    "description": "Alcydeo interface: cloud_completed"
+  },
+  "cloud_cancelled": {
+    "message": "Cancelado",
+    "description": "Alcydeo interface: cloud_cancelled"
+  },
+  "cloud_failed": {
+    "message": "Fallido",
+    "description": "Alcydeo interface: cloud_failed"
+  },
+  "formatsScope": {
+    "message": "Descargas de originales; estas extensiones no garantizan reproducir o convertir todos los códecs en Chrome. M3U8 y MPD describen emisiones por segmentos.",
+    "description": "Alcydeo interface: formatsScope"
+  },
+  "featureLimits": {
+    "message": "Chrome de escritorio. Pruebas locales de originales, HLS VOD sin cifrar y DASH de un período. Sin DRM ni compatibilidad universal de códecs. Cast es experimental; falta validar receptores. La captura depende de la fuente y del PC.",
+    "description": "Alcydeo interface: featureLimits"
+  },
+  "cloudSharing": {
+    "message": "Compartir un enlace",
+    "description": "Alcydeo interface: cloudSharing"
+  },
+  "cloudStorage": {
+    "message": "Guardar en la nube",
+    "description": "Alcydeo interface: cloudStorage"
+  },
+  "cloudNoAccount": {
+    "message": "Sin cuenta",
+    "description": "Alcydeo interface: cloudNoAccount"
+  },
+  "cloudWithAccount": {
+    "message": "Requiere cuenta",
+    "description": "Alcydeo interface: cloudWithAccount"
+  },
+  "cloudUploadLink": {
+    "message": "Enlace de subida",
+    "description": "Alcydeo interface: cloudUploadLink"
+  },
+  "cloudPcloudDestination": {
+    "message": "Enlace o código de subida",
+    "description": "Alcydeo interface: cloudPcloudDestination"
+  },
+  "cloudPcloudRegion": {
+    "message": "Región de datos de la carpeta",
+    "description": "Alcydeo interface: cloudPcloudRegion"
+  },
+  "cloudRegionEu": {
+    "message": "Europa",
+    "description": "Alcydeo interface: cloudRegionEu"
+  },
+  "cloudRegionUs": {
+    "message": "Estados Unidos",
+    "description": "Alcydeo interface: cloudRegionUs"
+  },
+  "cloudPcloudSend": {
+    "message": "Enviar a pCloud",
+    "description": "Alcydeo interface: cloudPcloudSend"
+  },
+  "cloudPcloudHint": {
+    "message": "Sin iniciar sesión aquí: pega un enlace de subida pCloud existente y elige la región de la carpeta. Su propietario necesita una cuenta pCloud. El archivo se deposita allí sin crear un enlace público de descarga.",
+    "description": "Alcydeo interface: cloudPcloudHint"
+  },
+  "cloudPcloudLink": {
+    "message": "Introduce un enlace o código de subida pCloud válido y comprueba la región. Los enlaces de descarga no son de subida.",
+    "description": "Alcydeo interface: cloudPcloudLink"
+  },
+  "cloudPcloudQuota": {
+    "message": "La carpeta de destino alcanzó el límite de espacio o archivos.",
+    "description": "Alcydeo interface: cloudPcloudQuota"
+  },
+  "cloudPcloudSent": {
+    "message": "pCloud confirmó el depósito. El propietario puede recuperar el archivo; no se creó enlace público.",
+    "description": "Alcydeo interface: cloudPcloudSent"
+  },
+  "cloudRestart": {
+    "message": "Reintentar envía el archivo entero. Si se perdió la respuesta, revisa el destino para evitar duplicados.",
+    "description": "Alcydeo interface: cloudRestart"
+  },
+  "cloudValidation": {
+    "message": "Los protocolos se prueban localmente. Falta validar envíos reales; MegaUp es experimental. pCloud necesita un enlace de subida existente.",
+    "description": "Alcydeo interface: cloudValidation"
+  },
+  "cloudOnefichierSend": {
+    "message": "Compartir con 1fichier",
+    "description": "Alcydeo interface: cloudOnefichierSend"
+  },
+  "cloudOnefichierOpen": {
+    "message": "Abrir 1fichier",
+    "description": "Alcydeo interface: cloudOnefichierOpen"
+  },
+  "cloudOnefichierHint": {
+    "message": "Uso experimental sin cuenta. Cualquiera con el enlace puede acceder. El almacenamiento no se garantiza después de 15 días; conserva el original. La disponibilidad puede tardar tras el envío.",
+    "description": "Alcydeo interface: cloudOnefichierHint"
+  },
+  "cloudOnefichierPending": {
+    "message": "Enviando archivo. No hay porcentaje exacto para este destino; esperando confirmación.",
+    "description": "Alcydeo interface: cloudOnefichierPending"
+  },
+  "err_cloudOnefichierUnavailable": {
+    "message": "1fichier no proporcionó un destino de subida válido. No se envió ningún archivo en este intento. Reintenta más tarde o elige otro destino.",
+    "description": "Alcydeo interface: err_cloudOnefichierUnavailable"
+  },
+  "cloudSendAll": {
+    "message": "Enviar a todas las nubes sin configuración",
+    "description": "Alcydeo interface: cloudSendAll"
+  },
+  "cloudSendAllHint": {
+    "message": "Gofile · MegaUp · 1fichier · Turbobit. Se aplican los límites de cada servicio.",
+    "description": "Alcydeo interface: cloudSendAllHint"
+  },
+  "cloudPreparedDestinations": {
+    "message": "Ya preparados: $1",
+    "description": "Alcydeo interface: cloudPreparedDestinations"
+  },
+  "cloudTargetTooLarge": {
+    "message": "$1 · $2: el archivo supera $3; se omitió.",
+    "description": "Alcydeo interface: cloudTargetTooLarge"
+  },
+  "cloudTargetPreparationFailed": {
+    "message": "$1 · $2: $3",
+    "description": "Alcydeo interface: cloudTargetPreparationFailed"
+  },
+  "cloudSendActions": {
+    "message": "Opciones de envío",
+    "description": "Alcydeo interface: cloudSendActions"
+  },
+  "cloudClearTemporary": {
+    "message": "Eliminar archivos temporales",
+    "description": "Alcydeo interface: cloudClearTemporary"
+  },
+  "cloudClearTemporaryHint": {
+    "message": "Elimina las copias locales de Nube y cancela los envíos en espera. Se conservan los originales y los enlaces para compartir.",
+    "description": "Alcydeo interface: cloudClearTemporaryHint"
+  },
+  "cloudTemporaryCleared": {
+    "message": "Archivos temporales eliminados. Se conservan el historial de envíos y los enlaces para compartir.",
+    "description": "Alcydeo interface: cloudTemporaryCleared"
+  },
+  "cloudTemporaryBusy": {
+    "message": "Hay una transferencia o preparación en curso. Espera a que termine o cancélala antes de limpiar.",
+    "description": "Alcydeo interface: cloudTemporaryBusy"
+  },
+  "cloudTemporaryFailed": {
+    "message": "No se pudieron eliminar algunas copias temporales. Reinténtalo.",
+    "description": "Alcydeo interface: cloudTemporaryFailed"
+  },
+  "cloudSendAllCompact": {
+    "message": "Todos sin configurar",
+    "description": "Alcydeo interface: cloudSendAllCompact"
+  },
+  "cloudClearTemporaryCompact": {
+    "message": "Limpiar copias locales",
+    "description": "Alcydeo interface: cloudClearTemporaryCompact"
+  },
+  "cloudProviderDetails": {
+    "message": "Detalles del servicio",
+    "description": "Alcydeo interface: cloudProviderDetails"
+  },
+  "cloudHistory": {
+    "message": "Envíos",
+    "description": "Alcydeo interface: cloudHistory"
+  },
+  "cloudKeepOpenShort": {
+    "message": "Mantén esta página abierta durante el envío.",
+    "description": "Alcydeo interface: cloudKeepOpenShort"
+  },
+  "cloudCopyUnavailable": {
+    "message": "Copia local no disponible para reintentar",
+    "description": "Alcydeo interface: cloudCopyUnavailable"
+  },
+  "concurrentDownloads": {
+    "message": "Descargas simultáneas",
+    "description": "Alcydeo interface: concurrentDownloads"
+  },
+  "concurrentFiles": {
+    "message": "Archivos en paralelo",
+    "description": "Alcydeo interface: concurrentFiles"
+  },
+  "concurrentFilesHint": {
+    "message": "De 1 a 8 archivos a la vez, independientemente del número de conexiones por archivo. Los archivos en espera empiezan en cuanto queda un puesto libre.",
+    "description": "Alcydeo interface: concurrentFilesHint"
+  },
+  "concurrentFilesChangeHint": {
+    "message": "Bajar el límite permite que terminen las descargas en curso. Las conversiones se siguen procesando una a una.",
+    "description": "Alcydeo interface: concurrentFilesChangeHint"
+  },
+  "cloudTurbobitSend": {
+    "message": "Compartir con Turbobit",
+    "description": "Alcydeo interface: cloudTurbobitSend"
+  },
+  "cloudTurbobitOpen": {
+    "message": "Abrir Turbobit",
+    "description": "Alcydeo interface: cloudTurbobitOpen"
+  },
+  "cloudTurbobitHint": {
+    "message": "Uso experimental sin cuenta, hasta 200 MB por archivo. Cualquiera con el enlace puede acceder; se conserva hasta 7 días. Guarda el original y verifica el archivo en Turbobit.",
+    "description": "Alcydeo interface: cloudTurbobitHint"
+  },
+  "err_cloudTurbobitUnavailable": {
+    "message": "Turbobit no proporcionó un destino de subida de invitado válido. No se envió ningún archivo. Reintenta más tarde o elige otro destino.",
+    "description": "Alcydeo interface: err_cloudTurbobitUnavailable"
+  },
+  "playlistSnapshot": {
+    "message": "Esta mezcla cambia: solo incluye los títulos cargados ahora por YouTube. Elige cuáles guardar; no se incluyen sugerencias futuras.",
+    "description": "Alcydeo interface: playlistSnapshot"
+  },
+  "playlistTitle": {
+    "message": "Playlist de YouTube",
+    "description": "Alcydeo interface: playlistTitle"
+  },
+  "playlistLoading": {
+    "message": "Leyendo playlist…",
+    "description": "Alcydeo interface: playlistLoading"
+  },
+  "playlistSelection": {
+    "message": "$selected$ seleccionados / $total$ vídeos",
+    "description": "Alcydeo interface: playlistSelection",
+    "placeholders": {
+      "selected": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "playlistSelectAll": {
+    "message": "Seleccionar todos los vídeos",
+    "description": "Alcydeo interface: playlistSelectAll"
+  },
+  "playlistDownload": {
+    "message": "Descargar selección ($count$)",
+    "description": "Alcydeo interface: playlistDownload",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "playlistFolder": {
+    "message": "Carpeta de la playlist:",
+    "description": "Alcydeo interface: playlistFolder"
+  },
+  "playlistBest": {
+    "message": "Mejor disponible",
+    "description": "Alcydeo interface: playlistBest"
+  },
+  "playlistUnavailable": {
+    "message": "Vídeo no disponible",
+    "description": "Alcydeo interface: playlistUnavailable"
+  },
+  "playlistEmpty": {
+    "message": "No hay vídeos accesibles en esta playlist.",
+    "description": "Alcydeo interface: playlistEmpty"
+  },
+  "playlistPreparing": {
+    "message": "Preparando el siguiente vídeo…",
+    "description": "Alcydeo interface: playlistPreparing"
+  },
+  "playlistProgress": {
+    "message": "$done$ / $total$ guardados · $failed$ fallidos",
+    "description": "Alcydeo interface: playlistProgress",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "playlistPartial": {
+    "message": "Finalizado con errores",
+    "description": "Alcydeo interface: playlistPartial"
+  },
+  "playlistRetry": {
+    "message": "Reintentar vídeos fallidos",
+    "description": "Alcydeo interface: playlistRetry"
+  },
+  "playlistHint": {
+    "message": "Una pestaña de trabajo silenciada prepara cada vídeo. Mantén abierto el gestor. Solo se guardan los vídeos accesibles; los privados, eliminados o rechazados se indican aparte.",
+    "description": "Alcydeo interface: playlistHint"
+  },
+  "playlistRead": {
+    "message": "No se pudo leer la playlist completa. Actualiza su página de YouTube y vuelve a detectar.",
+    "description": "Alcydeo interface: playlistRead"
+  },
+  "playlistLimit": {
+    "message": "La playlist supera el límite local (5000 vídeos o 100 páginas). Una lista incompleta no inicia una descarga completa.",
+    "description": "Alcydeo interface: playlistLimit"
+  },
+  "playlistPlayer": {
+    "message": "El reproductor no proporcionó una fuente utilizable. Reproduce el vídeo en YouTube y vuelve a intentarlo.",
+    "description": "Alcydeo interface: playlistPlayer"
+  },
+  "playlistInterrupted": {
+    "message": "La playlist está en pausa tras una interrupción. Reanuda para continuar sin repetir vídeos guardados.",
+    "description": "Alcydeo interface: playlistInterrupted"
+  },
+  "playlistTabClosed": {
+    "message": "La pestaña de trabajo se cerró o cambió. Reanuda la playlist para continuar.",
+    "description": "Alcydeo interface: playlistTabClosed"
+  },
+  "playlistStopped": {
+    "message": "La playlist está en pausa tras una interrupción. Reanuda para continuar sin repetir vídeos guardados.",
+    "description": "Alcydeo interface: playlistStopped"
+  },
+  "playlistNotSaved": {
+    "message": "La playlist está en pausa tras una interrupción. Reanuda para continuar sin repetir vídeos guardados.",
+    "description": "Alcydeo interface: playlistNotSaved"
+  },
+  "playlistQuality": {
+    "message": "No hay fuente con la calidad elegida o inferior.",
+    "description": "Alcydeo interface: playlistQuality"
+  },
+  "cloudSendTitle": {
+    "message": "Enviar un archivo",
+    "description": "Alcydeo interface: cloudSendTitle"
+  },
+  "workspaceNavigation": {
+    "message": "Navegación principal",
+    "description": "Alcydeo interface: workspaceNavigation"
+  },
+  "skipContent": {
+    "message": "Ir al contenido",
+    "description": "Alcydeo interface: skipContent"
+  },
+  "addVideo": {
+    "message": "Añadir un vídeo",
+    "description": "Alcydeo interface: addVideo"
+  },
+  "clearSearch": {
+    "message": "Borrar búsqueda",
+    "description": "Alcydeo interface: clearSearch"
+  },
+  "manager_queue_description": {
+    "message": "Tus descargas, en un solo lugar.",
+    "description": "Alcydeo interface: manager_queue_description"
+  },
+  "manager_library_description": {
+    "message": "Tus vídeos, descargas y procesos en un lugar.",
+    "description": "Alcydeo interface: manager_library_description"
+  },
+  "manager_record_description": {
+    "message": "Captura un momento y guárdalo en tu dispositivo.",
+    "description": "Alcydeo interface: manager_record_description"
+  },
+  "manager_cloud_description": {
+    "message": "Envía el archivo elegido a tu destino preferido.",
+    "description": "Alcydeo interface: manager_cloud_description"
+  },
+  "manager_settings_description": {
+    "message": "Adapta Alcydeo a tu manera.",
+    "description": "Alcydeo interface: manager_settings_description"
+  },
+  "manager_help_description": {
+    "message": "Un poco de ayuda cuando la necesites.",
+    "description": "Alcydeo interface: manager_help_description"
+  },
+  "managerResults": {
+    "message": "Elementos: $count$",
+    "description": "Alcydeo interface: managerResults",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "managerNoResults": {
+    "message": "No hay coincidencias",
+    "description": "Alcydeo interface: managerNoResults"
+  },
+  "managerNoResultsHint": {
+    "message": "Prueba otro título o borra los filtros.",
+    "description": "Alcydeo interface: managerNoResultsHint"
+  },
+  "managerEmptyHint": {
+    "message": "Descarga un vídeo desde una página con el icono de Alcydeo. Lo encontrarás aquí.",
+    "description": "Alcydeo interface: managerEmptyHint"
+  },
+  "resetFilters": {
+    "message": "Borrar filtros",
+    "description": "Alcydeo interface: resetFilters"
+  },
+  "detectionSettings": {
+    "message": "Detección",
+    "description": "Alcydeo interface: detectionSettings"
+  },
+  "detectionSettingsHint": {
+    "message": "Elige qué aparece en tu lista de descargas.",
+    "description": "Alcydeo interface: detectionSettingsHint"
+  },
+  "appearanceSettings": {
+    "message": "Apariencia",
+    "description": "Alcydeo interface: appearanceSettings"
+  },
+  "appearanceSettingsHint": {
+    "message": "Una vista cómoda, de día o de noche.",
+    "description": "Alcydeo interface: appearanceSettingsHint"
+  },
+  "destinationSettingsHint": {
+    "message": "Decide cómo y dónde guardar tus archivos.",
+    "description": "Alcydeo interface: destinationSettingsHint"
+  },
+  "blockedExample": {
+    "message": "example.com",
+    "description": "Alcydeo interface: blockedExample"
+  },
+  "tvKeepOpen": {
+    "message": "Mantén abierto este reproductor durante la reproducción.",
+    "description": "Alcydeo interface: tvKeepOpen"
+  },
+  "sourceNone": {
+    "message": "Se descartaron las fuentes detectadas",
+    "description": "Alcydeo interface: sourceNone"
+  },
+  "sourceRetryHint": {
+    "message": "La comprobación encontró fuentes inválidas, no disponibles o demasiado pequeñas. Recarga el reproductor original y vuelve a detectar.",
+    "description": "Alcydeo interface: sourceRetryHint"
+  },
+  "tv": {
+    "message": "Reproducción en TV",
+    "description": "Alcydeo interface: tv"
+  },
+  "manager_tv_description": {
+    "message": "Envía un vídeo detectado o abre un archivo local para transmitir su pestaña.",
+    "description": "Alcydeo interface: manager_tv_description"
+  },
+  "tvOpen": {
+    "message": "Abrir reproductor de TV",
+    "description": "Alcydeo interface: tvOpen"
+  },
+  "tvExperimental": {
+    "message": "Experimental · la reproducción en receptores aún no se ha validado en dispositivos reales.",
+    "description": "Alcydeo interface: tvExperimental"
+  },
+  "tvNoAirplay": {
+    "message": "AirPlay no está disponible en Chrome en este dispositivo.",
+    "description": "Alcydeo interface: tvNoAirplay"
+  },
+  "tvNoDevice": {
+    "message": "No se encontró un receptor compatible. Comprueba que ambos dispositivos usan la misma red.",
+    "description": "Alcydeo interface: tvNoDevice"
+  },
+  "tvNotSupported": {
+    "message": "Esta fuente o navegador no puede iniciar la reproducción remota. Prueba a enviar la pestaña original desde el menú de Chrome.",
+    "description": "Alcydeo interface: tvNotSupported"
+  },
+  "tvConnected": {
+    "message": "Conectado al receptor",
+    "description": "Alcydeo interface: tvConnected"
+  },
+  "tvConnecting": {
+    "message": "Conectando…",
+    "description": "Alcydeo interface: tvConnecting"
+  },
+  "tvDisconnected": {
+    "message": "Selecciona un receptor para empezar.",
+    "description": "Alcydeo interface: tvDisconnected"
+  },
+  "tvHint": {
+    "message": "Cast nativo depende de Chrome, del receptor y del formato. Alcydeo no añade servidor de retransmisión. Enviar la pestaña permite usar el reproductor original si no sirve la reproducción directa.",
+    "description": "Alcydeo interface: tvHint"
+  },
+  "sourceChecking": {
+    "message": "Comprobando fuente…",
+    "description": "Alcydeo interface: sourceChecking"
+  },
+  "sourceReady": {
+    "message": "Accesible",
+    "description": "Alcydeo interface: sourceReady"
+  },
+  "sourceUnknown": {
+    "message": "Sin confirmar",
+    "description": "Alcydeo interface: sourceUnknown"
+  },
+  "sourceCheckHint": {
+    "message": "Se comprueba una muestra antes de descargar. No valida el archivo completo. Actualiza para comprobar las propuestas de nuevo.",
+    "description": "Alcydeo interface: sourceCheckHint"
+  },
+  "err_tooSmall": {
+    "message": "Esta fuente es menor que el tamaño mínimo elegido en Ajustes.",
+    "description": "Alcydeo interface: err_tooSmall"
+  },
+  "tvUnavailable": {
+    "message": "No disponible",
+    "description": "Alcydeo interface: tvUnavailable"
+  },
+  "tvPreparing": {
+    "message": "Preparando el reproductor…",
+    "description": "Alcydeo interface: tvPreparing"
+  },
+  "tvAirplayWindows": {
+    "message": "AirPlay no está disponible en Chrome para Windows: este navegador no ofrece un emisor AirPlay. Un Apple TV solo AirPlay no es un receptor Google Cast.",
+    "description": "Alcydeo interface: tvAirplayWindows"
+  },
+  "tvStreamTab": {
+    "message": "Esta emisión usa el reproductor del sitio original. Vuelve a esa pestaña y usa el menú Enviar de Chrome.",
+    "description": "Alcydeo interface: tvStreamTab"
+  },
+  "tvDeviceAvailable": {
+    "message": "Chrome indica un receptor compatible.",
+    "description": "Alcydeo interface: tvDeviceAvailable"
+  },
+  "tvDeviceUnconfirmed": {
+    "message": "Chrome no indica un receptor compatible para este vídeo. Puedes reintentar o enviar la pestaña original.",
+    "description": "Alcydeo interface: tvDeviceUnconfirmed"
+  },
+  "tvDeviceChecking": {
+    "message": "Chrome aún no confirma la disponibilidad de receptores.",
+    "description": "Alcydeo interface: tvDeviceChecking"
+  },
+  "tvShortClip": {
+    "message": "Chrome 156 puede rechazar la reproducción remota directa de clips de 15 segundos o menos. Usa el envío de pestaña.",
+    "description": "Alcydeo interface: tvShortClip"
+  },
+  "tvNoConnection": {
+    "message": "Chrome no pudo comunicarse con el receptor. Comprueba su compatibilidad o transmite la pestaña desde el menú de Chrome.",
+    "description": "Alcydeo interface: tvNoConnection"
+  },
+  "tvPermission": {
+    "message": "Chrome bloqueó la selección. Revisa las políticas de transmisión o usa su menú Enviar.",
+    "description": "Alcydeo interface: tvPermission"
+  },
+  "tvActivation": {
+    "message": "Pulsa Enviar otra vez para elegir un receptor.",
+    "description": "Alcydeo interface: tvActivation"
+  },
+  "tvBusy": {
+    "message": "Ya hay un selector abierto. Termina esa selección primero.",
+    "description": "Alcydeo interface: tvBusy"
+  },
+  "tvMediaCodec": {
+    "message": "Chrome no puede decodificar esta fuente aquí. Prueba la pestaña original u otra calidad.",
+    "description": "Alcydeo interface: tvMediaCodec"
+  },
+  "tvMediaNetwork": {
+    "message": "El vídeo no cargó aquí. La URL puede haber caducado o requerir la sesión de la página original. Vuelve a esa pestaña.",
+    "description": "Alcydeo interface: tvMediaNetwork"
+  },
+  "tvOriginalMissing": {
+    "message": "La pestaña original se cerró o cambió. Abre otra vez la página y detecta la fuente.",
+    "description": "Alcydeo interface: tvOriginalMissing"
+  },
+  "tvCastTab": {
+    "message": "Enviar la pestaña original",
+    "description": "Alcydeo interface: tvCastTab"
+  },
+  "tvOriginal": {
+    "message": "Volver al reproductor original",
+    "description": "Alcydeo interface: tvOriginal"
+  },
+  "tvChromeSteps": {
+    "message": "Vuelve a la pestaña original, reproduce el vídeo y abre ⋮ de Chrome → Enviar, guardar y compartir → Enviar… → Fuentes → Enviar pestaña. Elige tu TV. Este selector se abre desde Chrome.",
+    "description": "Alcydeo interface: tvChromeSteps"
+  },
+  "tvNetworkHint": {
+    "message": "Usa un receptor Google Cast en la misma red local. Si Chrome tampoco lo encuentra, revisa red, VPN y cortafuegos.",
+    "description": "Alcydeo interface: tvNetworkHint"
+  },
+  "tvWebTitle": {
+    "message": "Reproductor Google Cast",
+    "description": "Alcydeo interface: tvWebTitle"
+  },
+  "tvWebOpen": {
+    "message": "Elegir TV",
+    "description": "Alcydeo interface: tvWebOpen"
+  },
+  "tvWebPreparing": {
+    "message": "Cargando controles Google Cast…",
+    "description": "Alcydeo interface: tvWebPreparing"
+  },
+  "tvWebLoad": {
+    "message": "Reproducir en TV",
+    "description": "Alcydeo interface: tvWebLoad"
+  },
+  "tvWebStop": {
+    "message": "Desconectar",
+    "description": "Alcydeo interface: tvWebStop"
+  },
+  "tvWebNoMedia": {
+    "message": "Pega la URL directa del vídeo, elige TV y pulsa Reproducir en TV.",
+    "description": "Alcydeo interface: tvWebNoMedia"
+  },
+  "tvWebHint": {
+    "message": "La página web separada carga el SDK de Google Cast. Al elegir un receptor, su reproductor recibe la URL y el título. No se transfieren cookies ni contraseñas.",
+    "description": "Alcydeo interface: tvWebHint"
+  },
+  "tvWebUnavailable": {
+    "message": "El reproductor web Google Cast no está disponible en esta instalación. Usa el menú Enviar de Chrome para esta prueba local.",
+    "description": "Alcydeo interface: tvWebUnavailable"
+  },
+  "tvWebLoadError": {
+    "message": "El receptor no cargó el vídeo. El enlace puede requerir cookies, haber caducado o usar un formato no compatible. Envía la pestaña original.",
+    "description": "Alcydeo interface: tvWebLoadError"
+  },
+  "tvWebSdkError": {
+    "message": "No se cargaron los controles Google Cast. Revisa Chrome, la conexión y el acceso al SDK de Google.",
+    "description": "Alcydeo interface: tvWebSdkError"
+  },
+  "tvNative": {
+    "message": "Prototipo nativo",
+    "description": "Alcydeo interface: tvNative"
+  },
+  "tvWebPlay": {
+    "message": "Reproducir",
+    "description": "Alcydeo interface: tvWebPlay"
+  },
+  "castVideo": {
+    "message": "Transmitir",
+    "description": "Alcydeo interface: castVideo"
+  },
+  "tvCastBuiltIn": {
+    "message": "Elige tu TV en el selector de Chrome. Mantén esta pestaña abierta para los controles.",
+    "description": "Alcydeo interface: tvCastBuiltIn"
+  },
+  "tvCastAutoQuality": {
+    "message": "La TV recibe la emisión completa y elige calidad y audio compatibles.",
+    "description": "Alcydeo interface: tvCastAutoQuality"
+  },
+  "tvCastTimeout": {
+    "message": "El receptor no confirmó la reproducción a tiempo. Reintenta o transmite la pestaña original.",
+    "description": "Alcydeo interface: tvCastTimeout"
+  },
+  "tvCastLocalFile": {
+    "message": "Un archivo solo en el PC no tiene una URL accesible para la TV. Ábrelo en Chrome y transmite la pestaña.",
+    "description": "Alcydeo interface: tvCastLocalFile"
+  },
+  "tvCast_idle": {
+    "message": "Elige un receptor para este vídeo.",
+    "description": "Alcydeo interface: tvCast_idle"
+  },
+  "tvCast_choosing": {
+    "message": "Elige tu TV en Chrome…",
+    "description": "Alcydeo interface: tvCast_choosing"
+  },
+  "tvCast_connecting": {
+    "message": "Conectando al receptor…",
+    "description": "Alcydeo interface: tvCast_connecting"
+  },
+  "tvCast_loading": {
+    "message": "El receptor está cargando el vídeo…",
+    "description": "Alcydeo interface: tvCast_loading"
+  },
+  "tvCast_playing": {
+    "message": "Reproduciendo en TV",
+    "description": "Alcydeo interface: tvCast_playing"
+  },
+  "tvCast_paused": {
+    "message": "Pausado en TV",
+    "description": "Alcydeo interface: tvCast_paused"
+  },
+  "tvCast_finished": {
+    "message": "Reproducción terminada",
+    "description": "Alcydeo interface: tvCast_finished"
+  },
+  "tvCast_error": {
+    "message": "La reproducción no se confirmó.",
+    "description": "Alcydeo interface: tvCast_error"
+  },
+  "tvFileClose": {
+    "message": "Cerrar archivo",
+    "description": "Alcydeo interface: tvFileClose"
+  },
+  "tvDetectedVideo": {
+    "message": "Vídeo detectado",
+    "description": "Alcydeo interface: tvDetectedVideo"
+  },
+  "tvLocalFile": {
+    "message": "Archivo del PC",
+    "description": "Alcydeo interface: tvLocalFile"
+  },
+  "tvFileIntro": {
+    "message": "Reproduce el archivo aquí y elige un método de transmisión compatible con tu receptor.",
+    "description": "Alcydeo interface: tvFileIntro"
+  },
+  "tvFileChoose": {
+    "message": "Elegir un archivo de vídeo",
+    "description": "Alcydeo interface: tvFileChoose"
+  },
+  "tvFileChooseSaved": {
+    "message": "Selecciona el archivo guardado en el PC:",
+    "description": "Alcydeo interface: tvFileChooseSaved"
+  },
+  "tvFileCastGuide": {
+    "message": "Cómo transmitir este reproductor",
+    "description": "Alcydeo interface: tvFileCastGuide"
+  },
+  "tvFileStepPlay": {
+    "message": "Abre tu archivo de vídeo en Alcydeo e inicia la reproducción.",
+    "description": "Alcydeo interface: tvFileStepPlay"
+  },
+  "tvFileStepMenu": {
+    "message": "Abre ⋮ de Chrome → Enviar, guardar y compartir → Enviar…. Este botón muestra instrucciones; el selector se abre desde Chrome.",
+    "description": "Alcydeo interface: tvFileStepMenu"
+  },
+  "tvFileStepTab": {
+    "message": "En Fuentes elige Enviar pestaña y tu TV, por ejemplo NVIDIA SHIELD.",
+    "description": "Alcydeo interface: tvFileStepTab"
+  },
+  "tvFileKeepOpen": {
+    "message": "Mantén esta pestaña abierta. Controla el vídeo aquí y detén la transmisión desde Chrome. Transmitir la pestaña puede usar más CPU que enviar un enlace.",
+    "description": "Alcydeo interface: tvFileKeepOpen"
+  },
+  "tvFilePrivacy": {
+    "message": "Los archivos quedan en este PC; Cast de Chrome envía el vídeo al receptor elegido. Alcydeo no sube a un alojamiento.",
+    "description": "Alcydeo interface: tvFilePrivacy"
+  },
+  "tvFileInvalid": {
+    "message": "Elige un archivo de vídeo no vacío.",
+    "description": "Alcydeo interface: tvFileInvalid"
+  },
+  "tvFileCodec": {
+    "message": "Chrome no puede reproducir este archivo. Prueba convertirlo a MP4 en Herramientas de vídeo.",
+    "description": "Alcydeo interface: tvFileCodec"
+  },
+  "tvFileChooseAgain": {
+    "message": "La copia conservada no está disponible. Selecciona el archivo guardado en el PC.",
+    "description": "Alcydeo interface: tvFileChooseAgain"
+  },
+  "tvFilePlayFirst": {
+    "message": "Inicia la reproducción aquí y pulsa Transmitir.",
+    "description": "Alcydeo interface: tvFilePlayFirst"
+  },
+  "tvFilePrepare": {
+    "message": "Preparar archivo para transmitir",
+    "description": "Alcydeo interface: tvFilePrepare"
+  },
+  "tvFileCopying": {
+    "message": "Preparando archivo local…",
+    "description": "Alcydeo interface: tvFileCopying"
+  },
+  "tvFileAccess": {
+    "message": "Activa «Permitir acceso a URL de archivo» en los detalles de Alcydeo en Chrome y vuelve a abrir el reproductor.",
+    "description": "Alcydeo interface: tvFileAccess"
+  },
+  "tvFileAccessHint": {
+    "message": "Cast necesita acceso opcional al archivo guardado. No se sube ningún archivo. Tras prepararlo, pulsa Transmitir aquí.",
+    "description": "Alcydeo interface: tvFileAccessHint"
+  },
+  "tvFileCopyHint": {
+    "message": "Chrome necesita un archivo guardado para Cast nativo. La preparación abre Guardar como para crear una copia local; conserva el original.",
+    "description": "Alcydeo interface: tvFileCopyHint"
+  },
+  "tvFileCopyFailed": {
+    "message": "No se pudo preparar la copia local. Reintenta; no se conectó a ningún receptor.",
+    "description": "Alcydeo interface: tvFileCopyFailed"
+  },
+  "tvFilePath": {
+    "message": "Esta ruta no es compatible. Selecciona un vídeo y prepara una copia local. No se abren recursos de red.",
+    "description": "Alcydeo interface: tvFilePath"
+  },
+  "tvFileShort": {
+    "message": "La reproducción remota nativa de Chrome requiere más de 15 segundos. Usa la guía de transmisión de pestaña para este clip.",
+    "description": "Alcydeo interface: tvFileShort"
+  },
+  "tvFileCastChange": {
+    "message": "Cambiar TV / desconectar",
+    "description": "Alcydeo interface: tvFileCastChange"
+  },
+  "tvFileState_disconnected": {
+    "message": "Listo para elegir receptor",
+    "description": "Alcydeo interface: tvFileState_disconnected"
+  },
+  "tvFileState_choosing": {
+    "message": "Elige tu TV en Chrome…",
+    "description": "Alcydeo interface: tvFileState_choosing"
+  },
+  "tvFileState_connecting": {
+    "message": "Conectando…",
+    "description": "Alcydeo interface: tvFileState_connecting"
+  },
+  "tvFileState_connected": {
+    "message": "Receptor conectado",
+    "description": "Alcydeo interface: tvFileState_connected"
+  },
+  "tvFileState_error": {
+    "message": "No se confirmó conexión",
+    "description": "Alcydeo interface: tvFileState_error"
+  },
+  "tvFileReceiverLimit": {
+    "message": "El botón Cast de archivos de Chrome admite ciertos Chromecast y Google TV Streamer. Esta API excluye Nvidia Shield; transmite la pestaña del reproductor desde el menú de Chrome.",
+    "description": "Alcydeo interface: tvFileReceiverLimit"
+  },
+  "tvWebPlayerVolume": {
+    "message": "Volumen",
+    "description": "Alcydeo interface: tvWebPlayerVolume"
+  },
+  "tvWebPlayerSeek": {
+    "message": "Posición de reproducción",
+    "description": "Alcydeo interface: tvWebPlayerSeek"
+  },
+  "tvWebFullscreen": {
+    "message": "Pantalla completa",
+    "description": "Alcydeo interface: tvWebFullscreen"
+  },
+  "tvWebExitFullscreen": {
+    "message": "Salir de pantalla completa",
+    "description": "Alcydeo interface: tvWebExitFullscreen"
+  },
+  "tvWebUsingOriginal": {
+    "message": "Fuente original de la descarga",
+    "description": "Alcydeo interface: tvWebUsingOriginal"
+  },
+  "tvWebPreviewUnavailable": {
+    "message": "La vista previa local no está disponible. Tu TV puede admitir este formato; puedes intentar transmitirlo.",
+    "description": "Alcydeo interface: tvWebPreviewUnavailable"
+  },
+  "tvWebSeek": {
+    "message": "Posición en TV",
+    "description": "Alcydeo interface: tvWebSeek"
+  },
+  "tvWebVolume": {
+    "message": "Volumen de TV",
+    "description": "Alcydeo interface: tvWebVolume"
+  },
+  "tvWebSource": {
+    "message": "Dirección del vídeo",
+    "description": "Alcydeo interface: tvWebSource"
+  },
+  "tvFileCastTabSteps": {
+    "message": "Transmitir pestaña · pasos de Chrome",
+    "description": "Alcydeo interface: tvFileCastTabSteps"
+  },
+  "tvFileCastNative": {
+    "message": "Cast nativo · dispositivos compatibles",
+    "description": "Alcydeo interface: tvFileCastNative"
+  },
+  "trimStartTime": {
+    "message": "Tiempo de inicio",
+    "description": "Alcydeo interface: trimStartTime"
+  },
+  "trimEndTime": {
+    "message": "Tiempo final",
+    "description": "Alcydeo interface: trimEndTime"
+  },
+  "trimTimeHint": {
+    "message": "Introduce segundos o m:ss / h:mm:ss, con hasta tres decimales.",
+    "description": "Alcydeo interface: trimTimeHint"
+  },
+  "undoAnnotations": {
+    "message": "Deshacer trazo",
+    "description": "Alcydeo interface: undoAnnotations"
+  },
+  "clearAnnotations": {
+    "message": "Borrar dibujo",
+    "description": "Alcydeo interface: clearAnnotations"
+  },
+  "language": {
+    "message": "Idioma",
+    "description": "Alcydeo interface: language"
+  },
+  "languageAutomatic": {
+    "message": "Seguir Chrome",
+    "description": "Alcydeo interface: languageAutomatic"
+  },
+  "selectVideo": {
+    "message": "Seleccionar vídeo",
+    "description": "Alcydeo interface: selectVideo"
+  },
+  "selectPage": {
+    "message": "Seleccionar esta página",
+    "description": "Alcydeo interface: selectPage"
+  },
+  "selectedFiles": {
+    "message": "Archivos seleccionados",
+    "description": "Alcydeo interface: selectedFiles"
+  },
+  "selectedCount": {
+    "message": "$1 seleccionados",
+    "description": "Alcydeo interface: selectedCount"
+  },
+  "deleteSelection": {
+    "message": "Eliminar selección",
+    "description": "Alcydeo interface: deleteSelection"
+  },
+  "clearSelection": {
+    "message": "Quitar selección",
+    "description": "Alcydeo interface: clearSelection"
+  },
+  "batchSequential": {
+    "message": "Los archivos se procesan uno a uno y se conservan los originales. Elige las copias locales que falten.",
+    "description": "Alcydeo interface: batchSequential"
+  },
+  "batchPreparing": {
+    "message": "Preparando $1 de $2…",
+    "description": "Alcydeo interface: batchPreparing"
+  },
+  "batchQueued": {
+    "message": "$1 archivos añadidos a la cola.",
+    "description": "Alcydeo interface: batchQueued"
+  },
+  "chooseLocalFiles": {
+    "message": "Selecciona el archivo local guardado.",
+    "description": "Alcydeo interface: chooseLocalFiles"
+  },
+  "allowLocalFiles": {
+    "message": "Permitir acceso a archivos guardados",
+    "description": "Alcydeo interface: allowLocalFiles"
+  },
+  "compressionSettings": {
+    "message": "Compresión predeterminada",
+    "description": "Alcydeo interface: compressionSettings"
+  },
+  "compressionDefaultsHint": {
+    "message": "Se usa al comprimir en la biblioteca. La calidad, resolución y audio influyen en tamaño y tiempo.",
+    "description": "Alcydeo interface: compressionDefaultsHint"
+  },
+  "captureQuality": {
+    "message": "Calidad de captura",
+    "description": "Alcydeo interface: captureQuality"
+  },
+  "captureSource": {
+    "message": "Resolución de origen",
+    "description": "Alcydeo interface: captureSource"
+  },
+  "captureQualityHint": {
+    "message": "Hasta 4K a 30 fps con mayor bitrate. El detalle depende de la fuente; ampliar píxeles no lo recupera.",
+    "description": "Alcydeo interface: captureQualityHint"
+  },
+  "captureHighBitrate": {
+    "message": "Bitrate alto",
+    "description": "Alcydeo interface: captureHighBitrate"
+  },
+  "annotations": {
+    "message": "Dibujar en la pestaña capturada",
+    "description": "Alcydeo interface: annotations"
+  },
+  "captureTab": {
+    "message": "Capturar esta pestaña",
+    "description": "Alcydeo interface: captureTab"
+  },
+  "recordDetectedHint": {
+    "message": "Graba directamente HLS en vivo compatible. Otras fuentes usan captura de pestaña.",
+    "description": "Alcydeo interface: recordDetectedHint"
+  },
+  "visualTrim": {
+    "message": "Editor visual de recorte",
+    "description": "Alcydeo interface: visualTrim"
+  },
+  "visualMerge": {
+    "message": "Editor visual de unión",
+    "description": "Alcydeo interface: visualMerge"
+  },
+  "previewUnavailable": {
+    "message": "Chrome no puede previsualizar este archivo. Prueba un MP4 compatible.",
+    "description": "Alcydeo interface: previewUnavailable"
+  },
+  "playSelection": {
+    "message": "Reproducir selección",
+    "description": "Alcydeo interface: playSelection"
+  },
+  "cutInHandle": {
+    "message": "Control de inicio",
+    "description": "Alcydeo interface: cutInHandle"
+  },
+  "cutOutHandle": {
+    "message": "Control de fin",
+    "description": "Alcydeo interface: cutOutHandle"
+  },
+  "markStart": {
+    "message": "Marcar inicio aquí",
+    "description": "Alcydeo interface: markStart"
+  },
+  "markEnd": {
+    "message": "Marcar fin aquí",
+    "description": "Alcydeo interface: markEnd"
+  },
+  "mergeVisualHint": {
+    "message": "Arrastra los clips o usa las flechas para ordenarlos. Pulsa una miniatura para previsualizar.",
+    "description": "Alcydeo interface: mergeVisualHint"
+  },
+  "totalDuration": {
+    "message": "Duración total",
+    "description": "Alcydeo interface: totalDuration"
+  },
+  "preciseTimes": {
+    "message": "Tiempos precisos",
+    "description": "Alcydeo interface: preciseTimes"
+  },
+  "processingDefaults": {
+    "message": "Cambiar valores en Ajustes",
+    "description": "Alcydeo interface: processingDefaults"
+  },
+  "castReuseFile": {
+    "message": "Reutiliza un archivo de Chrome sin crear otra copia:",
+    "description": "Alcydeo interface: castReuseFile"
+  },
+  "castLocalPath": {
+    "message": "Ruta local (sin copia)",
+    "description": "Alcydeo interface: castLocalPath"
+  },
+  "cloudProviderRemoved": {
+    "message": "Este proveedor fue eliminado. Cancela o elimina la tarea antigua.",
+    "description": "Alcydeo interface: cloudProviderRemoved"
+  },
+  "conversionSaving": {
+    "message": "Guardando MP4",
+    "description": "Alcydeo interface: conversionSaving"
+  },
+  "conversionSettings": {
+    "message": "Conversión a MP4",
+    "description": "Alcydeo interface: conversionSettings"
+  },
+  "convertMp4": {
+    "message": "Convertir a MP4",
+    "description": "Alcydeo interface: convertMp4"
+  },
+  "chooseConversionFile": {
+    "message": "Elegir un vídeo para convertir",
+    "description": "Alcydeo interface: chooseConversionFile"
+  },
+  "conversionHint": {
+    "message": "MP4 con vídeo H.264 y audio AAC. Un archivo a la vez; mantén abierto el gestor. Se conserva el original. Las pistas compatibles se copian; las demás pistas admitidas se recodifican, lo que puede tardar más y cambiar la calidad.",
+    "description": "Alcydeo interface: conversionHint"
+  },
+  "conversionRestartHint": {
+    "message": "La conversión procesa un archivo a la vez. Tras una pausa o al cerrar el gestor, reinicia desde la entrada guardada.",
+    "description": "Alcydeo interface: conversionRestartHint"
+  },
+  "preparingConversion": {
+    "message": "Preparando conversión",
+    "description": "Alcydeo interface: preparingConversion"
+  },
+  "converting": {
+    "message": "Convirtiendo a MP4",
+    "description": "Alcydeo interface: converting"
+  },
+  "err_conversionCodec": {
+    "message": "Chrome no puede convertir todas las pistas de este archivo a H.264/AAC. Se conserva el original y no se guardó un MP4 incompleto.",
+    "description": "Alcydeo interface: err_conversionCodec"
+  },
+  "err_conversionInput": {
+    "message": "Elige de nuevo el vídeo original; su preparación local se interrumpió o no está disponible.",
+    "description": "Alcydeo interface: err_conversionInput"
+  },
+  "clearHistory": {
+    "message": "Borrar historial",
+    "description": "Alcydeo interface: clearHistory"
+  },
+  "clearHistoryTitle": {
+    "message": "¿Borrar todo el historial de descargas?",
+    "description": "Alcydeo interface: clearHistoryTitle"
+  },
+  "clearHistoryHint": {
+    "message": "Se eliminarán de Alcydeo los registros finalizados, fallidos y cancelados y sus archivos temporales, en todas las páginas y filtros, incluidos los favoritos. Se conservan los archivos guardados y las descargas activas o pausadas.",
+    "description": "Alcydeo interface: clearHistoryHint"
+  },
+  "confirmClearHistory": {
+    "message": "Borrar todo el historial",
+    "description": "Alcydeo interface: confirmClearHistory"
+  },
+  "historyCleared": {
+    "message": "Historial borrado. Se conservaron los archivos guardados.",
+    "description": "Alcydeo interface: historyCleared"
+  },
+  "pagination": {
+    "message": "Páginas de descargas",
+    "description": "Alcydeo interface: pagination"
+  },
+  "previousPage": {
+    "message": "Anterior",
+    "description": "Alcydeo interface: previousPage"
+  },
+  "nextPage": {
+    "message": "Siguiente",
+    "description": "Alcydeo interface: nextPage"
+  },
+  "pageStatus": {
+    "message": "Página $current$ de $total$",
+    "description": "Alcydeo interface: pageStatus",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "1"
+      },
+      "total": {
+        "content": "$2",
+        "example": "6"
+      }
+    }
+  },
+  "multipartDownloads": {
+    "message": "Descargas en varias partes",
+    "description": "Alcydeo interface: multipartDownloads"
+  },
+  "multipartEnable": {
+    "message": "Usar varias conexiones para archivos y DASH compatibles",
+    "description": "Alcydeo interface: multipartEnable"
+  },
+  "multipartConnections": {
+    "message": "Conexiones por archivo",
+    "description": "Alcydeo interface: multipartConnections"
+  },
+  "multipartHint": {
+    "message": "Mantén abierto el gestor. Las pistas de audio y vídeo compatibles pueden descargarse juntas. Dividir un recurso exige rangos fiables y un validador de versión fuerte; de lo contrario se usa la transferencia normal. La velocidad depende del servidor y de tu conexión.",
+    "description": "Alcydeo interface: multipartHint"
+  },
+  "notice_multipartUnavailable": {
+    "message": "Esta fuente no admite partes paralelas. Se usa la transferencia normal.",
+    "description": "Alcydeo interface: notice_multipartUnavailable"
+  },
+  "err_sourceRestricted": {
+    "message": "La fuente rechazó el acceso a este flujo. No se puede descargar el vídeo en la sesión actual.",
+    "description": "Alcydeo interface: err_sourceRestricted"
+  },
+  "err_sourcePending": {
+    "message": "Reproduce el vídeo unos segundos para que su fuente de descarga esté disponible.",
+    "description": "Alcydeo interface: err_sourcePending"
+  },
+  "sabrRestartHint": {
+    "message": "Si se interrumpe esta transferencia, al reanudar empieza desde el principio.",
+    "description": "Alcydeo interface: sabrRestartHint"
+  },
+  "downloadDestination": {
+    "message": "Guardar archivos",
+    "description": "Alcydeo interface: downloadDestination"
+  },
+  "saveAutomatically": {
+    "message": "Guardar automáticamente",
+    "description": "Alcydeo interface: saveAutomatically"
+  },
+  "saveAsk": {
+    "message": "Mostrar Guardar como en cada descarga",
+    "description": "Alcydeo interface: saveAsk"
+  },
+  "downloadSubfolder": {
+    "message": "Subcarpeta en el directorio de descargas de Chrome",
+    "description": "Alcydeo interface: downloadSubfolder"
+  },
+  "downloadFolderHint": {
+    "message": "Los archivos se guardan en el directorio elegido en Chrome, dentro de esta subcarpeta. Cambia el directorio principal en los ajustes de descarga de Chrome.",
+    "description": "Alcydeo interface: downloadFolderHint"
+  },
+  "chromeDownloadSettings": {
+    "message": "Elegir la carpeta principal en Chrome",
+    "description": "Alcydeo interface: chromeDownloadSettings"
+  },
+  "err_saveDialog": {
+    "message": "No se inició el guardado. Reintenta y elige un nombre y una ubicación en Guardar como.",
+    "description": "Alcydeo interface: err_saveDialog"
+  },
+  "technicalDetails": {
+    "message": "Detalles técnicos",
+    "description": "Alcydeo interface: technicalDetails"
+  },
+  "err_chooseQuality": {
+    "message": "Esta fuente ahora ofrece varias calidades. Abre Alcydeo en la página del vídeo, busca las calidades y vuelve a elegir una.",
+    "description": "Alcydeo interface: err_chooseQuality"
+  },
+  "err_manifestLoop": {
+    "message": "La fuente vuelve a una lista ya visitada. Actualiza el reproductor original y detecta la fuente de nuevo.",
+    "description": "Alcydeo interface: err_manifestLoop"
+  },
+  "globalDetection": {
+    "message": "Detección automática de medios",
+    "description": "Alcydeo interface: globalDetection"
+  },
+  "globalDetectionHint": {
+    "message": "Activada por defecto. Chrome concede acceso a los sitios al instalar. Puedes pausar la detección aquí o limitar el acceso en Chrome.",
+    "description": "Alcydeo interface: globalDetectionHint"
+  },
+  "err_html": {
+    "message": "La fuente devolvió una página HTML en lugar del medio. Se detuvo la descarga. Actualiza el reproductor original y detecta de nuevo la fuente.",
+    "description": "Alcydeo interface: err_html"
+  },
+  "err_notMedia": {
+    "message": "La respuesta no es un archivo multimedia compatible. Actualiza el reproductor y detecta la fuente de nuevo.",
+    "description": "Alcydeo interface: err_notMedia"
+  },
+  "appName": {
+    "message": "Alcydeo",
+    "description": "Alcydeo interface: appName"
+  },
+  "appDescription": {
+    "message": "Encuentra vídeos, guárdalos localmente y mantén privada tu biblioteca.",
+    "description": "Alcydeo interface: appDescription"
+  },
+  "tagline": {
+    "message": "Tus vídeos. Tu dispositivo.",
+    "description": "Alcydeo interface: tagline"
+  },
+  "detected": {
+    "message": "En esta página",
+    "description": "Alcydeo interface: detected"
+  },
+  "scan": {
+    "message": "Analizar página",
+    "description": "Alcydeo interface: scan"
+  },
+  "scanning": {
+    "message": "Buscando medios…",
+    "description": "Alcydeo interface: scanning"
+  },
+  "empty": {
+    "message": "Reproduce un vídeo para empezar",
+    "description": "Alcydeo interface: empty"
+  },
+  "emptyHint": {
+    "message": "Reproduce el vídeo y actualiza la página si aún no aparece.",
+    "description": "Alcydeo interface: emptyHint"
+  },
+  "quality": {
+    "message": "Calidad",
+    "description": "Alcydeo interface: quality"
+  },
+  "qualities": {
+    "message": "Buscar calidades",
+    "description": "Alcydeo interface: qualities"
+  },
+  "original": {
+    "message": "Fuente original",
+    "description": "Alcydeo interface: original"
+  },
+  "unknownSize": {
+    "message": "Tamaño desconocido",
+    "description": "Alcydeo interface: unknownSize"
+  },
+  "download": {
+    "message": "Descargar",
+    "description": "Alcydeo interface: download"
+  },
+  "preview": {
+    "message": "Vista previa",
+    "description": "Alcydeo interface: preview"
+  },
+  "close": {
+    "message": "Cerrar",
+    "description": "Alcydeo interface: close"
+  },
+  "queue": {
+    "message": "Descargas",
+    "description": "Alcydeo interface: queue"
+  },
+  "library": {
+    "message": "Biblioteca",
+    "description": "Alcydeo interface: library"
+  },
+  "settings": {
+    "message": "Ajustes",
+    "description": "Alcydeo interface: settings"
+  },
+  "local": {
+    "message": "Procesamiento local · sin cuenta",
+    "description": "Alcydeo interface: local"
+  },
+  "manager": {
+    "message": "Abrir gestor de descargas",
+    "description": "Alcydeo interface: manager"
+  },
+  "keepOpen": {
+    "message": "Mantén este gestor abierto al procesar medios segmentados. Cerrar Chrome detiene las tareas activas.",
+    "description": "Alcydeo interface: keepOpen"
+  },
+  "noTasks": {
+    "message": "Tu biblioteca empieza aquí",
+    "description": "Alcydeo interface: noTasks"
+  },
+  "search": {
+    "message": "Buscar títulos y etiquetas",
+    "description": "Alcydeo interface: search"
+  },
+  "favorite": {
+    "message": "Favorito",
+    "description": "Alcydeo interface: favorite"
+  },
+  "show": {
+    "message": "Mostrar en carpeta",
+    "description": "Alcydeo interface: show"
+  },
+  "verified": {
+    "message": "Estructura comprobada",
+    "description": "Alcydeo interface: verified"
+  },
+  "pause": {
+    "message": "Pausar",
+    "description": "Alcydeo interface: pause"
+  },
+  "resume": {
+    "message": "Reanudar",
+    "description": "Alcydeo interface: resume"
+  },
+  "cancel": {
+    "message": "Cancelar",
+    "description": "Alcydeo interface: cancel"
+  },
+  "remove": {
+    "message": "Eliminar registro y archivos temporales",
+    "description": "Alcydeo interface: remove"
+  },
+  "export": {
+    "message": "Exportar metadatos privados",
+    "description": "Alcydeo interface: export"
+  },
+  "theme": {
+    "message": "Tema",
+    "description": "Alcydeo interface: theme"
+  },
+  "system": {
+    "message": "Sistema",
+    "description": "Alcydeo interface: system"
+  },
+  "light": {
+    "message": "Claro",
+    "description": "Alcydeo interface: light"
+  },
+  "dark": {
+    "message": "Oscuro",
+    "description": "Alcydeo interface: dark"
+  },
+  "folder": {
+    "message": "Carpeta de descarga",
+    "description": "Alcydeo interface: folder"
+  },
+  "badge": {
+    "message": "Indicador del icono",
+    "description": "Alcydeo interface: badge"
+  },
+  "count": {
+    "message": "Número",
+    "description": "Alcydeo interface: count"
+  },
+  "dot": {
+    "message": "Punto",
+    "description": "Alcydeo interface: dot"
+  },
+  "hidden": {
+    "message": "Oculto",
+    "description": "Alcydeo interface: hidden"
+  },
+  "blockedSites": {
+    "message": "Dominios bloqueados (uno por línea; se permite *)",
+    "description": "Alcydeo interface: blockedSites"
+  },
+  "save": {
+    "message": "Guardar ajustes",
+    "description": "Alcydeo interface: save"
+  },
+  "reset": {
+    "message": "Restablecer ajustes",
+    "description": "Alcydeo interface: reset"
+  },
+  "saved": {
+    "message": "Guardado",
+    "description": "Alcydeo interface: saved"
+  },
+  "title": {
+    "message": "Nombre del archivo",
+    "description": "Alcydeo interface: title"
+  },
+  "privacy": {
+    "message": "Sin telemetría. Biblioteca y tareas permanecen en este navegador. La red se limita a fuentes autorizadas.",
+    "description": "Alcydeo interface: privacy"
+  },
+  "queued": {
+    "message": "En cola",
+    "description": "Alcydeo interface: queued"
+  },
+  "fetching": {
+    "message": "Descargando",
+    "description": "Alcydeo interface: fetching"
+  },
+  "assembling": {
+    "message": "Uniendo pistas",
+    "description": "Alcydeo interface: assembling"
+  },
+  "validating": {
+    "message": "Pendiente de verificación",
+    "description": "Alcydeo interface: validating"
+  },
+  "completed": {
+    "message": "Completado",
+    "description": "Alcydeo interface: completed"
+  },
+  "paused": {
+    "message": "En pausa",
+    "description": "Alcydeo interface: paused"
+  },
+  "failed": {
+    "message": "Requiere atención",
+    "description": "Alcydeo interface: failed"
+  },
+  "cancelled": {
+    "message": "Cancelado",
+    "description": "Alcydeo interface: cancelled"
+  },
+  "err_permission": {
+    "message": "No se puede acceder a esta fuente.",
+    "description": "Alcydeo interface: err_permission"
+  },
+  "err_network": {
+    "message": "La fuente no está disponible. Comprueba la conexión o actualiza la página.",
+    "description": "Alcydeo interface: err_network"
+  },
+  "err_expired": {
+    "message": "La sesión o el enlace caducó. Actualiza la página original.",
+    "description": "Alcydeo interface: err_expired"
+  },
+  "err_unsupported": {
+    "message": "Esta variante aún no es compatible. Prueba una fuente directa u otra calidad.",
+    "description": "Alcydeo interface: err_unsupported"
+  },
+  "err_encrypted": {
+    "message": "Los medios cifrados o protegidos no son compatibles.",
+    "description": "Alcydeo interface: err_encrypted"
+  },
+  "err_invalid": {
+    "message": "No se pudo validar el archivo. Comprueba que seleccionaste el archivo descargado.",
+    "description": "Alcydeo interface: err_invalid"
+  },
+  "err_space": {
+    "message": "No hay espacio temporal suficiente. Elimina tareas antiguas y reintenta.",
+    "description": "Alcydeo interface: err_space"
+  },
+  "err_excluded": {
+    "message": "Esta fuente está fuera del alcance de Alcydeo.",
+    "description": "Alcydeo interface: err_excluded"
+  },
+  "err_blocked": {
+    "message": "La detección está desactivada para este dominio en Ajustes.",
+    "description": "Alcydeo interface: err_blocked"
+  },
+  "err_interrupted": {
+    "message": "El proceso se detuvo. Abre la fuente y reanuda si es posible.",
+    "description": "Alcydeo interface: err_interrupted"
+  },
+  "notice_timedMetadataSkipped": {
+    "message": "Los metadatos temporizados (0x15) no se incluyeron en el archivo guardado.",
+    "description": "Alcydeo interface: notice_timedMetadataSkipped"
+  },
+  "deleteSelectionHint": {
+    "message": "Elimina los registros seleccionados permitidos y sus archivos temporales. Conserva los archivos guardados y las tareas activas o pausadas.",
+    "description": "Alcydeo interface: deleteSelectionHint"
+  },
+  "liveSource": {
+    "message": "En directo",
+    "description": "Alcydeo interface: liveSource"
+  },
+  "savingFile": {
+    "message": "Guardando archivo",
+    "description": "Alcydeo interface: savingFile"
+  },
+  "saveRequired": {
+    "message": "El guardado requiere atención",
+    "description": "Alcydeo interface: saveRequired"
+  },
+  "saveFile": {
+    "message": "Guardar archivo",
+    "description": "Alcydeo interface: saveFile"
+  },
+  "err_saveInterrupted": {
+    "message": "Chrome no ha confirmado el guardado. Comprueba sus descargas o el diálogo Guardar como y vuelve a guardar este archivo preparado.",
+    "description": "Alcydeo interface: err_saveInterrupted"
+  },
+  "cloudExperimental": {
+    "message": "Experimental",
+    "description": "Alcydeo interface: cloudExperimental"
+  },
+  "cloudMegaupSend": {
+    "message": "Compartir con MegaUp",
+    "description": "Alcydeo interface: cloudMegaupSend"
+  },
+  "cloudMegaupHint": {
+    "message": "Uso experimental sin cuenta. Los archivos son públicos y pueden caducar tras 30 días sin actividad. Conserva el original.",
+    "description": "Alcydeo interface: cloudMegaupHint"
+  },
+  "err_cloudMegaupUnavailable": {
+    "message": "La página de subida de MegaUp no está disponible o cambió. No se inició el envío. Reintenta más tarde o elige otro destino.",
+    "description": "Alcydeo interface: err_cloudMegaupUnavailable"
+  },
+  "err_cloudFileTooLarge": {
+    "message": "Este archivo supera el límite de subida del destino. Elige uno más pequeño.",
+    "description": "Alcydeo interface: err_cloudFileTooLarge"
+  },
+  "cloudMegaupOpen": {
+    "message": "Abrir MegaUp",
+    "description": "Alcydeo interface: cloudMegaupOpen"
+  }
+}

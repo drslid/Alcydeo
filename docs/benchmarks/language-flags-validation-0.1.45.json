@@ -1,0 +1,59 @@
+{
+  "version": "0.1.45",
+  "date": "2026-11-05",
+  "node": "24.22.2",
+  "pnpm": "12.5.1",
+  "browser": "156.0.8078.4",
+  "platform": "Linux/WSL2",
+  "windowsProfileDriven": false,
+  "unitTests": 412,
+  "unitFiles": 30,
+  "targetedChromeCases": 22,
+  "runs": {
+    "local": {
+      "startTime": "2026-11-05T21:26:20.118Z",
+      "duration": 13708.013,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "store": {
+      "startTime": "2026-11-05T21:27:01.512Z",
+      "duration": 13599.163,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "visualStates": 22,
+  "behaviour": {
+    "closedControlFlagOnly": true,
+    "automaticModeFlagOnly": true,
+    "popupAndManager": true,
+    "nativeNamesAndAutomaticMenuPreserved": true,
+    "accessibleLabelsPreserved": true,
+    "languages": 10,
+    "rtl": true,
+    "liveSwitchWithoutReload": true
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "localZip": true,
+    "storeZip": true,
+    "crx": true,
+    "pages": 103,
+    "site": {
+      "browser": "156.0.8078.4",
+      "locales": 10,
+      "mobileOverflow": false,
+      "pageErrors": [],
+      "base": "/alcydeo/"
+    },
+    "storeYoutubeExcluded": true
+  },
+  "scope": "One shared component template; no new tests, permissions, translation keys or media/cloud/TV logic. Existing popup tests and isolated DOM checks only; complete media/hardware matrix not rerun.",
+  "publication": false
+}

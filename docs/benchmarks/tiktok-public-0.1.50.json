@@ -1,0 +1,223 @@
+{
+  "version": "0.1.50",
+  "date": "2026-11-06T20:22:23.853Z",
+  "fixture": false,
+  "realPublicPage": true,
+  "page": "https://www.tiktok.com/@ler0i_off/video/7700630488859315489",
+  "browser": {
+    "version": "156.0.8078.4",
+    "platform": "Linux x86_64 laboratory; Chrome Windows not exercised here",
+    "mode": "native GUI",
+    "userAgentOverridden": false
+  },
+  "runtime": {
+    "version": "0.1.50",
+    "manifestSha256": "4159ce0d4aa144388a7361522d490b4c3c900c2cb965e045109ea6299527d0a5",
+    "runtimeTreeSha256": "73aa20a4ec7af4c0ac8173d561abcf4e9f468071fd32635d447573751583b330",
+    "method": "SHA256 of ordered UTF-8 relative-path NUL per-file-sha256 NUL byte-size newline transcript",
+    "fileCount": 99,
+    "bytes": 5718625,
+    "stage": "Snapshot used for the strict-deadline public metadata probe; before subsequent unrelated DASH/YouTube cache fixes"
+  },
+  "blocker": {
+    "repository": "https://github.com/uBlockOrigin/uBOL-home",
+    "release": "https://github.com/uBlockOrigin/uBOL-home/releases/tag/2026.1103.1743",
+    "asset": "https://github.com/uBlockOrigin/uBOL-home/releases/download/2026.1103.1743/uBOLite_2026.1103.1743.chromium.zip",
+    "version": "2026.1103.1743",
+    "sha256": "79236476535b63706749e088e0ce99bb31d3d2ff15fabb4d7e990be23d6e4613",
+    "matchesOfficialGithubAssetDigest": true,
+    "name": "uBlock Origin Lite",
+    "mode": "Complete",
+    "selectedThroughUi": true,
+    "enabledRulesets": [
+      "ublock-filters",
+      "easylist",
+      "easyprivacy",
+      "pgl",
+      "ublock-badware",
+      "urlhaus-full"
+    ],
+    "isolatedFreshProfile": true,
+    "bundledInAlcydeo": false
+  },
+  "httpStatus": 200,
+  "exactNativePost": {
+    "id": "7700630488859315489",
+    "hydrationScript": "__UNIVERSAL_DATA_FOR_REHYDRATION__",
+    "hydrationBytes": 297708,
+    "title": "😍😍😍 #viral #money #fyp"
+  },
+  "beforePopup": {
+    "badge": "1",
+    "cards": 1,
+    "allQualitiesAlreadyChecked": true,
+    "qualities": [
+      {
+        "label": "1920p · HEVC",
+        "height": 1920,
+        "bytes": 2956190,
+        "sampleState": "ready"
+      },
+      {
+        "label": "1280p · HEVC",
+        "height": 1280,
+        "bytes": 1985456,
+        "sampleState": "ready"
+      },
+      {
+        "label": "1024p · H.264",
+        "height": 1024,
+        "bytes": 2683229,
+        "sampleState": "ready"
+      },
+      {
+        "label": "1024p · H.264",
+        "height": 1024,
+        "bytes": 1556555,
+        "sampleState": "ready"
+      },
+      {
+        "label": "1024p · HEVC",
+        "height": 1024,
+        "bytes": 1491413,
+        "sampleState": "ready"
+      }
+    ]
+  },
+  "realNativePlayback": {
+    "sourceType": "blob",
+    "width": 576,
+    "height": 1024,
+    "duration": 17.946166,
+    "initialTime": 9.401088,
+    "laterTime": 15.629841,
+    "readyState": 4,
+    "paused": false
+  },
+  "sourceChecks": {
+    "transport": "Packaged sample in the original authorized TikTok frame, native credentials/CORS context",
+    "requestedPrefix": "bytes=0-4095",
+    "fiveVariantsPrefixSampled": true,
+    "additionalMetadataFetches": 0,
+    "noHeaderCookieOrSignatureForging": true,
+    "noAccessChallengeBypass": true
+  },
+  "alcydeoTasksOnThisFinalRun": 0,
+  "newFileExportRequested": false,
+  "completeStandaloneFileValidatedOnBuild50": false,
+  "priorCompleteStandaloneFileProof": {
+    "version": "0.1.49",
+    "selected": "1024p H.264",
+    "bytes": 2683229,
+    "sha256": "1ed9dd8bee70780be45a665455bdcc208be7ca6264b13bb8c1bd749a68b5e4f9",
+    "nativeSave": {
+      "state": "complete",
+      "exists": true,
+      "downloadCount": 1
+    },
+    "independentFullWebCodecsDecode": {
+      "bytes": 2683229,
+      "duration": 17.833333333333332,
+      "width": 576,
+      "height": 1024,
+      "videoSamples": 535,
+      "audioSamples": 387,
+      "lastVideo": 17.833333333333336,
+      "lastAudio": 17.811111111111114
+    },
+    "repeatedOnBuild50": false
+  },
+  "targetedUnitTests": {
+    "files": 3,
+    "passed": 55,
+    "coverage": [
+      "Parent deadline and AbortSignal",
+      "Late Chrome reply and delayed MAIN execution",
+      "Expired reply before timer dispatch",
+      "Strict 206 start/end/total/Content-Length",
+      "Encoded size left unknown",
+      "Original four-argument open/read/close transport"
+    ]
+  },
+  "sessionClosed": true,
+  "rawEvidenceRedistributed": false,
+  "limits": [
+    "Only the single supplied public post was exercised; this does not establish feed/live/private or universal TikTok compatibility.",
+    "The final build was checked through metadata, bounded prefixes and real native playback. The only complete saved/decoded standalone file belongs to the distinct build49 trial.",
+    "The other four qualities were not downloaded as complete standalone files.",
+    "A timeout or AbortSignal releases the worker wait; Chrome cannot retract an executeScript already dispatched. MAIN refuses a new sample fetch after its absolute deadline.",
+    "Public clip bytes, signed media URLs and screenshots remain in ignored local evidence and are not included in extension/Store/Pages packages."
+  ],
+  "baseline49": {
+    "extensionVersion": "0.1.49",
+    "httpStatus": 200,
+    "badgeBeforePopup": "1",
+    "nativePostId": "7700630488859315489",
+    "catalogueBytes": 297770,
+    "nativePlayback": {
+      "width": 576,
+      "height": 1024,
+      "duration": 17.946166,
+      "time": 9.470748,
+      "ready": 4,
+      "paused": false
+    },
+    "videoSourceKind": "blob",
+    "title": "😍😍😍 #viral #money #fyp",
+    "qualities": [
+      {
+        "label": "1920p · HEVC",
+        "bytes": 2956190,
+        "sampleState": "ready"
+      },
+      {
+        "label": "1280p · HEVC",
+        "bytes": 1985456,
+        "sampleState": "ready"
+      },
+      {
+        "label": "1024p · H.264",
+        "bytes": 2683229,
+        "sampleState": "ready"
+      },
+      {
+        "label": "1024p · H.264",
+        "bytes": 1556555,
+        "sampleState": "ready"
+      },
+      {
+        "label": "1024p · HEVC",
+        "bytes": 1491413,
+        "sampleState": "ready"
+      }
+    ]
+  },
+  "intermediateRecheck50": {
+    "extensionVersion": "0.1.50",
+    "browser": "156.0.8078.4",
+    "condition": "Fresh isolated profile with the same official uBlock Origin Lite Complete and six default lists; native GUI. Playback and prefixes only; no new task or export.",
+    "httpStatus": 200,
+    "badgeBeforePopup": "1",
+    "readyVariantsBeforePopup": 5,
+    "allVariantsSampledBeforePopup": true,
+    "nativePlayback": {
+      "width": 576,
+      "height": 1024,
+      "duration": 17.946166,
+      "time": 9.197764,
+      "ready": 4,
+      "paused": false
+    },
+    "profileClosed": true,
+    "newTaskOrExport": false,
+    "buildStage": "Intermediate 0.1.50 before the final strict deadline and Content-Range changes"
+  },
+  "finalRunStage": "Public metadata-probe snapshot 0.1.50; playback, exact-post catalog and bounded prefixes only; not a claim of public execution against the subsequent packaged candidate",
+  "externalPublication": false,
+  "externalUpload": false,
+  "subsequentChanges": {
+    "description": "Later unrelated DASH source-refresh, local YouTube cache and TypeScript shadow fixes changed the packaged candidate. The TikTok sampling and public-probe code did not change.",
+    "publicProbeRepeated": false,
+    "metadataProbeRuntimeTreeSha256": "73aa20a4ec7af4c0ac8173d561abcf4e9f468071fd32635d447573751583b330"
+  }
+}

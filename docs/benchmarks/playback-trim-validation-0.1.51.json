@@ -1,0 +1,242 @@
+{
+  "version": "0.1.51",
+  "date": "2026-11-06",
+  "environment": {
+    "buildNode": "24.22.2",
+    "pnpm": "12.5.1",
+    "chrome": "156.0.8078.4",
+    "fixtures": "isolated Linux/WSL2 profiles",
+    "publicPlaybackProbes": [
+      "native GUI Linux",
+      "native GUI Windows CFT win64"
+    ],
+    "windowsHarnessNode": "22.14.0 installed test driver only; all product builds use Node24",
+    "personalWindowsProfileDriven": false
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "unitPassed": 689,
+    "unitFiles": 42,
+    "targetedInstalledChromeCases": 170,
+    "localCases": 109,
+    "storeCases": 61,
+    "runs": {
+      "localRegression": {
+        "startTime": "2026-11-06T21:17:41.522Z",
+        "duration": 180882.48700000002,
+        "expected": 71,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "localTikTokLifecycle": {
+        "startTime": "2026-11-06T21:18:07.861Z",
+        "duration": 5235.239,
+        "expected": 5,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "localVideoTools": {
+        "startTime": "2026-11-06T21:03:07.358Z",
+        "duration": 39045.797,
+        "expected": 24,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "localToolsFeatureRegressions": {
+        "startTime": "2026-11-06T21:03:07.356Z",
+        "duration": 4896.991,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "localFragmentErrors": {
+        "startTime": "2026-11-06T21:02:51.602Z",
+        "duration": 11236.244,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "storeRegression": {
+        "startTime": "2026-11-06T21:19:02.350Z",
+        "duration": 103637.08799999999,
+        "expected": 61,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "storeAdditionalStrictLifecycleProof": {
+      "startTime": "2026-11-06T21:18:22.083Z",
+      "duration": 5069.197,
+      "expected": 5,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "countsExcludeDuplicatedCaptureOrAdditionalLifecycleRuns": true,
+    "fullE2eSuiteRerun": false,
+    "storeYoutubeExclusion": {
+      "version": "0.1.51",
+      "browser": "156.0.8078.4",
+      "synthetic": true,
+      "youtubeMedia": 0,
+      "youtubeBadge": "",
+      "youtubeLiveMedia": 0,
+      "youtubePlaylistUi": 0,
+      "playlistBrowseRequests": 0,
+      "playlistApiRejected": true,
+      "ordinaryMedia": 1,
+      "ordinaryKind": "direct"
+    }
+  },
+  "releaseRuntimeBeforePackaging": {
+    "version": "0.1.51",
+    "runtimeTreeSha256": "e947d230976433fa8602aac72beaac8e0929b9599392b80539b798f60ba5e6d5",
+    "fileCount": 99,
+    "bytes": 5733977,
+    "method": "SHA256 of ordered UTF-8 relative-path NUL per-file-sha256 NUL byte-size newline transcript"
+  },
+  "tikTok": {
+    "report": "tiktok-public-0.1.51.json",
+    "userConfirmedVersion": "0.1.50",
+    "userConfirmedNativePlayback": true,
+    "userSessionFailureReproduced": false,
+    "disappearingScriptRaceReproducedSeparately": true,
+    "scope": "exact native post/page/frame only,24formats; no raw JSON retained",
+    "captureBeforeDeferredScanMs": 40,
+    "storePolicyWarmupClearRaceReproducedAndFixed": true,
+    "nativeWindowsFinal": {
+      "runtimeTreeSha256": "e947d230976433fa8602aac72beaac8e0929b9599392b80539b798f60ba5e6d5",
+      "badge": "1",
+      "cards": 1,
+      "readyQualities": 5,
+      "nativeWidth": 720,
+      "nativeHeight": 1280,
+      "additionalTasksOrExports": 0
+    }
+  },
+  "odysee": {
+    "report": "odysee-public-0.1.51.json",
+    "completePublicFileProduced": false,
+    "exactUserInterruptedMessageReproduced": false,
+    "observedPublicFailure": "particular segments return429;144p50 and720pintermediate51 attempts stop without assembly/export",
+    "nativeAnonymousContextAlsoReturns429": true,
+    "noExtraRetryOrBypass": true,
+    "firstFragmentCausePreserved": true,
+    "pauseAndCancelRemainAuthoritative": true
+  },
+  "trimming": {
+    "report": "trim-times-0.1.51.json",
+    "guide": "../TRIM.md",
+    "input": "seconds or m:ss/h:mm:ss, up to3fractional digits, localized digits",
+    "invalidRangesExportNoTask": true,
+    "preciseOriginalFixtureExport": {
+      "build": "0.1.51",
+      "originalFixture": true,
+      "operation": {
+        "kind": "trim",
+        "start": 1.125,
+        "end": 3.875,
+        "options": {
+          "quality": "auto",
+          "maxHeight": 0,
+          "audioKbps": 0
+        }
+      },
+      "output": {
+        "duration": 2.752,
+        "tracks": [
+          {
+            "type": "video",
+            "codec": "avc"
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ]
+      },
+      "playback": {
+        "duration": 2.773333,
+        "ended": true,
+        "width": 720,
+        "height": 404
+      },
+      "bytes": 331393,
+      "downloadCount": 1,
+      "originalUnchanged": true,
+      "httpRequests": 0
+    },
+    "visual": {
+      "publicationCapturesUse": "Original local MP4 pattern/tone fixture; actual release UI, native player played then paused",
+      "captureSource": "artifacts/evidence/trim-time51/capture-source.json",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "locales": [
+        "fr",
+        "ar",
+        "ur"
+      ],
+      "widths": [
+        1280,
+        390
+      ],
+      "invalidRangeAndDisabledExportInspected": true,
+      "publicMediaUsed": false
+    },
+    "uiAndMediaBytesUnchangedAcrossObserverPolicyFixes": true
+  },
+  "intermediateFindings": [
+    "Baseline50 fails the real original-fixture script removal before40ms. The final reader preserves only minimized exact-post metadata and explicit refusal tombstones.",
+    "First51 lifecycle test exposes WXT stopOldScripts invalidation clearing the cache before a valid reinjection; corrected and five local cases pass.",
+    "First full Store run60pass/1fail: strict trace shows two ready variants and no pending checks, but worker restart loses mediaId and rereads prefixes. Tightening the harness does not fix it. Waiting for policy restoration before observed()/clear() fixes the real startup race without awaiting unrelated tab restoration.",
+    "First trim run22pass/11fail: ten narrow-width assertions share a flex wrapping problem, and one format-threshold assertion still expects provisional sources. CSS and harness expectation corrected before final27pass.",
+    "A403 path is too fast for a test to require transient fetching state; final error, checkpoint, pause/cancel and no-output assertions retained.",
+    "Two extra DASH error cases are nonregressions; the hypothesized inter-track masking was not reproduced and no global refactor was introduced.",
+    "Initial source-frame include probe is inconclusive due to CORS. A later probe observes the actual anonymous native request mode and reads429 there as well."
+  ],
+  "visualInspection": {
+    "popupLightDark": true,
+    "trimDesktopAnd390px": true,
+    "arabicUrduRtlAndTenLocales": true,
+    "sourceMedia": "original local pattern/tone only for distributed captures",
+    "publicFramesOrRawDataDistributed": false
+  },
+  "siteValidation": {
+    "browser": "156.0.8078.4",
+    "locales": 10,
+    "mobileOverflow": false,
+    "pageErrors": [],
+    "base": "/alcydeo/"
+  },
+  "artifactValidation": "playback-trim-artifacts-0.1.51.json",
+  "artifactSummary": {
+    "localFiles": 99,
+    "storeFiles": 99,
+    "crx3PayloadMatchesLocalZip": true,
+    "pages": {
+      "files": 277,
+      "htmlPages": 103,
+      "localeRoutes": 10,
+      "base": "/alcydeo/",
+      "archiveEqualsBuild": true
+    },
+    "brandKitFiles": 41,
+    "testedExecutableAndUiBytesMatchPackagedBuild": true
+  },
+  "limits": [
+    "The public TikTok absence is not reproduced in the user session; direct laboratory Windows/Linux loading and the disappearing-script fixture are distinct evidence.",
+    "No complete Odysee file is produced because measured source segments remain unavailable; no native header, signature, identity or URL is fabricated.",
+    "Millisecond input is not a guarantee of inter-frame precision; the real2.750s request produces2.752s structural /2.773333s native-player duration.",
+    "No new public complete file, personal Chrome profile, native Windows Save As/CRX installation, physical receiver or external publication is claimed."
+  ],
+  "externalPublication": false
+}

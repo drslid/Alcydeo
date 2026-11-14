@@ -1,0 +1,157 @@
+{
+  "workVersion": "0.1.62",
+  "testedRuntime": "0.1.61",
+  "date": "2026-11-08",
+  "userClarification": "The TikTok file does download; the remaining problem is casting that saved file. No TikTok parser, transport, signature, permission or codec change.",
+  "source": "https://www.tiktok.com/@mtzz.220/video/7705468092448607520",
+  "linux": {
+    "browser": "156.0.8078.4",
+    "nativeGui": true,
+    "personalProfileUsed": false,
+    "uaOverride": false,
+    "blocker": {
+      "version": "2026.1103.1743",
+      "mode": "Complete",
+      "rulesets": [
+        "ublock-filters",
+        "easylist",
+        "easyprivacy",
+        "pgl",
+        "ublock-badware",
+        "urlhaus-full"
+      ]
+    },
+    "readyQualities": 5,
+    "chosenLabel": "1920p \u00b7 HEVC",
+    "savedBytes": 2828584,
+    "expectedBytes": 2828584,
+    "state": "completed",
+    "saved": true,
+    "structureValidation": {
+      "duration": 24.2,
+      "tracks": [
+        {
+          "type": "audio",
+          "codec": "aac"
+        },
+        {
+          "type": "video",
+          "codec": "hevc"
+        }
+      ],
+      "bytes": 2828584,
+      "method": "local-structure",
+      "checkedAt": 1794153481859
+    },
+    "chrome": {
+      "state": "complete",
+      "exists": true,
+      "filenameFromDescription": true
+    },
+    "publicDiskExportCount": 1,
+    "fullDecode": {
+      "success": false,
+      "reason": "HEVC decoder unavailable in this Linux environment; no corrupt-file conclusion"
+    }
+  },
+  "windows": {
+    "testedVersion": "0.1.61",
+    "platform": "Windows native Chrome for Testing",
+    "browser": "156.0.8078.4",
+    "nodeHarness": "v22.14.0",
+    "personalProfileUsed": false,
+    "uaOverride": false,
+    "blocker": {
+      "version": "2026.1103.1743",
+      "mode": "Complete",
+      "completeSelected": true,
+      "rulesets": [
+        "ublock-filters",
+        "easylist",
+        "easyprivacy",
+        "pgl",
+        "ublock-badware",
+        "urlhaus-full",
+        "fra-0"
+      ]
+    },
+    "targetProvidedByUser": true,
+    "browserDownloadCount": 0,
+    "sourceTaskCount": 0,
+    "requestedPublicExports": 0,
+    "sourceMediaBytesObserved": 2230847,
+    "sourceNativePageErrors": [
+      "a.init is not a function"
+    ],
+    "detection": {
+      "badge": "1",
+      "cards": 1,
+      "readyVariants": 5,
+      "beforePopup": true,
+      "nativePlaybackBefore": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "time": 3.610667,
+          "duration": 24.356326,
+          "paused": false,
+          "ready": 4
+        }
+      ],
+      "nativePlaybackAfter": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "time": 5.639088,
+          "duration": 24.356326,
+          "paused": false,
+          "ready": 4
+        }
+      ]
+    },
+    "localAlreadySavedFile": {
+      "sha256": "e48e60048c2954ec5da7c19472667165c646ece1d2d6a67feef415fc8c136255",
+      "bytes": 2828584,
+      "playback": {
+        "canPlayType": "",
+        "width": 1080,
+        "height": 1920,
+        "duration": 24.2,
+        "before": 0.005577,
+        "time": 1.46555,
+        "advanced": true,
+        "ready": 4
+      },
+      "independentDecode": {
+        "source": "same saved Linux MP4; no second public download",
+        "method": "Full independent WebCodecs traversal of all samples",
+        "bytes": 2828584,
+        "duration": 24.2,
+        "width": 1080,
+        "height": 1920,
+        "videoCodec": "hevc",
+        "audioCodec": "aac",
+        "videoCanDecode": true,
+        "audioCanDecode": true,
+        "videoSamples": 726,
+        "audioSamples": 525,
+        "lastVideo": 24.200000000000003,
+        "lastAudio": 24.21981859410431,
+        "success": true
+      }
+    },
+    "profileClosed": true,
+    "newPublicDownloadPerformed": false,
+    "limitations": [
+      "This run uses six base lists plus the automatically enabled French list, not only six rulesets.",
+      "Native playback naturally fetched source media; no second Alcydeo download, disk export or cloud upload was launched.",
+      "The earlier Linux failure is an OS/browser decoder limitation for this HEVC file, not evidence of a corrupt saved output."
+    ]
+  },
+  "sameFileSha256": "e48e60048c2954ec5da7c19472667165c646ece1d2d6a67feef415fc8c136255",
+  "sameFileAcrossWindowsAndLinux": true,
+  "publicMediaIncludedInDistribution": false,
+  "physicalReceiverTested": false,
+  "externalUploads": 0,
+  "externalPublication": false
+}
