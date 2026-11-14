@@ -97,5 +97,50 @@
     "Physical Cast/AirPlay receivers, public providers, private accounts and large-file benchmarks are not certified here.",
     "GitHub Pages deployment and GitHub Release publication are separate maintainer actions."
   ],
-  "publicationPerformedByThisAgent": false
+  "publicationPerformedByThisAgent": false,
+  "hostedCiFollowup": {
+    "runs": [
+      {
+        "id": 43617265569,
+        "commit": "f63f6962f60de1f0d871d0dd953f8959ef77ba71",
+        "status": "failed",
+        "passed": 44,
+        "failed": 1,
+        "notRun": 17
+      },
+      {
+        "id": 43618416733,
+        "commit": "73c2107bc4484ebe154819f04357f06053b53115",
+        "status": "failed",
+        "passed": 44,
+        "failed": 1,
+        "notRun": 17,
+        "nativeApiError": "Invalid filename",
+        "downloadItemsCreated": 0,
+        "sourcePrechecks": [
+          206,
+          206
+        ]
+      }
+    ],
+    "cause": "The popup locale test forced unavailable per-language OS locales. The same Unicode filename was rejected with LANG=en.UTF-8 and no inherited LC_* settings, but accepted with C.UTF-8. The local shell had inherited LC_ALL=C.UTF-8 and masked the problem.",
+    "fix": "Keep the Linux browser process locale at C.UTF-8; select the ten UI languages using Playwright locale and Chrome --lang. Preserve Unicode names, real downloads, security settings and all assertions.",
+    "regression": {
+      "baseline": {
+        "tests": 1,
+        "failed": 1,
+        "nativeApiError": "Invalid filename"
+      },
+      "corrected": {
+        "tests": 10,
+        "passed": 10,
+        "failed": 0,
+        "skipped": 0,
+        "retries": 0,
+        "durationSeconds": 29.7
+      },
+      "environment": "Inherited LC_ALL and LC_CTYPE explicitly removed for both baseline and corrected tests."
+    },
+    "hostedConfirmation": "pending"
+  }
 }
