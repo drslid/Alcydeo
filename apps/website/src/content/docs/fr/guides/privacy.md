@@ -12,7 +12,7 @@ Activée par défaut. Chrome accorde l’accès aux sites à l’installation. V
 
 Alcydeo peut relire automatiquement les playlists détectées pour identifier les qualités et les fragments. Le téléchargement des fragments par l’extension démarre sur votre action.
 
-Les tâches conservent localement les URL de page et de source, signatures temporaires comprises, dans IndexedDB. Les fragments et sorties utilisent OPFS. Effacer une tâche supprime sa fiche et ses fichiers temporaires, pas le fichier final ni l’historique Chrome. Les exports omettent URL, chemins et identifiants de téléchargement. Les requêtes contactent les sources/CDN autorisés avec les sessions applicables de Chrome. La navigation privée est désactivée. Un futur hébergement GitHub Pages peut journaliser les visites du site. Le contact public reste à fournir.
+Les tâches conservent localement les URL de page et de source, signatures temporaires comprises, dans IndexedDB. Les fragments et sorties utilisent OPFS. Effacer une tâche supprime sa fiche et ses fichiers temporaires, pas le fichier final ni l’historique Chrome. Les exports omettent URL, chemins et identifiants de téléchargement. Les requêtes contactent les sources/CDN autorisés avec les sessions applicables de Chrome. La navigation privée est désactivée. Un futur hébergement GitHub Pages peut journaliser les visites du site. Assistance publique : [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
 
 Effacer l’historique
 

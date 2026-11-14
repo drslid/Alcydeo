@@ -97,7 +97,6 @@
     "Physical Cast/AirPlay receivers, public providers, private accounts and large-file benchmarks are not certified here.",
     "GitHub Pages deployment and GitHub Release publication are separate maintainer actions."
   ],
-  "publicationPerformedByThisAgent": false,
   "hostedCiFollowup": {
     "runs": [
       {
@@ -121,6 +120,18 @@
           206,
           206
         ]
+      },
+      {
+        "id": 43619126087,
+        "commit": "dd76d6ba0a464b9ad722be6a2aa1ba159dc0c0c3",
+        "status": "success",
+        "url": "https://github.com/drslid/Alcydeo/actions/runs/43619126087",
+        "passed": 62,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "retries": 0,
+        "durationSeconds": 186.24
       }
     ],
     "cause": "The popup locale test forced unavailable per-language OS locales. The same Unicode filename was rejected with LANG=en.UTF-8 and no inherited LC_* settings, but accepted with C.UTF-8. The local shell had inherited LC_ALL=C.UTF-8 and masked the problem.",
@@ -141,6 +152,7 @@
       },
       "environment": "Inherited LC_ALL and LC_CTYPE explicitly removed for both baseline and corrected tests."
     },
-    "hostedConfirmation": "pending"
-  }
+    "hostedConfirmation": "passed; all selected cases and packaging steps succeeded"
+  },
+  "publicationPerformedBySmokeSuite": false
 }

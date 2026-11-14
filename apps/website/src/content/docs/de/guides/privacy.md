@@ -12,7 +12,7 @@ Standardmäßig aktiv. Chrome gewährt den Websitezugriff bei der Installation. 
 
 Alcydeo kann erkannte Wiedergabelisten automatisch erneut lesen, um Qualitäten und Fragmente zu erkennen. Medienfragmente lädt die Erweiterung erst nach dem Start eines Downloads herunter.
 
-Aufgaben speichern Seiten- und Quell-URLs samt temporären Signaturen lokal in IndexedDB. Fragmente und Ausgaben nutzen OPFS. Das Löschen entfernt Eintrag und temporäre Dateien, nicht die gespeicherte Datei oder den Chrome-Verlauf. Exporte enthalten keine URLs, Pfade oder Download-IDs. Anfragen kontaktieren erlaubte Quellen/CDNs mit den anwendbaren Chrome-Sitzungen. Inkognito ist deaktiviert. Ein künftiger GitHub-Pages-Host kann Websitebesuche protokollieren. Ein öffentlicher Kontakt fehlt noch.
+Aufgaben speichern Seiten- und Quell-URLs samt temporären Signaturen lokal in IndexedDB. Fragmente und Ausgaben nutzen OPFS. Das Löschen entfernt Eintrag und temporäre Dateien, nicht die gespeicherte Datei oder den Chrome-Verlauf. Exporte enthalten keine URLs, Pfade oder Download-IDs. Anfragen kontaktieren erlaubte Quellen/CDNs mit den anwendbaren Chrome-Sitzungen. Inkognito ist deaktiviert. Ein künftiger GitHub-Pages-Host kann Websitebesuche protokollieren. Öffentlicher Support: [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
 
 Verlauf löschen
 

@@ -12,7 +12,7 @@ Activada por defecto. Chrome concede acceso a los sitios al instalar. Puedes pau
 
 Alcydeo puede volver a leer automáticamente las listas detectadas para identificar calidades y fragmentos. La extensión descarga los fragmentos multimedia cuando inicias una descarga.
 
-Las tareas guardan URLs de página y fuente, incluidas firmas temporales, localmente en IndexedDB. Los fragmentos y resultados usan OPFS. Eliminar una tarea borra el registro y los archivos temporales, no el archivo final ni el historial de Chrome. Las exportaciones omiten URLs, rutas e identificadores. Las solicitudes contactan fuentes/CDN permitidos con las sesiones aplicables de Chrome. El modo incógnito está desactivado. GitHub Pages podría registrar visitas al sitio. El contacto público está pendiente.
+Las tareas guardan URLs de página y fuente, incluidas firmas temporales, localmente en IndexedDB. Los fragmentos y resultados usan OPFS. Eliminar una tarea borra el registro y los archivos temporales, no el archivo final ni el historial de Chrome. Las exportaciones omiten URLs, rutas e identificadores. Las solicitudes contactan fuentes/CDN permitidos con las sesiones aplicables de Chrome. El modo incógnito está desactivado. GitHub Pages podría registrar visitas al sitio. Soporte público: [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
 
 Borrar historial
 

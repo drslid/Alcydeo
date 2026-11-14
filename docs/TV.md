@@ -2,7 +2,7 @@
 
 ## Public preview distribution — November 14, 2026
 
-The owner authorizes the public site at **https://drslid.github.io/Alcydeo/cast/**. Both the repository and Pages path preserve the capital A. The configured public build will use this official-SDK player after its deployed ready protocol2 is verified; no user-side localhost service is required. Development builds can still select the explicit local fixture player. The receiver must be able to read the actual source.
+The owner authorizes the public site at **https://drslid.github.io/Alcydeo/cast/**. Both the repository and Pages path preserve the capital A. The configured public build will use this official-SDK player after its deployed ready protocol2 is verified; no user-side localhost service is required. Preview source builds now default to that public address, with the existing bounded readiness check and native fallback. Development builds can still select the explicit local fixture player through `ALCYDEO_CAST_SENDER_URL`; the Store default remains empty. The receiver must be able to read the actual source.
 
 This publication is not additional evidence of physical receiver playback. The earlier Google sample is user-confirmed; the supplied TikTok and private PC transport to Shield remain unverified and unimplemented respectively. AirPlay is unavailable in Windows Chrome. The historical sections below retain their original version numbers and laboratory paths.
 

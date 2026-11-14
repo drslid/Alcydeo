@@ -12,7 +12,7 @@ title: "权限与隐私"
 
 Alcydeo 可能自动重新读取已检测到的播放列表，以识别画质和分段。扩展程序仅在您开始下载后下载媒体分段。
 
-任务在 IndexedDB 中本地保存页面和来源 URL，包括临时签名。片段和输出使用 OPFS。删除任务会清除记录及临时文件，不会删除最终文件或 Chrome 下载历史。导出不包含 URL、路径或下载标识符。媒体请求使用 Chrome 适用的会话访问已授权来源/CDN。已禁用无痕模式。未来的 GitHub Pages 托管方可能记录网站访问。公开支持联系方式仍待提供。
+任务在 IndexedDB 中本地保存页面和来源 URL，包括临时签名。片段和输出使用 OPFS。删除任务会清除记录及临时文件，不会删除最终文件或 Chrome 下载历史。导出不包含 URL、路径或下载标识符。媒体请求使用 Chrome 适用的会话访问已授权来源/CDN。已禁用无痕模式。未来的 GitHub Pages 托管方可能记录网站访问。公开支持：[GitHub Issues](https://github.com/drslid/Alcydeo/issues)。
 
 清除历史记录
 

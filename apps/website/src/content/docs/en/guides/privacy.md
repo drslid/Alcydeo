@@ -12,7 +12,7 @@ Enabled by default. Chrome grants site access at installation. You can pause det
 
 Alcydeo may reread detected playlists automatically to identify qualities and fragments. The extension downloads media fragments only when you start a download.
 
-Tasks store page/source URLs, including temporary signatures, locally in IndexedDB. Fragments and outputs use OPFS. Removing a task clears its record and temporary files, not the final saved file or Chrome download history. User exports omit URLs, paths and download IDs. Media requests contact allowed sources/CDNs using Chrome’s applicable sessions. Incognito is disabled. A future GitHub Pages host may log documentation visits. A public support contact is still pending.
+Tasks store page/source URLs, including temporary signatures, locally in IndexedDB. Fragments and outputs use OPFS. Removing a task clears its record and temporary files, not the final saved file or Chrome download history. User exports omit URLs, paths and download IDs. Media requests contact allowed sources/CDNs using Chrome’s applicable sessions. Incognito is disabled. A future GitHub Pages host may log documentation visits. Public support: [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
 
 Clear history
 

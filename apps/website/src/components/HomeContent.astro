@@ -5,6 +5,7 @@ interface Props { locale: keyof typeof catalogs; version: string; privacyTitle: 
 const { locale, version, privacyTitle } = Astro.props;
 const c = catalogs[locale];
 const text = homeCopy[locale];
+const languageLabels = { en: 'languages', es: 'idiomas', fr: 'langues', de: 'Sprachen', zh_CN: '种语言', ar: 'لغات', ru: 'языков', pt: 'idiomas', hi: 'भाषाएँ', ur: 'زبانیں' };
 const route = locale === 'zh_CN' ? 'zh-cn' : locale;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const guide = (page: string) => `${base}/${route}/guides/${page}/`;
@@ -34,7 +35,7 @@ const releaseUrl = `https://github.com/drslid/Alcydeo/releases/tag/v${version}`;
 
   <div class="privacy-band">
     <div><strong>{c.local}</strong><p>{c.privacy}</p></div>
-    <div class="language-fact"><strong>10</strong><span>{c.language}</span></div>
+    <div class="language-fact"><strong>10</strong><span>{languageLabels[locale]}</span></div>
   </div>
 
   <section class="home-workspace" aria-labelledby="workspace-title">
