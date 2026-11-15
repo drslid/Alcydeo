@@ -18,3 +18,6 @@ README/site/release documentation: /root/pages_style.
 
 ## Boundaries
 Chrome experimental YouTube preview remains distinct from Chrome Store. Firefox starts as the Store-ready channel, with YouTube excluded. Firefox ZIP is temporarily installable for testing until Mozilla review/signing; never claim an unsigned ZIP is an approved permanent XPI. Native Chrome tabCapture and Cast are not portable APIs; expose only verified capabilities. No companion/backend added.
+
+## Outcome
+Published v1.0.0 from `a4266ae` with nine assets and verified anonymous downloads/SHA-256. Public Pages deployment and source/tag CI succeeded. See `docs/benchmarks/publication-1.0.0.json`; Store submission and Mozilla signing remain separate.

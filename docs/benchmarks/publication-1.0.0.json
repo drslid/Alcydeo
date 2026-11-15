@@ -1,0 +1,136 @@
+{
+  "version": "1.0.0",
+  "publishedAt": "2026-11-15T01:00:04Z",
+  "release": "https://github.com/drslid/Alcydeo/releases/tag/v1.0.0",
+  "sourceCommit": "a4266aebe9acd82435792b72d2eb06ba11fbbd53",
+  "tag": "v1.0.0",
+  "latestStableRelease": true,
+  "pages": {
+    "url": "https://drslid.github.io/Alcydeo/",
+    "deployment": "https://github.com/drslid/Alcydeo/actions/runs/43660390311",
+    "views": 8,
+    "httpProbes": 14,
+    "passed": true
+  },
+  "validation": {
+    "sourceCI": "https://github.com/drslid/Alcydeo/actions/runs/43659961889",
+    "tagCI": "https://github.com/drslid/Alcydeo/actions/runs/43660429353",
+    "bothSuccessful": true,
+    "unitTests": 1045,
+    "selectedChromeTests": 66,
+    "selectedFirefoxScenarios": 44,
+    "firefoxBrowsers": [
+      "160.0",
+      "153.7.0 ESR"
+    ],
+    "sourceZipRebuildByteIdentical": true,
+    "finalValidationAsset": "https://github.com/drslid/Alcydeo/releases/download/v1.0.0/release-validation-1.0.0.json"
+  },
+  "anonymousDownloads": [
+    {
+      "name": "alcydeo-1.0.0-chrome.zip",
+      "url": "https://github.com/drslid/Alcydeo/releases/download/v1.0.0/alcydeo-1.0.0-chrome.zip",
+      "status": 200,
+      "bytes": 2591925,
+      "sha256": "25574d6a537ce141debe743fb9fd8fe980f1200248a013759f6c0b004f160c22",
+      "contentType": "application/octet-stream",
+      "sha256Matches": true,
+      "anonymousRequest": true
+    },
+    {
+      "name": "alcydeo-1.0.0-firefox.zip",
+      "url": "https://github.com/drslid/Alcydeo/releases/download/v1.0.0/alcydeo-1.0.0-firefox.zip",
+      "status": 200,
+      "bytes": 2517138,
+      "sha256": "1c03864a6544b2d81ec7d93516b0e9e5524e9f6fa485bf049603521efe507c35",
+      "contentType": "application/octet-stream",
+      "sha256Matches": true,
+      "anonymousRequest": true
+    },
+    {
+      "name": "alcydeo-1.0.0-source.zip",
+      "url": "https://github.com/drslid/Alcydeo/releases/download/v1.0.0/alcydeo-1.0.0-source.zip",
+      "status": 200,
+      "bytes": 57297880,
+      "sha256": "457c98881cf2c7a7f70800ae10589625985e984b8f4df95ee08f14f6b5d21404",
+      "contentType": "application/octet-stream",
+      "sha256Matches": true,
+      "anonymousRequest": true
+    },
+    {
+      "name": "alcydeo-brand-1.0.0.zip",
+      "url": "https://github.com/drslid/Alcydeo/releases/download/v1.0.0/alcydeo-brand-1.0.0.zip",
+      "status": 200,
+      "bytes": 873486,
+      "sha256": "3f88544a86ca1f18d8a1dd717002a098a0c9ff51579e23580126da2dc81e4887",
+      "contentType": "application/octet-stream",
+      "sha256Matches": true,
+      "anonymousRequest": true
+    },
+    {
+      "name": "alcydeo-pages-1.0.0.zip",
+      "url": "https://github.com/drslid/Alcydeo/releases/download/v1.0.0/alcydeo-pages-1.0.0.zip",
+      "status": 200,
+      "bytes": 3525069,
+      "sha256": "8ea1d1a002a3cab273c298eb84f11db1ae3297f21869f95ded3c51307b5ee566",
+      "contentType": "application/octet-stream",
+      "sha256Matches": true,
+      "anonymousRequest": true
+    },
+    {
+      "name": "alcydeo-store-1.0.0-chrome.zip",
+      "url": "https://github.com/drslid/Alcydeo/releases/download/v1.0.0/alcydeo-store-1.0.0-chrome.zip",
+      "status": 200,
+      "bytes": 2524785,
+      "sha256": "f752b7b962a6c5fbe5b439c555d4b0d2c869001c9a08c0efa6a53ff069e60d0e",
+      "contentType": "application/octet-stream",
+      "sha256Matches": true,
+      "anonymousRequest": true
+    },
+    {
+      "name": "ffmpeg-aac-corresponding-source-60a2818.tar.gz",
+      "url": "https://github.com/drslid/Alcydeo/releases/download/v1.0.0/ffmpeg-aac-corresponding-source-60a2818.tar.gz",
+      "status": 200,
+      "bytes": 18053763,
+      "sha256": "50cac4cd224ec15e613b2180e654466a2ee25f86dde77c88228b80cda69f7351",
+      "contentType": "application/octet-stream",
+      "sha256Matches": true,
+      "anonymousRequest": true
+    },
+    {
+      "name": "release-validation-1.0.0.json",
+      "url": "https://github.com/drslid/Alcydeo/releases/download/v1.0.0/release-validation-1.0.0.json",
+      "status": 200,
+      "bytes": 25614,
+      "sha256": "089e727f147d1d6451fb346bd6adde37aca7ce38fcc722ae8da137ad102577ec",
+      "contentType": "application/octet-stream",
+      "sha256Matches": true,
+      "anonymousRequest": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "url": "https://github.com/drslid/Alcydeo/releases/download/v1.0.0/SHA256SUMS",
+      "status": 200,
+      "bytes": 760,
+      "sha256": "fac264aff0fb0bc1b3837580eca5f6995360a9ccbedd28813421c4ecbdda858c",
+      "contentType": "application/octet-stream",
+      "sha256Matches": true,
+      "anonymousRequest": true
+    }
+  ],
+  "scope": "Publication receipt added after the immutable source tag. Release ZIPs remain built from the tagged source, not from this documentation receipt.",
+  "chromeStoreSubmitted": false,
+  "firefoxAMOSubmitted": false,
+  "firefoxSigned": false,
+  "limitations": [
+    "Firefox ZIP is for temporary installation until Mozilla signing.",
+    "Selected test suites do not certify every source, codec, provider or physical Cast receiver."
+  ],
+  "testIncident": {
+    "provider": "Gofile",
+    "syntheticOriginalFiles": 1,
+    "bytes": 525622,
+    "personalMedia": false,
+    "details": "docs/TEST-RESULTS.md; final Release validation JSON preserves incident and fail-closed retest. No remote deletion claimed."
+  }
+}
