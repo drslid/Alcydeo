@@ -2,23 +2,29 @@
 title: "Permissions and privacy"
 ---
 
+The Chrome development ZIP includes experimental YouTube support. The separate Chrome Store preparation and Firefox package exclude YouTube. Firefox ZIP installation is temporary; no signed XPI or Store approval is claimed.
+
+Firefox asks for optional native consent before a Cloud upload, covering file content and any personal data it may contain, such as a voice or image. Refusal prevents preparation and sending. There is no automatic upload.
+
 The local YouTube experiment retains bounded observed player context and existing opaque transport tokens locally with the task. It does not generate attestations or execute remote player code. Exports omit these fields.
 
 No telemetry. Library and tasks stay in this browser. Network access is limited to sources you allow.
 
 Automatic media detection
 
-Enabled by default. Chrome grants site access at installation. You can pause detection here or limit site access in Chrome.
+Detection starts automatically on allowed sites. Pause it here or restrict site access in your browser.
 
 Alcydeo may reread detected playlists automatically to identify qualities and fragments. The extension downloads media fragments only when you start a download.
 
-Tasks store page/source URLs, including temporary signatures, locally in IndexedDB. Fragments and outputs use OPFS. Removing a task clears its record and temporary files, not the final saved file or Chrome download history. User exports omit URLs, paths and download IDs. Media requests contact allowed sources/CDNs using Chrome’s applicable sessions. Incognito is disabled. A future GitHub Pages host may log documentation visits. Public support: [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
+Tasks store page/source URLs, including temporary signatures, locally in IndexedDB. Fragments and outputs use OPFS. Removing a task clears its record and temporary files, not the final saved file or Chrome download history. User exports omit URLs, paths and download IDs. Media requests contact allowed sources/CDNs using Chrome’s applicable sessions. Incognito is disabled. GitHub Pages hosts the public documentation and may log site visits. Public support: [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
 
 Clear history
 
 Remove finished, failed and cancelled records and their temporary files from Alcydeo, across all pages and filters, including favorites. Saved files and active or paused downloads are kept.
 
-## Detection diagnostics — 0.1.53
+## Detection diagnostics — 1.0.0
+
+Library → Settings → Detection: choose the source tab to view or copy its local diagnostic. Safe codes and counters only; no automatic upload. The diagnostic is no longer in the popup.
 
 Local report, without video links, cookies or signatures. Nothing is sent.
 

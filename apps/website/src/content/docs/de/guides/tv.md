@@ -8,8 +8,6 @@ Google Cast bleibt experimentell. Der Nutzer bestätigte eine offizielle Google-
 
 Die separate Webseite lädt das Google-Cast-SDK. Nach der Empfängerauswahl erhält dessen Player Video-URL und Titel. Cookies und Passwörter werden nicht übertragen.
 
-Der Google-Cast-Webplayer ist hier nicht verfügbar. Für diesen lokalen Test das Übertragen-Menü von Chrome nutzen.
-
 [Google-Cast-Player](/Alcydeo/cast/)
 
 Die lokale Vorschau ist nicht verfügbar. Ihr Fernseher unterstützt das Format möglicherweise; Sie können die Übertragung versuchen.

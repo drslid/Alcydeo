@@ -1,8 +1,9 @@
 import type{Task}from'../../../packages/contracts';
 import{namedTaskFile}from'../../../packages/media-core/filenames';
 import{downloadedFileUrl}from'./local-cast-file';
-export async function fileAccess(){return await chrome.extension.isAllowedFileSchemeAccess()&&await chrome.permissions.contains({origins:['file:///*']});}
-export async function allowFileAccess(){if(!await chrome.extension.isAllowedFileSchemeAccess()){await chrome.tabs.create({url:`chrome://extensions/?id=${chrome.runtime.id}`});throw new Error('tvFileAccess');}if(!await chrome.permissions.request({origins:['file:///*']}))throw new Error('permission');}
+import{firefoxBuild,extensionSettingsUrl}from'./platform';
+export async function fileAccess(){return !firefoxBuild&&await chrome.extension.isAllowedFileSchemeAccess()&&await chrome.permissions.contains({origins:['file:///*']});}
+export async function allowFileAccess(){if(firefoxBuild)throw new Error('chooseLocalFiles');if(!await chrome.extension.isAllowedFileSchemeAccess()){await chrome.tabs.create({url:extensionSettingsUrl()});throw new Error('tvFileAccess');}if(!await chrome.permissions.request({origins:['file:///*']}))throw new Error('permission');}
 export async function taskFile(task:Task,signal?:AbortSignal){
  if(task.output){try{const dir=await(await navigator.storage.getDirectory()).getDirectoryHandle(task.id);return namedTaskFile(task,await(await dir.getFileHandle(task.output)).getFile());}catch{/* A saved disk copy can survive OPFS cleanup. */}}
  const id=task.downloadId??task.castDownloadId;if(id===undefined||!await fileAccess())throw new Error('chooseLocalFiles');

@@ -2,23 +2,29 @@
 title: "Permisos y privacidad"
 ---
 
+El ZIP de desarrollo de Chrome incluye YouTube experimental. La preparación para Chrome Web Store y el paquete Firefox lo excluyen. La instalación del ZIP de Firefox es temporal; no se anuncia un XPI firmado ni aprobación de tienda.
+
+Firefox pide consentimiento nativo opcional antes de un envío a la nube, para el contenido y los datos personales que pueda incluir, como voz o imagen. Rechazarlo impide la preparación y el envío. No hay envío automático.
+
 La prueba local de YouTube conserva contexto observado y tokens opacos existentes localmente con la tarea. No genera atestaciones ni ejecuta código remoto del reproductor. Las exportaciones omiten estos datos.
 
 Sin telemetría. Biblioteca y tareas permanecen en este navegador. La red se limita a fuentes autorizadas.
 
 Detección automática de medios
 
-Activada por defecto. Chrome concede acceso a los sitios al instalar. Puedes pausar la detección aquí o limitar el acceso en Chrome.
+La detección se inicia en los sitios permitidos. Páusala aquí o limita el acceso en el navegador.
 
 Alcydeo puede volver a leer automáticamente las listas detectadas para identificar calidades y fragmentos. La extensión descarga los fragmentos multimedia cuando inicias una descarga.
 
-Las tareas guardan URLs de página y fuente, incluidas firmas temporales, localmente en IndexedDB. Los fragmentos y resultados usan OPFS. Eliminar una tarea borra el registro y los archivos temporales, no el archivo final ni el historial de Chrome. Las exportaciones omiten URLs, rutas e identificadores. Las solicitudes contactan fuentes/CDN permitidos con las sesiones aplicables de Chrome. El modo incógnito está desactivado. GitHub Pages podría registrar visitas al sitio. Soporte público: [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
+Las tareas guardan URLs de página y fuente, incluidas firmas temporales, localmente en IndexedDB. Los fragmentos y resultados usan OPFS. Eliminar una tarea borra el registro y los archivos temporales, no el archivo final ni el historial de Chrome. Las exportaciones omiten URLs, rutas e identificadores. Las solicitudes contactan fuentes/CDN permitidos con las sesiones aplicables de Chrome. El modo incógnito está desactivado. GitHub Pages aloja la documentación pública y puede registrar visitas al sitio. Soporte público: [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
 
 Borrar historial
 
 Se eliminarán de Alcydeo los registros finalizados, fallidos y cancelados y sus archivos temporales, en todas las páginas y filtros, incluidos los favoritos. Se conservan los archivos guardados y las descargas activas o pausadas.
 
-## Diagnóstico de detección — 0.1.53
+## Diagnóstico de detección — 1.0.0
+
+Biblioteca → Ajustes → Detección: elige la pestaña de origen para ver o copiar su diagnóstico local. Solo códigos y contadores seguros, sin envío automático. El diagnóstico ya no está en la ventana emergente.
 
 Informe local, sin enlaces de vídeo, cookies ni firmas. No se envía nada.
 

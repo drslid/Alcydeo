@@ -2,6 +2,10 @@
 title: "Troubleshooting"
 ---
 
+Library → Settings → Detection: choose the source tab to view or copy its local diagnostic. Safe codes and counters only; no automatic upload. The diagnostic is no longer in the popup.
+
+Firefox 153+ has its own package without YouTube. Chrome tab capture, Google Cast and AirPlay are unavailable in Firefox. Local processing depends on the codecs supported by that browser; the Firefox guide records the tested scope.
+
 This source is not accessible.
 
 The source returned an HTML page instead of media. The download was stopped. Refresh the original player and detect its media source again.
@@ -22,7 +26,9 @@ After updating, reload Alcydeo and video pages which were already open. Version 
 
 TikTok uses the current post’s native media metadata and keeps up to three original CDN addresses per quality. A failed address may be replaced only after its own media check; downloads keep the selected quality and title. Server rate limits still require waiting. Keep the source page and manager open until saving finishes.
 
-## Detection diagnostics — 0.1.53
+## Detection diagnostics — 1.0.0
+
+Library → Settings → Detection: choose the source tab to view or copy its local diagnostic. Safe codes and counters only; no automatic upload. The diagnostic is no longer in the popup.
 
 Local report, without video links, cookies or signatures. Nothing is sent.
 

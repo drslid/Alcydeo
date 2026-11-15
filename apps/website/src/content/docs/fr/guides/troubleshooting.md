@@ -2,6 +2,10 @@
 title: "Dépannage"
 ---
 
+Bibliothèque → Réglages → Détection : choisissez l’onglet source pour consulter ou copier son diagnostic local. Codes et compteurs sûrs uniquement, sans envoi automatique. Le diagnostic n’est plus dans la popup.
+
+Firefox 153+ possède son propre paquet sans YouTube. La capture d’onglet Chrome, Google Cast et AirPlay sont indisponibles dans Firefox. Le traitement local dépend de ses codecs ; le guide Firefox indique le périmètre testé.
+
 Cette source n’est pas accessible.
 
 La source a renvoyé une page HTML au lieu du média. Le téléchargement a été arrêté. Actualisez le lecteur d’origine et détectez à nouveau sa source média.
@@ -22,7 +26,9 @@ Après mise à jour, rechargez Alcydeo et les pages vidéo déjà ouvertes. La v
 
 TikTok utilise les métadonnées natives du post affiché et conserve jusqu’à trois adresses CDN originales par qualité. Une adresse en échec ne peut être remplacée qu’après contrôle de l’alternative ; la qualité choisie et le titre sont conservés. Les limites du serveur imposent d’attendre. Gardez la page source et le gestionnaire ouverts jusqu’à l’enregistrement.
 
-## Diagnostic de détection — 0.1.53
+## Diagnostic de détection — 1.0.0
+
+Bibliothèque → Réglages → Détection : choisissez l’onglet source pour consulter ou copier son diagnostic local. Codes et compteurs sûrs uniquement, sans envoi automatique. Le diagnostic n’est plus dans la popup.
 
 Rapport local, sans lien vidéo, cookie ni signature. Rien n’est envoyé.
 

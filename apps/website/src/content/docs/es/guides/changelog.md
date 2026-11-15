@@ -2,13 +2,21 @@
 title: "Historial de cambios"
 ---
 
-0.2.0 — Primera versión preliminar pública · v0.2.0.
+1.0.0 — Disponible en GitHub · v1.0.0.
+
+El ZIP de desarrollo de Chrome incluye YouTube experimental. La preparación para Chrome Web Store y el paquete Firefox lo excluyen. La instalación del ZIP de Firefox es temporal; no se anuncia un XPI firmado ni aprobación de tienda.
+
+Instalación nueva o ajustes restablecidos: cuatro archivos simultáneos y descarga por partes activada con cuatro conexiones por archivo compatible. Se conservan las opciones existentes. Ambos límites se pueden ajustar; no se promete una mejora universal de velocidad.
+
+Biblioteca → Ajustes → Detección: elige la pestaña de origen para ver o copiar su diagnóstico local. Solo códigos y contadores seguros, sin envío automático. El diagnóstico ya no está en la ventana emergente.
+
+Firefox 153+ tiene su propio paquete sin YouTube. La captura de pestañas de Chrome, Google Cast y AirPlay no están disponibles en Firefox. El procesamiento local depende de sus códecs; la guía de Firefox indica el alcance probado.
 
 En esta página, Calidad, Descargar, Biblioteca.
 
 Detección automática de medios
 
-Activada por defecto. Chrome concede acceso a los sitios al instalar. Puedes pausar la detección aquí o limitar el acceso en Chrome.
+La detección se inicia en los sitios permitidos. Páusala aquí o limita el acceso en el navegador.
 
 La fuente devolvió una página HTML en lugar del medio. Se detuvo la descarga. Actualiza el reproductor original y detecta de nuevo la fuente.
 
@@ -32,7 +40,9 @@ Tras actualizar, recarga Alcydeo y las páginas de vídeo que ya estaban abierta
 
 TikTok utiliza los metadatos nativos del vídeo actual y conserva hasta tres direcciones CDN originales por calidad. Una dirección que falla solo se sustituye tras comprobar la alternativa; se mantienen la calidad y el título elegidos. Los límites del servidor requieren esperar. Mantén abiertos la página y el gestor hasta guardar el archivo.
 
-## Diagnóstico de detección — 0.1.53
+## Diagnóstico de detección — 1.0.0
+
+Biblioteca → Ajustes → Detección: elige la pestaña de origen para ver o copiar su diagnóstico local. Solo códigos y contadores seguros, sin envío automático. El diagnóstico ya no está en la ventana emergente.
 
 Informe local, sin enlaces de vídeo, cookies ni firmas. No se envía nada.
 
@@ -114,9 +124,11 @@ La conversión procesa un archivo a la vez. Tras una pausa o al cerrar el gestor
 
 Guardar archivos: Guardar automáticamente. Mostrar Guardar como en cada descarga.
 
-Los archivos se guardan en el directorio elegido en Chrome, dentro de esta subcarpeta. Cambia el directorio principal en los ajustes de descarga de Chrome.
+Los archivos se guardan en esta subcarpeta de descargas. Cambia la carpeta principal en los ajustes del navegador.
 
-## Descargas simultáneas — 0.1.60
+## Descargas simultáneas — 1.0.0
+
+Instalación nueva o ajustes restablecidos: cuatro archivos simultáneos y descarga por partes activada con cuatro conexiones por archivo compatible. Se conservan las opciones existentes. Ambos límites se pueden ajustar; no se promete una mejora universal de velocidad.
 
 Archivos en paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.
 
@@ -152,7 +164,7 @@ Dibujar en la pestaña capturada · Deshacer trazo · Borrar dibujo
 
 Idioma: English / Español / Français / Deutsch / 简体中文 / العربية / Русский / Português / हिन्दी / اردو.
 
-Descargas de originales; estas extensiones no garantizan reproducir o convertir todos los códecs en Chrome. M3U8 y MPD describen emisiones por segmentos.
+La extensión no garantiza que el navegador reproduzca o convierta cada códec. M3U8 y MPD describen flujos segmentados.
 
 MP4 · WEBM · M3U8 · MPD · M4V · MKV · TS · MOV · AVI · OGG · MPG · WMV · FLV · 3GP · M2TS · MTS
 

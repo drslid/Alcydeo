@@ -8,6 +8,7 @@ import { createNativeDownloads } from '../src/native-downloads';
 import { mediaKind } from '../../../packages/media-core/classification';
 import {mediaMatches} from '../../../packages/media-core/grouping';
 import {mediaTitle} from '../../../packages/media-core/titles';
+import{managerContext,messageOriginMatches}from'../src/platform';
 
 export default defineBackground(() => {
   // This default replaces the former opt-in flow at the user's request. Apply
@@ -28,7 +29,7 @@ export default defineBackground(() => {
   chrome.runtime.onStartup.addListener(()=>{void initialized.then(()=>native.browserRestart()).catch(()=>{});});
   chrome.storage.onChanged.addListener((changes,area)=>{if(area==='local'&&changes.settings&&(changes.settings.newValue as Partial<Settings>|undefined)?.maxConcurrentFiles!==(changes.settings.oldValue as Partial<Settings>|undefined)?.maxConcurrentFiles)void native.drain().then(()=>wakeManager()).catch(()=>{});});
   async function manager(active=false,view='queue',taskId?:string){return navigator.locks.request('alcydeo:manager-open',async()=>{
-    const path=chrome.runtime.getURL('/manager.html');const context=(await chrome.runtime.getContexts({contextTypes:[chrome.runtime.ContextType.TAB]})).find(c=>c.tabId>=0&&c.documentUrl?.split(/[?#]/)[0]===path);const tab=context?await chrome.tabs.get(context.tabId).catch(()=>undefined):(await chrome.tabs.query({})).find(t=>t.url&&t.url.split(/[?#]/)[0]===path);const currentUrl=context?.documentUrl??tab?.url;
+    const path=chrome.runtime.getURL('/manager.html');const context=await managerContext(path);const tab=context?await chrome.tabs.get(context.tabId).catch(()=>undefined):(await chrome.tabs.query({})).find(t=>t.url&&t.url.split(/[?#]/)[0]===path);const currentUrl=context?.documentUrl??tab?.url;
     if(tab?.id!==undefined){if(active){const url=new URL(currentUrl!);const route=taskId?`tools/${encodeURIComponent(taskId)}`:view;const unchanged=url.hash===`#${route}`;url.hash=route;await chrome.tabs.update(tab.id,{active:true,url:url.href});await chrome.windows.update(tab.windowId,{focused:true});if(unchanged)await wakeManager(undefined,tab.id,route);}else if(tab.discarded)await chrome.tabs.reload(tab.id);}
     else await chrome.tabs.create({url:`${path}#${taskId?`tools/${encodeURIComponent(taskId)}`:view}`,active});
     await wakeManager();
@@ -132,7 +133,7 @@ export default defineBackground(() => {
     if (message?.type === 'domChanged' && sender.id === chrome.runtime.id && sender.tab?.id !== undefined && !sender.tab.incognito && sender.url) {
       void (async () => {
         const url = safeUrl(sender.url!); const origin = new URL(url).origin;
-        if (sender.origin !== origin || !await chrome.permissions.contains({origins:[`${origin}/*`]})) throw new Error('permission');
+        if (!messageOriginMatches(sender,origin) || !await chrome.permissions.contains({origins:[`${origin}/*`]})) throw new Error('permission');
         if (blocked(new URL(url).hostname,(await settings()).blocked)) return;
         // The message is only a notification. Rescan the authorized frame; never trust its URLs.
         detection.changed(sender.tab!.id!);

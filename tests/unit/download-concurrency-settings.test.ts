@@ -27,7 +27,7 @@ test('older settings messages preserve the current limit when the new field is a
  await boot(6);const older:any={...defaults};delete older.maxConcurrentFiles;expect(await settings(older)).toEqual({ok:true,data:true});expect(fixture.stored.settings.maxConcurrentFiles).toBe(6);
 });
 test.each([undefined,'8',0,99,1.5,null])('stored legacy concurrency %s is normalized safely on initialization',async previous=>{
- await boot(previous);const older:any={...defaults};delete older.maxConcurrentFiles;expect(await settings(older)).toEqual({ok:true,data:true});expect(fixture.stored.settings.maxConcurrentFiles).toBe(1);
+ await boot(previous);const older:any={...defaults};delete older.maxConcurrentFiles;expect(await settings(older)).toEqual({ok:true,data:true});expect(fixture.stored.settings.maxConcurrentFiles).toBe(4);
 });
 
 
@@ -40,4 +40,8 @@ test.each(['pause','cancel'])('a %s command catches the Chrome ID linked between
 test.each(['cancelled','failed'])('delete retains a %s native task while its Chrome slot is still reserved',async state=>{
  await boot();fixture.task={id:'native-still-owned',state,downloadId:42,downloadSlot:{owner:'native',kind:'native',startedAt:Date.now(),expiresAt:Date.now()+30000}};
  const result=await new Promise<any>(resolve=>fixture.listener({type:'delete',id:fixture.task.id},{id:'fixture',url:'chrome-extension://fixture/manager.html'},resolve));expect(result).toEqual({ok:false,error:'busy'});expect(fixture.task.downloadId).toBe(42);
+});
+
+test('fresh defaults enable four concurrent files and four-part compatible downloads',async()=>{
+ await boot();expect(await settings({...defaults})).toEqual({ok:true,data:true});expect(fixture.stored.settings).toMatchObject({maxConcurrentFiles:4,multipart:true,connections:4});
 });

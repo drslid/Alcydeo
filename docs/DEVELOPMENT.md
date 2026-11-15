@@ -1,5 +1,19 @@
 # Development
 
+## Firefox 1.0.0
+
+`pnpm build:firefox` builds the dedicated Firefox 153+ MV3 event-page target;
+`pnpm zip:firefox` rebuilds and checks `artifacts/alcydeo-1.0.0-firefox.zip`.
+This principal Firefox channel excludes YouTube and has no configured Cast
+sender. Load it temporarily with `about:debugging`; it is not signed by Mozilla.
+The actual browser versions, OPFS/codec results and unavailable Chrome APIs are
+documented in [FIREFOX.md](FIREFOX.md).
+
+`pnpm zip:source` archives the reviewed Git commit with the lockfile and reviewer
+build instructions. It deliberately excludes untracked working files. Validate
+the rebuilt Firefox package against the Release package before calling it
+reproducible or sending it for review.
+
 Node 24.22.2 and pnpm 12.5.1 are pinned. `pnpm install --frozen-lockfile` installs the workspace. WXT/Vue build the MV3 extension; Astro/Starlight build the static documentation. No server is part of the installed product.
 
 Run the commands in README.md. `pnpm build:chrome` generates native localization catalogs, rasterizes the original SVG icon, retains dependency licenses and compiles the extension. `pnpm zip:chrome` builds and checks the production ZIP. `pnpm crx:chrome` packs the current build with an ignored local test key. `pnpm docs:build` generates translated pages and Store draft text, builds the static site, then checks local links and the exact `/Alcydeo/` base.

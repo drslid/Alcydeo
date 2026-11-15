@@ -36,7 +36,7 @@
     "description": "Alcydeo interface: detectionDiagnosticsPrivacy"
   },
   "detectionDiagnosticsAccessError": {
-    "message": "请在 chrome://extensions 中打开 Alcydeo 的详情，检查网站访问权限。",
+    "message": "请在浏览器的扩展管理器中打开 Alcydeo 详情并检查网站访问权限。",
     "description": "Alcydeo interface: detectionDiagnosticsAccessError"
   },
   "cropTool": {
@@ -92,11 +92,11 @@
     "description": "Alcydeo interface: cropRange"
   },
   "chromeSiteAccess": {
-    "message": "Chrome 网站访问权限",
+    "message": "浏览器的网站访问权限",
     "description": "Alcydeo interface: chromeSiteAccess"
   },
   "chromeAccessRestricted": {
-    "message": "Chrome 设置限制了对此网站的访问。",
+    "message": "浏览器设置限制了对此网站的访问。",
     "description": "Alcydeo interface: chromeAccessRestricted"
   },
   "openWebPage": {
@@ -260,7 +260,7 @@
     "description": "Alcydeo interface: help"
   },
   "helpLocal": {
-    "message": "帮助网站已在本地准备好，尚未发布。",
+    "message": "下载、媒体库和受支持的工具在本地运行。下方按钮可打开在线指南。",
     "description": "Alcydeo interface: helpLocal"
   },
   "helpOpen": {
@@ -532,11 +532,11 @@
     "description": "Alcydeo interface: cloud_failed"
   },
   "formatsScope": {
-    "message": "下载原始文件；扩展名不保证 Chrome 能播放或转换所有编解码器。M3U8 和 MPD 描述分段流。",
+    "message": "文件扩展名不能保证浏览器可播放或转换所有编码。M3U8 和 MPD 描述分段流。",
     "description": "Alcydeo interface: formatsScope"
   },
   "featureLimits": {
-    "message": "桌面 Chrome。已在本地测试原始文件、未加密 HLS VOD 和单周期 DASH。不支持 DRM 或所有编解码器。Cast 为实验功能，接收设备待验证。录制质量取决于来源和电脑。",
+    "message": "支持桌面 Chrome 和 Firefox。兼容性取决于来源访问、编码和系统能力。不处理受保护媒体；捕获和投屏能力因浏览器而异。",
     "description": "Alcydeo interface: featureLimits"
   },
   "cloudSharing": {
@@ -1378,7 +1378,7 @@
     "description": "Alcydeo interface: language"
   },
   "languageAutomatic": {
-    "message": "跟随 Chrome",
+    "message": "跟随浏览器",
     "description": "Alcydeo interface: languageAutomatic"
   },
   "selectVideo": {
@@ -1470,7 +1470,7 @@
     "description": "Alcydeo interface: visualMerge"
   },
   "previewUnavailable": {
-    "message": "Chrome 无法预览此文件。请尝试兼容的 MP4。",
+    "message": "浏览器无法预览此文件。请尝试兼容的 MP4。",
     "description": "Alcydeo interface: previewUnavailable"
   },
   "playSelection": {
@@ -1554,7 +1554,7 @@
     "description": "Alcydeo interface: converting"
   },
   "err_conversionCodec": {
-    "message": "Chrome 无法将此文件的所有音视频轨道转换为 H.264/AAC。原文件会保留，未保存不完整的 MP4。",
+    "message": "本地引擎无法将所有轨道转换为 H.264/AAC。原文件保留；未保存不完整的 MP4。",
     "description": "Alcydeo interface: err_conversionCodec"
   },
   "err_conversionInput": {
@@ -1652,15 +1652,15 @@
     "description": "Alcydeo interface: saveAsk"
   },
   "downloadSubfolder": {
-    "message": "Chrome 下载目录中的子文件夹",
+    "message": "下载子文件夹",
     "description": "Alcydeo interface: downloadSubfolder"
   },
   "downloadFolderHint": {
-    "message": "文件将保存在 Chrome 所选下载目录的此子文件夹中。可在 Chrome 下载设置中更改主目录。",
+    "message": "文件保存在下载目录的此子文件夹中。请在浏览器的下载设置中更改主目录。",
     "description": "Alcydeo interface: downloadFolderHint"
   },
   "chromeDownloadSettings": {
-    "message": "在 Chrome 中选择主文件夹",
+    "message": "选择主下载目录",
     "description": "Alcydeo interface: chromeDownloadSettings"
   },
   "err_saveDialog": {
@@ -1684,7 +1684,7 @@
     "description": "Alcydeo interface: globalDetection"
   },
   "globalDetectionHint": {
-    "message": "默认启用。Chrome 在安装时授予网站访问权限。可在此暂停检测，或在 Chrome 中限制网站访问。",
+    "message": "检测会在获准的网站上自动启动。可在此暂停，或在浏览器中限制网站访问权限。",
     "description": "Alcydeo interface: globalDetectionHint"
   },
   "err_html": {
@@ -1700,7 +1700,7 @@
     "description": "Alcydeo interface: appName"
   },
   "appDescription": {
-    "message": "发现视频，保存到本地，保护媒体库隐私。",
+    "message": "检测可用视频和音频，选择画质，在本地保存或编辑文件。无需 Alcydeo 账户。",
     "description": "Alcydeo interface: appDescription"
   },
   "tagline": {
@@ -1776,7 +1776,7 @@
     "description": "Alcydeo interface: manager"
   },
   "keepOpen": {
-    "message": "处理分段媒体时请保持管理器打开。关闭 Chrome 会停止正在运行的任务。",
+    "message": "处理分段媒体时请保持管理器打开。关闭浏览器会停止活动任务。",
     "description": "Alcydeo interface: keepOpen"
   },
   "noTasks": {
@@ -1976,7 +1976,7 @@
     "description": "Alcydeo interface: saveFile"
   },
   "err_saveInterrupted": {
-    "message": "Chrome 尚未确认保存。请检查下载记录或已打开的另存为窗口，再重试保存已准备好的文件。",
+    "message": "浏览器尚未确认保存。请检查下载列表或“另存为”对话框，再重试保存已准备的文件。",
     "description": "Alcydeo interface: err_saveInterrupted"
   },
   "cloudExperimental": {
@@ -2002,5 +2002,37 @@
   "cloudMegaupOpen": {
     "message": "打开 MegaUp",
     "description": "Alcydeo interface: cloudMegaupOpen"
+  },
+  "detectionDiagnosticsPage": {
+    "message": "要诊断的页面",
+    "description": "Alcydeo interface: detectionDiagnosticsPage"
+  },
+  "detectionDiagnosticsChoose": {
+    "message": "选择已打开的播放器页面。报告仅保留在本机。",
+    "description": "Alcydeo interface: detectionDiagnosticsChoose"
+  },
+  "detectionDiagnosticsNoPage": {
+    "message": "没有可用的网页。请打开播放器页面，然后刷新列表。",
+    "description": "Alcydeo interface: detectionDiagnosticsNoPage"
+  },
+  "detectionDiagnosticsTabsRefresh": {
+    "message": "刷新已打开的页面",
+    "description": "Alcydeo interface: detectionDiagnosticsTabsRefresh"
+  },
+  "firefoxCaptureUnavailable": {
+    "message": "Firefox 不提供此标签页捕获 API。仍可录制兼容的 HLS 流。",
+    "description": "Alcydeo interface: firefoxCaptureUnavailable"
+  },
+  "firefoxCastUnavailable": {
+    "message": "此版本的投屏需要 Chrome。下载和本地工具仍然可用。",
+    "description": "Alcydeo interface: firefoxCastUnavailable"
+  },
+  "cloudConsentDenied": {
+    "message": "此服务需要 Firefox 的文件内容共享权限。请授权后重试。",
+    "description": "Alcydeo interface: cloudConsentDenied"
+  },
+  "firefoxSettingsHint": {
+    "message": "Firefox 不允许扩展打开其设置页面。请通过 Firefox 菜单的“扩展和主题”管理网站权限，或在“设置 → 常规 → 下载”中选择主目录。",
+    "description": "Alcydeo interface: firefoxSettingsHint"
   }
 }

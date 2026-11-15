@@ -2,23 +2,29 @@
 title: "Permissions et confidentialité"
 ---
 
+Le ZIP de développement Chrome inclut YouTube expérimental. La préparation Store Chrome et le paquet Firefox excluent YouTube. L’installation du ZIP Firefox est temporaire ; aucune signature XPI ni approbation Store n’est annoncée.
+
+Firefox demande un consentement natif facultatif avant un envoi Cloud, pour le contenu du fichier et les données personnelles qu’il peut contenir, comme une voix ou une image. Un refus empêche préparation et envoi. Aucun upload automatique.
+
 L’essai local YouTube conserve un contexte observé borné et les jetons de transport opaques existants, localement avec la tâche. Il ne génère aucune attestation et n’exécute pas de code distant du lecteur. Les exports omettent ces données.
 
 Aucune télémétrie. Bibliothèque et tâches restent dans ce navigateur. L’accès réseau se limite aux sources autorisées.
 
 Détection automatique des médias
 
-Activée par défaut. Chrome accorde l’accès aux sites à l’installation. Vous pouvez suspendre la détection ici ou limiter l’accès dans Chrome.
+La détection démarre sur les sites autorisés. Suspendez-la ici ou limitez les accès dans le navigateur.
 
 Alcydeo peut relire automatiquement les playlists détectées pour identifier les qualités et les fragments. Le téléchargement des fragments par l’extension démarre sur votre action.
 
-Les tâches conservent localement les URL de page et de source, signatures temporaires comprises, dans IndexedDB. Les fragments et sorties utilisent OPFS. Effacer une tâche supprime sa fiche et ses fichiers temporaires, pas le fichier final ni l’historique Chrome. Les exports omettent URL, chemins et identifiants de téléchargement. Les requêtes contactent les sources/CDN autorisés avec les sessions applicables de Chrome. La navigation privée est désactivée. Un futur hébergement GitHub Pages peut journaliser les visites du site. Assistance publique : [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
+Les tâches conservent localement les URL de page et de source, signatures temporaires comprises, dans IndexedDB. Les fragments et sorties utilisent OPFS. Effacer une tâche supprime sa fiche et ses fichiers temporaires, pas le fichier final ni l’historique Chrome. Les exports omettent URL, chemins et identifiants de téléchargement. Les requêtes contactent les sources/CDN autorisés avec les sessions applicables de Chrome. La navigation privée est désactivée. GitHub Pages héberge la documentation publique et peut journaliser les visites du site. Assistance publique : [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
 
 Effacer l’historique
 
 Les fiches des téléchargements achevés, en échec ou annulés et leurs fichiers temporaires seront effacés d’Alcydeo, sur toutes les pages et tous les filtres, y compris les favoris. Les fichiers enregistrés et les téléchargements en cours ou en pause seront conservés.
 
-## Diagnostic de détection — 0.1.53
+## Diagnostic de détection — 1.0.0
+
+Bibliothèque → Réglages → Détection : choisissez l’onglet source pour consulter ou copier son diagnostic local. Codes et compteurs sûrs uniquement, sans envoi automatique. Le diagnostic n’est plus dans la popup.
 
 Rapport local, sans lien vidéo, cookie ni signature. Rien n’est envoyé.
 

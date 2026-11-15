@@ -1,4 +1,14 @@
-# Single purpose and data-use draft — Store build
+# Single purpose and data-use draft — Chrome Store build
+
+This permission table describes the Chrome Store package. The dedicated Firefox package excludes YouTube as well, but has its own manifest and no Chrome tabCapture or Cast APIs. Review its packaged permissions and data declarations separately; see [Firefox scope](../FIREFOX.md). No Google/Mozilla submission or approval is implied by either draft.
+
+Firefox declares `data_collection_permissions.required: ["none"]` and optional
+`websiteContent` plus `personallyIdentifyingInfo` for explicit Cloud transfer of
+user-selected files, which may contain voice/image personal data. Native consent
+is requested at **Send** before local preparation/job creation or provider
+traffic. Refusal prevents the send; resume needs consent and revocation stops
+the active transfer. This optional user-directed upload must not be described as
+automatic telemetry or as required collection.
 
 Single purpose: find user-authorized page media, save a chosen available source locally, check the resulting file and organize its local record.
 
@@ -19,7 +29,7 @@ The extension handles website content and browsing-related media URLs/titles loc
 
 The experimental local build additionally observes bounded ordinary YouTube player request bodies and retains minimal opaque transport context/tokens locally. This capability is removed from the Store compilation. See ../PRIVACY.md for the local-build differences; do not reuse this Store permission row to describe the local experimental artifact.
 
-Dashboard answers must be reviewed against the exact build and the current Store wording before submission. No unqualified "no user data handled" claim should be made. A public contact and real privacy/support URLs are still required.
+Dashboard answers must be reviewed against the exact build and the current Store wording before submission. No unqualified "no user data handled" claim should be made. Public support is https://github.com/drslid/Alcydeo/issues and the privacy notice is https://drslid.github.io/Alcydeo/en/guides/privacy/ ; no fictitious email is needed.
 
 
 ## Optional user-directed transfers and capture

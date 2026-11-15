@@ -27,3 +27,7 @@ coverage/
 /docs/benchmarks/x-e2e-0.1.38.json
 /docs/benchmarks/observer-e2e-0.1.39.json
 /docs/benchmarks/playlists-e2e-0.1.36.json
+
+# Python test helpers
+__pycache__/
+*.py[cod]

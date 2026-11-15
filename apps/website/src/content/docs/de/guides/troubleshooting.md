@@ -2,6 +2,10 @@
 title: "Fehlerbehebung"
 ---
 
+Mediathek → Einstellungen → Erkennung: Quell-Tab wählen, um die lokale Diagnose anzusehen oder zu kopieren. Nur sichere Codes und Zähler, kein automatischer Upload. Die Diagnose ist nicht mehr im Popup.
+
+Firefox 153+ hat ein eigenes Paket ohne YouTube. Chrome-Tabaufnahme, Google Cast und AirPlay sind in Firefox nicht verfügbar. Lokale Verarbeitung hängt von seinen Codecs ab; die Firefox-Anleitung nennt den getesteten Umfang.
+
 Diese Quelle ist nicht zugänglich.
 
 Die Quelle lieferte HTML statt Medien. Der Download wurde gestoppt. Originalplayer aktualisieren und die Medienquelle erneut erkennen.
@@ -22,7 +26,9 @@ Nach dem Update Alcydeo und bereits geöffnete Videoseiten neu laden. Version 0.
 
 TikTok verwendet die nativen Mediendaten des aktuellen Beitrags und behält bis zu drei ursprüngliche CDN-Adressen je Qualität. Eine fehlgeschlagene Adresse wird erst nach Prüfung der Alternative ersetzt; gewählte Qualität und Titel bleiben erhalten. Bei Serverlimits muss gewartet werden. Quellseite und Verwaltung müssen bis zum Speichern geöffnet bleiben.
 
-## Erkennungsdiagnose — 0.1.53
+## Erkennungsdiagnose — 1.0.0
+
+Mediathek → Einstellungen → Erkennung: Quell-Tab wählen, um die lokale Diagnose anzusehen oder zu kopieren. Nur sichere Codes und Zähler, kein automatischer Upload. Die Diagnose ist nicht mehr im Popup.
 
 Lokaler Bericht ohne Videolinks, Cookies oder Signaturen. Es wird nichts gesendet.
 

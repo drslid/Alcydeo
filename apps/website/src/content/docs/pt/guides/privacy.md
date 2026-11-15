@@ -2,23 +2,29 @@
 title: "Permissões e privacidade"
 ---
 
+O ZIP de desenvolvimento Chrome inclui YouTube experimental. O pacote separado para a Chrome Web Store e o Firefox excluem YouTube. A instalação do ZIP Firefox é temporária; não se anuncia XPI assinado nem aprovação de loja.
+
+O Firefox pede consentimento nativo opcional antes do envio à nuvem para o conteúdo e eventuais dados pessoais, como voz ou imagem. A recusa impede a preparação e o envio. Não há upload automático.
+
 O teste local de YouTube guarda contexto observado limitado e tokens opacos existentes localmente com a tarefa. Não gera atestações nem executa código remoto do player. As exportações omitem esses dados.
 
 Sem telemetria. Biblioteca e tarefas ficam neste navegador. Acesso à rede apenas para fontes autorizadas.
 
 Detecção automática de mídia
 
-Ativada por padrão. O Chrome concede acesso aos sites na instalação. Pause a detecção aqui ou limite o acesso no Chrome.
+A deteção inicia nos sites permitidos. Pause-a aqui ou limite o acesso no navegador.
 
 O Alcydeo pode reler automaticamente as listas detectadas para identificar qualidades e fragmentos. A extensão baixa os fragmentos de mídia quando você inicia um download.
 
-As tarefas armazenam URLs de página e fonte, incluindo assinaturas temporárias, localmente no IndexedDB. Fragmentos e saídas usam OPFS. Remover uma tarefa apaga registro e temporários, não o arquivo final nem o histórico do Chrome. Exportações omitem URLs, caminhos e IDs de download. Requisições contatam fontes/CDNs permitidos com as sessões aplicáveis do Chrome. O modo anônimo está desativado. Um futuro host GitHub Pages pode registrar visitas ao site. Suporte público: [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
+As tarefas armazenam URLs de página e fonte, incluindo assinaturas temporárias, localmente no IndexedDB. Fragmentos e saídas usam OPFS. Remover uma tarefa apaga registro e temporários, não o arquivo final nem o histórico do Chrome. Exportações omitem URLs, caminhos e IDs de download. Requisições contatam fontes/CDNs permitidos com as sessões aplicáveis do Chrome. O modo anônimo está desativado. O GitHub Pages hospeda a documentação pública e pode registrar visitas ao site. Suporte público: [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
 
 Limpar histórico
 
 Os registros concluídos, com falha e cancelados e seus arquivos temporários serão removidos do Alcydeo em todas as páginas e filtros, incluindo favoritos. Os arquivos salvos e os downloads ativos ou pausados serão mantidos.
 
-## Diagnóstico de detecção — 0.1.53
+## Diagnóstico de detecção — 1.0.0
+
+Biblioteca → Configurações → Detecção: escolha a aba de origem para ver ou copiar o diagnóstico local. Apenas códigos e contadores seguros, sem envio automático. O diagnóstico saiu da janela da extensão.
 
 Relatório local, sem links de vídeo, cookies ou assinaturas. Nada é enviado.
 

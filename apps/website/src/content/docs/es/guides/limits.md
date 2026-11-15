@@ -4,6 +4,10 @@ title: "Compatibilidad y límites"
 
 Se admiten archivos directos y variantes HLS/DASH sin cifrar probadas. La compatibilidad depende del acceso, los códecs y el almacenamiento. Se rechazan medios protegidos. Reserva aproximadamente tres veces el tamaño del vídeo para procesar segmentos; no se garantizan todos los archivos grandes.
 
+Firefox 153+ tiene su propio paquete sin YouTube. La captura de pestañas de Chrome, Google Cast y AirPlay no están disponibles en Firefox. El procesamiento local depende de sus códecs; la guía de Firefox indica el alcance probado.
+
+El ZIP de desarrollo de Chrome incluye YouTube experimental. La preparación para Chrome Web Store y el paquete Firefox lo excluyen. La instalación del ZIP de Firefox es temporal; no se anuncia un XPI firmado ni aprobación de tienda.
+
 Google Cast sigue siendo experimental. El usuario confirmó una demo oficial de Google en Shield; no valida otras fuentes ni archivos privados. Para archivos locales en Shield, usa la transmisión de pestaña de Chrome. AirPlay no está disponible en Chrome para Windows.
 
 El envío a Gofile, MegaUp, 1fichier y Turbobit, y los enlaces de depósito pCloud son opcionales. Requieren un clic. Los protocolos tienen pruebas locales; los envíos reales aún no están validados. Se aplican los límites y la retención del proveedor.

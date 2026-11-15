@@ -2,6 +2,8 @@
 title: "Using Alcydeo"
 ---
 
+Firefox 153+ has its own package without YouTube. Chrome tab capture, Google Cast and AirPlay are unavailable in Firefox. Local processing depends on the codecs supported by that browser; the Firefox guide records the tested scope.
+
 Play the video: Alcydeo detects it and updates the icon badge automatically. Open the popup, choose an available source quality and download. For HLS or DASH, first find qualities and keep the manager open during processing. Chrome requests HTTP/HTTPS site access at installation; you can limit it in Chrome or pause detection in settings. A direct download finishes when Chrome confirms that the file is saved. Use Show in folder to find it. Linked qualities of the same video share one card. Your selected quality remains after rescanning.
 
 Sources / Activity. Downloads continue when this popup closes. Keep the manager tab open for segmented streams.
@@ -12,7 +14,7 @@ Video tools: Convert to MP4, Compress, Merge clips, Trim.
 
 Automatic media detection
 
-Enabled by default. Chrome grants site access at installation. You can pause detection here or limit site access in Chrome.
+Detection starts automatically on allowed sites. Pause it here or restrict site access in your browser.
 
 Clear history
 
@@ -108,9 +110,11 @@ Conversion runs one file at a time. After a pause or manager closure it restarts
 
 Saving files: Save automatically. Show Save As for every download.
 
-Files are saved in Chrome’s chosen download directory, inside this subfolder. Change the main directory in Chrome’s download settings.
+Files use this subfolder of the browser download directory. Change the main directory in the browser download settings.
 
-## Simultaneous downloads — 0.1.60
+## Simultaneous downloads — 1.0.0
+
+New installation or settings reset: four simultaneous files; multipart enabled at four connections per compatible file. Existing choices are preserved. Both limits are adjustable; no universal speed gain is promised.
 
 Files in parallel: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.
 
@@ -146,7 +150,7 @@ Draw on the captured tab · Undo stroke · Clear drawing
 
 Language: English / Español / Français / Deutsch / 简体中文 / العربية / Русский / Português / हिन्दी / اردو.
 
-Original file downloads; these extensions do not guarantee that Chrome can play or convert every codec. M3U8 and MPD describe segmented streams.
+File extensions do not guarantee playback or conversion of every codec in your browser. M3U8 and MPD describe segmented streams.
 
 MP4 · WEBM · M3U8 · MPD · M4V · MKV · TS · MOV · AVI · OGG · MPG · WMV · FLV · 3GP · M2TS · MTS
 

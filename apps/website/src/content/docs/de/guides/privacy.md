@@ -2,23 +2,29 @@
 title: "Berechtigungen und Datenschutz"
 ---
 
+Das Chrome-Entwickler-ZIP enthält experimentelles YouTube. Die separate Chrome-Store-Vorbereitung und das Firefox-Paket schließen YouTube aus. Die Firefox-ZIP-Installation ist vorübergehend; kein signiertes XPI und keine Store-Freigabe werden behauptet.
+
+Firefox fragt vor einem Cloud-Upload nach freiwilliger nativer Zustimmung für Dateiinhalte und mögliche persönliche Daten wie Stimme oder Bild. Ablehnen verhindert Vorbereitung und Versand. Kein automatischer Upload.
+
 Der lokale YouTube-Test speichert begrenzten beobachteten Kontext und bestehende undurchsichtige Transport-Token lokal mit der Aufgabe. Keine Attestierungen werden erzeugt, kein entfernter Player-Code ausgeführt. Exporte lassen diese Daten aus.
 
 Keine Telemetrie. Mediathek und Aufgaben bleiben in diesem Browser. Netzwerkzugriff nur auf erlaubte Quellen.
 
 Automatische Medienerkennung
 
-Standardmäßig aktiv. Chrome gewährt den Websitezugriff bei der Installation. Hier pausieren oder den Zugriff in Chrome beschränken.
+Die Erkennung startet auf erlaubten Websites. Hier pausieren oder den Websitezugriff im Browser einschränken.
 
 Alcydeo kann erkannte Wiedergabelisten automatisch erneut lesen, um Qualitäten und Fragmente zu erkennen. Medienfragmente lädt die Erweiterung erst nach dem Start eines Downloads herunter.
 
-Aufgaben speichern Seiten- und Quell-URLs samt temporären Signaturen lokal in IndexedDB. Fragmente und Ausgaben nutzen OPFS. Das Löschen entfernt Eintrag und temporäre Dateien, nicht die gespeicherte Datei oder den Chrome-Verlauf. Exporte enthalten keine URLs, Pfade oder Download-IDs. Anfragen kontaktieren erlaubte Quellen/CDNs mit den anwendbaren Chrome-Sitzungen. Inkognito ist deaktiviert. Ein künftiger GitHub-Pages-Host kann Websitebesuche protokollieren. Öffentlicher Support: [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
+Aufgaben speichern Seiten- und Quell-URLs samt temporären Signaturen lokal in IndexedDB. Fragmente und Ausgaben nutzen OPFS. Das Löschen entfernt Eintrag und temporäre Dateien, nicht die gespeicherte Datei oder den Chrome-Verlauf. Exporte enthalten keine URLs, Pfade oder Download-IDs. Anfragen kontaktieren erlaubte Quellen/CDNs mit den anwendbaren Chrome-Sitzungen. Inkognito ist deaktiviert. GitHub Pages hostet die öffentliche Dokumentation und kann Websitebesuche protokollieren. Öffentlicher Support: [GitHub Issues](https://github.com/drslid/Alcydeo/issues).
 
 Verlauf löschen
 
 Abgeschlossene, fehlgeschlagene und abgebrochene Einträge samt temporären Dateien auf allen Seiten und in allen Filtern aus Alcydeo entfernen, einschließlich Favoriten. Gespeicherte Dateien sowie laufende oder pausierte Downloads bleiben erhalten.
 
-## Erkennungsdiagnose — 0.1.53
+## Erkennungsdiagnose — 1.0.0
+
+Mediathek → Einstellungen → Erkennung: Quell-Tab wählen, um die lokale Diagnose anzusehen oder zu kopieren. Nur sichere Codes und Zähler, kein automatischer Upload. Die Diagnose ist nicht mehr im Popup.
 
 Lokaler Bericht ohne Videolinks, Cookies oder Signaturen. Es wird nichts gesendet.
 

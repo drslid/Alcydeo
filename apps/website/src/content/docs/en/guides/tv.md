@@ -8,8 +8,6 @@ Google Cast remains experimental. The user confirmed one official Google demo on
 
 The separate Google Cast web page loads Google’s SDK. After you choose a receiver, its player receives the selected video URL and title. Cookies and passwords are not transferred.
 
-The Google Cast web player is unavailable in this installation. Use Chrome’s Cast menu for this local test.
-
 [Google Cast player](/Alcydeo/cast/)
 
 Local preview is unavailable for this source. Your TV may support its format; you can still try casting.

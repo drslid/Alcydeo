@@ -8,8 +8,6 @@ Google Cast 仍为实验功能。用户确认一段 Google 官方演示可在 Sh
 
 独立网页加载 Google Cast SDK。选择接收设备后，其播放器会收到视频链接和标题。不会传送 Cookie 或密码。
 
-此安装中 Google Cast 网页播放器不可用。本地测试请使用 Chrome 的投放菜单。
-
 [Google Cast 播放器](/Alcydeo/cast/)
 
 此来源无法本地预览。电视可能支持该格式，您仍可尝试投放。

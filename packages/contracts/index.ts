@@ -37,9 +37,9 @@ export interface Task {
   conversion?:{input:string;inputBytes:number;ready:boolean;sourceTaskId?:string;videoEncoded?:boolean;audioEncoded?:boolean;operation?:EditOperation;inputs?:{file:string;bytes:number;name:string}[]};
 }
 export interface Settings { theme: 'system' | 'light' | 'dark'; folder: string; saveAs: boolean; badge: 'count' | 'dot' | 'hidden'; blocked: string[]; minSize: number; globalDetection: boolean; multipart:boolean;connections:2|4|8;maxConcurrentFiles:number;conversion?:ConversionOptions;compression?:ConversionOptions;captureQuality?:'source'|'high'|'standard' }
-export const defaults: Settings = { theme: 'system', folder: 'Alcydeo', saveAs: false, badge: 'count', blocked: [], minSize: 10000, globalDetection: true,compression:{...compressionDefaults},captureQuality:'high',multipart:false,connections:4,maxConcurrentFiles:1 };
+export const defaults: Settings = { theme: 'system', folder: 'Alcydeo', saveAs: false, badge: 'count', blocked: [], minSize: 10000, globalDetection: true,compression:{...compressionDefaults},captureQuality:'high',multipart:true,connections:4,maxConcurrentFiles:4 };
 export const concurrentFileOptions=[1,2,3,4,5,6,7,8] as const;
-export const downloadConcurrency=(value:unknown)=>typeof value==='number'&&Number.isInteger(value)&&value>=1&&value<=8?value:1;
+export const downloadConcurrency=(value:unknown)=>typeof value==='number'&&Number.isInteger(value)&&value>=1&&value<=8?value:defaults.maxConcurrentFiles;
 export const terminal: State[] = ['completed', 'failed', 'cancelled'];
 // Native files awaiting an optional content check are already saved history.
 // A live worker lease still protects terminal records until its owner stops.

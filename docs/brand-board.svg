@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1320">
 <rect width="1440" height="1320" fill="#F6F9FC"/>
 <g font-family="system-ui,sans-serif">
-<text x="64" y="64" fill="#0B70B5" font-size="16" letter-spacing="2">ALCYDEO · IDENTITÉ 0.2.0</text>
+<text x="64" y="64" fill="#0B70B5" font-size="16" letter-spacing="2">ALCYDEO · IDENTITÉ 1.0.0</text>
 <text x="64" y="117" fill="#071B2D" font-size="36" font-weight="700">Un emblème. Une identité nette.</text>
 <text x="64" y="153" fill="#52687C" font-size="19">Martin-pêcheur original · un seul œil visible · sans flèche · palette conservée</text>
 <rect x="48" y="196" width="648" height="456" rx="24" fill="#FFFFFF" stroke="#D8E5EF"/>

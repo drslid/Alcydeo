@@ -7,7 +7,7 @@ import{fileURLToPath}from'node:url';
 import{spawn}from'node:child_process';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
-const tests=['extension','segmented','site-access','popup-locales','cast-web','cast-handoff'].map(name=>`tests/e2e/${name}.spec.ts`);
+const tests=['extension','segmented','site-access','popup-locales','cast-web','cast-handoff','release-settings','detection-diagnostics'].map(name=>`tests/e2e/${name}.spec.ts`);
 if(process.argv.includes('--list')){console.log(tests.join('\n'));process.exit(0);}
 if(process.argv.length>2)throw Error('Usage: node scripts/ci-e2e.mjs [--list]');
 const extension=resolve(root,process.env.ALCYDEO_EXTENSION_PATH??'apps/extension/.output/chrome-mv3'),site=resolve(root,'apps/website/dist');

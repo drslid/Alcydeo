@@ -8,8 +8,6 @@ Google Cast reste expérimental. L’utilisateur a confirmé une démo officiell
 
 La page web dédiée charge le SDK Google Cast. Après votre choix du récepteur, son lecteur reçoit le lien vidéo et le titre. Aucun cookie ni mot de passe n’est transféré.
 
-Le lecteur Google Cast web n’est pas disponible dans cette installation. Utilisez le menu Caster de Chrome pour cet essai local.
-
 [Lecteur Google Cast](/Alcydeo/cast/)
 
 L’aperçu local est indisponible pour cette source. Votre TV peut prendre en charge son format ; vous pouvez tenter la diffusion.

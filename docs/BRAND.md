@@ -1,4 +1,4 @@
-# Alcydeo — identity kit 0.2.0
+# Alcydeo — identity kit
 
 **Le Plongeon** is an original, minimal kingfisher emblem. Its long beak, swept wing, single visible eye and orange breast make the bird identifiable without a download arrow. The blue, turquoise and orange palette is retained. The premium direction describes the visual finish; Alcydeo remains free.
 

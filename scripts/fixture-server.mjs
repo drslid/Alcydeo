@@ -6,6 +6,8 @@ import { stat } from 'node:fs/promises';
 import { createReadStream } from 'node:fs';
 import { resolve, extname, sep } from 'node:path';
 const root = resolve('fixtures');
+const fixturePort=Number(process.env.ALCYDEO_FIXTURE_PORT??4179);
+if(!Number.isInteger(fixturePort)||fixturePort<1024||fixturePort>65535)throw Error('Invalid ALCYDEO_FIXTURE_PORT');
 const types = {'.html':'text/html','.js':'text/javascript','.mp4':'video/mp4','.webm':'video/webm','.mkv':'video/x-matroska','.mov':'video/quicktime','.m3u8':'application/vnd.apple.mpegurl','.mpd':'application/dash+xml','.ts':'video/mp2t','.m4s':'video/iso.segment'};
 let qualityGeneration=1;
 let readerGeneration=1;
@@ -19,7 +21,7 @@ createServer(async (req,res) => {
     if(await partsFixture(req,res,url))return;
     if(url.pathname==='/api/video_proxy.php'){
       if(req.headers['sec-fetch-site']==='none'||String(req.headers.origin??'').startsWith('chrome-extension://')){res.writeHead(200,{'Content-Type':'text/html; charset=utf-8'});res.end('<!doctype html><title>Reader page</title>');}
-      else{res.writeHead(302,{Location:'http://localhost:4179/binary/lesson.mp4'});res.end();}return;
+      else{res.writeHead(302,{Location:`http://localhost:${fixturePort}/binary/lesson.mp4`});res.end();}return;
     }
     if(url.pathname==='/binary/lesson.mp4'&&!url.searchParams.has('ff')){res.writeHead(307,{Location:'/binary/lesson.mp4?ff=fixture_v1_%2Bkeep%2F','Access-Control-Allow-Origin':'*'});res.end();return;}
     if(url.pathname==='/binary/hidden-html.mp4'){res.writeHead(200,{'Content-Type':'application/octet-stream',"Content-Disposition":"attachment; filename*=UTF-8''session%2Ehtml"});res.end('<!doctype html><title>Session page</title>');return;}
@@ -63,4 +65,4 @@ createServer(async (req,res) => {
     headers['Content-Length']=String(end-start+1); res.writeHead(range?206:200,headers);
     if(req.method==='HEAD')res.end();else {const stream=createReadStream(path,{start,end});res.on('close',()=>stream.destroy());stream.pipe(res);}
   } catch {res.writeHead(404);res.end();}
-}).listen(4179,'127.0.0.1',()=>console.log('Fixture lab: http://127.0.0.1:4179'));
+}).listen(fixturePort,'127.0.0.1',()=>console.log(`Fixture lab: http://127.0.0.1:${fixturePort}`));

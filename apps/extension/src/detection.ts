@@ -171,6 +171,7 @@ export function createDetection(settings:()=>Promise<Settings>) {
   chrome.permissions.onAdded.addListener(()=>{void synchronize();});chrome.permissions.onRemoved.addListener(()=>{void synchronize();});
   const redirects=new Map<string,{tabId:number;urls:string[];at:number}>();
   function redirected(details:chrome.webRequest.OnBeforeRedirectDetails){
+    details={...details,initiator:requestInitiator(details)};
     if(details.tabId<0||!details.initiator)return;
     try{safeUrl(details.initiator);const from=safeUrl(details.url),to=safeUrl(details.redirectUrl);const old=redirects.get(details.requestId);const now=Date.now();
       for(const[id,value]of redirects)if(now-value.at>60_000)redirects.delete(id);
@@ -180,6 +181,7 @@ export function createDetection(settings:()=>Promise<Settings>) {
   }
   function requestEnded(details:{requestId:string}){redirects.delete(details.requestId);}
   function sabrTraffic(details:chrome.webRequest.OnBeforeRequestDetails){
+    details={...details,initiator:requestInitiator(details)};
     if(!isLocalBuild()||details.tabId<0||details.method!=='POST'||!details.initiator||!/^https?:\/\//.test(details.initiator)||!/(^|\.)(youtube\.com|youtube-nocookie\.com)$/.test(new URL(details.initiator).hostname))return;
     if(!details.url.includes('/videoplayback?')||new URL(details.url).searchParams.get('sabr')!=='1')return;
     const chunks=details.requestBody?.raw?.flatMap(r=>r.bytes?[new Uint8Array(r.bytes)]:[])??[],length=chunks.reduce((n,b)=>n+b.length,0);if(!length||length>131072)return;const body=new Uint8Array(length);let offset=0;for(const chunk of chunks){body.set(chunk,offset);offset+=chunk.length;}
@@ -189,6 +191,7 @@ export function createDetection(settings:()=>Promise<Settings>) {
     })().catch(()=>{});return undefined;
   }
   function networkHeaders(details:chrome.webRequest.OnHeadersReceivedDetails){
+    details={...details,initiator:requestInitiator(details)};
     const chain=redirects.get(details.requestId);if(details.statusCode<300||details.statusCode>=400)redirects.delete(details.requestId);
     if(details.tabId<0||details.statusCode<200||(details.statusCode>=300&&details.statusCode<400)||!['media','xmlhttprequest','other','sub_frame'].includes(details.type))return;
     const contentType=details.responseHeaders?.find(h=>h.name.toLowerCase()==='content-type')?.value??'';const filename=responseFilename(details.responseHeaders?.find(h=>h.name.toLowerCase()==='content-disposition')?.value);const html=htmlResponse(contentType,filename);const refused=[401,403,404,410].includes(details.statusCode);if(details.statusCode>=400&&!html&&!refused)return;const recognized=networkMedia(details.url,contentType,filename,details.type==='media');if(!recognized&&!html&&!refused&&!/\.(ts|aac)(?:[?#]|$)/i.test(details.url))return;if(html&&details.type!=='media'&&!mediaLink.test(details.url))return;
@@ -351,3 +354,4 @@ export function createDetection(settings:()=>Promise<Settings>) {
   };
   void synchronize();return{cached,rejectedCount,pending:(id:number)=>validationRuns.has(id),scan,expand,frameOrigins,observe,synchronize,reject,check,resetChecks,diagnostics,changed:(id:number)=>schedule(id)};
 }
+import{requestInitiator}from'./platform';

@@ -36,7 +36,7 @@
     "description": "Alcydeo interface: detectionDiagnosticsPrivacy"
   },
   "detectionDiagnosticsAccessError": {
-    "message": "افتح تفاصيل Alcydeo في chrome://extensions لمراجعة الوصول إلى المواقع.",
+    "message": "افتح تفاصيل Alcydeo في مدير إضافات المتصفح للتحقق من الوصول إلى المواقع.",
     "description": "Alcydeo interface: detectionDiagnosticsAccessError"
   },
   "cropTool": {
@@ -92,11 +92,11 @@
     "description": "Alcydeo interface: cropRange"
   },
   "chromeSiteAccess": {
-    "message": "الوصول إلى المواقع في Chrome",
+    "message": "وصول المتصفح إلى المواقع",
     "description": "Alcydeo interface: chromeSiteAccess"
   },
   "chromeAccessRestricted": {
-    "message": "تحدّ إعدادات Chrome من الوصول إلى هذا الموقع.",
+    "message": "تقيّد إعدادات المتصفح الوصول إلى هذا الموقع.",
     "description": "Alcydeo interface: chromeAccessRestricted"
   },
   "openWebPage": {
@@ -260,7 +260,7 @@
     "description": "Alcydeo interface: help"
   },
   "helpLocal": {
-    "message": "موقع المساعدة جاهز محليًا ولم يُنشر بعد.",
+    "message": "تعمل التنزيلات والمكتبة والأدوات المدعومة محليًا. يفتح الزر أدناه الدليل على الإنترنت.",
     "description": "Alcydeo interface: helpLocal"
   },
   "helpOpen": {
@@ -532,11 +532,11 @@
     "description": "Alcydeo interface: cloud_failed"
   },
   "formatsScope": {
-    "message": "تنزيل الملفات الأصلية؛ لا تضمن الامتدادات تشغيل أو تحويل جميع برامج الترميز في Chrome. يصف M3U8 وMPD البث المجزأ.",
+    "message": "امتداد الملف لا يضمن أن المتصفح يشغّل كل ترميز أو يحوّله. يصف M3U8 وMPD تدفقات مقسمة.",
     "description": "Alcydeo interface: formatsScope"
   },
   "featureLimits": {
-    "message": "Chrome لسطح المكتب. اختبارات محلية للملفات الأصلية وHLS VOD غير المشفر وDASH بفترة واحدة. لا دعم لـDRM أو كل برامج الترميز. Cast تجريبي والتحقق من الأجهزة معلق. تعتمد جودة التسجيل على المصدر والحاسوب.",
+    "message": "Chrome وFirefox للحاسوب. يعتمد التوافق على الوصول للمصدر والترميز والنظام. الوسائط المحمية مستثناة وتختلف قدرات الالتقاط والتلفاز حسب المتصفح.",
     "description": "Alcydeo interface: featureLimits"
   },
   "cloudSharing": {
@@ -1378,7 +1378,7 @@
     "description": "Alcydeo interface: language"
   },
   "languageAutomatic": {
-    "message": "اتباع Chrome",
+    "message": "اتباع المتصفح",
     "description": "Alcydeo interface: languageAutomatic"
   },
   "selectVideo": {
@@ -1470,7 +1470,7 @@
     "description": "Alcydeo interface: visualMerge"
   },
   "previewUnavailable": {
-    "message": "يتعذر معاينة الملف في Chrome. جرّب MP4 متوافقًا.",
+    "message": "لا يستطيع المتصفح معاينة هذا الملف. جرّب MP4 متوافقًا.",
     "description": "Alcydeo interface: previewUnavailable"
   },
   "playSelection": {
@@ -1554,7 +1554,7 @@
     "description": "Alcydeo interface: converting"
   },
   "err_conversionCodec": {
-    "message": "يتعذر على Chrome تحويل جميع مسارات الصوت والفيديو في هذا الملف إلى H.264/AAC. تم الاحتفاظ بالأصل، ولم يُحفظ ملف MP4 ناقص.",
+    "message": "لا يستطيع المحرك المحلي تحويل كل المسارات إلى H.264/AAC. يُحتفظ بالأصل ولا يُحفظ MP4 ناقص.",
     "description": "Alcydeo interface: err_conversionCodec"
   },
   "err_conversionInput": {
@@ -1652,15 +1652,15 @@
     "description": "Alcydeo interface: saveAsk"
   },
   "downloadSubfolder": {
-    "message": "مجلد فرعي في مجلد تنزيلات Chrome",
+    "message": "مجلد التنزيلات الفرعي",
     "description": "Alcydeo interface: downloadSubfolder"
   },
   "downloadFolderHint": {
-    "message": "تُحفظ الملفات داخل هذا المجلد الفرعي في مجلد التنزيلات المحدد في Chrome. غيّر المجلد الرئيسي من إعدادات التنزيل في Chrome.",
+    "message": "تُحفظ الملفات في هذا المجلد الفرعي للتنزيلات. غيّر المجلد الرئيسي من إعدادات التنزيل في المتصفح.",
     "description": "Alcydeo interface: downloadFolderHint"
   },
   "chromeDownloadSettings": {
-    "message": "اختيار المجلد الرئيسي في Chrome",
+    "message": "اختيار مجلد التنزيلات الرئيسي",
     "description": "Alcydeo interface: chromeDownloadSettings"
   },
   "err_saveDialog": {
@@ -1684,7 +1684,7 @@
     "description": "Alcydeo interface: globalDetection"
   },
   "globalDetectionHint": {
-    "message": "مفعّل افتراضيًا. يمنح Chrome الوصول للمواقع عند التثبيت. يمكنك إيقاف الكشف هنا أو تقييد الوصول في Chrome.",
+    "message": "يبدأ الكشف تلقائيًا في المواقع المسموح بها. أوقفه هنا أو قيّد وصول المواقع في المتصفح.",
     "description": "Alcydeo interface: globalDetectionHint"
   },
   "err_html": {
@@ -1700,7 +1700,7 @@
     "description": "Alcydeo interface: appName"
   },
   "appDescription": {
-    "message": "اعثر على الفيديوهات واحفظها محليًا مع الحفاظ على خصوصية مكتبتك.",
+    "message": "اكتشف الفيديو والصوت المتاحين واختر الجودة واحفظ الملفات أو حرّرها محليًا. لا يلزم حساب Alcydeo.",
     "description": "Alcydeo interface: appDescription"
   },
   "tagline": {
@@ -1776,7 +1776,7 @@
     "description": "Alcydeo interface: manager"
   },
   "keepOpen": {
-    "message": "أبقِ هذا المدير مفتوحًا أثناء معالجة الوسائط المجزأة. إغلاق Chrome يوقف المهام النشطة.",
+    "message": "أبقِ المدير مفتوحًا أثناء معالجة المقاطع. إغلاق المتصفح يوقف المهام النشطة.",
     "description": "Alcydeo interface: keepOpen"
   },
   "noTasks": {
@@ -1976,7 +1976,7 @@
     "description": "Alcydeo interface: saveFile"
   },
   "err_saveInterrupted": {
-    "message": "لم يؤكد Chrome الحفظ. تحقق من تنزيلاته أو نافذة حفظ باسم المفتوحة، ثم أعد حفظ الملف المُجهّز.",
+    "message": "لم يؤكد المتصفح الحفظ. افحص التنزيلات أو نافذة الحفظ ثم أعد حفظ الملف الجاهز.",
     "description": "Alcydeo interface: err_saveInterrupted"
   },
   "cloudExperimental": {
@@ -2002,5 +2002,37 @@
   "cloudMegaupOpen": {
     "message": "فتح MegaUp",
     "description": "Alcydeo interface: cloudMegaupOpen"
+  },
+  "detectionDiagnosticsPage": {
+    "message": "الصفحة المراد تشخيصها",
+    "description": "Alcydeo interface: detectionDiagnosticsPage"
+  },
+  "detectionDiagnosticsChoose": {
+    "message": "اختر صفحة مشغّل مفتوحة. يبقى التقرير على هذا الجهاز.",
+    "description": "Alcydeo interface: detectionDiagnosticsChoose"
+  },
+  "detectionDiagnosticsNoPage": {
+    "message": "لا توجد صفحة ويب متاحة. افتح المشغّل ثم حدّث القائمة.",
+    "description": "Alcydeo interface: detectionDiagnosticsNoPage"
+  },
+  "detectionDiagnosticsTabsRefresh": {
+    "message": "تحديث الصفحات المفتوحة",
+    "description": "Alcydeo interface: detectionDiagnosticsTabsRefresh"
+  },
+  "firefoxCaptureUnavailable": {
+    "message": "لا يوفّر Firefox واجهة التقاط التبويب هذه. يظل تسجيل بث HLS المتوافق متاحًا.",
+    "description": "Alcydeo interface: firefoxCaptureUnavailable"
+  },
+  "firefoxCastUnavailable": {
+    "message": "يتطلب البث إلى التلفاز في هذا الإصدار Chrome. تبقى التنزيلات والأدوات المحلية متاحة.",
+    "description": "Alcydeo interface: firefoxCastUnavailable"
+  },
+  "cloudConsentDenied": {
+    "message": "تحتاج هذه الخدمة إلى إذن مشاركة محتوى الملفات في Firefox. اسمح به ثم أعد المحاولة.",
+    "description": "Alcydeo interface: cloudConsentDenied"
+  },
+  "firefoxSettingsHint": {
+    "message": "يمنع Firefox الإضافات من فتح إعداداته. استخدم قائمة Firefox: الإضافات والسمات للوصول إلى المواقع، أو الإعدادات ← عام ← التنزيلات لاختيار المجلد.",
+    "description": "Alcydeo interface: firefoxSettingsHint"
   }
 }

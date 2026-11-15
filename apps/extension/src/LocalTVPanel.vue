@@ -6,6 +6,7 @@ import{getTask,changeTask}from'../../../packages/storage';
 import{namedTaskFile}from'../../../packages/media-core/filenames';
 import{videoExtensions,formatMime}from'../../../packages/media-core/formats';
 import{t,bytes}from'./i18n';import Icon from'./Icon.vue';
+import{supportsNativeCast}from'./platform';
 const props=defineProps<{taskId?:string}>();
 const emit=defineEmits<{attention:[]}>();
 const video=ref<HTMLVideoElement>(),guide=ref<HTMLElement>(),url=ref(''),name=ref(''),size=ref(0),ready=ref(false),error=ref(''),showGuide=ref(false),loading=ref(false),expectedName=ref('');
@@ -15,7 +16,7 @@ let disposed=false,selection=0,savedId:number|undefined,sourceFile:File|undefine
 watch([error,()=>castState.value.error],values=>{if(values.some(Boolean))emit('attention');});
 watch(()=>castState.value.phase,phase=>{if(phase==='error')void instructions();});
 function bind(element:Element|ComponentPublicInstance|null){const player=element as HTMLVideoElement|null;if(player===video.value&&controller)return;controller?.dispose();video.value=player??undefined;if(player){const remote=(player as HTMLVideoElement&{remote?:LocalRemote}).remote;if(remote)controller=new LocalCast(remote,value=>{if(!disposed)castState.value=value;});}}
-function cast(){error.value='';if(!controller){error.value='tvNotSupported';return;}void controller.choose();}
+function cast(){if(!supportsNativeCast){error.value='firefoxCastUnavailable';return;}error.value='';if(!controller){error.value='tvNotSupported';return;}void controller.choose();}
 function metadata(){ready.value=true;mediaDuration.value=video.value?.duration??0;}
 async function waitMetadata(player:HTMLVideoElement,signal:AbortSignal){
  if(signal.aborted||player.readyState>=1||player.error)return;
@@ -25,6 +26,7 @@ async function waitMetadata(player:HTMLVideoElement,signal:AbortSignal){
  });
 }
 async function prepareCast(){
+ if(!supportsNativeCast){error.value='firefoxCastUnavailable';return;}
  if(copying.value)return;const current=selection,abort=new AbortController();error.value='';copying.value=true;copyAbort=abort;
  try{
   if(!await chrome.extension.isAllowedFileSchemeAccess()){error.value='tvFileAccess';await chrome.tabs.create({url:`chrome://extensions/?id=${chrome.runtime.id}`});return;}
@@ -60,7 +62,7 @@ onMounted(async()=>{
   const task=await getTask(props.taskId);if(!task)throw new Error();if(disposed||selection!==current)return;
   expectedName.value=task.filename?.split(/[\\/]/).pop()||task.title;
   const local=await taskCastFile(task);if(disposed||selection!==current)return;savedId=local?.id;
-  if(local&&await chrome.extension.isAllowedFileSchemeAccess()&&await chrome.permissions.contains({origins:['file:///*']})){if(disposed||selection!==current)return;associatedTaskId=task.id;url.value=local.url;nativeFile.value=true;name.value=expectedName.value;size.value=task.bytes;return;}
+  if(supportsNativeCast&&local&&await chrome.extension.isAllowedFileSchemeAccess()&&await chrome.permissions.contains({origins:['file:///*']})){if(disposed||selection!==current)return;associatedTaskId=task.id;url.value=local.url;nativeFile.value=true;name.value=expectedName.value;size.value=task.bytes;return;}
   if(!task.output)return;
   const dir=await(await navigator.storage.getDirectory()).getDirectoryHandle(task.id),file=await(await dir.getFileHandle(task.output)).getFile();
   if(!disposed&&selection===current)select(namedTaskFile(task,file),task.id);
@@ -69,24 +71,25 @@ onMounted(async()=>{
 });
 onBeforeUnmount(()=>{chrome.permissions.onRemoved.removeListener(permissionsRemoved);disposed=true;selection++;release();});
 
-async function quickCast(){for(let n=0;n<250;n++){if(disposed)return false;if(!loading.value&&nativeFile.value&&ready.value){if(!navigator.userActivation.isActive)return false;void cast();return true;}if(!loading.value&&!nativeFile.value)return false;await chrome.storage.session.get('capture-status');}return false;}
+async function quickCast(){if(!supportsNativeCast)return false;for(let n=0;n<250;n++){if(disposed)return false;if(!loading.value&&nativeFile.value&&ready.value){if(!navigator.userActivation.isActive)return false;void cast();return true;}if(!loading.value&&!nativeFile.value)return false;await chrome.storage.session.get('capture-status');}return false;}
 defineExpose({quickCast});
 </script>
 <template>
  <section class="local-tv">
-  <h3>{{ t('tvLocalFile') }}</h3><p>{{ t('tvFileIntro') }}</p>
-  <p class="task-notice" data-local-cast-limits>{{ t('tvFileReceiverLimit') }}</p>
-  <button class="local-cast-guide-button" :class="showGuide ? 'primary' : 'text-button'" :aria-expanded="showGuide" @click="instructions">{{ t(showGuide ? 'tvFileCastTabSteps' : 'tvFileCastGuide') }}</button>
+  <h3>{{ t('tvLocalFile') }}</h3><p v-if="supportsNativeCast">{{ t('tvFileIntro') }}</p>
+  <p v-if="!supportsNativeCast" class="task-notice">{{ t('firefoxCastUnavailable') }}</p>
+  <p v-if="supportsNativeCast" class="task-notice" data-local-cast-limits>{{ t('tvFileReceiverLimit') }}</p>
+  <button v-if="supportsNativeCast" class="local-cast-guide-button" :class="showGuide ? 'primary' : 'text-button'" :aria-expanded="showGuide" @click="instructions">{{ t(showGuide ? 'tvFileCastTabSteps' : 'tvFileCastGuide') }}</button>
   <section v-if="showGuide" ref="guide" tabindex="-1" class="local-cast-guide" :aria-label="t('tvFileCastGuide')"><h4>{{ t('tvFileCastGuide') }}</h4><ol><li>{{ t('tvFileStepPlay') }}</li><li>{{ t('tvFileStepMenu') }}</li><li>{{ t('tvFileStepTab') }}</li></ol><p>{{ t('tvFileKeepOpen') }}</p></section>
   <p v-if="loading" role="status">{{ t('tvPreparing') }}</p>
   <p v-if="expectedName && !url" class="task-notice">{{ t('tvFileChooseSaved') }} <bdi>{{ expectedName }}</bdi></p>
   <label class="secondary file-picker"><Icon name="folder" />{{ t('tvFileChoose') }}<input type="file" accept="video/*,.mp4,.webm,.m4v,.mkv,.ts,.mov,.avi,.ogg,.mpg,.mpeg,.wmv,.flv,.3gp,.m2ts,.mts" :aria-label="t('tvFileChoose')" @change="choose"></label>
-  <button v-if="!url && savedId !== undefined" class="local-cast-prepare" :class="showGuide ? 'secondary' : 'primary'" :disabled="copying" @click="prepareCast"><Icon name="cast" />{{ t(copying ? 'tvFileCopying' : 'tvFilePrepare') }}</button>
+  <button v-if="supportsNativeCast && !url && savedId !== undefined" class="local-cast-prepare" :class="showGuide ? 'secondary' : 'primary'" :disabled="copying" @click="prepareCast"><Icon name="cast" />{{ t(copying ? 'tvFileCopying' : 'tvFilePrepare') }}</button>
   <template v-if="url">
-   <div v-if="!nativeFile && candidates.length" class="cast-existing"><p>{{ t('castReuseFile') }}</p><button v-for="item in candidates" :key="item.id" class="secondary" @click="savedId=item.id;prepareCast()"><Icon name="folder" /><bdi>{{ item.filename }}</bdi></button></div><details v-if="!nativeFile" class="cast-path"><summary>{{ t('castLocalPath') }}</summary><label>{{ t('castLocalPath') }}<input v-model="nativePath" type="text" dir="ltr" :aria-label="t('castLocalPath')" placeholder="C:\Videos\video.mp4"></label></details><div class="local-file-heading"><h4 dir="auto" :title="name">{{ name }}</h4><bdi>{{ bytes(size) }}</bdi></div>
+   <div v-if="supportsNativeCast && !nativeFile && candidates.length" class="cast-existing"><p>{{ t('castReuseFile') }}</p><button v-for="item in candidates" :key="item.id" class="secondary" @click="savedId=item.id;prepareCast()"><Icon name="folder" /><bdi>{{ item.filename }}</bdi></button></div><details v-if="supportsNativeCast && !nativeFile" class="cast-path"><summary>{{ t('castLocalPath') }}</summary><label>{{ t('castLocalPath') }}<input v-model="nativePath" type="text" dir="ltr" :aria-label="t('castLocalPath')" placeholder="C:\Videos\video.mp4"></label></details><div class="local-file-heading"><h4 dir="auto" :title="name">{{ name }}</h4><bdi>{{ bytes(size) }}</bdi></div>
    <video :ref="bind" :src="url" :aria-label="t('tvLocalFile')" controls preload="metadata" playsinline @loadedmetadata="metadata" @error="ready=false;error='tvFileCodec'" />
-   <div class="tv-actions"><button v-if="nativeFile" class="local-cast-button" :class="showGuide ? 'secondary' : 'primary'" :disabled="!ready || mediaDuration <= 15 || ['choosing','connecting'].includes(castState.phase)" @click="cast"><Icon name="cast" />{{ t(castState.phase === 'connected' ? 'tvFileCastChange' : showGuide ? 'tvFileCastNative' : 'castVideo') }}</button><button v-else class="local-cast-prepare" :class="showGuide ? 'secondary' : 'primary'" :disabled="copying || !ready" @click="prepareCast"><Icon name="cast" />{{ t(copying ? 'tvFileCopying' : 'tvFilePrepare') }}</button><button class="text-button" @click="clear"><Icon name="close" />{{ t('tvFileClose') }}</button></div>
-   <p v-if="nativeFile" class="cast-status" role="status" :data-phase="castState.phase">{{ t('tvFileState_' + castState.phase) }}</p><p v-if="nativeFile && ready && mediaDuration <= 15" class="task-notice">{{ t('tvFileShort') }}</p><p v-if="!nativeFile" class="task-notice">{{ t(savedId !== undefined ? 'tvFileAccessHint' : 'tvFileCopyHint') }}</p>
+   <div class="tv-actions"><button v-if="supportsNativeCast && nativeFile" class="local-cast-button" :class="showGuide ? 'secondary' : 'primary'" :disabled="!ready || mediaDuration <= 15 || ['choosing','connecting'].includes(castState.phase)" @click="cast"><Icon name="cast" />{{ t(castState.phase === 'connected' ? 'tvFileCastChange' : showGuide ? 'tvFileCastNative' : 'castVideo') }}</button><button v-else-if="supportsNativeCast" class="local-cast-prepare" :class="showGuide ? 'secondary' : 'primary'" :disabled="copying || !ready" @click="prepareCast"><Icon name="cast" />{{ t(copying ? 'tvFileCopying' : 'tvFilePrepare') }}</button><button class="text-button" @click="clear"><Icon name="close" />{{ t('tvFileClose') }}</button></div>
+   <p v-if="nativeFile" class="cast-status" role="status" :data-phase="castState.phase">{{ t('tvFileState_' + castState.phase) }}</p><p v-if="nativeFile && ready && mediaDuration <= 15" class="task-notice">{{ t('tvFileShort') }}</p><p v-if="supportsNativeCast && !nativeFile" class="task-notice">{{ t(savedId !== undefined ? 'tvFileAccessHint' : 'tvFileCopyHint') }}</p>
   </template>
   <p v-if="error || castState.error" class="error" role="alert">{{ t(error || castState.error || '') }} <a v-if="error === 'tvFileCodec'" href="#tools">{{ t('mediaTools') }}</a></p>
   <p class="task-notice">{{ t('tvFilePrivacy') }}</p>

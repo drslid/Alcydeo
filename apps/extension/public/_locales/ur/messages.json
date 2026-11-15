@@ -36,7 +36,7 @@
     "description": "Alcydeo interface: detectionDiagnosticsPrivacy"
   },
   "detectionDiagnosticsAccessError": {
-    "message": "سائٹ تک رسائی جانچنے کے لیے chrome://extensions میں Alcydeo کی تفصیلات کھولیں۔",
+    "message": "سائٹ تک رسائی جانچنے کے لیے براؤزر کے ایکسٹینشن مینیجر میں Alcydeo کی تفصیلات کھولیں۔",
     "description": "Alcydeo interface: detectionDiagnosticsAccessError"
   },
   "cropTool": {
@@ -92,11 +92,11 @@
     "description": "Alcydeo interface: cropRange"
   },
   "chromeSiteAccess": {
-    "message": "Chrome میں سائٹ تک رسائی",
+    "message": "براؤزر کی سائٹ تک رسائی",
     "description": "Alcydeo interface: chromeSiteAccess"
   },
   "chromeAccessRestricted": {
-    "message": "Chrome کی ترتیبات اس سائٹ تک رسائی محدود کرتی ہیں۔",
+    "message": "براؤزر کی ترتیبات اس سائٹ تک رسائی محدود کرتی ہیں۔",
     "description": "Alcydeo interface: chromeAccessRestricted"
   },
   "openWebPage": {
@@ -260,7 +260,7 @@
     "description": "Alcydeo interface: help"
   },
   "helpLocal": {
-    "message": "مدد کی سائٹ مقامی طور پر تیار ہے، ابھی شائع نہیں ہوئی۔",
+    "message": "ڈاؤن لوڈ، لائبریری اور موافق اوزار مقامی طور پر کام کرتے ہیں۔ نیچے کا بٹن آن لائن گائیڈ کھولتا ہے۔",
     "description": "Alcydeo interface: helpLocal"
   },
   "helpOpen": {
@@ -532,11 +532,11 @@
     "description": "Alcydeo interface: cloud_failed"
   },
   "formatsScope": {
-    "message": "اصل فائل ڈاؤن لوڈ؛ ایکسٹینشن Chrome میں ہر کوڈیک چلانے یا بدلنے کی ضمانت نہیں۔ M3U8 اور MPD حصوں والی اسٹریم بیان کرتے ہیں۔",
+    "message": "فائل کا ایکسٹینشن ہر کوڈیک چلنے یا تبدیل ہونے کی ضمانت نہیں۔ M3U8 اور MPD حصوں والی اسٹریم بتاتے ہیں۔",
     "description": "Alcydeo interface: formatsScope"
   },
   "featureLimits": {
-    "message": "ڈیسک ٹاپ Chrome۔ اصل فائلوں، غیر خفیہ HLS VOD اور ایک دورانیے والے DASH کی مقامی جانچ ہوئی ہے۔ DRM اور تمام کوڈیکس معاون نہیں۔ Cast تجرباتی ہے؛ ریسیور کی جانچ باقی ہے۔ کیپچر ماخذ اور کمپیوٹر پر منحصر ہے۔",
+    "message": "ڈیسک ٹاپ Chrome اور Firefox۔ موافقت ذریعہ، کوڈیک اور نظام پر منحصر ہے۔ محفوظ میڈیا شامل نہیں؛ کیپچر اور ٹی وی براؤزر کے لحاظ سے مختلف ہیں۔",
     "description": "Alcydeo interface: featureLimits"
   },
   "cloudSharing": {
@@ -1378,7 +1378,7 @@
     "description": "Alcydeo interface: language"
   },
   "languageAutomatic": {
-    "message": "Chrome کی زبان",
+    "message": "براؤزر کے مطابق",
     "description": "Alcydeo interface: languageAutomatic"
   },
   "selectVideo": {
@@ -1470,7 +1470,7 @@
     "description": "Alcydeo interface: visualMerge"
   },
   "previewUnavailable": {
-    "message": "Chrome یہ فائل نہیں دکھا سکتا۔ موافق MP4 آزمائیں۔",
+    "message": "براؤزر اس فائل کا پیش منظر نہیں دکھا سکتا۔ موافق MP4 آزمائیں۔",
     "description": "Alcydeo interface: previewUnavailable"
   },
   "playSelection": {
@@ -1554,7 +1554,7 @@
     "description": "Alcydeo interface: converting"
   },
   "err_conversionCodec": {
-    "message": "Chrome اس فائل کے تمام آڈیو/ویڈیو ٹریک H.264/AAC میں تبدیل نہیں کر سکتا۔ اصل فائل برقرار ہے؛ نامکمل MP4 محفوظ نہیں ہوا۔",
+    "message": "مقامی انجن ہر ٹریک H.264/AAC میں تبدیل نہیں کر سکتا۔ اصل محفوظ ہے؛ نامکمل MP4 محفوظ نہیں کیا گیا۔",
     "description": "Alcydeo interface: err_conversionCodec"
   },
   "err_conversionInput": {
@@ -1652,15 +1652,15 @@
     "description": "Alcydeo interface: saveAsk"
   },
   "downloadSubfolder": {
-    "message": "Chrome کے ڈاؤن لوڈ فولڈر میں ذیلی فولڈر",
+    "message": "ڈاؤن لوڈ ذیلی فولڈر",
     "description": "Alcydeo interface: downloadSubfolder"
   },
   "downloadFolderHint": {
-    "message": "فائلیں Chrome میں منتخب ڈاؤن لوڈ فولڈر کے اس ذیلی فولڈر میں محفوظ ہوتی ہیں۔ مرکزی فولڈر Chrome کی ڈاؤن لوڈ ترتیبات میں بدلیں۔",
+    "message": "فائلیں ڈاؤن لوڈ کے اس ذیلی فولڈر میں محفوظ ہوتی ہیں۔ مرکزی فولڈر براؤزر کی ڈاؤن لوڈ ترتیبات میں بدلیں۔",
     "description": "Alcydeo interface: downloadFolderHint"
   },
   "chromeDownloadSettings": {
-    "message": "Chrome میں مرکزی فولڈر منتخب کریں",
+    "message": "مرکزی ڈاؤن لوڈ فولڈر منتخب کریں",
     "description": "Alcydeo interface: chromeDownloadSettings"
   },
   "err_saveDialog": {
@@ -1684,7 +1684,7 @@
     "description": "Alcydeo interface: globalDetection"
   },
   "globalDetectionHint": {
-    "message": "پہلے سے فعال۔ Chrome تنصیب پر سائٹس تک رسائی دیتا ہے۔ یہاں شناخت روکیں یا Chrome میں سائٹس تک رسائی محدود کریں۔",
+    "message": "اجازت یافتہ سائٹوں پر شناخت شروع ہوتی ہے۔ یہاں روکیں یا براؤزر میں سائٹ کی رسائی محدود کریں۔",
     "description": "Alcydeo interface: globalDetectionHint"
   },
   "err_html": {
@@ -1700,7 +1700,7 @@
     "description": "Alcydeo interface: appName"
   },
   "appDescription": {
-    "message": "ویڈیوز تلاش کریں، مقامی طور پر محفوظ کریں اور لائبریری نجی رکھیں۔",
+    "message": "ویڈیو اور آڈیو تلاش کریں، معیار منتخب کریں اور فائلیں مقامی طور پر محفوظ یا ترمیم کریں۔ اکاؤنٹ ضروری نہیں۔",
     "description": "Alcydeo interface: appDescription"
   },
   "tagline": {
@@ -1776,7 +1776,7 @@
     "description": "Alcydeo interface: manager"
   },
   "keepOpen": {
-    "message": "ٹکڑوں والے میڈیا کی پروسیسنگ کے دوران یہ مینیجر کھلا رکھیں۔ Chrome بند کرنے سے فعال کام رک جاتے ہیں۔",
+    "message": "حصوں کی پروسیسنگ کے دوران مینیجر کھلا رکھیں۔ براؤزر بند کرنے سے فعال کام رک جاتے ہیں۔",
     "description": "Alcydeo interface: keepOpen"
   },
   "noTasks": {
@@ -1976,7 +1976,7 @@
     "description": "Alcydeo interface: saveFile"
   },
   "err_saveInterrupted": {
-    "message": "Chrome نے محفوظ ہونے کی تصدیق نہیں کی۔ ڈاؤن لوڈز یا کھلی بطور محفوظ کریں ونڈو دیکھیں، پھر تیار فائل دوبارہ محفوظ کریں۔",
+    "message": "براؤزر نے محفوظ ہونے کی تصدیق نہیں کی۔ ڈاؤن لوڈ یا محفوظ کرنے کی ونڈو دیکھیں، پھر تیار فائل دوبارہ محفوظ کریں۔",
     "description": "Alcydeo interface: err_saveInterrupted"
   },
   "cloudExperimental": {
@@ -2002,5 +2002,37 @@
   "cloudMegaupOpen": {
     "message": "MegaUp کھولیں",
     "description": "Alcydeo interface: cloudMegaupOpen"
+  },
+  "detectionDiagnosticsPage": {
+    "message": "جانچنے والا صفحہ",
+    "description": "Alcydeo interface: detectionDiagnosticsPage"
+  },
+  "detectionDiagnosticsChoose": {
+    "message": "کھلے پلیئر کا صفحہ منتخب کریں۔ رپورٹ اسی آلے پر رہتی ہے۔",
+    "description": "Alcydeo interface: detectionDiagnosticsChoose"
+  },
+  "detectionDiagnosticsNoPage": {
+    "message": "کوئی ویب صفحہ نہیں۔ پلیئر کھولیں اور فہرست تازہ کریں۔",
+    "description": "Alcydeo interface: detectionDiagnosticsNoPage"
+  },
+  "detectionDiagnosticsTabsRefresh": {
+    "message": "کھلے صفحات تازہ کریں",
+    "description": "Alcydeo interface: detectionDiagnosticsTabsRefresh"
+  },
+  "firefoxCaptureUnavailable": {
+    "message": "Firefox یہ ٹیب کیپچر API فراہم نہیں کرتا۔ موافق HLS اسٹریم ریکارڈ ہو سکتے ہیں۔",
+    "description": "Alcydeo interface: firefoxCaptureUnavailable"
+  },
+  "firefoxCastUnavailable": {
+    "message": "اس نسخے میں کاسٹ کے لیے Chrome ضروری ہے۔ ڈاؤن لوڈ اور مقامی اوزار دستیاب رہتے ہیں۔",
+    "description": "Alcydeo interface: firefoxCastUnavailable"
+  },
+  "cloudConsentDenied": {
+    "message": "اس خدمت کے لیے Firefox میں فائل کے مواد کی شراکت کی اجازت درکار ہے۔ اجازت دے کر پھر کوشش کریں۔",
+    "description": "Alcydeo interface: cloudConsentDenied"
+  },
+  "firefoxSettingsHint": {
+    "message": "Firefox ایکسٹینشن کو اپنی ترتیبات کھولنے نہیں دیتا۔ سائٹ رسائی کے لیے Firefox مینو میں ایڈ آن اور تھیم، یا فولڈر کے لیے ترتیبات ← عمومی ← ڈاؤن لوڈ کھولیں۔",
+    "description": "Alcydeo interface: firefoxSettingsHint"
   }
 }

@@ -2,19 +2,23 @@
 title: "Einstellungen"
 ---
 
+Neue Installation oder zurückgesetzte Einstellungen: vier gleichzeitige Dateien, Mehrteildownload mit vier Verbindungen je kompatibler Datei aktiviert. Bisherige Einstellungen bleiben erhalten. Beide Grenzen sind einstellbar; kein allgemeiner Geschwindigkeitsgewinn wird versprochen.
+
+Mediathek → Einstellungen → Erkennung: Quell-Tab wählen, um die lokale Diagnose anzusehen oder zu kopieren. Nur sichere Codes und Zähler, kein automatischer Upload. Die Diagnose ist nicht mehr im Popup.
+
 Dateien speichern
 
 Automatisch speichern. Bei jedem Download Speichern unter anzeigen.
 
-Dateien werden in diesem Unterordner des in Chrome gewählten Downloadordners gespeichert. Den Hauptordner in den Chrome-Downloadeinstellungen ändern.
+Dateien werden in diesem Unterordner des Downloadverzeichnisses gespeichert. Ändere den Hauptordner in den Browsereinstellungen.
 
-Hauptordner in Chrome wählen
+Hauptordner für Downloads wählen
 
 Design. Symbolanzeige. Gesperrte Hosts (einer pro Zeile; * erlaubt). Einstellungen speichern. Einstellungen zurücksetzen.
 
 Automatische Medienerkennung
 
-Standardmäßig aktiv. Chrome gewährt den Websitezugriff bei der Installation. Hier pausieren oder den Zugriff in Chrome beschränken.
+Die Erkennung startet auf erlaubten Websites. Hier pausieren oder den Websitezugriff im Browser einschränken.
 
 clip.webm → clip-converted.mp4
 
@@ -36,9 +40,11 @@ Dateien werden einzeln konvertiert. Nach einer Pause oder dem Schließen des Man
 
 Dateien speichern: Automatisch speichern. Bei jedem Download Speichern unter anzeigen.
 
-Dateien werden in diesem Unterordner des in Chrome gewählten Downloadordners gespeichert. Den Hauptordner in den Chrome-Downloadeinstellungen ändern.
+Dateien werden in diesem Unterordner des Downloadverzeichnisses gespeichert. Ändere den Hauptordner in den Browsereinstellungen.
 
-## Gleichzeitige Downloads — 0.1.60
+## Gleichzeitige Downloads — 1.0.0
+
+Neue Installation oder zurückgesetzte Einstellungen: vier gleichzeitige Dateien, Mehrteildownload mit vier Verbindungen je kompatibler Datei aktiviert. Bisherige Einstellungen bleiben erhalten. Beide Grenzen sind einstellbar; kein allgemeiner Geschwindigkeitsgewinn wird versprochen.
 
 Dateien gleichzeitig: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.
 
@@ -74,7 +80,7 @@ Auf aufgenommenem Tab zeichnen · Strich rückgängig · Zeichnung löschen
 
 Sprache: English / Español / Français / Deutsch / 简体中文 / العربية / Русский / Português / हिन्दी / اردو.
 
-Originaldateien herunterladen; diese Endungen garantieren nicht, dass Chrome jeden Codec abspielen oder konvertieren kann. M3U8 und MPD beschreiben segmentierte Streams.
+Dateiendungen garantieren nicht, dass der Browser jeden Codec abspielen oder umwandeln kann. M3U8 und MPD beschreiben segmentierte Streams.
 
 MP4 · WEBM · M3U8 · MPD · M4V · MKV · TS · MOV · AVI · OGG · MPG · WMV · FLV · 3GP · M2TS · MTS
 

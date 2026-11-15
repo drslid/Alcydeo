@@ -4,6 +4,10 @@ title: "Compatibility and limits"
 
 Direct files and tested unencrypted HLS/DASH variants are supported. Source access, codecs and storage determine compatibility. Protected media are refused. Allow roughly three times the media size for segmented processing; large-file limits are not universally validated.
 
+Firefox 153+ has its own package without YouTube. Chrome tab capture, Google Cast and AirPlay are unavailable in Firefox. Local processing depends on the codecs supported by that browser; the Firefox guide records the tested scope.
+
+The Chrome development ZIP includes experimental YouTube support. The separate Chrome Store preparation and Firefox package exclude YouTube. Firefox ZIP installation is temporary; no signed XPI or Store approval is claimed.
+
 Google Cast remains experimental. The user confirmed one official Google demo on Shield; other sources and private files are not covered by that result. Use Chrome tab casting for local files on Shield. AirPlay is unavailable in Chrome on Windows.
 
 Gofile, MegaUp, 1fichier and Turbobit sharing, plus pCloud upload links, are optional. Sending requires your click. Provider protocols have local tests; real uploads are not validated. Provider limits and retention apply.

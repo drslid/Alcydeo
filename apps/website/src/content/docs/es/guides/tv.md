@@ -8,8 +8,6 @@ Google Cast sigue siendo experimental. El usuario confirmó una demo oficial de 
 
 La página web separada carga el SDK de Google Cast. Al elegir un receptor, su reproductor recibe la URL y el título. No se transfieren cookies ni contraseñas.
 
-El reproductor web Google Cast no está disponible en esta instalación. Usa el menú Enviar de Chrome para esta prueba local.
-
 [Reproductor Google Cast](/Alcydeo/cast/)
 
 La vista previa local no está disponible. Tu TV puede admitir este formato; puedes intentar transmitirlo.

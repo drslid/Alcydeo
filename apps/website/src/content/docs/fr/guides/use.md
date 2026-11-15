@@ -2,6 +2,8 @@
 title: "Utiliser Alcydeo"
 ---
 
+Firefox 153+ possède son propre paquet sans YouTube. La capture d’onglet Chrome, Google Cast et AirPlay sont indisponibles dans Firefox. Le traitement local dépend de ses codecs ; le guide Firefox indique le périmètre testé.
+
 Lancez la vidéo : Alcydeo la détecte et actualise le compteur automatiquement. Ouvrez la popup, choisissez une qualité disponible puis téléchargez. Pour HLS ou DASH, recherchez les qualités et gardez le gestionnaire ouvert. Chrome demande l’accès HTTP/HTTPS à l’installation ; vous pouvez le limiter dans Chrome ou suspendre la détection dans les réglages. Un téléchargement direct se termine quand Chrome confirme l’enregistrement du fichier. Afficher dans le dossier permet de retrouver le résultat. Les qualités liées à une même vidéo sont regroupées dans une fiche. La qualité choisie reste sélectionnée après une nouvelle analyse.
 
 Sources / Activité. Les téléchargements continuent si vous fermez cette fenêtre. Gardez l’onglet du gestionnaire ouvert pour les flux découpés.
@@ -12,7 +14,7 @@ Outils vidéo: Convertir en MP4, Compresser, Assembler des vidéos, Découper.
 
 Détection automatique des médias
 
-Activée par défaut. Chrome accorde l’accès aux sites à l’installation. Vous pouvez suspendre la détection ici ou limiter l’accès dans Chrome.
+La détection démarre sur les sites autorisés. Suspendez-la ici ou limitez les accès dans le navigateur.
 
 Effacer l’historique
 
@@ -108,9 +110,11 @@ La conversion traite un fichier à la fois. Après une pause ou la fermeture du 
 
 Enregistrement des fichiers: Enregistrer automatiquement. Afficher Enregistrer sous à chaque téléchargement.
 
-Les fichiers sont enregistrés dans le dossier choisi dans Chrome, à l’intérieur de ce sous-dossier. Le dossier principal se choisit dans les paramètres de téléchargement de Chrome.
+Les fichiers utilisent ce sous-dossier du répertoire de téléchargement. Changez le répertoire principal dans les réglages du navigateur.
 
-## Téléchargements simultanés — 0.1.60
+## Téléchargements simultanés — 1.0.0
+
+Installation neuve ou réglages réinitialisés : quatre fichiers simultanés, plusieurs parties activées à quatre connexions par fichier compatible. Les choix existants sont conservés. Les deux plafonds sont réglables ; aucun gain de vitesse universel n’est promis.
 
 Fichiers en parallèle: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.
 
@@ -146,7 +150,7 @@ Dessiner sur l’onglet capturé · Annuler le trait · Effacer le dessin
 
 Langue: English / Español / Français / Deutsch / 简体中文 / العربية / Русский / Português / हिन्दी / اردو.
 
-Téléchargement des fichiers d’origine ; ces extensions ne garantissent pas que Chrome puisse lire ou convertir tous les codecs. M3U8 et MPD décrivent des flux segmentés.
+L’extension du fichier ne garantit pas la lecture ou la conversion de tous les codecs dans le navigateur. M3U8 et MPD décrivent des flux segmentés.
 
 MP4 · WEBM · M3U8 · MPD · M4V · MKV · TS · MOV · AVI · OGG · MPG · WMV · FLV · 3GP · M2TS · MTS
 

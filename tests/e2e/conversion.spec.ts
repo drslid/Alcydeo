@@ -62,7 +62,7 @@ test('two managers process a persisted conversion queue one file at a time',asyn
 });
 
 test('an unsupported video track is refused without exporting an audio-only MP4',async()=>{
-  const id=await choose('fixtures/conversion/unsupported.mkv');const card=ui.locator(`[data-task-id="${id}"]`);await expect(card).toHaveAttribute('data-state','failed');await expect(card.locator('.task-error p')).toHaveText('Chrome cannot convert every audio/video track in this file to H.264/AAC. The original is kept; no incomplete MP4 was saved.');expect(await ui.evaluate(()=>chrome.downloads.search({}))).toHaveLength(0);
+  const id=await choose('fixtures/conversion/unsupported.mkv');const card=ui.locator(`[data-task-id="${id}"]`);await expect(card).toHaveAttribute('data-state','failed');await expect(card.locator('.task-error p')).toHaveText('The local engine cannot convert every track to H.264/AAC. The original is kept; no incomplete MP4 was saved.');expect(await ui.evaluate(()=>chrome.downloads.search({}))).toHaveLength(0);
   const files=await ui.evaluate(async id=>{const names:string[]=[];const dir=await(await navigator.storage.getDirectory()).getDirectoryHandle(id);for await(const name of (dir as any).keys())names.push(name);return names;},id);expect(files).toEqual(['input.original']);
 });
 

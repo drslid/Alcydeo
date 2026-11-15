@@ -1,3 +1,118 @@
+# Release validation — 1.0.0, November 15, 2026
+
+The 1.0.0 candidate adds a real Firefox MV3 event-page target alongside Chrome,
+dashboard detection diagnostics, new/reset defaults of four simultaneous files
+and multipart enabled at four connections, and the corrected shared kingfisher
+contour. Existing saved settings remain unchanged. The
+[structured 1.0.0 validation report](benchmarks/release-validation-1.0.0.json)
+records Node 24.22.2, pnpm 12.5.1, passing typecheck/lint and **1,045 unit tests
+in 61 files**. The local Chromium 156.0.8078.4 smoke run passes **66/66 cases in
+eight explicit files**, in **156.21 seconds**, with no retries, failures, skips
+or flaky cases. An earlier assertion still expected the old Chrome-specific
+label; it is updated without removing permission/recovery/download checks.
+This selection is not the complete repository E2E corpus. The GitHub Actions
+result will be reported separately; previous release totals below remain
+historical results.
+
+Firefox has **44 selected scenario validations: 22 per browser**, Firefox
+160.0 and ESR 153.7.0. These combine suite runs and targeted harness corrections,
+rather than claiming a single uninterrupted full-corpus run. Public smokes are
+repeated after the neutral catalog wording update; 79 runtime/manifest files
+are unchanged, with only ten native catalogs differing. The later local-help
+wording correction also changes native text only, without claiming another
+complete scenario rerun. Mozilla's linter reports **0 errors and 1 Vue runtime
+warning**, detailed below; there is no signed XPI or AMO approval.
+
+The separate Chrome Store runtime check returns **zero YouTube sources** and
+**one ordinary fixture source**. The checked Store and Firefox ZIPs each contain
+89 files. The Store package uses the public Pages sender, while Firefox keeps
+its sender empty and excludes Cast. These package/runtime checks are not Store
+submission or acceptance.
+
+The static site builds **103 HTML pages** and checks **8 stylesheets, 3,416 local
+links and ten locale routes** under `/Alcydeo/`, without build warnings; these
+figures and the eight-view scope are in the structured report linked above.
+Eight actual FR/UR views cover 1440px/390px and light/dark themes, with no
+overflow, console errors/warnings, missing image or failed local resource.
+The Urdu font loads from the local site. Native mobile selects navigate
+FR dark → UR dark → FR light successfully. Captures show the corrected emblem
+and current original-fixture Chrome screenshots. The Pages archive contains
+284 files. An initial generation failure caused by accidentally removed guide
+title arrays is corrected before this successful build; its earlier log is
+preserved locally.
+
+## Real Firefox media checks
+
+The complete Firefox functional candidate passes **22 unique scenarios per
+browser**, Firefox 160.0 and ESR 153.7.0. Suite runs
+and targeted harness corrections are distinguished; this is not one claim of a
+single uninterrupted 22-case run. Each browser confirms **12 disk downloads**.
+The selection also covers ten popup languages at 525×600/RTL, source/manager/
+add-on reload, legacy settings migration, pause/recovery, HTML/access refusal,
+dashboard diagnostics, Firefox settings/help and native Cloud consent under
+the corrected external-deny proxy. Physical receiver, signed-install and
+universal provider/codec behavior remain outside these results.
+
+The final neutral-browser-wording package changes only the ten native catalogs;
+**79 JavaScript/CSS/WASM/manifest files are identical** to the complete functional
+candidate. The checked-in [Firefox smoke helper](../scripts/firefox-smoke.md) is
+executed on that final ZIP in both versions, including actual direct/HLS saved
+playback and without another Cloud interaction. These smokes are a separate
+final check, not a claim that every earlier scenario reran after the catalog
+update.
+
+`web-ext 10.8.0` with `addons-linter 10.15.0` returns **0 errors, 0 notices and
+1 warning** (`UNSAFE_VAR_ASSIGNMENT` in Vue's compiled static-template runtime).
+No project-source `v-html` or manual `innerHTML` assignment is found in the
+corresponding inspection. The warning remains visible; neither lint nor
+temporary loading is Mozilla signature, AMO listing or approval.
+
+Isolated Linux Firefox 160.0 and ESR 153.7.0 load the actual unsigned temporary
+extension. OPFS write/read succeeds. The original direct fixture exposes two
+qualities; selecting 180p saves 525,622 bytes with the exact original SHA-256.
+The supported HLS TS fixture saves 1,838,138 bytes; separate-audio HLS fMP4 and
+DASH each save 1,837,166 bytes. These MP4 outputs contain AVC/AAC and approximately
+six seconds of media. Reloading the manager preserves four task records, and
+source reload/SPA mutation is detected. These are original short fixtures,
+not public-provider downloads or a large-file benchmark.
+
+A compatible AVC/AAC MKV converts to a 1,838,870-byte MP4 by copying both
+tracks (`videoEncoded=false`, `audioEncoded=false`). In the initial minimal Linux
+environment without OS codec libraries, WebM VP8/Opus conversion requires H.264
+encoding and fails with `conversionCodec`: no false saved result is created and
+the original remains unchanged. This environment also cannot play H.264 locally.
+Official Ubuntu codec libraries extracted only into the isolated laboratory then
+restore real Firefox 160.0 H.264 playback (720×404, six seconds) and a supported
+H.264 encoding configuration. No system or product file is changed by that test
+setup. Alcydeo also has an embedded AAC fallback; a failed native audio probe
+alone does not establish the complete engine's AAC capability. With those OS
+libraries, both Firefox 160.0 and ESR 153.7.0 save and replay five actual tool
+outputs: WebM→H.264/AAC conversion, 360×200 visual crop, compression, two-second
+trim and 12.059-second merge. Nonempty decoded frames, dimensions and durations
+are verified; encoded AAC uses the bundled fallback. Earlier trim/merge harness
+selector errors are kept separate from the final two passing scenarios.
+Chrome tabCapture, Google Cast/RemotePlayback and AirPlay are
+not Firefox capabilities. See [Firefox scope](FIREFOX.md).
+
+## Cloud test isolation incident and corrected consent checks
+
+One early Marionette consent harness failed to intercept a real send after
+the native **Allow** action. It uploaded exactly one original public repository
+fixture, `low.mp4` (525,622 bytes), to Gofile. It was not a personal file. No other
+send was made in that run. The raw provider response was not retained and no
+deletion credential is available; this report publishes no resulting link or
+token. The owner was informed. This is a test-isolation defect, rather than a
+product bypass of a denied permission: the native consent had been granted.
+It does not establish reliable provider support or independent remote storage
+verification.
+
+The corrected harness verifies an external-deny proxy which rejects every
+CONNECT and has no direct-network fallback. With the actual native **Deny**,
+there is no upload job or OPFS preparation. With **Allow**, the local OPFS copy
+is created, then the worker receives `cloudNetwork` at the enforced network
+boundary, without a sharing link. These corrected checks have no provider
+communication and are distinct from the earlier accidental fixture upload.
+
 # First public preview — 0.2.0, November 14, 2026
 
 [Publication validation](benchmarks/public-preview-validation-0.2.0.json), [release notes](releases/v0.2.0.md), [dependency review](DEPENDENCY-REVIEW.md), [scope](STATUS.md). Node 24.22.2, pnpm 12.5.1 and isolated Chromium 156 profiles. Typecheck, lint and **1,032 unit tests in 60 files pass**. **101 selected browser cases pass without retries, failures or skips**:62 explicit CI smoke cases,27 additional interface cases,11 public-site cases and1 native mobile language/theme scenario. This is not the whole repository E2E corpus.

@@ -1,9 +1,21 @@
 # Changelog
 
-## Unreleased
+## 1.0.0 — Chrome and Firefox · 2026-11-15
+
+### Added
+- A dedicated Firefox package and review-source archive, with temporary installation instructions and explicit browser differences. Firefox excludes YouTube; no Mozilla signature or Store submission is claimed.
+
+### Changed
+- Move the local detection diagnostic from the popup to Library → Settings → Detection, with a source-tab chooser and the existing safe copyable report.
+- Default new and reset settings to four simultaneous files and multipart enabled at four connections per compatible file. Keep existing saved choices and server compatibility guards.
+- Publish separate Chrome development, Chrome Store preparation and Firefox channels, with English/French installation guidance and ten-language Pages documentation. The Chrome development channel retains the local YouTube experiment; the other two exclude it.
 
 ### Fixed
 - Remove the kingfisher's rear bulge and dark patch; share the streamlined contour across the emblem, icons, signatures and selected design proposal.
+
+### Known limits
+- Firefox has no Chrome tab capture, Google Cast or AirPlay capability. Codec/storage support and real Firefox validation are detailed in docs/FIREFOX.md; a successful build does not establish parity.
+- The existing provider, source, codec and receiver limits still apply. A 1.0.0 GitHub Release is not Chrome Web Store or Mozilla approval, universal site compatibility or private-file Cast to Shield.
 
 ## 0.2.0 — First public preview · 2026-11-14
 

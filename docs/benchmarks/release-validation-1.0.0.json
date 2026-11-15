@@ -1,0 +1,255 @@
+{
+  "version": "1.0.0",
+  "date": "2026-11-15",
+  "timezone": "Europe/Paris",
+  "static": {
+    "node": "24.22.2",
+    "pnpm": "12.5.1",
+    "typecheck": true,
+    "lint": true,
+    "unitTests": 1045,
+    "unitFiles": 61,
+    "dependencyAdvisories": 0
+  },
+  "chrome": {
+    "version": "156.0.8078.4",
+    "selectedBrowserTests": 66,
+    "passed": 66,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "retries": 0,
+    "durationSeconds": 156.21,
+    "scope": "Eight explicit smoke files; not the complete repository E2E corpus",
+    "initialFailure": "One older site-access assertion used the former Chrome-specific label. Updated to the current localized label; source permission, recovery and actual download assertions retained."
+  },
+  "firefox": {
+    "addonVersion": "1.0.0",
+    "artifact": "alcydeo-1.0.0-firefox.zip",
+    "artifactSha256": "f7ccda35038cd6f62cb7a3a49fc94270910f23ac139812af6ef4c1a5022ee0c7",
+    "testedExtractedFilesMatchArtifact": true,
+    "installation": "Temporary unsigned installation into fresh isolated profiles; permanent signed installation not tested",
+    "personalProfileUsed": false,
+    "browserVersions": [
+      "160.0",
+      "153.7.0 ESR"
+    ],
+    "declaredMinimum": "153.0",
+    "minimumActuallyTested": "153.7.0 ESR",
+    "tools": {
+      "selenium": "4.52.0",
+      "geckodriver": "0.37.1",
+      "webExt": "10.8.0",
+      "addonsLinter": "10.15.0"
+    },
+    "browserCodecEnvironment": {
+      "baseline": "Minimal Ubuntu 22.04 had no libavcodec: native H264 decode/encode unavailable; native AAC encoder unavailable",
+      "enhanced": "Official Ubuntu libavcodec58 4.4.2 and dependencies extracted under .local only, then loaded by Firefox. H264 playback and encoding available; AAC encoding uses product bundled WASM fallback. No codec added to product or system."
+    },
+    "perBrowser": [
+      {
+        "version": "160.0",
+        "uniqueScenariosValidated": 22,
+        "allPassedAfterTargetedHarnessCorrections": true,
+        "scenarioNames": [
+          "detect direct and manifests",
+          "direct lower quality bytes",
+          "HLS TS remux",
+          "HLS separate remux",
+          "DASH remux",
+          "manager and observer reload",
+          "settings and UI render",
+          "reject HTML and denied sources",
+          "pause reload resume",
+          "compatible MKV conversion copies tracks",
+          "ten popup languages and RTL",
+          "original H264 playback capability measured",
+          "WebM reencode with local AAC fallback",
+          "visual crop exports decoded MP4",
+          "compression exports decoded MP4",
+          "trim exports decoded MP4",
+          "merge exports decoded MP4",
+          "legacy migration and true addon reload",
+          "native Cloud consent decline and accept",
+          "Firefox settings UI opens local instructions",
+          "restricted diagnostics routes to local Firefox help",
+          "saved HLS and DASH outputs decode real frames"
+        ],
+        "initialDefaults": {
+          "badge": "count",
+          "blocked": [],
+          "captureQuality": "high",
+          "compression": {
+            "audioKbps": 128,
+            "maxHeight": 720,
+            "quality": "small"
+          },
+          "connections": 4,
+          "conversion": {
+            "audioKbps": 0,
+            "maxHeight": 0,
+            "quality": "auto"
+          },
+          "folder": "Alcydeo",
+          "globalDetection": true,
+          "maxConcurrentFiles": 4,
+          "minSize": 10000,
+          "multipart": true,
+          "saveAs": false,
+          "theme": "system"
+        },
+        "diskDownloadsConfirmed": 12
+      },
+      {
+        "version": "153.7.0",
+        "uniqueScenariosValidated": 22,
+        "allPassedAfterTargetedHarnessCorrections": true,
+        "scenarioNames": [
+          "detect direct and manifests",
+          "direct lower quality bytes",
+          "HLS TS remux",
+          "HLS separate remux",
+          "DASH remux",
+          "manager and observer reload",
+          "settings and UI render",
+          "reject HTML and denied sources",
+          "pause reload resume",
+          "compatible MKV conversion copies tracks",
+          "ten popup languages and RTL",
+          "original H264 playback capability measured",
+          "WebM reencode with local AAC fallback",
+          "visual crop exports decoded MP4",
+          "compression exports decoded MP4",
+          "trim exports decoded MP4",
+          "merge exports decoded MP4",
+          "legacy migration and true addon reload",
+          "native Cloud consent decline and accept",
+          "Firefox settings UI opens local instructions",
+          "restricted diagnostics routes to local Firefox help",
+          "saved HLS and DASH outputs decode real frames"
+        ],
+        "initialDefaults": {
+          "badge": "count",
+          "blocked": [],
+          "captureQuality": "high",
+          "compression": {
+            "audioKbps": 128,
+            "maxHeight": 720,
+            "quality": "small"
+          },
+          "connections": 4,
+          "conversion": {
+            "audioKbps": 0,
+            "maxHeight": 0,
+            "quality": "auto"
+          },
+          "folder": "Alcydeo",
+          "globalDetection": true,
+          "maxConcurrentFiles": 4,
+          "minSize": 10000,
+          "multipart": true,
+          "saveAs": false,
+          "theme": "system"
+        },
+        "diskDownloadsConfirmed": 12
+      }
+    ],
+    "amoLint": {
+      "errors": 0,
+      "notices": 0,
+      "warnings": 1
+    },
+    "amoLintWarning": "UNSAFE_VAR_ASSIGNMENT in Vue insertStaticContent, compiled static template runtime; no v-html or innerHTML assignment found in project TS/Vue source",
+    "signed": false,
+    "submittedToAMO": false,
+    "capabilitiesExcluded": [
+      "YouTube catalog and transport",
+      "tab capture",
+      "Google Cast",
+      "AirPlay"
+    ],
+    "historicalPrototypeFinding": "One earlier consent-prototype profile initially showed network candidates without DOM/manifests until source reload. Not reproduced in final fresh 160/ESR suites; real addon reload and mutation recovery passed. Earlier report retained.",
+    "cloudIncident": {
+      "occurred": true,
+      "provider": "Gofile",
+      "syntheticOriginalFile": "fixtures/media/low.mp4",
+      "bytes": 525622,
+      "sha256": "76309904a23d39b871bc07ba24cede31091d36ed27552a6715dd64e2ccadab32",
+      "uploadedFilesConfirmed": 1,
+      "applicationUploadCalls": 1,
+      "actualHTTPCountNotRecorded": true,
+      "cause": "Marionette isolated-world Worker stub did not intercept product Worker",
+      "parentNotifiedImmediately": true,
+      "rawResponsePersisted": false,
+      "deletionMeansAvailableLocally": false,
+      "remoteCleanupAttempted": false,
+      "report": "160.0-native-consent/report.json"
+    },
+    "safeCloudRetest": "Real native prompt chrome buttons automated, no auto-allow preference. Manual Firefox proxy refuses all external CONNECT/HTTP, verified with failing HEAD before clicking Send. Deny creates no job/copy; Allow stages original locally then provider connection is refused, paused/cloudNetwork, no link."
+  },
+  "firefoxLatestMessages": {
+    "artifact": "alcydeo-1.0.0-firefox.zip",
+    "sha256": "c290b86d24e25512b307368cd3ed0b2499b68b33dafa6fdba75bfb282fc8d998",
+    "previousFunctionalQa": "release-verdict.json",
+    "onlyChangedFiles": [
+      "_locales/en/messages.json",
+      "_locales/es/messages.json",
+      "_locales/fr/messages.json",
+      "_locales/de/messages.json",
+      "_locales/zh_CN/messages.json",
+      "_locales/ar/messages.json",
+      "_locales/ru/messages.json",
+      "_locales/pt/messages.json",
+      "_locales/hi/messages.json",
+      "_locales/ur/messages.json"
+    ],
+    "unchangedBinaryFiles": 79,
+    "latestSmokeReports": [
+      "neutral-160/report.json",
+      "neutral-153/report.json"
+    ],
+    "latestSmokePassed": true,
+    "officialLintSummary": {
+      "errors": 0,
+      "notices": 0,
+      "warnings": 1
+    },
+    "historicalIncidentUnchanged": "See release-verdict.json cloudIncident; no Cloud interaction in these final smokes",
+    "publicHelper": [
+      "scripts/firefox-smoke.py",
+      "scripts/requirements-firefox.txt",
+      "scripts/firefox-smoke.md"
+    ]
+  },
+  "website": {
+    "htmlPages": 103,
+    "css": 8,
+    "localLinks": 3416,
+    "locales": 10,
+    "views": 8,
+    "browserConsoleErrors": 0,
+    "browserWarnings": 0,
+    "mobileHorizontalOverflow": false,
+    "nativeLanguageAndThemeControls": true,
+    "proof": "Actual French/Urdu desktop/mobile light/dark pages, fonts and local resources; homepage/resources unchanged by final TV guide wording correction."
+  },
+  "originalMediaOnly": true,
+  "storeSubmissionPerformed": false,
+  "firefoxSigned": false,
+  "incident": {
+    "provider": "Gofile",
+    "files": 1,
+    "originalFixture": "fixtures/media/low.mp4",
+    "bytes": 525622,
+    "personalMedia": false,
+    "scope": "An earlier native-consent test used an ineffective worker interception in the test harness and let a real provider upload complete. The synthetic fixture was already public in the repository. This is retained as a test-isolation incident, not an intercepted test or an independent remote-file verification.",
+    "remediation": "Stopped the test, disclosed the event, and used a verified fail-closed HTTP/CONNECT proxy with direct fallback disabled before subsequent consent clicks. Native Deny created no job/copy; Allow copied locally but the provider connection was blocked. No second provider upload occurred.",
+    "deletionCredentialRetained": false,
+    "remoteDeletionClaimed": false
+  },
+  "limitations": [
+    "Firefox ZIP temporarily installed, not Mozilla-signed or AMO-approved.",
+    "Firefox does not expose the Chrome tab-capture/Cast APIs used here; codecs depend on the browser and OS.",
+    "Physical receiver playback, real provider parity, all public sites and the whole E2E corpus are not certified by these checks."
+  ]
+}

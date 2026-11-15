@@ -1,6 +1,10 @@
-# Alcydeo 0.2.0 — privacy notice
+# Alcydeo 1.0.0 — privacy notice
 
-Updated November 14, 2026 for the first public GitHub preview. Documentation: https://drslid.github.io/Alcydeo/ ; public support: https://github.com/drslid/Alcydeo/issues ; private security reporting: https://github.com/drslid/Alcydeo/security/advisories/new . No Chrome Web Store or Firefox/AMO listing is claimed.
+Updated November 15, 2026 for the Chrome and Firefox GitHub packages. Documentation: https://drslid.github.io/Alcydeo/ ; public support: https://github.com/drslid/Alcydeo/issues ; private security reporting: https://github.com/drslid/Alcydeo/security/advisories/new . No Chrome Web Store or Firefox/AMO listing is claimed.
+
+The Firefox package stores its local records in its own Firefox extension profile, separate from Chrome. There is no cross-browser synchronization or automatic diagnostic upload. In 1.0.0, the safe local detection report is accessed in Library → Settings → Detection for an explicitly selected source tab; copying it does not send it to Alcydeo or GitHub. Firefox excludes YouTube and does not provide Chrome tab capture or native Cast; the Chrome-specific descriptions and dated observations below do not imply Firefox parity. See [Firefox scope](FIREFOX.md).
+
+Firefox's manifest declares no required data collection, with optional `websiteContent` and `personallyIdentifyingInfo` consent for user-directed Cloud uploads: a selected personal video may contain a voice or image. The native permission is requested at **Send**, before local copy/job creation or provider requests. Refusal does not upload a file. Resume requires consent again and revocation stops the active transfer. The optional upload still transmits the selected content/name/size to its chosen provider under that provider's policy; it is not an Alcydeo telemetry service.
 
 Alcydeo automatically detects media on HTTP/HTTPS sites by default, including embedded player frames allowed by Chrome. These host permissions are declared at installation. The user can pause detection in Alcydeo or limit site access in Chrome; restricted hosts are not observed. It handles page titles, page/media URLs, available qualities, duration, file sizes and technical track metadata. It does not collect account profiles, payment data, typed forms, spoken content or advertising identifiers. It does not read cookie values through an extension API.
 
@@ -18,7 +22,7 @@ Incognito use is disabled in the manifest. Site access can be restricted in Chro
 
 Native handlers are registered synchronously against the manifest's required HTTP/HTTPS declarations so Chrome can wake its service worker. Chrome enforces site restrictions; handlers also await restored preferences and check access before retaining any media. Filters are then narrowed to actual grants or removed when detection/access is disabled. Version 0.1.3 applies the user's requested automatic-detection default once on upgrade and stores a local migration marker alongside settings. Other preferences are preserved; later explicit pauses remain in effect across restarts.
 
-The prepared static documentation would be hosted by GitHub Pages only after explicit publication. Visiting that site contacts GitHub and may create hosting logs; the site does not add analytics or a media proxy. A native optional TV prototype exists, with receiver playback unvalidated and AirPlay unavailable on the current Chrome target. Optional cloud uploads are described below.
+The static documentation is hosted by GitHub Pages at https://drslid.github.io/Alcydeo/. Visiting that site contacts GitHub and may create hosting logs; the site does not add analytics or a media proxy. The optional Chrome TV paths and their receiver limitations are described in [TV.md](TV.md); AirPlay is unavailable in Chrome on Windows. Optional cloud uploads are described below.
 
 Before a Store submission, the publisher must provide a real support contact, publish the matching privacy page and complete the Store's data-use disclosures. Local-only handling must still be disclosed: [Chrome policy guidance](https://developer.chrome.com/docs/webstore/program-policies/user-data-faq).
 

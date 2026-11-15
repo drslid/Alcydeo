@@ -2,6 +2,10 @@
 title: "Solução de problemas"
 ---
 
+Biblioteca → Configurações → Detecção: escolha a aba de origem para ver ou copiar o diagnóstico local. Apenas códigos e contadores seguros, sem envio automático. O diagnóstico saiu da janela da extensão.
+
+O Firefox 153+ tem um pacote próprio sem YouTube. Captura de aba do Chrome, Google Cast e AirPlay não estão disponíveis no Firefox. O processamento local depende dos seus codecs; o guia Firefox registra o escopo testado.
+
 Esta fonte não está acessível.
 
 A fonte retornou HTML em vez de mídia. O download foi interrompido. Atualize o player original e detecte a fonte novamente.
@@ -22,7 +26,9 @@ Após atualizar, recarregue Alcydeo e as páginas de vídeo já abertas. A vers�
 
 O TikTok utiliza os metadados nativos da publicação atual e conserva até três endereços CDN originais por qualidade. Um endereço que falha só é substituído após verificar a alternativa; a qualidade e o título escolhidos mantêm-se. Os limites do servidor exigem espera. Mantenha a página de origem e o gestor abertos até concluir a gravação.
 
-## Diagnóstico de detecção — 0.1.53
+## Diagnóstico de detecção — 1.0.0
+
+Biblioteca → Configurações → Detecção: escolha a aba de origem para ver ou copiar o diagnóstico local. Apenas códigos e contadores seguros, sem envio automático. O diagnóstico saiu da janela da extensão.
 
 Relatório local, sem links de vídeo, cookies ou assinaturas. Nada é enviado.
 

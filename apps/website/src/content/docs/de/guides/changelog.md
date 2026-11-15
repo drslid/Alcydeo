@@ -2,13 +2,21 @@
 title: "Änderungsprotokoll"
 ---
 
-0.2.0 — Erste öffentliche Vorschau · v0.2.0.
+1.0.0 — Auf GitHub verfügbar · v1.0.0.
+
+Das Chrome-Entwickler-ZIP enthält experimentelles YouTube. Die separate Chrome-Store-Vorbereitung und das Firefox-Paket schließen YouTube aus. Die Firefox-ZIP-Installation ist vorübergehend; kein signiertes XPI und keine Store-Freigabe werden behauptet.
+
+Neue Installation oder zurückgesetzte Einstellungen: vier gleichzeitige Dateien, Mehrteildownload mit vier Verbindungen je kompatibler Datei aktiviert. Bisherige Einstellungen bleiben erhalten. Beide Grenzen sind einstellbar; kein allgemeiner Geschwindigkeitsgewinn wird versprochen.
+
+Mediathek → Einstellungen → Erkennung: Quell-Tab wählen, um die lokale Diagnose anzusehen oder zu kopieren. Nur sichere Codes und Zähler, kein automatischer Upload. Die Diagnose ist nicht mehr im Popup.
+
+Firefox 153+ hat ein eigenes Paket ohne YouTube. Chrome-Tabaufnahme, Google Cast und AirPlay sind in Firefox nicht verfügbar. Lokale Verarbeitung hängt von seinen Codecs ab; die Firefox-Anleitung nennt den getesteten Umfang.
 
 Auf dieser Seite, Qualität, Herunterladen, Mediathek.
 
 Automatische Medienerkennung
 
-Standardmäßig aktiv. Chrome gewährt den Websitezugriff bei der Installation. Hier pausieren oder den Zugriff in Chrome beschränken.
+Die Erkennung startet auf erlaubten Websites. Hier pausieren oder den Websitezugriff im Browser einschränken.
 
 Die Quelle lieferte HTML statt Medien. Der Download wurde gestoppt. Originalplayer aktualisieren und die Medienquelle erneut erkennen.
 
@@ -32,7 +40,9 @@ Nach dem Update Alcydeo und bereits geöffnete Videoseiten neu laden. Version 0.
 
 TikTok verwendet die nativen Mediendaten des aktuellen Beitrags und behält bis zu drei ursprüngliche CDN-Adressen je Qualität. Eine fehlgeschlagene Adresse wird erst nach Prüfung der Alternative ersetzt; gewählte Qualität und Titel bleiben erhalten. Bei Serverlimits muss gewartet werden. Quellseite und Verwaltung müssen bis zum Speichern geöffnet bleiben.
 
-## Erkennungsdiagnose — 0.1.53
+## Erkennungsdiagnose — 1.0.0
+
+Mediathek → Einstellungen → Erkennung: Quell-Tab wählen, um die lokale Diagnose anzusehen oder zu kopieren. Nur sichere Codes und Zähler, kein automatischer Upload. Die Diagnose ist nicht mehr im Popup.
 
 Lokaler Bericht ohne Videolinks, Cookies oder Signaturen. Es wird nichts gesendet.
 
@@ -114,9 +124,11 @@ Dateien werden einzeln konvertiert. Nach einer Pause oder dem Schließen des Man
 
 Dateien speichern: Automatisch speichern. Bei jedem Download Speichern unter anzeigen.
 
-Dateien werden in diesem Unterordner des in Chrome gewählten Downloadordners gespeichert. Den Hauptordner in den Chrome-Downloadeinstellungen ändern.
+Dateien werden in diesem Unterordner des Downloadverzeichnisses gespeichert. Ändere den Hauptordner in den Browsereinstellungen.
 
-## Gleichzeitige Downloads — 0.1.60
+## Gleichzeitige Downloads — 1.0.0
+
+Neue Installation oder zurückgesetzte Einstellungen: vier gleichzeitige Dateien, Mehrteildownload mit vier Verbindungen je kompatibler Datei aktiviert. Bisherige Einstellungen bleiben erhalten. Beide Grenzen sind einstellbar; kein allgemeiner Geschwindigkeitsgewinn wird versprochen.
 
 Dateien gleichzeitig: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.
 
@@ -152,7 +164,7 @@ Auf aufgenommenem Tab zeichnen · Strich rückgängig · Zeichnung löschen
 
 Sprache: English / Español / Français / Deutsch / 简体中文 / العربية / Русский / Português / हिन्दी / اردو.
 
-Originaldateien herunterladen; diese Endungen garantieren nicht, dass Chrome jeden Codec abspielen oder konvertieren kann. M3U8 und MPD beschreiben segmentierte Streams.
+Dateiendungen garantieren nicht, dass der Browser jeden Codec abspielen oder umwandeln kann. M3U8 und MPD beschreiben segmentierte Streams.
 
 MP4 · WEBM · M3U8 · MPD · M4V · MKV · TS · MOV · AVI · OGG · MPG · WMV · FLV · 3GP · M2TS · MTS
 

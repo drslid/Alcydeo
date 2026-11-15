@@ -1,20 +1,22 @@
-# Current release candidate — 0.2.0 preview
+# Current release — 1.0.0
 
-The first public GitHub release packages the existing Chrome media workflow with a new original kingfisher identity, an English/French README, ten-language Pages documentation and reproducible checks. GitHub source, Release and Pages publication were authorized on November 14, 2026. This is a preview, not a Store listing or a claim of universal source compatibility.
+The 1.0.0 GitHub Release adds a dedicated Firefox package, moves detection diagnostics to the dashboard, changes initial transfer defaults and corrects the original kingfisher contour. The owner authorized this Chrome/Firefox publication on November 15, 2026. It is a final GitHub Release, without Store listings, a signed Firefox XPI or a claim of universal source compatibility. Firefox's tested versions and restrictions are recorded in [FIREFOX.md](FIREFOX.md).
 
 | Capability | State |
 | --- | --- |
 | Direct media, selected HLS/DASH VOD profiles, local library and file saving | Implemented and exercised with original fixtures; site/session compatibility varies |
 | Trim, crop, merge, convert and compress | Local processing; supported codec/track combinations only, one conversion at a time |
-| Live HLS recording and tab capture | Implemented with separate supported-source and capture limits |
+| Live HLS recording and tab capture | Source/recording limits remain; Chrome tab capture is unavailable in Firefox |
+| Transfer defaults | Four simultaneous files; multipart enabled at four connections per compatible file for new/reset settings; saved choices preserved |
+| Detection diagnostic | Library → Settings → Detection, source-tab selection and safe local copy; removed from popup |
 | Ten languages, manual flags and Arabic/Urdu RTL | Implemented and exercised in the installed extension |
 | Gofile, pCloud, MegaUp, 1fichier and Turbobit | Optional; protocol tests do not establish reliable real provider uploads |
 | Cast of a public source | Official SDK in an external player; one Google sample reported working by the user, wider receiver compatibility limited |
 | Direct Cast of a private PC file to Shield | Not implemented; explicit Chrome tab-casting guide retained |
 | AirPlay in Windows Chrome | Unavailable |
-| YouTube experimentation | Development preview only; removed from the distinct Store preparation build |
+| YouTube experimentation | Chrome development channel only; removed from Chrome Store preparation and Firefox |
 | Chrome Web Store submission | Next stage; no Store listing or approval claimed |
-| Firefox and AMO | Requested for a later phase; no tested Firefox build yet |
+| Firefox and AMO | Dedicated unsigned Firefox package and review sources; temporary installation only until separate Mozilla signing; browser differences apply |
 
 See [test results](TEST-RESULTS.md), [TV](TV.md), [Cloud](CLOUD.md), [publication channels](publication/README.md) and [release procedure](RELEASING.md). Historical observations below retain their original versions and limits.
 

@@ -1,7 +1,7 @@
 {
   "name": "alcydeo",
   "private": true,
-  "version": "0.2.0",
+  "version": "1.0.0",
   "type": "module",
   "license": "MIT",
   "packageManager": "pnpm@12.5.1",
@@ -28,7 +28,10 @@
     "test:store": "node scripts/store-qa.mjs",
     "zip:pages": "pnpm docs:build && node scripts/pages-archive.mjs",
     "zip:brand": "node scripts/brand.mjs && node scripts/brand-archive.mjs",
-    "test:ci": "node scripts/ci-e2e.mjs"
+    "test:ci": "node scripts/ci-e2e.mjs",
+    "build:firefox": "node scripts/firefox-build.mjs",
+    "zip:firefox": "node scripts/firefox-build.mjs --zip",
+    "zip:source": "node scripts/source-archive.mjs"
   },
   "devDependencies": {
     "@eslint/js": "9.39.1",

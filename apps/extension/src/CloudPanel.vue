@@ -4,6 +4,7 @@ import CloudProviderIcon from './CloudProviderIcon.vue';
 import{clearCloudTemporary,hasCloudOwner}from'../../../packages/cloud/temporary';
 import{pcloudDestination}from'../../../packages/cloud/pcloud';
 import{noSetupCloudProviders,cloudFileLimit,planCloudTargets}from'../../../packages/cloud/destinations';
+import{cloudConsent,firefoxBuild}from'./platform';
 import{ref,computed,watch,onMounted,onUnmounted}from'vue';import{t,bytes,errorText}from'./i18n';import{cleanName,type Task}from'../../../packages/contracts';import{taskFile}from'./task-files';import{cloudJobs,putCloudJob,changeCloudJob,removeCloudJob}from'../../../packages/cloud/storage';import{cancelCloudSession}from'../../../packages/cloud/transport';import{cloudNames,cloudRequiresAccount,type CloudProvider,type CloudJob,type PcloudDestination}from'../../../packages/cloud/contracts';import{acquire,renew,release}from'../../../packages/storage';
 const props=defineProps<{initialTasks?:Task[]}>();const provider=ref<CloudProvider>('gofile'),jobs=ref<CloudJob[]>([]),error=ref(''),preparing=ref(false);const owner=crypto.randomUUID();let worker:Worker|undefined,active='',timer:ReturnType<typeof setInterval>,refreshing=false,disposed=false,importAbort:AbortController|undefined;
 const cleaning=ref(false),cleanupDone=ref(false),cleanupError=ref(''),working=computed(()=>preparing.value||cleaning.value),cleanupBusy=computed(()=>preparing.value||jobs.value.some(job=>hasCloudOwner(job)));
@@ -32,7 +33,7 @@ async function stage(all=false){
  const selected=files.value.map(entry=>({entry,file:entry.file!,sourceId:entry.task?.id,prepared:[...(entry.prepared??[])]})),targets=all?[...noSetupCloudProviders]:[provider.value];
  const destination=targets.includes('pcloud')?pcloudDestination(depositLink.value,depositRegion.value):undefined;
  preparationMessages.value=[];preparing.value=true;
- try{await navigator.locks.request('alcydeo:cloud-files',{mode:'shared'},async()=>{for(const input of selected){
+ try{if(!await cloudConsent(true))throw new Error('cloudConsentDenied');await navigator.locks.request('alcydeo:cloud-files',{mode:'shared'},async()=>{for(const input of selected){
   const plan=planCloudTargets(input.file.size,targets,input.prepared);let failed=false;
   if(!all&&plan.tooLarge.length)throw new Error('cloudFileTooLarge');
   if(!plan.send.length&&!plan.tooLarge.length)continue;
@@ -72,16 +73,18 @@ async function refresh(){
   let list=await cloudJobs();for(const job of list)if(['preparing','uploading'].includes(job.state)&&(job.leaseUntil??0)<Date.now())await changeCloudJob(job.id,t=>{if((t.leaseUntil??0)<Date.now()){t.state=t.ready?'paused':'failed';t.error=t.ready?'cloudInterrupted':'cloudInput';t.owner=undefined;t.leaseUntil=undefined;}});
   list=await cloudJobs();jobs.value=list.sort((a,b)=>b.createdAt-a.createdAt);
   for(const job of list)if(cloudRequiresAccount(job.provider)&&['queued','uploading'].includes(job.state))await changeCloudJob(job.id,t=>{t.state='paused';t.error='cloudProviderRemoved';});
+  if(!await cloudConsent()){worker?.postMessage({type:'abort'});for(const job of list)if(['queued','uploading'].includes(job.state))await changeCloudJob(job.id,t=>{if(['queued','uploading'].includes(t.state)){t.state='paused';t.error='cloudConsentDenied';}});return;}
   const next=list.find(j=>j.state==='queued'&&j.ready&&!cloudRequiresAccount(j.provider));if(!worker&&next){active=next.id;worker=new Worker(new URL('./cloud.worker.ts',import.meta.url),{type:'module'});worker.onmessage=()=>{worker?.terminate();worker=undefined;active='';};worker.onerror=()=>{worker?.terminate();worker=undefined;const id=active;active='';void changeCloudJob(id,t=>{if(t.state==='uploading'){t.state='paused';t.error='cloudInterrupted';t.owner=undefined;t.leaseUntil=undefined;}});};worker.postMessage({type:'run',id:next.id});
   }
  }finally{refreshing=false;}
 }
 async function pause(job:CloudJob){await changeCloudJob(job.id,t=>{t.state='paused';});if(active===job.id)worker?.postMessage({type:'abort'});await refresh();}
-async function resume(job:CloudJob){if(cleaning.value)throw new Error('busy');if(cloudRequiresAccount(job.provider))throw new Error('cloudProviderRemoved');const current=await changeCloudJob(job.id,t=>{if(!t.ready||t.state!=='paused'||hasCloudOwner(t))return;if(t.error==='cloudExpired')t.checkpoint=undefined;t.state='queued';t.error=undefined;});await refresh();if(!current.ready)throw new Error('cloudInput');if(current.state!=='queued')throw new Error('busy');}
+async function resume(job:CloudJob){if(cleaning.value)throw new Error('busy');if(!await cloudConsent(true))throw new Error('cloudConsentDenied');if(cloudRequiresAccount(job.provider))throw new Error('cloudProviderRemoved');const current=await changeCloudJob(job.id,t=>{if(!t.ready||t.state!=='paused'||hasCloudOwner(t))return;if(t.error==='cloudExpired')t.checkpoint=undefined;t.state='queued';t.error=undefined;});await refresh();if(!current.ready)throw new Error('cloudInput');if(current.state!=='queued')throw new Error('busy');}
 async function cancel(job:CloudJob){await changeCloudJob(job.id,t=>{t.state='cancelled';});if(active===job.id)worker?.postMessage({type:'abort'});else if(!job.owner||(job.leaseUntil??0)<Date.now()){await cancelCloudSession(job.provider,job.checkpoint).catch(()=>{});await(await navigator.storage.getDirectory()).removeEntry(`cloud-${job.id}`,{recursive:true}).catch(()=>{});await changeCloudJob(job.id,t=>{t.checkpoint=undefined;t.destination=undefined;});}await refresh();}
 async function remove(job:CloudJob){try{await removeCloudJob(job.id);await(await navigator.storage.getDirectory()).removeEntry(`cloud-${job.id}`,{recursive:true}).catch(()=>{});}finally{await refresh();}}
-onMounted(()=>{void chrome.storage.local.get(['cloudPcloudLink','cloudPcloudRegion']).then(data=>{depositLink.value=typeof data.cloudPcloudLink==='string'?data.cloudPcloudLink:'';depositRegion.value=data.cloudPcloudRegion==='us'?'us':'eu';});void refresh();timer=setInterval(()=>{void refresh();},1000);});
-onUnmounted(()=>{disposed=true;resetSelection();clearInterval(timer);importAbort?.abort();worker?.terminate();});
+const consentRemoved=(permissions:chrome.permissions.Permissions&{data_collection?:string[]})=>{if(firefoxBuild&&permissions.data_collection?.some(value=>['websiteContent','personallyIdentifyingInfo'].includes(value))){importAbort?.abort();worker?.postMessage({type:'abort'});void refresh();}};
+onMounted(()=>{chrome.permissions.onRemoved.addListener(consentRemoved);void chrome.storage.local.get(['cloudPcloudLink','cloudPcloudRegion']).then(data=>{depositLink.value=typeof data.cloudPcloudLink==='string'?data.cloudPcloudLink:'';depositRegion.value=data.cloudPcloudRegion==='us'?'us':'eu';});void refresh();timer=setInterval(()=>{void refresh();},1000);});
+onUnmounted(()=>{disposed=true;chrome.permissions.onRemoved.removeListener(consentRemoved);resetSelection();clearInterval(timer);importAbort?.abort();worker?.terminate();});
 </script>
 <template>
  <section class="cloud-panel">

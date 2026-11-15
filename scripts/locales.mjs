@@ -1,3 +1,4 @@
+import{release100Rows}from'./release100-rows.mjs';
 import{localCastRecoveryRows}from'./local-cast-recovery-rows.mjs';
 import{cloudAllRows}from'./cloud-all-rows.mjs';
 import{cloudCleanupRows}from'./cloud-cleanup-rows.mjs';
@@ -173,6 +174,7 @@ err_interrupted: ['Processing stopped. Reopen the source and resume when possibl
 notice_timedMetadataSkipped: ["Timed metadata (0x15) was omitted from the saved file.", "Los metadatos temporizados (0x15) no se incluyeron en el archivo guardado.", "Les métadonnées temporisées (0x15) n’ont pas été exportées dans le fichier.", "Zeitgesteuerte Metadaten (0x15) wurden nicht in die gespeicherte Datei übernommen.", "保存的文件未包含定时元数据（0x15）。", "لم تُضمَّن البيانات الوصفية المؤقتة (0x15) في الملف المحفوظ.", "Временные метаданные (0x15) не включены в сохранённый файл.", "Os metadados temporizados (0x15) não foram incluídos no arquivo salvo.", "सहेजी गई फ़ाइल में समयबद्ध मेटाडेटा (0x15) शामिल नहीं किया गया।", "محفوظ فائل میں وقت سے وابستہ میٹا ڈیٹا (0x15) شامل نہیں کیا گیا۔"],
 };
 Object.assign(rows,workspaceRefinements);
+Object.assign(rows,release100Rows);
 const playlistPlaceholders={playlistSelection:{selected:{content:'$1'},total:{content:'$2'}},playlistDownload:{count:{content:'$1'}},playlistProgress:{done:{content:'$1'},total:{content:'$2'},failed:{content:'$3'}}};
 for (let i=0;i<locales.length;i++) {
   const catalog = Object.fromEntries(Object.entries(rows).map(([key,values]) => {

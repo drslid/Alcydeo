@@ -260,3 +260,13 @@ L’utilisateur autorise explicitement la publication initiale du dépôt public
 L’identité évolue vers un martin-pêcheur premium original : silhouettes vectorielles épurées proposées, palette bleu/turquoise/orange conservée, un seul œil et aucune flèche. La dernière demande permet de revoir le dessin cartoon ; garder une géométrie cohérente entre l’emblème, les icônes et les signatures.
 
 Les soumissions Google Chrome Web Store restent une phase suivante, sans soumission automatique dans cette publication GitHub. L’utilisateur ajoute Firefox et son Store à la feuille de route ultérieure ; cette révision lève l’ancienne exclusion de planification, sans annoncer un build Firefox déjà fonctionnel. Aucun compagnon ni backend de comptes ajouté.
+
+## Version 1.0.0 — révision utilisateur du 15 novembre 2026
+
+Publier maintenant la v1.0.0 sur GitHub avec README, Pages, ZIP Chrome, préparation Chrome Store, vrai ZIP Firefox MV3 et sources de revue, selon la structure des Releases Nidomark. Cette instruction autorise ces publications GitHub ; elle ne demande aucune soumission ni signature Google/Mozilla. Conserver les anciennes Releases immuables.
+
+Diagnostic uniquement dans le gestionnaire, Réglages → Détection, avec choix de l’onglet web et rapport expurgé. Défauts des nouvelles installations/réinitialisations : quatre fichiers simultanés, multipart activé, quatre connexions par fichier compatible. Conserver les choix enregistrés et le repli standard lorsque la source ne permet pas les parties.
+
+Firefox : paquet dédié MV3/event page, minimum153, API natives adaptées et source de revue complète. YouTube reste exclu des paquets Firefox et Chrome Store à la compilation ; Chrome expérimental reste séparé. Consentements facultatifs Firefox websiteContent et personallyIdentifyingInfo avant tout envoi Cloud, avec refus/reprise/révocation contrôlés. Capture d’onglet/Cast Chrome non annoncés dans Firefox ; l’aide locale explique les réglages que les API ne peuvent ouvrir. Codec, sources, réception TV et signature restent des capacités distinctes à qualifier selon les preuves.
+
+Silhouette premium validée et corrigée : dos continu sans lobe arrière ni ombre, même géométrie pour tous les supports. Utiliser les commandes de build et vérifications réellement exécutées ; distinguer prototypes, ZIPs finaux, codecs OS du laboratoire et artefacts publiés.

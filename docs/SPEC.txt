@@ -564,3 +564,20 @@ L’utilisateur autorise explicitement la publication initiale du dépôt public
 L’identité évolue vers un martin-pêcheur premium original : silhouettes vectorielles épurées proposées, palette bleu/turquoise/orange conservée, un seul œil et aucune flèche. La dernière demande permet de revoir le dessin cartoon ; garder une géométrie cohérente entre l’emblème, les icônes et les signatures.
 
 Les soumissions Google Chrome Web Store restent une phase suivante, sans soumission automatique dans cette publication GitHub. L’utilisateur ajoute Firefox et son Store à la feuille de route ultérieure ; cette révision lève l’ancienne exclusion de planification, sans annoncer un build Firefox déjà fonctionnel. Aucun compagnon ni backend de comptes ajouté.
+
+
+## Livraison 1.0.0 — révision utilisateur du 15 novembre 2026
+
+L’utilisateur demande la publication de la correction du martin-pêcheur, du README, de Pages et des extensions en version 1.0.0. La Release GitHub est finale, sur le modèle de présentation de Nidomark : installation, changements, différences entre navigateurs, résultats réels et fichiers distincts. Cette demande autorise les publications GitHub correspondantes, sans autoriser une soumission Chrome Web Store/AMO ni une signature Mozilla en silence.
+
+Firefox devient une cible réellement implémentée, et non une simple feuille de route : paquet MV3 dédié avec event page, minimum déclaré 153.0 et identifiant alcydeo@drslid.github.io. Le ZIP Firefox principal utilise le canal préparé pour AMO et exclut tout YouTube à la compilation. Chrome conserve un paquet de développement avec expérimentation YouTube et une préparation Store distincte qui l’exclut. Fournir les sources de revue et les instructions de reconstruction. Sans signature Mozilla, le ZIP Firefox se charge temporairement par about:debugging jusqu’au redémarrage ; ne pas promettre un XPI signé ou une installation permanente ordinaire.
+
+Les capacités doivent rester propres au navigateur. Firefox ne propose ni tabCapture de Chrome, ni Google Cast/RemotePlayback, ni AirPlay. Conserver les parcours HLS pris en charge et les fichiers par sélection explicite, avec les limites mesurées d’OPFS et des codecs. La lecture/réencodage dépendent des codecs du navigateur et du système ; le repli AAC embarqué est distinct du support natif. Tester les fichiers réellement produits, sans extrapoler un environnement Linux minimal à tous les Firefox ou systèmes. Aucun compagnon, exécutable FFmpeg séparé, relais média ou backend de comptes ajouté.
+
+Déplacer le diagnostic local de détection de la popup vers Bibliothèque → Réglages → Détection. L’utilisateur choisit l’onglet web source avant consultation/copie. Garder les codes et compteurs sûrs, l’absence d’URL/cookie/signature/titre dans le rapport et aucun envoi automatique.
+
+Après une nouvelle installation ou une réinitialisation, sélectionner quatre fichiers simultanés et activer les téléchargements en plusieurs parties à quatre connexions par fichier compatible. Conserver les préférences déjà enregistrées lors d’une mise à jour. Les réglages 1 à 8 fichiers et 2/4/8 connexions restent distincts et modifiables ; garder admission globale, validateurs forts, repli standard et absence de gain universel promis.
+
+L’envoi Cloud Firefox exige au clic Envoyer les consentements facultatifs natifs websiteContent et personallyIdentifyingInfo, car un fichier choisi peut contenir voix/image personnelles. Aucune collecte obligatoire déclarée. Refus avant création de job/préparation/envoi, nouvelle vérification à la reprise et arrêt après révocation. Cela ne transforme pas l’envoi volontaire en télémétrie ; conserver les politiques et limites propres aux fournisseurs.
+
+Retirer le lobe arrondi arrière et son ombre de la silhouette maître du martin-pêcheur. La correction reste minimale, aile/visage/palette conservés et même contour dans les icônes, monochromes, signatures et proposition sélectionnée. Conserver dix langues, RTL arabe/ourdou et le chemin Pages exact /Alcydeo/.

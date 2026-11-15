@@ -25,7 +25,8 @@ for(const path of Object.keys(zip)){
  if(path.endsWith('.js')&&text(path).includes('www.gstatic.com/cv/js/sender'))throw new Error('Cast SDK loader must remain outside the extension');
  if(/(^|\/)(node_modules|fixtures|\.git|\.env)(\/|$)|\.(pem|key|crx|map)$/i.test(path))throw new Error(`Unexpected packaged file ${path}`);
  if(/\.js$/.test(path)&&/importScripts\(["']https?:|import\(["']https?:|eval\(/.test(text(path)))throw new Error(`Remote executable or eval in ${path}`);
- if(store&&/\.js$/.test(path)&&/videoPlaybackUstreamerConfig|SabrStream|application\/vnd\.yt-ump|alcydeo-youtube-playlists|playlistVideoRenderer|youtubei\/v1\/browse/.test(text(path)))throw new Error(`YouTube transport or playlist code in Store artifact: ${path}`);
+ if(store&&/(?:YoutubePlaylist|PlaylistBatchCard|playlist-(?:catalog|service|state))/.test(path))throw new Error(`YouTube playlist file in Store artifact: ${path}`);
+ if(store&&/\.js$/.test(path)&&/videoPlaybackUstreamerConfig|SabrStream|application\/vnd\.yt-ump|alcydeo-youtube-playlists|playlistVideoRenderer|youtubei\/v1\/browse|youtubePlaylist[A-Z]|ytInitialPlayerResponse/.test(text(path)))throw new Error(`YouTube transport or playlist code in Store artifact: ${path}`);
 }
 for(const required of ['popup.html','manager.html','background.js','THIRD_PARTY_NOTICES.txt','licenses/mediabunny-1.65.0-source.zip','licenses/mediabunny-aac-encoder-1.65.0-source.zip','licenses/FFmpeg-AAC-LGPL-2.1.txt','licenses/FFmpeg-AAC-PROVENANCE.txt','licenses/Material-Symbols-Apache-2.0.txt','licenses/Inter-OFL-1.1.txt'])if(!zip[required])throw new Error(`Missing ${required}`);
 await mkdir('artifacts',{recursive:true});await copyFile(path,`artifacts/${filename}`);

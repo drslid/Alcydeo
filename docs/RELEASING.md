@@ -1,9 +1,11 @@
-# Publishing Alcydeo previews
+# Publishing Alcydeo
 
-The first public version is **0.2.0 preview**, for Chrome desktop. GitHub source,
-GitHub Pages and GitHub Releases are separate publication actions. Chrome Web
-Store submission and the planned Firefox port are later work. Publishing a ZIP
-does not mean that Google has reviewed or listed the extension.
+The requested release is **1.0.0**, with separate Chrome and Firefox packages,
+following the install/changes/test presentation of
+[Nidomark 1.0.0](https://github.com/drslid/Nidomark/releases/tag/v1.0.0).
+It is a final GitHub Release. GitHub source, Pages, Releases, Store submissions
+and Firefox signing remain separate actions. Publishing a ZIP does not mean
+that Google or Mozilla has reviewed, signed or listed the extension.
 
 The canonical repository is `drslid/Alcydeo`. Its case-sensitive Pages URL is
 **https://drslid.github.io/Alcydeo/**. Keep this spelling in Astro, links and the
@@ -31,7 +33,8 @@ ALCYDEO_CAST_SENDER_URL=http://localhost:4180/alcydeo/cast/ pnpm build:chrome
 pnpm test:ci
 ```
 
-The last command runs six **explicit files**, with no retries and one worker:
+The last command selects **66 cases in eight explicit files**, with no retries
+and one worker:
 
 | File | Coverage |
 | --- | --- |
@@ -41,6 +44,8 @@ The last command runs six **explicit files**, with no retries and one worker:
 | `popup-locales.spec.ts` | Download activity and layout in ten languages, including RTL |
 | `cast-web.spec.ts` | Controlled SDK lifecycle, integrated controls, privacy and localization |
 | `cast-handoff.spec.ts` | Popup/library handoff and explicit local-file fallback |
+| `release-settings.spec.ts` | New/reset defaults, persistence and preservation of existing preferences |
+| `detection-diagnostics.spec.ts` | Dashboard diagnostic, source-tab choice and popup removal |
 
 `node scripts/ci-e2e.mjs --list` prints the exact selection. The runner forces
 the repository working directory, resolves the full Playwright Chromium binary,
@@ -62,10 +67,17 @@ physical Cast/AirPlay receivers require their documented environments; a mocked
 SDK result does not validate TV reception. Tests are not skipped or rewritten
 by `test:ci`, and a failing selected test fails CI.
 
-The CI workflow also checks both ZIP channels and creates a Pages archive. Its
+The Chrome CI workflow also checks both Chrome ZIP channels and creates a Pages archive. Its
 local extension ZIP contains the **loopback test sender**, so CI validation ZIPs
 are not the production Release assets. CI has read-only repository access and
 never publishes a Release or submits to a Store.
+
+Also build the dedicated Firefox channel with `pnpm build:firefox`, package it
+with `pnpm zip:firefox`, and exercise the installed extension in the real Firefox
+versions recorded in [FIREFOX.md](FIREFOX.md). Retain actual results for source
+detection, direct/HLS/DASH saving, outputs, permissions, storage, language/RTL and
+unavailable browser features. A Chromium smoke run cannot establish Firefox
+compatibility. A temporary install does not validate signed restart/update flows.
 
 ## Publish Pages explicitly
 
@@ -90,9 +102,12 @@ permissions. Existing environment protection rules still apply. See GitHub's
 After deployment, check the real homepage, French and Urdu guides, their local
 assets and `https://drslid.github.io/Alcydeo/cast/ready.json` (`app` equals
 `alcydeo-cast-web`, protocol 2). Check the public Cast player in Chrome without
-claiming hardware reception. Only then enable the production sender URL in the
-separately rebuilt Release candidate. Leave the Store configuration empty until
-that channel is reviewed and deliberately configured.
+claiming hardware reception. Pages is already public and ready for 1.0.0:
+Chrome development and Chrome Store preparation now default to the production
+sender `https://drslid.github.io/Alcydeo/cast/`. An explicit environment override
+is reserved for the loopback test build. Firefox keeps its sender empty and
+does not offer Cast. A working readiness document is not hardware validation or
+Store approval.
 
 ## Prepare the public Release assets
 
@@ -101,47 +116,66 @@ Build from the reviewed release commit, after the public Pages check:
 ```sh
 ALCYDEO_CAST_SENDER_URL=https://drslid.github.io/Alcydeo/cast/ pnpm build:chrome
 ALCYDEO_CAST_SENDER_URL=https://drslid.github.io/Alcydeo/cast/ pnpm zip:chrome
+pnpm zip:store
+pnpm build:firefox
+pnpm zip:firefox
 pnpm docs:build
 node scripts/pages-archive.mjs
+pnpm zip:brand
+pnpm zip:source
 ```
 
 Review the ZIP contents and their SHA-256 sidecars. The Chrome ZIP must contain
 `manifest.json` at its root and no source fixtures, credentials or reference CRX.
-Preserve the bundled licenses and source offers. `alcydeo-pages-0.2.0.zip`
+Preserve the bundled licenses and source offers. `alcydeo-pages-1.0.0.zip`
 contains the static site tree; it is not a Chrome extension. A locally generated
-CRX and its private signing key are not needed for this first public preview.
+CRX and its private signing key are not Release assets. The Firefox ZIP has its
+own manifest/runtime and excludes YouTube; it is not a renamed Chrome ZIP.
 
-Write reviewed release notes into `artifacts/release-notes.md`, including:
+`zip:source` archives the reviewed source commit, not an arbitrary working tree.
+Extract `alcydeo-1.0.0-source.zip` in a fresh directory and follow its reviewer
+build instructions. Compare the rebuilt Firefox contents file by file with the
+unsigned Release ZIP, allowing no unexplained differences. Keep the exact AAC
+corresponding-source tarball alongside the Release assets; retain the source
+archives/notices already tracked in the packages. No `.local`, keys, profiles,
+untracked public-media research or `node_modules` belongs in that source archive.
 
-- Chrome installation with **Load unpacked**, supported scope and ten languages.
+Use the reviewed notes in `docs/releases/v1.0.0.md`, including:
+
+- Chrome installation with **Load unpacked** and Firefox's **Load Temporary Add-on**.
+- Firefox minimum/tested versions, unavailable Chrome APIs and the absence of a signed XPI.
 - Changes from the tested candidate, executed checks and their actual results.
-- YouTube's local experimental status and its exclusion from the Store channel.
+- YouTube's local Chrome experimental status and exclusion from Chrome Store/Firefox.
 - Cloud/provider, file-size, codec and Cast/AirPlay limits that remain unvalidated.
 - Links to the source, Pages documentation, privacy information and issue tracker.
 
 Do not claim universal detection, a working private-file Cast transport or a
-successful Store submission. Update the version in the following example for
-later previews. Create the annotated tag at the reviewed commit, push that tag,
+successful Store submission. The 1.0.0 label does not remove the documented
+source, provider, codec or receiver limits. Create the annotated tag at the reviewed commit, push that tag,
 then prepare a draft. `--verify-tag` prevents the CLI from silently creating a
 tag against another commit.
 
 ```sh
-git tag -a v0.2.0 -m 'Alcydeo 0.2.0 preview'
-git push origin v0.2.0
-gh release create v0.2.0 \
-  --repo drslid/Alcydeo --verify-tag --draft --prerelease --latest=false \
-  --title 'Alcydeo 0.2.0 preview' --notes-file artifacts/release-notes.md \
-  artifacts/alcydeo-0.2.0-chrome.zip \
-  artifacts/alcydeo-0.2.0-chrome.zip.sha256 \
-  artifacts/alcydeo-pages-0.2.0.zip \
-  artifacts/alcydeo-pages-0.2.0.zip.sha256
+git tag -a v1.0.0 -m 'Alcydeo 1.0.0'
+git push origin v1.0.0
+gh release create v1.0.0 \
+  --repo drslid/Alcydeo --verify-tag --draft \
+  --title 'Alcydeo 1.0.0' --notes-file docs/releases/v1.0.0.md \
+  artifacts/alcydeo-1.0.0-chrome.zip \
+  artifacts/alcydeo-store-1.0.0-chrome.zip \
+  artifacts/alcydeo-1.0.0-firefox.zip \
+  artifacts/alcydeo-1.0.0-source.zip \
+  artifacts/alcydeo-brand-1.0.0.zip \
+  artifacts/alcydeo-pages-1.0.0.zip \
+  artifacts/ffmpeg-aac-corresponding-source-60a2818.tar.gz \
+  artifacts/SHA256SUMS
 ```
 
 Review the exact asset list and notes in the draft. Publishing that draft is the
 external Release action:
 
 ```sh
-gh release edit v0.2.0 --repo drslid/Alcydeo --draft=false --prerelease --latest=false
+gh release edit v1.0.0 --repo drslid/Alcydeo --draft=false --prerelease=false --latest
 ```
 
 These commands require an already authenticated maintainer session; no token
@@ -153,7 +187,7 @@ belongs in a tracked file. GitHub CLI documents these flags in
 For Pages, revert the faulty site commit on `main`, validate the resulting tree
 and manually rerun `pages.yml`. Check the deployed URLs again. Keep release
 tags immutable; publish a new version for corrected extension assets instead of
-silently replacing a ZIP with a different checksum. If a preview must be pulled,
+silently replacing a ZIP with a different checksum. If a release must be withdrawn,
 mark the Release as a draft and explain the reason before distributing a fix.
 None of these operations removes a user's local files or extension library.
 

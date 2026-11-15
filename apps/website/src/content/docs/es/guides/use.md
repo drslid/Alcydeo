@@ -2,6 +2,8 @@
 title: "Usar Alcydeo"
 ---
 
+Firefox 153+ tiene su propio paquete sin YouTube. La captura de pestañas de Chrome, Google Cast y AirPlay no están disponibles en Firefox. El procesamiento local depende de sus códecs; la guía de Firefox indica el alcance probado.
+
 Reproduce el vídeo: Alcydeo lo detecta y actualiza el indicador automáticamente. Abre la ventana, elige una calidad y descarga. Para HLS o DASH, busca las calidades y mantén abierto el gestor. Chrome solicita acceso HTTP/HTTPS al instalar; puedes limitarlo en Chrome o pausar la detección en ajustes. Una descarga directa termina cuando Chrome confirma que el archivo se ha guardado. Mostrar en carpeta permite encontrarlo. Las calidades vinculadas de un mismo vídeo comparten una ficha. La selección se conserva tras volver a analizar.
 
 Fuentes / Actividad. Las descargas continúan al cerrar esta ventana. Mantén abierta la pestaña del gestor para flujos segmentados.
@@ -12,7 +14,7 @@ Herramientas de vídeo: Convertir a MP4, Comprimir, Unir clips, Recortar.
 
 Detección automática de medios
 
-Activada por defecto. Chrome concede acceso a los sitios al instalar. Puedes pausar la detección aquí o limitar el acceso en Chrome.
+La detección se inicia en los sitios permitidos. Páusala aquí o limita el acceso en el navegador.
 
 Borrar historial
 
@@ -108,9 +110,11 @@ La conversión procesa un archivo a la vez. Tras una pausa o al cerrar el gestor
 
 Guardar archivos: Guardar automáticamente. Mostrar Guardar como en cada descarga.
 
-Los archivos se guardan en el directorio elegido en Chrome, dentro de esta subcarpeta. Cambia el directorio principal en los ajustes de descarga de Chrome.
+Los archivos se guardan en esta subcarpeta de descargas. Cambia la carpeta principal en los ajustes del navegador.
 
-## Descargas simultáneas — 0.1.60
+## Descargas simultáneas — 1.0.0
+
+Instalación nueva o ajustes restablecidos: cuatro archivos simultáneos y descarga por partes activada con cuatro conexiones por archivo compatible. Se conservan las opciones existentes. Ambos límites se pueden ajustar; no se promete una mejora universal de velocidad.
 
 Archivos en paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.
 
@@ -146,7 +150,7 @@ Dibujar en la pestaña capturada · Deshacer trazo · Borrar dibujo
 
 Idioma: English / Español / Français / Deutsch / 简体中文 / العربية / Русский / Português / हिन्दी / اردو.
 
-Descargas de originales; estas extensiones no garantizan reproducir o convertir todos los códecs en Chrome. M3U8 y MPD describen emisiones por segmentos.
+La extensión no garantiza que el navegador reproduzca o convierta cada códec. M3U8 y MPD describen flujos segmentados.
 
 MP4 · WEBM · M3U8 · MPD · M4V · MKV · TS · MOV · AVI · OGG · MPG · WMV · FLV · 3GP · M2TS · MTS
 

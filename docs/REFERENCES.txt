@@ -294,3 +294,14 @@ https://app.vidow.io/ (session individuelle conservée uniquement dans les archi
 Session courante fournie par l’utilisateur, HTML et scripts publics lus comme données. ContentId observé : URL native TikTok directe inchangée, sans audio séparé ; ce constat ne démontre pas un proxy MP4 général. L’outil distinct de fichier local contient un parcours d’upload dans son client ; aucune invocation de son API privée ni upload effectué. Le CRX officiel4.0.0 a été lu/extrait comme données dans .local uniquement, jamais installé/exécuté ou redistribué. L’utilisateur n’a pas encore essayé le comparatif Alcydeo sur exactement cette URL média.
 https://github.com/johanholmerin/browsercast/tree/d61703a9180570bed92fc1d6d59e34cc39d1b4cd
 MIT ; lecture du protocole WebRTC/DataChannel/ServiceWorker côté récepteur comme piste de recherche, aucun code exécuté ou intégré. Un tel transport dépend d’un récepteur enregistré/hébergé distinct ; aucun déploiement, usage du récepteur tiers ni validation Shield dans Alcydeo. Ne pas présenter cette recherche comme un Cast privé fonctionnel.
+
+Publication 1.0.0 Chrome/Firefox — références primaires, 15 novembre 2026
+https://github.com/drslid/Nidomark/releases/tag/v1.0.0
+Release finale non-prerelease avec ZIP Chrome, ZIP Firefox temporaire et ZIP sources de revue. Structure éditoriale de référence seulement ; aucun résultat, minimum navigateur, capacité ou délai Store de Nidomark repris pour Alcydeo.
+https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/
+https://extensionworkshop.com/documentation/publish/signing-and-distribution-overview/
+https://extensionworkshop.com/documentation/publish/source-code-submission/
+Le chargement temporaire peut sélectionner le ZIP ou manifest.json et prend fin au redémarrage. L’installation permanente ordinaire exige la signature Mozilla, même en autodistribution. Le code assemblé demande des sources lisibles et des instructions locales de reconstruction exacte ; compilation et chargement temporaire ne valent pas signature ou approbation.
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_specific_settings
+https://extensionworkshop.com/documentation/develop/firefox-builtin-data-consent/
+La taxonomie distingue les contenus web et les données personnelles, dont voix/vidéos. Le manifeste Firefox Alcydeo ne déclare aucune collecte obligatoire et demande les deux consentements facultatifs pour les seuls envois Cloud explicites ; ne pas transformer ce choix en promesse d’absence de traitement local ou de trafic fournisseur. La version minimale 153, les versions 160 et ESR 153.7 testées et les résultats effectifs sont consignés séparément dans FIREFOX.md.

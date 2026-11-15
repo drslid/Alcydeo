@@ -2,19 +2,23 @@
 title: "Ajustes"
 ---
 
+Instalación nueva o ajustes restablecidos: cuatro archivos simultáneos y descarga por partes activada con cuatro conexiones por archivo compatible. Se conservan las opciones existentes. Ambos límites se pueden ajustar; no se promete una mejora universal de velocidad.
+
+Biblioteca → Ajustes → Detección: elige la pestaña de origen para ver o copiar su diagnóstico local. Solo códigos y contadores seguros, sin envío automático. El diagnóstico ya no está en la ventana emergente.
+
 Guardar archivos
 
 Guardar automáticamente. Mostrar Guardar como en cada descarga.
 
-Los archivos se guardan en el directorio elegido en Chrome, dentro de esta subcarpeta. Cambia el directorio principal en los ajustes de descarga de Chrome.
+Los archivos se guardan en esta subcarpeta de descargas. Cambia la carpeta principal en los ajustes del navegador.
 
-Elegir la carpeta principal en Chrome
+Elegir la carpeta principal de descargas
 
 Tema. Indicador del icono. Dominios bloqueados (uno por línea; se permite *). Guardar ajustes. Restablecer ajustes.
 
 Detección automática de medios
 
-Activada por defecto. Chrome concede acceso a los sitios al instalar. Puedes pausar la detección aquí o limitar el acceso en Chrome.
+La detección se inicia en los sitios permitidos. Páusala aquí o limita el acceso en el navegador.
 
 clip.webm → clip-converted.mp4
 
@@ -36,9 +40,11 @@ La conversión procesa un archivo a la vez. Tras una pausa o al cerrar el gestor
 
 Guardar archivos: Guardar automáticamente. Mostrar Guardar como en cada descarga.
 
-Los archivos se guardan en el directorio elegido en Chrome, dentro de esta subcarpeta. Cambia el directorio principal en los ajustes de descarga de Chrome.
+Los archivos se guardan en esta subcarpeta de descargas. Cambia la carpeta principal en los ajustes del navegador.
 
-## Descargas simultáneas — 0.1.60
+## Descargas simultáneas — 1.0.0
+
+Instalación nueva o ajustes restablecidos: cuatro archivos simultáneos y descarga por partes activada con cuatro conexiones por archivo compatible. Se conservan las opciones existentes. Ambos límites se pueden ajustar; no se promete una mejora universal de velocidad.
 
 Archivos en paralelo: 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8.
 
@@ -74,7 +80,7 @@ Dibujar en la pestaña capturada · Deshacer trazo · Borrar dibujo
 
 Idioma: English / Español / Français / Deutsch / 简体中文 / العربية / Русский / Português / हिन्दी / اردو.
 
-Descargas de originales; estas extensiones no garantizan reproducir o convertir todos los códecs en Chrome. M3U8 y MPD describen emisiones por segmentos.
+La extensión no garantiza que el navegador reproduzca o convierta cada códec. M3U8 y MPD describen flujos segmentados.
 
 MP4 · WEBM · M3U8 · MPD · M4V · MKV · TS · MOV · AVI · OGG · MPG · WMV · FLV · 3GP · M2TS · MTS
 

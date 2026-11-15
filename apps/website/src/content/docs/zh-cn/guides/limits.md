@@ -4,6 +4,10 @@ title: "兼容性与限制"
 
 支持直接文件以及已测试的未加密 HLS/DASH 变体。兼容性取决于来源访问权限、编解码器和存储空间。受保护媒体会被拒绝。分段处理约需媒体大小三倍的临时空间；并非所有大文件都已验证。
 
+Firefox 153+ 使用独立软件包，不包含 YouTube。Firefox 中不提供 Chrome 标签页录制、Google Cast 或 AirPlay。本地处理取决于浏览器支持的编解码器；Firefox 指南记录实际测试范围。
+
+Chrome 开发 ZIP 包含实验性 YouTube 支持。独立的 Chrome 商店准备包和 Firefox 包均排除 YouTube。Firefox ZIP 仅供临时安装，不代表已签名 XPI 或商店审核通过。
+
 Google Cast 仍为实验功能。用户确认一段 Google 官方演示可在 Shield 播放；这不验证其他来源或私人文件。Shield 本地文件请使用 Chrome 标签页投屏。Windows Chrome 不支持 AirPlay。
 
 Gofile、MegaUp、1fichier、Turbobit 分享和 pCloud 上传链接均为可选功能。仅在您点击后发送。协议经过本地测试；真实上传尚未验证。须遵守服务商的容量和保留期限。

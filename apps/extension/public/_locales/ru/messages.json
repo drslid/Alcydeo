@@ -36,7 +36,7 @@
     "description": "Alcydeo interface: detectionDiagnosticsPrivacy"
   },
   "detectionDiagnosticsAccessError": {
-    "message": "Откройте сведения об Alcydeo в chrome://extensions, чтобы проверить доступ к сайтам.",
+    "message": "Откройте сведения об Alcydeo в менеджере расширений браузера и проверьте доступ к сайтам.",
     "description": "Alcydeo interface: detectionDiagnosticsAccessError"
   },
   "cropTool": {
@@ -92,11 +92,11 @@
     "description": "Alcydeo interface: cropRange"
   },
   "chromeSiteAccess": {
-    "message": "Доступ к сайтам в Chrome",
+    "message": "Доступ браузера к сайтам",
     "description": "Alcydeo interface: chromeSiteAccess"
   },
   "chromeAccessRestricted": {
-    "message": "Настройки Chrome ограничивают доступ к этому сайту.",
+    "message": "Настройки браузера ограничивают доступ к этому сайту.",
     "description": "Alcydeo interface: chromeAccessRestricted"
   },
   "openWebPage": {
@@ -260,7 +260,7 @@
     "description": "Alcydeo interface: help"
   },
   "helpLocal": {
-    "message": "Сайт справки подготовлен локально и ещё не опубликован.",
+    "message": "Загрузки, медиатека и поддерживаемые инструменты работают локально. Кнопка ниже открывает онлайн-руководство.",
     "description": "Alcydeo interface: helpLocal"
   },
   "helpOpen": {
@@ -532,11 +532,11 @@
     "description": "Alcydeo interface: cloud_failed"
   },
   "formatsScope": {
-    "message": "Скачивание оригиналов: расширение не гарантирует воспроизведение или конвертацию всех кодеков в Chrome. M3U8 и MPD описывают сегментированные потоки.",
+    "message": "Расширение файла не гарантирует воспроизведение или конвертацию каждого кодека. M3U8 и MPD описывают сегментированные потоки.",
     "description": "Alcydeo interface: formatsScope"
   },
   "featureLimits": {
-    "message": "Chrome для компьютера. Локальные тесты оригиналов, незашифрованного HLS VOD и DASH с одним периодом. DRM и универсальная поддержка кодеков исключены. Cast экспериментальный; приёмники ещё нужно проверить. Качество записи зависит от источника и ПК.",
+    "message": "Chrome и Firefox для ПК. Совместимость зависит от доступа к источнику, кодеков и ОС. Защищённые медиа исключены; захват и трансляция зависят от браузера.",
     "description": "Alcydeo interface: featureLimits"
   },
   "cloudSharing": {
@@ -1378,7 +1378,7 @@
     "description": "Alcydeo interface: language"
   },
   "languageAutomatic": {
-    "message": "Как в Chrome",
+    "message": "Как в браузере",
     "description": "Alcydeo interface: languageAutomatic"
   },
   "selectVideo": {
@@ -1470,7 +1470,7 @@
     "description": "Alcydeo interface: visualMerge"
   },
   "previewUnavailable": {
-    "message": "Chrome не может показать файл. Попробуйте совместимый MP4.",
+    "message": "Браузер не может показать файл. Попробуйте совместимый MP4.",
     "description": "Alcydeo interface: previewUnavailable"
   },
   "playSelection": {
@@ -1554,7 +1554,7 @@
     "description": "Alcydeo interface: converting"
   },
   "err_conversionCodec": {
-    "message": "Chrome не может преобразовать все аудио- и видеодорожки файла в H.264/AAC. Оригинал сохранён; неполный MP4 не записан.",
+    "message": "Локальный движок не может преобразовать все дорожки в H.264/AAC. Оригинал сохранён; неполный MP4 не создан.",
     "description": "Alcydeo interface: err_conversionCodec"
   },
   "err_conversionInput": {
@@ -1652,15 +1652,15 @@
     "description": "Alcydeo interface: saveAsk"
   },
   "downloadSubfolder": {
-    "message": "Подпапка в папке загрузок Chrome",
+    "message": "Подпапка загрузок",
     "description": "Alcydeo interface: downloadSubfolder"
   },
   "downloadFolderHint": {
-    "message": "Файлы сохраняются в этой подпапке каталога загрузок, выбранного в Chrome. Основную папку можно изменить в настройках загрузок Chrome.",
+    "message": "Файлы сохраняются в этой подпапке загрузок. Основную папку можно изменить в настройках браузера.",
     "description": "Alcydeo interface: downloadFolderHint"
   },
   "chromeDownloadSettings": {
-    "message": "Выбрать основную папку в Chrome",
+    "message": "Выбрать основную папку загрузок",
     "description": "Alcydeo interface: chromeDownloadSettings"
   },
   "err_saveDialog": {
@@ -1684,7 +1684,7 @@
     "description": "Alcydeo interface: globalDetection"
   },
   "globalDetectionHint": {
-    "message": "Включено по умолчанию. Chrome предоставляет доступ к сайтам при установке. Здесь можно приостановить обнаружение или ограничить доступ в Chrome.",
+    "message": "Обнаружение запускается на разрешённых сайтах. Приостановите его здесь или ограничьте доступ в браузере.",
     "description": "Alcydeo interface: globalDetectionHint"
   },
   "err_html": {
@@ -1700,7 +1700,7 @@
     "description": "Alcydeo interface: appName"
   },
   "appDescription": {
-    "message": "Находите видео, сохраняйте локально и храните медиатеку приватно.",
+    "message": "Находите видео и аудио, выбирайте качество, сохраняйте и редактируйте файлы локально. Без аккаунта Alcydeo.",
     "description": "Alcydeo interface: appDescription"
   },
   "tagline": {
@@ -1776,7 +1776,7 @@
     "description": "Alcydeo interface: manager"
   },
   "keepOpen": {
-    "message": "Не закрывайте менеджер во время обработки сегментов. Закрытие Chrome останавливает активные задачи.",
+    "message": "Не закрывайте менеджер во время обработки сегментов. Закрытие браузера остановит активные задачи.",
     "description": "Alcydeo interface: keepOpen"
   },
   "noTasks": {
@@ -1976,7 +1976,7 @@
     "description": "Alcydeo interface: saveFile"
   },
   "err_saveInterrupted": {
-    "message": "Chrome не подтвердил сохранение. Проверьте загрузки или открытое окно «Сохранить как», затем повторите сохранение подготовленного файла.",
+    "message": "Браузер не подтвердил сохранение. Проверьте загрузки или окно сохранения и повторите сохранение готового файла.",
     "description": "Alcydeo interface: err_saveInterrupted"
   },
   "cloudExperimental": {
@@ -2002,5 +2002,37 @@
   "cloudMegaupOpen": {
     "message": "Открыть MegaUp",
     "description": "Alcydeo interface: cloudMegaupOpen"
+  },
+  "detectionDiagnosticsPage": {
+    "message": "Страница для диагностики",
+    "description": "Alcydeo interface: detectionDiagnosticsPage"
+  },
+  "detectionDiagnosticsChoose": {
+    "message": "Выберите открытую страницу плеера. Отчёт остаётся на этом устройстве.",
+    "description": "Alcydeo interface: detectionDiagnosticsChoose"
+  },
+  "detectionDiagnosticsNoPage": {
+    "message": "Нет доступных веб-страниц. Откройте плеер и обновите список.",
+    "description": "Alcydeo interface: detectionDiagnosticsNoPage"
+  },
+  "detectionDiagnosticsTabsRefresh": {
+    "message": "Обновить открытые страницы",
+    "description": "Alcydeo interface: detectionDiagnosticsTabsRefresh"
+  },
+  "firefoxCaptureUnavailable": {
+    "message": "Firefox не предоставляет этот API захвата вкладки. Можно записывать совместимые потоки HLS.",
+    "description": "Alcydeo interface: firefoxCaptureUnavailable"
+  },
+  "firefoxCastUnavailable": {
+    "message": "Трансляция в этой версии требует Chrome. Загрузки и локальные инструменты доступны.",
+    "description": "Alcydeo interface: firefoxCastUnavailable"
+  },
+  "cloudConsentDenied": {
+    "message": "Сервису нужно разрешение Firefox на передачу содержимого файлов. Разрешите и повторите попытку.",
+    "description": "Alcydeo interface: cloudConsentDenied"
+  },
+  "firefoxSettingsHint": {
+    "message": "Firefox не позволяет расширениям открывать его настройки. В меню Firefox выберите Дополнения и темы для доступа к сайтам или Настройки → Основные → Загрузки для папки.",
+    "description": "Alcydeo interface: firefoxSettingsHint"
   }
 }

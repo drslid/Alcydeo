@@ -36,7 +36,7 @@
     "description": "Alcydeo interface: detectionDiagnosticsPrivacy"
   },
   "detectionDiagnosticsAccessError": {
-    "message": "Ouvrez les détails d’Alcydeo dans chrome://extensions pour vérifier l’accès aux sites.",
+    "message": "Ouvrez les détails d’Alcydeo dans le gestionnaire d’extensions du navigateur pour vérifier l’accès aux sites.",
     "description": "Alcydeo interface: detectionDiagnosticsAccessError"
   },
   "cropTool": {
@@ -92,11 +92,11 @@
     "description": "Alcydeo interface: cropRange"
   },
   "chromeSiteAccess": {
-    "message": "Accès aux sites dans Chrome",
+    "message": "Accès aux sites du navigateur",
     "description": "Alcydeo interface: chromeSiteAccess"
   },
   "chromeAccessRestricted": {
-    "message": "Les réglages de Chrome limitent l’accès à ce site.",
+    "message": "Les réglages du navigateur limitent l’accès à ce site.",
     "description": "Alcydeo interface: chromeAccessRestricted"
   },
   "openWebPage": {
@@ -260,7 +260,7 @@
     "description": "Alcydeo interface: help"
   },
   "helpLocal": {
-    "message": "Le site d’aide est prêt en local et n’est pas encore publié.",
+    "message": "Les téléchargements, la bibliothèque et les outils compatibles fonctionnent localement. Le bouton ci-dessous ouvre le guide en ligne.",
     "description": "Alcydeo interface: helpLocal"
   },
   "helpOpen": {
@@ -532,11 +532,11 @@
     "description": "Alcydeo interface: cloud_failed"
   },
   "formatsScope": {
-    "message": "Téléchargement des fichiers d’origine ; ces extensions ne garantissent pas que Chrome puisse lire ou convertir tous les codecs. M3U8 et MPD décrivent des flux segmentés.",
+    "message": "L’extension du fichier ne garantit pas la lecture ou la conversion de tous les codecs dans le navigateur. M3U8 et MPD décrivent des flux segmentés.",
     "description": "Alcydeo interface: formatsScope"
   },
   "featureLimits": {
-    "message": "Chrome desktop. Tests locaux des originaux, HLS VOD non chiffré et DASH à une période. DRM et codecs universels exclus. Cast expérimental, récepteurs à valider. La capture dépend de la source et du PC.",
+    "message": "Chrome et Firefox sur ordinateur. Accès aux sources, codecs et système déterminent la compatibilité. Médias protégés exclus ; capture et TV varient selon le navigateur.",
     "description": "Alcydeo interface: featureLimits"
   },
   "cloudSharing": {
@@ -1378,7 +1378,7 @@
     "description": "Alcydeo interface: language"
   },
   "languageAutomatic": {
-    "message": "Suivre Chrome",
+    "message": "Suivre le navigateur",
     "description": "Alcydeo interface: languageAutomatic"
   },
   "selectVideo": {
@@ -1470,7 +1470,7 @@
     "description": "Alcydeo interface: visualMerge"
   },
   "previewUnavailable": {
-    "message": "Chrome ne peut pas prévisualiser ce fichier. Essayez un MP4 compatible.",
+    "message": "Le navigateur ne peut pas prévisualiser ce fichier. Essayez un MP4 compatible.",
     "description": "Alcydeo interface: previewUnavailable"
   },
   "playSelection": {
@@ -1554,7 +1554,7 @@
     "description": "Alcydeo interface: converting"
   },
   "err_conversionCodec": {
-    "message": "Chrome ne peut pas convertir toutes les pistes audio/vidéo de ce fichier en H.264/AAC. L’original est conservé ; aucun MP4 incomplet n’a été enregistré.",
+    "message": "Le moteur local ne peut pas convertir toutes les pistes en H.264/AAC. L’original est conservé ; aucun MP4 incomplet n’a été enregistré.",
     "description": "Alcydeo interface: err_conversionCodec"
   },
   "err_conversionInput": {
@@ -1652,15 +1652,15 @@
     "description": "Alcydeo interface: saveAsk"
   },
   "downloadSubfolder": {
-    "message": "Sous-dossier dans le dossier de téléchargement de Chrome",
+    "message": "Sous-dossier de téléchargement",
     "description": "Alcydeo interface: downloadSubfolder"
   },
   "downloadFolderHint": {
-    "message": "Les fichiers sont enregistrés dans le dossier choisi dans Chrome, à l’intérieur de ce sous-dossier. Le dossier principal se choisit dans les paramètres de téléchargement de Chrome.",
+    "message": "Les fichiers utilisent ce sous-dossier du répertoire de téléchargement. Changez le répertoire principal dans les réglages du navigateur.",
     "description": "Alcydeo interface: downloadFolderHint"
   },
   "chromeDownloadSettings": {
-    "message": "Choisir le dossier principal dans Chrome",
+    "message": "Choisir le dossier principal de téléchargement",
     "description": "Alcydeo interface: chromeDownloadSettings"
   },
   "err_saveDialog": {
@@ -1684,7 +1684,7 @@
     "description": "Alcydeo interface: globalDetection"
   },
   "globalDetectionHint": {
-    "message": "Activée par défaut. Chrome accorde l’accès aux sites à l’installation. Vous pouvez suspendre la détection ici ou limiter l’accès dans Chrome.",
+    "message": "La détection démarre sur les sites autorisés. Suspendez-la ici ou limitez les accès dans le navigateur.",
     "description": "Alcydeo interface: globalDetectionHint"
   },
   "err_html": {
@@ -1700,7 +1700,7 @@
     "description": "Alcydeo interface: appName"
   },
   "appDescription": {
-    "message": "Repérez les vidéos, enregistrez-les localement et gardez votre bibliothèque privée.",
+    "message": "Détectez les vidéos et sons disponibles, choisissez la qualité, enregistrez ou modifiez vos fichiers localement. Sans compte.",
     "description": "Alcydeo interface: appDescription"
   },
   "tagline": {
@@ -1776,7 +1776,7 @@
     "description": "Alcydeo interface: manager"
   },
   "keepOpen": {
-    "message": "Gardez ce gestionnaire ouvert pendant le traitement des flux segmentés. Fermer Chrome arrête les tâches actives.",
+    "message": "Gardez ce gestionnaire ouvert pendant le traitement des segments. Fermer le navigateur arrête les tâches actives.",
     "description": "Alcydeo interface: keepOpen"
   },
   "noTasks": {
@@ -1976,7 +1976,7 @@
     "description": "Alcydeo interface: saveFile"
   },
   "err_saveInterrupted": {
-    "message": "Chrome n’a pas confirmé l’enregistrement. Vérifiez ses téléchargements ou la fenêtre Enregistrer sous ouverte, puis relancez l’enregistrement du fichier déjà préparé.",
+    "message": "Le navigateur n’a pas confirmé l’enregistrement. Vérifiez ses téléchargements ou la fenêtre Enregistrer sous, puis réessayez de sauvegarder ce fichier prêt.",
     "description": "Alcydeo interface: err_saveInterrupted"
   },
   "cloudExperimental": {
@@ -2002,5 +2002,37 @@
   "cloudMegaupOpen": {
     "message": "Ouvrir MegaUp",
     "description": "Alcydeo interface: cloudMegaupOpen"
+  },
+  "detectionDiagnosticsPage": {
+    "message": "Page à diagnostiquer",
+    "description": "Alcydeo interface: detectionDiagnosticsPage"
+  },
+  "detectionDiagnosticsChoose": {
+    "message": "Choisissez une page de lecteur ouverte. Le rapport reste sur cet appareil.",
+    "description": "Alcydeo interface: detectionDiagnosticsChoose"
+  },
+  "detectionDiagnosticsNoPage": {
+    "message": "Aucune page web disponible. Ouvrez la page du lecteur, puis actualisez cette liste.",
+    "description": "Alcydeo interface: detectionDiagnosticsNoPage"
+  },
+  "detectionDiagnosticsTabsRefresh": {
+    "message": "Actualiser les pages ouvertes",
+    "description": "Alcydeo interface: detectionDiagnosticsTabsRefresh"
+  },
+  "firefoxCaptureUnavailable": {
+    "message": "Firefox n’expose pas cette API de capture d’onglet. Les flux HLS compatibles restent enregistrables.",
+    "description": "Alcydeo interface: firefoxCaptureUnavailable"
+  },
+  "firefoxCastUnavailable": {
+    "message": "La diffusion Cast de cette version nécessite Chrome. Les téléchargements et outils locaux restent disponibles.",
+    "description": "Alcydeo interface: firefoxCastUnavailable"
+  },
+  "cloudConsentDenied": {
+    "message": "Firefox doit autoriser le partage des fichiers pour ce service. Autorisez-le, puis réessayez.",
+    "description": "Alcydeo interface: cloudConsentDenied"
+  },
+  "firefoxSettingsHint": {
+    "message": "Firefox interdit aux extensions d’ouvrir ses réglages. Utilisez le menu Firefox : Extensions et thèmes pour l’accès aux sites, ou Paramètres → Général → Téléchargements pour le dossier principal.",
+    "description": "Alcydeo interface: firefoxSettingsHint"
   }
 }

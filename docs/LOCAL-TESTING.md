@@ -1,8 +1,12 @@
-# Public preview 0.2.0
+# Public packages 1.0.0
 
-Download the Chrome ZIP from [GitHub Releases](https://github.com/drslid/Alcydeo/releases), extract it and use chrome://extensions → Developer mode → Load unpacked. For an existing local install, replace its files and reload the same directory to keep its extension identity and library. Neither ZIP is a signed Chrome Web Store installation.
+Download the Chrome ZIP from [GitHub Releases](https://github.com/drslid/Alcydeo/releases/tag/v1.0.0), extract it and use chrome://extensions → Developer mode → Load unpacked. For an existing local install, replace its files and reload the same directory to keep its extension identity and library. No ZIP is an official Store installation.
 
-The default preview includes local YouTube experiments. The separately named Store preparation omits all YouTube catalog/transport/playlist features. Both require the original page and manager to stay open for the contextual/segmented transports that use them; closing the popup is safe. Keep the original files when trying editing tools.
+The Chrome development ZIP includes local YouTube experiments. The separately named Chrome Store preparation and Firefox package omit all YouTube catalog/transport/playlist features. Keep the original page and manager open for contextual/segmented transports that use them; closing the popup is safe. Keep the original files when trying editing tools.
+
+Firefox has its own ZIP: load it with about:debugging → This Firefox → Load Temporary Add-on. It is removed when Firefox restarts; no signed XPI or permanent install is claimed. Chrome tab capture and Cast APIs are unavailable. See [the Firefox versions, tests and codec limits](FIREFOX.md).
+
+Fresh/reset settings use four simultaneous files and multipart enabled at four connections per compatible file. Existing choices are retained. Detection diagnostics now live in Library → Settings → Detection, with an explicit source-tab choice and safe report copy.
 
 Pages uses the exact /Alcydeo/ path. The official SDK player is a separate web page; it never loads remote executable code into the extension. A source must be accessible to the receiver. Actual TikTok/private-PC playback on Shield is not established by a successful SDK load or test fixture. See [TV](TV.md) and [release validation](TEST-RESULTS.md).
 

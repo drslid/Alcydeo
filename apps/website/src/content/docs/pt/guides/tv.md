@@ -8,8 +8,6 @@ Google Cast continua experimental. O usuário confirmou uma demonstração ofici
 
 A página separada carrega o SDK Google Cast. Após escolher o receptor, o player recebe o link e o título. Cookies e senhas não são transferidos.
 
-O player web Google Cast não está disponível nesta instalação. Use o menu Transmitir do Chrome neste teste local.
-
 [Player Google Cast](/Alcydeo/cast/)
 
 A prévia local não está disponível. A TV pode aceitar o formato; você ainda pode tentar transmitir.
