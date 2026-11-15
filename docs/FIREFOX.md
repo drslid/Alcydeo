@@ -1,6 +1,6 @@
 # Firefox — Alcydeo 1.0.0
 
-Firefox **153.0 or later** has a dedicated Manifest V3 build, using an event page rather than Chrome's service worker. Its add-on ID is `alcydeo@drslid.github.io`. It is not the Chrome package renamed to ZIP or XPI. The 1.0.0 GitHub package is **unsigned and temporarily installable**; no Mozilla Add-ons listing, signature or acceptance is claimed.
+Firefox **desktop 153.0 or later** has a dedicated Manifest V3 build, using an event page rather than Chrome's service worker. Its add-on ID is `alcydeo@drslid.github.io`. It is not the Chrome package renamed to ZIP or XPI. The 1.0.0 GitHub package is **unsigned and temporarily installable**; no Mozilla Add-ons listing, signature or acceptance is claimed.
 
 ## Install and update
 
@@ -76,6 +76,42 @@ The corresponding project-source inspection finds no `v-html` or manual
 approval. No signed package or AMO submission was produced.
 
 ## Review sources and AMO
+
+### Desktop compatibility and executable-code checks
+
+The manifest intentionally omits `browser_specific_settings.gecko_android`:
+the supported release target is desktop, without an Android AMO compatibility
+claim. This is not a platform block against manual Android installation. Mozilla's
+validator still checks Android API minima using the inherited Gecko minimum.
+The published minimum is **153.0**, above the `data_collection_permissions`
+introduction in desktop Firefox 140 and Android Firefox 142. Do not add an
+Android declaration merely to silence a warning without adapting and testing a
+mobile port. See [Mozilla's compatibility rules](https://extensionworkshop.com/documentation/publish/version-compatibility/#android-compatibility)
+and the [MDN manifest compatibility data](https://github.com/mdn/browser-compat-data/blob/main/webextensions/manifest/browser_specific_settings.json).
+
+The exact published ZIP with SHA-256
+`1c03864a6544b2d81ec7d93516b0e9e5524e9f6fa485bf049603521efe507c35`
+contains 12 executable JavaScript files. It contains neither `ort/` nor an
+`embed.worker` module. Its three dynamic imports are constant relative paths
+to modules present in the ZIP. A fresh official-linter check finds no
+`DANGEROUS_EVAL`, unsafe-import or minimum-version warning; the single Vue
+warning described above remains.
+
+The CSP permits bundled WebAssembly using `'wasm-unsafe-eval'`; it does not
+include JavaScript `'unsafe-eval'`. These are different capabilities under
+[Mozilla's extension CSP](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_security_policy).
+
+The current repository's packaging gate parses all `.js`, `.mjs` and `.cjs`
+modules without executing them. It rejects common `eval`/`Function` invocation
+forms and aliases, variable/interpolated imports, remote module references,
+missing module targets, JavaScript `'unsafe-eval'` and an accidental Android
+target declaration. Constant relative imports must resolve inside the ZIP.
+Lexical analysis has finite visit/resolution/depth budgets; it complements the
+official Mozilla linter rather than proving arbitrary JavaScript safe.
+The [post-release audit](benchmarks/firefox-package-safety-1.0.0.json) records
+47 new gate tests, 1,092 passing unit tests and a byte-identical Firefox rebuild.
+These are build-tool safeguards: the immutable 1.0.0 release and its tagged
+review sources have not been replaced.
 
 With Node 24.22.2 and pnpm 12.5.1, build from the pinned source tree:
 

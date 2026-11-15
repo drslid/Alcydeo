@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Build safeguards
+- Check every packaged Firefox `.js`, `.mjs` and `.cjs` file for common string-execution forms and require imports to resolve to constant local packaged modules. Preserve the desktop target and the distinction between WebAssembly and JavaScript CSP permissions.
+- Recheck the immutable Firefox 1.0.0 ZIP with Mozilla's validator: no Android-minimum, Function/eval or unsafe-import finding; retain the documented Vue static-template warning. No released binary is replaced.
+
 ## 1.0.0 — Chrome and Firefox · 2026-11-15
 
 ### Added

@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-15",
+  "artifact": "alcydeo-1.0.0-firefox.zip",
+  "version": "1.0.0",
+  "sha256": "1c03864a6544b2d81ec7d93516b0e9e5524e9f6fa485bf049603521efe507c35",
+  "scope": "Post-release verification and build-tool safeguards only; no product runtime, UI, declared minimum or released asset changed.",
+  "target": {
+    "supported": "Firefox desktop",
+    "strictMinVersion": "153.0",
+    "geckoAndroidDeclared": false,
+    "androidAMOCompatibilityClaimed": false,
+    "manualAndroidInstallationNotPrevented": true,
+    "inheritedAndroidValidationMinimum": "153.0",
+    "dataCollectionManifestMinimum": {
+      "firefox": "140",
+      "firefoxAndroid": "142"
+    }
+  },
+  "packagedCode": {
+    "executableFiles": 12,
+    "ortOrEmbedWorkerFiles": [],
+    "commonEvalOrFunctionInvocationsFound": 0,
+    "dynamicImports": [
+      {
+        "file": "chunks/main-DdPhcdV4.js",
+        "argument": "`./src-U92kgbz4.js`",
+        "constantRelativePackagedTarget": true
+      },
+      {
+        "file": "chunks/main-DdPhcdV4.js",
+        "argument": "`./plan-Bp6jOVz1.js`",
+        "constantRelativePackagedTarget": true
+      },
+      {
+        "file": "chunks/main-DdPhcdV4.js",
+        "argument": "`./engine-DR-zlq3v.js`",
+        "constantRelativePackagedTarget": true
+      }
+    ],
+    "javascriptUnsafeEvalCSP": false,
+    "localWasmAllowed": true
+  },
+  "mozillaLint": {
+    "tools": {
+      "webExt": "10.8.0",
+      "addonsLinter": "10.15.0"
+    },
+    "summary": {
+      "errors": 0,
+      "notices": 0,
+      "warnings": 1
+    },
+    "warnings": [
+      {
+        "_type": "warning",
+        "code": "UNSAFE_VAR_ASSIGNMENT",
+        "message": "Unsafe assignment to innerHTML",
+        "description": "Due to both security and performance concerns, this may not be set using dynamic values which have not been adequately sanitized. This can lead to security issues or fairly serious performance degradation.",
+        "column": 59897,
+        "file": "chunks/main-DdPhcdV4.js",
+        "line": 2
+      }
+    ],
+    "interpretation": "One retained Vue compiled static-template innerHTML warning; no Android-minimum, DANGEROUS_EVAL or unsafe-import finding. No Mozilla approval claimed."
+  },
+  "newBuildGate": {
+    "file": "scripts/firefox-package-safety.mjs",
+    "integratedInto": "pnpm zip:firefox",
+    "executables": [
+      ".js",
+      ".mjs",
+      ".cjs"
+    ],
+    "dedicatedTestsPassed": 47,
+    "realPackagePassed": true,
+    "localAuditElapsedMs": 651.787,
+    "finiteBudgets": {
+      "astVisitsPerFile": 1000000,
+      "resolutionsPerFile": 250000,
+      "aliasDepth": 64
+    },
+    "notGeneralJavaScriptSecurityProof": true
+  },
+  "checks": {
+    "typecheck": true,
+    "eslint": true,
+    "unitPassed": 1092,
+    "unitFailed": 0,
+    "unitSkipped": 0,
+    "firefoxBuildAndPackage": true,
+    "rebuiltZipByteIdenticalToPublished": true,
+    "browserRuntimeRerunThisAudit": false
+  },
+  "browserEvidence": "Existing actual Firefox 160 and ESR153.7 results remain separately recorded in FIREFOX.md and the release validation report; this audit does not add a new browser run.",
+  "storeSubmissionPerformed": false,
+  "releaseAssetsReplaced": false,
+  "references": [
+    "https://extensionworkshop.com/documentation/publish/version-compatibility/#android-compatibility",
+    "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_specific_settings",
+    "https://github.com/mdn/browser-compat-data/blob/main/webextensions/manifest/browser_specific_settings.json",
+    "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_security_policy",
+    "https://github.com/mozilla/addons-linter/blob/b36f16a0b89ee65417e277124f7101dd68492cdd/src/utils.js#L337"
+  ]
+}

@@ -305,3 +305,11 @@ Le chargement temporaire peut sélectionner le ZIP ou manifest.json et prend fin
 https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_specific_settings
 https://extensionworkshop.com/documentation/develop/firefox-builtin-data-consent/
 La taxonomie distingue les contenus web et les données personnelles, dont voix/vidéos. Le manifeste Firefox Alcydeo ne déclare aucune collecte obligatoire et demande les deux consentements facultatifs pour les seuls envois Cloud explicites ; ne pas transformer ce choix en promesse d’absence de traitement local ou de trafic fournisseur. La version minimale 153, les versions 160 et ESR 153.7 testées et les résultats effectifs sont consignés séparément dans FIREFOX.md.
+
+Prévention des avertissements Firefox — 15 novembre 2026
+https://extensionworkshop.com/documentation/publish/version-compatibility/#android-compatibility
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_specific_settings#firefox_gecko_properties
+https://github.com/mdn/browser-compat-data/blob/main/webextensions/manifest/browser_specific_settings.json
+Sans gecko_android, pas de compatibilité Android annoncée à AMO ; cela n’interdit pas une installation manuelle. Le minimum Android de validation hérite du minimum Gecko si aucun minimum propre n’est donné. Les données MDN situent data_collection_permissions à Firefox140 desktop et142 Android ; Alcydeo annonce153, pas140. Ne pas déclarer Android sans port testé.
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_security_policy
+wasm-unsafe-eval autorise le WebAssembly local ; ne pas le confondre avec unsafe-eval JavaScript. Vérifier le code réellement empaqueté, y compris .mjs/.cjs, les appels eval/Function et les imports ; ne pas déduire l’innocuité d’un module tiers depuis son nom ni assouplir la CSP pour masquer un refus.
